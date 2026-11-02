@@ -1,0 +1,3 @@
+industryName	manufacturerCount
+[results redacted: SUDOKN instance data not redistributed]
+Rows (counted at redaction): 84

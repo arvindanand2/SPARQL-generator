@@ -1,0 +1,5 @@
+Run 1 failed. Compressed error:
+Response:
+Response:
+b'MALFORMED QUERY: Encountered " "." ". "" at line 1, column 78.\r\nWas expecting one of:\r\n    "base" ...\r\n    "prefix" ...\r\n    "select" ...\r\n    "construct" ...\r\n    "describe" ...\r\n    "ask" ...\r\n    '
+All retries failed.

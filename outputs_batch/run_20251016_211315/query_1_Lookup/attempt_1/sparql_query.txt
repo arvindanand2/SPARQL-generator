@@ -1,0 +1,12 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturerLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:hasCertificate ?cert ;
+                rdfs:label ?manufacturerLabel .
+  ?cert a sdk:ISO9001 .
+  FILTER(!BOUND(LANG(?manufacturerLabel)) || LANGMATCHES(LANG(?manufacturerLabel), "en"))
+}

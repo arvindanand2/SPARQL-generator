@@ -1,0 +1,15 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?label (COUNT(DISTINCT ?pair) AS ?numDistinctProcessMaterialCapabilities)
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:hasProcessCapability ?process ;
+                sdk:hasMaterialCapability ?material .
+  OPTIONAL { ?manufacturer rdfs:label ?label . }
+  BIND(CONCAT(STR(?process), "|", STR(?material)) AS ?pair)
+}
+GROUP BY ?manufacturer ?label
+ORDER BY DESC(?numDistinctProcessMaterialCapabilities)
+LIMIT 1

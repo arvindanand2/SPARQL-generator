@@ -1,0 +1,37 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel ?statelabel ?latitude ?longitude
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                rdfs:label ?manufacturerLabel ;
+                sdk:hasCertificate ?cert ;
+                sdk:organizationLocatedIn ?site ;
+                sdk:suppliesToIndustry ?industry .
+  ?site sdk:hasSpatialCoordinates ?coords .
+  ?coords sdk:hasLatitudeValue ?latitude ;
+          sdk:hasLongitudeValue ?longitude .
+  ?site sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  ?state rdfs:label ?statelabel .
+
+  FILTER(?statelabel IN ("Illinois","Indiana","Iowa","Kansas","Michigan","Minnesota","Missouri","Nebraska","North Dakota","Ohio","South Dakota","Wisconsin"))
+
+  FILTER(
+    ?cert = <http://asu.edu/semantics/SUDOKN/ISO9001> ||
+    ?cert = <http://asu.edu/semantics/SUDOKN/AS9100Certificate> ||
+    ?cert = <http://asu.edu/semantics/SUDOKN/IATF16949> ||
+    ?cert = <http://asu.edu/semantics/SUDOKN/ISO13485>
+  )
+
+  ?industry rdfs:label ?industryLabel .
+  FILTER(?industryLabel IN ("Aerospace", "Agriculture"))
+}
+ORDER BY ASC(
+  bif:st_distance(
+    bif:st_point(xsd:double(?longitude), xsd:double(?latitude)),
+    bif:st_point(-111.9343, 33.4211)
+  )
+)

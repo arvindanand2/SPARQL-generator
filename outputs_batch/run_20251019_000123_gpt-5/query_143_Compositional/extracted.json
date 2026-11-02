@@ -1,0 +1,79 @@
+{
+  "clauses": [
+    {
+      "connective": "AND",
+      "type": "spo",
+      "enum_values": [
+        "Heat Treating"
+      ],
+      "subject_hint": "manufacturers",
+      "relation_hint": "has process capability"
+    },
+    {
+      "connective": "IMPLIED",
+      "type": "modifier",
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "city"
+      },
+      "subject_hint": "manufacturers"
+    },
+    {
+      "connective": "IMPLIED",
+      "type": "modifier",
+      "modifier": {
+        "kind": "limit",
+        "k": null,
+        "by": null
+      },
+      "subject_hint": "manufacturers",
+      "relation_hint": "average employee count"
+    }
+  ],
+  "mapping": [
+    "No explicit aggregation kind exists in schema; used relation_hint 'average employee count' to signal measure."
+  ],
+  "relevant_iris": [
+    {
+      "label": "Heat Treating",
+      "iri": "http://asu.edu/semantics/SUDOKN/HeatTreatingCapability"
+    },
+    {
+      "label": "Stress Relieving",
+      "iri": "http://asu.edu/semantics/SUDOKN/StressRelievingCapability"
+    },
+    {
+      "label": "Through Hardening",
+      "iri": "http://asu.edu/semantics/SUDOKN/ThroughHardeningCapability"
+    },
+    {
+      "label": "Austempering",
+      "iri": "http://asu.edu/semantics/SUDOKN/AustemperingCapability"
+    },
+    {
+      "label": "Tempering",
+      "iri": "http://asu.edu/semantics/SUDOKN/TemperingCapability"
+    },
+    {
+      "label": "Full Annealing",
+      "iri": "http://asu.edu/semantics/SUDOKN/FullAnnealingCapability"
+    },
+    {
+      "label": "Surface Hardening",
+      "iri": "http://asu.edu/semantics/SUDOKN/SurfaceHardeningCapability"
+    },
+    {
+      "label": "Annealing",
+      "iri": "http://asu.edu/semantics/SUDOKN/AnnealingCapability"
+    },
+    {
+      "label": "Hardening",
+      "iri": "http://asu.edu/semantics/SUDOKN/HardeningCapability"
+    },
+    {
+      "label": "Cold Treatment",
+      "iri": "http://asu.edu/semantics/SUDOKN/ColdTreatmentCapability"
+    }
+  ]
+}

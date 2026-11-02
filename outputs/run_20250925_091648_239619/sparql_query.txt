@@ -1,0 +1,17 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                rdfs:label ?manufacturerLabel ;
+                sdk:organizationLocatedIn ?site ;
+                sdk:suppliesToIndustry ?industry .
+  ?site sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  ?state rdfs:label ?stateLabel .
+  ?industry rdfs:label ?industryLabel .
+  FILTER(CONTAINS(LCASE(?industryLabel), "aerospace"))
+  FILTER(LCASE(?stateLabel) IN ("illinois", "indiana", "iowa", "kansas", "michigan", "minnesota", "missouri", "nebraska", "north dakota", "ohio", "south dakota", "wisconsin"))
+}

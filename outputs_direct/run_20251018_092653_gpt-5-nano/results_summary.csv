@@ -1,0 +1,22 @@
+Query_ID,Question,Category,Model,Success,Attempts,Total_Time_Seconds,Extraction_Time,SPARQL_Gen_Time,Validation_Time,Correction_Time,SPARQL_Query,Result_Preview,Error_Message,Stage
+0,"For each state, return the average employees of manufacturers that make any product whose name contains Pipe.",,gpt-5-nano,Yes,1,58.09,33.79,23.95,0.34,0.0,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?stateLabel (AVG(?employees) AS ?avgEmployees)
+WHERE {
+  ?manuf a iof-core:Manufacturer ;
+          sdk:hasNumberOfEmployees ?employees ;
+          sdk:manufactures ?prod ;
+          sdk:organizationLocatedIn ?site .
+  ?prod rdfs:label ?prodLabel .
+  FILTER(CONTAINS(LCASE(?prodLabel), ""pipe""))
+  ?site sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  ?state rdfs:label ?stateLabel .
+}
+GROUP BY ?stateLabel
+ORDER BY ?stateLabel","stateLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 3
+",,complete

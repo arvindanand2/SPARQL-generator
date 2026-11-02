@@ -1,0 +1,61 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?label ?cityLabel ?stateLabel ?lat ?long
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+    rdfs:label ?label ;
+    sdk:suppliesToIndustry ?industry ;
+    sdk:hasCertificate ?cert ;
+    sdk:organizationLocatedIn ?site .
+
+  # Industry filter
+  ?industry rdfs:label ?industryLabel .
+  FILTER (
+    lcase(str(?industryLabel)) = "aerospace"
+    || lcase(str(?industryLabel)) = "defense"
+  )
+
+  # Certification filter (quality management certs)
+  FILTER(
+    ?cert = <http://asu.edu/semantics/SUDOKN/AerospaceQualityCertificate> ||
+    ?cert = <http://asu.edu/semantics/SUDOKN/AS9120> ||
+    ?cert = <http://asu.edu/semantics/SUDOKN/AS9100Certificate> ||
+    ?cert = <http://asu.edu/semantics/SUDOKN/AS9003> ||
+    ?cert = <http://asu.edu/semantics/SUDOKN/AS9000> ||
+    ?cert = <http://asu.edu/semantics/SUDOKN/AS9102> ||
+    ?cert = <http://asu.edu/semantics/SUDOKN/QSQuality> ||
+    ?cert = <http://asu.edu/semantics/SUDOKN/NADCAP> ||
+    ?cert = <http://asu.edu/semantics/SUDOKN/QualityCertificate>
+  )
+
+  # Location selection (state in midwest)
+  ?site sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  ?city rdfs:label ?cityLabel .
+  ?state rdfs:label ?stateLabel .
+  FILTER(
+    ?stateLabel = "Illinois" ||
+    ?stateLabel = "Indiana" ||
+    ?stateLabel = "Iowa" ||
+    ?stateLabel = "Kansas" ||
+    ?stateLabel = "Michigan" ||
+    ?stateLabel = "Minnesota" ||
+    ?stateLabel = "Missouri" ||
+    ?stateLabel = "Nebraska" ||
+    ?stateLabel = "North Dakota" ||
+    ?stateLabel = "Ohio" ||
+    ?stateLabel = "South Dakota" ||
+    ?stateLabel = "Wisconsin"
+  )
+
+  # Get coordinates for distance calculation
+  ?site sdk:hasSpatialCoordinates ?coords .
+  ?coords sdk:hasLatitudeValue ?lat .
+  ?coords sdk:hasLongitudeValue ?long .
+  BIND(xsd:float(?lat) AS ?latNum)
+  BIND(xsd:float(?long) AS ?longNum)
+  BIND(((?latNum - 33.421999) * (?latNum - 33.421999) + (?longNum + 111.933274) * (?longNum + 111.933274)) AS ?distance)
+}
+ORDER BY ASC(?distance)

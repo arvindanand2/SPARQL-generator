@@ -1,0 +1,63 @@
+{
+  "clauses": [
+    {
+      "type": "spo",
+      "subject_hint": "companies",
+      "connective": "AND",
+      "filter": {
+        "op": "eq",
+        "value": "Steelworks",
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "relation_hint": "company name term",
+      "object_hint": "Steelworks"
+    },
+    {
+      "type": "spo",
+      "subject_hint": "companies",
+      "connective": "AND",
+      "relation_hint": "has number of employees"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Steel",
+      "iri": "http://asu.edu/semantics/SUDOKN/SteelProcessingCapability"
+    },
+    {
+      "label": "Cast Steel",
+      "iri": "http://asu.edu/semantics/SUDOKN/CastSteelProcessingCapability"
+    },
+    {
+      "label": "Alloy Steel",
+      "iri": "http://asu.edu/semantics/SUDOKN/AlloySteelProcessingCapability"
+    },
+    {
+      "label": "Blue Temp Steel",
+      "iri": "http://asu.edu/semantics/SUDOKN/BlueTempSteelProcessingCapability"
+    },
+    {
+      "label": "AWS Welder",
+      "iri": "http://asu.edu/semantics/SUDOKN/AWSWelder"
+    },
+    {
+      "label": "Stainless Steel",
+      "iri": "http://asu.edu/semantics/SUDOKN/StainlessSteelProcessingCapability"
+    },
+    {
+      "label": "Low Alloy Steel Lead",
+      "iri": "http://asu.edu/semantics/SUDOKN/LowAlloySteelLeadProcessingCapability"
+    },
+    {
+      "label": "Cold Rolled Steel",
+      "iri": "http://asu.edu/semantics/SUDOKN/ColdRolledSteelProcessingCapability"
+    },
+    {
+      "label": "Super Alloy",
+      "iri": "http://asu.edu/semantics/SUDOKN/SuperAlloyProcessingCapability"
+    }
+  ]
+}

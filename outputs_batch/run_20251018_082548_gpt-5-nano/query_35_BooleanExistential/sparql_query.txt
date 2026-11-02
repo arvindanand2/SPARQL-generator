@@ -1,0 +1,16 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?org ?orgLabel
+WHERE {
+  ?org a iof-core:Manufacturer .
+  ?org rdfs:label ?orgLabel .
+  ?org sdk:organizationLocatedIn ?site .
+  ?site sdk:locatedInCity ?city .
+  ?city rdfs:label "Phoenix" .
+  ?city a sdk:City .
+  ?city sdk:locatedInState ?state .
+  ?state rdfs:label "Arizona" .
+  FILTER NOT EXISTS { ?org sdk:hasCertificate ?cert . }
+}

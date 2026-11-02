@@ -1,0 +1,33 @@
+{
+  "version": "20250923_232436",
+  "model": "text-embedding-3-large",
+  "creation_date": "2025-09-23T23:24:36.112494",
+  "sources": {
+    "industries": {
+      "embedding_count": 58,
+      "embedding_dimension": 3072,
+      "metadata_count": 58,
+      "file_size_mb": 1.36
+    },
+    "material_caps": {
+      "embedding_count": 94,
+      "embedding_dimension": 3072,
+      "metadata_count": 94,
+      "file_size_mb": 2.2
+    },
+    "certificates": {
+      "embedding_count": 46,
+      "embedding_dimension": 3072,
+      "metadata_count": 46,
+      "file_size_mb": 1.08
+    },
+    "process_embeddings": {
+      "embedding_count": 464,
+      "embedding_dimension": 3072,
+      "metadata_count": 464,
+      "file_size_mb": 10.88
+    }
+  },
+  "total_embeddings": 662,
+  "total_size_mb": 15.52
+}

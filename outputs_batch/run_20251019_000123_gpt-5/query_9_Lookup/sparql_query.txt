@@ -1,0 +1,12 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?stateName
+WHERE {
+  ?city a sdk:City ;
+        rdfs:label ?cityName ;
+        sdk:locatedInState ?state .
+  FILTER(CONTAINS(?cityName, "San "))
+  ?state a sdk:State ;
+         rdfs:label ?stateName .
+}

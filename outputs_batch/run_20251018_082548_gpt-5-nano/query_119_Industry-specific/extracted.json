@@ -1,0 +1,53 @@
+{
+  "clauses": [
+    {
+      "object_hint": "industries whose names match regex \"Energy\"",
+      "relation_hint": "supplies to industry",
+      "connective": "IMPLIED",
+      "filter": {
+        "op": "near",
+        "value": "Industries",
+        "unit": "name",
+        "min": 0,
+        "max": 0
+      },
+      "modifier": {
+        "kind": "topN",
+        "k": 10,
+        "by": "number of distinct industries"
+      },
+      "subject_hint": "manufacturers",
+      "enum_values": [
+        "Energy"
+      ],
+      "type": "spo"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "ISO 50001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO50001"
+    },
+    {
+      "label": "ISO 14000",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO14000"
+    },
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    },
+    {
+      "label": "ISO 14001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO14001"
+    },
+    {
+      "label": "LEED",
+      "iri": "http://asu.edu/semantics/SUDOKN/LEED"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    }
+  ]
+}

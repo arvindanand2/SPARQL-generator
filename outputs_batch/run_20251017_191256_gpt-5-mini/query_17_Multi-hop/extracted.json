@@ -1,0 +1,53 @@
+{
+  "clauses": [
+    {
+      "type": "spo",
+      "subject_hint": "manufacturers",
+      "connective": "AND",
+      "relation_hint": "company name term",
+      "object_hint": "Valve"
+    },
+    {
+      "type": "scope",
+      "subject_hint": "manufacturers",
+      "connective": "IMPLIED",
+      "relation_hint": "located in",
+      "object_hint": "state"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    },
+    {
+      "label": "AWS Welder",
+      "iri": "http://asu.edu/semantics/SUDOKN/AWSWelder"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "FDA",
+      "iri": "http://asu.edu/semantics/SUDOKN/FDA"
+    },
+    {
+      "label": "BABA",
+      "iri": "http://asu.edu/semantics/SUDOKN/BABA"
+    },
+    {
+      "label": "ITAR",
+      "iri": "http://asu.edu/semantics/SUDOKN/ITAR"
+    },
+    {
+      "label": "LEED",
+      "iri": "http://asu.edu/semantics/SUDOKN/LEED"
+    },
+    {
+      "label": "NIST",
+      "iri": "http://asu.edu/semantics/SUDOKN/nist"
+    }
+  ]
+}

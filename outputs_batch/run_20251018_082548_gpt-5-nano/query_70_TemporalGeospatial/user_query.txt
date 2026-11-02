@@ -1,0 +1,1 @@
+List all manufacturers located in a given city (match by city name substring, e.g., contains Rochester")."

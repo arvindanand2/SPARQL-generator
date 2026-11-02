@@ -1,0 +1,13 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?manufacturerLabel (COUNT(DISTINCT ?cert) AS ?certificateCount)
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel . }
+  OPTIONAL { ?manufacturer sdk:hasCertificate ?cert . }
+}
+GROUP BY ?manufacturer ?manufacturerLabel
+HAVING (COUNT(DISTINCT ?cert) = 0)
+ORDER BY ASC(?certificateCount) ASC(?manufacturerLabel)

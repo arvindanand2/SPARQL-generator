@@ -1,0 +1,1 @@
+For each manufacturer, return its NAICS text if present; still list the manufacturer if the NAICS text is missing.

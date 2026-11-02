@@ -1,0 +1,18 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?state ?stateLabel (AVG(?num) AS ?averageNumberOfEmployees)
+WHERE {
+  ?org a iof-core:Manufacturer ;
+       sdk:organizationLocatedIn ?site ;
+       sdk:hasNumberOfEmployees ?numStr .
+  ?site sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  ?state rdfs:label ?stateLabel .
+  BIND(xsd:decimal(REPLACE(STR(?numStr), ",", "")) AS ?num)
+}
+GROUP BY ?state ?stateLabel
+ORDER BY ?stateLabel

@@ -1,0 +1,87 @@
+{
+  "clauses": [
+    {
+      "connective": "IMPLIED",
+      "filter": {
+        "op": "near",
+        "value": "<none>",
+        "unit": "city",
+        "min": null,
+        "max": null
+      },
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "employee count bucket (>250)"
+      },
+      "subject_hint": "companies",
+      "type": "modifier"
+    },
+    {
+      "object_hint": "per bucket",
+      "relation_hint": "has count",
+      "connective": "IMPLIED",
+      "filter": {
+        "op": "near",
+        "value": "<none>",
+        "unit": "city",
+        "min": null,
+        "max": null
+      },
+      "subject_hint": "companies",
+      "type": "spo"
+    },
+    {
+      "relation_hint": "has employee count bucket",
+      "connective": "IMPLIED",
+      "filter": {
+        "op": "gt",
+        "value": 250,
+        "unit": "employees",
+        "min": null,
+        "max": null
+      },
+      "subject_hint": "companies",
+      "type": "filter"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "ISO 14000",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO14000"
+    },
+    {
+      "label": "Occupational Health And Safety",
+      "iri": "http://asu.edu/semantics/SUDOKN/OccupationalHealthAndSafety"
+    },
+    {
+      "label": "BABA",
+      "iri": "http://asu.edu/semantics/SUDOKN/BABA"
+    },
+    {
+      "label": "ISO 50001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO50001"
+    },
+    {
+      "label": "OHSAS 18001",
+      "iri": "http://asu.edu/semantics/SUDOKN/OHSAS18001"
+    },
+    {
+      "label": "LEED",
+      "iri": "http://asu.edu/semantics/SUDOKN/LEED"
+    },
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    }
+  ]
+}

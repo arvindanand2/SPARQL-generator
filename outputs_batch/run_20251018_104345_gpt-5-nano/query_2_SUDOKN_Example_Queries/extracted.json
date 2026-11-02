@@ -1,0 +1,64 @@
+{
+  "clauses": [
+    {
+      "type": "scope",
+      "subject_hint": "manufacturers",
+      "relation_hint": "located in",
+      "filter": {
+        "op": "eq",
+        "value": "NC",
+        "unit": "state",
+        "min": null,
+        "max": null
+      },
+      "connective": "IMPLIED",
+      "enum_values": [
+        "NC"
+      ],
+      "modifier": {
+        "kind": "topN",
+        "k": null,
+        "by": "number of distinct manufacturers"
+      }
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "NIST",
+      "iri": "http://asu.edu/semantics/SUDOKN/nist"
+    },
+    {
+      "label": "LEED",
+      "iri": "http://asu.edu/semantics/SUDOKN/LEED"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    },
+    {
+      "label": "QS Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QSQuality"
+    },
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    },
+    {
+      "label": "FDA 21 CFR Part 820",
+      "iri": "http://asu.edu/semantics/SUDOKN/FDA21CFRPart820"
+    }
+  ]
+}

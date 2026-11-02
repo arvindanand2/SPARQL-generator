@@ -1,0 +1,73 @@
+{
+  "clauses": [
+    {
+      "relation_hint": "has process capability",
+      "connective": "AND",
+      "subject_hint": "manufacturers",
+      "enum_values": [
+        "Ceramic processing"
+      ],
+      "type": "spo"
+    },
+    {
+      "relation_hint": "has material capability",
+      "connective": "AND",
+      "subject_hint": "manufacturers",
+      "enum_values": [
+        "Ceramic"
+      ],
+      "type": "spo"
+    },
+    {
+      "relation_hint": "located in",
+      "connective": "IMPLIED",
+      "subject_hint": "manufacturers",
+      "enum_values": [
+        "New York",
+        "New Jersey",
+        "New Hampshire",
+        "New Mexico"
+      ],
+      "type": "scope"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Ceramic",
+      "iri": "http://asu.edu/semantics/SUDOKN/CeramicProcessingCapability"
+    },
+    {
+      "label": "Ceramic Mold Casting",
+      "iri": "http://asu.edu/semantics/SUDOKN/CeramicMoldCastingCapability"
+    },
+    {
+      "label": "Chemical Processing",
+      "iri": "http://asu.edu/semantics/SUDOKN/ChemicalProcessingCapability"
+    },
+    {
+      "label": "Forming",
+      "iri": "http://asu.edu/semantics/SUDOKN/FormingCapability"
+    },
+    {
+      "label": "NIST",
+      "iri": "http://asu.edu/semantics/SUDOKN/nist"
+    },
+    {
+      "label": "LEED",
+      "iri": "http://asu.edu/semantics/SUDOKN/LEED"
+    },
+    {
+      "label": "Diamond Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/DiamondMachiningCapability"
+    },
+    {
+      "label": "Zero Stock Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/ZeroStockMachiningCapability"
+    },
+    {
+      "label": "Casting",
+      "iri": "http://asu.edu/semantics/SUDOKN/CastingCapability"
+    }
+  ]
+}

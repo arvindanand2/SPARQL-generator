@@ -1,0 +1,1 @@
+For each NAICS classifier, how many manufacturers use it as their primary NAICS?

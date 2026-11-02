@@ -1,0 +1,169 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ExtractedTerms",
+  "type": "object",
+  "properties": {
+    "company_name_terms": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/TextTerm" },
+      "default": []
+    },
+    "process_capabilities_terms": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/TextTerm" },
+      "default": []
+    },
+    "material_capabilities_terms": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/TextTerm" },
+      "default": []
+    },
+    "industries_terms": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/TextTerm" },
+      "default": []
+    },
+    "certificates_terms": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/TextTerm" },
+      "default": []
+    },
+    "ownership_status_terms": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/TextTerm" },
+      "default": []
+    },
+    "product": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/TextTerm" },
+      "default": []
+    },
+    "naics_terms": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/TextTerm" },
+      "default": []
+    },
+    "business_description_terms": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/TextTerm" },
+      "default": []
+    },
+    "location_terms": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/AddressTerm" },
+      "default": []
+    },
+    "employee_count_terms": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/TextTerm" },
+      "default": []
+    },
+    "employee_count_filter": {
+      "$ref": "#/$defs/NumericFilter"
+    },
+    "year_established_terms": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/TextTerm" },
+      "default": []
+    },
+    "web_address_terms": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/TextTerm" },
+      "default": []
+    },
+    "extraction_warnings": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    }
+  },
+  "required": [
+    "company_name_terms",
+    "process_capabilities_terms",
+    "material_capabilities_terms",
+    "industries_terms",
+    "certificates_terms",
+    "ownership_status_terms",
+    "product",
+    "naics_terms",
+    "business_description_terms",
+    "location_terms",
+    "employee_count_terms",
+    "employee_count_filter",
+    "year_established_terms",
+    "web_address_terms",
+    "extraction_warnings"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "TextTerm": {
+      "type": "object",
+      "properties": {
+        "text": { "type": "string" },
+        "aliases": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "emit": {
+          "type": "string",
+          "enum": ["one", "all", "any"]
+        },
+        "source": {
+          "type": "string",
+          "enum": ["user", "model"]
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "required": ["text", "aliases", "emit", "source", "confidence"],
+      "additionalProperties": false
+    },
+    "AddressTerm": {
+      "type": "object",
+      "properties": {
+        "text_address": { "type": "string" },
+        "line_1_address": { "type": "string" },
+        "city": { "type": "string" },
+        "county": { "type": "string" },
+        "state": { "type": "string" },
+        "zip": { "type": "integer" },
+        "latitude": { "type": "number" },
+        "longitude": { "type": "number" },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "required": ["text_address", "line_1_address", "city", "county", "state", "zip", "latitude", "longitude", "confidence"],
+      "additionalProperties": false
+    },
+    "NumericFilter": {
+      "type": "object",
+      "properties": {
+        "op": {
+          "type": "string",
+          "enum": ["lt", "lte", "eq", "gte", "gt", "between"]
+        },
+        "value": { "type": "integer" },
+        "min": { "type": "integer" },
+        "max": { "type": "integer" },
+        "unit": { "type": "string" },
+        "source": {
+          "type": "string",
+          "enum": ["user", "model"]
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "required": ["op", "value", "min", "max", "unit", "source", "confidence"],
+      "additionalProperties": false
+    }
+  }
+}

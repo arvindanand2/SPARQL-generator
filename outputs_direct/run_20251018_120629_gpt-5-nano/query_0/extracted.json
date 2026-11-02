@@ -1,0 +1,88 @@
+{
+  "clauses": [
+    {
+      "connective": "IMPLIED",
+      "filter": {
+        "op": "near",
+        "value": "",
+        "unit": "city",
+        "min": null,
+        "max": null
+      },
+      "subject_hint": "manufacturers",
+      "relation_hint": "located in",
+      "type": "scope",
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "state"
+      }
+    },
+    {
+      "connective": "AND",
+      "object_hint": "average",
+      "subject_hint": "manufacturers",
+      "relation_hint": "has number of employees",
+      "type": "spo",
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "state"
+      }
+    },
+    {
+      "connective": "IMPLIED",
+      "subject_hint": "manufacturers",
+      "relation_hint": "group by",
+      "type": "modifier",
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "state"
+      }
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "AWS Welder",
+      "iri": "http://asu.edu/semantics/SUDOKN/AWSWelder"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "Occupational Health And Safety",
+      "iri": "http://asu.edu/semantics/SUDOKN/OccupationalHealthAndSafety"
+    },
+    {
+      "label": "NIST",
+      "iri": "http://asu.edu/semantics/SUDOKN/nist"
+    },
+    {
+      "label": "Standard Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/MachiningCapability"
+    },
+    {
+      "label": "IATF",
+      "iri": "http://asu.edu/semantics/SUDOKN/IATF"
+    },
+    {
+      "label": "BABA",
+      "iri": "http://asu.edu/semantics/SUDOKN/BABA"
+    },
+    {
+      "label": "ISO 50001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO50001"
+    },
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "ISO 45001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO45001"
+    }
+  ]
+}

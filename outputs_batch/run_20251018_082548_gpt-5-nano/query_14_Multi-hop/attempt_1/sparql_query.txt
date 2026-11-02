@@ -1,0 +1,23 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?materialCapability
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+               rdfs:label ?name .
+  FILTER(CONTAINS(LCASE(?name), "metal"))
+  ?manufacturer sdk:hasMaterialCapability ?materialCapability .
+  VALUES ?materialCapability {
+    <http://asu.edu/semantics/SUDOKN/MetalProcessingCapability>
+    <http://asu.edu/semantics/SUDOKN/JoiningCapability>
+    <http://asu.edu/semantics/SUDOKN/SheetMetalProcessingProcessingCapability>
+    <http://asu.edu/semantics/SUDOKN/SuperAlloyProcessingCapability>
+    <http://asu.edu/semantics/SUDOKN/AdditiveManufacturingCapability>
+    <http://asu.edu/semantics/SUDOKN/ExoticMaterialProcessingCapability>
+    <http://asu.edu/semantics/SUDOKN/VaporizedMetalCoatingCapability>
+    <http://asu.edu/semantics/SUDOKN/AlloyProcessingCapability>
+    <http://asu.edu/semantics/SUDOKN/PowderMetalFormingCapability>
+    <http://asu.edu/semantics/SUDOKN/NADCAP>
+  }
+}

@@ -1,0 +1,1 @@
+Within each industry, list manufacturers whose employee count is above that industry's average.

@@ -1,0 +1,52 @@
+{
+  "clauses": [
+    {
+      "object_hint": "Agriculture",
+      "subject_hint": "manufacturers",
+      "filter": {
+        "op": "eq",
+        "value": "Agriculture",
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "enum_values": [
+        "Agriculture"
+      ],
+      "relation_hint": "supplies to industry",
+      "type": "spo",
+      "connective": "IMPLIED"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "VDA",
+      "iri": "http://asu.edu/semantics/SUDOKN/VDA"
+    },
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    },
+    {
+      "label": "Aerospace Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/AerospaceQualityCertificate"
+    },
+    {
+      "label": "AS 9120",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9120"
+    },
+    {
+      "label": "ISO 22000",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO22000"
+    },
+    {
+      "label": "FDA",
+      "iri": "http://asu.edu/semantics/SUDOKN/FDA"
+    }
+  ]
+}

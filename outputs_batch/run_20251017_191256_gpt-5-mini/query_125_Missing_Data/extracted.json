@@ -1,0 +1,53 @@
+{
+  "clauses": [
+    {
+      "type": "spo",
+      "subject_hint": "manufacturers",
+      "connective": "AND",
+      "relation_hint": "has primary NAICS"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "NIST",
+      "iri": "http://asu.edu/semantics/SUDOKN/nist"
+    },
+    {
+      "label": "NADCAP",
+      "iri": "http://asu.edu/semantics/SUDOKN/NADCAP"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    },
+    {
+      "label": "ITAR",
+      "iri": "http://asu.edu/semantics/SUDOKN/ITAR"
+    },
+    {
+      "label": "NIST 800171",
+      "iri": "http://asu.edu/semantics/SUDOKN/NIST800171"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "QS Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QSQuality"
+    },
+    {
+      "label": "AS 9102",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9102"
+    },
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    },
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    }
+  ]
+}

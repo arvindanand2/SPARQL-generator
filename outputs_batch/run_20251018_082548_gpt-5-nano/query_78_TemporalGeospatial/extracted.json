@@ -1,0 +1,65 @@
+{
+  "clauses": [
+    {
+      "relation_hint": "number of distinct manufacturers",
+      "connective": "IMPLIED",
+      "filter": {
+        "op": "near",
+        "value": "",
+        "unit": "city",
+        "min": null,
+        "max": null
+      },
+      "modifier": {
+        "kind": "topN",
+        "k": 1,
+        "by": "number of distinct manufacturers"
+      },
+      "subject_hint": "states",
+      "type": "modifier"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    },
+    {
+      "label": "FDA",
+      "iri": "http://asu.edu/semantics/SUDOKN/FDA"
+    },
+    {
+      "label": "VDA",
+      "iri": "http://asu.edu/semantics/SUDOKN/VDA"
+    },
+    {
+      "label": "QS Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QSQuality"
+    },
+    {
+      "label": "FDA PMA",
+      "iri": "http://asu.edu/semantics/SUDOKN/FDAPMA"
+    },
+    {
+      "label": "Occupational Health And Safety",
+      "iri": "http://asu.edu/semantics/SUDOKN/OccupationalHealthAndSafety"
+    },
+    {
+      "label": "FDA GMP",
+      "iri": "http://asu.edu/semantics/SUDOKN/FDAGMP"
+    }
+  ]
+}

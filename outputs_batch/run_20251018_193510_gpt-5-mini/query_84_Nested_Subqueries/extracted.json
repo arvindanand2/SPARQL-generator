@@ -1,0 +1,68 @@
+{
+  "clauses": [
+    {
+      "subject_hint": "manufacturers",
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "manufacturer"
+      },
+      "relation_hint": "for each manufacturer",
+      "type": "modifier",
+      "connective": "IMPLIED"
+    },
+    {
+      "object_hint": "ISO 9001",
+      "subject_hint": "manufacturers",
+      "enum_values": [
+        "ISO 9001"
+      ],
+      "relation_hint": "has certificate",
+      "type": "spo",
+      "connective": "AND"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "ISO 9000",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9000Certificate"
+    },
+    {
+      "label": "QS Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QSQuality"
+    },
+    {
+      "label": "ISO 27001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO27001"
+    },
+    {
+      "label": "AS 9100",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9100Certificate"
+    },
+    {
+      "label": "ISO 14001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO14001"
+    },
+    {
+      "label": "QS 9000",
+      "iri": "http://asu.edu/semantics/SUDOKN/QS9000"
+    },
+    {
+      "label": "ISO 13485",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO13485"
+    },
+    {
+      "label": "ISO 16949",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO16949"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:hasProcessCapability ?cap .
+  ?cap a ?castingClass .
+  VALUES ?castingClass {
+    sdk:CastingCapability
+    sdk:SandCastingCapability
+    sdk:DieCastingCapability
+    sdk:GravityCastingCapability
+    sdk:PermanentMoldCastingCapability
+    sdk:CeramicMoldCastingCapability
+    sdk:InvestmentCastingCapability
+    sdk:MachiningOfCastingCapability
+    sdk:SqueezeCastingCapability
+    sdk:HotChamberDieCastingCapability
+  }
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel . }
+}

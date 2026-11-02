@@ -1,0 +1,15 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?org WHERE {
+  ?org a iof-core:Manufacturer ;
+       sdk:suppliesToIndustry ?ind1 , ?ind2 .
+  ?ind1 a sdk:RenewableEnergyIndustry .
+  ?ind2 a sdk:UtilitiesIndustry .
+  FILTER(?ind1 != ?ind2)
+  FILTER NOT EXISTS {
+    ?org sdk:suppliesToIndustry ?other .
+    FILTER(?other != ?ind1 && ?other != ?ind2)
+  }
+}

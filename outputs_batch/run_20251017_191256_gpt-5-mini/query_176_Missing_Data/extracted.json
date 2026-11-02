@@ -1,0 +1,55 @@
+{
+  "clauses": [
+    {
+      "type": "spo",
+      "subject_hint": "manufacturers",
+      "connective": "OR",
+      "relation_hint": "has business description"
+    },
+    {
+      "type": "spo",
+      "subject_hint": "manufacturers",
+      "connective": "OR",
+      "relation_hint": "has business description"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "NIST",
+      "iri": "http://asu.edu/semantics/SUDOKN/nist"
+    },
+    {
+      "label": "NIST 800171",
+      "iri": "http://asu.edu/semantics/SUDOKN/NIST800171"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "ISO 27001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO27001"
+    },
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    },
+    {
+      "label": "BABA",
+      "iri": "http://asu.edu/semantics/SUDOKN/BABA"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    },
+    {
+      "label": "VDA",
+      "iri": "http://asu.edu/semantics/SUDOKN/VDA"
+    }
+  ]
+}

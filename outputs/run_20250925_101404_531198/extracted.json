@@ -1,0 +1,68 @@
+{
+  "clauses": [
+    {
+      "relation_hint": "located in",
+      "connective": "IMPLIED",
+      "filter": {
+        "op": "eq",
+        "value": "Midwestern United States",
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "type": "scope",
+      "object_hint": "Midwestern United States",
+      "subject_hint": "manufacturers"
+    },
+    {
+      "relation_hint": "manufactures",
+      "connective": "AND",
+      "type": "spo",
+      "object_hint": "Aerospace Components",
+      "subject_hint": "manufacturers"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Aerospace Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/AerospaceQualityCertificate"
+    },
+    {
+      "label": "AS 9120",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9120"
+    },
+    {
+      "label": "AWS Welder",
+      "iri": "http://asu.edu/semantics/SUDOKN/AWSWelder"
+    },
+    {
+      "label": "NADCAP",
+      "iri": "http://asu.edu/semantics/SUDOKN/NADCAP"
+    },
+    {
+      "label": "AS 9100",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9100Certificate"
+    },
+    {
+      "label": "AS 9003",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9003"
+    },
+    {
+      "label": "AS 9102",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9102"
+    },
+    {
+      "label": "AS 9000",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9000"
+    },
+    {
+      "label": "ITAR",
+      "iri": "http://asu.edu/semantics/SUDOKN/ITAR"
+    },
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    }
+  ]
+}

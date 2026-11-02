@@ -1,0 +1,59 @@
+{
+  "clauses": [
+    {
+      "connective": "AND",
+      "type": "spo",
+      "filter": {
+        "op": "eq",
+        "value": "Ceramics",
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "enum_values": [
+        "Ceramics"
+      ],
+      "subject_hint": "companies",
+      "relation_hint": "has material capability"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Ceramic",
+      "iri": "http://asu.edu/semantics/SUDOKN/CeramicProcessingCapability"
+    },
+    {
+      "label": "Ceramic Mold Casting",
+      "iri": "http://asu.edu/semantics/SUDOKN/CeramicMoldCastingCapability"
+    },
+    {
+      "label": "NADCAP",
+      "iri": "http://asu.edu/semantics/SUDOKN/NADCAP"
+    },
+    {
+      "label": "LEED",
+      "iri": "http://asu.edu/semantics/SUDOKN/LEED"
+    },
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    },
+    {
+      "label": "AWS Welder",
+      "iri": "http://asu.edu/semantics/SUDOKN/AWSWelder"
+    },
+    {
+      "label": "Specialized Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/SpecializedMachiningCapability"
+    },
+    {
+      "label": "Investment Casting",
+      "iri": "http://asu.edu/semantics/SUDOKN/InvestmentCastingCapability"
+    },
+    {
+      "label": "Casting",
+      "iri": "http://asu.edu/semantics/SUDOKN/CastingCapability"
+    }
+  ]
+}

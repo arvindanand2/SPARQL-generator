@@ -1,0 +1,11 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+
+SELECT DISTINCT ?manufacturer
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  ?manufacturer sdk:hasMaterialCapability ?bronzeCap .
+  ?bronzeCap a sdk:BronzeProcessingCapability .
+  ?manufacturer sdk:hasMaterialCapability ?steelCap .
+  ?steelCap a sdk:SteelProcessingCapability .
+}

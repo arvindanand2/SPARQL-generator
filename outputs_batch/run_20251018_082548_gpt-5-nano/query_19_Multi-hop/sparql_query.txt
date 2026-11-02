@@ -1,0 +1,14 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?lat ?lon WHERE {
+  ?company a iof-core:Manufacturer ;
+           rdfs:label ?compLabel .
+  FILTER(?compLabel = "Surface Finish")
+  ?company sdk:organizationLocatedIn ?site .
+  ?site sdk:hasSpatialCoordinates ?coords .
+  ?coords sdk:hasLatitudeValue ?lat ;
+          sdk:hasLongitudeValue ?lon .
+}
+LIMIT 1

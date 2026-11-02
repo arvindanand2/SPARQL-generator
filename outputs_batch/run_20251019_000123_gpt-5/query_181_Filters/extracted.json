@@ -1,0 +1,34 @@
+{
+  "clauses": [],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "ISO 14000",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO14000"
+    },
+    {
+      "label": "TL Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/TLQuality"
+    },
+    {
+      "label": "British Retail Consortium",
+      "iri": "http://asu.edu/semantics/SUDOKN/BritishRetailConsortium"
+    },
+    {
+      "label": "BABA",
+      "iri": "http://asu.edu/semantics/SUDOKN/BABA"
+    },
+    {
+      "label": "ISO 14001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO14001"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    },
+    {
+      "label": "QS Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QSQuality"
+    }
+  ]
+}

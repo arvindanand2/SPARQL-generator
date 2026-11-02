@@ -1,0 +1,16 @@
+{
+  "total": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "query_id": 0,
+      "query": "What is the number of employees for the company whose name contains \"Steel\"?",
+      "expected_label": "Lookup",
+      "success": true,
+      "result": "org\tname\tnumEmployees\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 19\n",
+      "attempts": 1,
+      "error": null
+    }
+  ]
+}

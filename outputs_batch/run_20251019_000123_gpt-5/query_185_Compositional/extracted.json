@@ -1,0 +1,60 @@
+{
+  "clauses": [
+    {
+      "connective": "AND",
+      "type": "spo",
+      "enum_values": [
+        "Renewable Energy",
+        "Utilities"
+      ],
+      "subject_hint": "companies",
+      "relation_hint": "supplies to industry"
+    },
+    {
+      "object_hint": "ISO 9001",
+      "connective": "AND",
+      "type": "spo",
+      "subject_hint": "companies",
+      "relation_hint": "has certificate"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "ISO 50001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO50001"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "ISO 14001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO14001"
+    },
+    {
+      "label": "ISO 14000",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO14000"
+    },
+    {
+      "label": "ISO 27001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO27001"
+    },
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "TL 9000",
+      "iri": "http://asu.edu/semantics/SUDOKN/TL9000"
+    },
+    {
+      "label": "ISO 9000",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9000Certificate"
+    }
+  ]
+}

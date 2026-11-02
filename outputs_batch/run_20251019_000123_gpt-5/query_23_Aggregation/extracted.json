@@ -1,0 +1,65 @@
+{
+  "clauses": [
+    {
+      "object_hint": "state",
+      "connective": "AND",
+      "type": "spo",
+      "subject_hint": "manufacturers",
+      "relation_hint": "located in"
+    },
+    {
+      "connective": "IMPLIED",
+      "type": "modifier",
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "state"
+      },
+      "subject_hint": "manufacturers",
+      "relation_hint": "average number of employees"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "Occupational Health And Safety",
+      "iri": "http://asu.edu/semantics/SUDOKN/OccupationalHealthAndSafety"
+    },
+    {
+      "label": "NIST",
+      "iri": "http://asu.edu/semantics/SUDOKN/nist"
+    },
+    {
+      "label": "ISO 50001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO50001"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "AWS Welder",
+      "iri": "http://asu.edu/semantics/SUDOKN/AWSWelder"
+    },
+    {
+      "label": "NIST 800171",
+      "iri": "http://asu.edu/semantics/SUDOKN/NIST800171"
+    },
+    {
+      "label": "VDA",
+      "iri": "http://asu.edu/semantics/SUDOKN/VDA"
+    },
+    {
+      "label": "ISO 14001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO14001"
+    },
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                rdfs:label ?manufacturerLabel ;
+                sdk:hasProcessCapability ?cap .
+  ?cap rdf:type ?capType .
+  FILTER (?capType IN (
+    <http://asu.edu/semantics/SUDOKN/ForgingCapability>,
+    <http://asu.edu/semantics/SUDOKN/RollingCapability>,
+    <http://asu.edu/semantics/SUDOKN/FormingCapability>,
+    <http://asu.edu/semantics/SUDOKN/PowderMetalFormingCapability>
+  ))
+}

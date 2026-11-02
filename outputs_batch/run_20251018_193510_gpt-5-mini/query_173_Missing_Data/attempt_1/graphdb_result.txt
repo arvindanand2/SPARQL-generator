@@ -1,0 +1,3 @@
+manufacturer	certCount
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 2453

@@ -1,0 +1,13 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+
+SELECT ?manufacturer ?site
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  ?manufacturer sdk:organizationLocatedIn ?site .
+  ?site a sdk:GeospatialLocation .
+  OPTIONAL { ?site sdk:hasSpatialCoordinates ?coords .
+             OPTIONAL { ?coords sdk:hasLatitudeValue ?lat . } 
+             OPTIONAL { ?coords sdk:hasLongitudeValue ?long . } }
+  FILTER( !BOUND(?coords) || !BOUND(?lat) || !BOUND(?long) )
+}

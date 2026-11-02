@@ -1,0 +1,67 @@
+{
+  "clauses": [
+    {
+      "object_hint": "Fused Deposition Modeling",
+      "subject_hint": "manufacturers",
+      "filter": {
+        "op": "eq",
+        "value": "Fused Deposition Modeling",
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "enum_values": [
+        "Fused Deposition Modeling"
+      ],
+      "relation_hint": "has process capability",
+      "type": "spo",
+      "connective": "AND"
+    },
+    {
+      "subject_hint": "manufacturers",
+      "modifier": {
+        "kind": "topN",
+        "k": null,
+        "by": "count"
+      },
+      "relation_hint": "has process capability",
+      "type": "modifier",
+      "connective": "IMPLIED"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Fused Deposition Modeling",
+      "iri": "http://asu.edu/semantics/SUDOKN/FusedDepositionModelingCapability"
+    },
+    {
+      "label": "Additive Manufacturing",
+      "iri": "http://asu.edu/semantics/SUDOKN/AdditiveManufacturingCapability"
+    },
+    {
+      "label": "Metal Additive Manufacturing",
+      "iri": "http://asu.edu/semantics/SUDOKN/AdditiveManufacturingCapability"
+    },
+    {
+      "label": "Powder Deposition",
+      "iri": "http://asu.edu/semantics/SUDOKN/PowderDepositionCapability"
+    },
+    {
+      "label": "Polymer Deposition",
+      "iri": "http://asu.edu/semantics/SUDOKN/PolymerDepositionCapability"
+    },
+    {
+      "label": "Solid Deposition",
+      "iri": "http://asu.edu/semantics/SUDOKN/SolidDepositionCapability"
+    },
+    {
+      "label": "Drop On Demand",
+      "iri": "http://asu.edu/semantics/SUDOKN/DropOnDemandCapability"
+    },
+    {
+      "label": "Selective Laser Melting",
+      "iri": "http://asu.edu/semantics/SUDOKN/SelectiveLaserMeltingCapability"
+    }
+  ]
+}

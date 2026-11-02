@@ -1,0 +1,46 @@
+{
+  "clauses": [],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Specialized Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/SpecializedMachiningCapability"
+    },
+    {
+      "label": "Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/MachiningCapability"
+    },
+    {
+      "label": "Standard Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/MachiningCapability"
+    },
+    {
+      "label": "Swiss Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/SwissMachiningCapability"
+    },
+    {
+      "label": "aluminum",
+      "iri": "http://asu.edu/semantics/SUDOKN/AluminumProcessingCapability"
+    },
+    {
+      "label": "Stainless Steel",
+      "iri": "http://asu.edu/semantics/SUDOKN/StainlessSteelProcessingCapability"
+    },
+    {
+      "label": "Plastic Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/PlasticMachiningCapability"
+    },
+    {
+      "label": "Zero Stock Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/ZeroStockMachiningCapability"
+    },
+    {
+      "label": "CNC Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/CNCMachiningCapability"
+    },
+    {
+      "label": "Diamond Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/DiamondMachiningCapability"
+    }
+  ]
+}

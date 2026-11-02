@@ -1,0 +1,19 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?state ?stateLabel (SUM(?numInt) AS ?totalEmployees)
+WHERE {
+  ?org a iof-core:Manufacturer ;
+       sdk:hasNumberOfEmployees ?num ;
+       sdk:organizationLocatedIn ?site .
+  ?site sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  OPTIONAL { ?state rdfs:label ?stateLabel . }
+  BIND(REPLACE(STR(?num), "[^0-9]", "") AS ?numDigits)
+  FILTER(STRLEN(?numDigits) > 0)
+  BIND(xsd:integer(?numDigits) AS ?numInt)
+}
+GROUP BY ?state ?stateLabel
+ORDER BY ?stateLabel

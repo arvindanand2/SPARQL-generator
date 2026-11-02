@@ -1,0 +1,56 @@
+{
+  "clauses": [
+    {
+      "relation_hint": "company name term",
+      "subject_hint": "companies",
+      "type": "spo",
+      "connective": "AND",
+      "object_hint": "Steelworks"
+    },
+    {
+      "relation_hint": "has number of employees",
+      "subject_hint": "companies",
+      "type": "spo",
+      "connective": "AND"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Steel",
+      "iri": "http://asu.edu/semantics/SUDOKN/SteelProcessingCapability"
+    },
+    {
+      "label": "Cast Steel",
+      "iri": "http://asu.edu/semantics/SUDOKN/CastSteelProcessingCapability"
+    },
+    {
+      "label": "Blue Temp Steel",
+      "iri": "http://asu.edu/semantics/SUDOKN/BlueTempSteelProcessingCapability"
+    },
+    {
+      "label": "AWS Welder",
+      "iri": "http://asu.edu/semantics/SUDOKN/AWSWelder"
+    },
+    {
+      "label": "Alloy Steel",
+      "iri": "http://asu.edu/semantics/SUDOKN/AlloySteelProcessingCapability"
+    },
+    {
+      "label": "Low Alloy Steel Lead",
+      "iri": "http://asu.edu/semantics/SUDOKN/LowAlloySteelLeadProcessingCapability"
+    },
+    {
+      "label": "Stainless Steel",
+      "iri": "http://asu.edu/semantics/SUDOKN/StainlessSteelProcessingCapability"
+    },
+    {
+      "label": "Cold Rolled Steel",
+      "iri": "http://asu.edu/semantics/SUDOKN/ColdRolledSteelProcessingCapability"
+    },
+    {
+      "label": "Occupational Health And Safety",
+      "iri": "http://asu.edu/semantics/SUDOKN/OccupationalHealthAndSafety"
+    }
+  ]
+}

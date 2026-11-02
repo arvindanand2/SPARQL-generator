@@ -1,0 +1,14 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?stateLabel (AVG(?emp) AS ?averageEmployees)
+WHERE {
+  ?m a iof-core:Manufacturer .
+  ?m sdk:organizationLocatedIn ?site .
+  ?site sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  ?state rdfs:label ?stateLabel .
+  ?m sdk:hasNumberOfEmployees ?emp .
+}
+GROUP BY ?stateLabel

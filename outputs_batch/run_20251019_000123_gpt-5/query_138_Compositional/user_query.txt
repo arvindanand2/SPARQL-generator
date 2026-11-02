@@ -1,0 +1,1 @@
+For each state, which manufacturer has the largest number of products and also holds at least one certificate?

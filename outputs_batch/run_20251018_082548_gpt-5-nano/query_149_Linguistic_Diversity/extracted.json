@@ -1,0 +1,76 @@
+{
+  "clauses": [
+    {
+      "object_hint": "sector",
+      "relation_hint": "supplies to industry",
+      "connective": "IMPLIED",
+      "filter": {
+        "op": "near",
+        "value": "<sector>",
+        "unit": "industry",
+        "min": null,
+        "max": null
+      },
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "sector"
+      },
+      "subject_hint": "companies",
+      "type": "spo"
+    },
+    {
+      "relation_hint": "number of distinct supplier companies",
+      "connective": "IMPLIED",
+      "filter": {
+        "op": "near",
+        "value": "sector",
+        "unit": "industry",
+        "min": null,
+        "max": null
+      },
+      "modifier": {
+        "kind": "topN",
+        "k": 1,
+        "by": "number of distinct supplier companies"
+      },
+      "subject_hint": "companies",
+      "type": "modifier"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Aerospace Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/AerospaceQualityCertificate"
+    },
+    {
+      "label": "AS 9120",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9120"
+    },
+    {
+      "label": "NIST",
+      "iri": "http://asu.edu/semantics/SUDOKN/nist"
+    },
+    {
+      "label": "QS Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QSQuality"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "foodservice",
+      "iri": "http://asu.edu/semantics/SUDOKN/FoodIndustry"
+    },
+    {
+      "label": "TL Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/TLQuality"
+    },
+    {
+      "label": "LEED",
+      "iri": "http://asu.edu/semantics/SUDOKN/LEED"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "provider": "openai",
+  "model": "text-embedding-3-large",
+  "num_labels": 464,
+  "num_queries": 348,
+  "top1_acc": 0.9598,
+  "top3_acc": 0.9741,
+  "top5_acc": 0.9828,
+  "mrr": 0.9708
+}

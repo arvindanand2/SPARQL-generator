@@ -1,0 +1,38 @@
+{
+  "clauses": [],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "NIST",
+      "iri": "http://asu.edu/semantics/SUDOKN/nist"
+    },
+    {
+      "label": "FDA",
+      "iri": "http://asu.edu/semantics/SUDOKN/FDA"
+    },
+    {
+      "label": "BABA",
+      "iri": "http://asu.edu/semantics/SUDOKN/BABA"
+    },
+    {
+      "label": "LEED",
+      "iri": "http://asu.edu/semantics/SUDOKN/LEED"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "FDA GMP",
+      "iri": "http://asu.edu/semantics/SUDOKN/FDAGMP"
+    },
+    {
+      "label": "Kosher Approved",
+      "iri": "http://asu.edu/semantics/SUDOKN/KosherApproved"
+    },
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    }
+  ]
+}

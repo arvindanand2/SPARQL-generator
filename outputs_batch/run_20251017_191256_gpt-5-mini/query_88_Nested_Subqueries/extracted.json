@@ -1,0 +1,89 @@
+{
+  "clauses": [
+    {
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "NAICS classifier"
+      },
+      "type": "modifier",
+      "subject_hint": "manufacturers",
+      "connective": "IMPLIED"
+    },
+    {
+      "type": "spo",
+      "subject_hint": "manufacturers",
+      "connective": "AND",
+      "filter": {
+        "op": "eq",
+        "value": "primary",
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "relation_hint": "has primary NAICS classifier",
+      "object_hint": "NAICS classifier"
+    },
+    {
+      "type": "spo",
+      "subject_hint": "manufacturers",
+      "connective": "AND",
+      "relation_hint": "located in",
+      "object_hint": "state"
+    },
+    {
+      "modifier": {
+        "kind": "topN",
+        "k": 5,
+        "by": "number of manufacturers"
+      },
+      "type": "modifier",
+      "subject_hint": "states",
+      "connective": "IMPLIED",
+      "relation_hint": "number of manufacturers"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "NIST",
+      "iri": "http://asu.edu/semantics/SUDOKN/nist"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "NADCAP",
+      "iri": "http://asu.edu/semantics/SUDOKN/NADCAP"
+    },
+    {
+      "label": "NIST 800171",
+      "iri": "http://asu.edu/semantics/SUDOKN/NIST800171"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    },
+    {
+      "label": "Occupational Health And Safety",
+      "iri": "http://asu.edu/semantics/SUDOKN/OccupationalHealthAndSafety"
+    },
+    {
+      "label": "ITAR",
+      "iri": "http://asu.edu/semantics/SUDOKN/ITAR"
+    },
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "ISO 50001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO50001"
+    }
+  ]
+}

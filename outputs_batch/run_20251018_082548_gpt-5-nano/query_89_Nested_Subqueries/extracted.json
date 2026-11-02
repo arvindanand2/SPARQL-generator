@@ -1,0 +1,38 @@
+{
+  "clauses": [],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Exotic Material",
+      "iri": "http://asu.edu/semantics/SUDOKN/ExoticMaterialProcessingCapability"
+    },
+    {
+      "label": "Invar",
+      "iri": "http://asu.edu/semantics/SUDOKN/InvarProcessingCapability"
+    },
+    {
+      "label": "Acrylic",
+      "iri": "http://asu.edu/semantics/SUDOKN/AcrylicProcessingCapability"
+    },
+    {
+      "label": "Delrin",
+      "iri": "http://asu.edu/semantics/SUDOKN/DelrinProcessingCapability"
+    },
+    {
+      "label": "Plexiglas",
+      "iri": "http://asu.edu/semantics/SUDOKN/PlexiglasProcessingCapability"
+    },
+    {
+      "label": "CTFE",
+      "iri": "http://asu.edu/semantics/SUDOKN/CTFEProcessingCapability"
+    },
+    {
+      "label": "Torlon",
+      "iri": "http://asu.edu/semantics/SUDOKN/TorlonProcessingCapability"
+    },
+    {
+      "label": "Silicone",
+      "iri": "http://asu.edu/semantics/SUDOKN/SiliconeProcessingCapability"
+    }
+  ]
+}

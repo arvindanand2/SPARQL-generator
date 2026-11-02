@@ -1,0 +1,5 @@
+Run 1 failed. Compressed error:
+Response:
+Response:
+b'MALFORMED QUERY: Encountered " "max" "MAX "" at line 17, column 12.\r\nWas expecting one of:\r\n    "(" ...\r\n    "*" ...\r\n    "distinct" ...\r\n    "reduced" ...\r\n    <VAR1> ...\r\n    <VAR2> ...\r\n    '
+All retries failed.

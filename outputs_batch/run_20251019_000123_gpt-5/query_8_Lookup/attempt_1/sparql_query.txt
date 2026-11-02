@@ -1,0 +1,12 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?latitude
+WHERE {
+  ?site a sdk:GeospatialLocation ;
+        sdk:locatedInCity ?city ;
+        sdk:hasSpatialCoordinates ?coords .
+  ?city rdfs:label ?cityLabel .
+  ?coords sdk:hasLatitudeValue ?latitude .
+  FILTER(CONTAINS(LCASE(STR(?cityLabel)), "springfield"))
+}

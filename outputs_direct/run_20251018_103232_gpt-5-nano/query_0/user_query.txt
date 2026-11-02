@@ -1,0 +1,1 @@
+For each state, what is the average number of employees among manufacturers located there?

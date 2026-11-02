@@ -1,0 +1,19 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?company ?label (COUNT(DISTINCT ?cap) AS ?totalCapabilities)
+WHERE {
+  ?company a iof-core:Manufacturer ;
+           rdfs:label ?label .
+  {
+    ?company sdk:hasProcessCapability ?cap .
+  }
+  UNION
+  {
+    ?company sdk:hasMaterialCapability ?cap .
+  }
+}
+GROUP BY ?company ?label
+ORDER BY DESC(?totalCapabilities)
+LIMIT 1

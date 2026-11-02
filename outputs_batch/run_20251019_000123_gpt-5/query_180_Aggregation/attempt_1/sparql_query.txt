@@ -1,0 +1,23 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT
+  ?naicsCode
+  ?naicsText
+  (COUNT(DISTINCT ?org) AS ?manufacturerCount)
+  (COUNT(DISTINCT ?prod) AS ?totalProductCount)
+  (AVG(DISTINCT ?empClean) AS ?avgEmployeeCount)
+WHERE {
+  ?org a iof-core:Manufacturer ;
+       sdk:hasPrimaryNAICSClassifier ?naicsInst .
+  ?naicsInst sdk:hasNAICSCodeValue ?naicsCode .
+  OPTIONAL { ?naicsInst sdk:hasNAICSTextValue ?naicsText . }
+  OPTIONAL { ?org sdk:manufactures ?prod . }
+  OPTIONAL {
+    ?org sdk:hasNumberOfEmployees ?empLit .
+    BIND(xsd:integer(REPLACE(STR(?empLit), ",", "")) AS ?empClean)
+  }
+}
+GROUP BY ?naicsCode ?naicsText
+ORDER BY ?naicsCode

@@ -1,0 +1,16 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+
+SELECT ?manufacturer
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  OPTIONAL { ?manufacturer sdk:manufactures ?prod . }
+  OPTIONAL { ?manufacturer sdk:hasProcessCapability ?pc . }
+  OPTIONAL { ?manufacturer sdk:hasMaterialCapability ?mc . }
+}
+GROUP BY ?manufacturer
+HAVING (
+  (COUNT(DISTINCT ?prod) = 2)
+  ||
+  ((COUNT(DISTINCT ?pc) = 2) && (COUNT(DISTINCT ?mc) = 2))
+)

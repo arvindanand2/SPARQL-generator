@@ -1,0 +1,31 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+
+SELECT ?industryType ?supplierCount
+WHERE {
+  {
+    SELECT ?industryType (COUNT(DISTINCT ?m) AS ?supplierCount)
+    WHERE {
+      ?m a iof-core:Manufacturer ;
+         sdk:suppliesToIndustry ?ind .
+      ?ind a ?industryType .
+    }
+    GROUP BY ?industryType
+  }
+  {
+    SELECT (MAX(?cnt) AS ?maxCount)
+    WHERE {
+      {
+        SELECT ?industryType (COUNT(DISTINCT ?m) AS ?cnt)
+        WHERE {
+          ?m a iof-core:Manufacturer ;
+             sdk:suppliesToIndustry ?ind .
+          ?ind a ?industryType .
+        }
+        GROUP BY ?industryType
+      }
+    }
+  }
+  FILTER(?supplierCount = ?maxCount)
+}
+ORDER BY ?industryType

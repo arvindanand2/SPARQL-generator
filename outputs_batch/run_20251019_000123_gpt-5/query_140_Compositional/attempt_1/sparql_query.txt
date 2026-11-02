@@ -1,0 +1,16 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?industry ?industryLabel (COUNT(DISTINCT ?supplier) AS ?supplierCount)
+WHERE {
+  ?supplier a iof-core:Manufacturer ;
+            sdk:suppliesToIndustry ?industry ;
+            sdk:manufactures ?product .
+  ?product rdfs:label ?prodLabel .
+  FILTER(regex(str(?prodLabel), "pipe", "i"))
+  OPTIONAL { ?industry rdfs:label ?industryLabel . }
+}
+GROUP BY ?industry ?industryLabel
+HAVING (COUNT(DISTINCT ?supplier) > 100)
+ORDER BY DESC(?supplierCount)

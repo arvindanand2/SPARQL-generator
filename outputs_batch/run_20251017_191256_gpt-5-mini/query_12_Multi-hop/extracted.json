@@ -1,0 +1,68 @@
+{
+  "clauses": [
+    {
+      "type": "spo",
+      "subject_hint": "companies",
+      "connective": "AND",
+      "filter": {
+        "op": "eq",
+        "value": "contains",
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "relation_hint": "company name term",
+      "object_hint": "Tooling"
+    },
+    {
+      "type": "spo",
+      "subject_hint": "companies",
+      "connective": "AND",
+      "relation_hint": "manufactures",
+      "object_hint": "products"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Tool Making",
+      "iri": "http://asu.edu/semantics/SUDOKN/ToolMakingCapability"
+    },
+    {
+      "label": "Live Tooling",
+      "iri": "http://asu.edu/semantics/SUDOKN/LiveToolingCapability"
+    },
+    {
+      "label": "Carbide Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/CarbideMachiningCapability"
+    },
+    {
+      "label": "Diamond Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/DiamondMachiningCapability"
+    },
+    {
+      "label": "Hole Making",
+      "iri": "http://asu.edu/semantics/SUDOKN/HoleMakingCapability"
+    },
+    {
+      "label": "Tubing",
+      "iri": "http://asu.edu/semantics/SUDOKN/TubingCapability"
+    },
+    {
+      "label": "Specialized Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/SpecializedMachiningCapability"
+    },
+    {
+      "label": "Thin Wall Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/ThinWallMachiningCapability"
+    },
+    {
+      "label": "Tapping",
+      "iri": "http://asu.edu/semantics/SUDOKN/TappingCapability"
+    },
+    {
+      "label": "Fabricating",
+      "iri": "http://asu.edu/semantics/SUDOKN/FabricatingCapability"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?category (COUNT(DISTINCT ?m) AS ?manufacturerCount)
+WHERE {
+  VALUES (?category ?class ?keyword) {
+    ("Machining" sdk:MachiningCapability "machining")
+    ("Coating" sdk:CoatingCapability "coating")
+    ("Heat Treating" UNDEF "heat treating")
+  }
+  OPTIONAL {
+    ?m a iof-core:Manufacturer ;
+       sdk:hasProcessCapability ?cap .
+    OPTIONAL {
+      ?cap a ?capClass .
+      ?capClass rdfs:subClassOf* ?class .
+    }
+    OPTIONAL {
+      ?cap rdfs:label ?capLabel .
+      FILTER(CONTAINS(LCASE(STR(?capLabel)), ?keyword))
+      BIND(true AS ?labelHit)
+    }
+    FILTER(BOUND(?capClass) || BOUND(?labelHit))
+  }
+}
+GROUP BY ?category
+ORDER BY ?category

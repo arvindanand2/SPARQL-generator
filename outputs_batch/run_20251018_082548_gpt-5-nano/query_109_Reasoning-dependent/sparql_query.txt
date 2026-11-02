@@ -1,0 +1,13 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?name
+WHERE {
+  ?manufacturer a sdk:Manufacturer ;
+                rdfs:label ?name ;
+                sdk:hasProcessCapability ?cap .
+  VALUES ?cap {
+    sdk:TurningCapability
+    sdk:MillingCapability
+  }
+}

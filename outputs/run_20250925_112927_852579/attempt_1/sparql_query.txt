@@ -1,0 +1,53 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/>
+
+SELECT ?manufacturer ?manufacturerLabel ?cityLabel ?stateLabel ?lat ?long
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+    rdfs:label ?manufacturerLabel ;
+    sdk:organizationLocatedIn ?site .
+  ?site sdk:locatedInCity ?city ;
+        sdk:hasSpatialCoordinates ?coords .
+  ?city sdk:locatedInState ?state ;
+        rdfs:label ?cityLabel .
+  ?state rdfs:label ?stateLabel .
+  ?coords sdk:hasLatitudeValue ?lat ;
+          sdk:hasLongitudeValue ?long .
+
+  # Midwest state filter  
+  FILTER(
+    lcase(str(?stateLabel)) IN (
+      "illinois", "indiana", "iowa", "kansas", "michigan", 
+      "minnesota", "missouri", "nebraska", "north dakota", "ohio", 
+      "south dakota", "wisconsin"
+    )
+  )
+  
+  # Manufacturer must supply to Aerospace industry
+  ?manufacturer sdk:suppliesToIndustry ?industry .
+  FILTER(
+    lcase(str(?industry)) = lcase("http://asu.edu/semantics/SUDOKN/AerospaceQualityCertificate") ||
+    lcase(str(?industry)) = lcase("http://asu.edu/semantics/SUDOKN/AS9120") ||
+    lcase(str(?industry)) = lcase("http://asu.edu/semantics/SUDOKN/AS9003") ||
+    lcase(str(?industry)) = lcase("http://asu.edu/semantics/SUDOKN/AS9100Certificate") ||
+    lcase(str(?industry)) = lcase("http://asu.edu/semantics/SUDOKN/AS9000") ||
+    lcase(str(?industry)) = lcase("http://asu.edu/semantics/SUDOKN/AS9102") ||
+    lcase(str(?industry)) = lcase("http://asu.edu/semantics/SUDOKN/AWSWelder") ||
+    lcase(str(?industry)) = lcase("http://asu.edu/semantics/SUDOKN/NADCAP") ||
+    lcase(str(?industry)) = lcase("http://asu.edu/semantics/SUDOKN/Professional") ||
+    lcase(str(?industry)) = lcase("http://asu.edu/semantics/SUDOKN/QSQuality")
+  )
+  
+  # Optionally, order by distance to ASU Tempe Campus (lat=33.421204, long=-111.933723)
+  BIND(xsd:double(?lat) AS ?lat_val)
+  BIND(xsd:double(?long) AS ?long_val)
+  BIND(
+    SQRT(
+      POW((?lat_val - 33.421204), 2) +
+      POW((?long_val - (-111.933723)), 2)
+    ) AS ?distanceToASU
+  )
+}
+ORDER BY ?distanceToASU

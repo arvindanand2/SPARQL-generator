@@ -1,0 +1,71 @@
+{
+  "clauses": [
+    {
+      "connective": "AND",
+      "type": "spo",
+      "subject_hint": "companies",
+      "relation_hint": "has process capability"
+    },
+    {
+      "connective": "AND",
+      "type": "spo",
+      "subject_hint": "companies",
+      "relation_hint": "has material capability"
+    },
+    {
+      "object_hint": "state",
+      "connective": "IMPLIED",
+      "type": "modifier",
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "state"
+      },
+      "subject_hint": "companies",
+      "relation_hint": "group by location"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Zero Stock Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/ZeroStockMachiningCapability"
+    },
+    {
+      "label": "Specialized Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/SpecializedMachiningCapability"
+    },
+    {
+      "label": "Five Axis Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/FiveAxisMachiningCapability"
+    },
+    {
+      "label": "Tool Making",
+      "iri": "http://asu.edu/semantics/SUDOKN/ToolMakingCapability"
+    },
+    {
+      "label": "Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/MachiningCapability"
+    },
+    {
+      "label": "Standard Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/MachiningCapability"
+    },
+    {
+      "label": "Seven Axis Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/SevenAxisMachiningCapability"
+    },
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "AS 9102",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9102"
+    },
+    {
+      "label": "Live Tooling",
+      "iri": "http://asu.edu/semantics/SUDOKN/LiveToolingCapability"
+    }
+  ]
+}

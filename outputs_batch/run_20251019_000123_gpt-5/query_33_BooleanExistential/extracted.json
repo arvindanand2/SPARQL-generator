@@ -1,0 +1,56 @@
+{
+  "clauses": [
+    {
+      "object_hint": "Pipe",
+      "connective": "AND",
+      "type": "spo",
+      "subject_hint": "manufacturers",
+      "relation_hint": "company name term"
+    },
+    {
+      "connective": "AND",
+      "type": "spo",
+      "subject_hint": "manufacturers",
+      "relation_hint": "has primary NAICS code"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    },
+    {
+      "label": "NADCAP",
+      "iri": "http://asu.edu/semantics/SUDOKN/NADCAP"
+    },
+    {
+      "label": "Pipe Bending",
+      "iri": "http://asu.edu/semantics/SUDOKN/BendingCapability"
+    },
+    {
+      "label": "AWS Welder",
+      "iri": "http://asu.edu/semantics/SUDOKN/AWSWelder"
+    },
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "NIST",
+      "iri": "http://asu.edu/semantics/SUDOKN/nist"
+    },
+    {
+      "label": "BABA",
+      "iri": "http://asu.edu/semantics/SUDOKN/BABA"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "clauses": [
+    {
+      "type": "spo",
+      "subject_hint": "manufacturers",
+      "connective": "AND",
+      "relation_hint": "company name term",
+      "object_hint": "Coating"
+    },
+    {
+      "type": "spo",
+      "subject_hint": "manufacturers",
+      "connective": "AND",
+      "relation_hint": "has business description"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Coating",
+      "iri": "http://asu.edu/semantics/SUDOKN/CoatingCapability"
+    },
+    {
+      "label": "Surface Coating",
+      "iri": "http://asu.edu/semantics/SUDOKN/CoatingCapability"
+    },
+    {
+      "label": "Metal Coating",
+      "iri": "http://asu.edu/semantics/SUDOKN/VaporizedMetalCoatingCapability"
+    },
+    {
+      "label": "Chemical Coating",
+      "iri": "http://asu.edu/semantics/SUDOKN/ChemicalCoatingCapability"
+    },
+    {
+      "label": "Mechanical Coating",
+      "iri": "http://asu.edu/semantics/SUDOKN/MechanicalCoatingCapability"
+    },
+    {
+      "label": "Thermal Coating",
+      "iri": "http://asu.edu/semantics/SUDOKN/ThermalCoatingCapability"
+    },
+    {
+      "label": "Phosphate Coating",
+      "iri": "http://asu.edu/semantics/SUDOKN/PhosphateCoatingCapability"
+    },
+    {
+      "label": "Roll Coating",
+      "iri": "http://asu.edu/semantics/SUDOKN/CoatingCapability"
+    },
+    {
+      "label": "Electrocoating",
+      "iri": "http://asu.edu/semantics/SUDOKN/CoatingCapability"
+    }
+  ]
+}

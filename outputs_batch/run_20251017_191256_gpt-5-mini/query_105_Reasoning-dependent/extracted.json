@@ -1,0 +1,49 @@
+{
+  "clauses": [
+    {
+      "enum_values": [
+        "Drop On Demand"
+      ],
+      "type": "spo",
+      "subject_hint": "manufacturers",
+      "connective": "AND",
+      "relation_hint": "has process capability",
+      "object_hint": "Drop On Demand"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Drop On Demand",
+      "iri": "http://asu.edu/semantics/SUDOKN/DropOnDemandCapability"
+    },
+    {
+      "label": "Powder Deposition",
+      "iri": "http://asu.edu/semantics/SUDOKN/PowderDepositionCapability"
+    },
+    {
+      "label": "Solid Deposition",
+      "iri": "http://asu.edu/semantics/SUDOKN/SolidDepositionCapability"
+    },
+    {
+      "label": "Polymer Deposition",
+      "iri": "http://asu.edu/semantics/SUDOKN/PolymerDepositionCapability"
+    },
+    {
+      "label": "Additive Manufacturing",
+      "iri": "http://asu.edu/semantics/SUDOKN/AdditiveManufacturingCapability"
+    },
+    {
+      "label": "Fused Deposition Modeling",
+      "iri": "http://asu.edu/semantics/SUDOKN/FusedDepositionModelingCapability"
+    },
+    {
+      "label": "Metal Additive Manufacturing",
+      "iri": "http://asu.edu/semantics/SUDOKN/AdditiveManufacturingCapability"
+    },
+    {
+      "label": "Laminated Object Manufacturing",
+      "iri": "http://asu.edu/semantics/SUDOKN/LaminatedObjectManufacturingCapability"
+    }
+  ]
+}

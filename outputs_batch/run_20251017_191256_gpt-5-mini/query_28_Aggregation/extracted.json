@@ -1,0 +1,62 @@
+{
+  "clauses": [
+    {
+      "type": "spo",
+      "subject_hint": "manufacturers",
+      "connective": "AND",
+      "relation_hint": "has process capability"
+    },
+    {
+      "type": "spo",
+      "subject_hint": "manufacturers",
+      "connective": "AND",
+      "relation_hint": "has material capability"
+    },
+    {
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "manufacturer"
+      },
+      "type": "modifier",
+      "subject_hint": "manufacturers",
+      "connective": "IMPLIED",
+      "relation_hint": "number of distinct capabilities"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "NADCAP",
+      "iri": "http://asu.edu/semantics/SUDOKN/NADCAP"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    },
+    {
+      "label": "AS 9102",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9102"
+    },
+    {
+      "label": "QS Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QSQuality"
+    },
+    {
+      "label": "VDA",
+      "iri": "http://asu.edu/semantics/SUDOKN/VDA"
+    },
+    {
+      "label": "Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/MachiningCapability"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?stateLabel ?manu ?manuLabel ?employees WHERE {
+  {
+    SELECT ?manu ?state ?employees (COUNT(?other) AS ?numBetter) WHERE {
+      ?manu a iof-core:Manufacturer ;
+             sdk:hasNumberOfEmployees ?employees ;
+             sdk:organizationLocatedIn ?site .
+      ?site sdk:locatedInCity ?city .
+      ?city sdk:locatedInState ?state .
+      
+      ?other a iof-core:Manufacturer ;
+             sdk:hasNumberOfEmployees ?otherEmp ;
+             sdk:organizationLocatedIn ?otherSite .
+      ?otherSite sdk:locatedInCity ?otherCity .
+      ?otherCity sdk:locatedInState ?state .
+      
+      FILTER (
+        (xsd:integer(?otherEmp) > xsd:integer(?employees))
+        || (xsd:integer(?otherEmp) = xsd:integer(?employees) && str(?other) < str(?manu))
+      )
+    } GROUP BY ?manu ?state ?employees
+  }
+  ?state rdfs:label ?stateLabel .
+  OPTIONAL { ?manu rdfs:label ?manuLabel. }
+  FILTER(?numBetter < 3)
+}
+ORDER BY ?stateLabel DESC(xsd:integer(?employees))

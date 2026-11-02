@@ -1,0 +1,8 @@
+{
+  "batch_id": "batch_68f45607b5dc8190ade03a80e2804f95",
+  "input_file_id": "file-SLAyPgjkoNKkH1fnaJdGjy",
+  "input_file_path": "batch_logs\\batch_input_20251018_200749_958226.jsonl",
+  "description": "Error correction batch (attempt 1)",
+  "timestamp": "20251018_200749_958226",
+  "num_requests": 1
+}

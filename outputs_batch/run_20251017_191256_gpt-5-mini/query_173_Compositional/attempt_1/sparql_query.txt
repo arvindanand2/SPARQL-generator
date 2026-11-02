@@ -1,0 +1,19 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?label WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                rdfs:label ?label .
+  # has at least one Bronze or Steel capability
+  ?manufacturer sdk:hasMaterialCapability ?matAllowed .
+  ?matAllowed a ?allowedType .
+  VALUES ?allowedType { sdk:BronzeProcessingCapability sdk:SteelProcessingCapability }
+
+  # no material capability of a disallowed type
+  FILTER NOT EXISTS {
+    ?manufacturer sdk:hasMaterialCapability ?matOther .
+    ?matOther a ?otherType .
+    FILTER( ?otherType NOT IN (sdk:BronzeProcessingCapability, sdk:SteelProcessingCapability) )
+  }
+}

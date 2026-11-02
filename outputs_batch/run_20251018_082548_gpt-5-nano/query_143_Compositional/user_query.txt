@@ -1,0 +1,1 @@
+For each city, return the average employee count of manufacturers with Heat Treating capabilities.

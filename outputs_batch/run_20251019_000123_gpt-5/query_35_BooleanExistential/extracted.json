@@ -1,0 +1,70 @@
+{
+  "clauses": [
+    {
+      "object_hint": "Phoenix, Arizona",
+      "connective": "IMPLIED",
+      "type": "scope",
+      "subject_hint": "manufacturers",
+      "relation_hint": "located in"
+    },
+    {
+      "connective": "AND",
+      "type": "spo",
+      "subject_hint": "manufacturers",
+      "relation_hint": "has certificate"
+    },
+    {
+      "connective": "IMPLIED",
+      "type": "modifier",
+      "modifier": {
+        "kind": "limit",
+        "k": 1,
+        "by": null
+      },
+      "subject_hint": "manufacturers"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "AWS Welder",
+      "iri": "http://asu.edu/semantics/SUDOKN/AWSWelder"
+    },
+    {
+      "label": "AS 9100",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9100Certificate"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "AS 9102",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9102"
+    },
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "ISO 27001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO27001"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    },
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    },
+    {
+      "label": "ISO 13485",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO13485"
+    }
+  ]
+}

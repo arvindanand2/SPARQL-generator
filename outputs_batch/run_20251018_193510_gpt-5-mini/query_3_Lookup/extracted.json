@@ -1,0 +1,53 @@
+{
+  "clauses": [
+    {
+      "object_hint": "PIPE AND PIPE FITTING",
+      "subject_hint": "classifiers",
+      "relation_hint": "has text containing",
+      "type": "spo",
+      "connective": "AND"
+    },
+    {
+      "object_hint": "NAICS code",
+      "subject_hint": "classifiers",
+      "relation_hint": "has NAICS code",
+      "type": "spo",
+      "connective": "IMPLIED"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    },
+    {
+      "label": "NADCAP",
+      "iri": "http://asu.edu/semantics/SUDOKN/NADCAP"
+    },
+    {
+      "label": "AWS Welder",
+      "iri": "http://asu.edu/semantics/SUDOKN/AWSWelder"
+    },
+    {
+      "label": "Tubing",
+      "iri": "http://asu.edu/semantics/SUDOKN/TubingCapability"
+    },
+    {
+      "label": "Pipe Bending",
+      "iri": "http://asu.edu/semantics/SUDOKN/BendingCapability"
+    },
+    {
+      "label": "AS 9102",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9102"
+    },
+    {
+      "label": "NIST 800171",
+      "iri": "http://asu.edu/semantics/SUDOKN/NIST800171"
+    },
+    {
+      "label": "ISO 13485",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO13485"
+    }
+  ]
+}

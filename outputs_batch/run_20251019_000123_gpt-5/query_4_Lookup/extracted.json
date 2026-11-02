@@ -1,0 +1,61 @@
+{
+  "clauses": [
+    {
+      "object_hint": "Machining",
+      "connective": "IMPLIED",
+      "type": "spo",
+      "filter": {
+        "op": "eq",
+        "value": "Machining",
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "subject_hint": "process capabilities",
+      "relation_hint": "name contains"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/MachiningCapability"
+    },
+    {
+      "label": "Standard Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/MachiningCapability"
+    },
+    {
+      "label": "Specialized Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/SpecializedMachiningCapability"
+    },
+    {
+      "label": "Milling",
+      "iri": "http://asu.edu/semantics/SUDOKN/MillingCapability"
+    },
+    {
+      "label": "Hole Making",
+      "iri": "http://asu.edu/semantics/SUDOKN/HoleMakingCapability"
+    },
+    {
+      "label": "CNC Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/CNCMachiningCapability"
+    },
+    {
+      "label": "Tool Making",
+      "iri": "http://asu.edu/semantics/SUDOKN/ToolMakingCapability"
+    },
+    {
+      "label": "Swiss Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/SwissMachiningCapability"
+    },
+    {
+      "label": "Five Axis Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/FiveAxisMachiningCapability"
+    },
+    {
+      "label": "Plastic Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/PlasticMachiningCapability"
+    }
+  ]
+}

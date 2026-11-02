@@ -1,0 +1,22 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?cityLabel (AVG(xsd:decimal(REPLACE(?empStr, ",", ""))) AS ?avgEmployeeCount)
+WHERE {
+  {
+    SELECT ?city ?empStr
+    WHERE {
+      ?m a iof-core:Manufacturer ;
+         sdk:organizationLocatedIn ?site ;
+         sdk:hasNumberOfEmployees ?empStr .
+      ?site sdk:locatedInCity ?city .
+      ?m (sdk:hasProcessCapability|sdk:hasMaterialCapability) ?cap .
+    }
+    GROUP BY ?m ?city ?empStr
+    HAVING (COUNT(DISTINCT ?cap) >= 4)
+  }
+  ?city rdfs:label ?cityLabel .
+}
+GROUP BY ?cityLabel

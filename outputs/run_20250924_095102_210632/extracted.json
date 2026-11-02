@@ -1,0 +1,156 @@
+{
+  "clauses": [
+    {
+      "type": "scope",
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "company"
+      },
+      "subject_hint": "manufacturers",
+      "enum_values": [
+        "Texas",
+        "Indiana"
+      ],
+      "connective": "IMPLIED",
+      "relation_hint": "headquartered in"
+    },
+    {
+      "type": "spo",
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "process and material"
+      },
+      "subject_hint": "manufacturers",
+      "enum_values": [
+        "CNC milling",
+        "anodizing"
+      ],
+      "connective": "AND",
+      "relation_hint": "perform"
+    },
+    {
+      "type": "enum",
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "material"
+      },
+      "subject_hint": "process input",
+      "enum_values": [
+        "aluminum",
+        "titanium"
+      ],
+      "connective": "IMPLIED",
+      "relation_hint": "material"
+    },
+    {
+      "type": "spo",
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "company"
+      },
+      "object_hint": "public",
+      "subject_hint": "manufacturers",
+      "connective": "AND",
+      "relation_hint": "has web address"
+    },
+    {
+      "type": "spo",
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "industry"
+      },
+      "subject_hint": "manufacturers",
+      "enum_values": [
+        "aerospace",
+        "military"
+      ],
+      "connective": "AND",
+      "relation_hint": "supplies to industry"
+    },
+    {
+      "type": "modifier",
+      "modifier": {
+        "kind": "topN",
+        "k": 5,
+        "by": "count_distinct_process_capabilities_across_US_sites"
+      },
+      "object_hint": "number",
+      "subject_hint": "companies",
+      "connective": "IMPLIED",
+      "relation_hint": "process capabilities"
+    },
+    {
+      "type": "modifier",
+      "filter": {
+        "op": "near",
+        "value": "Austin",
+        "unit": "city",
+        "min": null,
+        "max": null
+      },
+      "modifier": {
+        "kind": "nearest",
+        "k": null,
+        "by": "distance_to_Austin"
+      },
+      "object_hint": "Austin",
+      "subject_hint": "companies",
+      "connective": "FOLLOWUP",
+      "relation_hint": "located near"
+    }
+  ],
+  "warnings": [
+    "Clause #2\u20133 decomposes 'CNC milling and anodizing on aluminum or titanium' to enum over both processes and materials; ambiguity about process-material combination mapping.",
+    "Offsets best-effort, but approximate due to clause interleaving; see clause char_start/char_end.",
+    "'counted across all their U.S. sites' reflected in modifier group by 'count_distinct_process_capabilities_across_US_sites'.",
+    "'representative site city/state' and required outputs are implicit\u2014no clauses for select-returns, only for filter relationships and ordering.",
+    "Break tie on 'nearest to Austin' mapped as a modifier."
+  ],
+  "relevant_iris": [
+    {
+      "label": "Five Axis Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/FiveAxisMachiningCapability"
+    },
+    {
+      "label": "Seven Axis Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/SevenAxisMachiningCapability"
+    },
+    {
+      "label": "NADCAP",
+      "iri": "http://asu.edu/semantics/SUDOKN/NADCAP"
+    },
+    {
+      "label": "Specialized Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/SpecializedMachiningCapability"
+    },
+    {
+      "label": "Aerospace Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/AerospaceQualityCertificate"
+    },
+    {
+      "label": "Anodizing",
+      "iri": "http://asu.edu/semantics/SUDOKN/AnodizingCapability"
+    },
+    {
+      "label": "CNC Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/CNCMachiningCapability"
+    },
+    {
+      "label": "CNC Cylindrical Grinding",
+      "iri": "http://asu.edu/semantics/SUDOKN/CNCCylindricalGrindingCapability"
+    },
+    {
+      "label": "AWS Welder",
+      "iri": "http://asu.edu/semantics/SUDOKN/AWSWelder"
+    },
+    {
+      "label": "AS 9102",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9102"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?name
+WHERE {
+  ?org a iof-core:Manufacturer .
+  {
+    ?org rdfs:label ?name .
+    FILTER(langMatches(lang(?name), "en"))
+  }
+  UNION
+  {
+    ?org rdfs:label ?name .
+    FILTER(lang(?name) = "")
+    FILTER NOT EXISTS {
+      ?org rdfs:label ?enName .
+      FILTER(langMatches(lang(?enName), "en"))
+    }
+  }
+}
+ORDER BY ?name

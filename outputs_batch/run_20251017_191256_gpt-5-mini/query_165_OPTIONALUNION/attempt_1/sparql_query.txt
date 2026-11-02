@@ -1,0 +1,20 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer (CONCAT(COALESCE(?cityLabel, "Unknown"), ", ", COALESCE(?stateLabel, "Unknown")) AS ?locationString)
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  OPTIONAL {
+    ?manufacturer sdk:organizationLocatedIn ?site .
+    OPTIONAL {
+      ?site sdk:locatedInCity ?city .
+      ?city rdfs:label ?cityLabel .
+      OPTIONAL {
+        ?city sdk:locatedInState ?state .
+        ?state rdfs:label ?stateLabel .
+      }
+    }
+  }
+}

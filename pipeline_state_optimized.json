@@ -1,0 +1,110 @@
+{
+  "queries": {
+    "0": {
+      "stage": "complete",
+      "extracted": {
+        "clauses": [
+          {
+            "object_hint": "employee_count},{",
+            "type": "spo",
+            "filter": {
+              "op": "eq",
+              "value": "Steel",
+              "unit": "",
+              "min": null,
+              "max": null
+            },
+            "connective": "AND",
+            "relation_hint": "has attribute",
+            "subject_hint": "Company"
+          }
+        ],
+        "mapping": [],
+        "relevant_iris": []
+      },
+      "sparql_query": "PREFIX schema: <http://schema.org/>\nSELECT ?count WHERE {\n  ?org a schema:Organization ;\n       schema:name ?name ;\n       schema:numberOfEmployees ?count .\n  FILTER(CONTAINS(LCASE(?name), \"steel\"))\n}\nLIMIT 1",
+      "current_attempt": 2,
+      "llm_prompt": "Generate valid SPARQL using provided data.\n\nCRITICAL RULES:\n- DO NOT invent classes/predicates in custom namespaces\n- Use ONLY classes/predicates from Relevant IRIs or Reference Turtle\n- If IRI matches exactly, use the IRI not label\n- Output ONLY the SPARQL query, no explanation\n\nUser Query: What is the number of employees for the company whose name contains \"Steel\"?\n\nExtracted Clauses: {\"clauses\":[{\"object_hint\":\"employee_count},{\",\"type\":\"spo\",\"filter\":{\"op\":\"eq\",\"value\":\"Steel\",\"unit\":\"\",\"min\":null,\"max\":null},\"connective\":\"AND\",\"relation_hint\":\"has attribute\",\"subject_hint\":\"Company\"}],\"mapping\":[]}\n\nRelevant IRIs: []\n\nReference Data: @base <http://asu.edu/semantics/SUDOKN/>\n@prefix iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>\n@prefix sdk: <http://asu.edu/semantics/SUDOKN/>\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n@prefix iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/>\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#>\n@prefix bfo: <http://purl.obolibrary.org/obo/>\n\n\nsdk:org-001 a iof-core:Manufacturer ;\n  rdfs:label \"Company A\" ;\n  sdk:hasNumberOfEmployees \"1,000\"^^xsd:int ;\n  sdk:hasCertificate sdk:cert-001 ,sdk:cert-002 ;\n  sdk:suppliesToIndustry sdk:industry-001, sdk:industry-002 ;\n  sdk:hasProcessCapability sdk:org-001-cap-machining, sdk:org-001-cap-coating ;\n  sdk:hasMaterialCapability sdk:org-001-mat-bronze, sdk:org-001-mat-steel ;\n  sdk:hasPrimaryNAICSClassifier sdk:naics-332996.0-inst ;\n  sdk:organizationLocatedIn sdk:site-001 ;\n  sdk:manufactures sdk:prod-001, sdk:prod-002 ;\n  iof-core:describedBy sdk:org-001-description .\n\nsdk:industry-001 a sdk:RenewableEnergyIndustry ;\n  rdfs:label \"Industry A\" .\n\nsdk:industry-002 a sdk:UtilitiesIndustry ;\n  rdfs:label \"Industry B\" .\n\n# --- Process capabilities (2) ---\nsdk:org-001-cap-machining a sdk:MachiningCapability ;\n  rdfs:label \"Machining\" .\n\nsdk:org-001-cap-coating a sdk:CoatingCapability ;\n  rdfs:label \"Coating\" .\n\n# --- Material capabilities (2) ---\nsdk:org-001-mat-bronze a sdk:BronzeProcessingCapability ;\n  rdfs:label \"Bronze\" .\n\nsdk:org-001-mat-steel a sdk:SteelProcessingCapability ;\n  rdfs:label \"Steel\" .\n\n# --- NAICS ---\nsdk:naics-332996.0-inst a sdk:NAICS332996.0 ;\n  sdk:hasNAICSCodeValue \"332996.0\"^^xsd:integer ;\n  sdk:hasNAICSTextValue \"FABRICATED PIPE AND PIPE FITTING MANUFACTURING\" .\n\n# --- Site / location (anonymized) ---\nsdk:site-001 a sdk:GeospatialLocation ;\n  sdk:hasSpatialCoordinates sdk:site-001-coordinates ;\n  sdk:locatedInCity sdk:city-001 ;\n  sdk:hasZIPcode sdk:site-001-zip ;\n  sdk:hasPostalAddress sdk:site-001-address .\n\nsdk:site-001-coordinates a sdk:TwoDimensionalCartesianSpatialCoordinateDatum ;\n  sdk:hasLatitudeValue \"0.0000000\"^^xsd:float ;\n  sdk:hasLongitudeValue \"0.0000000\"^^xsd:float .\n\nsdk:city-001 a sdk:City ;\n  sdk:locatedInState sdk:state-001 ;\n  rdfs:label \"City A\" .\n\nsdk:state-001 a sdk:State ;\n  rdfs:label \"State A\" .\n\nsdk:site-001-zip a sdk:USPostalCode ;\n  sdk:hasIntegerValue \"00000.0\"^^xsd:string .\n\nsdk:site-001-address a sdk:PostalAddress ;\n  iof-scro:hasTextValue \"Address Line 1\" .\n\n# --- Products (2) ---\nsdk:prod-001 a iof-core:MaterialProduct ; rdfs:label \"Product 1\" .\nsdk:prod-002 a iof-core:MaterialProduct ; rdfs:label \"Product 2\" .\n\n# --- Cert & description ---\nsdk:cert-001 a sdk:ISO9001 ;\n  rdfs:label \"ISO 9001\" .\n\nsdk:cert-002 a sdk:ISO14001 ;\n  rdfs:label \"ISO 14001\" .\n\nsdk:org-001-description a sdk:BusinessDescription ;\n  iof-scro:hasTextValue \"This is a sample business description for Company A.\" .\n",
+      "timing": {
+        "extraction": 13.487088680267334,
+        "extraction_llm_gen": 13.485230684280396,
+        "extraction_compression": 2.193450927734375e-05,
+        "extraction_iri_matching": 8.58306884765625e-06,
+        "initial_sparql": 8.483832836151123,
+        "validation": 5.054590702056885,
+        "correction": 7.150871992111206
+      }
+    },
+    "1": {
+      "stage": "initial_sparql_complete",
+      "extracted": {
+        "clauses": [
+          {
+            "object_hint": "ISO 9001",
+            "type": "spo",
+            "filter": {
+              "op": "eq",
+              "value": "ISO 9001",
+              "unit": "",
+              "min": null,
+              "max": null
+            },
+            "connective": "AND",
+            "relation_hint": "has certificate",
+            "subject_hint": "manufacturer"
+          }
+        ],
+        "mapping": [],
+        "relevant_iris": []
+      },
+      "sparql_query": "",
+      "current_attempt": 3,
+      "llm_prompt": "Generate valid SPARQL using provided data.\n\nCRITICAL RULES:\n- DO NOT invent classes/predicates in custom namespaces\n- Use ONLY classes/predicates from Relevant IRIs or Reference Turtle\n- If IRI matches exactly, use the IRI not label\n- Output ONLY the SPARQL query, no explanation\n\nUser Query: What is the English name of the manufacturer that holds the certificate labeled \"ISO 9001\"?\n\nExtracted Clauses: {\"clauses\":[{\"object_hint\":\"ISO 9001\",\"type\":\"spo\",\"filter\":{\"op\":\"eq\",\"value\":\"ISO 9001\",\"unit\":\"\",\"min\":null,\"max\":null},\"connective\":\"AND\",\"relation_hint\":\"has certificate\",\"subject_hint\":\"manufacturer\"}],\"mapping\":[]}\n\nRelevant IRIs: []\n\nReference Data: @base <http://asu.edu/semantics/SUDOKN/>\n@prefix iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>\n@prefix sdk: <http://asu.edu/semantics/SUDOKN/>\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n@prefix iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/>\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#>\n@prefix bfo: <http://purl.obolibrary.org/obo/>\n\n\nsdk:org-001 a iof-core:Manufacturer ;\n  rdfs:label \"Company A\" ;\n  sdk:hasNumberOfEmployees \"1,000\"^^xsd:int ;\n  sdk:hasCertificate sdk:cert-001 ,sdk:cert-002 ;\n  sdk:suppliesToIndustry sdk:industry-001, sdk:industry-002 ;\n  sdk:hasProcessCapability sdk:org-001-cap-machining, sdk:org-001-cap-coating ;\n  sdk:hasMaterialCapability sdk:org-001-mat-bronze, sdk:org-001-mat-steel ;\n  sdk:hasPrimaryNAICSClassifier sdk:naics-332996.0-inst ;\n  sdk:organizationLocatedIn sdk:site-001 ;\n  sdk:manufactures sdk:prod-001, sdk:prod-002 ;\n  iof-core:describedBy sdk:org-001-description .\n\nsdk:industry-001 a sdk:RenewableEnergyIndustry ;\n  rdfs:label \"Industry A\" .\n\nsdk:industry-002 a sdk:UtilitiesIndustry ;\n  rdfs:label \"Industry B\" .\n\n# --- Process capabilities (2) ---\nsdk:org-001-cap-machining a sdk:MachiningCapability ;\n  rdfs:label \"Machining\" .\n\nsdk:org-001-cap-coating a sdk:CoatingCapability ;\n  rdfs:label \"Coating\" .\n\n# --- Material capabilities (2) ---\nsdk:org-001-mat-bronze a sdk:BronzeProcessingCapability ;\n  rdfs:label \"Bronze\" .\n\nsdk:org-001-mat-steel a sdk:SteelProcessingCapability ;\n  rdfs:label \"Steel\" .\n\n# --- NAICS ---\nsdk:naics-332996.0-inst a sdk:NAICS332996.0 ;\n  sdk:hasNAICSCodeValue \"332996.0\"^^xsd:integer ;\n  sdk:hasNAICSTextValue \"FABRICATED PIPE AND PIPE FITTING MANUFACTURING\" .\n\n# --- Site / location (anonymized) ---\nsdk:site-001 a sdk:GeospatialLocation ;\n  sdk:hasSpatialCoordinates sdk:site-001-coordinates ;\n  sdk:locatedInCity sdk:city-001 ;\n  sdk:hasZIPcode sdk:site-001-zip ;\n  sdk:hasPostalAddress sdk:site-001-address .\n\nsdk:site-001-coordinates a sdk:TwoDimensionalCartesianSpatialCoordinateDatum ;\n  sdk:hasLatitudeValue \"0.0000000\"^^xsd:float ;\n  sdk:hasLongitudeValue \"0.0000000\"^^xsd:float .\n\nsdk:city-001 a sdk:City ;\n  sdk:locatedInState sdk:state-001 ;\n  rdfs:label \"City A\" .\n\nsdk:state-001 a sdk:State ;\n  rdfs:label \"State A\" .\n\nsdk:site-001-zip a sdk:USPostalCode ;\n  sdk:hasIntegerValue \"00000.0\"^^xsd:string .\n\nsdk:site-001-address a sdk:PostalAddress ;\n  iof-scro:hasTextValue \"Address Line 1\" .\n\n# --- Products (2) ---\nsdk:prod-001 a iof-core:MaterialProduct ; rdfs:label \"Product 1\" .\nsdk:prod-002 a iof-core:MaterialProduct ; rdfs:label \"Product 2\" .\n\n# --- Cert & description ---\nsdk:cert-001 a sdk:ISO9001 ;\n  rdfs:label \"ISO 9001\" .\n\nsdk:cert-002 a sdk:ISO14001 ;\n  rdfs:label \"ISO 14001\" .\n\nsdk:org-001-description a sdk:BusinessDescription ;\n  iof-scro:hasTextValue \"This is a sample business description for Company A.\" .\n",
+      "timing": {
+        "extraction": 8.717511177062988,
+        "extraction_llm_gen": 8.716394662857056,
+        "extraction_compression": 2.1219253540039062e-05,
+        "extraction_iri_matching": 9.775161743164062e-06,
+        "initial_sparql": 8.063416719436646,
+        "validation": 14.47474479675293,
+        "correction": 16.649333953857422
+      }
+    },
+    "2": {
+      "stage": "initial_sparql_complete",
+      "extracted": {
+        "clauses": [
+          {
+            "object_hint": "NAICS text",
+            "type": "spo",
+            "filter": {
+              "op": "eq",
+              "value": "332996",
+              "unit": "",
+              "min": null,
+              "max": null
+            },
+            "connective": "IMPLIED",
+            "relation_hint": "has NAICS code",
+            "subject_hint": "classifier"
+          }
+        ],
+        "mapping": [],
+        "relevant_iris": []
+      },
+      "sparql_query": "",
+      "current_attempt": 3,
+      "llm_prompt": "Generate valid SPARQL using provided data.\n\nCRITICAL RULES:\n- DO NOT invent classes/predicates in custom namespaces\n- Use ONLY classes/predicates from Relevant IRIs or Reference Turtle\n- If IRI matches exactly, use the IRI not label\n- Output ONLY the SPARQL query, no explanation\n\nUser Query: What is the NAICS text for the classifier with code 332996?\n\nExtracted Clauses: {\"clauses\":[{\"object_hint\":\"NAICS text\",\"type\":\"spo\",\"filter\":{\"op\":\"eq\",\"value\":\"332996\",\"unit\":\"\",\"min\":null,\"max\":null},\"connective\":\"IMPLIED\",\"relation_hint\":\"has NAICS code\",\"subject_hint\":\"classifier\"}],\"mapping\":[]}\n\nRelevant IRIs: []\n\nReference Data: @base <http://asu.edu/semantics/SUDOKN/>\n@prefix iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>\n@prefix sdk: <http://asu.edu/semantics/SUDOKN/>\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n@prefix iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/>\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#>\n@prefix bfo: <http://purl.obolibrary.org/obo/>\n\n\nsdk:org-001 a iof-core:Manufacturer ;\n  rdfs:label \"Company A\" ;\n  sdk:hasNumberOfEmployees \"1,000\"^^xsd:int ;\n  sdk:hasCertificate sdk:cert-001 ,sdk:cert-002 ;\n  sdk:suppliesToIndustry sdk:industry-001, sdk:industry-002 ;\n  sdk:hasProcessCapability sdk:org-001-cap-machining, sdk:org-001-cap-coating ;\n  sdk:hasMaterialCapability sdk:org-001-mat-bronze, sdk:org-001-mat-steel ;\n  sdk:hasPrimaryNAICSClassifier sdk:naics-332996.0-inst ;\n  sdk:organizationLocatedIn sdk:site-001 ;\n  sdk:manufactures sdk:prod-001, sdk:prod-002 ;\n  iof-core:describedBy sdk:org-001-description .\n\nsdk:industry-001 a sdk:RenewableEnergyIndustry ;\n  rdfs:label \"Industry A\" .\n\nsdk:industry-002 a sdk:UtilitiesIndustry ;\n  rdfs:label \"Industry B\" .\n\n# --- Process capabilities (2) ---\nsdk:org-001-cap-machining a sdk:MachiningCapability ;\n  rdfs:label \"Machining\" .\n\nsdk:org-001-cap-coating a sdk:CoatingCapability ;\n  rdfs:label \"Coating\" .\n\n# --- Material capabilities (2) ---\nsdk:org-001-mat-bronze a sdk:BronzeProcessingCapability ;\n  rdfs:label \"Bronze\" .\n\nsdk:org-001-mat-steel a sdk:SteelProcessingCapability ;\n  rdfs:label \"Steel\" .\n\n# --- NAICS ---\nsdk:naics-332996.0-inst a sdk:NAICS332996.0 ;\n  sdk:hasNAICSCodeValue \"332996.0\"^^xsd:integer ;\n  sdk:hasNAICSTextValue \"FABRICATED PIPE AND PIPE FITTING MANUFACTURING\" .\n\n# --- Site / location (anonymized) ---\nsdk:site-001 a sdk:GeospatialLocation ;\n  sdk:hasSpatialCoordinates sdk:site-001-coordinates ;\n  sdk:locatedInCity sdk:city-001 ;\n  sdk:hasZIPcode sdk:site-001-zip ;\n  sdk:hasPostalAddress sdk:site-001-address .\n\nsdk:site-001-coordinates a sdk:TwoDimensionalCartesianSpatialCoordinateDatum ;\n  sdk:hasLatitudeValue \"0.0000000\"^^xsd:float ;\n  sdk:hasLongitudeValue \"0.0000000\"^^xsd:float .\n\nsdk:city-001 a sdk:City ;\n  sdk:locatedInState sdk:state-001 ;\n  rdfs:label \"City A\" .\n\nsdk:state-001 a sdk:State ;\n  rdfs:label \"State A\" .\n\nsdk:site-001-zip a sdk:USPostalCode ;\n  sdk:hasIntegerValue \"00000.0\"^^xsd:string .\n\nsdk:site-001-address a sdk:PostalAddress ;\n  iof-scro:hasTextValue \"Address Line 1\" .\n\n# --- Products (2) ---\nsdk:prod-001 a iof-core:MaterialProduct ; rdfs:label \"Product 1\" .\nsdk:prod-002 a iof-core:MaterialProduct ; rdfs:label \"Product 2\" .\n\n# --- Cert & description ---\nsdk:cert-001 a sdk:ISO9001 ;\n  rdfs:label \"ISO 9001\" .\n\nsdk:cert-002 a sdk:ISO14001 ;\n  rdfs:label \"ISO 14001\" .\n\nsdk:org-001-description a sdk:BusinessDescription ;\n  iof-scro:hasTextValue \"This is a sample business description for Company A.\" .\n",
+      "timing": {
+        "extraction": 12.747433185577393,
+        "extraction_llm_gen": 12.746687173843384,
+        "extraction_compression": 1.7642974853515625e-05,
+        "extraction_iri_matching": 7.152557373046875e-06,
+        "initial_sparql": 7.927351236343384,
+        "validation": 9.643945455551147,
+        "correction": 16.811925172805786
+      }
+    }
+  },
+  "metadata": {}
+}

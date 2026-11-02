@@ -1,0 +1,9 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?code
+WHERE {
+  ?classifier sdk:hasNAICSTextValue ?text ;
+              sdk:hasNAICSCodeValue ?code .
+  FILTER(CONTAINS(UCASE(STR(?text)), "PIPE AND PIPE FITTING"))
+}

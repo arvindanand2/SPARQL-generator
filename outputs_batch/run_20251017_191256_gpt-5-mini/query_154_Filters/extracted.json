@@ -1,0 +1,77 @@
+{
+  "clauses": [
+    {
+      "enum_values": [
+        "332996"
+      ],
+      "type": "scope",
+      "subject_hint": "manufacturers",
+      "connective": "AND",
+      "filter": {
+        "op": "eq",
+        "value": "332996",
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "relation_hint": "has primary NAICS",
+      "object_hint": "332996"
+    },
+    {
+      "enum_values": [
+        "PIPE"
+      ],
+      "type": "spo",
+      "subject_hint": "manufacturers",
+      "connective": "AND",
+      "filter": {
+        "op": "on",
+        "value": "PIPE",
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "relation_hint": "NAICS text mentions",
+      "object_hint": "PIPE"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    },
+    {
+      "label": "NADCAP",
+      "iri": "http://asu.edu/semantics/SUDOKN/NADCAP"
+    },
+    {
+      "label": "Tubing",
+      "iri": "http://asu.edu/semantics/SUDOKN/TubingCapability"
+    },
+    {
+      "label": "AWS Welder",
+      "iri": "http://asu.edu/semantics/SUDOKN/AWSWelder"
+    },
+    {
+      "label": "Pipe Bending",
+      "iri": "http://asu.edu/semantics/SUDOKN/BendingCapability"
+    },
+    {
+      "label": "AS 9102",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9102"
+    },
+    {
+      "label": "NIST",
+      "iri": "http://asu.edu/semantics/SUDOKN/nist"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "Specialized Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/SpecializedMachiningCapability"
+    }
+  ]
+}

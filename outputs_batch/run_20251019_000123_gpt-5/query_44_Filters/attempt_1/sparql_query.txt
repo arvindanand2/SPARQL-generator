@@ -1,0 +1,14 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?org ?orgLabel ?state ?stateName
+WHERE {
+  ?org a iof-core:Manufacturer ;
+       sdk:organizationLocatedIn ?site .
+  OPTIONAL { ?org rdfs:label ?orgLabel . }
+  ?site sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  ?state rdfs:label ?stateName .
+  FILTER regex(str(?stateName), "^New ")
+}

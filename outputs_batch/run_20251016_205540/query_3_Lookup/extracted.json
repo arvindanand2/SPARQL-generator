@@ -1,0 +1,62 @@
+{
+  "clauses": [
+    {
+      "type": "spo",
+      "relation_hint": "belongs to code system",
+      "object_hint": "NAICS",
+      "subject_hint": "classifiers",
+      "connective": "AND"
+    },
+    {
+      "type": "spo",
+      "filter": {
+        "op": "eq",
+        "value": "PIPE AND PIPE FITTING",
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "relation_hint": "has classifier text",
+      "object_hint": "PIPE AND PIPE FITTING",
+      "subject_hint": "classifiers",
+      "connective": "AND"
+    }
+  ],
+  "mapping": [
+    "Text search uses eq filter due to limited operator set; treat as contains in downstream mapping."
+  ],
+  "relevant_iris": [
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    },
+    {
+      "label": "AWS Welder",
+      "iri": "http://asu.edu/semantics/SUDOKN/AWSWelder"
+    },
+    {
+      "label": "NADCAP",
+      "iri": "http://asu.edu/semantics/SUDOKN/NADCAP"
+    },
+    {
+      "label": "Tubing",
+      "iri": "http://asu.edu/semantics/SUDOKN/TubingCapability"
+    },
+    {
+      "label": "Pipe Bending",
+      "iri": "http://asu.edu/semantics/SUDOKN/BendingCapability"
+    },
+    {
+      "label": "ISO 14000",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO14000"
+    },
+    {
+      "label": "ISO 13485",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO13485"
+    },
+    {
+      "label": "AS 9102",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9102"
+    }
+  ]
+}

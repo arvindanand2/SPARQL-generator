@@ -1,0 +1,60 @@
+{
+  "clauses": [
+    {
+      "object_hint": "city",
+      "connective": "AND",
+      "type": "spo",
+      "subject_hint": "manufacturers",
+      "relation_hint": "located in"
+    },
+    {
+      "connective": "IMPLIED",
+      "type": "modifier",
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "city"
+      },
+      "subject_hint": "manufacturers"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "QS Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QSQuality"
+    },
+    {
+      "label": "VDA",
+      "iri": "http://asu.edu/semantics/SUDOKN/VDA"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    },
+    {
+      "label": "IATF",
+      "iri": "http://asu.edu/semantics/SUDOKN/IATF"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "QS 9000",
+      "iri": "http://asu.edu/semantics/SUDOKN/QS9000"
+    },
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    }
+  ]
+}

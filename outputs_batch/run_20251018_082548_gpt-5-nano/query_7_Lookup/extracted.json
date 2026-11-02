@@ -1,0 +1,57 @@
+{
+  "clauses": [
+    {
+      "object_hint": "Suite",
+      "relation_hint": "postal address contains",
+      "connective": "IMPLIED",
+      "filter": {
+        "op": "eq",
+        "value": "Suite",
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "subject_hint": "sites",
+      "type": "spo"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Square Tubing",
+      "iri": "http://asu.edu/semantics/SUDOKN/SquareTubingCapability"
+    },
+    {
+      "label": "NIST 800171",
+      "iri": "http://asu.edu/semantics/SUDOKN/NIST800171"
+    },
+    {
+      "label": "foodservice",
+      "iri": "http://asu.edu/semantics/SUDOKN/FoodIndustry"
+    },
+    {
+      "label": "Zelux",
+      "iri": "http://asu.edu/semantics/SUDOKN/ZeluxProcessingCapability"
+    },
+    {
+      "label": "Zinc Alloy",
+      "iri": "http://asu.edu/semantics/SUDOKN/ZincAlloyProcessingCapability"
+    },
+    {
+      "label": "LEED",
+      "iri": "http://asu.edu/semantics/SUDOKN/LEED"
+    },
+    {
+      "label": "AS 9003",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9003"
+    },
+    {
+      "label": "AS 9120",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9120"
+    },
+    {
+      "label": "PPS",
+      "iri": "http://asu.edu/semantics/SUDOKN/PPSProcessingCapability"
+    }
+  ]
+}

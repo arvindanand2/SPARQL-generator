@@ -1,0 +1,15 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?name WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                rdfs:label ?name ;
+                sdk:organizationLocatedIn ?site .
+  ?site sdk:hasSpatialCoordinates ?coords .
+  ?coords sdk:hasLatitudeValue ?lat ;
+          sdk:hasLongitudeValue ?long .
+  FILTER(?lat = "33.364638"^^xsd:float && ?long = "-111.931604"^^xsd:float)
+}

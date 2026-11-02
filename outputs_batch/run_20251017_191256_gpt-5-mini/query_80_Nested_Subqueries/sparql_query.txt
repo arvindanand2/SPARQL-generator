@@ -1,0 +1,19 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?stateLabel (COUNT(DISTINCT ?org) AS ?manufacturerCount)
+WHERE {
+  ?org a iof-core:Manufacturer ;
+       sdk:organizationLocatedIn ?site .
+  ?site sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  ?state rdfs:label ?stateLabel .
+  FILTER(
+    CONTAINS(LCASE(?stateLabel), "texas") ||
+    CONTAINS(LCASE(?stateLabel), "new york") ||
+    CONTAINS(LCASE(?stateLabel), "florida")
+  )
+}
+GROUP BY ?stateLabel
+ORDER BY DESC(?manufacturerCount)

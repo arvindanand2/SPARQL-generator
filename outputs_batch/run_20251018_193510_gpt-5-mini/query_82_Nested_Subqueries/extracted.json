@@ -1,0 +1,67 @@
+{
+  "clauses": [
+    {
+      "subject_hint": "companies",
+      "filter": {
+        "op": "gt",
+        "value": 250,
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "relation_hint": "has number of employees",
+      "type": "spo",
+      "connective": "AND"
+    },
+    {
+      "subject_hint": "companies",
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "employees bucket"
+      },
+      "relation_hint": "count of companies",
+      "type": "modifier",
+      "connective": "IMPLIED"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "ISO 14000",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO14000"
+    },
+    {
+      "label": "Occupational Health And Safety",
+      "iri": "http://asu.edu/semantics/SUDOKN/OccupationalHealthAndSafety"
+    },
+    {
+      "label": "BABA",
+      "iri": "http://asu.edu/semantics/SUDOKN/BABA"
+    },
+    {
+      "label": "ISO 50001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO50001"
+    },
+    {
+      "label": "OHSAS 18001",
+      "iri": "http://asu.edu/semantics/SUDOKN/OHSAS18001"
+    },
+    {
+      "label": "LEED",
+      "iri": "http://asu.edu/semantics/SUDOKN/LEED"
+    },
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    }
+  ]
+}

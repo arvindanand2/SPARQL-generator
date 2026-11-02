@@ -1,0 +1,76 @@
+{
+  "clauses": [
+    {
+      "object_hint": "332996",
+      "subject_hint": "classifiers",
+      "filter": {
+        "op": "eq",
+        "value": "332996",
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "modifier": {
+        "kind": "limit",
+        "k": 1,
+        "by": null
+      },
+      "enum_values": [
+        "332996"
+      ],
+      "relation_hint": "has code",
+      "type": "scope",
+      "connective": "IMPLIED"
+    },
+    {
+      "object_hint": "NAICS text",
+      "subject_hint": "classifiers",
+      "relation_hint": "has NAICS text",
+      "type": "spo",
+      "connective": "AND"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    },
+    {
+      "label": "Specialized Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/SpecializedMachiningCapability"
+    },
+    {
+      "label": "AWS Welder",
+      "iri": "http://asu.edu/semantics/SUDOKN/AWSWelder"
+    },
+    {
+      "label": "NADCAP",
+      "iri": "http://asu.edu/semantics/SUDOKN/NADCAP"
+    },
+    {
+      "label": "NIST",
+      "iri": "http://asu.edu/semantics/SUDOKN/nist"
+    },
+    {
+      "label": "Sheet Metal Processing",
+      "iri": "http://asu.edu/semantics/SUDOKN/SheetMetalProcessingProcessingCapability"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "NIST 800171",
+      "iri": "http://asu.edu/semantics/SUDOKN/NIST800171"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "LEED",
+      "iri": "http://asu.edu/semantics/SUDOKN/LEED"
+    }
+  ]
+}

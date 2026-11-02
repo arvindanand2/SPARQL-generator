@@ -1,0 +1,1 @@
+For each city, what's the average employee count among manufacturers with four or more total capabilities?

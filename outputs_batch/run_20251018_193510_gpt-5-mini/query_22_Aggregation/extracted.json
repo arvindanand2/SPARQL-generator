@@ -1,0 +1,60 @@
+{
+  "clauses": [
+    {
+      "subject_hint": "manufacturers",
+      "relation_hint": "supplies to industry",
+      "type": "spo",
+      "connective": "AND"
+    },
+    {
+      "subject_hint": "manufacturers",
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "industry"
+      },
+      "relation_hint": "number of distinct manufacturers",
+      "type": "modifier",
+      "connective": "IMPLIED"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    },
+    {
+      "label": "AS 9120",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9120"
+    },
+    {
+      "label": "NIST",
+      "iri": "http://asu.edu/semantics/SUDOKN/nist"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "IATF",
+      "iri": "http://asu.edu/semantics/SUDOKN/IATF"
+    },
+    {
+      "label": "QS Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QSQuality"
+    },
+    {
+      "label": "ITAR",
+      "iri": "http://asu.edu/semantics/SUDOKN/ITAR"
+    },
+    {
+      "label": "VDA",
+      "iri": "http://asu.edu/semantics/SUDOKN/VDA"
+    }
+  ]
+}

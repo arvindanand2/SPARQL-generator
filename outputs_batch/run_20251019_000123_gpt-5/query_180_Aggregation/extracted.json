@@ -1,0 +1,104 @@
+{
+  "clauses": [
+    {
+      "connective": "IMPLIED",
+      "type": "modifier",
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "primary NAICS code"
+      },
+      "subject_hint": "manufacturers",
+      "relation_hint": "has primary NAICS code"
+    },
+    {
+      "connective": "IMPLIED",
+      "type": "modifier",
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "primary NAICS code"
+      },
+      "subject_hint": "manufacturers",
+      "relation_hint": "number of manufacturers"
+    },
+    {
+      "object_hint": "products",
+      "connective": "IMPLIED",
+      "type": "spo",
+      "subject_hint": "manufacturers",
+      "relation_hint": "manufactures"
+    },
+    {
+      "connective": "IMPLIED",
+      "type": "modifier",
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "primary NAICS code"
+      },
+      "subject_hint": "manufacturers",
+      "relation_hint": "number of products manufactured"
+    },
+    {
+      "connective": "IMPLIED",
+      "type": "spo",
+      "subject_hint": "manufacturers",
+      "relation_hint": "has employee count"
+    },
+    {
+      "connective": "IMPLIED",
+      "type": "modifier",
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "primary NAICS code"
+      },
+      "subject_hint": "manufacturers",
+      "relation_hint": "average employee count"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "NIST",
+      "iri": "http://asu.edu/semantics/SUDOKN/nist"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "Occupational Health And Safety",
+      "iri": "http://asu.edu/semantics/SUDOKN/OccupationalHealthAndSafety"
+    },
+    {
+      "label": "NADCAP",
+      "iri": "http://asu.edu/semantics/SUDOKN/NADCAP"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "AS 9120",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9120"
+    },
+    {
+      "label": "AS 9102",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9102"
+    },
+    {
+      "label": "AS 9000",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9000"
+    },
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "clauses": [
+    {
+      "enum_values": [
+        "Phosphate Coating"
+      ],
+      "subject_hint": "manufacturers",
+      "connective": "AND",
+      "type": "spo",
+      "relation_hint": "has process capability"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Phosphate Coating",
+      "iri": "http://asu.edu/semantics/SUDOKN/PhosphateCoatingCapability"
+    },
+    {
+      "label": "Phosphate Conversion Coating",
+      "iri": "http://asu.edu/semantics/SUDOKN/PhosphateConversionCoatingCapability"
+    },
+    {
+      "label": "Chemical Conversion Coating",
+      "iri": "http://asu.edu/semantics/SUDOKN/ChemicalConversionCoatingCapability"
+    },
+    {
+      "label": "Chromate Conversion Coating",
+      "iri": "http://asu.edu/semantics/SUDOKN/ChromateConversionCoatingCapability"
+    },
+    {
+      "label": "Fused Nitrate Conversion Coating",
+      "iri": "http://asu.edu/semantics/SUDOKN/FusedNitrateConversionCoatingCapability"
+    },
+    {
+      "label": "Cadmium Plating",
+      "iri": "http://asu.edu/semantics/SUDOKN/CadmiumPlatingCapability"
+    },
+    {
+      "label": "Alkaline Oxide Conversion Coating",
+      "iri": "http://asu.edu/semantics/SUDOKN/AlkalineOxideConversionCoatingCapability"
+    },
+    {
+      "label": "Zinc Plating",
+      "iri": "http://asu.edu/semantics/SUDOKN/ZincPlatingCapability"
+    },
+    {
+      "label": "Chemical Coating",
+      "iri": "http://asu.edu/semantics/SUDOKN/ChemicalCoatingCapability"
+    }
+  ]
+}

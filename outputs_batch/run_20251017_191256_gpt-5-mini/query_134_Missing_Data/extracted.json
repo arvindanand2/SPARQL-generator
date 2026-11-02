@@ -1,0 +1,65 @@
+{
+  "clauses": [
+    {
+      "modifier": {
+        "kind": "fewest",
+        "k": 0,
+        "by": null
+      },
+      "type": "spo",
+      "subject_hint": "manufacturers",
+      "connective": "IMPLIED",
+      "filter": {
+        "op": "eq",
+        "value": 0,
+        "unit": "count",
+        "min": null,
+        "max": null
+      },
+      "relation_hint": "has material capability"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "ITAR",
+      "iri": "http://asu.edu/semantics/SUDOKN/ITAR"
+    },
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "NIST",
+      "iri": "http://asu.edu/semantics/SUDOKN/nist"
+    },
+    {
+      "label": "Aerospace Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/AerospaceQualityCertificate"
+    },
+    {
+      "label": "ISO 27001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO27001"
+    },
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    },
+    {
+      "label": "NIST 800171",
+      "iri": "http://asu.edu/semantics/SUDOKN/NIST800171"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "NADCAP",
+      "iri": "http://asu.edu/semantics/SUDOKN/NADCAP"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+For each manufacturer, return its ZIP code if present; otherwise leave it blank.

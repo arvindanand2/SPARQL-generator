@@ -1,0 +1,57 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?company_name ?city_name ?state_name (COUNT(DISTINCT ?process_capability) AS ?num_processes)
+WHERE {
+  ?company a iof-core:Manufacturer ;
+          rdfs:label ?company_name ;
+          sdk:organizationLocatedIn ?site ;
+          sdk:hasProcessCapability ?req_cap1 , ?req_cap2 ;
+          sdk:hasProcessCapability ?process_capability ;
+          sdk:suppliesToIndustry ?industry1 , ?industry2 ;
+          sdk:hasPublicWebAddress ?webaddr .
+
+  # Headquarters filter (Texas or Indiana)
+  ?site sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  ?state rdfs:label ?state_name .
+  FILTER(?state_name IN ("Texas", "Indiana"))
+  ?city rdfs:label ?city_name .
+
+  # Each of the required process+material combos at (any) site
+  {
+    # CNC milling on aluminum or titanium
+    ?req_cap1 a sdk:CNCMachiningCapability ;
+              sdk:hasInputMaterial ?mat1 .
+    FILTER(?mat1 IN (sdk:Aluminum, sdk:Titanium))
+  }
+  {
+    # Anodizing on aluminum or titanium
+    ?req_cap2 a sdk:AnodizingCapability ;
+              sdk:hasInputMaterial ?mat2 .
+    FILTER(?mat2 IN (sdk:Aluminum, sdk:Titanium))
+  }
+
+  # Supplies to both required industries
+  ?industry1 rdfs:label "aerospace" .
+  ?industry2 rdfs:label "military" .
+
+  # U.S. site city/state (all qualifiers above checked at site)
+  ?site sdk:locatedInCity ?city .
+  ?city rdfs:label ?city_name .
+  ?city sdk:locatedInState ?state .
+  ?state rdfs:label ?state_name .
+
+  # Process count: only US sites (assuming US states are in the ontology)
+  # All process_capabilities at all the company's US sites
+  ?company sdk:organizationLocatedIn ?site_all .
+  ?site_all sdk:locatedInCity ?city_all .
+  ?city_all sdk:locatedInState ?state_all .
+  ?state_all rdfs:label ?state_name_all .
+  FILTER(?state_name_all IN ("Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"))
+  ?company sdk:hasProcessCapability ?process_capability .
+}
+GROUP BY ?company ?company_name ?city_name ?state_name
+ORDER BY DESC(?num_processes) (ABS(LCASE(?city_name) - "austin")) # approximate 'nearest to Austin' tiebreaker
+LIMIT 5

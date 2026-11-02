@@ -1,0 +1,7 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+
+ASK WHERE {
+  ?m a iof-core:Manufacturer .
+  FILTER NOT EXISTS { ?m sdk:hasCertificate ?cert . }
+}

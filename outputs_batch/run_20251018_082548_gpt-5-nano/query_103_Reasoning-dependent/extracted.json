@@ -1,0 +1,52 @@
+{
+  "clauses": [
+    {
+      "object_hint": "Polymer Deposition",
+      "relation_hint": "has process capability",
+      "connective": "IMPLIED",
+      "filter": {
+        "op": "eq",
+        "value": "Polymer Deposition",
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "subject_hint": "manufacturers",
+      "enum_values": [
+        "Polymer Deposition"
+      ],
+      "type": "spo"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Polymer Deposition",
+      "iri": "http://asu.edu/semantics/SUDOKN/PolymerDepositionCapability"
+    },
+    {
+      "label": "Powder Deposition",
+      "iri": "http://asu.edu/semantics/SUDOKN/PowderDepositionCapability"
+    },
+    {
+      "label": "Solid Deposition",
+      "iri": "http://asu.edu/semantics/SUDOKN/SolidDepositionCapability"
+    },
+    {
+      "label": "Fused Deposition Modeling",
+      "iri": "http://asu.edu/semantics/SUDOKN/FusedDepositionModelingCapability"
+    },
+    {
+      "label": "Drop On Demand",
+      "iri": "http://asu.edu/semantics/SUDOKN/DropOnDemandCapability"
+    },
+    {
+      "label": "Additive Manufacturing",
+      "iri": "http://asu.edu/semantics/SUDOKN/AdditiveManufacturingCapability"
+    },
+    {
+      "label": "Selective Laser Sintering",
+      "iri": "http://asu.edu/semantics/SUDOKN/SelectiveLaserSinteringCapability"
+    }
+  ]
+}

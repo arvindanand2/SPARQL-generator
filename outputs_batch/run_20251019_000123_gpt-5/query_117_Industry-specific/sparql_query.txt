@@ -1,0 +1,30 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?industry ?industryLabel ?manufacturerCount
+WHERE {
+  {
+    SELECT ?industry (COUNT(DISTINCT ?m) AS ?manufacturerCount)
+    WHERE {
+      ?m a iof-core:Manufacturer ;
+         sdk:suppliesToIndustry ?industry .
+    }
+    GROUP BY ?industry
+  }
+  OPTIONAL { ?industry rdfs:label ?industryLabel . }
+  {
+    SELECT (MAX(?cnt) AS ?maxCount)
+    WHERE {
+      {
+        SELECT ?industry2 (COUNT(DISTINCT ?m2) AS ?cnt)
+        WHERE {
+          ?m2 a iof-core:Manufacturer ;
+              sdk:suppliesToIndustry ?industry2 .
+        }
+        GROUP BY ?industry2
+      }
+    }
+  }
+  FILTER(?manufacturerCount = ?maxCount)
+}

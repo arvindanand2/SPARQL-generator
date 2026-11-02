@@ -1,0 +1,59 @@
+{
+  "clauses": [
+    {
+      "connective": "AND",
+      "type": "spo",
+      "enum_values": [
+        "Renewable Energy",
+        "Utilities"
+      ],
+      "subject_hint": "manufacturers",
+      "relation_hint": "supplies to industry"
+    },
+    {
+      "connective": "AND",
+      "type": "modifier",
+      "filter": {
+        "op": "eq",
+        "value": 2,
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "modifier": {
+        "kind": "order",
+        "k": null,
+        "by": null
+      },
+      "subject_hint": "manufacturers",
+      "relation_hint": "number of distinct industries"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "ISO 50001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO50001"
+    },
+    {
+      "label": "LEED",
+      "iri": "http://asu.edu/semantics/SUDOKN/LEED"
+    },
+    {
+      "label": "ISO 14000",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO14000"
+    },
+    {
+      "label": "ISO 14001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO14001"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    }
+  ]
+}

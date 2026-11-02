@@ -1,0 +1,61 @@
+{
+  "clauses": [
+    {
+      "object_hint": "manufacturers",
+      "subject_hint": "products",
+      "relation_hint": "manufactured by",
+      "type": "spo",
+      "connective": "AND"
+    },
+    {
+      "subject_hint": "products",
+      "modifier": {
+        "kind": "topN",
+        "k": 1,
+        "by": "number of distinct manufacturers"
+      },
+      "relation_hint": "number of distinct manufacturers",
+      "type": "modifier",
+      "connective": "IMPLIED"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "FDA",
+      "iri": "http://asu.edu/semantics/SUDOKN/FDA"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    },
+    {
+      "label": "HACCP",
+      "iri": "http://asu.edu/semantics/SUDOKN/HACCP"
+    },
+    {
+      "label": "FDA GMP",
+      "iri": "http://asu.edu/semantics/SUDOKN/FDAGMP"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "Kosher Approved",
+      "iri": "http://asu.edu/semantics/SUDOKN/KosherApproved"
+    },
+    {
+      "label": "FDA 21 CFR Part 820",
+      "iri": "http://asu.edu/semantics/SUDOKN/FDA21CFRPart820"
+    }
+  ]
+}

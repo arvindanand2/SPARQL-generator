@@ -1,0 +1,71 @@
+{
+  "clauses": [
+    {
+      "enum_values": [
+        "Ceramic"
+      ],
+      "type": "spo",
+      "subject_hint": "manufacturers",
+      "connective": "AND",
+      "relation_hint": "has material capability"
+    },
+    {
+      "enum_values": [
+        "New Hampshire",
+        "New Jersey",
+        "New Mexico",
+        "New York"
+      ],
+      "type": "scope",
+      "subject_hint": "manufacturers",
+      "connective": "IMPLIED",
+      "filter": {
+        "op": "near",
+        "value": "New",
+        "unit": "prefix",
+        "min": null,
+        "max": null
+      },
+      "relation_hint": "located in"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Ceramic",
+      "iri": "http://asu.edu/semantics/SUDOKN/CeramicProcessingCapability"
+    },
+    {
+      "label": "Ceramic Mold Casting",
+      "iri": "http://asu.edu/semantics/SUDOKN/CeramicMoldCastingCapability"
+    },
+    {
+      "label": "Chemical Processing",
+      "iri": "http://asu.edu/semantics/SUDOKN/ChemicalProcessingCapability"
+    },
+    {
+      "label": "NIST",
+      "iri": "http://asu.edu/semantics/SUDOKN/nist"
+    },
+    {
+      "label": "Forming",
+      "iri": "http://asu.edu/semantics/SUDOKN/FormingCapability"
+    },
+    {
+      "label": "Nonconventional Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/MachiningCapability"
+    },
+    {
+      "label": "Specialized Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/SpecializedMachiningCapability"
+    },
+    {
+      "label": "Zero Stock Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/ZeroStockMachiningCapability"
+    },
+    {
+      "label": "Diamond Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/DiamondMachiningCapability"
+    }
+  ]
+}

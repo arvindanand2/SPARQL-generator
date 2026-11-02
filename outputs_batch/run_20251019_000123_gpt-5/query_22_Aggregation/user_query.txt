@@ -1,0 +1,1 @@
+For each industry, how many manufacturers supply to it?

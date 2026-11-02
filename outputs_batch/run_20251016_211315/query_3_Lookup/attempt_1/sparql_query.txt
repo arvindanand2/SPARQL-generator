@@ -1,0 +1,8 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+
+SELECT DISTINCT ?code
+WHERE {
+  ?classifier sdk:hasNAICSTextValue ?text ;
+              sdk:hasNAICSCodeValue ?code .
+  FILTER(CONTAINS(LCASE(STR(?text)), "pipe and pipe fitting"))
+}

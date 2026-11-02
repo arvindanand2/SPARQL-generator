@@ -1,0 +1,72 @@
+{
+  "clauses": [
+    {
+      "type": "spo",
+      "subject_hint": "manufacturers",
+      "connective": "AND",
+      "relation_hint": "has number of employees"
+    },
+    {
+      "enum_values": [
+        "Small: <=50",
+        "Medium: 51-250",
+        "Large: >250"
+      ],
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "employees buckets; aggregate=count per bucket"
+      },
+      "type": "modifier",
+      "subject_hint": "manufacturers",
+      "connective": "IMPLIED",
+      "filter": {
+        "op": "between",
+        "value": null,
+        "unit": "employees",
+        "min": null,
+        "max": null
+      },
+      "relation_hint": "number of employees bucket"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "BABA",
+      "iri": "http://asu.edu/semantics/SUDOKN/BABA"
+    },
+    {
+      "label": "Occupational Health And Safety",
+      "iri": "http://asu.edu/semantics/SUDOKN/OccupationalHealthAndSafety"
+    },
+    {
+      "label": "ISO 14000",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO14000"
+    },
+    {
+      "label": "LEED",
+      "iri": "http://asu.edu/semantics/SUDOKN/LEED"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    },
+    {
+      "label": "ISO 50001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO50001"
+    },
+    {
+      "label": "OHSAS 18001",
+      "iri": "http://asu.edu/semantics/SUDOKN/OHSAS18001"
+    },
+    {
+      "label": "ISO 14001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO14001"
+    }
+  ]
+}

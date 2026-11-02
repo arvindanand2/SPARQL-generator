@@ -1,0 +1,67 @@
+{
+  "clauses": [
+    {
+      "object_hint": "Robotics",
+      "relation_hint": "company name term",
+      "connective": "AND",
+      "filter": {
+        "op": "eq",
+        "value": "Robotics",
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "subject_hint": "manufacturers",
+      "type": "spo"
+    },
+    {
+      "object_hint": "?city",
+      "relation_hint": "located in",
+      "connective": "IMPLIED",
+      "filter": {
+        "op": "near",
+        "value": "city",
+        "unit": "city",
+        "min": null,
+        "max": null
+      },
+      "subject_hint": "manufacturers",
+      "type": "spo"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Techtron",
+      "iri": "http://asu.edu/semantics/SUDOKN/TechtronProcessingCapability"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "Five Axis Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/FiveAxisMachiningCapability"
+    },
+    {
+      "label": "Rotary Broaching",
+      "iri": "http://asu.edu/semantics/SUDOKN/RotaryBroachingCapability"
+    },
+    {
+      "label": "NIST",
+      "iri": "http://asu.edu/semantics/SUDOKN/nist"
+    },
+    {
+      "label": "CNC Cylindrical Grinding",
+      "iri": "http://asu.edu/semantics/SUDOKN/CNCCylindricalGrindingCapability"
+    },
+    {
+      "label": "CNC Laser Cutting",
+      "iri": "http://asu.edu/semantics/SUDOKN/CNCLaserCuttingCapability"
+    },
+    {
+      "label": "Seven Axis Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/SevenAxisMachiningCapability"
+    }
+  ]
+}

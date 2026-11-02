@@ -1,0 +1,10 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+ASK WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:hasMaterialCapability ?matBronze , ?matSteel .
+  ?matBronze a sdk:BronzeProcessingCapability .
+  ?matSteel a sdk:SteelProcessingCapability .
+}

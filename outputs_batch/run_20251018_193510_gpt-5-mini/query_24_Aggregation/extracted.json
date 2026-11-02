@@ -1,0 +1,79 @@
+{
+  "clauses": [
+    {
+      "object_hint": "state",
+      "subject_hint": "manufacturers",
+      "relation_hint": "located in",
+      "type": "scope",
+      "connective": "IMPLIED"
+    },
+    {
+      "object_hint": "employee count",
+      "subject_hint": "manufacturers",
+      "relation_hint": "has number of employees",
+      "type": "spo",
+      "connective": "AND"
+    },
+    {
+      "subject_hint": "manufacturers",
+      "filter": {
+        "op": "on",
+        "value": "state",
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "state, sum of number of employees"
+      },
+      "relation_hint": "has number of employees",
+      "type": "modifier",
+      "connective": "IMPLIED"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Occupational Health And Safety",
+      "iri": "http://asu.edu/semantics/SUDOKN/OccupationalHealthAndSafety"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "ISO 50001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO50001"
+    },
+    {
+      "label": "NIST 800171",
+      "iri": "http://asu.edu/semantics/SUDOKN/NIST800171"
+    },
+    {
+      "label": "FDA",
+      "iri": "http://asu.edu/semantics/SUDOKN/FDA"
+    },
+    {
+      "label": "OHSAS 18001",
+      "iri": "http://asu.edu/semantics/SUDOKN/OHSAS18001"
+    },
+    {
+      "label": "BABA",
+      "iri": "http://asu.edu/semantics/SUDOKN/BABA"
+    },
+    {
+      "label": "NIST",
+      "iri": "http://asu.edu/semantics/SUDOKN/nist"
+    },
+    {
+      "label": "AWS Welder",
+      "iri": "http://asu.edu/semantics/SUDOKN/AWSWelder"
+    }
+  ]
+}

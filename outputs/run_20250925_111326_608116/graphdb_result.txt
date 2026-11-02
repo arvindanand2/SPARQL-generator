@@ -1,0 +1,3 @@
+manufacturer	manufacturerLabel	cityLabel	stateLabel	lat	long
+[results redacted: SUDOKN instance data not redistributed]
+Rows (counted at redaction): 1606

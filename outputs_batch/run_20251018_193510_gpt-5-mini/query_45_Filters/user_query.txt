@@ -1,0 +1,1 @@
+List manufacturers with latitude > 45.0 at their site coordinates.

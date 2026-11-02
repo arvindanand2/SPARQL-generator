@@ -1,0 +1,1 @@
+return the manufacturers that are involved in plastic and rubber product manufacturing  (secondary NAICS code = 326)and have some type of quality management certificate.if secondary NAICS code is not in the instance data, suggest a different query

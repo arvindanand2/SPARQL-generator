@@ -1,0 +1,10 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+
+SELECT ?manufacturer ?zip
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  OPTIONAL {
+    ?manufacturer sdk:organizationLocatedIn/sdk:hasZIPcode/sdk:hasIntegerValue ?zip .
+  }
+}

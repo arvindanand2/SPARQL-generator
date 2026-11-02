@@ -1,0 +1,87 @@
+{
+  "clauses": [
+    {
+      "object_hint": "Surface Finish",
+      "relation_hint": "company name term",
+      "connective": "AND",
+      "filter": {
+        "op": "eq",
+        "value": "Surface Finish",
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "modifier": {
+        "kind": "limit",
+        "k": 1,
+        "by": "company name"
+      },
+      "subject_hint": "companies",
+      "type": "spo"
+    },
+    {
+      "object_hint": "companies",
+      "relation_hint": "linked to",
+      "connective": "AND",
+      "filter": {
+        "op": "near",
+        "value": "Surface Finish",
+        "unit": "company name",
+        "min": null,
+        "max": null
+      },
+      "modifier": {
+        "kind": "limit",
+        "k": 1,
+        "by": "linked company"
+      },
+      "subject_hint": "sites",
+      "type": "spo"
+    },
+    {
+      "object_hint": "site latitude",
+      "relation_hint": "has latitude",
+      "connective": "IMPLIED",
+      "subject_hint": "sites",
+      "type": "spo"
+    },
+    {
+      "object_hint": "site longitude",
+      "relation_hint": "has longitude",
+      "connective": "IMPLIED",
+      "subject_hint": "sites",
+      "type": "spo"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Surface Finishing",
+      "iri": "http://asu.edu/semantics/SUDOKN/SurfaceFinishingCapability"
+    },
+    {
+      "label": "Diamond Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/DiamondMachiningCapability"
+    },
+    {
+      "label": "Lapping",
+      "iri": "http://asu.edu/semantics/SUDOKN/LappingCapability"
+    },
+    {
+      "label": "Surface Preparation",
+      "iri": "http://asu.edu/semantics/SUDOKN/SurfacePreparationCapability"
+    },
+    {
+      "label": "Chemical Coating",
+      "iri": "http://asu.edu/semantics/SUDOKN/ChemicalCoatingCapability"
+    },
+    {
+      "label": "Honing",
+      "iri": "http://asu.edu/semantics/SUDOKN/HoningCapability"
+    },
+    {
+      "label": "Grinding",
+      "iri": "http://asu.edu/semantics/SUDOKN/GrindingCapability"
+    }
+  ]
+}

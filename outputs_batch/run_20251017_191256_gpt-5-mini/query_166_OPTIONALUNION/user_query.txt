@@ -1,0 +1,1 @@
+List each manufacturer with its site coordinates when available; otherwise say no-coords.

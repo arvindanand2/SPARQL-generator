@@ -1,0 +1,18 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?stateLabel ?manuf (COUNT(DISTINCT ?p) AS ?numProducts)
+WHERE {
+  ?manuf a iof-core:Manufacturer .
+  ?manuf sdk:organizationLocatedIn ?loc .
+  ?loc sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  ?state rdfs:label ?stateLabel .
+  FILTER EXISTS { ?manuf sdk:hasCertificate ?cert . }
+  ?manuf sdk:manufactures ?p .
+  ?p a iof-core:MaterialProduct .
+}
+GROUP BY ?stateLabel ?manuf
+ORDER BY DESC(?numProducts)
+LIMIT 1

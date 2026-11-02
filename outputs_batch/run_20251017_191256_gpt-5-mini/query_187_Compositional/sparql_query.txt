@@ -1,0 +1,21 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/>
+PREFIX bfo: <http://purl.obolibrary.org/obo/>
+
+SELECT DISTINCT ?company ?companyLabel ?employeesInt WHERE {
+  ?company a iof-core:Manufacturer ;
+           rdfs:label ?companyLabel ;
+           sdk:organizationLocatedIn ?site ;
+           sdk:hasNumberOfEmployees ?employeesStr ;
+           sdk:hasProcessCapability ?cap .
+  ?site sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  ?state rdfs:label "State A" .
+  ?cap rdfs:label ?capLabel .
+  BIND(xsd:integer(REPLACE(str(?employeesStr), "[^0-9]", "")) AS ?employeesInt)
+  FILTER(?employeesInt >= 50)
+  FILTER(regex(?capLabel, "ing$", "i"))
+}

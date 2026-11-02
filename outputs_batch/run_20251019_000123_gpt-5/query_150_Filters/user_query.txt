@@ -1,0 +1,1 @@
+Show manufacturers with at least 100 employees.

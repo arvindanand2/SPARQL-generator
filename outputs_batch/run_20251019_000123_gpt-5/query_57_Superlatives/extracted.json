@@ -1,0 +1,54 @@
+{
+  "clauses": [
+    {
+      "connective": "IMPLIED",
+      "type": "modifier",
+      "modifier": {
+        "kind": "topN",
+        "k": 1,
+        "by": "number of distinct process+material capabilities"
+      },
+      "subject_hint": "manufacturers",
+      "relation_hint": "number of distinct process+material capabilities"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "Five Axis Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/FiveAxisMachiningCapability"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "Specialized Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/SpecializedMachiningCapability"
+    },
+    {
+      "label": "Seven Axis Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/SevenAxisMachiningCapability"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    },
+    {
+      "label": "Injection Molding",
+      "iri": "http://asu.edu/semantics/SUDOKN/InjectionMoldingCapability"
+    },
+    {
+      "label": "Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/MachiningCapability"
+    }
+  ]
+}

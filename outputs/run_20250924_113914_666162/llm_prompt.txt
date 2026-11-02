@@ -1,0 +1,99 @@
+User Query: Get the manufacturers in the mid west of usa that supplies to aerospace
+# SPARQL Query Generation Prompt
+
+You are an expert in semantic web and SPARQL query generation.
+
+Instructions:
+- Use the extracted clause data provided below to determine the logic and constraints for the SPARQL query.
+- Use the Turtle data only for reference to predicate and class names. Do not invent new predicates or classes.
+- Strictly follow the predicate and class naming conventions as shown in the Turtle data.
+- Output only a valid SPARQL query. Do not include any explanation or commentary.
+
+Extracted Clauses:
+{"clauses":[{"object_hint":"Midwest USA","relation_hint":"located in","connective":"IMPLIED","filter":{"op":"eq","value":"Midwest USA","unit":"region","min":null,"max":null},"subject_hint":"manufacturers","type":"scope"},{"object_hint":"Aerospace","relation_hint":"supplies to industry","connective":"AND","filter":{"op":"eq","value":"Aerospace","unit":"","min":null,"max":null},"subject_hint":"manufacturers","type":"spo"}],"mapping":[]}
+
+Reference Turtle Data:
+@base <http://asu.edu/semantics/SUDOKN/> .
+@prefix iof-core: <https://spec.industrialontologies.org/ontology/core/Core/> .
+@prefix sdk: <http://asu.edu/semantics/SUDOKN/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bfo: <http://purl.obolibrary.org/obo/> .
+
+
+sdk:org-001 a iof-core:Manufacturer ;
+  rdfs:label "Company A" ;
+  sdk:hasNumberOfEmployees "100"^^xsd:string ;
+  sdk:hasCertificate sdk:cert-001 ,sdk:cert-002 ;
+  sdk:suppliesToIndustry sdk:industry-001, sdk:industry-002 ;
+  sdk:hasProcessCapability sdk:org-001-cap-machining, sdk:org-001-cap-coating ;
+  sdk:hasMaterialCapability sdk:org-001-mat-bronze, sdk:org-001-mat-steel ;
+  sdk:hasPrimaryNAICSClassifier sdk:naics-332996.0-inst ;
+  sdk:organizationLocatedIn sdk:site-001 ;
+  sdk:manufactures sdk:prod-001, sdk:prod-002 ;
+  iof-core:describedBy sdk:org-001-description .
+
+sdk:industry-001 a sdk:RenewableEnergyIndustry ;
+  rdfs:label "Industry A" .
+
+sdk:industry-002 a sdk:UtilitiesIndustry ;
+  rdfs:label "Industry B" .
+
+# --- Process capabilities (2) ---
+sdk:org-001-cap-machining a sdk:MachiningCapability ;
+  rdfs:label "Machining" .
+
+sdk:org-001-cap-coating a sdk:CoatingCapability ;
+  rdfs:label "Coating" .
+
+# --- Material capabilities (2) ---
+sdk:org-001-mat-bronze a sdk:BronzeProcessingCapability ;
+  rdfs:label "Bronze" .
+
+sdk:org-001-mat-steel a sdk:SteelProcessingCapability ;
+  rdfs:label "Steel" .
+
+# --- NAICS ---
+sdk:naics-332996.0-inst a sdk:NAICS332996.0 ;
+  sdk:hasNAICSCodeValue "332996.0"^^xsd:integer ;
+  sdk:hasNAICSTextValue "FABRICATED PIPE AND PIPE FITTING MANUFACTURING" .
+
+# --- Site / location (anonymized) ---
+sdk:site-001 a sdk:GeospatialLocation ;
+  sdk:hasSpatialCoordinates sdk:site-001-coordinates ;
+  sdk:locatedInCity sdk:city-001 ;
+  sdk:hasZIPcode sdk:site-001-zip ;
+  sdk:hasPostalAddress sdk:site-001-address .
+
+sdk:site-001-coordinates a sdk:TwoDimensionalCartesianSpatialCoordinateDatum ;
+  sdk:hasLatitudeValue "0.0000000" ;
+  sdk:hasLongitudeValue "0.0000000" .
+
+sdk:city-001 a sdk:City ;
+  sdk:locatedInState sdk:state-001 ;
+  rdfs:label "City A" .
+
+sdk:state-001 a sdk:State ;
+  rdfs:label "State A" .
+
+sdk:site-001-zip a sdk:USPostalCode ;
+  sdk:hasIntegerValue "00000" .
+
+sdk:site-001-address a sdk:PostalAddress ;
+  iof-scro:hasTextValue "Address Line 1" .
+
+# --- Products (2) ---
+sdk:prod-001 a iof-core:MaterialProduct ; rdfs:label "Product 1" .
+sdk:prod-002 a iof-core:MaterialProduct ; rdfs:label "Product 2" .
+
+# --- Cert & description ---
+sdk:cert-001 a sdk:ISO-9001 ;
+  rdfs:label "ISO 9001" .
+
+sdk:cert-002 a sdk:ISO-14001 ;
+  rdfs:label "ISO 14001" .
+
+sdk:org-001-description a sdk:BusinessDescription .
+  iof-scro:hasTextValue "This is a sample business description for Company A." .
+

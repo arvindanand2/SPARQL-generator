@@ -1,0 +1,17 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?naicsCodeValue
+       (COUNT(DISTINCT ?man) AS ?manufacturerCount)
+       (COUNT(DISTINCT ?prod) AS ?productCount)
+       (AVG(?emp) AS ?avgEmployees)
+WHERE {
+  ?man a iof-core:Manufacturer ;
+       sdk:hasPrimaryNAICSClassifier ?naicsNode ;
+       sdk:hasNumberOfEmployees ?emp ;
+       sdk:manufactures ?prod .
+  ?naicsNode a sdk:NAICS332996.0 ;
+             sdk:hasNAICSCodeValue ?naicsCodeValue .
+}
+GROUP BY ?naicsCodeValue

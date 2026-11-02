@@ -1,0 +1,7 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+SELECT (COUNT(DISTINCT ?manufacturer) AS ?count) WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:hasProcessCapability ?cap .
+  ?cap a sdk:FusedDepositionModelingCapability .
+}

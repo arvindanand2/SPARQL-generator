@@ -1,0 +1,21 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel ?state ?stateLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:hasMaterialCapability ?matCap ;
+                sdk:organizationLocatedIn ?manuSite .
+  ?matCap a sdk:GraphiteProcessingCapability .
+  ?manuSite sdk:locatedInCity ?manuCity .
+  ?manuCity sdk:locatedInState ?state .
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel . }
+  OPTIONAL { ?state rdfs:label ?stateLabel . }
+
+  ?supplier sdk:organizationLocatedIn ?supSite ;
+            sdk:suppliesToIndustry ?industry .
+  ?industry a sdk:RenewableEnergyIndustry .
+  ?supSite sdk:locatedInCity ?supCity .
+  ?supCity sdk:locatedInState ?state .
+}

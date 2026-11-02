@@ -1,0 +1,51 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?manufacturer ?manufacturerLabel ?cityLabel ?stateLabel ?lat ?long
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+    rdfs:label ?manufacturerLabel ;
+    sdk:organizationLocatedIn ?site .
+  ?site sdk:locatedInCity ?city ;
+        sdk:hasSpatialCoordinates ?coords .
+  ?city sdk:locatedInState ?state ;
+        rdfs:label ?cityLabel .
+  ?state rdfs:label ?stateLabel .
+  ?coords sdk:hasLatitudeValue ?lat ;
+          sdk:hasLongitudeValue ?long .
+
+  FILTER(
+    lcase(str(?stateLabel)) IN (
+      "illinois", "indiana", "iowa", "kansas", "michigan", 
+      "minnesota", "missouri", "nebraska", "north dakota", "ohio", 
+      "south dakota", "wisconsin"
+    )
+  )
+
+  ?manufacturer sdk:suppliesToIndustry ?industry .
+  FILTER(
+    ?industry IN (
+      <http://asu.edu/semantics/SUDOKN/AerospaceQualityCertificate>,
+      <http://asu.edu/semantics/SUDOKN/AS9120>,
+      <http://asu.edu/semantics/SUDOKN/AS9003>,
+      <http://asu.edu/semantics/SUDOKN/AS9100Certificate>,
+      <http://asu.edu/semantics/SUDOKN/AS9000>,
+      <http://asu.edu/semantics/SUDOKN/AS9102>,
+      <http://asu.edu/semantics/SUDOKN/AWSWelder>,
+      <http://asu.edu/semantics/SUDOKN/NADCAP>,
+      <http://asu.edu/semantics/SUDOKN/Professional>,
+      <http://asu.edu/semantics/SUDOKN/QSQuality>
+    )
+  )
+
+  BIND(xsd:double(?lat) AS ?lat_val)
+  BIND(xsd:double(?long) AS ?long_val)
+  BIND(
+    ((?lat_val - 33.421204) * (?lat_val - 33.421204) +
+     (?long_val + 111.933723) * (?long_val + 111.933723)
+    ) AS ?distanceToASU
+  )
+}
+ORDER BY ?distanceToASU

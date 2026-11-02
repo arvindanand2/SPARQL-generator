@@ -1,0 +1,65 @@
+{
+  "clauses": [
+    {
+      "object_hint": "Valve",
+      "subject_hint": "manufacturers",
+      "relation_hint": "company name term",
+      "type": "spo",
+      "connective": "AND"
+    },
+    {
+      "object_hint": "state",
+      "subject_hint": "manufacturers",
+      "filter": {
+        "op": "near",
+        "value": "site → city → state",
+        "unit": "path",
+        "min": null,
+        "max": null
+      },
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "site, city, state"
+      },
+      "relation_hint": "located in",
+      "type": "scope",
+      "connective": "IMPLIED"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    },
+    {
+      "label": "AWS Welder",
+      "iri": "http://asu.edu/semantics/SUDOKN/AWSWelder"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "FDA",
+      "iri": "http://asu.edu/semantics/SUDOKN/FDA"
+    },
+    {
+      "label": "BABA",
+      "iri": "http://asu.edu/semantics/SUDOKN/BABA"
+    },
+    {
+      "label": "LEED",
+      "iri": "http://asu.edu/semantics/SUDOKN/LEED"
+    },
+    {
+      "label": "ITAR",
+      "iri": "http://asu.edu/semantics/SUDOKN/ITAR"
+    },
+    {
+      "label": "NIST",
+      "iri": "http://asu.edu/semantics/SUDOKN/nist"
+    }
+  ]
+}

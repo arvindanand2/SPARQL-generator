@@ -1,0 +1,1 @@
+For each state, give two numbers: total process capabilities and total material capabilities.

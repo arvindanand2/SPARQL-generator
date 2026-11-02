@@ -1,0 +1,1 @@
+Find manufacturers with longitude < ?100.0 at their site coordinates.

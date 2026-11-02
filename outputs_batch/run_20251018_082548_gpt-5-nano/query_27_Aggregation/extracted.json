@@ -1,0 +1,80 @@
+{
+  "clauses": [
+    {
+      "object_hint": "products",
+      "relation_hint": "manufactures",
+      "connective": "AND",
+      "filter": {
+        "op": "near",
+        "value": "",
+        "unit": "city",
+        "min": null,
+        "max": null
+      },
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "manufacturer"
+      },
+      "subject_hint": "manufacturers",
+      "type": "spo"
+    },
+    {
+      "relation_hint": "number of distinct products",
+      "connective": "IMPLIED",
+      "filter": {
+        "op": "near",
+        "value": "",
+        "unit": "city",
+        "min": null,
+        "max": null
+      },
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "manufacturer"
+      },
+      "subject_hint": "manufacturers",
+      "type": "modifier"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    },
+    {
+      "label": "FDA",
+      "iri": "http://asu.edu/semantics/SUDOKN/FDA"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "QS Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QSQuality"
+    },
+    {
+      "label": "ISO 14000",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO14000"
+    },
+    {
+      "label": "FDA GMP",
+      "iri": "http://asu.edu/semantics/SUDOKN/FDAGMP"
+    },
+    {
+      "label": "FDA 21 CFR Part 820",
+      "iri": "http://asu.edu/semantics/SUDOKN/FDA21CFRPart820"
+    }
+  ]
+}

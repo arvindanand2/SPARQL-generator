@@ -1,0 +1,54 @@
+{
+  "clauses": [
+    {
+      "object_hint": "^A",
+      "connective": "AND",
+      "type": "spo",
+      "subject_hint": "manufacturers",
+      "relation_hint": "company name term"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "BABA",
+      "iri": "http://asu.edu/semantics/SUDOKN/BABA"
+    },
+    {
+      "label": "FDA",
+      "iri": "http://asu.edu/semantics/SUDOKN/FDA"
+    },
+    {
+      "label": "AWS Welder",
+      "iri": "http://asu.edu/semantics/SUDOKN/AWSWelder"
+    },
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    },
+    {
+      "label": "FDA PMA",
+      "iri": "http://asu.edu/semantics/SUDOKN/FDAPMA"
+    },
+    {
+      "label": "Kosher Approved",
+      "iri": "http://asu.edu/semantics/SUDOKN/KosherApproved"
+    },
+    {
+      "label": "AS 9000",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9000"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "VDA",
+      "iri": "http://asu.edu/semantics/SUDOKN/VDA"
+    },
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    }
+  ]
+}

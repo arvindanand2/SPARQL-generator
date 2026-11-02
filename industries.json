@@ -1,0 +1,307 @@
+{
+    "ontology_version_id": "0001iL0gfgYUQmHTgJiwE5Rs4agsr6NJ",
+    "industries": [
+        {
+            "name": "Aerospace",
+            "altLabels": [],
+            "children": []
+        },
+        {
+            "name": "Agriculture",
+            "altLabels": [],
+            "children": []
+        },
+        {
+            "name": "Apparel",
+            "altLabels": [],
+            "children": []
+        },
+        {
+            "name": "Audio And Visual",
+            "altLabels": [],
+            "children": []
+        },
+        {
+            "name": "Automotive",
+            "altLabels": [],
+            "children": [
+                {
+                    "name": "Electric Automotive",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Robotic In Automotive",
+                    "altLabels": [],
+                    "children": []
+                }
+            ]
+        },
+        {
+            "name": "Business Equipment",
+            "altLabels": [],
+            "children": []
+        },
+        {
+            "name": "Chemical And Petrochemical",
+            "altLabels": [],
+            "children": []
+        },
+        {
+            "name": "Communications",
+            "altLabels": [],
+            "children": []
+        },
+        {
+            "name": "Construction",
+            "altLabels": [],
+            "children": []
+        },
+        {
+            "name": "Consumer Goods",
+            "altLabels": [],
+            "children": []
+        },
+        {
+            "name": "Defense",
+            "altLabels": [],
+            "children": []
+        },
+        {
+            "name": "Education",
+            "altLabels": [],
+            "children": []
+        },
+        {
+            "name": "Energy",
+            "altLabels": [],
+            "children": [
+                {
+                    "name": "Coal",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Nuclear Energy",
+                    "altLabels": [
+                        "Nuclear"
+                    ],
+                    "children": []
+                },
+                {
+                    "name": "Oil And Gas",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Renewable Energy",
+                    "altLabels": [],
+                    "children": [
+                        {
+                            "name": "Offshore Wind Energy",
+                            "altLabels": [],
+                            "children": []
+                        },
+                        {
+                            "name": "Solar Power",
+                            "altLabels": [],
+                            "children": []
+                        },
+                        {
+                            "name": "Wind Energy",
+                            "altLabels": [],
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Entertainment And Media",
+            "altLabels": [],
+            "children": []
+        },
+        {
+            "name": "Food",
+            "altLabels": [],
+            "children": [
+                {
+                    "name": "Beverage",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Restaurant",
+                    "altLabels": [],
+                    "children": []
+                }
+            ]
+        },
+        {
+            "name": "Furniture",
+            "altLabels": [],
+            "children": []
+        },
+        {
+            "name": "Government",
+            "altLabels": [],
+            "children": []
+        },
+        {
+            "name": "Healthcare",
+            "altLabels": [],
+            "children": []
+        },
+        {
+            "name": "Information Technology",
+            "altLabels": [],
+            "children": [
+                {
+                    "name": "Hardware And Devices",
+                    "altLabels": [],
+                    "children": [
+                        {
+                            "name": "Computer",
+                            "altLabels": [],
+                            "children": []
+                        },
+                        {
+                            "name": "Electronic Product",
+                            "altLabels": [],
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "name": "High Tech",
+                    "altLabels": [],
+                    "children": []
+                }
+            ]
+        },
+        {
+            "name": "Machinery And Equipment",
+            "altLabels": [],
+            "children": []
+        },
+        {
+            "name": "Marine And Shipbuilding",
+            "altLabels": [],
+            "children": []
+        },
+        {
+            "name": "Medical Devices",
+            "altLabels": [],
+            "children": []
+        },
+        {
+            "name": "Metal Production",
+            "altLabels": [],
+            "children": []
+        },
+        {
+            "name": "Military",
+            "altLabels": [],
+            "children": []
+        },
+        {
+            "name": "Mining",
+            "altLabels": [],
+            "children": []
+        },
+        {
+            "name": "Paper",
+            "altLabels": [],
+            "children": [
+                {
+                    "name": "Paperboard Products",
+                    "altLabels": [
+                        "Paper Board Product"
+                    ],
+                    "children": []
+                }
+            ]
+        },
+        {
+            "name": "Pharmaceutical",
+            "altLabels": [],
+            "children": []
+        },
+        {
+            "name": "Plastic And Rubber",
+            "altLabels": [],
+            "children": []
+        },
+        {
+            "name": "Printing And Information",
+            "altLabels": [],
+            "children": []
+        },
+        {
+            "name": "Recycling",
+            "altLabels": [],
+            "children": []
+        },
+        {
+            "name": "Retail",
+            "altLabels": [],
+            "children": []
+        },
+        {
+            "name": "Semiconductor",
+            "altLabels": [],
+            "children": []
+        },
+        {
+            "name": "Sports And Leisure",
+            "altLabels": [],
+            "children": []
+        },
+        {
+            "name": "Telecommunications",
+            "altLabels": [],
+            "children": []
+        },
+        {
+            "name": "Textiles",
+            "altLabels": [],
+            "children": []
+        },
+        {
+            "name": "Tool And Die",
+            "altLabels": [],
+            "children": []
+        },
+        {
+            "name": "Transportation",
+            "altLabels": [],
+            "children": []
+        },
+        {
+            "name": "Utilities",
+            "altLabels": [],
+            "children": [
+                {
+                    "name": "Communication And Electronic Power Utilities",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Water And Sewer Utilities",
+                    "altLabels": [],
+                    "children": []
+                }
+            ]
+        },
+        {
+            "name": "Warehousing And Storage",
+            "altLabels": [],
+            "children": []
+        },
+        {
+            "name": "Wood Product Manufacturing",
+            "altLabels": [],
+            "children": []
+        }
+    ]
+}

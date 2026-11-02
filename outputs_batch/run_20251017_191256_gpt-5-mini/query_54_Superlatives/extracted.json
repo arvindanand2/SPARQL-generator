@@ -1,0 +1,57 @@
+{
+  "clauses": [
+    {
+      "type": "spo",
+      "subject_hint": "industries",
+      "connective": "IMPLIED",
+      "relation_hint": "has supplier manufacturers",
+      "object_hint": "manufacturers"
+    },
+    {
+      "modifier": {
+        "kind": "topN",
+        "k": 1,
+        "by": "number of distinct supplier manufacturers"
+      },
+      "type": "modifier",
+      "subject_hint": "industries",
+      "connective": "IMPLIED",
+      "relation_hint": "number of distinct supplier manufacturers"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "AS 9120",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9120"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "Aerospace Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/AerospaceQualityCertificate"
+    },
+    {
+      "label": "QS Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QSQuality"
+    },
+    {
+      "label": "NIST",
+      "iri": "http://asu.edu/semantics/SUDOKN/nist"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "clauses": [
+    {
+      "type": "scope",
+      "subject_hint": "manufacturers",
+      "relation_hint": "located in",
+      "filter": {
+        "op": "eq",
+        "value": "North Carolina",
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "connective": "IMPLIED",
+      "enum_values": [
+        "North Carolina"
+      ],
+      "object_hint": "North Carolina",
+      "modifier": {
+        "kind": "topN",
+        "k": 3,
+        "by": "number of distinct manufacturers"
+      }
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Specialized Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/SpecializedMachiningCapability"
+    },
+    {
+      "label": "Five Axis Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/FiveAxisMachiningCapability"
+    },
+    {
+      "label": "CNC Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/CNCMachiningCapability"
+    },
+    {
+      "label": "Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/MachiningCapability"
+    },
+    {
+      "label": "Plastic Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/PlasticMachiningCapability"
+    },
+    {
+      "label": "Standard Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/MachiningCapability"
+    },
+    {
+      "label": "Fabricating",
+      "iri": "http://asu.edu/semantics/SUDOKN/FabricatingCapability"
+    },
+    {
+      "label": "Tool Making",
+      "iri": "http://asu.edu/semantics/SUDOKN/ToolMakingCapability"
+    },
+    {
+      "label": "NADCAP",
+      "iri": "http://asu.edu/semantics/SUDOKN/NADCAP"
+    },
+    {
+      "label": "Seven Axis Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/SevenAxisMachiningCapability"
+    }
+  ]
+}

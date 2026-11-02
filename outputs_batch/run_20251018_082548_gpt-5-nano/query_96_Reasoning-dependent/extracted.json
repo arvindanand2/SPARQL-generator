@@ -1,0 +1,61 @@
+{
+  "clauses": [
+    {
+      "relation_hint": "has process capability",
+      "connective": "IMPLIED",
+      "modifier": {
+        "kind": "topN",
+        "k": null,
+        "by": "number of distinct <process capability>"
+      },
+      "subject_hint": "manufacturers",
+      "enum_values": [
+        "Multipoint Cutting"
+      ],
+      "type": "spo"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Multipoint Cutting",
+      "iri": "http://asu.edu/semantics/SUDOKN/MultipointCuttingCapability"
+    },
+    {
+      "label": "Single-Point Cutting",
+      "iri": "http://asu.edu/semantics/SUDOKN/SinglePointCuttingCapability"
+    },
+    {
+      "label": "Standard Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/MachiningCapability"
+    },
+    {
+      "label": "Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/MachiningCapability"
+    },
+    {
+      "label": "Five Axis Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/FiveAxisMachiningCapability"
+    },
+    {
+      "label": "Seven Axis Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/SevenAxisMachiningCapability"
+    },
+    {
+      "label": "CNC Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/CNCMachiningCapability"
+    },
+    {
+      "label": "Specialized Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/SpecializedMachiningCapability"
+    },
+    {
+      "label": "CNC Laser Cutting",
+      "iri": "http://asu.edu/semantics/SUDOKN/CNCLaserCuttingCapability"
+    },
+    {
+      "label": "Milling",
+      "iri": "http://asu.edu/semantics/SUDOKN/MillingCapability"
+    }
+  ]
+}

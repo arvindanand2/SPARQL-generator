@@ -1,0 +1,1 @@
+For each NAICS classifier, list the top 5 states by number of manufacturers using that classifier as primary.

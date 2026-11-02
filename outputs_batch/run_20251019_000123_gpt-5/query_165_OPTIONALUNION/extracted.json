@@ -1,0 +1,72 @@
+{
+  "clauses": [
+    {
+      "connective": "IMPLIED",
+      "type": "spo",
+      "modifier": {
+        "kind": "order",
+        "k": null,
+        "by": "fallback priority: postal code > postal address text > company name"
+      },
+      "subject_hint": "manufacturers",
+      "relation_hint": "has postal code"
+    },
+    {
+      "connective": "OR",
+      "type": "spo",
+      "modifier": {
+        "kind": "order",
+        "k": null,
+        "by": "fallback priority: postal code > postal address text > company name"
+      },
+      "subject_hint": "manufacturers",
+      "relation_hint": "has postal address text"
+    },
+    {
+      "connective": "OR",
+      "type": "spo",
+      "modifier": {
+        "kind": "order",
+        "k": null,
+        "by": "fallback priority: postal code > postal address text > company name"
+      },
+      "subject_hint": "manufacturers",
+      "relation_hint": "has company name"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    },
+    {
+      "label": "VDA",
+      "iri": "http://asu.edu/semantics/SUDOKN/VDA"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "AS 9102",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9102"
+    },
+    {
+      "label": "HACCP",
+      "iri": "http://asu.edu/semantics/SUDOKN/HACCP"
+    },
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "Zinc Alloy",
+      "iri": "http://asu.edu/semantics/SUDOKN/ZincAlloyProcessingCapability"
+    }
+  ]
+}

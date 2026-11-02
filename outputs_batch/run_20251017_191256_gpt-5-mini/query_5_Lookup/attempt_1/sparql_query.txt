@@ -1,0 +1,10 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+
+SELECT DISTINCT ?cap ?label WHERE {
+  ?org a iof-core:Manufacturer ;
+       sdk:hasMaterialCapability ?cap .
+  ?cap rdfs:label ?label .
+  FILTER(CONTAINS(LCASE(STR(?label)), "steel"))
+}

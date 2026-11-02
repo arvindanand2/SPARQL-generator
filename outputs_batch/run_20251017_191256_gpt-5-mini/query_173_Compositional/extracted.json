@@ -1,0 +1,75 @@
+{
+  "clauses": [
+    {
+      "enum_values": [
+        "Bronze",
+        "Steel"
+      ],
+      "type": "spo",
+      "subject_hint": "manufacturers",
+      "connective": "AND",
+      "relation_hint": "has material capability"
+    },
+    {
+      "modifier": {
+        "kind": "fewest",
+        "k": 0,
+        "by": "number of distinct material capabilities outside {Bronze,Steel}"
+      },
+      "type": "modifier",
+      "subject_hint": "manufacturers",
+      "connective": "AND",
+      "filter": {
+        "op": "eq",
+        "value": 0,
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "relation_hint": "number of distinct material capabilities outside set"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Bronze",
+      "iri": "http://asu.edu/semantics/SUDOKN/BronzeProcessingCapability"
+    },
+    {
+      "label": "Super Alloy",
+      "iri": "http://asu.edu/semantics/SUDOKN/SuperAlloyProcessingCapability"
+    },
+    {
+      "label": "Alloy Steel",
+      "iri": "http://asu.edu/semantics/SUDOKN/AlloySteelProcessingCapability"
+    },
+    {
+      "label": "Cast Steel",
+      "iri": "http://asu.edu/semantics/SUDOKN/CastSteelProcessingCapability"
+    },
+    {
+      "label": "Low Alloy Steel Lead",
+      "iri": "http://asu.edu/semantics/SUDOKN/LowAlloySteelLeadProcessingCapability"
+    },
+    {
+      "label": "Brass",
+      "iri": "http://asu.edu/semantics/SUDOKN/BrassProcessingCapability"
+    },
+    {
+      "label": "Steel",
+      "iri": "http://asu.edu/semantics/SUDOKN/SteelProcessingCapability"
+    },
+    {
+      "label": "Blue Temp Steel",
+      "iri": "http://asu.edu/semantics/SUDOKN/BlueTempSteelProcessingCapability"
+    },
+    {
+      "label": "Alloy",
+      "iri": "http://asu.edu/semantics/SUDOKN/AlloyProcessingCapability"
+    },
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    }
+  ]
+}

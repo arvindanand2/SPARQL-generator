@@ -1,0 +1,9 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?materialCapability ?label
+WHERE {
+  ?org sdk:hasMaterialCapability ?materialCapability .
+  ?materialCapability rdfs:label ?label .
+  FILTER(CONTAINS(LCASE(STR(?label)), "steel"))
+}

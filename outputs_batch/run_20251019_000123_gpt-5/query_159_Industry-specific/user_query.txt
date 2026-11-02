@@ -1,0 +1,1 @@
+Which industry type has the most supplier manufacturers? Include ties.

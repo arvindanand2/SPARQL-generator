@@ -1,0 +1,1 @@
+Return company names in English only (or all if no language tags).

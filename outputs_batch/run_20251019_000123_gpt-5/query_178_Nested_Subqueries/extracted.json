@@ -1,0 +1,79 @@
+{
+  "clauses": [
+    {
+      "object_hint": "product with a digit in the name",
+      "connective": "AND",
+      "type": "spo",
+      "subject_hint": "manufacturers",
+      "relation_hint": "manufactures"
+    },
+    {
+      "object_hint": "state",
+      "connective": "IMPLIED",
+      "type": "modifier",
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "state"
+      },
+      "subject_hint": "manufacturers",
+      "relation_hint": "group by"
+    },
+    {
+      "connective": "IMPLIED",
+      "type": "modifier",
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": null
+      },
+      "subject_hint": "manufacturers",
+      "relation_hint": "average employee count"
+    }
+  ],
+  "mapping": [
+    "String pattern constraint for digit-in-name expressed as object hint due to limited filter ops."
+  ],
+  "relevant_iris": [
+    {
+      "label": "NIST",
+      "iri": "http://asu.edu/semantics/SUDOKN/nist"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "NIST 800171",
+      "iri": "http://asu.edu/semantics/SUDOKN/NIST800171"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "FDA",
+      "iri": "http://asu.edu/semantics/SUDOKN/FDA"
+    },
+    {
+      "label": "VDA",
+      "iri": "http://asu.edu/semantics/SUDOKN/VDA"
+    },
+    {
+      "label": "FDA 21 CFR Part 820",
+      "iri": "http://asu.edu/semantics/SUDOKN/FDA21CFRPart820"
+    },
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    },
+    {
+      "label": "FDA GMP",
+      "iri": "http://asu.edu/semantics/SUDOKN/FDAGMP"
+    }
+  ]
+}

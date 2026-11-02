@@ -1,0 +1,22 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?cityLabel (AVG(?empVal) AS ?averageEmployeeCount)
+WHERE {
+  {
+    SELECT DISTINCT ?org ?city ?cityLabel (xsd:decimal(REPLACE(?emp, ",", "")) AS ?empVal)
+    WHERE {
+      ?org a iof-core:Manufacturer ;
+           sdk:hasNumberOfEmployees ?emp ;
+           sdk:hasProcessCapability ?cap ;
+           sdk:organizationLocatedIn ?site .
+      ?cap a sdk:HeatTreatingCapability .
+      ?site sdk:locatedInCity ?city .
+      ?city rdfs:label ?cityLabel .
+    }
+  }
+}
+GROUP BY ?city ?cityLabel
+ORDER BY ?cityLabel

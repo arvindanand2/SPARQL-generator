@@ -1,0 +1,73 @@
+{
+  "clauses": [
+    {
+      "type": "spo",
+      "subject_hint": "manufacturers",
+      "connective": "AND",
+      "filter": {
+        "op": "gte",
+        "value": 1,
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "relation_hint": "has certificate"
+    },
+    {
+      "type": "spo",
+      "subject_hint": "manufacturers",
+      "connective": "AND",
+      "filter": {
+        "op": "eq",
+        "value": 0,
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "relation_hint": "manufactures"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "ISO 27001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO27001"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "ISO 14001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO14001"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    },
+    {
+      "label": "ISO 50001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO50001"
+    },
+    {
+      "label": "ISO 13485",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO13485"
+    },
+    {
+      "label": "TL 9000",
+      "iri": "http://asu.edu/semantics/SUDOKN/TL9000"
+    },
+    {
+      "label": "ISO 45001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO45001"
+    },
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "AS 9100",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9100Certificate"
+    }
+  ]
+}

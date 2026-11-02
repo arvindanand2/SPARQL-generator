@@ -1,0 +1,12 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+
+SELECT ?product (COUNT(DISTINCT ?man) AS ?numManufacturers)
+WHERE {
+  ?man a iof-core:Manufacturer ;
+       sdk:manufactures ?product .
+  ?product a iof-core:MaterialProduct .
+}
+GROUP BY ?product
+ORDER BY DESC(?numManufacturers) ?product
+LIMIT 1

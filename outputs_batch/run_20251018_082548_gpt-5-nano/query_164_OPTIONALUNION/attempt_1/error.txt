@@ -1,0 +1,5 @@
+Run 1 failed. Compressed error:
+Response:
+Response:
+b"MALFORMED QUERY: projection alias 'coords' was previously used"
+All retries failed.

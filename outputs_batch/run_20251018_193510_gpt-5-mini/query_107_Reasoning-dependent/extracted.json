@@ -1,0 +1,64 @@
+{
+  "clauses": [
+    {
+      "object_hint": "Casting",
+      "subject_hint": "manufacturers",
+      "relation_hint": "has process capability",
+      "type": "scope",
+      "connective": "IMPLIED"
+    },
+    {
+      "subject_hint": "manufacturers",
+      "enum_values": [
+        "Sand Casting",
+        "Die Casting"
+      ],
+      "relation_hint": "has process capability",
+      "type": "spo",
+      "connective": "AND"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Sand Casting",
+      "iri": "http://asu.edu/semantics/SUDOKN/SandCastingCapability"
+    },
+    {
+      "label": "Die Casting",
+      "iri": "http://asu.edu/semantics/SUDOKN/DieCastingCapability"
+    },
+    {
+      "label": "Casting",
+      "iri": "http://asu.edu/semantics/SUDOKN/CastingCapability"
+    },
+    {
+      "label": "Gravity Casting",
+      "iri": "http://asu.edu/semantics/SUDOKN/GravityCastingCapability"
+    },
+    {
+      "label": "Permanent Mold Casting",
+      "iri": "http://asu.edu/semantics/SUDOKN/PermanentMoldCastingCapability"
+    },
+    {
+      "label": "Ceramic Mold Casting",
+      "iri": "http://asu.edu/semantics/SUDOKN/CeramicMoldCastingCapability"
+    },
+    {
+      "label": "Investment Casting",
+      "iri": "http://asu.edu/semantics/SUDOKN/InvestmentCastingCapability"
+    },
+    {
+      "label": "Machining Of Casting",
+      "iri": "http://asu.edu/semantics/SUDOKN/MachiningOfCastingCapability"
+    },
+    {
+      "label": "Squeeze Casting",
+      "iri": "http://asu.edu/semantics/SUDOKN/SqueezeCastingCapability"
+    },
+    {
+      "label": "Hot Chamber Die Casting",
+      "iri": "http://asu.edu/semantics/SUDOKN/HotChamberDieCastingCapability"
+    }
+  ]
+}

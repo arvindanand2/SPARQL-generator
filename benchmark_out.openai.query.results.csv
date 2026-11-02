@@ -1,0 +1,349 @@
+query,expected_label,rank,top1_pred,top1_score
+quote for Phosphate Coating manufacturing,Phosphate Coating,1,Phosphate Coating,0.7892299890518188
+who offers Phosphate Coating,Phosphate Coating,1,Phosphate Coating,0.8492162227630615
+Phosphate Coating prototype development,Phosphate Coating,1,Phosphate Coating,0.7908583879470825
+Phosphate Coating process provider,Phosphate Coating,1,Phosphate Coating,0.8725724220275879
+request for Phosphate Coating services,Phosphate Coating,1,Phosphate Coating,0.790461540222168
+Phos coating vendor,Phosphate Coating,1,Phosphate Coating,0.7279887199401855
+Phosphate Coating for automotive parts,Phosphate Coating,1,Phosphate Coating,0.8431413769721985
+Fast turnaround for phosphate coat,Phosphate Coating,1,Phosphate Coating,0.7450557351112366
+Phosphate Coating vs. Phosphating process,Phosphate Coating,1,Phosphate Coating,0.8011347055435181
+Is Phosphate Coating suitable for steel?,Phosphate Coating,1,Phosphate Coating,0.7786070704460144
+Phosphate Coating supplier in September 2025,Phosphate Coating,1,Phosphate Coating,0.7122418880462646
+Phosphate Coating process details,Phosphate Coating,1,Phosphate Coating,0.8851824402809143
+Looking for Phos. Coating experts,Phosphate Coating,1,Phosphate Coating,0.7006985545158386
+Phosphate Coating or Zinc Coating?,Phosphate Coating,1,Phosphate Coating,0.8132208585739136
+Bending job order,Bending,1,Bending,0.6776699423789978
+Bending process provider,Bending,1,Bending,0.6790924072265625
+need supplier for Bending,Bending,4,Pipe Bending,0.6127195358276367
+looking for Bending process,Bending,1,Bending,0.6639781594276428
+companies specializing in Bending,Bending,2,Pipe Bending,0.6459800004959106
+Sheet metal bending service,Bending,7,Sheet Bending,0.7132501006126404
+Bending process for aluminum,Bending,1,Bending,0.6178514957427979
+Bending job urgent,Bending,1,Bending,0.6839467287063599
+Bending vs. Forming difference,Bending,1,Bending,0.6602073311805725
+Bending supplier near me,Bending,1,Bending,0.643744945526123
+Bending process for prototypes,Bending,1,Bending,0.6160022020339966
+Bending (misspelled: Bendng) provider,Bending,1,Bending,0.7069393992424011
+Can you bend stainless steel?,Bending,1,Bending,0.5340081453323364
+Gas Metal Arc Welding process provider,Gas Metal Arc Welding,1,Gas Metal Arc Welding,0.8119151592254639
+companies specializing in Gas Metal Arc Welding,Gas Metal Arc Welding,1,Gas Metal Arc Welding,0.7254235744476318
+Gas Metal Arc Welding prototype development,Gas Metal Arc Welding,1,Gas Metal Arc Welding,0.7248668074607849
+looking for Gas Metal Arc Welding process,Gas Metal Arc Welding,1,Gas Metal Arc Welding,0.7524558305740356
+Gas Metal Arc Welding job order,Gas Metal Arc Welding,1,Gas Metal Arc Welding,0.735332727432251
+GMAW expert needed,Gas Metal Arc Welding,1,Gas Metal Arc Welding,0.6058836579322815
+Gas Metal Arc Welding for automotive,Gas Metal Arc Welding,1,Gas Metal Arc Welding,0.7889153361320496
+GMAW vs. TIG welding,Gas Metal Arc Welding,4,TIG Welding,0.7008264064788818
+Gas Metal Arc Welding (GMAW) supplier,Gas Metal Arc Welding,1,Gas Metal Arc Welding,0.74359530210495
+Gas Metal Arc Welding process explanation,Gas Metal Arc Welding,1,Gas Metal Arc Welding,0.7922291159629822
+Gas Metal Arc Welding for thin metals,Gas Metal Arc Welding,1,Gas Metal Arc Welding,0.7604467868804932
+Gas Metal Arc Welding or MIG Welding?,Gas Metal Arc Welding,1,Gas Metal Arc Welding,0.7856601476669312
+Best coating process for corrosion resistance,Phosphate Coating,10,Surface Coating,0.6598667502403259
+Not interested in Bending need Forming,Forming,26,Metal Forming,0.5985392332077026
+Welding process for high strength joints,Gas Metal Arc Welding,50,Pressure Welding,0.6751760840415955
+companies specializing in Phosphating,Phosphating,1,Phosphating,0.7677483558654785
+Phosphating process provider,Phosphating,1,Phosphating,0.8051531314849854
+who offers Phosphating,Phosphating,1,Phosphating,0.7985898852348328
+Phosphating prototype development,Phosphating,1,Phosphating,0.7315030694007874
+need supplier for Phosphating,Phosphating,1,Phosphating,0.6909634470939636
+Photo Etching process provider,Photo Etching,1,Photo Etching,0.8331810235977173
+looking for Photo Etching process,Photo Etching,1,Photo Etching,0.7782406210899353
+quote for Photo Etching manufacturing,Photo Etching,1,Photo Etching,0.694864809513092
+need supplier for Photo Etching,Photo Etching,1,Photo Etching,0.6969912648200989
+custom parts using Photo Etching,Photo Etching,1,Photo Etching,0.745762050151825
+custom parts using Planarization,Planarization,1,Planarization,0.7009119391441345
+Planarization process provider,Planarization,1,Planarization,0.8079220652580261
+Planarization job order,Planarization,1,Planarization,0.7862339615821838
+quote for Planarization manufacturing,Planarization,1,Planarization,0.7043918967247009
+looking for Planarization process,Planarization,1,Planarization,0.7954486608505249
+Friction Welding process provider,Friction Welding,1,Friction Welding,0.8354858756065369
+request for Friction Welding services,Friction Welding,1,Friction Welding,0.7281646728515625
+Friction Welding job order,Friction Welding,1,Friction Welding,0.740814208984375
+custom parts using Friction Welding,Friction Welding,1,Friction Welding,0.781193196773529
+need supplier for Friction Welding,Friction Welding,1,Friction Welding,0.7372424602508545
+companies specializing in Decorative Anodizing,Decorative Anodizing,1,Decorative Anodizing,0.8025405406951904
+custom parts using Decorative Anodizing,Decorative Anodizing,1,Decorative Anodizing,0.8172197937965393
+request for Decorative Anodizing services,Decorative Anodizing,1,Decorative Anodizing,0.7800520658493042
+need supplier for Decorative Anodizing,Decorative Anodizing,1,Decorative Anodizing,0.7618765830993652
+Decorative Anodizing prototype development,Decorative Anodizing,1,Decorative Anodizing,0.8163103461265564
+who offers Wire Bending,Wire Bending,1,Wire Bending,0.8110672235488892
+Wire Bending process provider,Wire Bending,1,Wire Bending,0.8100232481956482
+custom parts using Wire Bending,Wire Bending,1,Wire Bending,0.7826175093650818
+need supplier for Wire Bending,Wire Bending,1,Wire Bending,0.7142292261123657
+Wire Bending prototype development,Wire Bending,1,Wire Bending,0.7868577241897583
+who offers Honing,Honing,1,Honing,0.7202604413032532
+request for Honing services,Honing,1,Honing,0.6104338765144348
+need supplier for Honing,Honing,1,Honing,0.5723488330841064
+custom parts using Honing,Honing,1,Honing,0.6261300444602966
+Honing job order,Honing,1,Honing,0.6709138751029968
+Ceramic Mold Casting process provider,Ceramic Mold Casting,1,Ceramic Mold Casting,0.8520484566688538
+who offers Ceramic Mold Casting,Ceramic Mold Casting,1,Ceramic Mold Casting,0.8237143158912659
+Ceramic Mold Casting prototype development,Ceramic Mold Casting,1,Ceramic Mold Casting,0.8010571002960205
+companies specializing in Ceramic Mold Casting,Ceramic Mold Casting,1,Ceramic Mold Casting,0.8005813956260681
+need supplier for Ceramic Mold Casting,Ceramic Mold Casting,1,Ceramic Mold Casting,0.7377036809921265
+looking for Rubber Injection Molding process,Rubber Injection Molding,1,Rubber Injection Molding,0.8325009942054749
+companies specializing in Rubber Injection Molding,Rubber Injection Molding,1,Rubber Injection Molding,0.8331071138381958
+Rubber Injection Molding process provider,Rubber Injection Molding,1,Rubber Injection Molding,0.8860206604003906
+Rubber Injection Molding job order,Rubber Injection Molding,1,Rubber Injection Molding,0.7919379472732544
+quote for Rubber Injection Molding manufacturing,Rubber Injection Molding,1,Rubber Injection Molding,0.8036944270133972
+quote for Coating manufacturing,Coating,2,Surface Coating,0.6498587727546692
+need supplier for Coating,Coating,2,Surface Coating,0.6599452495574951
+Coating prototype development,Coating,1,Coating,0.68175208568573
+request for Coating services,Coating,2,Surface Coating,0.6750515699386597
+companies specializing in Coating,Coating,2,Surface Coating,0.6985845565795898
+Extrusion Blow Molding process provider,Extrusion Blow Molding,1,Extrusion Blow Molding,0.8637136220932007
+quote for Extrusion Blow Molding manufacturing,Extrusion Blow Molding,1,Extrusion Blow Molding,0.7740700840950012
+looking for Extrusion Blow Molding process,Extrusion Blow Molding,1,Extrusion Blow Molding,0.8210885524749756
+who offers Extrusion Blow Molding,Extrusion Blow Molding,1,Extrusion Blow Molding,0.8367113471031189
+companies specializing in Extrusion Blow Molding,Extrusion Blow Molding,1,Extrusion Blow Molding,0.79078608751297
+need supplier for Wood Working,Wood Working,1,Wood Working,0.6808648705482483
+Wood Working job order,Wood Working,1,Wood Working,0.7406439781188965
+companies specializing in Wood Working,Wood Working,1,Wood Working,0.7159761190414429
+quote for Wood Working manufacturing,Wood Working,1,Wood Working,0.6526994705200195
+request for Wood Working services,Wood Working,1,Wood Working,0.6823261380195618
+request for Roll Bonding services,Roll Bonding,1,Roll Bonding,0.6655533313751221
+who offers Roll Bonding,Roll Bonding,1,Roll Bonding,0.7861617803573608
+Roll Bonding prototype development,Roll Bonding,1,Roll Bonding,0.8155083656311035
+Roll Bonding process provider,Roll Bonding,1,Roll Bonding,0.8426035046577454
+companies specializing in Roll Bonding,Roll Bonding,1,Roll Bonding,0.7397469282150269
+request for Riveting services,Riveting,1,Riveting,0.6122058629989624
+Riveting process provider,Riveting,1,Riveting,0.6592055559158325
+Riveting job order,Riveting,1,Riveting,0.6619849801063538
+companies specializing in Riveting,Riveting,1,Riveting,0.6231005191802979
+looking for Riveting process,Riveting,1,Riveting,0.6753260493278503
+custom parts using Shape Rolling,Shape Rolling,1,Shape Rolling,0.6472935676574707
+Shape Rolling prototype development,Shape Rolling,1,Shape Rolling,0.8112157583236694
+Shape Rolling process provider,Shape Rolling,1,Shape Rolling,0.7897043228149414
+looking for Shape Rolling process,Shape Rolling,4,Ring Rolling,0.6478521227836609
+quote for Shape Rolling manufacturing,Shape Rolling,8,Sheet Metal Rolling,0.6295164227485657
+Hot Extrusion job order,Hot Extrusion,1,Hot Extrusion,0.8097207546234131
+quote for Hot Extrusion manufacturing,Hot Extrusion,1,Hot Extrusion,0.6977049112319946
+custom parts using Hot Extrusion,Hot Extrusion,1,Hot Extrusion,0.7335382103919983
+Hot Extrusion process provider,Hot Extrusion,1,Hot Extrusion,0.8488505482673645
+Hot Extrusion prototype development,Hot Extrusion,1,Hot Extrusion,0.8106542229652405
+request for Zinc Plating services,Zinc Plating,1,Zinc Plating,0.7710970044136047
+Zinc Plating prototype development,Zinc Plating,1,Zinc Plating,0.7404107451438904
+quote for Zinc Plating manufacturing,Zinc Plating,1,Zinc Plating,0.7517903447151184
+Zinc Plating process provider,Zinc Plating,1,Zinc Plating,0.8277580142021179
+companies specializing in Zinc Plating,Zinc Plating,1,Zinc Plating,0.7900590896606445
+companies specializing in Permanent Mold Casting,Permanent Mold Casting,1,Permanent Mold Casting,0.7087182998657227
+request for Permanent Mold Casting services,Permanent Mold Casting,1,Permanent Mold Casting,0.6772369146347046
+Permanent Mold Casting prototype development,Permanent Mold Casting,1,Permanent Mold Casting,0.7994565367698669
+custom parts using Permanent Mold Casting,Permanent Mold Casting,1,Permanent Mold Casting,0.7137241363525391
+looking for Permanent Mold Casting process,Permanent Mold Casting,1,Permanent Mold Casting,0.7602706551551819
+who offers Electroless Nickel Plating,Electroless Nickel Plating,1,Electroless Nickel Plating,0.8438040614128113
+companies specializing in Electroless Nickel Plating,Electroless Nickel Plating,1,Electroless Nickel Plating,0.8154741525650024
+custom parts using Electroless Nickel Plating,Electroless Nickel Plating,1,Electroless Nickel Plating,0.799308180809021
+Electroless Nickel Plating prototype development,Electroless Nickel Plating,1,Electroless Nickel Plating,0.7954538464546204
+looking for Electroless Nickel Plating process,Electroless Nickel Plating,1,Electroless Nickel Plating,0.8353561162948608
+Polishing process provider,Polishing,1,Polishing,0.7369194626808167
+looking for Polishing process,Polishing,1,Polishing,0.7323455214500427
+Polishing prototype development,Polishing,1,Polishing,0.657136082649231
+request for Polishing services,Polishing,1,Polishing,0.6638923287391663
+need supplier for Polishing,Polishing,1,Polishing,0.6129937171936035
+who offers Water Quench Hardening,Water Quench Hardening,1,Water Quench Hardening,0.8028736114501953
+request for Water Quench Hardening services,Water Quench Hardening,1,Water Quench Hardening,0.7257479429244995
+Water Quench Hardening job order,Water Quench Hardening,1,Water Quench Hardening,0.7848610877990723
+companies specializing in Water Quench Hardening,Water Quench Hardening,1,Water Quench Hardening,0.7558273673057556
+looking for Water Quench Hardening process,Water Quench Hardening,1,Water Quench Hardening,0.8102701306343079
+need supplier for Investment Casting,Investment Casting,1,Investment Casting,0.7258850932121277
+companies specializing in Investment Casting,Investment Casting,1,Investment Casting,0.7947006225585938
+Investment Casting job order,Investment Casting,1,Investment Casting,0.7663573026657104
+request for Investment Casting services,Investment Casting,1,Investment Casting,0.7376360297203064
+Investment Casting process provider,Investment Casting,1,Investment Casting,0.8457154035568237
+Heat Treating job order,Heat Treating,1,Heat Treating,0.7746760249137878
+Heat Treating process provider,Heat Treating,1,Heat Treating,0.8220862746238708
+looking for Heat Treating process,Heat Treating,1,Heat Treating,0.7888619303703308
+companies specializing in Heat Treating,Heat Treating,1,Heat Treating,0.7626096606254578
+need supplier for Heat Treating,Heat Treating,1,Heat Treating,0.7113934755325317
+request for Atomic Hydrogen Welding services,Atomic Hydrogen Welding,1,Atomic Hydrogen Welding,0.6949735283851624
+Atomic Hydrogen Welding job order,Atomic Hydrogen Welding,1,Atomic Hydrogen Welding,0.7832145690917969
+Atomic Hydrogen Welding prototype development,Atomic Hydrogen Welding,1,Atomic Hydrogen Welding,0.7792750000953674
+looking for Atomic Hydrogen Welding process,Atomic Hydrogen Welding,1,Atomic Hydrogen Welding,0.7616510987281799
+who offers Atomic Hydrogen Welding,Atomic Hydrogen Welding,1,Atomic Hydrogen Welding,0.7679738402366638
+Vacuum Assisted Resin Transfer Molding job order,Vacuum Assisted Resin Transfer Molding,1,Vacuum Assisted Resin Transfer Molding,0.8344869017601013
+companies specializing in Vacuum Assisted Resin Transfer Molding,Vacuum Assisted Resin Transfer Molding,1,Vacuum Assisted Resin Transfer Molding,0.8661513328552246
+request for Vacuum Assisted Resin Transfer Molding services,Vacuum Assisted Resin Transfer Molding,1,Vacuum Assisted Resin Transfer Molding,0.7882852554321289
+need supplier for Vacuum Assisted Resin Transfer Molding,Vacuum Assisted Resin Transfer Molding,1,Vacuum Assisted Resin Transfer Molding,0.8129842877388
+looking for Vacuum Assisted Resin Transfer Molding process,Vacuum Assisted Resin Transfer Molding,1,Vacuum Assisted Resin Transfer Molding,0.8566129803657532
+request for Small Hole Drilling services,Small Hole Drilling,1,Small Hole Drilling,0.7666869759559631
+custom parts using Small Hole Drilling,Small Hole Drilling,1,Small Hole Drilling,0.7601009607315063
+need supplier for Small Hole Drilling,Small Hole Drilling,1,Small Hole Drilling,0.7562188506126404
+Small Hole Drilling prototype development,Small Hole Drilling,1,Small Hole Drilling,0.8034066557884216
+quote for Small Hole Drilling manufacturing,Small Hole Drilling,1,Small Hole Drilling,0.7710893154144287
+companies specializing in Soldering,Soldering,1,Soldering,0.6601337790489197
+Soldering process provider,Soldering,1,Soldering,0.6954799890518188
+Soldering prototype development,Soldering,1,Soldering,0.6667295098304749
+custom parts using Soldering,Soldering,1,Soldering,0.6797162890434265
+quote for Soldering manufacturing,Soldering,1,Soldering,0.624965488910675
+need supplier for Powder Coating,Powder Coating,1,Powder Coating,0.706571638584137
+Powder Coating prototype development,Powder Coating,1,Powder Coating,0.699013888835907
+companies specializing in Powder Coating,Powder Coating,1,Powder Coating,0.7621762752532959
+looking for Powder Coating process,Powder Coating,1,Powder Coating,0.7664539813995361
+who offers Powder Coating,Powder Coating,1,Powder Coating,0.7776926159858704
+looking for Pickling process,Pickling,1,Pickling,0.7338470220565796
+Pickling prototype development,Pickling,1,Pickling,0.6701226830482483
+companies specializing in Pickling,Pickling,1,Pickling,0.684780478477478
+Pickling job order,Pickling,1,Pickling,0.7189369201660156
+custom parts using Pickling,Pickling,1,Pickling,0.5129230618476868
+looking for Hot Working process,Hot Working,1,Hot Working,0.7381097078323364
+who offers Hot Working,Hot Working,1,Hot Working,0.7452725172042847
+request for Hot Working services,Hot Working,1,Hot Working,0.6857995986938477
+need supplier for Hot Working,Hot Working,1,Hot Working,0.6264333724975586
+Hot Working process provider,Hot Working,1,Hot Working,0.7555927038192749
+who offers Vacuum Thermoforming,Vacuum Thermoforming,1,Vacuum Thermoforming,0.8560795187950134
+looking for Vacuum Thermoforming process,Vacuum Thermoforming,1,Vacuum Thermoforming,0.8567324876785278
+Vacuum Thermoforming prototype development,Vacuum Thermoforming,1,Vacuum Thermoforming,0.8320820331573486
+companies specializing in Vacuum Thermoforming,Vacuum Thermoforming,1,Vacuum Thermoforming,0.8165937066078186
+custom parts using Vacuum Thermoforming,Vacuum Thermoforming,1,Vacuum Thermoforming,0.7777042984962463
+looking for Chemical Conversion Coating process,Chemical Conversion Coating,1,Chemical Conversion Coating,0.8509939312934875
+request for Chemical Conversion Coating services,Chemical Conversion Coating,1,Chemical Conversion Coating,0.7986788749694824
+custom parts using Chemical Conversion Coating,Chemical Conversion Coating,1,Chemical Conversion Coating,0.8105602264404297
+quote for Chemical Conversion Coating manufacturing,Chemical Conversion Coating,1,Chemical Conversion Coating,0.7933253645896912
+Chemical Conversion Coating job order,Chemical Conversion Coating,1,Chemical Conversion Coating,0.8277003765106201
+custom parts using Roll Forming,Roll Forming,1,Roll Forming,0.7269001603126526
+looking for Roll Forming process,Roll Forming,1,Roll Forming,0.7592487931251526
+companies specializing in Roll Forming,Roll Forming,1,Roll Forming,0.7716897130012512
+Roll Forming process provider,Roll Forming,1,Roll Forming,0.8263174295425415
+Roll Forming job order,Roll Forming,1,Roll Forming,0.7595881819725037
+request for Vibratory Tumbling services,Vibratory Tumbling,1,Vibratory Tumbling,0.748527467250824
+Vibratory Tumbling job order,Vibratory Tumbling,1,Vibratory Tumbling,0.7430867552757263
+need supplier for Vibratory Tumbling,Vibratory Tumbling,1,Vibratory Tumbling,0.7646675705909729
+Vibratory Tumbling prototype development,Vibratory Tumbling,1,Vibratory Tumbling,0.7680307626724243
+companies specializing in Vibratory Tumbling,Vibratory Tumbling,1,Vibratory Tumbling,0.8298134803771973
+Pultrusion process provider,Pultrusion,1,Pultrusion,0.8212382793426514
+Pultrusion job order,Pultrusion,1,Pultrusion,0.7286520600318909
+quote for Pultrusion manufacturing,Pultrusion,1,Pultrusion,0.6994393467903137
+need supplier for Pultrusion,Pultrusion,1,Pultrusion,0.6757621169090271
+companies specializing in Pultrusion,Pultrusion,1,Pultrusion,0.729342520236969
+custom parts using Machining Of Casting,Machining Of Casting,1,Machining Of Casting,0.8191031813621521
+Machining Of Casting prototype development,Machining Of Casting,1,Machining Of Casting,0.8130702972412109
+looking for Machining Of Casting process,Machining Of Casting,1,Machining Of Casting,0.8318988084793091
+request for Machining Of Casting services,Machining Of Casting,1,Machining Of Casting,0.7970239520072937
+who offers Machining Of Casting,Machining Of Casting,1,Machining Of Casting,0.8408917188644409
+request for EDM services,EDM,1,EDM,0.6750167608261108
+custom parts using EDM,EDM,6,Wire EDM,0.6674785017967224
+who offers EDM,EDM,1,EDM,0.7498400211334229
+looking for EDM process,EDM,1,EDM,0.6891985535621643
+EDM job order,EDM,1,EDM,0.683650016784668
+Who offers Abrasive Finishing?,Abrasive Finishing,1,Abrasive Finishing,0.8198791742324829
+Abrasive Finishing supplier near me,Abrasive Finishing,1,Abrasive Finishing,0.7685763239860535
+Custom parts using Abrasive Finishing,Abrasive Finishing,1,Abrasive Finishing,0.7850825786590576
+Abrasive Finishing for medical devices,Abrasive Finishing,1,Abrasive Finishing,0.7829967141151428
+Urgent Abrasive Finishing job order,Abrasive Finishing,1,Abrasive Finishing,0.6605956554412842
+Abrasive Finishing process details,Abrasive Finishing,1,Abrasive Finishing,0.8813655376434326
+Abrasive Finishing expert needed,Abrasive Finishing,1,Abrasive Finishing,0.7932284474372864
+Best Abrasive Finishing process for surface texture,Abrasive Finishing,1,Abrasive Finishing,0.8058837652206421
+Looking for Abrasive Finishing prototype development,Abrasive Finishing,1,Abrasive Finishing,0.694769024848938
+Quote for Abrasive Finishing manufacturing,Abrasive Finishing,1,Abrasive Finishing,0.7267197966575623
+Companies specializing in Abrasive Finishing,Abrasive Finishing,1,Abrasive Finishing,0.7885964512825012
+Who offers Additive Manufacturing?,Additive Manufacturing,1,Additive Manufacturing,0.7590434551239014
+Additive Manufacturing supplier near me,Additive Manufacturing,1,Additive Manufacturing,0.7034814357757568
+Custom parts using Additive Manufacturing,Additive Manufacturing,1,Additive Manufacturing,0.7757214903831482
+Additive Manufacturing for automotive industry,Additive Manufacturing,1,Additive Manufacturing,0.7734535932540894
+Urgent Additive Manufacturing job order,Additive Manufacturing,1,Additive Manufacturing,0.6115848422050476
+Additive Manufacturing process details,Additive Manufacturing,1,Additive Manufacturing,0.763106107711792
+Additive Manufacturing expert needed,Additive Manufacturing,1,Additive Manufacturing,0.6839719414710999
+Best Additive Manufacturing process for rapid prototyping,Additive Manufacturing,1,Additive Manufacturing,0.6521825790405273
+Looking for Additive Manufacturing prototype development,Additive Manufacturing,1,Additive Manufacturing,0.6535125970840454
+Quote for Additive Manufacturing manufacturing,Additive Manufacturing,1,Additive Manufacturing,0.7282267808914185
+Companies specializing in Additive Manufacturing,Additive Manufacturing,1,Additive Manufacturing,0.7509427070617676
+Who offers Directed Energy Deposition?,Directed Energy Deposition,1,Directed Energy Deposition,0.7300602197647095
+Directed Energy Deposition supplier near me,Directed Energy Deposition,1,Directed Energy Deposition,0.7851712107658386
+Custom parts using Directed Energy Deposition,Directed Energy Deposition,1,Directed Energy Deposition,0.6343199014663696
+Directed Energy Deposition for aerospace,Directed Energy Deposition,1,Directed Energy Deposition,0.8548341989517212
+Urgent Directed Energy Deposition job order,Directed Energy Deposition,1,Directed Energy Deposition,0.6966572403907776
+Directed Energy Deposition process details,Directed Energy Deposition,1,Directed Energy Deposition,0.8981947302818298
+Directed Energy Deposition expert needed,Directed Energy Deposition,1,Directed Energy Deposition,0.7961575388908386
+Best Directed Energy Deposition process for repairs,Directed Energy Deposition,1,Directed Energy Deposition,0.7110496759414673
+Looking for Directed Energy Deposition prototype development,Directed Energy Deposition,1,Directed Energy Deposition,0.6516497135162354
+Quote for Directed Energy Deposition manufacturing,Directed Energy Deposition,1,Directed Energy Deposition,0.6623149514198303
+Companies specializing in Directed Energy Deposition,Directed Energy Deposition,1,Directed Energy Deposition,0.6681384444236755
+Who offers Drop On Demand?,Drop On Demand,1,Drop On Demand,0.6509746313095093
+Drop On Demand supplier near me,Drop On Demand,1,Drop On Demand,0.6977764368057251
+Custom parts using Drop On Demand,Drop On Demand,1,Drop On Demand,0.6163147687911987
+Drop On Demand for electronics,Drop On Demand,1,Drop On Demand,0.7873048186302185
+Urgent Drop On Demand job order,Drop On Demand,1,Drop On Demand,0.6091246604919434
+Drop On Demand process details,Drop On Demand,1,Drop On Demand,0.8495253920555115
+Drop On Demand expert needed,Drop On Demand,1,Drop On Demand,0.767053484916687
+Best Drop On Demand process for small parts,Drop On Demand,1,Drop On Demand,0.6002905368804932
+Looking for Drop On Demand prototype development,Drop On Demand,1,Drop On Demand,0.5840047001838684
+Quote for Drop On Demand manufacturing,Drop On Demand,1,Drop On Demand,0.5793218612670898
+Companies specializing in Drop On Demand,Drop On Demand,1,Drop On Demand,0.593077540397644
+Who offers Fused Deposition Modeling?,Fused Deposition Modeling,1,Fused Deposition Modeling,0.7520018219947815
+Fused Deposition Modeling supplier near me,Fused Deposition Modeling,1,Fused Deposition Modeling,0.7615878582000732
+Custom parts using Fused Deposition Modeling,Fused Deposition Modeling,1,Fused Deposition Modeling,0.7901654243469238
+Fused Deposition Modeling for plastics,Fused Deposition Modeling,1,Fused Deposition Modeling,0.8924299478530884
+Urgent Fused Deposition Modeling job order,Fused Deposition Modeling,1,Fused Deposition Modeling,0.664928138256073
+Fused Deposition Modeling process details,Fused Deposition Modeling,1,Fused Deposition Modeling,0.832133948802948
+Fused Deposition Modeling expert needed,Fused Deposition Modeling,1,Fused Deposition Modeling,0.742547333240509
+Best Fused Deposition Modeling process for prototypes,Fused Deposition Modeling,1,Fused Deposition Modeling,0.7661322355270386
+Looking for Fused Deposition Modeling prototype development,Fused Deposition Modeling,1,Fused Deposition Modeling,0.7302529215812683
+Quote for Fused Deposition Modeling manufacturing,Fused Deposition Modeling,1,Fused Deposition Modeling,0.7129061818122864
+Companies specializing in Fused Deposition Modeling,Fused Deposition Modeling,1,Fused Deposition Modeling,0.7713947296142578
+Who offers Laminated Object Manufacturing?,Laminated Object Manufacturing,1,Laminated Object Manufacturing,0.828153133392334
+Laminated Object Manufacturing supplier near me,Laminated Object Manufacturing,1,Laminated Object Manufacturing,0.775366485118866
+Custom parts using Laminated Object Manufacturing,Laminated Object Manufacturing,1,Laminated Object Manufacturing,0.8293136358261108
+Laminated Object Manufacturing for paper parts,Laminated Object Manufacturing,1,Laminated Object Manufacturing,0.8509918451309204
+Urgent Laminated Object Manufacturing job order,Laminated Object Manufacturing,1,Laminated Object Manufacturing,0.7349416613578796
+Laminated Object Manufacturing process details,Laminated Object Manufacturing,1,Laminated Object Manufacturing,0.8831486105918884
+Laminated Object Manufacturing expert needed,Laminated Object Manufacturing,1,Laminated Object Manufacturing,0.7784096002578735
+Best Laminated Object Manufacturing process for models,Laminated Object Manufacturing,1,Laminated Object Manufacturing,0.8040962815284729
+Looking for Laminated Object Manufacturing prototype development,Laminated Object Manufacturing,1,Laminated Object Manufacturing,0.7593546509742737
+Quote for Laminated Object Manufacturing manufacturing,Laminated Object Manufacturing,1,Laminated Object Manufacturing,0.7863627076148987
+Companies specializing in Laminated Object Manufacturing,Laminated Object Manufacturing,1,Laminated Object Manufacturing,0.8585857152938843
+Who offers Metal Additive Manufacturing?,Metal Additive Manufacturing,1,Metal Additive Manufacturing,0.8014013767242432
+Metal Additive Manufacturing supplier near me,Metal Additive Manufacturing,1,Metal Additive Manufacturing,0.7687557339668274
+Custom parts using Metal Additive Manufacturing,Metal Additive Manufacturing,1,Metal Additive Manufacturing,0.8004184365272522
+Metal Additive Manufacturing for aerospace,Metal Additive Manufacturing,1,Metal Additive Manufacturing,0.8990923166275024
+Urgent Metal Additive Manufacturing job order,Metal Additive Manufacturing,1,Metal Additive Manufacturing,0.6834547519683838
+Metal Additive Manufacturing process details,Metal Additive Manufacturing,1,Metal Additive Manufacturing,0.8210148215293884
+Metal Additive Manufacturing expert needed,Metal Additive Manufacturing,1,Metal Additive Manufacturing,0.7613587379455566
+Best Metal Additive Manufacturing process for strong parts,Metal Additive Manufacturing,1,Metal Additive Manufacturing,0.7249911427497864
+Looking for Metal Additive Manufacturing prototype development,Metal Additive Manufacturing,1,Metal Additive Manufacturing,0.7220960259437561
+Quote for Metal Additive Manufacturing manufacturing,Metal Additive Manufacturing,1,Metal Additive Manufacturing,0.741894543170929
+Companies specializing in Metal Additive Manufacturing,Metal Additive Manufacturing,1,Metal Additive Manufacturing,0.812219500541687
+Who offers Polymer Deposition?,Polymer Deposition,1,Polymer Deposition,0.807620644569397
+Polymer Deposition supplier near me,Polymer Deposition,1,Polymer Deposition,0.7468540072441101
+Custom parts using Polymer Deposition,Polymer Deposition,1,Polymer Deposition,0.7733187675476074
+Polymer Deposition for medical devices,Polymer Deposition,1,Polymer Deposition,0.8019837141036987
+Urgent Polymer Deposition job order,Polymer Deposition,1,Polymer Deposition,0.6896824836730957
+Polymer Deposition process details,Polymer Deposition,1,Polymer Deposition,0.8730245232582092
+Polymer Deposition expert needed,Polymer Deposition,1,Polymer Deposition,0.771915078163147
+Best Polymer Deposition process for plastics,Polymer Deposition,1,Polymer Deposition,0.8034141063690186
+Looking for Polymer Deposition prototype development,Polymer Deposition,1,Polymer Deposition,0.7228526473045349
+Quote for Polymer Deposition manufacturing,Polymer Deposition,1,Polymer Deposition,0.7248808145523071
+Companies specializing in Polymer Deposition,Polymer Deposition,1,Polymer Deposition,0.7943774461746216
+Who offers Powder Deposition?,Powder Deposition,1,Powder Deposition,0.8200380206108093
+Powder Deposition supplier near me,Powder Deposition,1,Powder Deposition,0.7494813799858093
+Custom parts using Powder Deposition,Powder Deposition,1,Powder Deposition,0.7265456914901733
+Powder Deposition for metal parts,Powder Deposition,1,Powder Deposition,0.832106351852417
+Urgent Powder Deposition job order,Powder Deposition,1,Powder Deposition,0.6357045769691467
+Powder Deposition process details,Powder Deposition,1,Powder Deposition,0.8832945823669434
+Powder Deposition expert needed,Powder Deposition,1,Powder Deposition,0.7868310809135437
+Best Powder Deposition process for repairs,Powder Deposition,1,Powder Deposition,0.7661604881286621
+Looking for Powder Deposition prototype development,Powder Deposition,1,Powder Deposition,0.727657675743103
+Quote for Powder Deposition manufacturing,Powder Deposition,1,Powder Deposition,0.7299430966377258
+Companies specializing in Powder Deposition,Powder Deposition,1,Powder Deposition,0.7806103229522705
+Who offers Selective Laser Melting?,Selective Laser Melting,1,Selective Laser Melting,0.7546308040618896
+Selective Laser Melting supplier near me,Selective Laser Melting,1,Selective Laser Melting,0.7812942266464233
+Custom parts using Selective Laser Melting,Selective Laser Melting,1,Selective Laser Melting,0.757925271987915
+Selective Laser Melting for medical implants,Selective Laser Melting,1,Selective Laser Melting,0.8142344951629639
+Urgent Selective Laser Melting job order,Selective Laser Melting,1,Selective Laser Melting,0.6706168055534363
+Selective Laser Melting process details,Selective Laser Melting,1,Selective Laser Melting,0.8559924960136414
+Selective Laser Melting expert needed,Selective Laser Melting,1,Selective Laser Melting,0.762598991394043
+Best Selective Laser Melting process for dense parts,Selective Laser Melting,1,Selective Laser Melting,0.7119355797767639
+Looking for Selective Laser Melting prototype development,Selective Laser Melting,1,Selective Laser Melting,0.6949942111968994
+Quote for Selective Laser Melting manufacturing,Selective Laser Melting,1,Selective Laser Melting,0.6818938851356506
+Companies specializing in Selective Laser Melting,Selective Laser Melting,1,Selective Laser Melting,0.7814903259277344
+Who offers Powder Bed Fusion?,Powder Bed Fusion,1,Powder Bed Fusion,0.8240451216697693
+Powder Bed Fusion supplier near me,Powder Bed Fusion,1,Powder Bed Fusion,0.7738258838653564
+Custom parts using Powder Bed Fusion,Powder Bed Fusion,1,Powder Bed Fusion,0.795164167881012
+Powder Bed Fusion for aerospace,Powder Bed Fusion,1,Powder Bed Fusion,0.834616482257843
+Urgent Powder Bed Fusion job order,Powder Bed Fusion,1,Powder Bed Fusion,0.6751799583435059
+Powder Bed Fusion process details,Powder Bed Fusion,1,Powder Bed Fusion,0.8480339646339417
+Powder Bed Fusion expert needed,Powder Bed Fusion,1,Powder Bed Fusion,0.7475443482398987
+Best Powder Bed Fusion process for complex parts,Powder Bed Fusion,1,Powder Bed Fusion,0.7891833186149597
+Looking for Powder Bed Fusion prototype development,Powder Bed Fusion,1,Powder Bed Fusion,0.7463950514793396
+Quote for Powder Bed Fusion manufacturing,Powder Bed Fusion,1,Powder Bed Fusion,0.741319477558136
+Companies specializing in Powder Bed Fusion,Powder Bed Fusion,1,Powder Bed Fusion,0.8149835467338562

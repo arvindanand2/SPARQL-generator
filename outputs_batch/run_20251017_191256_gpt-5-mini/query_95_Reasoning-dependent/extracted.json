@@ -1,0 +1,50 @@
+{
+  "clauses": [
+    {
+      "type": "spo",
+      "subject_hint": "manufacturers",
+      "connective": "AND",
+      "relation_hint": "has process capability",
+      "object_hint": "subclass of Surface Preparation"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Surface Preparation",
+      "iri": "http://asu.edu/semantics/SUDOKN/SurfacePreparationCapability"
+    },
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "Surface Finishing",
+      "iri": "http://asu.edu/semantics/SUDOKN/SurfaceFinishingCapability"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    },
+    {
+      "label": "Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/MachiningCapability"
+    },
+    {
+      "label": "NADCAP",
+      "iri": "http://asu.edu/semantics/SUDOKN/NADCAP"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    },
+    {
+      "label": "Abrasive Cleaning",
+      "iri": "http://asu.edu/semantics/SUDOKN/AbrasiveCleaningCapability"
+    }
+  ]
+}

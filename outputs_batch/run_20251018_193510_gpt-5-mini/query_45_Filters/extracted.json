@@ -1,0 +1,57 @@
+{
+  "clauses": [
+    {
+      "object_hint": "site coordinate latitude",
+      "subject_hint": "manufacturers",
+      "filter": {
+        "op": "gt",
+        "value": 45,
+        "unit": "degree",
+        "min": null,
+        "max": null
+      },
+      "relation_hint": "has site latitude",
+      "type": "spo",
+      "connective": "AND"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "LEED",
+      "iri": "http://asu.edu/semantics/SUDOKN/LEED"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    },
+    {
+      "label": "ISO 14001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO14001"
+    },
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "ISO 14000",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO14000"
+    },
+    {
+      "label": "TL Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/TLQuality"
+    },
+    {
+      "label": "ISO 13485",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO13485"
+    },
+    {
+      "label": "ISO 45001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO45001"
+    }
+  ]
+}

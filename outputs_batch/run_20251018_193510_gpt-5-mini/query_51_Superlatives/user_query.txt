@@ -1,0 +1,1 @@
+Which manufacturer has the fewest employees among those located in states whose name contains "Ohio"?

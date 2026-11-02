@@ -1,0 +1,48 @@
+{
+  "clauses": [
+    {
+      "enum_values": [
+        "Directed Energy Deposition"
+      ],
+      "type": "spo",
+      "subject_hint": "manufacturers",
+      "connective": "AND",
+      "relation_hint": "has process capability"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Powder Deposition",
+      "iri": "http://asu.edu/semantics/SUDOKN/PowderDepositionCapability"
+    },
+    {
+      "label": "Metal Additive Manufacturing",
+      "iri": "http://asu.edu/semantics/SUDOKN/AdditiveManufacturingCapability"
+    },
+    {
+      "label": "Drop On Demand",
+      "iri": "http://asu.edu/semantics/SUDOKN/DropOnDemandCapability"
+    },
+    {
+      "label": "Polymer Deposition",
+      "iri": "http://asu.edu/semantics/SUDOKN/PolymerDepositionCapability"
+    },
+    {
+      "label": "Fused Deposition Modeling",
+      "iri": "http://asu.edu/semantics/SUDOKN/FusedDepositionModelingCapability"
+    },
+    {
+      "label": "Solid Deposition",
+      "iri": "http://asu.edu/semantics/SUDOKN/SolidDepositionCapability"
+    },
+    {
+      "label": "Additive Manufacturing",
+      "iri": "http://asu.edu/semantics/SUDOKN/AdditiveManufacturingCapability"
+    },
+    {
+      "label": "Selective Laser Melting",
+      "iri": "http://asu.edu/semantics/SUDOKN/SelectiveLaserMeltingCapability"
+    }
+  ]
+}

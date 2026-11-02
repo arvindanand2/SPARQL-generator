@@ -1,0 +1,52 @@
+{
+  "total": 5,
+  "successful": 5,
+  "failed": 0,
+  "results": [
+    {
+      "query_id": 0,
+      "query": "return the manufacturers who have stamping capability and serve the aerospace industry",
+      "expected_label": "SUDOKN Example Queries",
+      "success": true,
+      "result": "manufacturer\tname\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 330\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 1,
+      "query": "What are the top 3 manufacturing process capabilities available in North Carolina ?",
+      "expected_label": "SUDOKN Example Queries",
+      "success": true,
+      "result": "cap\tcapLabel\tnumManufacturers\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 3\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 2,
+      "query": "how many manufacturers in NC are established after 2010",
+      "expected_label": "SUDOKN Example Queries",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 3,
+      "query": "return the manufacturers who only provide machining services and can machine both aluminum and stainless steel",
+      "expected_label": "SUDOKN Example Queries",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 4,
+      "query": "return the manufacturers that are involved in plastic and rubber product manufacturing  (secondary NAICS code = 326)and have some type of quality management certificate.if secondary NAICS code is not in the instance data, suggest a different query",
+      "expected_label": "SUDOKN Example Queries",
+      "success": true,
+      "result": "manufacturer\tindustryLabel\tcertLabel\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 205\n",
+      "attempts": 1,
+      "error": null
+    }
+  ]
+}

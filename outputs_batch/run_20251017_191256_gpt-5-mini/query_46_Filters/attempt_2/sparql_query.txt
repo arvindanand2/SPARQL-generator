@@ -1,0 +1,14 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT ?manufacturer ?label ?lon WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  OPTIONAL { ?manufacturer rdfs:label ?label . }
+  ?manufacturer sdk:organizationLocatedIn ?site .
+  ?site sdk:hasSpatialCoordinates ?coords .
+  ?coords sdk:hasLongitudeValue ?lon .
+  FILTER(xsd:double(str(?lon)) < 100.0)
+}
+LIMIT 10000

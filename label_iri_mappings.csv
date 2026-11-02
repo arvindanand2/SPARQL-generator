@@ -1,0 +1,969 @@
+label,iri,type,id,source_file
+Abrasive Cleaning,http://asu.edu/semantics/SUDOKN/AbrasiveCleaningCapability,class,,classes_with_embeddings.jsonl
+Abrasive Machining,http://asu.edu/semantics/SUDOKN/AbrassiveMachiningCapability,class,,classes_with_embeddings.jsonl
+AbrasiveMachiningCapability,http://asu.edu/semantics/SUDOKN/AbrasiveMachiningCapability,class,,classes_with_embeddings.jsonl
+ABS,http://asu.edu/semantics/SUDOKN/ABSProcessingCapability,class,,classes_with_embeddings.jsonl
+Acetal,http://asu.edu/semantics/SUDOKN/AcetalProcessingCapability,class,,classes_with_embeddings.jsonl
+Acetron,http://asu.edu/semantics/SUDOKN/AcetronProcessingCapability,class,,classes_with_embeddings.jsonl
+Acrylic,http://asu.edu/semantics/SUDOKN/AcrylicProcessingCapability,class,,classes_with_embeddings.jsonl
+Additive Manufacturing,http://asu.edu/semantics/SUDOKN/AdditiveManufacturingCapability,class,,classes_with_embeddings.jsonl
+Adhesive Bonding,http://asu.edu/semantics/SUDOKN/AdhesiveBondingCapability,class,,classes_with_embeddings.jsonl
+Aerospace,http://asu.edu/semantics/SUDOKN/AerospaceIndustry,class,,classes_with_embeddings.jsonl
+Aerospace Quality,http://asu.edu/semantics/SUDOKN/AerospaceQualityCertificate,class,,classes_with_embeddings.jsonl
+aerospaceIndustry,http://asu.edu/semantics/SUDOKN/aerospaceIndustry,class,,classes_with_embeddings.jsonl
+AerospaceQuality,http://asu.edu/semantics/SUDOKN/AerospaceQuality,class,,classes_with_embeddings.jsonl
+AgeQuenchHardeningCapability,http://asu.edu/semantics/SUDOKN/AgeQuenchHardeningCapability,class,,classes_with_embeddings.jsonl
+Agriculture,http://asu.edu/semantics/SUDOKN/AgricultureIndustry,class,,classes_with_embeddings.jsonl
+Alkaline Oxide Conversion Coating,http://asu.edu/semantics/SUDOKN/AlkalineOxideConversionCoatingCapability,class,,classes_with_embeddings.jsonl
+AllDisjointClasses,http://www.w3.org/2002/07/owl#AllDisjointClasses,class,,classes_with_embeddings.jsonl
+Alloy,http://asu.edu/semantics/SUDOKN/AlloyProcessingCapability,class,,classes_with_embeddings.jsonl
+Alloy Steel,http://asu.edu/semantics/SUDOKN/AlloySteelProcessingCapability,class,,classes_with_embeddings.jsonl
+Aluminum,http://asu.edu/semantics/SUDOKN/AluminumProcessingCapability,class,,classes_with_embeddings.jsonl
+Annealing,http://asu.edu/semantics/SUDOKN/AnnealingCapability,class,,classes_with_embeddings.jsonl
+AnnotationProperty,http://www.w3.org/2002/07/owl#AnnotationProperty,class,,classes_with_embeddings.jsonl
+Anodizing,http://asu.edu/semantics/SUDOKN/AnodizingCapability,class,,classes_with_embeddings.jsonl
+Apparel,http://asu.edu/semantics/SUDOKN/ApparelIndustry,class,,classes_with_embeddings.jsonl
+apparelIndustry,http://asu.edu/semantics/SUDOKN/apparelIndustry,class,,classes_with_embeddings.jsonl
+AS 9100,http://asu.edu/semantics/SUDOKN/AS9100Certificate,class,,classes_with_embeddings.jsonl
+AS9000,http://asu.edu/semantics/SUDOKN/AS9000,class,,classes_with_embeddings.jsonl
+AS9003,http://asu.edu/semantics/SUDOKN/AS9003,class,,classes_with_embeddings.jsonl
+AS9100,http://asu.edu/semantics/SUDOKN/AS9100,class,,classes_with_embeddings.jsonl
+AS9102,http://asu.edu/semantics/SUDOKN/AS9102,class,,classes_with_embeddings.jsonl
+AS9120,http://asu.edu/semantics/SUDOKN/AS9120,class,,classes_with_embeddings.jsonl
+ASME,http://asu.edu/semantics/SUDOKN/ASME,class,,classes_with_embeddings.jsonl
+Atomic Hydrogen Welding,http://asu.edu/semantics/SUDOKN/AtomicHydrogenWeldingCapability,class,,classes_with_embeddings.jsonl
+attests to,http://asu.edu/semantics/SUDOKN/attestsTo,predicate,pred:attestsTo@v1,predicates_with_embeddings.jsonl
+Audio And Visual,http://asu.edu/semantics/SUDOKN/AudioAndVisualIndustry,class,,classes_with_embeddings.jsonl
+Austempering,http://asu.edu/semantics/SUDOKN/AustemperingCapability,class,,classes_with_embeddings.jsonl
+Automotive,http://asu.edu/semantics/SUDOKN/AutomotiveIndustry,class,,classes_with_embeddings.jsonl
+AWSWelder,http://asu.edu/semantics/SUDOKN/AWSWelder,class,,classes_with_embeddings.jsonl
+BABA,http://asu.edu/semantics/SUDOKN/BABA,class,,classes_with_embeddings.jsonl
+Babbit,http://asu.edu/semantics/SUDOKN/BabbitProcessingCapability,class,,classes_with_embeddings.jsonl
+Bar Drawing,http://asu.edu/semantics/SUDOKN/BarDrawingCapability,class,,classes_with_embeddings.jsonl
+Barrel Finishing,http://asu.edu/semantics/SUDOKN/BarrelFinishingCapability,class,,classes_with_embeddings.jsonl
+Bead Blasting,http://asu.edu/semantics/SUDOKN/BeadBlastingCapability,class,,classes_with_embeddings.jsonl
+Belt Sanding,http://asu.edu/semantics/SUDOKN/BeltSandingCapability,class,,classes_with_embeddings.jsonl
+Bending,http://asu.edu/semantics/SUDOKN/BendingCapability,class,,classes_with_embeddings.jsonl
+Beryllium,http://asu.edu/semantics/SUDOKN/BerylliumProcessingCapability,class,,classes_with_embeddings.jsonl
+Beverage,http://asu.edu/semantics/SUDOKN/BeverageIndustry,class,,classes_with_embeddings.jsonl
+beverageIndustry,http://asu.edu/semantics/SUDOKN/beverageIndustry,class,,classes_with_embeddings.jsonl
+BFO_0000019,http://purl.obolibrary.org/obo/BFO_0000019,class,,classes_with_embeddings.jsonl
+BFO_0000029,http://purl.obolibrary.org/obo/BFO_0000029,class,,classes_with_embeddings.jsonl
+Black Oxide Coating,http://asu.edu/semantics/SUDOKN/BlackOxideCoatingCapability,class,,classes_with_embeddings.jsonl
+Blow Molding,http://asu.edu/semantics/SUDOKN/BlowMoldingCapability,class,,classes_with_embeddings.jsonl
+Blue Temp Steel,http://asu.edu/semantics/SUDOKN/BlueTempSteelProcessingCapability,class,,classes_with_embeddings.jsonl
+Boring,http://asu.edu/semantics/SUDOKN/BoringCapability,class,,classes_with_embeddings.jsonl
+brand name,http://asu.edu/semantics/SUDOKN/BrandName,class,,classes_with_embeddings.jsonl
+Brass,http://asu.edu/semantics/SUDOKN/BrassProcessingCapability,class,,classes_with_embeddings.jsonl
+Braze Welding,http://asu.edu/semantics/SUDOKN/BrazeWeldingCapability,class,,classes_with_embeddings.jsonl
+Brazing,http://asu.edu/semantics/SUDOKN/BrazingCapability,class,,classes_with_embeddings.jsonl
+BritishRetailConsortium,http://asu.edu/semantics/SUDOKN/BritishRetailConsortium,class,,classes_with_embeddings.jsonl
+Broaching,http://asu.edu/semantics/SUDOKN/BroachingCapability,class,,classes_with_embeddings.jsonl
+Bronze,http://asu.edu/semantics/SUDOKN/BronzeProcessingCapability,class,,classes_with_embeddings.jsonl
+Buffing,http://asu.edu/semantics/SUDOKN/BuffingCapability,class,,classes_with_embeddings.jsonl
+building number,http://asu.edu/semantics/SUDOKN/BuildingNumber,class,,classes_with_embeddings.jsonl
+Bulge Forming,http://asu.edu/semantics/SUDOKN/BulgeFormingCapability,class,,classes_with_embeddings.jsonl
+Business Equipment,http://asu.edu/semantics/SUDOKN/BusinessEquipmentIndustry,class,,classes_with_embeddings.jsonl
+BusinessDescription,http://asu.edu/semantics/SUDOKN/BusinessDescription,class,,classes_with_embeddings.jsonl
+businessequipmentIndustry,http://asu.edu/semantics/SUDOKN/businessequipmentIndustry,class,,classes_with_embeddings.jsonl
+Butt Welding,http://asu.edu/semantics/SUDOKN/ButtWeldingCapability,class,,classes_with_embeddings.jsonl
+Cadmium Plating,http://asu.edu/semantics/SUDOKN/CadmiumPlatingCapability,class,,classes_with_embeddings.jsonl
+Carbide,http://asu.edu/semantics/SUDOKN/CarbideProcessingCapability,class,,classes_with_embeddings.jsonl
+Carbide Machining,http://asu.edu/semantics/SUDOKN/CarbideMachiningCapability,class,,classes_with_embeddings.jsonl
+Carbon,http://asu.edu/semantics/SUDOKN/CarbonProcessingCapability,class,,classes_with_embeddings.jsonl
+Carbon Arc Welding,http://asu.edu/semantics/SUDOKN/CarbonArcWeldingCapability,class,,classes_with_embeddings.jsonl
+Carbon Dioxide Mold Casting,http://asu.edu/semantics/SUDOKN/CarbonDioxideMoldCastingCapability,class,,classes_with_embeddings.jsonl
+Carbon Fiber,http://asu.edu/semantics/SUDOKN/CarbonFiberProcessingCapability,class,,classes_with_embeddings.jsonl
+Carbonitriding,http://asu.edu/semantics/SUDOKN/CarbonitridingCapability,class,,classes_with_embeddings.jsonl
+Carburizing,http://asu.edu/semantics/SUDOKN/CarburizingCapability,class,,classes_with_embeddings.jsonl
+Cast Steel,http://asu.edu/semantics/SUDOKN/CastSteelProcessingCapability,class,,classes_with_embeddings.jsonl
+Casting,http://asu.edu/semantics/SUDOKN/CastingCapability,class,,classes_with_embeddings.jsonl
+Centerless Grinding,http://asu.edu/semantics/SUDOKN/CenterlessGrindingCapability,class,,classes_with_embeddings.jsonl
+Centrifugal Casting,http://asu.edu/semantics/SUDOKN/CentrifugalCastingCapability,class,,classes_with_embeddings.jsonl
+Ceramic,http://asu.edu/semantics/SUDOKN/CeramicProcessingCapability,class,,classes_with_embeddings.jsonl
+Ceramic Mold Casting,http://asu.edu/semantics/SUDOKN/CeramicMoldCastingCapability,class,,classes_with_embeddings.jsonl
+ceramicProcessingCapability,http://asu.edu/semantics/SUDOKN/ceramicProcessingCapability,class,,classes_with_embeddings.jsonl
+certificate,http://asu.edu/semantics/SUDOKN/Certificate,class,,classes_with_embeddings.jsonl
+Chemical And Petrochemical,http://asu.edu/semantics/SUDOKN/ChemicalAndPetrochemicalIndustry,class,,classes_with_embeddings.jsonl
+Chemical Cleaning,http://asu.edu/semantics/SUDOKN/ChemicalCleaningCapability,class,,classes_with_embeddings.jsonl
+Chemical Coating,http://asu.edu/semantics/SUDOKN/ChemicalCoatingCapability,class,,classes_with_embeddings.jsonl
+Chemical Conversion Coating,http://asu.edu/semantics/SUDOKN/ChemicalConversionCoatingCapability,class,,classes_with_embeddings.jsonl
+Chemical Engraving,http://asu.edu/semantics/SUDOKN/ChemicalEngravingCapability,class,,classes_with_embeddings.jsonl
+Chemical Machining,http://asu.edu/semantics/SUDOKN/ChemicalMachiningCapability,class,,classes_with_embeddings.jsonl
+Chemical Mechanical Polishing,http://asu.edu/semantics/SUDOKN/ChemicalMechanicalPolishingCapability,class,,classes_with_embeddings.jsonl
+Chemical Polishing,http://asu.edu/semantics/SUDOKN/ChemicalPolishingCapability,class,,classes_with_embeddings.jsonl
+Chemical Vapor Deposition,http://asu.edu/semantics/SUDOKN/ChemicalVaporDepositionCapability,class,,classes_with_embeddings.jsonl
+chemicalcoatingCapability,http://asu.edu/semantics/SUDOKN/chemicalcoatingCapability,class,,classes_with_embeddings.jsonl
+chemicalIndustry,http://asu.edu/semantics/SUDOKN/chemicalIndustry,class,,classes_with_embeddings.jsonl
+ChemicalProcessingCapability,http://asu.edu/semantics/SUDOKN/ChemicalProcessingCapability,class,,classes_with_embeddings.jsonl
+Chemicals,http://asu.edu/semantics/SUDOKN/ChemicalsProcessingCapability,class,,classes_with_embeddings.jsonl
+Chromate Conversion Coating,http://asu.edu/semantics/SUDOKN/ChromateConversionCoatingCapability,class,,classes_with_embeddings.jsonl
+Chrome Plating,http://asu.edu/semantics/SUDOKN/ChromePlatingCapability,class,,classes_with_embeddings.jsonl
+Chromium,http://asu.edu/semantics/SUDOKN/ChromiumProcessingCapability,class,,classes_with_embeddings.jsonl
+Chromizing,http://asu.edu/semantics/SUDOKN/ChromizingCapability,class,,classes_with_embeddings.jsonl
+City,http://asu.edu/semantics/SUDOKN/City,class,,classes_with_embeddings.jsonl
+city of,http://asu.edu/semantics/SUDOKN/CityOf,predicate,pred:CityOf@v1,predicates_with_embeddings.jsonl
+city of address,http://asu.edu/semantics/SUDOKN/CityOfAddress,class,,classes_with_embeddings.jsonl
+Class,http://www.w3.org/2002/07/owl#Class,class,,classes_with_embeddings.jsonl
+Class,http://www.w3.org/2000/01/rdf-schema#Class,class,,classes_with_embeddings.jsonl
+classifier,http://asu.edu/semantics/SUDOKN/Classifier,class,,classes_with_embeddings.jsonl
+ClyindricalGrindingCapability,http://asu.edu/semantics/SUDOKN/ClyindricalGrindingCapability,class,,classes_with_embeddings.jsonl
+CNC Cylindrical Grinding,http://asu.edu/semantics/SUDOKN/CNCCylindricalGrindingCapability,class,,classes_with_embeddings.jsonl
+CNC Laser Cutting,http://asu.edu/semantics/SUDOKN/CNCLaserCuttingCapability,class,,classes_with_embeddings.jsonl
+CNC Machining,http://asu.edu/semantics/SUDOKN/CNCMachiningCapability,class,,classes_with_embeddings.jsonl
+CNC Milling,http://asu.edu/semantics/SUDOKN/CNCMillingCapability,class,,classes_with_embeddings.jsonl
+CNC Routing,http://asu.edu/semantics/SUDOKN/CNCRoutingCapability,class,,classes_with_embeddings.jsonl
+CNC Turning,http://asu.edu/semantics/SUDOKN/CNCTurningCapability,class,,classes_with_embeddings.jsonl
+Coal,http://asu.edu/semantics/SUDOKN/CoalIndustry,class,,classes_with_embeddings.jsonl
+Coating,http://asu.edu/semantics/SUDOKN/CoatingCapability,class,,classes_with_embeddings.jsonl
+coatingCapability,http://asu.edu/semantics/SUDOKN/coatingCapability,class,,classes_with_embeddings.jsonl
+Cobalt,http://asu.edu/semantics/SUDOKN/CobaltProcessingCapability,class,,classes_with_embeddings.jsonl
+Coining,http://asu.edu/semantics/SUDOKN/CoiningCapability,class,,classes_with_embeddings.jsonl
+Cold Chamber Die Casting,http://asu.edu/semantics/SUDOKN/ColdChamberDieCastingCapability,class,,classes_with_embeddings.jsonl
+Cold Rolled Steel,http://asu.edu/semantics/SUDOKN/ColdRolledSteelProcessingCapability,class,,classes_with_embeddings.jsonl
+Cold Treatment,http://asu.edu/semantics/SUDOKN/ColdTreatmentCapability,class,,classes_with_embeddings.jsonl
+Cold Vacuum Pressing,http://asu.edu/semantics/SUDOKN/ColdVacuumPressingCapability,class,,classes_with_embeddings.jsonl
+Combustible Gas Welding,http://asu.edu/semantics/SUDOKN/CombustibleGasWeldingCapability,class,,classes_with_embeddings.jsonl
+Communication And Electronic Power Utilities,http://asu.edu/semantics/SUDOKN/CommunicationAndElectronicPowerUtilitiesIndustry,class,,classes_with_embeddings.jsonl
+communicationIndustry,http://asu.edu/semantics/SUDOKN/communicationIndustry,class,,classes_with_embeddings.jsonl
+Communications,http://asu.edu/semantics/SUDOKN/CommunicationsIndustry,class,,classes_with_embeddings.jsonl
+Composite,http://asu.edu/semantics/SUDOKN/CompositeProcessingCapability,class,,classes_with_embeddings.jsonl
+Compression Molding,http://asu.edu/semantics/SUDOKN/CompressionMoldingCapability,class,,classes_with_embeddings.jsonl
+Computer,http://asu.edu/semantics/SUDOKN/ComputerIndustry,class,,classes_with_embeddings.jsonl
+Concrete,http://asu.edu/semantics/SUDOKN/ConcreteProcessingCapability,class,,classes_with_embeddings.jsonl
+Construction,http://asu.edu/semantics/SUDOKN/ConstructionIndustry,class,,classes_with_embeddings.jsonl
+constructionIndustry,http://asu.edu/semantics/SUDOKN/constructionIndustry,class,,classes_with_embeddings.jsonl
+Consumer Goods,http://asu.edu/semantics/SUDOKN/ConsumerGoodsIndustry,class,,classes_with_embeddings.jsonl
+ContainerMembershipProperty,http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty,class,,classes_with_embeddings.jsonl
+Continuous Casting,http://asu.edu/semantics/SUDOKN/ContinuousCastingCapability,class,,classes_with_embeddings.jsonl
+Copper,http://asu.edu/semantics/SUDOKN/CopperProcessingCapability,class,,classes_with_embeddings.jsonl
+CopperPlatingCapability,http://asu.edu/semantics/SUDOKN/CopperPlatingCapability,class,,classes_with_embeddings.jsonl
+Counter Boring,http://asu.edu/semantics/SUDOKN/CounterBoringCapability,class,,classes_with_embeddings.jsonl
+Counter Sinking,http://asu.edu/semantics/SUDOKN/CounterSinkingCapability,class,,classes_with_embeddings.jsonl
+country of address,http://asu.edu/semantics/SUDOKN/CountryOfAddress,class,,classes_with_embeddings.jsonl
+CPVC,http://asu.edu/semantics/SUDOKN/CPVCProcessingCapability,class,,classes_with_embeddings.jsonl
+Creep Feed Grinding,http://asu.edu/semantics/SUDOKN/CreepFeedGrindingCapability,class,,classes_with_embeddings.jsonl
+Crochet,http://asu.edu/semantics/SUDOKN/CrochetCapability,class,,classes_with_embeddings.jsonl
+CTFE,http://asu.edu/semantics/SUDOKN/CTFEProcessingCapability,class,,classes_with_embeddings.jsonl
+Curvic Grinding,http://asu.edu/semantics/SUDOKN/CurvicGrindingCapability,class,,classes_with_embeddings.jsonl
+Custom Tubing,http://asu.edu/semantics/SUDOKN/CustomTubingCapability,class,,classes_with_embeddings.jsonl
+CuttoLengthTubingCapability,http://asu.edu/semantics/SUDOKN/CuttoLengthTubingCapability,class,,classes_with_embeddings.jsonl
+Cyaniding,http://asu.edu/semantics/SUDOKN/CyanidingCapability,class,,classes_with_embeddings.jsonl
+Cylindrical Grinding,http://asu.edu/semantics/SUDOKN/CylindricalGrindingCapability,class,,classes_with_embeddings.jsonl
+Datatype,http://www.w3.org/2000/01/rdf-schema#Datatype,class,,classes_with_embeddings.jsonl
+DatatypeProperty,http://www.w3.org/2002/07/owl#DatatypeProperty,class,,classes_with_embeddings.jsonl
+Deburring,http://asu.edu/semantics/SUDOKN/DeburringCapability,class,,classes_with_embeddings.jsonl
+Decorative Anodizing,http://asu.edu/semantics/SUDOKN/DecorativeAnodizingCapability,class,,classes_with_embeddings.jsonl
+Deep Hole Drilling,http://asu.edu/semantics/SUDOKN/DeepHoleDrillingCapability,class,,classes_with_embeddings.jsonl
+Defense,http://asu.edu/semantics/SUDOKN/DefenseIndustry,class,,classes_with_embeddings.jsonl
+defenseIndustry,http://asu.edu/semantics/SUDOKN/defenseIndustry,class,,classes_with_embeddings.jsonl
+Delrin,http://asu.edu/semantics/SUDOKN/DelrinProcessingCapability,class,,classes_with_embeddings.jsonl
+designative name,http://asu.edu/semantics/SUDOKN/DesignativeName,class,,classes_with_embeddings.jsonl
+Diamond Machining,http://asu.edu/semantics/SUDOKN/DiamondMachiningCapability,class,,classes_with_embeddings.jsonl
+Die Casting,http://asu.edu/semantics/SUDOKN/DieCastingCapability,class,,classes_with_embeddings.jsonl
+Diffusion Bonding,http://asu.edu/semantics/SUDOKN/DiffusionBondingCapability,class,,classes_with_embeddings.jsonl
+Diffusion Hardening,http://asu.edu/semantics/SUDOKN/DiffusionHardeningCapability,class,,classes_with_embeddings.jsonl
+Dip Brazing,http://asu.edu/semantics/SUDOKN/DipBrazingCapability,class,,classes_with_embeddings.jsonl
+Direct Extrusion,http://asu.edu/semantics/SUDOKN/DirectExtrusionCapability,class,,classes_with_embeddings.jsonl
+Drawing,http://asu.edu/semantics/SUDOKN/DrawingCapability,class,,classes_with_embeddings.jsonl
+Drilling,http://asu.edu/semantics/SUDOKN/DrillingCapability,class,,classes_with_embeddings.jsonl
+Drop On Demand,http://asu.edu/semantics/SUDOKN/DropOnDemandCapability,class,,classes_with_embeddings.jsonl
+Dyeing,http://asu.edu/semantics/SUDOKN/DyeingCapability,class,,classes_with_embeddings.jsonl
+ECG Tube Cutting,http://asu.edu/semantics/SUDOKN/ECGTubeCuttingCapability,class,,classes_with_embeddings.jsonl
+EDM,http://asu.edu/semantics/SUDOKN/EDMCapability,class,,classes_with_embeddings.jsonl
+Education,http://asu.edu/semantics/SUDOKN/EducationIndustry,class,,classes_with_embeddings.jsonl
+Electric Arc Welding,http://asu.edu/semantics/SUDOKN/ElectricArcWeldingCapability,class,,classes_with_embeddings.jsonl
+Electric Automotive,http://asu.edu/semantics/SUDOKN/ElectricAutomotiveIndustry,class,,classes_with_embeddings.jsonl
+Electrical Resistance Welding,http://asu.edu/semantics/SUDOKN/ElectricalResistanceWeldingCapability,class,,classes_with_embeddings.jsonl
+Electro Slag Welding,http://asu.edu/semantics/SUDOKN/ElectroSlagWeldingCapability,class,,classes_with_embeddings.jsonl
+Electrochemical Grinding,http://asu.edu/semantics/SUDOKN/ElectrochemicalGrindingCapability,class,,classes_with_embeddings.jsonl
+Electroless Nickel Plating,http://asu.edu/semantics/SUDOKN/ElectrolessNickelPlatingCapability,class,,classes_with_embeddings.jsonl
+Electron Beam Machining,http://asu.edu/semantics/SUDOKN/ElectronBeamMachiningCapability,class,,classes_with_embeddings.jsonl
+Electron Beam Welding,http://asu.edu/semantics/SUDOKN/ElectronBeamWeldingCapability,class,,classes_with_embeddings.jsonl
+Electronic Product,http://asu.edu/semantics/SUDOKN/ElectronicProductIndustry,class,,classes_with_embeddings.jsonl
+electronicproductIndustry,http://asu.edu/semantics/SUDOKN/electronicproductIndustry,class,,classes_with_embeddings.jsonl
+Electroplating,http://asu.edu/semantics/SUDOKN/ElectroPlatingCapability,class,,classes_with_embeddings.jsonl
+ElectroplatingCapability,http://asu.edu/semantics/SUDOKN/ElectroplatingCapability,class,,classes_with_embeddings.jsonl
+Electropolishing,http://asu.edu/semantics/SUDOKN/ElectropolishingCapability,class,,classes_with_embeddings.jsonl
+email address,http://asu.edu/semantics/SUDOKN/EmailAddress,class,,classes_with_embeddings.jsonl
+Embossing,http://asu.edu/semantics/SUDOKN/EmbossingCapability,class,,classes_with_embeddings.jsonl
+End Milling,http://asu.edu/semantics/SUDOKN/EndMillingCapability,class,,classes_with_embeddings.jsonl
+Energy,http://asu.edu/semantics/SUDOKN/EnergyIndustry,class,,classes_with_embeddings.jsonl
+energyproductionIndustry,http://asu.edu/semantics/SUDOKN/energyproductionIndustry,class,,classes_with_embeddings.jsonl
+Engraving,http://asu.edu/semantics/SUDOKN/EngravingCapability,class,,classes_with_embeddings.jsonl
+Entertainment And Media,http://asu.edu/semantics/SUDOKN/EntertainmentAndMediaIndustry,class,,classes_with_embeddings.jsonl
+entertainmentandmediaIndustry,http://asu.edu/semantics/SUDOKN/entertainmentandmediaIndustry,class,,classes_with_embeddings.jsonl
+Erosion Machining,http://asu.edu/semantics/SUDOKN/ErosionMachiningCapability,class,,classes_with_embeddings.jsonl
+Ertalyte,http://asu.edu/semantics/SUDOKN/ErtalyteProcessingCapability,class,,classes_with_embeddings.jsonl
+Etching,http://asu.edu/semantics/SUDOKN/EtchingCapability,class,,classes_with_embeddings.jsonl
+Exotic Material,http://asu.edu/semantics/SUDOKN/ExoticMaterialProcessingCapability,class,,classes_with_embeddings.jsonl
+Explosive Welding,http://asu.edu/semantics/SUDOKN/ExplosiveWeldingCapability,class,,classes_with_embeddings.jsonl
+Extruding,http://asu.edu/semantics/SUDOKN/ExtrudingCapability,class,,classes_with_embeddings.jsonl
+Extrusion Blow Molding,http://asu.edu/semantics/SUDOKN/ExtrusionBlowMoldingCapability,class,,classes_with_embeddings.jsonl
+Fabricating,http://asu.edu/semantics/SUDOKN/FabricatingCapability,class,,classes_with_embeddings.jsonl
+fabricatingCapability,http://asu.edu/semantics/SUDOKN/fabricatingCapability,class,,classes_with_embeddings.jsonl
+Face Milling,http://asu.edu/semantics/SUDOKN/FaceMillingCapability,class,,classes_with_embeddings.jsonl
+FDA,http://asu.edu/semantics/SUDOKN/FDA,class,,classes_with_embeddings.jsonl
+FDA21CFRPart820,http://asu.edu/semantics/SUDOKN/FDA21CFRPart820,class,,classes_with_embeddings.jsonl
+FDAGMP,http://asu.edu/semantics/SUDOKN/FDAGMP,class,,classes_with_embeddings.jsonl
+FDAPMA,http://asu.edu/semantics/SUDOKN/FDAPMA,class,,classes_with_embeddings.jsonl
+Fiber,http://asu.edu/semantics/SUDOKN/FiberProcessingCapability,class,,classes_with_embeddings.jsonl
+Fiber Glass,http://asu.edu/semantics/SUDOKN/FiberGlassProcessingCapability,class,,classes_with_embeddings.jsonl
+FiveAxisMachiningCapability,http://asu.edu/semantics/SUDOKN/FiveAxisMachiningCapability,class,,classes_with_embeddings.jsonl
+Flame Hardening,http://asu.edu/semantics/SUDOKN/FlameHardeningCapability,class,,classes_with_embeddings.jsonl
+Flame Spraying,http://asu.edu/semantics/SUDOKN/FlameSprayingCapability,class,,classes_with_embeddings.jsonl
+Flanging EDM,http://asu.edu/semantics/SUDOKN/FlangingEDMCapability,class,,classes_with_embeddings.jsonl
+Flux-CoredArcWeldingCapability,http://asu.edu/semantics/SUDOKN/Flux-CoredArcWeldingCapability,class,,classes_with_embeddings.jsonl
+Foam,http://asu.edu/semantics/SUDOKN/FoamProcessingCapability,class,,classes_with_embeddings.jsonl
+Food,http://asu.edu/semantics/SUDOKN/FoodIndustry,class,,classes_with_embeddings.jsonl
+foodandbeverageIndustry,http://asu.edu/semantics/SUDOKN/foodandbeverageIndustry,class,,classes_with_embeddings.jsonl
+foodIndustry,http://asu.edu/semantics/SUDOKN/foodIndustry,class,,classes_with_embeddings.jsonl
+Forging,http://asu.edu/semantics/SUDOKN/ForgingCapability,class,,classes_with_embeddings.jsonl
+Forming,http://asu.edu/semantics/SUDOKN/FormingCapability,class,,classes_with_embeddings.jsonl
+Fractional Tubing,http://asu.edu/semantics/SUDOKN/FractionalTubingCapability,class,,classes_with_embeddings.jsonl
+Friction Welding,http://asu.edu/semantics/SUDOKN/FrictionWeldingCapability,class,,classes_with_embeddings.jsonl
+Full Annealing,http://asu.edu/semantics/SUDOKN/FullAnnealingCapability,class,,classes_with_embeddings.jsonl
+Furnace Brazing,http://asu.edu/semantics/SUDOKN/FurnaceBrazingCapability,class,,classes_with_embeddings.jsonl
+Furniture,http://asu.edu/semantics/SUDOKN/FurnitureIndustry,class,,classes_with_embeddings.jsonl
+Fused Deposition Modeling,http://asu.edu/semantics/SUDOKN/FusedDepositionModelingCapability,class,,classes_with_embeddings.jsonl
+Fused Nitrate Conversion Coating,http://asu.edu/semantics/SUDOKN/FusedNitrateConversionCoatingCapability,class,,classes_with_embeddings.jsonl
+Galvanizing,http://asu.edu/semantics/SUDOKN/GalvanizingCapability,class,,classes_with_embeddings.jsonl
+galvanizingCapability,http://asu.edu/semantics/SUDOKN/galvanizingCapability,class,,classes_with_embeddings.jsonl
+Gas Brazing,http://asu.edu/semantics/SUDOKN/GasBrazingCapability,class,,classes_with_embeddings.jsonl
+Gas Metal Arc Welding,http://asu.edu/semantics/SUDOKN/GasMetalArcWeldingCapability,class,,classes_with_embeddings.jsonl
+Gas Tungsten Arc Welding,http://asu.edu/semantics/SUDOKN/GasTungstenArcWeldingCapability,class,,classes_with_embeddings.jsonl
+Gas Welding,http://asu.edu/semantics/SUDOKN/GasWeldingCapability,class,,classes_with_embeddings.jsonl
+GasWedlingCapability,http://asu.edu/semantics/SUDOKN/GasWedlingCapability,class,,classes_with_embeddings.jsonl
+Gear Cutting,http://asu.edu/semantics/SUDOKN/GearCuttingCapability,class,,classes_with_embeddings.jsonl
+Gear Gashing,http://asu.edu/semantics/SUDOKN/GearGashingCapability,class,,classes_with_embeddings.jsonl
+Gear Hobbing,http://asu.edu/semantics/SUDOKN/GearHobbingCapability,class,,classes_with_embeddings.jsonl
+GeopoliticalSite,http://asu.edu/semantics/SUDOKN/GeopoliticalSite,class,,classes_with_embeddings.jsonl
+GeospatialLocation,http://asu.edu/semantics/SUDOKN/GeospatialLocation,class,,classes_with_embeddings.jsonl
+Glass,http://asu.edu/semantics/SUDOKN/GlassProcessingCapability,class,,classes_with_embeddings.jsonl
+glassProcessingCapability,http://asu.edu/semantics/SUDOKN/glassProcessingCapability,class,,classes_with_embeddings.jsonl
+Gold Plating,http://asu.edu/semantics/SUDOKN/GoldPlatingCapability,class,,classes_with_embeddings.jsonl
+Government,http://asu.edu/semantics/SUDOKN/GovernmentIndustry,class,,classes_with_embeddings.jsonl
+Graphite,http://asu.edu/semantics/SUDOKN/GraphiteProcessingCapability,class,,classes_with_embeddings.jsonl
+Gravity Casting,http://asu.edu/semantics/SUDOKN/GravityCastingCapability,class,,classes_with_embeddings.jsonl
+Grinding,http://asu.edu/semantics/SUDOKN/GrindingCapability,class,,classes_with_embeddings.jsonl
+Grit Blasting,http://asu.edu/semantics/SUDOKN/GritBlastingCapability,class,,classes_with_embeddings.jsonl
+Gun Drilling,http://asu.edu/semantics/SUDOKN/GunDrillingCapability,class,,classes_with_embeddings.jsonl
+HACCP,http://asu.edu/semantics/SUDOKN/HACCP,class,,classes_with_embeddings.jsonl
+Hardening,http://asu.edu/semantics/SUDOKN/HardeningCapability,class,,classes_with_embeddings.jsonl
+Hardware And Devices,http://asu.edu/semantics/SUDOKN/HardwareAndDevicesIndustry,class,,classes_with_embeddings.jsonl
+Harperizing,http://asu.edu/semantics/SUDOKN/HarperizingCapability,class,,classes_with_embeddings.jsonl
+has address part,http://asu.edu/semantics/SUDOKN/hasAddressPart,predicate,pred:hasAddressPart@v1,predicates_with_embeddings.jsonl
+has certificate,http://asu.edu/semantics/SUDOKN/hasCertificate,predicate,pred:hasCertificate@v1,predicates_with_embeddings.jsonl
+has email address,http://asu.edu/semantics/SUDOKN/hasEmailAddress,predicate,pred:hasEmailAddress@v1,predicates_with_embeddings.jsonl
+has integer value,http://asu.edu/semantics/SUDOKN/hasIntegerValue,predicate,pred:hasIntegerValue@v1,predicates_with_embeddings.jsonl
+has latitude value,http://asu.edu/semantics/SUDOKN/hasLatitudeValue,predicate,pred:hasLatitudeValue@v1,predicates_with_embeddings.jsonl
+has logitude value,http://asu.edu/semantics/SUDOKN/hasLongitudeValue,predicate,pred:hasLongitudeValue@v1,predicates_with_embeddings.jsonl
+has management capability,http://asu.edu/semantics/SUDOKN/hasManagementCapability,predicate,pred:hasManagementCapability@v1,predicates_with_embeddings.jsonl
+has material capability,http://asu.edu/semantics/SUDOKN/hasMaterialCapability,predicate,pred:hasMaterialCapability@v1,predicates_with_embeddings.jsonl
+has NAICS classifier,http://asu.edu/semantics/SUDOKN/hasNAICSClassifier,predicate,pred:hasNAICSClassifier@v1,predicates_with_embeddings.jsonl
+has NAICS code value,http://asu.edu/semantics/SUDOKN/hasNAICSCodeValue,predicate,pred:hasNAICSCodeValue@v1,predicates_with_embeddings.jsonl
+has NAICS text value,http://asu.edu/semantics/SUDOKN/hasNAICSTextValue,predicate,pred:hasNAICSTextValue@v1,predicates_with_embeddings.jsonl
+has name,http://asu.edu/semantics/SUDOKN/hasName,predicate,pred:hasName@v1,predicates_with_embeddings.jsonl
+has ownership status classifier,http://asu.edu/semantics/SUDOKN/hasOwnershipStatusClassifier,predicate,pred:hasOwnershipStatusClassifier@v1,predicates_with_embeddings.jsonl
+has postal address,http://asu.edu/semantics/SUDOKN/hasPostalAddress,predicate,pred:hasPostalAddress@v1,predicates_with_embeddings.jsonl
+has primary NAICS classifier,http://asu.edu/semantics/SUDOKN/hasPrimaryNAICSClassifier,predicate,pred:hasPrimaryNAICSClassifier@v1,predicates_with_embeddings.jsonl
+has process capability,http://asu.edu/semantics/SUDOKN/hasProcessCapability,predicate,pred:hasProcessCapability@v1,predicates_with_embeddings.jsonl
+has secondary NAICS classifier,http://asu.edu/semantics/SUDOKN/hasSecondaryNIACSClassifier,predicate,pred:hasSecondaryNIACSClassifier@v1,predicates_with_embeddings.jsonl
+has spatial coordinates,http://asu.edu/semantics/SUDOKN/hasSpatialCoordinates,predicate,pred:hasSpatialCoordinates@v1,predicates_with_embeddings.jsonl
+has special business status classifier,http://asu.edu/semantics/SUDOKN/hasSpecialBusinessStatusClassifier,predicate,pred:hasSpecialBusinessStatusClassifier@v1,predicates_with_embeddings.jsonl
+has web address,http://asu.edu/semantics/SUDOKN/hasWebAddress,predicate,pred:hasWebAddress@v1,predicates_with_embeddings.jsonl
+hasNumberOfEmployees,http://asu.edu/semantics/SUDOKN/hasNumberOfEmployees,predicate,pred:hasNumberOfEmployees@v1,predicates_with_embeddings.jsonl
+hasOrganizationYearOfEstablishment,http://asu.edu/semantics/SUDOKN/hasOrganizationYearOfEstablishment,predicate,pred:hasOrganizationYearOfEstablishment@v1,predicates_with_embeddings.jsonl
+Hastelloy,http://asu.edu/semantics/SUDOKN/HastelloyProcessingCapability,class,,classes_with_embeddings.jsonl
+hasZIPCode,http://asu.edu/semantics/SUDOKN/hasZIPCode,predicate,pred:hasZIPCode@v1,predicates_with_embeddings.jsonl
+Haynes,http://asu.edu/semantics/SUDOKN/HaynesProcessingCapability,class,,classes_with_embeddings.jsonl
+HDPE,http://asu.edu/semantics/SUDOKN/HDPEProcessingCapability,class,,classes_with_embeddings.jsonl
+HealthcareIndustry,http://asu.edu/semantics/SUDOKN/HealthcareIndustry,class,,classes_with_embeddings.jsonl
+healthcareservicesIndustry,http://asu.edu/semantics/SUDOKN/healthcareservicesIndustry,class,,classes_with_embeddings.jsonl
+Heat Treating,http://asu.edu/semantics/SUDOKN/HeatTreatingCapability,class,,classes_with_embeddings.jsonl
+High Energy Beam Machining,http://asu.edu/semantics/SUDOKN/HighEnergyBeamMachiningCapability,class,,classes_with_embeddings.jsonl
+High Energy Beam Welding,http://asu.edu/semantics/SUDOKN/HighEnergyBeamWeldingCapability,class,,classes_with_embeddings.jsonl
+High Tech,http://asu.edu/semantics/SUDOKN/HighTechIndustry,class,,classes_with_embeddings.jsonl
+Hole Drilling EDM,http://asu.edu/semantics/SUDOKN/HoleDrillingEDMCapability,class,,classes_with_embeddings.jsonl
+Hole Making,http://asu.edu/semantics/SUDOKN/HoleMakingCapability,class,,classes_with_embeddings.jsonl
+Honing,http://asu.edu/semantics/SUDOKN/HoningCapability,class,,classes_with_embeddings.jsonl
+Horizontal Boring,http://asu.edu/semantics/SUDOKN/HorizontalBoringCapability,class,,classes_with_embeddings.jsonl
+Horizontal Milling,http://asu.edu/semantics/SUDOKN/HorizontalMillingCapability,class,,classes_with_embeddings.jsonl
+Hot Chamber Die Casting,http://asu.edu/semantics/SUDOKN/HotChamberDieCastingCapability,class,,classes_with_embeddings.jsonl
+Hot Vacuum Pressing,http://asu.edu/semantics/SUDOKN/HotVacuumPressingCapability,class,,classes_with_embeddings.jsonl
+Hypodermic Tubing,http://asu.edu/semantics/SUDOKN/HypodermicTubingCapability,class,,classes_with_embeddings.jsonl
+IATF,http://asu.edu/semantics/SUDOKN/IATF,class,,classes_with_embeddings.jsonl
+IATF16949,http://asu.edu/semantics/SUDOKN/IATF16949,class,,classes_with_embeddings.jsonl
+ID-ODGrindingCapability,http://asu.edu/semantics/SUDOKN/ID-ODGrindingCapability,class,,classes_with_embeddings.jsonl
+Identifier,https://spec.industrialontologies.org/ontology/core/Core/Identifier,class,,classes_with_embeddings.jsonl
+Impression Die Forging,http://asu.edu/semantics/SUDOKN/ImpressionDieForgingCapability,class,,classes_with_embeddings.jsonl
+Inconel,http://asu.edu/semantics/SUDOKN/InconelProcessingCapability,class,,classes_with_embeddings.jsonl
+Indirect Extrusion,http://asu.edu/semantics/SUDOKN/IndirectExtrusionCapability,class,,classes_with_embeddings.jsonl
+Induction Brazing,http://asu.edu/semantics/SUDOKN/InductionBrazingCapability,class,,classes_with_embeddings.jsonl
+Induction Hardening,http://asu.edu/semantics/SUDOKN/InductionHardeningCapability,class,,classes_with_embeddings.jsonl
+Induction Soldering,http://asu.edu/semantics/SUDOKN/InductionSolderingCapability,class,,classes_with_embeddings.jsonl
+Industry,https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/Industry,class,,classes_with_embeddings.jsonl
+Information Technology,http://asu.edu/semantics/SUDOKN/InformationTechnologyIndustry,class,,classes_with_embeddings.jsonl
+InformationContentEntity,https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity,class,,classes_with_embeddings.jsonl
+Infrared Brazing,http://asu.edu/semantics/SUDOKN/InfraredBrazingCapability,class,,classes_with_embeddings.jsonl
+Injection Blow Molding,http://asu.edu/semantics/SUDOKN/InjectionBlowMoldingCapability,class,,classes_with_embeddings.jsonl
+Injection Molding,http://asu.edu/semantics/SUDOKN/InjectionMoldingCapability,class,,classes_with_embeddings.jsonl
+Invar,http://asu.edu/semantics/SUDOKN/InvarProcessingCapability,class,,classes_with_embeddings.jsonl
+Investment Casting,http://asu.edu/semantics/SUDOKN/InvestmentCastingCapability,class,,classes_with_embeddings.jsonl
+Iridite,http://asu.edu/semantics/SUDOKN/IriditeCapability,class,,classes_with_embeddings.jsonl
+Iron,http://asu.edu/semantics/SUDOKN/IronProcessingCapability,class,,classes_with_embeddings.jsonl
+ironProcessingCapability,http://asu.edu/semantics/SUDOKN/ironProcessingCapability,class,,classes_with_embeddings.jsonl
+ISO 9000,http://asu.edu/semantics/SUDOKN/ISO9000Certificate,class,,classes_with_embeddings.jsonl
+ISO Quality,http://asu.edu/semantics/SUDOKN/ISOQualityCertificate,class,,classes_with_embeddings.jsonl
+ISO13485,http://asu.edu/semantics/SUDOKN/ISO13485,class,,classes_with_embeddings.jsonl
+ISO14000,http://asu.edu/semantics/SUDOKN/ISO14000,class,,classes_with_embeddings.jsonl
+ISO14001,http://asu.edu/semantics/SUDOKN/ISO14001,class,,classes_with_embeddings.jsonl
+ISO16949,http://asu.edu/semantics/SUDOKN/ISO16949,class,,classes_with_embeddings.jsonl
+ISO22000,http://asu.edu/semantics/SUDOKN/ISO22000,class,,classes_with_embeddings.jsonl
+ISO27001,http://asu.edu/semantics/SUDOKN/ISO27001,class,,classes_with_embeddings.jsonl
+ISO45001,http://asu.edu/semantics/SUDOKN/ISO45001,class,,classes_with_embeddings.jsonl
+ISO50001,http://asu.edu/semantics/SUDOKN/ISO50001,class,,classes_with_embeddings.jsonl
+ISO9000,http://asu.edu/semantics/SUDOKN/ISO9000,class,,classes_with_embeddings.jsonl
+ISO9001,http://asu.edu/semantics/SUDOKN/ISO9001,class,,classes_with_embeddings.jsonl
+ISOQuality,http://asu.edu/semantics/SUDOKN/ISOQuality,class,,classes_with_embeddings.jsonl
+ITAR,http://asu.edu/semantics/SUDOKN/ITAR,class,,classes_with_embeddings.jsonl
+Joining,http://asu.edu/semantics/SUDOKN/JoiningCapability,class,,classes_with_embeddings.jsonl
+joiningCapability,http://asu.edu/semantics/SUDOKN/joiningCapability,class,,classes_with_embeddings.jsonl
+Kapton,http://asu.edu/semantics/SUDOKN/KaptonProcessingCapability,class,,classes_with_embeddings.jsonl
+Kevlar,http://asu.edu/semantics/SUDOKN/KevlarProcessingCapability,class,,classes_with_embeddings.jsonl
+Kitting,http://asu.edu/semantics/SUDOKN/KittingCapability,class,,classes_with_embeddings.jsonl
+Knitting,http://asu.edu/semantics/SUDOKN/KnittingCapability,class,,classes_with_embeddings.jsonl
+Knurling,http://asu.edu/semantics/SUDOKN/KnurlingCapability,class,,classes_with_embeddings.jsonl
+KosherApproved,http://asu.edu/semantics/SUDOKN/KosherApproved,class,,classes_with_embeddings.jsonl
+Kovar,http://asu.edu/semantics/SUDOKN/KovarProcessingCapability,class,,classes_with_embeddings.jsonl
+Labeling,http://asu.edu/semantics/SUDOKN/LabelingCapability,class,,classes_with_embeddings.jsonl
+Laminated Object Manufacturing,http://asu.edu/semantics/SUDOKN/LaminatedObjectManufacturingCapability,class,,classes_with_embeddings.jsonl
+Lapping,http://asu.edu/semantics/SUDOKN/LappingCapability,class,,classes_with_embeddings.jsonl
+Laser Beam Welding,http://asu.edu/semantics/SUDOKN/LaserBeamWeldingCapability,class,,classes_with_embeddings.jsonl
+Laser Brazing,http://asu.edu/semantics/SUDOKN/LaserBrazingCapability,class,,classes_with_embeddings.jsonl
+Laser Cutting,http://asu.edu/semantics/SUDOKN/LaserCuttingCapability,class,,classes_with_embeddings.jsonl
+Laser Engraving,http://asu.edu/semantics/SUDOKN/LaserEngravingCapability,class,,classes_with_embeddings.jsonl
+Laser Etching,http://asu.edu/semantics/SUDOKN/LaserEtchingCapability,class,,classes_with_embeddings.jsonl
+LDPE,http://asu.edu/semantics/SUDOKN/LDPEProcessingCapability,class,,classes_with_embeddings.jsonl
+Lead,http://asu.edu/semantics/SUDOKN/LeadProcessingCapability,class,,classes_with_embeddings.jsonl
+LEED,http://asu.edu/semantics/SUDOKN/LEED,class,,classes_with_embeddings.jsonl
+Lexan,http://asu.edu/semantics/SUDOKN/LexanProcessingCapability,class,,classes_with_embeddings.jsonl
+List,http://www.w3.org/1999/02/22-rdf-syntax-ns#List,class,,classes_with_embeddings.jsonl
+Live Tooling,http://asu.edu/semantics/SUDOKN/LiveToolingCapability,class,,classes_with_embeddings.jsonl
+located in city,http://asu.edu/semantics/SUDOKN/locatedInCity,predicate,pred:locatedInCity@v1,predicates_with_embeddings.jsonl
+located in state,http://asu.edu/semantics/SUDOKN/locatedInState,predicate,pred:locatedInState@v1,predicates_with_embeddings.jsonl
+Lost Foam Casting,http://asu.edu/semantics/SUDOKN/LostFoamCastingCapability,class,,classes_with_embeddings.jsonl
+Low Alloy Steel Lead,http://asu.edu/semantics/SUDOKN/LowAlloySteelLeadProcessingCapability,class,,classes_with_embeddings.jsonl
+Lucite,http://asu.edu/semantics/SUDOKN/LuciteProcessingCapability,class,,classes_with_embeddings.jsonl
+Machinery And Equipment,http://asu.edu/semantics/SUDOKN/MachineryAndEquipmentIndustry,class,,classes_with_embeddings.jsonl
+Machining,http://asu.edu/semantics/SUDOKN/MachiningCapability,class,,classes_with_embeddings.jsonl
+Machining Of Casting,http://asu.edu/semantics/SUDOKN/MachiningOfCastingCapability,class,,classes_with_embeddings.jsonl
+Magnesium Alloy,http://asu.edu/semantics/SUDOKN/MagnesiumAlloyProcessingCapability,class,,classes_with_embeddings.jsonl
+Man Made Fiber,http://asu.edu/semantics/SUDOKN/ManMadeFiberProcessingCapability,class,,classes_with_embeddings.jsonl
+Manufacturer,https://spec.industrialontologies.org/ontology/core/Core/Manufacturer,class,,classes_with_embeddings.jsonl
+manufactures,http://asu.edu/semantics/SUDOKN/manufactures,predicate,pred:manufactures@v1,predicates_with_embeddings.jsonl
+manufacturing process capability,http://asu.edu/semantics/SUDOKN/ManufacturingProcessCapability,class,,classes_with_embeddings.jsonl
+Marine And Shipbuilding,http://asu.edu/semantics/SUDOKN/MarineAndShipbuildingIndustry,class,,classes_with_embeddings.jsonl
+Martempering,http://asu.edu/semantics/SUDOKN/MartemperingCapability,class,,classes_with_embeddings.jsonl
+material processing capability,http://asu.edu/semantics/SUDOKN/MaterialProcessingCapability,class,,classes_with_embeddings.jsonl
+MaterialProduct,https://spec.industrialontologies.org/ontology/core/Core/MaterialProduct,class,,classes_with_embeddings.jsonl
+Mechanical Coating,http://asu.edu/semantics/SUDOKN/MechanicalCoatingCapability,class,,classes_with_embeddings.jsonl
+Mechanical Joining,http://asu.edu/semantics/SUDOKN/MechanicalJoiningCapability,class,,classes_with_embeddings.jsonl
+Mechanical Polishing,http://asu.edu/semantics/SUDOKN/MechanicalPolishingCapability,class,,classes_with_embeddings.jsonl
+Mechanical Welding,http://asu.edu/semantics/SUDOKN/MechanicalWeldingCapability,class,,classes_with_embeddings.jsonl
+MechanicalCapability,http://asu.edu/semantics/SUDOKN/MechanicalCapability,class,,classes_with_embeddings.jsonl
+mechanicaljoiningCapability,http://asu.edu/semantics/SUDOKN/mechanicaljoiningCapability,class,,classes_with_embeddings.jsonl
+Medical Devices,http://asu.edu/semantics/SUDOKN/MedicalDevicesIndustry,class,,classes_with_embeddings.jsonl
+medicalIndustry,http://asu.edu/semantics/SUDOKN/medicalIndustry,class,,classes_with_embeddings.jsonl
+Metal,http://asu.edu/semantics/SUDOKN/MetalProcessingCapability,class,,classes_with_embeddings.jsonl
+Metal Injection Molding,http://asu.edu/semantics/SUDOKN/MetalInjectionMoldingCapability,class,,classes_with_embeddings.jsonl
+Metal Production,http://asu.edu/semantics/SUDOKN/MetalProductionIndustry,class,,classes_with_embeddings.jsonl
+Metric Tubing,http://asu.edu/semantics/SUDOKN/MetricTubingCapability,class,,classes_with_embeddings.jsonl
+Micro Drilling,http://asu.edu/semantics/SUDOKN/MicroDrillingCapability,class,,classes_with_embeddings.jsonl
+MIG Welding,http://asu.edu/semantics/SUDOKN/MIGWeldingCapability,class,,classes_with_embeddings.jsonl
+Military,http://asu.edu/semantics/SUDOKN/MilitaryIndustry,class,,classes_with_embeddings.jsonl
+Milling,http://asu.edu/semantics/SUDOKN/MillingCapability,class,,classes_with_embeddings.jsonl
+Mining,http://asu.edu/semantics/SUDOKN/MiningIndustry,class,,classes_with_embeddings.jsonl
+miningIndustry,http://asu.edu/semantics/SUDOKN/miningIndustry,class,,classes_with_embeddings.jsonl
+Mold Making,http://asu.edu/semantics/SUDOKN/MoldMakingCapability,class,,classes_with_embeddings.jsonl
+Molding,http://asu.edu/semantics/SUDOKN/MoldingCapability,class,,classes_with_embeddings.jsonl
+Molybdenum,http://asu.edu/semantics/SUDOKN/MolybdenumProcessingCapability,class,,classes_with_embeddings.jsonl
+Multipoint Cutting,http://asu.edu/semantics/SUDOKN/MultipointCuttingCapability,class,,classes_with_embeddings.jsonl
+NADCAP,http://asu.edu/semantics/SUDOKN/NADCAP,class,,classes_with_embeddings.jsonl
+NAICS classifier,http://asu.edu/semantics/SUDOKN/NAICSClassifier,class,,classes_with_embeddings.jsonl
+NAICS311111.0,http://asu.edu/semantics/SUDOKN/NAICS311111.0,class,,classes_with_embeddings.jsonl
+NAICS311119.0,http://asu.edu/semantics/SUDOKN/NAICS311119.0,class,,classes_with_embeddings.jsonl
+NAICS311225.0,http://asu.edu/semantics/SUDOKN/NAICS311225.0,class,,classes_with_embeddings.jsonl
+NAICS311340.0,http://asu.edu/semantics/SUDOKN/NAICS311340.0,class,,classes_with_embeddings.jsonl
+NAICS311412.0,http://asu.edu/semantics/SUDOKN/NAICS311412.0,class,,classes_with_embeddings.jsonl
+NAICS311421.0,http://asu.edu/semantics/SUDOKN/NAICS311421.0,class,,classes_with_embeddings.jsonl
+NAICS311422.0,http://asu.edu/semantics/SUDOKN/NAICS311422.0,class,,classes_with_embeddings.jsonl
+NAICS311423.0,http://asu.edu/semantics/SUDOKN/NAICS311423.0,class,,classes_with_embeddings.jsonl
+NAICS311511.0,http://asu.edu/semantics/SUDOKN/NAICS311511.0,class,,classes_with_embeddings.jsonl
+NAICS311514.0,http://asu.edu/semantics/SUDOKN/NAICS311514.0,class,,classes_with_embeddings.jsonl
+NAICS311520.0,http://asu.edu/semantics/SUDOKN/NAICS311520.0,class,,classes_with_embeddings.jsonl
+NAICS311611.0,http://asu.edu/semantics/SUDOKN/NAICS311611.0,class,,classes_with_embeddings.jsonl
+NAICS311612.0,http://asu.edu/semantics/SUDOKN/NAICS311612.0,class,,classes_with_embeddings.jsonl
+NAICS311613.0,http://asu.edu/semantics/SUDOKN/NAICS311613.0,class,,classes_with_embeddings.jsonl
+NAICS311710.0,http://asu.edu/semantics/SUDOKN/NAICS311710.0,class,,classes_with_embeddings.jsonl
+NAICS311812.0,http://asu.edu/semantics/SUDOKN/NAICS311812.0,class,,classes_with_embeddings.jsonl
+NAICS311813.0,http://asu.edu/semantics/SUDOKN/NAICS311813.0,class,,classes_with_embeddings.jsonl
+NAICS311821.0,http://asu.edu/semantics/SUDOKN/NAICS311821.0,class,,classes_with_embeddings.jsonl
+NAICS311830.0,http://asu.edu/semantics/SUDOKN/NAICS311830.0,class,,classes_with_embeddings.jsonl
+NAICS311919.0,http://asu.edu/semantics/SUDOKN/NAICS311919.0,class,,classes_with_embeddings.jsonl
+NAICS311920.0,http://asu.edu/semantics/SUDOKN/NAICS311920.0,class,,classes_with_embeddings.jsonl
+NAICS311941.0,http://asu.edu/semantics/SUDOKN/NAICS311941.0,class,,classes_with_embeddings.jsonl
+NAICS311942.0,http://asu.edu/semantics/SUDOKN/NAICS311942.0,class,,classes_with_embeddings.jsonl
+NAICS311999.0,http://asu.edu/semantics/SUDOKN/NAICS311999.0,class,,classes_with_embeddings.jsonl
+NAICS312111.0,http://asu.edu/semantics/SUDOKN/NAICS312111.0,class,,classes_with_embeddings.jsonl
+NAICS312112.0,http://asu.edu/semantics/SUDOKN/NAICS312112.0,class,,classes_with_embeddings.jsonl
+NAICS312113.0,http://asu.edu/semantics/SUDOKN/NAICS312113.0,class,,classes_with_embeddings.jsonl
+NAICS312120.0,http://asu.edu/semantics/SUDOKN/NAICS312120.0,class,,classes_with_embeddings.jsonl
+NAICS312130.0,http://asu.edu/semantics/SUDOKN/NAICS312130.0,class,,classes_with_embeddings.jsonl
+NAICS312140.0,http://asu.edu/semantics/SUDOKN/NAICS312140.0,class,,classes_with_embeddings.jsonl
+NAICS313110.0,http://asu.edu/semantics/SUDOKN/NAICS313110.0,class,,classes_with_embeddings.jsonl
+NAICS313210.0,http://asu.edu/semantics/SUDOKN/NAICS313210.0,class,,classes_with_embeddings.jsonl
+NAICS313310.0,http://asu.edu/semantics/SUDOKN/NAICS313310.0,class,,classes_with_embeddings.jsonl
+NAICS314110.0,http://asu.edu/semantics/SUDOKN/NAICS314110.0,class,,classes_with_embeddings.jsonl
+NAICS314120.0,http://asu.edu/semantics/SUDOKN/NAICS314120.0,class,,classes_with_embeddings.jsonl
+NAICS314910.0,http://asu.edu/semantics/SUDOKN/NAICS314910.0,class,,classes_with_embeddings.jsonl
+NAICS314994.0,http://asu.edu/semantics/SUDOKN/NAICS314994.0,class,,classes_with_embeddings.jsonl
+NAICS314999.0,http://asu.edu/semantics/SUDOKN/NAICS314999.0,class,,classes_with_embeddings.jsonl
+NAICS315120.0,http://asu.edu/semantics/SUDOKN/NAICS315120.0,class,,classes_with_embeddings.jsonl
+NAICS315250.0,http://asu.edu/semantics/SUDOKN/NAICS315250.0,class,,classes_with_embeddings.jsonl
+NAICS315990.0,http://asu.edu/semantics/SUDOKN/NAICS315990.0,class,,classes_with_embeddings.jsonl
+NAICS316110.0,http://asu.edu/semantics/SUDOKN/NAICS316110.0,class,,classes_with_embeddings.jsonl
+NAICS316210.0,http://asu.edu/semantics/SUDOKN/NAICS316210.0,class,,classes_with_embeddings.jsonl
+NAICS316990.0,http://asu.edu/semantics/SUDOKN/NAICS316990.0,class,,classes_with_embeddings.jsonl
+NAICS321113.0,http://asu.edu/semantics/SUDOKN/NAICS321113.0,class,,classes_with_embeddings.jsonl
+NAICS321114.0,http://asu.edu/semantics/SUDOKN/NAICS321114.0,class,,classes_with_embeddings.jsonl
+NAICS321215.0,http://asu.edu/semantics/SUDOKN/NAICS321215.0,class,,classes_with_embeddings.jsonl
+NAICS321911.0,http://asu.edu/semantics/SUDOKN/NAICS321911.0,class,,classes_with_embeddings.jsonl
+NAICS321912.0,http://asu.edu/semantics/SUDOKN/NAICS321912.0,class,,classes_with_embeddings.jsonl
+NAICS321918.0,http://asu.edu/semantics/SUDOKN/NAICS321918.0,class,,classes_with_embeddings.jsonl
+NAICS321920.0,http://asu.edu/semantics/SUDOKN/NAICS321920.0,class,,classes_with_embeddings.jsonl
+NAICS321991.0,http://asu.edu/semantics/SUDOKN/NAICS321991.0,class,,classes_with_embeddings.jsonl
+NAICS321992.0,http://asu.edu/semantics/SUDOKN/NAICS321992.0,class,,classes_with_embeddings.jsonl
+NAICS321999.0,http://asu.edu/semantics/SUDOKN/NAICS321999.0,class,,classes_with_embeddings.jsonl
+NAICS322110.0,http://asu.edu/semantics/SUDOKN/NAICS322110.0,class,,classes_with_embeddings.jsonl
+NAICS322120.0,http://asu.edu/semantics/SUDOKN/NAICS322120.0,class,,classes_with_embeddings.jsonl
+NAICS322130.0,http://asu.edu/semantics/SUDOKN/NAICS322130.0,class,,classes_with_embeddings.jsonl
+NAICS322211.0,http://asu.edu/semantics/SUDOKN/NAICS322211.0,class,,classes_with_embeddings.jsonl
+NAICS322219.0,http://asu.edu/semantics/SUDOKN/NAICS322219.0,class,,classes_with_embeddings.jsonl
+NAICS322220.0,http://asu.edu/semantics/SUDOKN/NAICS322220.0,class,,classes_with_embeddings.jsonl
+NAICS322230.0,http://asu.edu/semantics/SUDOKN/NAICS322230.0,class,,classes_with_embeddings.jsonl
+NAICS322291.0,http://asu.edu/semantics/SUDOKN/NAICS322291.0,class,,classes_with_embeddings.jsonl
+NAICS322299.0,http://asu.edu/semantics/SUDOKN/NAICS322299.0,class,,classes_with_embeddings.jsonl
+NAICS323111.0,http://asu.edu/semantics/SUDOKN/NAICS323111.0,class,,classes_with_embeddings.jsonl
+NAICS323113.0,http://asu.edu/semantics/SUDOKN/NAICS323113.0,class,,classes_with_embeddings.jsonl
+NAICS323117.0,http://asu.edu/semantics/SUDOKN/NAICS323117.0,class,,classes_with_embeddings.jsonl
+NAICS323120.0,http://asu.edu/semantics/SUDOKN/NAICS323120.0,class,,classes_with_embeddings.jsonl
+NAICS324110.0,http://asu.edu/semantics/SUDOKN/NAICS324110.0,class,,classes_with_embeddings.jsonl
+NAICS324121.0,http://asu.edu/semantics/SUDOKN/NAICS324121.0,class,,classes_with_embeddings.jsonl
+NAICS324122.0,http://asu.edu/semantics/SUDOKN/NAICS324122.0,class,,classes_with_embeddings.jsonl
+NAICS324191.0,http://asu.edu/semantics/SUDOKN/NAICS324191.0,class,,classes_with_embeddings.jsonl
+NAICS325110.0,http://asu.edu/semantics/SUDOKN/NAICS325110.0,class,,classes_with_embeddings.jsonl
+NAICS325120.0,http://asu.edu/semantics/SUDOKN/NAICS325120.0,class,,classes_with_embeddings.jsonl
+NAICS325180.0,http://asu.edu/semantics/SUDOKN/NAICS325180.0,class,,classes_with_embeddings.jsonl
+NAICS325199.0,http://asu.edu/semantics/SUDOKN/NAICS325199.0,class,,classes_with_embeddings.jsonl
+NAICS325211.0,http://asu.edu/semantics/SUDOKN/NAICS325211.0,class,,classes_with_embeddings.jsonl
+NAICS325311.0,http://asu.edu/semantics/SUDOKN/NAICS325311.0,class,,classes_with_embeddings.jsonl
+NAICS325312.0,http://asu.edu/semantics/SUDOKN/NAICS325312.0,class,,classes_with_embeddings.jsonl
+NAICS325314.0,http://asu.edu/semantics/SUDOKN/NAICS325314.0,class,,classes_with_embeddings.jsonl
+NAICS325315.0,http://asu.edu/semantics/SUDOKN/NAICS325315.0,class,,classes_with_embeddings.jsonl
+NAICS325320.0,http://asu.edu/semantics/SUDOKN/NAICS325320.0,class,,classes_with_embeddings.jsonl
+NAICS325411.0,http://asu.edu/semantics/SUDOKN/NAICS325411.0,class,,classes_with_embeddings.jsonl
+NAICS325412.0,http://asu.edu/semantics/SUDOKN/NAICS325412.0,class,,classes_with_embeddings.jsonl
+NAICS325413.0,http://asu.edu/semantics/SUDOKN/NAICS325413.0,class,,classes_with_embeddings.jsonl
+NAICS325414.0,http://asu.edu/semantics/SUDOKN/NAICS325414.0,class,,classes_with_embeddings.jsonl
+NAICS325510.0,http://asu.edu/semantics/SUDOKN/NAICS325510.0,class,,classes_with_embeddings.jsonl
+NAICS325520.0,http://asu.edu/semantics/SUDOKN/NAICS325520.0,class,,classes_with_embeddings.jsonl
+NAICS325611.0,http://asu.edu/semantics/SUDOKN/NAICS325611.0,class,,classes_with_embeddings.jsonl
+NAICS325612.0,http://asu.edu/semantics/SUDOKN/NAICS325612.0,class,,classes_with_embeddings.jsonl
+NAICS325620.0,http://asu.edu/semantics/SUDOKN/NAICS325620.0,class,,classes_with_embeddings.jsonl
+NAICS325910.0,http://asu.edu/semantics/SUDOKN/NAICS325910.0,class,,classes_with_embeddings.jsonl
+NAICS325920.0,http://asu.edu/semantics/SUDOKN/NAICS325920.0,class,,classes_with_embeddings.jsonl
+NAICS325992.0,http://asu.edu/semantics/SUDOKN/NAICS325992.0,class,,classes_with_embeddings.jsonl
+NAICS325998.0,http://asu.edu/semantics/SUDOKN/NAICS325998.0,class,,classes_with_embeddings.jsonl
+NAICS326111.0,http://asu.edu/semantics/SUDOKN/NAICS326111.0,class,,classes_with_embeddings.jsonl
+NAICS326112.0,http://asu.edu/semantics/SUDOKN/NAICS326112.0,class,,classes_with_embeddings.jsonl
+NAICS326121.0,http://asu.edu/semantics/SUDOKN/NAICS326121.0,class,,classes_with_embeddings.jsonl
+NAICS326122.0,http://asu.edu/semantics/SUDOKN/NAICS326122.0,class,,classes_with_embeddings.jsonl
+NAICS326130.0,http://asu.edu/semantics/SUDOKN/NAICS326130.0,class,,classes_with_embeddings.jsonl
+NAICS326150.0,http://asu.edu/semantics/SUDOKN/NAICS326150.0,class,,classes_with_embeddings.jsonl
+NAICS326160.0,http://asu.edu/semantics/SUDOKN/NAICS326160.0,class,,classes_with_embeddings.jsonl
+NAICS326199.0,http://asu.edu/semantics/SUDOKN/NAICS326199.0,class,,classes_with_embeddings.jsonl
+NAICS326211.0,http://asu.edu/semantics/SUDOKN/NAICS326211.0,class,,classes_with_embeddings.jsonl
+NAICS326220.0,http://asu.edu/semantics/SUDOKN/NAICS326220.0,class,,classes_with_embeddings.jsonl
+NAICS326299.0,http://asu.edu/semantics/SUDOKN/NAICS326299.0,class,,classes_with_embeddings.jsonl
+NAICS327110.0,http://asu.edu/semantics/SUDOKN/NAICS327110.0,class,,classes_with_embeddings.jsonl
+NAICS327120.0,http://asu.edu/semantics/SUDOKN/NAICS327120.0,class,,classes_with_embeddings.jsonl
+NAICS327211.0,http://asu.edu/semantics/SUDOKN/NAICS327211.0,class,,classes_with_embeddings.jsonl
+NAICS327212.0,http://asu.edu/semantics/SUDOKN/NAICS327212.0,class,,classes_with_embeddings.jsonl
+NAICS327213.0,http://asu.edu/semantics/SUDOKN/NAICS327213.0,class,,classes_with_embeddings.jsonl
+NAICS327215.0,http://asu.edu/semantics/SUDOKN/NAICS327215.0,class,,classes_with_embeddings.jsonl
+NAICS327310.0,http://asu.edu/semantics/SUDOKN/NAICS327310.0,class,,classes_with_embeddings.jsonl
+NAICS327320.0,http://asu.edu/semantics/SUDOKN/NAICS327320.0,class,,classes_with_embeddings.jsonl
+NAICS327331.0,http://asu.edu/semantics/SUDOKN/NAICS327331.0,class,,classes_with_embeddings.jsonl
+NAICS327332.0,http://asu.edu/semantics/SUDOKN/NAICS327332.0,class,,classes_with_embeddings.jsonl
+NAICS327390.0,http://asu.edu/semantics/SUDOKN/NAICS327390.0,class,,classes_with_embeddings.jsonl
+NAICS327420.0,http://asu.edu/semantics/SUDOKN/NAICS327420.0,class,,classes_with_embeddings.jsonl
+NAICS327910.0,http://asu.edu/semantics/SUDOKN/NAICS327910.0,class,,classes_with_embeddings.jsonl
+NAICS327991.0,http://asu.edu/semantics/SUDOKN/NAICS327991.0,class,,classes_with_embeddings.jsonl
+NAICS327992.0,http://asu.edu/semantics/SUDOKN/NAICS327992.0,class,,classes_with_embeddings.jsonl
+NAICS327993.0,http://asu.edu/semantics/SUDOKN/NAICS327993.0,class,,classes_with_embeddings.jsonl
+NAICS327999.0,http://asu.edu/semantics/SUDOKN/NAICS327999.0,class,,classes_with_embeddings.jsonl
+NAICS331110.0,http://asu.edu/semantics/SUDOKN/NAICS331110.0,class,,classes_with_embeddings.jsonl
+NAICS331210.0,http://asu.edu/semantics/SUDOKN/NAICS331210.0,class,,classes_with_embeddings.jsonl
+NAICS331222.0,http://asu.edu/semantics/SUDOKN/NAICS331222.0,class,,classes_with_embeddings.jsonl
+NAICS331313.0,http://asu.edu/semantics/SUDOKN/NAICS331313.0,class,,classes_with_embeddings.jsonl
+NAICS331318.0,http://asu.edu/semantics/SUDOKN/NAICS331318.0,class,,classes_with_embeddings.jsonl
+NAICS331410.0,http://asu.edu/semantics/SUDOKN/NAICS331410.0,class,,classes_with_embeddings.jsonl
+NAICS331420.0,http://asu.edu/semantics/SUDOKN/NAICS331420.0,class,,classes_with_embeddings.jsonl
+NAICS331491.0,http://asu.edu/semantics/SUDOKN/NAICS331491.0,class,,classes_with_embeddings.jsonl
+NAICS331492.0,http://asu.edu/semantics/SUDOKN/NAICS331492.0,class,,classes_with_embeddings.jsonl
+NAICS331511.0,http://asu.edu/semantics/SUDOKN/NAICS331511.0,class,,classes_with_embeddings.jsonl
+NAICS331512.0,http://asu.edu/semantics/SUDOKN/NAICS331512.0,class,,classes_with_embeddings.jsonl
+NAICS331524.0,http://asu.edu/semantics/SUDOKN/NAICS331524.0,class,,classes_with_embeddings.jsonl
+NAICS331529.0,http://asu.edu/semantics/SUDOKN/NAICS331529.0,class,,classes_with_embeddings.jsonl
+NAICS332111.0,http://asu.edu/semantics/SUDOKN/NAICS332111.0,class,,classes_with_embeddings.jsonl
+NAICS332112.0,http://asu.edu/semantics/SUDOKN/NAICS332112.0,class,,classes_with_embeddings.jsonl
+NAICS332114.0,http://asu.edu/semantics/SUDOKN/NAICS332114.0,class,,classes_with_embeddings.jsonl
+NAICS332115.0,http://asu.edu/semantics/SUDOKN/NAICS332115.0,class,,classes_with_embeddings.jsonl
+NAICS332116.0,http://asu.edu/semantics/SUDOKN/NAICS332116.0,class,,classes_with_embeddings.jsonl
+NAICS332117.0,http://asu.edu/semantics/SUDOKN/NAICS332117.0,class,,classes_with_embeddings.jsonl
+NAICS332119.0,http://asu.edu/semantics/SUDOKN/NAICS332119.0,class,,classes_with_embeddings.jsonl
+NAICS332211.0,http://asu.edu/semantics/SUDOKN/NAICS332211.0,class,,classes_with_embeddings.jsonl
+NAICS332212.0,http://asu.edu/semantics/SUDOKN/NAICS332212.0,class,,classes_with_embeddings.jsonl
+NAICS332213.0,http://asu.edu/semantics/SUDOKN/NAICS332213.0,class,,classes_with_embeddings.jsonl
+NAICS332214.0,http://asu.edu/semantics/SUDOKN/NAICS332214.0,class,,classes_with_embeddings.jsonl
+NAICS332215.0,http://asu.edu/semantics/SUDOKN/NAICS332215.0,class,,classes_with_embeddings.jsonl
+NAICS332216.0,http://asu.edu/semantics/SUDOKN/NAICS332216.0,class,,classes_with_embeddings.jsonl
+NAICS332311.0,http://asu.edu/semantics/SUDOKN/NAICS332311.0,class,,classes_with_embeddings.jsonl
+NAICS332312.0,http://asu.edu/semantics/SUDOKN/NAICS332312.0,class,,classes_with_embeddings.jsonl
+NAICS332313.0,http://asu.edu/semantics/SUDOKN/NAICS332313.0,class,,classes_with_embeddings.jsonl
+NAICS332321.0,http://asu.edu/semantics/SUDOKN/NAICS332321.0,class,,classes_with_embeddings.jsonl
+NAICS332322.0,http://asu.edu/semantics/SUDOKN/NAICS332322.0,class,,classes_with_embeddings.jsonl
+NAICS332323.0,http://asu.edu/semantics/SUDOKN/NAICS332323.0,class,,classes_with_embeddings.jsonl
+NAICS332410.0,http://asu.edu/semantics/SUDOKN/NAICS332410.0,class,,classes_with_embeddings.jsonl
+NAICS332420.0,http://asu.edu/semantics/SUDOKN/NAICS332420.0,class,,classes_with_embeddings.jsonl
+NAICS332431.0,http://asu.edu/semantics/SUDOKN/NAICS332431.0,class,,classes_with_embeddings.jsonl
+NAICS332439.0,http://asu.edu/semantics/SUDOKN/NAICS332439.0,class,,classes_with_embeddings.jsonl
+NAICS332510.0,http://asu.edu/semantics/SUDOKN/NAICS332510.0,class,,classes_with_embeddings.jsonl
+NAICS332611.0,http://asu.edu/semantics/SUDOKN/NAICS332611.0,class,,classes_with_embeddings.jsonl
+NAICS332612.0,http://asu.edu/semantics/SUDOKN/NAICS332612.0,class,,classes_with_embeddings.jsonl
+NAICS332613.0,http://asu.edu/semantics/SUDOKN/NAICS332613.0,class,,classes_with_embeddings.jsonl
+NAICS332618.0,http://asu.edu/semantics/SUDOKN/NAICS332618.0,class,,classes_with_embeddings.jsonl
+NAICS332710.0,http://asu.edu/semantics/SUDOKN/NAICS332710.0,class,,classes_with_embeddings.jsonl
+NAICS332721.0,http://asu.edu/semantics/SUDOKN/NAICS332721.0,class,,classes_with_embeddings.jsonl
+NAICS332722.0,http://asu.edu/semantics/SUDOKN/NAICS332722.0,class,,classes_with_embeddings.jsonl
+NAICS332811.0,http://asu.edu/semantics/SUDOKN/NAICS332811.0,class,,classes_with_embeddings.jsonl
+NAICS332812.0,http://asu.edu/semantics/SUDOKN/NAICS332812.0,class,,classes_with_embeddings.jsonl
+NAICS332813.0,http://asu.edu/semantics/SUDOKN/NAICS332813.0,class,,classes_with_embeddings.jsonl
+NAICS332911.0,http://asu.edu/semantics/SUDOKN/NAICS332911.0,class,,classes_with_embeddings.jsonl
+NAICS332912.0,http://asu.edu/semantics/SUDOKN/NAICS332912.0,class,,classes_with_embeddings.jsonl
+NAICS332913.0,http://asu.edu/semantics/SUDOKN/NAICS332913.0,class,,classes_with_embeddings.jsonl
+NAICS332919.0,http://asu.edu/semantics/SUDOKN/NAICS332919.0,class,,classes_with_embeddings.jsonl
+NAICS332991.0,http://asu.edu/semantics/SUDOKN/NAICS332991.0,class,,classes_with_embeddings.jsonl
+NAICS332992.0,http://asu.edu/semantics/SUDOKN/NAICS332992.0,class,,classes_with_embeddings.jsonl
+NAICS332994.0,http://asu.edu/semantics/SUDOKN/NAICS332994.0,class,,classes_with_embeddings.jsonl
+NAICS332995.0,http://asu.edu/semantics/SUDOKN/NAICS332995.0,class,,classes_with_embeddings.jsonl
+NAICS332996.0,http://asu.edu/semantics/SUDOKN/NAICS332996.0,class,,classes_with_embeddings.jsonl
+NAICS332997.0,http://asu.edu/semantics/SUDOKN/NAICS332997.0,class,,classes_with_embeddings.jsonl
+NAICS332998.0,http://asu.edu/semantics/SUDOKN/NAICS332998.0,class,,classes_with_embeddings.jsonl
+NAICS332999.0,http://asu.edu/semantics/SUDOKN/NAICS332999.0,class,,classes_with_embeddings.jsonl
+NAICS333111.0,http://asu.edu/semantics/SUDOKN/NAICS333111.0,class,,classes_with_embeddings.jsonl
+NAICS333112.0,http://asu.edu/semantics/SUDOKN/NAICS333112.0,class,,classes_with_embeddings.jsonl
+NAICS333120.0,http://asu.edu/semantics/SUDOKN/NAICS333120.0,class,,classes_with_embeddings.jsonl
+NAICS333131.0,http://asu.edu/semantics/SUDOKN/NAICS333131.0,class,,classes_with_embeddings.jsonl
+NAICS333132.0,http://asu.edu/semantics/SUDOKN/NAICS333132.0,class,,classes_with_embeddings.jsonl
+NAICS333241.0,http://asu.edu/semantics/SUDOKN/NAICS333241.0,class,,classes_with_embeddings.jsonl
+NAICS333242.0,http://asu.edu/semantics/SUDOKN/NAICS333242.0,class,,classes_with_embeddings.jsonl
+NAICS333243.0,http://asu.edu/semantics/SUDOKN/NAICS333243.0,class,,classes_with_embeddings.jsonl
+NAICS333248.0,http://asu.edu/semantics/SUDOKN/NAICS333248.0,class,,classes_with_embeddings.jsonl
+NAICS333310.0,http://asu.edu/semantics/SUDOKN/NAICS333310.0,class,,classes_with_embeddings.jsonl
+NAICS333413.0,http://asu.edu/semantics/SUDOKN/NAICS333413.0,class,,classes_with_embeddings.jsonl
+NAICS333414.0,http://asu.edu/semantics/SUDOKN/NAICS333414.0,class,,classes_with_embeddings.jsonl
+NAICS333415.0,http://asu.edu/semantics/SUDOKN/NAICS333415.0,class,,classes_with_embeddings.jsonl
+NAICS333511.0,http://asu.edu/semantics/SUDOKN/NAICS333511.0,class,,classes_with_embeddings.jsonl
+NAICS333514.0,http://asu.edu/semantics/SUDOKN/NAICS333514.0,class,,classes_with_embeddings.jsonl
+NAICS333515.0,http://asu.edu/semantics/SUDOKN/NAICS333515.0,class,,classes_with_embeddings.jsonl
+NAICS333517.0,http://asu.edu/semantics/SUDOKN/NAICS333517.0,class,,classes_with_embeddings.jsonl
+NAICS333519.0,http://asu.edu/semantics/SUDOKN/NAICS333519.0,class,,classes_with_embeddings.jsonl
+NAICS333611.0,http://asu.edu/semantics/SUDOKN/NAICS333611.0,class,,classes_with_embeddings.jsonl
+NAICS333618.0,http://asu.edu/semantics/SUDOKN/NAICS333618.0,class,,classes_with_embeddings.jsonl
+NAICS333912.0,http://asu.edu/semantics/SUDOKN/NAICS333912.0,class,,classes_with_embeddings.jsonl
+NAICS333914.0,http://asu.edu/semantics/SUDOKN/NAICS333914.0,class,,classes_with_embeddings.jsonl
+NAICS333922.0,http://asu.edu/semantics/SUDOKN/NAICS333922.0,class,,classes_with_embeddings.jsonl
+NAICS333923.0,http://asu.edu/semantics/SUDOKN/NAICS333923.0,class,,classes_with_embeddings.jsonl
+NAICS333924.0,http://asu.edu/semantics/SUDOKN/NAICS333924.0,class,,classes_with_embeddings.jsonl
+NAICS333991.0,http://asu.edu/semantics/SUDOKN/NAICS333991.0,class,,classes_with_embeddings.jsonl
+NAICS333992.0,http://asu.edu/semantics/SUDOKN/NAICS333992.0,class,,classes_with_embeddings.jsonl
+NAICS333993.0,http://asu.edu/semantics/SUDOKN/NAICS333993.0,class,,classes_with_embeddings.jsonl
+NAICS333994.0,http://asu.edu/semantics/SUDOKN/NAICS333994.0,class,,classes_with_embeddings.jsonl
+NAICS333996.0,http://asu.edu/semantics/SUDOKN/NAICS333996.0,class,,classes_with_embeddings.jsonl
+NAICS333998.0,http://asu.edu/semantics/SUDOKN/NAICS333998.0,class,,classes_with_embeddings.jsonl
+NAICS334111.0,http://asu.edu/semantics/SUDOKN/NAICS334111.0,class,,classes_with_embeddings.jsonl
+NAICS334112.0,http://asu.edu/semantics/SUDOKN/NAICS334112.0,class,,classes_with_embeddings.jsonl
+NAICS334118.0,http://asu.edu/semantics/SUDOKN/NAICS334118.0,class,,classes_with_embeddings.jsonl
+NAICS334210.0,http://asu.edu/semantics/SUDOKN/NAICS334210.0,class,,classes_with_embeddings.jsonl
+NAICS334220.0,http://asu.edu/semantics/SUDOKN/NAICS334220.0,class,,classes_with_embeddings.jsonl
+NAICS334290.0,http://asu.edu/semantics/SUDOKN/NAICS334290.0,class,,classes_with_embeddings.jsonl
+NAICS334310.0,http://asu.edu/semantics/SUDOKN/NAICS334310.0,class,,classes_with_embeddings.jsonl
+NAICS334412.0,http://asu.edu/semantics/SUDOKN/NAICS334412.0,class,,classes_with_embeddings.jsonl
+NAICS334413.0,http://asu.edu/semantics/SUDOKN/NAICS334413.0,class,,classes_with_embeddings.jsonl
+NAICS334416.0,http://asu.edu/semantics/SUDOKN/NAICS334416.0,class,,classes_with_embeddings.jsonl
+NAICS334417.0,http://asu.edu/semantics/SUDOKN/NAICS334417.0,class,,classes_with_embeddings.jsonl
+NAICS334418.0,http://asu.edu/semantics/SUDOKN/NAICS334418.0,class,,classes_with_embeddings.jsonl
+NAICS334419.0,http://asu.edu/semantics/SUDOKN/NAICS334419.0,class,,classes_with_embeddings.jsonl
+NAICS334510.0,http://asu.edu/semantics/SUDOKN/NAICS334510.0,class,,classes_with_embeddings.jsonl
+NAICS334511.0,http://asu.edu/semantics/SUDOKN/NAICS334511.0,class,,classes_with_embeddings.jsonl
+NAICS334512.0,http://asu.edu/semantics/SUDOKN/NAICS334512.0,class,,classes_with_embeddings.jsonl
+NAICS334513.0,http://asu.edu/semantics/SUDOKN/NAICS334513.0,class,,classes_with_embeddings.jsonl
+NAICS334514.0,http://asu.edu/semantics/SUDOKN/NAICS334514.0,class,,classes_with_embeddings.jsonl
+NAICS334515.0,http://asu.edu/semantics/SUDOKN/NAICS334515.0,class,,classes_with_embeddings.jsonl
+NAICS334516.0,http://asu.edu/semantics/SUDOKN/NAICS334516.0,class,,classes_with_embeddings.jsonl
+NAICS334519.0,http://asu.edu/semantics/SUDOKN/NAICS334519.0,class,,classes_with_embeddings.jsonl
+NAICS334610.0,http://asu.edu/semantics/SUDOKN/NAICS334610.0,class,,classes_with_embeddings.jsonl
+NAICS335131.0,http://asu.edu/semantics/SUDOKN/NAICS335131.0,class,,classes_with_embeddings.jsonl
+NAICS335132.0,http://asu.edu/semantics/SUDOKN/NAICS335132.0,class,,classes_with_embeddings.jsonl
+NAICS335139.0,http://asu.edu/semantics/SUDOKN/NAICS335139.0,class,,classes_with_embeddings.jsonl
+NAICS335210.0,http://asu.edu/semantics/SUDOKN/NAICS335210.0,class,,classes_with_embeddings.jsonl
+NAICS335220.0,http://asu.edu/semantics/SUDOKN/NAICS335220.0,class,,classes_with_embeddings.jsonl
+NAICS335311.0,http://asu.edu/semantics/SUDOKN/NAICS335311.0,class,,classes_with_embeddings.jsonl
+NAICS335312.0,http://asu.edu/semantics/SUDOKN/NAICS335312.0,class,,classes_with_embeddings.jsonl
+NAICS335313.0,http://asu.edu/semantics/SUDOKN/NAICS335313.0,class,,classes_with_embeddings.jsonl
+NAICS335314.0,http://asu.edu/semantics/SUDOKN/NAICS335314.0,class,,classes_with_embeddings.jsonl
+NAICS335910.0,http://asu.edu/semantics/SUDOKN/NAICS335910.0,class,,classes_with_embeddings.jsonl
+NAICS335921.0,http://asu.edu/semantics/SUDOKN/NAICS335921.0,class,,classes_with_embeddings.jsonl
+NAICS335929.0,http://asu.edu/semantics/SUDOKN/NAICS335929.0,class,,classes_with_embeddings.jsonl
+NAICS335931.0,http://asu.edu/semantics/SUDOKN/NAICS335931.0,class,,classes_with_embeddings.jsonl
+NAICS335932.0,http://asu.edu/semantics/SUDOKN/NAICS335932.0,class,,classes_with_embeddings.jsonl
+NAICS335991.0,http://asu.edu/semantics/SUDOKN/NAICS335991.0,class,,classes_with_embeddings.jsonl
+NAICS335999.0,http://asu.edu/semantics/SUDOKN/NAICS335999.0,class,,classes_with_embeddings.jsonl
+NAICS336110.0,http://asu.edu/semantics/SUDOKN/NAICS336110.0,class,,classes_with_embeddings.jsonl
+NAICS336120.0,http://asu.edu/semantics/SUDOKN/NAICS336120.0,class,,classes_with_embeddings.jsonl
+NAICS336211.0,http://asu.edu/semantics/SUDOKN/NAICS336211.0,class,,classes_with_embeddings.jsonl
+NAICS336212.0,http://asu.edu/semantics/SUDOKN/NAICS336212.0,class,,classes_with_embeddings.jsonl
+NAICS336214.0,http://asu.edu/semantics/SUDOKN/NAICS336214.0,class,,classes_with_embeddings.jsonl
+NAICS336310.0,http://asu.edu/semantics/SUDOKN/NAICS336310.0,class,,classes_with_embeddings.jsonl
+NAICS336320.0,http://asu.edu/semantics/SUDOKN/NAICS336320.0,class,,classes_with_embeddings.jsonl
+NAICS336330.0,http://asu.edu/semantics/SUDOKN/NAICS336330.0,class,,classes_with_embeddings.jsonl
+NAICS336340.0,http://asu.edu/semantics/SUDOKN/NAICS336340.0,class,,classes_with_embeddings.jsonl
+NAICS336350.0,http://asu.edu/semantics/SUDOKN/NAICS336350.0,class,,classes_with_embeddings.jsonl
+NAICS336360.0,http://asu.edu/semantics/SUDOKN/NAICS336360.0,class,,classes_with_embeddings.jsonl
+NAICS336370.0,http://asu.edu/semantics/SUDOKN/NAICS336370.0,class,,classes_with_embeddings.jsonl
+NAICS336390.0,http://asu.edu/semantics/SUDOKN/NAICS336390.0,class,,classes_with_embeddings.jsonl
+NAICS336411.0,http://asu.edu/semantics/SUDOKN/NAICS336411.0,class,,classes_with_embeddings.jsonl
+NAICS336412.0,http://asu.edu/semantics/SUDOKN/NAICS336412.0,class,,classes_with_embeddings.jsonl
+NAICS336413.0,http://asu.edu/semantics/SUDOKN/NAICS336413.0,class,,classes_with_embeddings.jsonl
+NAICS336414.0,http://asu.edu/semantics/SUDOKN/NAICS336414.0,class,,classes_with_embeddings.jsonl
+NAICS336415.0,http://asu.edu/semantics/SUDOKN/NAICS336415.0,class,,classes_with_embeddings.jsonl
+NAICS336419.0,http://asu.edu/semantics/SUDOKN/NAICS336419.0,class,,classes_with_embeddings.jsonl
+NAICS336510.0,http://asu.edu/semantics/SUDOKN/NAICS336510.0,class,,classes_with_embeddings.jsonl
+NAICS336611.0,http://asu.edu/semantics/SUDOKN/NAICS336611.0,class,,classes_with_embeddings.jsonl
+NAICS336612.0,http://asu.edu/semantics/SUDOKN/NAICS336612.0,class,,classes_with_embeddings.jsonl
+NAICS336991.0,http://asu.edu/semantics/SUDOKN/NAICS336991.0,class,,classes_with_embeddings.jsonl
+NAICS336992.0,http://asu.edu/semantics/SUDOKN/NAICS336992.0,class,,classes_with_embeddings.jsonl
+NAICS336999.0,http://asu.edu/semantics/SUDOKN/NAICS336999.0,class,,classes_with_embeddings.jsonl
+NAICS337110.0,http://asu.edu/semantics/SUDOKN/NAICS337110.0,class,,classes_with_embeddings.jsonl
+NAICS337121.0,http://asu.edu/semantics/SUDOKN/NAICS337121.0,class,,classes_with_embeddings.jsonl
+NAICS337122.0,http://asu.edu/semantics/SUDOKN/NAICS337122.0,class,,classes_with_embeddings.jsonl
+NAICS337126.0,http://asu.edu/semantics/SUDOKN/NAICS337126.0,class,,classes_with_embeddings.jsonl
+NAICS337127.0,http://asu.edu/semantics/SUDOKN/NAICS337127.0,class,,classes_with_embeddings.jsonl
+NAICS337211.0,http://asu.edu/semantics/SUDOKN/NAICS337211.0,class,,classes_with_embeddings.jsonl
+NAICS337212.0,http://asu.edu/semantics/SUDOKN/NAICS337212.0,class,,classes_with_embeddings.jsonl
+NAICS337214.0,http://asu.edu/semantics/SUDOKN/NAICS337214.0,class,,classes_with_embeddings.jsonl
+NAICS337215.0,http://asu.edu/semantics/SUDOKN/NAICS337215.0,class,,classes_with_embeddings.jsonl
+NAICS337910.0,http://asu.edu/semantics/SUDOKN/NAICS337910.0,class,,classes_with_embeddings.jsonl
+NAICS337920.0,http://asu.edu/semantics/SUDOKN/NAICS337920.0,class,,classes_with_embeddings.jsonl
+NAICS339112.0,http://asu.edu/semantics/SUDOKN/NAICS339112.0,class,,classes_with_embeddings.jsonl
+NAICS339113.0,http://asu.edu/semantics/SUDOKN/NAICS339113.0,class,,classes_with_embeddings.jsonl
+NAICS339114.0,http://asu.edu/semantics/SUDOKN/NAICS339114.0,class,,classes_with_embeddings.jsonl
+NAICS339115.0,http://asu.edu/semantics/SUDOKN/NAICS339115.0,class,,classes_with_embeddings.jsonl
+NAICS339116.0,http://asu.edu/semantics/SUDOKN/NAICS339116.0,class,,classes_with_embeddings.jsonl
+NAICS339910.0,http://asu.edu/semantics/SUDOKN/NAICS339910.0,class,,classes_with_embeddings.jsonl
+NAICS339920.0,http://asu.edu/semantics/SUDOKN/NAICS339920.0,class,,classes_with_embeddings.jsonl
+NAICS339930.0,http://asu.edu/semantics/SUDOKN/NAICS339930.0,class,,classes_with_embeddings.jsonl
+NAICS339940.0,http://asu.edu/semantics/SUDOKN/NAICS339940.0,class,,classes_with_embeddings.jsonl
+NAICS339950.0,http://asu.edu/semantics/SUDOKN/NAICS339950.0,class,,classes_with_embeddings.jsonl
+NAICS339991.0,http://asu.edu/semantics/SUDOKN/NAICS339991.0,class,,classes_with_embeddings.jsonl
+NAICS339992.0,http://asu.edu/semantics/SUDOKN/NAICS339992.0,class,,classes_with_embeddings.jsonl
+NAICS339994.0,http://asu.edu/semantics/SUDOKN/NAICS339994.0,class,,classes_with_embeddings.jsonl
+NAICS339995.0,http://asu.edu/semantics/SUDOKN/NAICS339995.0,class,,classes_with_embeddings.jsonl
+NAICS339999.0,http://asu.edu/semantics/SUDOKN/NAICS339999.0,class,,classes_with_embeddings.jsonl
+NamedIndividual,http://www.w3.org/2002/07/owl#NamedIndividual,class,,classes_with_embeddings.jsonl
+Natural Fiber,http://asu.edu/semantics/SUDOKN/NaturalFiberProcessingCapability,class,,classes_with_embeddings.jsonl
+Nickel,http://asu.edu/semantics/SUDOKN/NickelProcessingCapability,class,,classes_with_embeddings.jsonl
+Nickel Plating,http://asu.edu/semantics/SUDOKN/NickelPlatingCapability,class,,classes_with_embeddings.jsonl
+NIST,http://asu.edu/semantics/SUDOKN/NIST,class,,classes_with_embeddings.jsonl
+nist,http://asu.edu/semantics/SUDOKN/nist,class,,classes_with_embeddings.jsonl
+NIST800171,http://asu.edu/semantics/SUDOKN/NIST800171,class,,classes_with_embeddings.jsonl
+Nitriding,http://asu.edu/semantics/SUDOKN/NitridingCapability,class,,classes_with_embeddings.jsonl
+Noryl,http://asu.edu/semantics/SUDOKN/NorylProcessingCapability,class,,classes_with_embeddings.jsonl
+Notching,http://asu.edu/semantics/SUDOKN/NotchingCapability,class,,classes_with_embeddings.jsonl
+Nuclear Energy,http://asu.edu/semantics/SUDOKN/NuclearEnergyIndustry,class,,classes_with_embeddings.jsonl
+Nylon,http://asu.edu/semantics/SUDOKN/NylonProcessingCapability,class,,classes_with_embeddings.jsonl
+ObjectProperty,http://www.w3.org/2002/07/owl#ObjectProperty,class,,classes_with_embeddings.jsonl
+OccupationalHealthAndSafety,http://asu.edu/semantics/SUDOKN/OccupationalHealthAndSafety,class,,classes_with_embeddings.jsonl
+Offshore Wind Energy,http://asu.edu/semantics/SUDOKN/OffshoreWindEnergyIndustry,class,,classes_with_embeddings.jsonl
+OHSAS18001,http://asu.edu/semantics/SUDOKN/OHSAS18001,class,,classes_with_embeddings.jsonl
+Oil And Gas,http://asu.edu/semantics/SUDOKN/OilAndGasIndustry,class,,classes_with_embeddings.jsonl
+Oil Grooving,http://asu.edu/semantics/SUDOKN/OilGroovingCapability,class,,classes_with_embeddings.jsonl
+Oil Quench Hardening,http://asu.edu/semantics/SUDOKN/OilQuenchHardeningCapability,class,,classes_with_embeddings.jsonl
+oilandgasIndustry,http://asu.edu/semantics/SUDOKN/oilandgasIndustry,class,,classes_with_embeddings.jsonl
+Ontology,http://www.w3.org/2002/07/owl#Ontology,class,,classes_with_embeddings.jsonl
+Open Die Forging,http://asu.edu/semantics/SUDOKN/OpenDieForgingCapability,class,,classes_with_embeddings.jsonl
+organization located in,http://asu.edu/semantics/SUDOKN/OrganizationLocatedIn,predicate,pred:OrganizationLocatedIn@v1,predicates_with_embeddings.jsonl
+organization name,http://asu.edu/semantics/SUDOKN/OrganizationName,class,,classes_with_embeddings.jsonl
+organization size,http://asu.edu/semantics/SUDOKN//OrganizationSize,class,,classes_with_embeddings.jsonl
+ownership status classifier,http://asu.edu/semantics/SUDOKN/OwnershipStatusClassifier,class,,classes_with_embeddings.jsonl
+Oxy-FuelCuttingCapability,http://asu.edu/semantics/SUDOKN/Oxy-FuelCuttingCapability,class,,classes_with_embeddings.jsonl
+Packing,http://asu.edu/semantics/SUDOKN/PackingCapability,class,,classes_with_embeddings.jsonl
+Painting,http://asu.edu/semantics/SUDOKN/PrintingCapability,class,,classes_with_embeddings.jsonl
+PaintingCapability,http://asu.edu/semantics/SUDOKN/PaintingCapability,class,,classes_with_embeddings.jsonl
+Palladium,http://asu.edu/semantics/SUDOKN/PalladiumProcessingCapability,class,,classes_with_embeddings.jsonl
+Paper,http://asu.edu/semantics/SUDOKN/PaperIndustry,class,,classes_with_embeddings.jsonl
+Paperboard Products,http://asu.edu/semantics/SUDOKN/PaperboardProductsIndustry,class,,classes_with_embeddings.jsonl
+Passivation,http://asu.edu/semantics/SUDOKN/PassivationCapability,class,,classes_with_embeddings.jsonl
+Peek,http://asu.edu/semantics/SUDOKN/PeekProcessingCapability,class,,classes_with_embeddings.jsonl
+Percussion Welding,http://asu.edu/semantics/SUDOKN/PercussionWeldingCapability,class,,classes_with_embeddings.jsonl
+Permanent Mold Casting,http://asu.edu/semantics/SUDOKN/PermanentMoldCastingCapability,class,,classes_with_embeddings.jsonl
+PET,http://asu.edu/semantics/SUDOKN/PETProcessingCapability,class,,classes_with_embeddings.jsonl
+petrochemicalIndustry,http://asu.edu/semantics/SUDOKN/petrochemicalIndustry,class,,classes_with_embeddings.jsonl
+Pharmaceutical,http://asu.edu/semantics/SUDOKN/PharmaceuticalIndustry,class,,classes_with_embeddings.jsonl
+pharmaceuticalIndustry,http://asu.edu/semantics/SUDOKN/pharmaceuticalIndustry,class,,classes_with_embeddings.jsonl
+Phosphate Coating,http://asu.edu/semantics/SUDOKN/PhosphateCoatingCapability,class,,classes_with_embeddings.jsonl
+Phosphate Conversion Coating,http://asu.edu/semantics/SUDOKN/PhosphateConversionCoatingCapability,class,,classes_with_embeddings.jsonl
+Phosphor Bronze,http://asu.edu/semantics/SUDOKN/PhosphorBronzeProcessingCapability,class,,classes_with_embeddings.jsonl
+PhotochemicalMachiningCapability,http://asu.edu/semantics/SUDOKN/PhotochemicalMachiningCapability,class,,classes_with_embeddings.jsonl
+Physical Vapor Deposition,http://asu.edu/semantics/SUDOKN/PhysicalVaporDepositionCapability,class,,classes_with_embeddings.jsonl
+PhysicalLocationIdentifier,https://spec.industrialontologies.org/ontology/core/Core/PhysicalLocationIdentifier,class,,classes_with_embeddings.jsonl
+Planarization,http://asu.edu/semantics/SUDOKN/PlanarizationCapability,class,,classes_with_embeddings.jsonl
+Planing,http://asu.edu/semantics/SUDOKN/PlaningCapability,class,,classes_with_embeddings.jsonl
+Plasma Arc Welding,http://asu.edu/semantics/SUDOKN/PlasmaArcWeldingCapability,class,,classes_with_embeddings.jsonl
+Plasma Cutting,http://asu.edu/semantics/SUDOKN/PlasmaCuttingCapability,class,,classes_with_embeddings.jsonl
+Plasma Spraying,http://asu.edu/semantics/SUDOKN/PlasmaSprayingCapability,class,,classes_with_embeddings.jsonl
+Plaster Mold Casting,http://asu.edu/semantics/SUDOKN/PlasterMoldCastingCapability,class,,classes_with_embeddings.jsonl
+Plastic,http://asu.edu/semantics/SUDOKN/PlasticProcessingCapability,class,,classes_with_embeddings.jsonl
+Plastic And Rubber,http://asu.edu/semantics/SUDOKN/PlasticAndRubberIndustry,class,,classes_with_embeddings.jsonl
+Plastic Machining,http://asu.edu/semantics/SUDOKN/PlasticMachiningCapability,class,,classes_with_embeddings.jsonl
+plasticProcessingCapability,http://asu.edu/semantics/SUDOKN/plasticProcessingCapability,class,,classes_with_embeddings.jsonl
+Plating,http://asu.edu/semantics/SUDOKN/PlatingCapability,class,,classes_with_embeddings.jsonl
+Platinum,http://asu.edu/semantics/SUDOKN/PlatinumProcessingCapability,class,,classes_with_embeddings.jsonl
+Plexiglas,http://asu.edu/semantics/SUDOKN/PlexiglasProcessingCapability,class,,classes_with_embeddings.jsonl
+Plunge Grinding,http://asu.edu/semantics/SUDOKN/PlungeGrindingCapability,class,,classes_with_embeddings.jsonl
+Polishing,http://asu.edu/semantics/SUDOKN/PolishingCapability,class,,classes_with_embeddings.jsonl
+Polycarbonate,http://asu.edu/semantics/SUDOKN/PolycarbonateProcessingCapability,class,,classes_with_embeddings.jsonl
+Polycrystalline Diamond Machining,http://asu.edu/semantics/SUDOKN/PolycrystallineDiamondMachiningCapability,class,,classes_with_embeddings.jsonl
+Polyethylene,http://asu.edu/semantics/SUDOKN/PolyethyleneProcessingCapability,class,,classes_with_embeddings.jsonl
+Polymer Deposition,http://asu.edu/semantics/SUDOKN/PolymerDepositionCapability,class,,classes_with_embeddings.jsonl
+Polysulfone,http://asu.edu/semantics/SUDOKN/PolysulfoneProcessingCapability,class,,classes_with_embeddings.jsonl
+Polywood,http://asu.edu/semantics/SUDOKN/PolywoodProcessingCapability,class,,classes_with_embeddings.jsonl
+postal address,http://asu.edu/semantics/SUDOKN/PostalAddress,class,,classes_with_embeddings.jsonl
+Powder Coating,http://asu.edu/semantics/SUDOKN/PowderCoatingCapability,class,,classes_with_embeddings.jsonl
+Powder Deposition,http://asu.edu/semantics/SUDOKN/PowderDepositionCapability,class,,classes_with_embeddings.jsonl
+Powder Metal Forming,http://asu.edu/semantics/SUDOKN/PowderMetalFormingCapability,class,,classes_with_embeddings.jsonl
+PPS,http://asu.edu/semantics/SUDOKN/PPSProcessingCapability,class,,classes_with_embeddings.jsonl
+Press Fitting,http://asu.edu/semantics/SUDOKN/PressFittingCapability,class,,classes_with_embeddings.jsonl
+Press Forging,http://asu.edu/semantics/SUDOKN/PressForgingCapability,class,,classes_with_embeddings.jsonl
+Pressure Welding,http://asu.edu/semantics/SUDOKN/PressureWeldingCapability,class,,classes_with_embeddings.jsonl
+Printing And Information,http://asu.edu/semantics/SUDOKN/PrintingAndInformationIndustry,class,,classes_with_embeddings.jsonl
+Process Annealing,http://asu.edu/semantics/SUDOKN/ProcessAnnealingCapability,class,,classes_with_embeddings.jsonl
+ProductionCapability,https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/ProductionCapability,class,,classes_with_embeddings.jsonl
+Professional,http://asu.edu/semantics/SUDOKN/Professional,class,,classes_with_embeddings.jsonl
+professionalservicesIndustry,http://asu.edu/semantics/SUDOKN/professionalservicesIndustry,class,,classes_with_embeddings.jsonl
+Projection Welding,http://asu.edu/semantics/SUDOKN/ProjectionWeldingCapability,class,,classes_with_embeddings.jsonl
+Property,http://www.w3.org/1999/02/22-rdf-syntax-ns#Property,class,,classes_with_embeddings.jsonl
+Punching,http://asu.edu/semantics/SUDOKN/PunchingCapability,class,,classes_with_embeddings.jsonl
+PVC,http://asu.edu/semantics/SUDOKN/PVCProcessingCapability,class,,classes_with_embeddings.jsonl
+QS9000,http://asu.edu/semantics/SUDOKN/QS9000,class,,classes_with_embeddings.jsonl
+QSQuality,http://asu.edu/semantics/SUDOKN/QSQuality,class,,classes_with_embeddings.jsonl
+Quality,http://asu.edu/semantics/SUDOKN/Quality,class,,classes_with_embeddings.jsonl
+Quality,http://asu.edu/semantics/SUDOKN/QualityCertificate,class,,classes_with_embeddings.jsonl
+quality management capability,http://asu.edu/semantics/SUDOKN/QualityManagementCapability,class,,classes_with_embeddings.jsonl
+Radel,http://asu.edu/semantics/SUDOKN/RadelProcessingCapability,class,,classes_with_embeddings.jsonl
+Ram EDM,http://asu.edu/semantics/SUDOKN/RamEDMCapability,class,,classes_with_embeddings.jsonl
+Reaction Injection Molding,http://asu.edu/semantics/SUDOKN/ReactionInjectionMoldingCapability,class,,classes_with_embeddings.jsonl
+Reaming,http://asu.edu/semantics/SUDOKN/ReamingCapability,class,,classes_with_embeddings.jsonl
+Recovery Annealing,http://asu.edu/semantics/SUDOKN/RecoveryAnnealingCapability,class,,classes_with_embeddings.jsonl
+Recrystallization,http://asu.edu/semantics/SUDOKN/RecrystallizationCapability,class,,classes_with_embeddings.jsonl
+Recycling,http://asu.edu/semantics/SUDOKN/RecyclingIndustry,class,,classes_with_embeddings.jsonl
+Renewable Energy,http://asu.edu/semantics/SUDOKN/RenewableEnergyIndustry,class,,classes_with_embeddings.jsonl
+renewableenergyIndustry,http://asu.edu/semantics/SUDOKN/renewableenergyIndustry,class,,classes_with_embeddings.jsonl
+Resin Transfer Molding,http://asu.edu/semantics/SUDOKN/ResinTransferMoldingCapability,class,,classes_with_embeddings.jsonl
+Resistance Brazing,http://asu.edu/semantics/SUDOKN/ResistanceBrazingCapability,class,,classes_with_embeddings.jsonl
+Resistance Soldering,http://asu.edu/semantics/SUDOKN/ResistanceSolderingCapability,class,,classes_with_embeddings.jsonl
+Restaurant,http://asu.edu/semantics/SUDOKN/RestaurantIndustry,class,,classes_with_embeddings.jsonl
+Retail,http://asu.edu/semantics/SUDOKN/RetailIndustry,class,,classes_with_embeddings.jsonl
+retailIndustry,http://asu.edu/semantics/SUDOKN/retailIndustry,class,,classes_with_embeddings.jsonl
+Riveting,http://asu.edu/semantics/SUDOKN/RivetingCapability,class,,classes_with_embeddings.jsonl
+Robotic In Automotive,http://asu.edu/semantics/SUDOKN/RoboticInAutomotiveIndustry,class,,classes_with_embeddings.jsonl
+Roll Die Engraving,http://asu.edu/semantics/SUDOKN/RollDieEngravingCapability,class,,classes_with_embeddings.jsonl
+Roll Forging,http://asu.edu/semantics/SUDOKN/RollForgingCapability,class,,classes_with_embeddings.jsonl
+Roll Forming,http://asu.edu/semantics/SUDOKN/RollFormingCapability,class,,classes_with_embeddings.jsonl
+Rolling,http://asu.edu/semantics/SUDOKN/RollingCapability,class,,classes_with_embeddings.jsonl
+Rotary Broaching,http://asu.edu/semantics/SUDOKN/RotaryBroachingCapability,class,,classes_with_embeddings.jsonl
+Rotational Molding,http://asu.edu/semantics/SUDOKN/RotationalMoldingCapability,class,,classes_with_embeddings.jsonl
+Rubber,http://asu.edu/semantics/SUDOKN/RubberProcessingCapability,class,,classes_with_embeddings.jsonl
+Rubber Injection Molding,http://asu.edu/semantics/SUDOKN/RubberInjectionMoldingCapability,class,,classes_with_embeddings.jsonl
+RubberInjectionmMoldingCapability,http://asu.edu/semantics/SUDOKN/RubberInjectionmMoldingCapability,class,,classes_with_embeddings.jsonl
+Ryton,http://asu.edu/semantics/SUDOKN/RytonProcessingCapability,class,,classes_with_embeddings.jsonl
+Sand Blasting,http://asu.edu/semantics/SUDOKN/SandBlastingCapability,class,,classes_with_embeddings.jsonl
+Sand Casting,http://asu.edu/semantics/SUDOKN/SandCastingCapability,class,,classes_with_embeddings.jsonl
+Sawing,http://asu.edu/semantics/SUDOKN/SawingCapability,class,,classes_with_embeddings.jsonl
+Seam Welding,http://asu.edu/semantics/SUDOKN/SeamWeldingCapability,class,,classes_with_embeddings.jsonl
+Selective Laser Melting,http://asu.edu/semantics/SUDOKN/SelectiveLaserMeltingCapability,class,,classes_with_embeddings.jsonl
+Selective Laser Sintering,http://asu.edu/semantics/SUDOKN/SelectiveLaserSinteringCapability,class,,classes_with_embeddings.jsonl
+Selective Mask Sintering,http://asu.edu/semantics/SUDOKN/SelectiveMaskSinteringCapability,class,,classes_with_embeddings.jsonl
+Semiconductor,http://asu.edu/semantics/SUDOKN/SemiconductorIndustry,class,,classes_with_embeddings.jsonl
+Semiconductor Fabricating,http://asu.edu/semantics/SUDOKN/SemiconductorFabricatingCapability,class,,classes_with_embeddings.jsonl
+semiconductorfabricatingCapability,http://asu.edu/semantics/SUDOKN/semiconductorfabricatingCapability,class,,classes_with_embeddings.jsonl
+SevenAxisMachiningCapability,http://asu.edu/semantics/SUDOKN/SevenAxisMachiningCapability,class,,classes_with_embeddings.jsonl
+Shaping,http://asu.edu/semantics/SUDOKN/ShapingCapability,class,,classes_with_embeddings.jsonl
+Shearing,http://asu.edu/semantics/SUDOKN/ShearingCapability,class,,classes_with_embeddings.jsonl
+Sheet Metal Processing,http://asu.edu/semantics/SUDOKN/SheetMetalProcessingProcessingCapability,class,,classes_with_embeddings.jsonl
+SheetMetalProcessingCapability,http://asu.edu/semantics/SUDOKN/SheetMetalProcessingCapability,class,,classes_with_embeddings.jsonl
+Shell Molding,http://asu.edu/semantics/SUDOKN/ShellMoldingCapability,class,,classes_with_embeddings.jsonl
+Shielded Metal Arc Welding,http://asu.edu/semantics/SUDOKN/ShieldedMetalArcWeldingCapability,class,,classes_with_embeddings.jsonl
+Shot Peening,http://asu.edu/semantics/SUDOKN/ShotPeeningCapability,class,,classes_with_embeddings.jsonl
+Shrink Fitting,http://asu.edu/semantics/SUDOKN/ShrinkFittingCapability,class,,classes_with_embeddings.jsonl
+Silicone,http://asu.edu/semantics/SUDOKN/SiliconeProcessingCapability,class,,classes_with_embeddings.jsonl
+Silver,http://asu.edu/semantics/SUDOKN/SilverProcessingCapability,class,,classes_with_embeddings.jsonl
+Silver Plating,http://asu.edu/semantics/SUDOKN/SilverPlatingCapability,class,,classes_with_embeddings.jsonl
+Single-Point Cutting,http://asu.edu/semantics/SUDOKN/SinglePointCuttingCapability,class,,classes_with_embeddings.jsonl
+Single-PointCuttingCapability,http://asu.edu/semantics/SUDOKN/Single-PointCuttingCapability,class,,classes_with_embeddings.jsonl
+Sinker EDM,http://asu.edu/semantics/SUDOKN/SinkerEDMCapability,class,,classes_with_embeddings.jsonl
+Sintering,http://asu.edu/semantics/SUDOKN/SinteringCapability,class,,classes_with_embeddings.jsonl
+Slab Milling,http://asu.edu/semantics/SUDOKN/SlabMillingCapability,class,,classes_with_embeddings.jsonl
+Slitting,http://asu.edu/semantics/SUDOKN/SlittingCapability,class,,classes_with_embeddings.jsonl
+SlittingCapabilityCapability,http://asu.edu/semantics/SUDOKN/SlittingCapabilityCapability,class,,classes_with_embeddings.jsonl
+Small Hole Drilling,http://asu.edu/semantics/SUDOKN/SmallHoleDrillingCapability,class,,classes_with_embeddings.jsonl
+Solar Power,http://asu.edu/semantics/SUDOKN/SolarPowerIndustry,class,,classes_with_embeddings.jsonl
+Soldering,http://asu.edu/semantics/SUDOKN/SolderingCapability,class,,classes_with_embeddings.jsonl
+Solid Deposition,http://asu.edu/semantics/SUDOKN/SolidDepositionCapability,class,,classes_with_embeddings.jsonl
+Spark Plasma Sintering,http://asu.edu/semantics/SUDOKN/SparkPlasmaSinteringCapability,class,,classes_with_embeddings.jsonl
+special business status classifier,http://asu.edu/semantics/SUDOKN/SpecialBusinessStatusClassifier,class,,classes_with_embeddings.jsonl
+Specialized Machining,http://asu.edu/semantics/SUDOKN/SpecializedMachiningCapability,class,,classes_with_embeddings.jsonl
+Spinning,http://asu.edu/semantics/SUDOKN/SpinningCapability,class,,classes_with_embeddings.jsonl
+Sports And Leisure,http://asu.edu/semantics/SUDOKN/SportsAndLeisureIndustry,class,,classes_with_embeddings.jsonl
+Spot Welding,http://asu.edu/semantics/SUDOKN/SpotWeldingCapability,class,,classes_with_embeddings.jsonl
+Square Tubing,http://asu.edu/semantics/SUDOKN/SquareTubingCapability,class,,classes_with_embeddings.jsonl
+Squeeze Casting,http://asu.edu/semantics/SUDOKN/SqueezeCastingCapability,class,,classes_with_embeddings.jsonl
+Stainless Steel,http://asu.edu/semantics/SUDOKN/StainlessSteelProcessingCapability,class,,classes_with_embeddings.jsonl
+Stamping,http://asu.edu/semantics/SUDOKN/StampingCapability,class,,classes_with_embeddings.jsonl
+State,http://asu.edu/semantics/SUDOKN/State,class,,classes_with_embeddings.jsonl
+state of,http://asu.edu/semantics/SUDOKN/stateOf,predicate,pred:stateOf@v1,predicates_with_embeddings.jsonl
+state of address,http://asu.edu/semantics/SUDOKN/StateOfAddress,class,,classes_with_embeddings.jsonl
+Steel,http://asu.edu/semantics/SUDOKN/SteelProcessingCapability,class,,classes_with_embeddings.jsonl
+steelProcessingCapability,http://asu.edu/semantics/SUDOKN/steelProcessingCapability,class,,classes_with_embeddings.jsonl
+Stereolithography,http://asu.edu/semantics/SUDOKN/StereolithographyCapability,class,,classes_with_embeddings.jsonl
+street of address,http://asu.edu/semantics/SUDOKN/StreetAddress,class,,classes_with_embeddings.jsonl
+Stress Relieving,http://asu.edu/semantics/SUDOKN/StressRelievingCapability,class,,classes_with_embeddings.jsonl
+Stretch Blow Molding,http://asu.edu/semantics/SUDOKN/StretchBlowMoldingCapability,class,,classes_with_embeddings.jsonl
+Stretch Forming,http://asu.edu/semantics/SUDOKN/StretchFormingCapability,class,,classes_with_embeddings.jsonl
+Stud Welding,http://asu.edu/semantics/SUDOKN/StudWeldingCapability,class,,classes_with_embeddings.jsonl
+Submerged Arc Welding,http://asu.edu/semantics/SUDOKN/SubmergedArcWeldingCapability,class,,classes_with_embeddings.jsonl
+Super Alloy,http://asu.edu/semantics/SUDOKN/SuperAlloyProcessingCapability,class,,classes_with_embeddings.jsonl
+supplies to industry,http://asu.edu/semantics/SUDOKN/suppliesToIndustry,predicate,pred:suppliesToIndustry@v1,predicates_with_embeddings.jsonl
+Surface Finishing,http://asu.edu/semantics/SUDOKN/SurfaceFinishingCapability,class,,classes_with_embeddings.jsonl
+Surface Hardening,http://asu.edu/semantics/SUDOKN/SurfaceHardeningCapability,class,,classes_with_embeddings.jsonl
+Surface Preparation,http://asu.edu/semantics/SUDOKN/SurfacePreparationCapability,class,,classes_with_embeddings.jsonl
+Swagging,http://asu.edu/semantics/SUDOKN/SwaggingCapability,class,,classes_with_embeddings.jsonl
+Swiss Machining,http://asu.edu/semantics/SUDOKN/SwissMachiningCapability,class,,classes_with_embeddings.jsonl
+SymmetricProperty,http://www.w3.org/2002/07/owl#SymmetricProperty,class,,classes_with_embeddings.jsonl
+Tantalum,http://asu.edu/semantics/SUDOKN/TantalumProcessingCapability,class,,classes_with_embeddings.jsonl
+Tapping,http://asu.edu/semantics/SUDOKN/TappingCapability,class,,classes_with_embeddings.jsonl
+Techtron,http://asu.edu/semantics/SUDOKN/TechtronProcessingCapability,class,,classes_with_embeddings.jsonl
+Teflon,http://asu.edu/semantics/SUDOKN/TeflonProcessingCapability,class,,classes_with_embeddings.jsonl
+Telecommunications,http://asu.edu/semantics/SUDOKN/TelecommunicationsIndustry,class,,classes_with_embeddings.jsonl
+telecommunicationsIndustry,http://asu.edu/semantics/SUDOKN/telecommunicationsIndustry,class,,classes_with_embeddings.jsonl
+Tempering,http://asu.edu/semantics/SUDOKN/TemperingCapability,class,,classes_with_embeddings.jsonl
+Textile Process,http://asu.edu/semantics/SUDOKN/TextileProcessCapability,class,,classes_with_embeddings.jsonl
+Textiles,http://asu.edu/semantics/SUDOKN/TextilesIndustry,class,,classes_with_embeddings.jsonl
+Thermal Coating,http://asu.edu/semantics/SUDOKN/ThermalCoatingCapability,class,,classes_with_embeddings.jsonl
+Thermal Deburring,http://asu.edu/semantics/SUDOKN/ThermalDeburringCapability,class,,classes_with_embeddings.jsonl
+Thermal Joining,http://asu.edu/semantics/SUDOKN/ThermaJoiningCapability,class,,classes_with_embeddings.jsonl
+Thermal Spray Coating,http://asu.edu/semantics/SUDOKN/ThermalSprayCoatingCapability,class,,classes_with_embeddings.jsonl
+Thermal Subtraction,http://asu.edu/semantics/SUDOKN/ThermalSubtractionCapability,class,,classes_with_embeddings.jsonl
+Thermal Welding,http://asu.edu/semantics/SUDOKN/ThermalWeldingCapability,class,,classes_with_embeddings.jsonl
+ThermalJoiningCapability,http://asu.edu/semantics/SUDOKN/ThermalJoiningCapability,class,,classes_with_embeddings.jsonl
+ThermaweldingCapability,http://asu.edu/semantics/SUDOKN/ThermaweldingCapability,class,,classes_with_embeddings.jsonl
+Thermoforming,http://asu.edu/semantics/SUDOKN/ThermoformingCapability,class,,classes_with_embeddings.jsonl
+Thin Wall Machining,http://asu.edu/semantics/SUDOKN/ThinWallMachiningCapability,class,,classes_with_embeddings.jsonl
+Thread Milling,http://asu.edu/semantics/SUDOKN/ThreadMillingCapability,class,,classes_with_embeddings.jsonl
+Threading,http://asu.edu/semantics/SUDOKN/ThreadingCapability,class,,classes_with_embeddings.jsonl
+Through Hardening,http://asu.edu/semantics/SUDOKN/ThroughHardeningCapability,class,,classes_with_embeddings.jsonl
+TIG Welding,http://asu.edu/semantics/SUDOKN/TIGWeldingCapability,class,,classes_with_embeddings.jsonl
+Tin Plating,http://asu.edu/semantics/SUDOKN/TinPlatingCapability,class,,classes_with_embeddings.jsonl
+Titanium,http://asu.edu/semantics/SUDOKN/TitaniumProcessingCapability,class,,classes_with_embeddings.jsonl
+TL9000,http://asu.edu/semantics/SUDOKN/TL9000,class,,classes_with_embeddings.jsonl
+TLQuality,http://asu.edu/semantics/SUDOKN/TLQuality,class,,classes_with_embeddings.jsonl
+Tool And Die,http://asu.edu/semantics/SUDOKN/ToolAndDieIndustry,class,,classes_with_embeddings.jsonl
+Tool Making,http://asu.edu/semantics/SUDOKN/ToolMakingCapability,class,,classes_with_embeddings.jsonl
+Torch Brazing,http://asu.edu/semantics/SUDOKN/TorchBrazingCapability,class,,classes_with_embeddings.jsonl
+Torch Cutting,http://asu.edu/semantics/SUDOKN/TorchCuttingCapability,class,,classes_with_embeddings.jsonl
+Torlon,http://asu.edu/semantics/SUDOKN/TorlonProcessingCapability,class,,classes_with_embeddings.jsonl
+Transfer Molding,http://asu.edu/semantics/SUDOKN/TransferMoldingCapability,class,,classes_with_embeddings.jsonl
+TransitiveProperty,http://www.w3.org/2002/07/owl#TransitiveProperty,class,,classes_with_embeddings.jsonl
+Transportation,http://asu.edu/semantics/SUDOKN/TransportationIndustry,class,,classes_with_embeddings.jsonl
+transportationIndustry,http://asu.edu/semantics/SUDOKN/transportationIndustry,class,,classes_with_embeddings.jsonl
+Tube Bending,http://asu.edu/semantics/SUDOKN/TubeBendingCapability,class,,classes_with_embeddings.jsonl
+Tube Drawing,http://asu.edu/semantics/SUDOKN/TubeDrawingCapability,class,,classes_with_embeddings.jsonl
+Tubing,http://asu.edu/semantics/SUDOKN/TubingCapability,class,,classes_with_embeddings.jsonl
+Tuffak,http://asu.edu/semantics/SUDOKN/TuffakProcessingCapability,class,,classes_with_embeddings.jsonl
+Tumbling,http://asu.edu/semantics/SUDOKN/TumblingCapability,class,,classes_with_embeddings.jsonl
+Tungsten,http://asu.edu/semantics/SUDOKN/TungstenProcessingCapability,class,,classes_with_embeddings.jsonl
+Turning,http://asu.edu/semantics/SUDOKN/TurningCapability,class,,classes_with_embeddings.jsonl
+two dimensional cartesian spatial coordinate datum,http://asu.edu/semantics/SUDOKN/TwoDimensionalCartesianSpatialCoordinateDatum,class,,classes_with_embeddings.jsonl
+UHMW,http://asu.edu/semantics/SUDOKN/UHMWProcessingCapability,class,,classes_with_embeddings.jsonl
+Ultrasonic Cleaning,http://asu.edu/semantics/SUDOKN/UltrasonicCleaningCapability,class,,classes_with_embeddings.jsonl
+Ultrasonic Welding,http://asu.edu/semantics/SUDOKN/UltrasonicWeldingCapability,class,,classes_with_embeddings.jsonl
+Upset Forging,http://asu.edu/semantics/SUDOKN/UpsetForgingCapability,class,,classes_with_embeddings.jsonl
+Urethane,http://asu.edu/semantics/SUDOKN/UrethaneProcessingCapability,class,,classes_with_embeddings.jsonl
+US postal code,http://asu.edu/semantics/SUDOKN/USPostalCode,class,,classes_with_embeddings.jsonl
+Utilities,http://asu.edu/semantics/SUDOKN/UtilitiesIndustry,class,,classes_with_embeddings.jsonl
+Vacuum Assisted Resin Transfer Molding,http://asu.edu/semantics/SUDOKN/VacuumAssistedResinTransferMoldingCapability,class,,classes_with_embeddings.jsonl
+Vacuum Brazing,http://asu.edu/semantics/SUDOKN/VacuumBrazingCapability,class,,classes_with_embeddings.jsonl
+Vacuum Casting,http://asu.edu/semantics/SUDOKN/VacuumCastingCapability,class,,classes_with_embeddings.jsonl
+Vacuum Forming,http://asu.edu/semantics/SUDOKN/VacuumFormingCapability,class,,classes_with_embeddings.jsonl
+Vacuum Hardening,http://asu.edu/semantics/SUDOKN/VacuumHardeningCapability,class,,classes_with_embeddings.jsonl
+Vacuum Molding,http://asu.edu/semantics/SUDOKN/VacuumMoldingCapability,class,,classes_with_embeddings.jsonl
+Vacuum Packaging,http://asu.edu/semantics/SUDOKN/VacuumPackagingCapability,class,,classes_with_embeddings.jsonl
+Vacuum Pressing,http://asu.edu/semantics/SUDOKN/VacuumPressingCapability,class,,classes_with_embeddings.jsonl
+Vacuum Thermoforming,http://asu.edu/semantics/SUDOKN/VacuumThermoformingCapability,class,,classes_with_embeddings.jsonl
+Vaporized Metal Coating,http://asu.edu/semantics/SUDOKN/VaporizedMetalCoatingCapability,class,,classes_with_embeddings.jsonl
+VDA,http://asu.edu/semantics/SUDOKN/VDA,class,,classes_with_embeddings.jsonl
+Vertical Boring,http://asu.edu/semantics/SUDOKN/VerticalBoringCapability,class,,classes_with_embeddings.jsonl
+Vertical Milling,http://asu.edu/semantics/SUDOKN/VerticalMillingCapability,class,,classes_with_embeddings.jsonl
+Vespel,http://asu.edu/semantics/SUDOKN/VespelProcessingCapability,class,,classes_with_embeddings.jsonl
+Vibratory Deburring,http://asu.edu/semantics/SUDOKN/VibratoryDeburringCapability,class,,classes_with_embeddings.jsonl
+virtual location identifier,http://asu.edu/semantics/SUDOKN/VitualLocationIdentifier,class,,classes_with_embeddings.jsonl
+WarehousingAndStorageIndustry,http://asu.edu/semantics/SUDOKN/WarehousingAndStorageIndustry,class,,classes_with_embeddings.jsonl
+Waspaloy,http://asu.edu/semantics/SUDOKN/WaspaloyProcessingCapability,class,,classes_with_embeddings.jsonl
+Water And Sewer Utilities,http://asu.edu/semantics/SUDOKN/WaterAndSewerUtilitiesIndustry,class,,classes_with_embeddings.jsonl
+Water Quench Hardening,http://asu.edu/semantics/SUDOKN/WaterQuenchHardeningCapability,class,,classes_with_embeddings.jsonl
+waterandsewerutilitiesIndustry,http://asu.edu/semantics/SUDOKN/waterandsewerutilitiesIndustry,class,,classes_with_embeddings.jsonl
+Waterjet Cutting,http://asu.edu/semantics/SUDOKN/WaterjetCuttingCapability,class,,classes_with_embeddings.jsonl
+watertreatmentandmanagementIndustry,http://asu.edu/semantics/SUDOKN/watertreatmentandmanagementIndustry,class,,classes_with_embeddings.jsonl
+Wave Soldering,http://asu.edu/semantics/SUDOKN/WaveSolderingCapability,class,,classes_with_embeddings.jsonl
+WaveSoldeingCapability,http://asu.edu/semantics/SUDOKN/WaveSoldeingCapability,class,,classes_with_embeddings.jsonl
+Weaving,http://asu.edu/semantics/SUDOKN/WeavingCapability,class,,classes_with_embeddings.jsonl
+web address,http://asu.edu/semantics/SUDOKN/WebAddress,class,,classes_with_embeddings.jsonl
+Wet Painting,http://asu.edu/semantics/SUDOKN/WetPaintingCapability,class,,classes_with_embeddings.jsonl
+Wind Energy,http://asu.edu/semantics/SUDOKN/WindEnergyIndustry,class,,classes_with_embeddings.jsonl
+Wire Bending,http://asu.edu/semantics/SUDOKN/WireBendingCapability,class,,classes_with_embeddings.jsonl
+Wire Drawing,http://asu.edu/semantics/SUDOKN/WireDrawingCapability,class,,classes_with_embeddings.jsonl
+Wire EDM,http://asu.edu/semantics/SUDOKN/WireEDMCapability,class,,classes_with_embeddings.jsonl
+Wire Harness Assembly,http://asu.edu/semantics/SUDOKN/WireHarnessAssemblyCapability,class,,classes_with_embeddings.jsonl
+WireDawingCapability,http://asu.edu/semantics/SUDOKN/WireDawingCapability,class,,classes_with_embeddings.jsonl
+Wood,http://asu.edu/semantics/SUDOKN/WoodProcessingCapability,class,,classes_with_embeddings.jsonl
+Wood Product Manufacturing,http://asu.edu/semantics/SUDOKN/WoodProductManufacturingIndustry,class,,classes_with_embeddings.jsonl
+Wood Working,http://asu.edu/semantics/SUDOKN/WoodWorkingCapability,class,,classes_with_embeddings.jsonl
+Zelux,http://asu.edu/semantics/SUDOKN/ZeluxProcessingCapability,class,,classes_with_embeddings.jsonl
+Zero Stock Machining,http://asu.edu/semantics/SUDOKN/ZeroStockMachiningCapability,class,,classes_with_embeddings.jsonl
+Zinc Alloy,http://asu.edu/semantics/SUDOKN/ZincAlloyProcessingCapability,class,,classes_with_embeddings.jsonl
+Zinc Plating,http://asu.edu/semantics/SUDOKN/ZincPlatingCapability,class,,classes_with_embeddings.jsonl
+zincalloyProcessingCapability,http://asu.edu/semantics/SUDOKN/zincalloyProcessingCapability,class,,classes_with_embeddings.jsonl
+Zircon,http://asu.edu/semantics/SUDOKN/ZirconProcessingCapability,class,,classes_with_embeddings.jsonl
+Zytel,http://asu.edu/semantics/SUDOKN/ZytelProcessingCapability,class,,classes_with_embeddings.jsonl

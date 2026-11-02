@@ -1,0 +1,1 @@
+Find manufacturers whose name matches the regex "^A".

@@ -1,0 +1,26 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?kind ?itemName WHERE {
+  {
+    ?m a iof-core:Manufacturer ;
+       sdk:manufactures ?item .
+    OPTIONAL { ?m rdfs:label ?manLabel . }
+    OPTIONAL { ?item rdfs:label ?itemLabel . }
+    BIND(COALESCE(?manLabel, STR(?m)) AS ?manufacturer)
+    BIND(COALESCE(?itemLabel, STR(?item)) AS ?itemName)
+    BIND("Product" AS ?kind)
+  }
+  UNION
+  {
+    ?m a iof-core:Manufacturer ;
+       sdk:hasCertificate ?item .
+    OPTIONAL { ?m rdfs:label ?manLabel2 . }
+    OPTIONAL { ?item rdfs:label ?itemLabel2 . }
+    BIND(COALESCE(?manLabel2, STR(?m)) AS ?manufacturer)
+    BIND(COALESCE(?itemLabel2, STR(?item)) AS ?itemName)
+    BIND("Certificate" AS ?kind)
+  }
+}
+ORDER BY ?manufacturer ?kind ?itemName

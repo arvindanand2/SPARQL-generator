@@ -1,0 +1,14 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?text
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  OPTIONAL {
+    ?manufacturer iof-core:describedBy ?desc .
+    ?desc iof-scro:hasTextValue ?descText .
+  }
+  OPTIONAL { ?manufacturer rdfs:label ?name . }
+  BIND(COALESCE(?descText, ?name, "") AS ?text)
+}

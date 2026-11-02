@@ -1,0 +1,10 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?zipValue WHERE {
+  ?company rdfs:label ?label .
+  FILTER(CONTAINS(LCASE(STR(?label)), "casting")) .
+  ?company sdk:organizationLocatedIn ?loc .
+  ?loc sdk:hasZIPcode ?zip .
+  ?zip sdk:hasIntegerValue ?zipValue .
+}

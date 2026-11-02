@@ -1,0 +1,75 @@
+{
+  "clauses": [
+    {
+      "type": "spo",
+      "subject_hint": "companies",
+      "connective": "AND",
+      "filter": {
+        "op": "eq",
+        "value": "Casting",
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "relation_hint": "company name term",
+      "object_hint": "Casting"
+    },
+    {
+      "type": "spo",
+      "subject_hint": "companies",
+      "connective": "AND",
+      "relation_hint": "located in",
+      "object_hint": "company location"
+    },
+    {
+      "type": "spo",
+      "subject_hint": "locations",
+      "connective": "AND",
+      "relation_hint": "has zip code",
+      "object_hint": "ZIP code"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Casting",
+      "iri": "http://asu.edu/semantics/SUDOKN/CastingCapability"
+    },
+    {
+      "label": "Die Casting",
+      "iri": "http://asu.edu/semantics/SUDOKN/DieCastingCapability"
+    },
+    {
+      "label": "Spin Casting",
+      "iri": "http://asu.edu/semantics/SUDOKN/CastingCapability"
+    },
+    {
+      "label": "Sand Casting",
+      "iri": "http://asu.edu/semantics/SUDOKN/SandCastingCapability"
+    },
+    {
+      "label": "Gravity Casting",
+      "iri": "http://asu.edu/semantics/SUDOKN/GravityCastingCapability"
+    },
+    {
+      "label": "Ceramic Mold Casting",
+      "iri": "http://asu.edu/semantics/SUDOKN/CeramicMoldCastingCapability"
+    },
+    {
+      "label": "Cast Steel",
+      "iri": "http://asu.edu/semantics/SUDOKN/CastSteelProcessingCapability"
+    },
+    {
+      "label": "Vacuum Casting",
+      "iri": "http://asu.edu/semantics/SUDOKN/VacuumCastingCapability"
+    },
+    {
+      "label": "Squeeze Casting",
+      "iri": "http://asu.edu/semantics/SUDOKN/SqueezeCastingCapability"
+    },
+    {
+      "label": "Carbon Dioxide Mold Casting",
+      "iri": "http://asu.edu/semantics/SUDOKN/CarbonDioxideMoldCastingCapability"
+    }
+  ]
+}

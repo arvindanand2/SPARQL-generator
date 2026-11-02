@@ -1,0 +1,50 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?manufacturerLabel ?cityLabel ?stateLabel ?lat ?long
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                rdfs:label ?manufacturerLabel ;
+                sdk:hasCertificate ?cert ;
+                sdk:organizationLocatedIn ?site .
+  ?cert a ?certType .
+  FILTER(
+    ?certType IN (
+      sdk:ISO9001,
+      sdk:AS9100Certificate,
+      sdk:IATF16949,
+      sdk:ISOQualityCertificate
+    )
+  )
+  ?site sdk:hasSpatialCoordinates ?coord .
+  ?coord sdk:hasLatitudeValue ?lat ;
+         sdk:hasLongitudeValue ?long .
+  ?site sdk:locatedInCity ?city .
+  ?city rdfs:label ?cityLabel ;
+        sdk:locatedInState ?state .
+  ?state rdfs:label ?stateLabel .
+  FILTER(
+    ?stateLabel IN (
+      "Illinois",
+      "Indiana",
+      "Iowa",
+      "Kansas",
+      "Michigan",
+      "Minnesota",
+      "Missouri",
+      "Nebraska",
+      "North Dakota",
+      "Ohio",
+      "South Dakota",
+      "Wisconsin"
+    )
+  )
+  BIND(xsd:double(?lat) AS ?latVal)
+  BIND(xsd:double(?long) AS ?longVal)
+  # ASU Tempe campus: latitude 33.421204, longitude -111.933112
+  BIND(33.421204 AS ?asuLat)
+  BIND(-111.933112 AS ?asuLong)
+  BIND(((?latVal-?asuLat)*(?latVal-?asuLat) + (?longVal-?asuLong)*(?longVal-?asuLong)) AS ?distanceSq)
+}
+ORDER BY ?distanceSq

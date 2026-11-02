@@ -1,0 +1,59 @@
+{
+  "clauses": [
+    {
+      "object_hint": "state via site->city->state",
+      "subject_hint": "manufacturers",
+      "relation_hint": "located in",
+      "type": "scope",
+      "connective": "OR"
+    },
+    {
+      "object_hint": "state via company->state",
+      "subject_hint": "manufacturers",
+      "relation_hint": "located in",
+      "type": "scope",
+      "connective": "OR"
+    }
+  ],
+  "mapping": [
+    "interpreted two alternative location linkage paths: site->city->state OR company->state"
+  ],
+  "relevant_iris": [
+    {
+      "label": "NIST",
+      "iri": "http://asu.edu/semantics/SUDOKN/nist"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    },
+    {
+      "label": "LEED",
+      "iri": "http://asu.edu/semantics/SUDOKN/LEED"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "VDA",
+      "iri": "http://asu.edu/semantics/SUDOKN/VDA"
+    },
+    {
+      "label": "QS Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QSQuality"
+    },
+    {
+      "label": "FDA",
+      "iri": "http://asu.edu/semantics/SUDOKN/FDA"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "BABA",
+      "iri": "http://asu.edu/semantics/SUDOKN/BABA"
+    }
+  ]
+}

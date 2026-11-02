@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ClauseChunkSchema",
+  "type": "object",
+  "properties": {
+    "clauses": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/Clause" },
+      "default": []
+    },
+    "warnings": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    }
+  },
+  "required": ["clauses", "warnings"],
+  "additionalProperties": false,
+  "$defs": {
+    "Clause": {
+      "type": "object",
+      "properties": {
+        "type": { "type": "string", "enum": ["spo", "filter", "enum", "modifier", "scope"] },
+        "surface": { "type": "string" },
+        "char_start": { "type": "integer" },
+        "char_end": { "type": "integer" },
+        "subject_hint": { "type": ["string", "null"] },
+        "relation_hint": { "type": ["string", "null"] },
+        "object_hint": { "type": ["string", "null"] },
+        "filter": { "$ref": "#/$defs/Filter" },
+        "enum_values": {
+          "type": "array",
+          "items": { "type": "string" },
+          "default": []
+        },
+        "modifier": { "$ref": "#/$defs/Modifier" },
+        "connective": { "type": "string", "enum": ["AND", "OR", "IMPLIED", "FOLLOWUP"] },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+      },
+      "required": [
+        "type", "surface", "char_start", "char_end", "subject_hint", "relation_hint", "object_hint", "filter", "enum_values", "modifier", "connective", "confidence"
+      ],
+      "additionalProperties": false
+    },
+    "Filter": {
+      "type": "object",
+      "properties": {
+        "op": { "type": "string", "enum": ["lt", "lte", "eq", "gte", "gt", "between", "before", "after", "on", "near"] },
+        "value": { "type": ["number", "string", "null"] },
+        "unit": { "type": "string" },
+        "min": { "type": ["number", "null"] },
+        "max": { "type": ["number", "null"] }
+      },
+      "required": ["op", "value", "unit", "min", "max"],
+      "additionalProperties": false
+    },
+    "Modifier": {
+      "type": "object",
+      "properties": {
+        "kind": { "type": "string", "enum": ["topN", "fewest", "most", "nearest", "order", "limit", "group"] },
+        "k": { "type": ["integer", "null"] },
+        "by": { "type": ["string", "null"] }
+      },
+      "required": ["kind", "k", "by"],
+      "additionalProperties": false
+    }
+  }
+}

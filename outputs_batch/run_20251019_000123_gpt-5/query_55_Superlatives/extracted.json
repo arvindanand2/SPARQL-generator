@@ -1,0 +1,65 @@
+{
+  "clauses": [
+    {
+      "connective": "IMPLIED",
+      "type": "spo",
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "certificate"
+      },
+      "subject_hint": "manufacturers",
+      "relation_hint": "has certificate"
+    },
+    {
+      "connective": "IMPLIED",
+      "type": "modifier",
+      "modifier": {
+        "kind": "topN",
+        "k": 1,
+        "by": "number of distinct manufacturers"
+      },
+      "subject_hint": "certificates",
+      "relation_hint": "number of distinct manufacturers"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "ISO 27001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO27001"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "ISO 13485",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO13485"
+    },
+    {
+      "label": "ISO 14001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO14001"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    },
+    {
+      "label": "ISO 22000",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO22000"
+    },
+    {
+      "label": "ISO 45001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO45001"
+    },
+    {
+      "label": "ISO 50001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO50001"
+    },
+    {
+      "label": "AS 9100",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9100Certificate"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?stateLabel ?manufacturer ?manufacturerLabel ?numEmployees ?rank WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:hasNumberOfEmployees ?numStr ;
+                sdk:organizationLocatedIn ?site .
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel. }
+  ?site sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  ?state rdfs:label ?stateLabel .
+  BIND(xsd:integer(REPLACE(?numStr, ",", "")) AS ?numEmployees)
+
+  {
+    SELECT ?manufacturer (COUNT(?other) AS ?higher) WHERE {
+      ?manufacturer a iof-core:Manufacturer ;
+                    sdk:hasNumberOfEmployees ?numStr ;
+                    sdk:organizationLocatedIn ?site .
+      ?site sdk:locatedInCity ?city .
+      ?city sdk:locatedInState ?state .
+      
+      ?other a iof-core:Manufacturer ;
+             sdk:hasNumberOfEmployees ?otherNumStr ;
+             sdk:organizationLocatedIn ?otherSite .
+      ?otherSite sdk:locatedInCity ?otherCity .
+      ?otherCity sdk:locatedInState ?state .
+      
+      BIND(xsd:integer(REPLACE(?otherNumStr, ",", "")) AS ?otherNum)
+      BIND(xsd:integer(REPLACE(?numStr, ",", "")) AS ?thisNum)
+      FILTER( ?otherNum > ?thisNum || (?otherNum = ?thisNum && str(?other) < str(?manufacturer)) )
+    } GROUP BY ?manufacturer
+  }
+  BIND((?higher + 1) AS ?rank)
+  FILTER(?rank <= 3)
+}
+ORDER BY ?stateLabel DESC(?numEmployees)

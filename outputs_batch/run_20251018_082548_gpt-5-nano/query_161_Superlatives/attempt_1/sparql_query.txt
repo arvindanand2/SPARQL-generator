@@ -1,0 +1,17 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?org ?label (COUNT(DISTINCT ?cap) AS ?total)
+WHERE {
+  ?org a iof-core:Manufacturer .
+  OPTIONAL { ?org rdfs:label ?label . }
+  {
+    ?org sdk:hasProcessCapability ?cap .
+  } UNION {
+    ?org sdk:hasMaterialCapability ?cap .
+  }
+}
+GROUP BY ?org ?label
+ORDER BY DESC(?total)
+LIMIT 1

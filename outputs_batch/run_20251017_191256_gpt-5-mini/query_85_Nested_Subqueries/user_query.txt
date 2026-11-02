@@ -1,0 +1,1 @@
+Given the capability set {names containing Machining, Coating, Heat Treating}, return the count of manufacturers that have each capability or any of its subclasses.

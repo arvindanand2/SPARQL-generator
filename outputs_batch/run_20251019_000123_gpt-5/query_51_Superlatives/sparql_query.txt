@@ -1,0 +1,34 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?man ?manLabel ?emp
+WHERE {
+  {
+    SELECT ?man ?manLabel (xsd:integer(REPLACE(STR(?empLit), "[^0-9-]", "")) AS ?emp)
+    WHERE {
+      ?man a iof-core:Manufacturer ;
+           rdfs:label ?manLabel ;
+           sdk:hasNumberOfEmployees ?empLit ;
+           sdk:organizationLocatedIn ?site .
+      ?site sdk:locatedInCity ?city .
+      ?city sdk:locatedInState ?state .
+      ?state rdfs:label ?stateLabel .
+      FILTER(CONTAINS(LCASE(?stateLabel), "ohio"))
+    }
+  }
+  {
+    SELECT (MIN(xsd:integer(REPLACE(STR(?empLit2), "[^0-9-]", ""))) AS ?minEmp)
+    WHERE {
+      ?man2 a iof-core:Manufacturer ;
+            sdk:hasNumberOfEmployees ?empLit2 ;
+            sdk:organizationLocatedIn ?site2 .
+      ?site2 sdk:locatedInCity ?city2 .
+      ?city2 sdk:locatedInState ?state2 .
+      ?state2 rdfs:label ?stateLabel2 .
+      FILTER(CONTAINS(LCASE(?stateLabel2), "ohio"))
+    }
+  }
+  FILTER(?emp = ?minEmp)
+}

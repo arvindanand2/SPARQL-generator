@@ -1,0 +1,11 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?company ?companyLabel ?processCapability ?processCapabilityLabel WHERE {
+  ?company a iof-core:Manufacturer ;
+           rdfs:label ?companyLabel ;
+           sdk:hasProcessCapability ?processCapability .
+  FILTER(CONTAINS(LCASE(STR(?companyLabel)), "aerospace"))
+  OPTIONAL { ?processCapability rdfs:label ?processCapabilityLabel }
+}

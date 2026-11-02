@@ -1,0 +1,14 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?org ?orgLabel
+WHERE {
+  ?org a iof-core:Manufacturer ;
+       sdk:suppliesToIndustry ?industry ;
+       rdfs:label ?orgLabel .
+  ?industry rdfs:label ?industryLabel .
+  FILTER(?industryLabel IN ("MedicalDevices","Pharmaceuticals"))
+}
+GROUP BY ?org ?orgLabel
+HAVING (COUNT(DISTINCT ?industryLabel) = 2)

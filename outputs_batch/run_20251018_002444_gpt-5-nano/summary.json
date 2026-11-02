@@ -1,0 +1,52 @@
+{
+  "total": 5,
+  "successful": 4,
+  "failed": 1,
+  "results": [
+    {
+      "query_id": 0,
+      "query": "What is the number of employees for the company whose name contains \"Steel\"?",
+      "expected_label": "Lookup",
+      "success": false,
+      "result": null,
+      "attempts": 10,
+      "error": "Attempt 1: Run 1 failed. Compressed error:\nResponse:\nResponse:\nb'MALFORMED QUERY: Encountered \" \".\" \". \"\" at line 1, column 78.\\r\\nWas expecting one of:\\r\\n    \"base\" ...\\r\\n    \"prefix\" ...\\r\\n    \"select\" ...\\r\\n    \"construct\" ...\\r\\n    \"describe\" ...\\r\\n    \"ask\" ...\\r\\n    '\nAll retries failed.\n\nAttempt 2: Run 1 failed. Compressed error:\nResponse:\nResponse:\nb'MALFORMED QUERY: Encountered \" \".\" \". \"\" at line 1, column 78.\\r\\nWas expecting one of:\\r\\n    \"base\" ...\\r\\n    \"prefix\" ...\\r\\n    \"select\" ...\\r\\n    \"construct\" ...\\r\\n    \"describe\" ...\\r\\n    \"ask\" ...\\r\\n    '\nAll retries failed.\n\nAttempt 3: Run 1 failed. Compressed error:\nResponse:\nResponse:\nb'MALFORMED QUERY: Encountered \" \".\" \". \"\" at line 1, column 78.\\r\\nWas expecting one of:\\r\\n    \"base\" ...\\r\\n    \"prefix\" ...\\r\\n    \"select\" ...\\r\\n    \"construct\" ...\\r\\n    \"describe\" ...\\r\\n    \"ask\" ...\\r\\n    '\nAll retries failed.\n\nAttempt 4: Run 1 failed. Compressed error:\nResponse:\nResponse:\nb'MALFORMED QUERY: Encountered \" \".\" \". \"\" at line 1, column 78.\\r\\nWas expecting one of:\\r\\n    \"base\" ...\\r\\n    \"prefix\" ...\\r\\n    \"select\" ...\\r\\n    \"construct\" ...\\r\\n    \"describe\" ...\\r\\n    \"ask\" ...\\r\\n    '\nAll retries failed.\n\nAttempt 5: Run 1 failed. Compressed error:\nResponse:\nResponse:\nb'MALFORMED QUERY: Encountered \" \".\" \". \"\" at line 1, column 78.\\r\\nWas expecting one of:\\r\\n    \"base\" ...\\r\\n    \"prefix\" ...\\r\\n    \"select\" ...\\r\\n    \"construct\" ...\\r\\n    \"describe\" ...\\r\\n    \"ask\" ...\\r\\n    '\nAll retries failed.\n\nAttempt 6: Run 1 failed. Compressed error:\nResponse:\nResponse:\nb'MALFORMED QUERY: Encountered \" \".\" \". \"\" at line 1, column 78.\\r\\nWas expecting one of:\\r\\n    \"base\" ...\\r\\n    \"prefix\" ...\\r\\n    \"select\" ...\\r\\n    \"construct\" ...\\r\\n    \"describe\" ...\\r\\n    \"ask\" ...\\r\\n    '\nAll retries failed.\n\nAttempt 7: Run 1 failed. Compressed error:\nResponse:\nResponse:\nb'MALFORMED QUERY: Encountered \" \".\" \". \"\" at line 1, column 78.\\r\\nWas expecting one of:\\r\\n    \"base\" ...\\r\\n    \"prefix\" ...\\r\\n    \"select\" ...\\r\\n    \"construct\" ...\\r\\n    \"describe\" ...\\r\\n    \"ask\" ...\\r\\n    '\nAll retries failed.\n\nAttempt 8: Run 1 failed. Compressed error:\nResponse:\nResponse:\nb'MALFORMED QUERY: Encountered \" \".\" \". \"\" at line 1, column 78.\\r\\nWas expecting one of:\\r\\n    \"base\" ...\\r\\n    \"prefix\" ...\\r\\n    \"select\" ...\\r\\n    \"construct\" ...\\r\\n    \"describe\" ...\\r\\n    \"ask\" ...\\r\\n    '\nAll retries failed.\n\nAttempt 9: Run 1 failed. Compressed error:\nResponse:\nResponse:\nb'MALFORMED QUERY: Encountered \" \".\" \". \"\" at line 1, column 78.\\r\\nWas expecting one of:\\r\\n    \"base\" ...\\r\\n    \"prefix\" ...\\r\\n    \"select\" ...\\r\\n    \"construct\" ...\\r\\n    \"describe\" ...\\r\\n    \"ask\" ...\\r\\n    '\nAll retries failed.\n\nAttempt 10: Run 1 failed. Compressed error:\nResponse:\nResponse:\nb'MALFORMED QUERY: Encountered \" \".\" \". \"\" at line 1, column 78.\\r\\nWas expecting one of:\\r\\n    \"base\" ...\\r\\n    \"prefix\" ...\\r\\n    \"select\" ...\\r\\n    \"construct\" ...\\r\\n    \"describe\" ...\\r\\n    \"ask\" ...\\r\\n    '\nAll retries failed.\n\n"
+    },
+    {
+      "query_id": 1,
+      "query": "What is the English name of the manufacturer that holds the certificate labeled \"ISO 9001\"?",
+      "expected_label": "Lookup",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 2,
+      "query": "What is the NAICS text for the classifier with code 332996?",
+      "expected_label": "Lookup",
+      "success": true,
+      "result": "naicsText\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 2\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 3,
+      "query": "What is the NAICS code for the classifier whose text contains \"PIPE AND PIPE FITTING\"?",
+      "expected_label": "Lookup",
+      "success": true,
+      "result": "naicsCode\tnaicsText\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 1\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 4,
+      "query": "Which process capability has a name that contains \"Machining\"?",
+      "expected_label": "Lookup",
+      "success": true,
+      "result": "capability\tname\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 2866\n",
+      "attempts": 1,
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?manufacturerLabel ?cityLabel ?stateLabel ?latitude ?longitude
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                rdfs:label ?manufacturerLabel ;
+                sdk:organizationLocatedIn ?site ;
+                sdk:hasCertificate ?cert ;
+                sdk:suppliesToIndustry ?industry .
+  ?cert a sdk:ISO9001 .
+  ?site sdk:locatedInCity ?city ;
+        sdk:hasSpatialCoordinates ?coords .
+  ?city sdk:locatedInState ?state ;
+        rdfs:label ?cityLabel .
+  ?state rdfs:label ?stateLabel .
+  ?coords sdk:hasLatitudeValue ?latitude ;
+          sdk:hasLongitudeValue ?longitude .
+  
+  # Midwest filtering by state names:
+  FILTER(?stateLabel IN ("Illinois", "Indiana", "Iowa", "Kansas", "Michigan", "Minnesota", "Missouri", "Nebraska", "North Dakota", "Ohio", "South Dakota", "Wisconsin"))
+  
+  # Aerospace or Agriculture industry
+  ?industry rdfs:label ?industryLabel .
+  FILTER(CONTAINS(LCASE(?industryLabel), "aerospace") || CONTAINS(LCASE(?industryLabel), "agriculture"))
+}
+ORDER BY (ABS(xsd:double(?latitude) - 33.4222) + ABS(xsd:double(?longitude) + 111.9389))

@@ -1,0 +1,55 @@
+{
+  "clauses": [
+    {
+      "object_hint": "products",
+      "relation_hint": "manufactures",
+      "connective": "AND",
+      "modifier": {
+        "kind": "topN",
+        "k": 1,
+        "by": "number of distinct products"
+      },
+      "subject_hint": "manufacturers",
+      "type": "spo"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Man Made Fiber",
+      "iri": "http://asu.edu/semantics/SUDOKN/ManMadeFiberProcessingCapability"
+    },
+    {
+      "label": "Nylon",
+      "iri": "http://asu.edu/semantics/SUDOKN/NylonProcessingCapability"
+    },
+    {
+      "label": "Textile Process",
+      "iri": "http://asu.edu/semantics/SUDOKN/TextileProcessCapability"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "production",
+      "iri": "https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/ProductionCapability"
+    },
+    {
+      "label": "BABA",
+      "iri": "http://asu.edu/semantics/SUDOKN/BABA"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    },
+    {
+      "label": "ITAR",
+      "iri": "http://asu.edu/semantics/SUDOKN/ITAR"
+    },
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    }
+  ]
+}

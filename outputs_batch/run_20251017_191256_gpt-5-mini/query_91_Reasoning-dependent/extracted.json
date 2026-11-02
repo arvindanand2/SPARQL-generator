@@ -1,0 +1,57 @@
+{
+  "clauses": [
+    {
+      "type": "spo",
+      "subject_hint": "manufacturers",
+      "connective": "AND",
+      "relation_hint": "has process capability",
+      "object_hint": "subclass of Surface Finishing"
+    },
+    {
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "count"
+      },
+      "type": "modifier",
+      "subject_hint": "manufacturers",
+      "connective": "IMPLIED",
+      "relation_hint": "has process capability"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Surface Finishing",
+      "iri": "http://asu.edu/semantics/SUDOKN/SurfaceFinishingCapability"
+    },
+    {
+      "label": "Surface Coating",
+      "iri": "http://asu.edu/semantics/SUDOKN/CoatingCapability"
+    },
+    {
+      "label": "Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/MachiningCapability"
+    },
+    {
+      "label": "Chemical Coating",
+      "iri": "http://asu.edu/semantics/SUDOKN/ChemicalCoatingCapability"
+    },
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "Press Forming",
+      "iri": "http://asu.edu/semantics/SUDOKN/FormingCapability"
+    },
+    {
+      "label": "Press Forming",
+      "iri": "http://asu.edu/semantics/SUDOKN/FormingCapability"
+    },
+    {
+      "label": "Machining Of Casting",
+      "iri": "http://asu.edu/semantics/SUDOKN/MachiningOfCastingCapability"
+    }
+  ]
+}

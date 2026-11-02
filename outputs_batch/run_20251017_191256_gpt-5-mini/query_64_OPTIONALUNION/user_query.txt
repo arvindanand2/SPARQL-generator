@@ -1,0 +1,1 @@
+Return each manufacturer with its city and state; if city is missing, still return the state when available.

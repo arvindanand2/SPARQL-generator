@@ -1,0 +1,97 @@
+{
+  "clauses": [
+    {
+      "modifier": {
+        "kind": "order",
+        "k": 2,
+        "by": "exact count"
+      },
+      "type": "modifier",
+      "subject_hint": "manufacturers",
+      "connective": "AND",
+      "filter": {
+        "op": "eq",
+        "value": 2,
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "relation_hint": "manufactures"
+    },
+    {
+      "modifier": {
+        "kind": "order",
+        "k": 2,
+        "by": "exact count"
+      },
+      "type": "modifier",
+      "subject_hint": "manufacturers",
+      "connective": "AND",
+      "filter": {
+        "op": "eq",
+        "value": 2,
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "relation_hint": "has process capability"
+    },
+    {
+      "modifier": {
+        "kind": "order",
+        "k": 2,
+        "by": "exact count"
+      },
+      "type": "modifier",
+      "subject_hint": "manufacturers",
+      "connective": "AND",
+      "filter": {
+        "op": "eq",
+        "value": 2,
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "relation_hint": "has material capability"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "AS 9102",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9102"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    },
+    {
+      "label": "QS Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QSQuality"
+    },
+    {
+      "label": "Specialized Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/SpecializedMachiningCapability"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "Five Axis Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/FiveAxisMachiningCapability"
+    },
+    {
+      "label": "Tool Making",
+      "iri": "http://asu.edu/semantics/SUDOKN/ToolMakingCapability"
+    }
+  ]
+}

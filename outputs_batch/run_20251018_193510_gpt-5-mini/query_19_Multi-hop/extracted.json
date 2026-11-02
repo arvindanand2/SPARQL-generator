@@ -1,0 +1,61 @@
+{
+  "clauses": [
+    {
+      "object_hint": "Surface Finish",
+      "subject_hint": "companies",
+      "relation_hint": "company name term",
+      "type": "spo",
+      "connective": "AND"
+    },
+    {
+      "object_hint": "company with name containing Surface Finish",
+      "subject_hint": "sites",
+      "relation_hint": "linked to company",
+      "type": "spo",
+      "connective": "AND"
+    },
+    {
+      "subject_hint": "sites",
+      "relation_hint": "has latitude",
+      "type": "spo",
+      "connective": "AND"
+    },
+    {
+      "subject_hint": "sites",
+      "relation_hint": "has longitude",
+      "type": "spo",
+      "connective": "AND"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Surface Finishing",
+      "iri": "http://asu.edu/semantics/SUDOKN/SurfaceFinishingCapability"
+    },
+    {
+      "label": "Diamond Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/DiamondMachiningCapability"
+    },
+    {
+      "label": "Lapping",
+      "iri": "http://asu.edu/semantics/SUDOKN/LappingCapability"
+    },
+    {
+      "label": "Surface Preparation",
+      "iri": "http://asu.edu/semantics/SUDOKN/SurfacePreparationCapability"
+    },
+    {
+      "label": "Chemical Coating",
+      "iri": "http://asu.edu/semantics/SUDOKN/ChemicalCoatingCapability"
+    },
+    {
+      "label": "Honing",
+      "iri": "http://asu.edu/semantics/SUDOKN/HoningCapability"
+    },
+    {
+      "label": "Planarization",
+      "iri": "http://asu.edu/semantics/SUDOKN/PlanarizationCapability"
+    }
+  ]
+}

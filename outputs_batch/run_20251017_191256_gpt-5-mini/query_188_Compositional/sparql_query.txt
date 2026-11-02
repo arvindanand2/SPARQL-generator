@@ -1,0 +1,18 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX bfo: <http://purl.obolibrary.org/obo/>
+
+SELECT DISTINCT ?supplier ?label WHERE {
+  ?supplier a iof-core:Manufacturer .
+  OPTIONAL { ?supplier rdfs:label ?label . }
+  ?supplier sdk:hasCertificate ?cert .
+  ?cert a sdk:ISO9001 .
+  ?supplier sdk:suppliesToIndustry ?ind1 .
+  ?ind1 a sdk:RenewableEnergyIndustry .
+  ?supplier sdk:suppliesToIndustry ?ind2 .
+  ?ind2 a sdk:UtilitiesIndustry .
+  FILTER(?ind1 != ?ind2)
+}

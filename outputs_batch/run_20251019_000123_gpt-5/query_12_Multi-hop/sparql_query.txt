@@ -1,0 +1,12 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?product ?productLabel
+WHERE {
+  ?company a iof-core:Manufacturer ;
+           rdfs:label ?companyLabel ;
+           sdk:manufactures ?product .
+  OPTIONAL { ?product rdfs:label ?productLabel }
+  FILTER(CONTAINS(LCASE(STR(?companyLabel)), "tooling"))
+}

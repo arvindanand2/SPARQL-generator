@@ -1,0 +1,65 @@
+{
+  "clauses": [
+    {
+      "connective": "AND",
+      "relation_hint": "has process capability",
+      "type": "spo",
+      "subject_hint": "manufacturers",
+      "enum_values": [
+        "Mechanical Joining"
+      ]
+    },
+    {
+      "connective": "AND",
+      "relation_hint": "lacks process capability",
+      "type": "spo",
+      "subject_hint": "manufacturers",
+      "enum_values": [
+        "Fabrication"
+      ]
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Mechanical Joining",
+      "iri": "http://asu.edu/semantics/SUDOKN/MechanicalJoiningCapability"
+    },
+    {
+      "label": "Metal Joining",
+      "iri": "http://asu.edu/semantics/SUDOKN/JoiningCapability"
+    },
+    {
+      "label": "Mechanical Welding",
+      "iri": "http://asu.edu/semantics/SUDOKN/MechanicalWeldingCapability"
+    },
+    {
+      "label": "Thermal Joining",
+      "iri": "http://asu.edu/semantics/SUDOKN/ThermaJoiningCapability"
+    },
+    {
+      "label": "Joining",
+      "iri": "http://asu.edu/semantics/SUDOKN/JoiningCapability"
+    },
+    {
+      "label": "Fabricating",
+      "iri": "http://asu.edu/semantics/SUDOKN/FabricatingCapability"
+    },
+    {
+      "label": "Metal Clinching",
+      "iri": "http://asu.edu/semantics/SUDOKN/MetalProcessingCapability"
+    },
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    },
+    {
+      "label": "AWS Welder",
+      "iri": "http://asu.edu/semantics/SUDOKN/AWSWelder"
+    },
+    {
+      "label": "Fusion Joining",
+      "iri": "http://asu.edu/semantics/SUDOKN/JoiningCapability"
+    }
+  ]
+}

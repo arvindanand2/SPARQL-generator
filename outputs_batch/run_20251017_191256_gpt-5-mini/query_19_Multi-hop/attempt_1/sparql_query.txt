@@ -1,0 +1,12 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?lat ?lon
+WHERE {
+  ?company rdfs:label ?name ;
+           sdk:organizationLocatedIn ?site .
+  ?site sdk:hasSpatialCoordinates ?coord .
+  ?coord sdk:hasLatitudeValue ?lat ;
+         sdk:hasLongitudeValue ?lon .
+  FILTER(CONTAINS(LCASE(STR(?name)), "surface finish"))
+}

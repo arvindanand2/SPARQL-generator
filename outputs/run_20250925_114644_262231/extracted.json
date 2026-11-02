@@ -1,0 +1,84 @@
+{
+  "clauses": [
+    {
+      "enum_values": [
+        "Midwest"
+      ],
+      "relation_hint": "located in",
+      "subject_hint": "manufacturers",
+      "connective": "IMPLIED",
+      "type": "scope"
+    },
+    {
+      "enum_values": [
+        "Aerospace",
+        "Agriculture"
+      ],
+      "relation_hint": "supplies to industry",
+      "subject_hint": "manufacturers",
+      "connective": "AND",
+      "type": "spo"
+    },
+    {
+      "modifier": {
+        "kind": "nearest",
+        "k": null,
+        "by": "ASU Tempe campus"
+      },
+      "filter": {
+        "op": "near",
+        "value": "ASU Tempe campus",
+        "unit": "poi",
+        "min": null,
+        "max": null
+      },
+      "relation_hint": "located near",
+      "subject_hint": "manufacturers",
+      "connective": "FOLLOWUP",
+      "type": "modifier"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Aerospace Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/AerospaceQualityCertificate"
+    },
+    {
+      "label": "AS 9120",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9120"
+    },
+    {
+      "label": "AS 9003",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9003"
+    },
+    {
+      "label": "AS 9100",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9100Certificate"
+    },
+    {
+      "label": "AWS Welder",
+      "iri": "http://asu.edu/semantics/SUDOKN/AWSWelder"
+    },
+    {
+      "label": "AS 9000",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9000"
+    },
+    {
+      "label": "AS 9102",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9102"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "NADCAP",
+      "iri": "http://asu.edu/semantics/SUDOKN/NADCAP"
+    },
+    {
+      "label": "QS Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QSQuality"
+    }
+  ]
+}

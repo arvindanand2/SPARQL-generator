@@ -1,0 +1,75 @@
+{
+  "clauses": [
+    {
+      "object_hint": "<product>",
+      "relation_hint": "manufactures",
+      "connective": "AND",
+      "filter": {
+        "op": "near",
+        "value": "Valve",
+        "unit": "word",
+        "min": 1,
+        "max": 1
+      },
+      "subject_hint": "manufacturers",
+      "type": "spo"
+    },
+    {
+      "object_hint": "Valve",
+      "relation_hint": "has name",
+      "connective": "AND",
+      "filter": {
+        "op": "eq",
+        "value": "Valve",
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "subject_hint": "products",
+      "type": "spo"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    },
+    {
+      "label": "VDA",
+      "iri": "http://asu.edu/semantics/SUDOKN/VDA"
+    },
+    {
+      "label": "AWS Welder",
+      "iri": "http://asu.edu/semantics/SUDOKN/AWSWelder"
+    },
+    {
+      "label": "Vespel",
+      "iri": "http://asu.edu/semantics/SUDOKN/VespelProcessingCapability"
+    },
+    {
+      "label": "QS Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QSQuality"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    },
+    {
+      "label": "BABA",
+      "iri": "http://asu.edu/semantics/SUDOKN/BABA"
+    },
+    {
+      "label": "FDA PMA",
+      "iri": "http://asu.edu/semantics/SUDOKN/FDAPMA"
+    }
+  ]
+}

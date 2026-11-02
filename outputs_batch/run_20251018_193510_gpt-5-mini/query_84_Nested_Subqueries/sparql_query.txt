@@ -1,0 +1,9 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?label (IF(EXISTS { ?manufacturer sdk:hasCertificate ?cert . ?cert a sdk:ISO9001 }, "true", "false") AS ?hasISO9001)
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  OPTIONAL { ?manufacturer rdfs:label ?label. }
+}

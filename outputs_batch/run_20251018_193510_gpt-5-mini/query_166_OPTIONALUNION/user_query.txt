@@ -1,0 +1,1 @@
+For each manufacturer, list all capability names (process and material together) in one column.

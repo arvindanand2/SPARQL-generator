@@ -1,0 +1,12 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  ?manufacturer rdfs:label ?manufacturerLabel .
+  ?manufacturer sdk:suppliesToIndustry ?industry .
+  ?industry rdfs:label ?industryLabel .
+  FILTER (lcase(str(?industryLabel)) = "agriculture")
+}

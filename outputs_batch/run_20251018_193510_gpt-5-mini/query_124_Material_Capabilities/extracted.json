@@ -1,0 +1,57 @@
+{
+  "clauses": [
+    {
+      "subject_hint": "manufacturers",
+      "enum_values": [
+        "Steel",
+        "Bronze"
+      ],
+      "relation_hint": "has material capability",
+      "type": "spo",
+      "connective": "AND"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Cast Steel",
+      "iri": "http://asu.edu/semantics/SUDOKN/CastSteelProcessingCapability"
+    },
+    {
+      "label": "Alloy Steel",
+      "iri": "http://asu.edu/semantics/SUDOKN/AlloySteelProcessingCapability"
+    },
+    {
+      "label": "Low Alloy Steel Lead",
+      "iri": "http://asu.edu/semantics/SUDOKN/LowAlloySteelLeadProcessingCapability"
+    },
+    {
+      "label": "Super Alloy",
+      "iri": "http://asu.edu/semantics/SUDOKN/SuperAlloyProcessingCapability"
+    },
+    {
+      "label": "Bronze",
+      "iri": "http://asu.edu/semantics/SUDOKN/BronzeProcessingCapability"
+    },
+    {
+      "label": "Brass",
+      "iri": "http://asu.edu/semantics/SUDOKN/BrassProcessingCapability"
+    },
+    {
+      "label": "Steel",
+      "iri": "http://asu.edu/semantics/SUDOKN/SteelProcessingCapability"
+    },
+    {
+      "label": "Stainless Steel",
+      "iri": "http://asu.edu/semantics/SUDOKN/StainlessSteelProcessingCapability"
+    },
+    {
+      "label": "Blue Temp Steel",
+      "iri": "http://asu.edu/semantics/SUDOKN/BlueTempSteelProcessingCapability"
+    },
+    {
+      "label": "Phosphor Bronze",
+      "iri": "http://asu.edu/semantics/SUDOKN/PhosphorBronzeProcessingCapability"
+    }
+  ]
+}

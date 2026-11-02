@@ -1,0 +1,10 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+
+SELECT ?naics (COUNT(?m) AS ?numManufacturers)
+WHERE {
+  ?m a iof-core:Manufacturer ;
+     sdk:hasPrimaryNAICSClassifier ?naics .
+}
+GROUP BY ?naics
+ORDER BY ?naics

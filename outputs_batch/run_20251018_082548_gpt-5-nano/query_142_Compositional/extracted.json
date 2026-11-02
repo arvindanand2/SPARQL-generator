@@ -1,0 +1,66 @@
+{
+  "clauses": [
+    {
+      "object_hint": "Graphite-related products",
+      "relation_hint": "manufactures",
+      "connective": "AND",
+      "filter": {
+        "op": "eq",
+        "value": "Graphite-related products",
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "subject_hint": "manufacturers",
+      "enum_values": [
+        "Graphite-related products"
+      ],
+      "type": "spo"
+    },
+    {
+      "object_hint": "state",
+      "relation_hint": "located in",
+      "connective": "AND",
+      "filter": {
+        "op": "eq",
+        "value": "<state_of_REI_supplier>",
+        "unit": "state",
+        "min": null,
+        "max": null
+      },
+      "subject_hint": "manufacturers",
+      "type": "spo"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Graphite",
+      "iri": "http://asu.edu/semantics/SUDOKN/GraphiteProcessingCapability"
+    },
+    {
+      "label": "LEED",
+      "iri": "http://asu.edu/semantics/SUDOKN/LEED"
+    },
+    {
+      "label": "Carbon Fiber",
+      "iri": "http://asu.edu/semantics/SUDOKN/CarbonFiberProcessingCapability"
+    },
+    {
+      "label": "ISO 50001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO50001"
+    },
+    {
+      "label": "AWS Welder",
+      "iri": "http://asu.edu/semantics/SUDOKN/AWSWelder"
+    },
+    {
+      "label": "Carbide",
+      "iri": "http://asu.edu/semantics/SUDOKN/CarbideProcessingCapability"
+    },
+    {
+      "label": "Fiber Glass",
+      "iri": "http://asu.edu/semantics/SUDOKN/FiberGlassProcessingCapability"
+    }
+  ]
+}

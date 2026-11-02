@@ -1,0 +1,13 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+
+ASK {
+  ?m a iof-core:Manufacturer ;
+     rdfs:label ?name ;
+     iof-core:describedBy ?desc .
+  ?desc a sdk:BusinessDescription ;
+        iof-scro:hasTextValue ?text .
+  FILTER(CONTAINS(LCASE(STR(?name)), "coating"))
+}

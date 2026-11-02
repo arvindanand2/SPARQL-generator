@@ -1,0 +1,1 @@
+For each state, what's the average employee count among manufacturers that make any product with a digit in the name?

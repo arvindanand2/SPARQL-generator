@@ -1,0 +1,25 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?label WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                rdfs:label ?label .
+
+  # Must have a Machining capability
+  ?manufacturer sdk:hasProcessCapability ?machCap .
+  ?machCap a sdk:MachiningCapability .
+
+  # Must have Aluminum and Stainless Steel material capabilities
+  ?manufacturer sdk:hasMaterialCapability ?alCap .
+  ?alCap a sdk:AluminumProcessingCapability .
+  ?manufacturer sdk:hasMaterialCapability ?stCap .
+  ?stCap a sdk:StainlessSteelProcessingCapability .
+
+  # No non-machining process capabilities
+  FILTER NOT EXISTS {
+    ?manufacturer sdk:hasProcessCapability ?otherCap .
+    ?otherCap a ?type .
+    FILTER(?type != sdk:MachiningCapability)
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "clauses": [
+    {
+      "type": "spo",
+      "subject_hint": "classifiers",
+      "connective": "AND",
+      "filter": {
+        "op": "eq",
+        "value": "PIPE AND PIPE FITTING",
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "relation_hint": "has text containing",
+      "object_hint": "PIPE AND PIPE FITTING"
+    },
+    {
+      "type": "spo",
+      "subject_hint": "classifiers",
+      "connective": "AND",
+      "relation_hint": "has NAICS code",
+      "object_hint": "NAICS code"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    },
+    {
+      "label": "NADCAP",
+      "iri": "http://asu.edu/semantics/SUDOKN/NADCAP"
+    },
+    {
+      "label": "Tubing",
+      "iri": "http://asu.edu/semantics/SUDOKN/TubingCapability"
+    },
+    {
+      "label": "AWS Welder",
+      "iri": "http://asu.edu/semantics/SUDOKN/AWSWelder"
+    },
+    {
+      "label": "Pipe Bending",
+      "iri": "http://asu.edu/semantics/SUDOKN/BendingCapability"
+    },
+    {
+      "label": "ITAR",
+      "iri": "http://asu.edu/semantics/SUDOKN/ITAR"
+    },
+    {
+      "label": "NIST 800171",
+      "iri": "http://asu.edu/semantics/SUDOKN/NIST800171"
+    },
+    {
+      "label": "AS 9102",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9102"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "clauses": [
+    {
+      "connective": "IMPLIED",
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "Industry"
+      },
+      "subject_hint": "manufacturers",
+      "relation_hint": "supplies to industry",
+      "type": "modifier"
+    }
+  ],
+  "mapping": []
+}

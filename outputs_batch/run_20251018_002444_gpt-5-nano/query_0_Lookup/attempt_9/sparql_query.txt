@@ -1,0 +1,11 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/> .
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/> .
+
+SELECT ?numEmployees WHERE {
+  ?manuf a iof-core:Manufacturer ;
+          rdfs:label ?name ;
+          sdk:hasNumberOfEmployees ?numEmployees
+  FILTER(CONTAINS(LCASE(STR(?name)), "steel"))
+}
+LIMIT 1

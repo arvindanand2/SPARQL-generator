@@ -1,0 +1,10 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+               sdk:hasCertificate ?cert .
+  ?cert a sdk:ISO9001 .
+}

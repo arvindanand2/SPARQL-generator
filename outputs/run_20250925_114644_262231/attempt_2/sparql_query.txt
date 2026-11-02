@@ -1,0 +1,37 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT ?manufacturer ?label ?latitude ?longitude
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                rdfs:label ?label ;
+                sdk:organizationLocatedIn ?site ;
+                sdk:suppliesToIndustry ?industry .
+  ?site sdk:hasSpatialCoordinates ?coords .
+  ?coords sdk:hasLatitudeValue ?latitude ;
+          sdk:hasLongitudeValue ?longitude .
+  ?site sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  ?state rdfs:label ?stateLabel .
+  FILTER (?stateLabel IN ("Illinois", "Indiana", "Iowa", "Kansas", "Michigan", "Minnesota", "Missouri", "Nebraska", "North Dakota", "Ohio", "South Dakota", "Wisconsin"))
+  ?industry rdfs:label ?industryLabel .
+  FILTER (lcase(?industryLabel) = "aerospace" || lcase(?industryLabel) = "agriculture")
+  BIND(xsd:double(?latitude) AS ?lat)
+  BIND(xsd:double(?longitude) AS ?long)
+  BIND(33.4212 AS ?asuLat)
+  BIND(-111.9336 AS ?asuLong)
+  BIND(
+    6371 * 2 *
+    ASIN(
+      SQRT(
+        POWER(SIN(RADIANS((?lat - ?asuLat)/2)), 2) +
+        COS(RADIANS(?asuLat)) * COS(RADIANS(?lat)) *
+        POWER(SIN(RADIANS((?long - ?asuLong)/2)), 2)
+      )
+    )
+    AS ?distanceKm
+  )
+}
+ORDER BY ?distanceKm

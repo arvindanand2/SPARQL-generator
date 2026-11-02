@@ -1,0 +1,3 @@
+org	orgLabel	stateLabel	indLabel	distance
+[results redacted: SUDOKN instance data not redistributed]
+Rows (counted at redaction): 1900

@@ -1,0 +1,21 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?label ?zipVal WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                rdfs:label ?label ;
+                sdk:organizationLocatedIn ?site .
+  ?site sdk:hasZIPcode ?zip .
+  ?zip sdk:hasIntegerValue ?zipVal .
+  
+  FILTER (
+    NOT EXISTS { ?site sdk:locatedInCity ?city }
+    ||
+    (
+      EXISTS { ?site sdk:locatedInCity ?city }
+      && NOT EXISTS { ?city sdk:locatedInState ?state }
+    )
+  )
+}

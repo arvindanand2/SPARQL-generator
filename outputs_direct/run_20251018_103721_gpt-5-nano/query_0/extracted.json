@@ -1,0 +1,72 @@
+{
+  "clauses": [
+    {
+      "relation_hint": "group by state",
+      "type": "modifier",
+      "subject_hint": "manufacturers",
+      "filter": {
+        "op": "near",
+        "value": null,
+        "unit": "state",
+        "min": null,
+        "max": null
+      },
+      "connective": "IMPLIED",
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "state"
+      }
+    },
+    {
+      "relation_hint": "has average number of employees",
+      "object_hint": "employees",
+      "type": "spo",
+      "subject_hint": "manufacturers",
+      "connective": "FOLLOWUP"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "AWS Welder",
+      "iri": "http://asu.edu/semantics/SUDOKN/AWSWelder"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "Occupational Health And Safety",
+      "iri": "http://asu.edu/semantics/SUDOKN/OccupationalHealthAndSafety"
+    },
+    {
+      "label": "NIST",
+      "iri": "http://asu.edu/semantics/SUDOKN/nist"
+    },
+    {
+      "label": "Standard Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/MachiningCapability"
+    },
+    {
+      "label": "IATF",
+      "iri": "http://asu.edu/semantics/SUDOKN/IATF"
+    },
+    {
+      "label": "BABA",
+      "iri": "http://asu.edu/semantics/SUDOKN/BABA"
+    },
+    {
+      "label": "ISO 50001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO50001"
+    },
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "ISO 45001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO45001"
+    }
+  ]
+}

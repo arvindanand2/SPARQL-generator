@@ -1,0 +1,53 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?naics ?naicsText ?state ?stateLabel ?count
+WHERE {
+  {
+    SELECT ?naics ?state (COUNT(?org) AS ?count)
+    WHERE {
+      ?org a iof-core:Manufacturer ;
+           sdk:hasPrimaryNAICSClassifier ?naics ;
+           sdk:organizationLocatedIn ?site .
+      ?site sdk:locatedInCity ?city .
+      ?city sdk:locatedInState ?state .
+    }
+    GROUP BY ?naics ?state
+  }
+  {
+    SELECT ?naics ?state (COUNT(?stateHigher) AS ?numHigher)
+    WHERE {
+      {
+        SELECT ?naics ?state (COUNT(?org) AS ?count)
+        WHERE {
+          ?org a iof-core:Manufacturer ;
+               sdk:hasPrimaryNAICSClassifier ?naics ;
+               sdk:organizationLocatedIn ?site .
+          ?site sdk:locatedInCity ?city .
+          ?city sdk:locatedInState ?state .
+        }
+        GROUP BY ?naics ?state
+      }
+      OPTIONAL {
+        {
+          SELECT ?naics ?stateHigher (COUNT(?orgH) AS ?countHigher)
+          WHERE {
+            ?orgH a iof-core:Manufacturer ;
+                  sdk:hasPrimaryNAICSClassifier ?naics ;
+                  sdk:organizationLocatedIn ?siteH .
+            ?siteH sdk:locatedInCity ?cityH .
+            ?cityH sdk:locatedInState ?stateHigher .
+          }
+          GROUP BY ?naics ?stateHigher
+        }
+        FILTER(?countHigher > ?count)
+      }
+    }
+    GROUP BY ?naics ?state
+  }
+  FILTER(?numHigher < 5)
+  OPTIONAL { ?state rdfs:label ?stateLabel . }
+  OPTIONAL { ?naics sdk:hasNAICSTextValue ?naicsText . }
+}
+ORDER BY ?naics DESC(?count) ?stateLabel

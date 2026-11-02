@@ -1,0 +1,11 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?processCapability ?processCapabilityLabel ?company ?companyLabel
+WHERE {
+  ?company rdfs:label ?companyLabel ;
+           sdk:hasProcessCapability ?processCapability .
+  ?processCapability rdfs:label ?processCapabilityLabel .
+  FILTER(CONTAINS(LCASE(STR(?companyLabel)), "aerospace"))
+}
+ORDER BY ?companyLabel ?processCapabilityLabel

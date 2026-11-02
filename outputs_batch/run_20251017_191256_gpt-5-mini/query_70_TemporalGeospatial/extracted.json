@@ -1,0 +1,62 @@
+{
+  "clauses": [
+    {
+      "modifier": {
+        "kind": "nearest",
+        "k": null,
+        "by": "Rochester"
+      },
+      "type": "scope",
+      "subject_hint": "manufacturers",
+      "connective": "IMPLIED",
+      "filter": {
+        "op": "near",
+        "value": "Rochester",
+        "unit": "city",
+        "min": null,
+        "max": null
+      },
+      "relation_hint": "located in",
+      "object_hint": "city name substring (e.g., Rochester)"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "LEED",
+      "iri": "http://asu.edu/semantics/SUDOKN/LEED"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    },
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    },
+    {
+      "label": "FDA",
+      "iri": "http://asu.edu/semantics/SUDOKN/FDA"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "VDA",
+      "iri": "http://asu.edu/semantics/SUDOKN/VDA"
+    },
+    {
+      "label": "NIST",
+      "iri": "http://asu.edu/semantics/SUDOKN/nist"
+    }
+  ]
+}

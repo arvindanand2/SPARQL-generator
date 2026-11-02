@@ -1,0 +1,52 @@
+{
+  "clauses": [
+    {
+      "relation_hint": "has process capability",
+      "connective": "IMPLIED",
+      "subject_hint": "manufacturers",
+      "enum_values": [
+        "Additive Manufacturing"
+      ],
+      "type": "spo"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Additive Manufacturing",
+      "iri": "http://asu.edu/semantics/SUDOKN/AdditiveManufacturingCapability"
+    },
+    {
+      "label": "Metal Additive Manufacturing",
+      "iri": "http://asu.edu/semantics/SUDOKN/AdditiveManufacturingCapability"
+    },
+    {
+      "label": "Powder Deposition",
+      "iri": "http://asu.edu/semantics/SUDOKN/PowderDepositionCapability"
+    },
+    {
+      "label": "Solid Deposition",
+      "iri": "http://asu.edu/semantics/SUDOKN/SolidDepositionCapability"
+    },
+    {
+      "label": "Fused Deposition Modeling",
+      "iri": "http://asu.edu/semantics/SUDOKN/FusedDepositionModelingCapability"
+    },
+    {
+      "label": "Polymer Deposition",
+      "iri": "http://asu.edu/semantics/SUDOKN/PolymerDepositionCapability"
+    },
+    {
+      "label": "Drop On Demand",
+      "iri": "http://asu.edu/semantics/SUDOKN/DropOnDemandCapability"
+    },
+    {
+      "label": "Selective Laser Melting",
+      "iri": "http://asu.edu/semantics/SUDOKN/SelectiveLaserMeltingCapability"
+    },
+    {
+      "label": "Laminated Object Manufacturing",
+      "iri": "http://asu.edu/semantics/SUDOKN/LaminatedObjectManufacturingCapability"
+    }
+  ]
+}

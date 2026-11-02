@@ -1,0 +1,3395 @@
+Query_ID,Question,Category,Model,Success,Attempts,SPARQL_Query,Result_Preview,Error_Message,Stage
+0,"What is the number of employees for the company whose name contains ""Steel""?",Lookup,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?company ?numEmployees
+WHERE {
+  ?company a iof-core:Manufacturer ;
+           rdfs:label ?label ;
+           sdk:hasNumberOfEmployees ?numEmployees .
+  FILTER(CONTAINS(LCASE(STR(?label)), ""steel""))
+}","company	numEmployees
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 19",,complete
+1,"What is the English name of the manufacturer that holds the certificate labeled ""ISO 9001""?",Lookup,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?name WHERE {
+  ?m a iof-core:Manufacturer ;
+     sdk:hasCertificate ?cert .
+  ?cert a sdk:ISO9001 .
+  OPTIONAL { ?m rdfs:label ?nameEn FILTER(LANGMATCHES(LANG(?nameEn), ""en"")) }
+  OPTIONAL { ?m rdfs:label ?nameNoLang FILTER(LANG(?nameNoLang) = """") }
+  BIND(COALESCE(?nameEn, ?nameNoLang) AS ?name)
+}","name
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 4024",,complete
+2,What is the NAICS text for the classifier with code 332996?,Lookup,gpt-5,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT ?naicsText
+WHERE {
+  ?classifier sdk:hasNAICSCodeValue ?code ;
+              sdk:hasNAICSTextValue ?naicsText .
+  FILTER (regex(str(?code), ""^332996(\\.0)?$""))
+}","naicsText
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 2
+",,complete
+3,"What is the NAICS code for the classifier whose text contains ""PIPE AND PIPE FITTING""?",Lookup,gpt-5,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?code
+WHERE {
+  ?classifier sdk:hasNAICSTextValue ?text ;
+              sdk:hasNAICSCodeValue ?code .
+  FILTER(CONTAINS(UCASE(STR(?text)), ""PIPE AND PIPE FITTING""))
+}","code
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 3
+",,complete
+4,"Which process capability has a name that contains ""Machining""?",Lookup,gpt-5,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?cap ?name
+WHERE {
+  ?org sdk:hasProcessCapability ?cap .
+  ?cap rdfs:label ?name .
+  FILTER(CONTAINS(LCASE(STR(?name)), ""machining""))
+}","cap	name
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 7900",,complete
+5,"Which material capability has a name that contains ""Steel""?",Lookup,gpt-5,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?materialCapability ?label
+WHERE {
+  ?org sdk:hasMaterialCapability ?materialCapability .
+  ?materialCapability rdfs:label ?label .
+  FILTER(CONTAINS(LCASE(STR(?label)), ""steel""))
+}","materialCapability	label
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 10000",,complete
+6,"What is the business description for the manufacturer whose name contains ""Fabrication""?",Lookup,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?businessDescription WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                rdfs:label ?name ;
+                iof-core:describedBy ?desc .
+  ?desc a sdk:BusinessDescription ;
+        iof-scro:hasTextValue ?businessDescription .
+  FILTER(CONTAINS(LCASE(STR(?name)), ""fabrication""))
+}","businessDescription
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 20",,complete
+7,"What is the ZIP code for the site whose postal address contains ""Suite""?",Lookup,gpt-5,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/>
+
+SELECT DISTINCT ?zipCode
+WHERE {
+  ?site a sdk:GeospatialLocation ;
+        sdk:hasPostalAddress ?addr ;
+        sdk:hasZIPcode ?zip .
+  ?addr iof-scro:hasTextValue ?addrText .
+  FILTER(CONTAINS(LCASE(STR(?addrText)), ""suite""))
+  ?zip sdk:hasIntegerValue ?zipCode .
+}","zipCode
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 155",,complete
+8,"What is the latitude for the site whose city name contains ""Springfield""?",Lookup,gpt-5,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?latitude
+WHERE {
+  ?site a sdk:GeospatialLocation ;
+        sdk:locatedInCity ?city ;
+        sdk:hasSpatialCoordinates ?coords .
+  ?city rdfs:label ?cityLabel .
+  ?coords sdk:hasLatitudeValue ?latitude .
+  FILTER(CONTAINS(LCASE(STR(?cityLabel)), ""springfield""))
+}","latitude
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 18
+",,complete
+9,"What is the state name linked from any city whose name contains ""San ""?",Lookup,gpt-5,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?stateName
+WHERE {
+  ?city a sdk:City ;
+        rdfs:label ?cityName ;
+        sdk:locatedInState ?state .
+  FILTER(CONTAINS(?cityName, ""San ""))
+  ?state a sdk:State ;
+         rdfs:label ?stateName .
+}","stateName
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 3
+",,complete
+10,"What NAICS code is used as the primary NAICS for the manufacturer whose name contains ""Precision""?",Multi-hop,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?naicsCode
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                rdfs:label ?label ;
+                sdk:hasPrimaryNAICSClassifier ?naics .
+  ?naics sdk:hasNAICSCodeValue ?naicsCode .
+  FILTER(CONTAINS(LCASE(STR(?label)), ""precision""))
+}","naicsCode
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 31
+",,complete
+11,"Which industries does the manufacturer whose name contains ""Automation"" supply to?",Multi-hop,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?industry ?industryLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                rdfs:label ?manufacturerLabel ;
+                sdk:suppliesToIndustry ?industry .
+  OPTIONAL { ?industry rdfs:label ?industryLabel . }
+  FILTER(CONTAINS(LCASE(STR(?manufacturerLabel)), ""automation""))
+}","industry	industryLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 44",,complete
+12,"Which products are manufactured by the company whose name contains ""Tooling""?",Multi-hop,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?product ?productLabel
+WHERE {
+  ?company a iof-core:Manufacturer ;
+           rdfs:label ?companyLabel ;
+           sdk:manufactures ?product .
+  OPTIONAL { ?product rdfs:label ?productLabel }
+  FILTER(CONTAINS(LCASE(STR(?companyLabel)), ""tooling""))
+}","product	productLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 158",,complete
+13,"Which process capabilities are linked for the company whose name contains ""Aerospace""?",Multi-hop,gpt-5,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?processCapability ?processCapabilityLabel ?company ?companyLabel
+WHERE {
+  ?company rdfs:label ?companyLabel ;
+           sdk:hasProcessCapability ?processCapability .
+  ?processCapability rdfs:label ?processCapabilityLabel .
+  FILTER(CONTAINS(LCASE(STR(?companyLabel)), ""aerospace""))
+}
+ORDER BY ?companyLabel ?processCapabilityLabel","processCapability	processCapabilityLabel	company	companyLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 467",,complete
+14,"Which material capabilities are linked for the company whose name contains ""Metal""?",Multi-hop,gpt-5,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+
+SELECT DISTINCT ?org ?orgLabel ?materialCapability ?materialCapabilityLabel
+WHERE {
+  ?org a iof-core:Manufacturer ;
+       rdfs:label ?orgLabel ;
+       sdk:hasMaterialCapability ?materialCapability .
+  OPTIONAL { ?materialCapability rdfs:label ?materialCapabilityLabel . }
+  FILTER(CONTAINS(LCASE(STR(?orgLabel)), ""metal""))
+}","org	orgLabel	materialCapability	materialCapabilityLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 4240",,complete
+15,"Which certificates are linked for the manufacturer whose name contains ""Plastics""?",Multi-hop,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?certificate ?certLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                rdfs:label ?mfgLabel ;
+                sdk:hasCertificate ?certificate .
+  OPTIONAL { ?certificate rdfs:label ?certLabel . }
+  FILTER(CONTAINS(LCASE(STR(?mfgLabel)), ""plastics""))
+}","certificate	certLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 195",,complete
+16,"Which city is the company whose name contains ""Robotics"" located in (via organization ? site ? city)?",Multi-hop,gpt-5,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?city ?cityLabel WHERE {
+  ?org a iof-core:Manufacturer ;
+       rdfs:label ?name ;
+       sdk:organizationLocatedIn ?site .
+  ?site sdk:locatedInCity ?city .
+  OPTIONAL { ?city rdfs:label ?cityLabel . }
+  FILTER(CONTAINS(LCASE(STR(?name)), ""robotics""))
+}","city	cityLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 1
+",,complete
+17,"Which state is the manufacturer whose name contains ""Valve"" located in (via site ? city ? state)?",Multi-hop,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?state ?stateLabel
+WHERE {
+  ?m a iof-core:Manufacturer ;
+     rdfs:label ?name ;
+     sdk:organizationLocatedIn ?site .
+  FILTER(CONTAINS(LCASE(STR(?name)), ""valve"")) .
+  ?site sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  OPTIONAL { ?state rdfs:label ?stateLabel . }
+}","state	stateLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 19",,complete
+18,"What is the ZIP code for the location of the company whose name contains ""Casting""?",Multi-hop,gpt-5,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?zipVal
+WHERE {
+  ?org a iof-core:Manufacturer ;
+       rdfs:label ?label ;
+       sdk:organizationLocatedIn ?site .
+  FILTER(CONTAINS(LCASE(STR(?label)), ""casting""))
+  ?site sdk:hasZIPcode ?zip .
+  ?zip sdk:hasIntegerValue ?zipVal .
+}","zipVal
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 30
+",,complete
+19,"What are the latitude and longitude for the site linked to the company whose name contains ""Surface Finish""?",Multi-hop,gpt-5,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?latitude ?longitude
+WHERE {
+  ?company a iof-core:Manufacturer ;
+           rdfs:label ?name ;
+           sdk:organizationLocatedIn ?site .
+  ?site sdk:hasSpatialCoordinates ?coords .
+  ?coords sdk:hasLatitudeValue ?latitude ;
+          sdk:hasLongitudeValue ?longitude .
+  FILTER(CONTAINS(LCASE(STR(?name)), ""surface finish""))
+}","latitude	longitude
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 1
+",,complete
+20,How many manufacturers are located in each state?,Aggregation,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?state ?stateLabel (COUNT(DISTINCT ?mfg) AS ?manufacturerCount)
+WHERE {
+  ?mfg a iof-core:Manufacturer ;
+       sdk:organizationLocatedIn ?site .
+  ?site sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  OPTIONAL { ?state rdfs:label ?stateLabel . }
+}
+GROUP BY ?state ?stateLabel
+ORDER BY ?stateLabel","state	stateLabel	manufacturerCount
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 91",,complete
+21,How many manufacturers are located in each city?,Aggregation,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?city ?cityLabel (COUNT(DISTINCT ?m) AS ?manufacturerCount)
+WHERE {
+  ?m a iof-core:Manufacturer ;
+     sdk:organizationLocatedIn ?site .
+  ?site sdk:locatedInCity ?city .
+  OPTIONAL { ?city rdfs:label ?cityLabel }
+}
+GROUP BY ?city ?cityLabel
+ORDER BY ?cityLabel ?city","city	cityLabel	manufacturerCount
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 10000",,complete
+22,"For each industry, how many manufacturers supply to it?",Aggregation,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?industry ?industryLabel (COUNT(DISTINCT ?manufacturer) AS ?manufacturerCount)
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:suppliesToIndustry ?industry .
+  OPTIONAL { ?industry rdfs:label ?industryLabel. }
+}
+GROUP BY ?industry ?industryLabel
+ORDER BY ?industryLabel ?industry","industry	manufacturerCount
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 85",,complete
+23,"For each state, what is the average number of employees among manufacturers located there?",Aggregation,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?state ?stateLabel (AVG(?emp) AS ?avgEmployees)
+WHERE {
+  ?org a iof-core:Manufacturer ;
+       sdk:hasNumberOfEmployees ?empLit ;
+       sdk:organizationLocatedIn ?site .
+  ?site sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  OPTIONAL { ?state rdfs:label ?stateLabel . }
+  BIND(xsd:integer(REPLACE(STR(?empLit), "","", """")) AS ?emp)
+}
+GROUP BY ?state ?stateLabel
+ORDER BY ?stateLabel","state	stateLabel	avgEmployees
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 32",,complete
+24,"For each state, what is the total number of employees among manufacturers located there?",Aggregation,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?state ?stateLabel (SUM(?numInt) AS ?totalEmployees)
+WHERE {
+  ?org a iof-core:Manufacturer ;
+       sdk:hasNumberOfEmployees ?num ;
+       sdk:organizationLocatedIn ?site .
+  ?site sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  OPTIONAL { ?state rdfs:label ?stateLabel . }
+  BIND(REPLACE(STR(?num), ""[^0-9]"", """") AS ?numDigits)
+  FILTER(STRLEN(?numDigits) > 0)
+  BIND(xsd:integer(?numDigits) AS ?numInt)
+}
+GROUP BY ?state ?stateLabel
+ORDER BY ?stateLabel","state	stateLabel	totalEmployees
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 32",,complete
+25,"For each certificate, how many manufacturers hold it?",Aggregation,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+
+SELECT ?certificate (COUNT(DISTINCT ?manufacturer) AS ?manufacturerCount)
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:hasCertificate ?certificate .
+}
+GROUP BY ?certificate
+ORDER BY ?certificate","certificate	manufacturerCount
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 9614",,complete
+26,"For each NAICS classifier, how many manufacturers use it as their primary NAICS?",Aggregation,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+
+SELECT ?naics ?naicsCode ?naicsText (COUNT(DISTINCT ?manufacturer) AS ?manufacturerCount)
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:hasPrimaryNAICSClassifier ?naics .
+  OPTIONAL { ?naics sdk:hasNAICSCodeValue ?naicsCode . }
+  OPTIONAL { ?naics sdk:hasNAICSTextValue ?naicsText . }
+}
+GROUP BY ?naics ?naicsCode ?naicsText
+ORDER BY ?naicsCode","naics	naicsCode	naicsText	manufacturerCount
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 327",,complete
+27,"For each manufacturer, how many products does it make?",Aggregation,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?manufacturerLabel (COUNT(DISTINCT ?product) AS ?productCount)
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:manufactures ?product .
+  ?product a iof-core:MaterialProduct .
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel . }
+}
+GROUP BY ?manufacturer ?manufacturerLabel
+ORDER BY ?manufacturerLabel ?manufacturer","manufacturer	manufacturerLabel	productCount
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 8866",,complete
+28,"For each manufacturer, how many total capabilities does it have across process and material?",Aggregation,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?manufacturerLabel (COUNT(DISTINCT ?capability) AS ?totalCapabilities)
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel . }
+  {
+    ?manufacturer sdk:hasProcessCapability ?capability .
+  } UNION {
+    ?manufacturer sdk:hasMaterialCapability ?capability .
+  }
+}
+GROUP BY ?manufacturer ?manufacturerLabel","manufacturer	totalCapabilities
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 10000",,complete
+29,How many manufacturers lack a business description?,Aggregation,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+
+SELECT (COUNT(DISTINCT ?m) AS ?count)
+WHERE {
+  ?m a iof-core:Manufacturer .
+  FILTER NOT EXISTS {
+    ?m iof-core:describedBy ?desc .
+    ?desc a sdk:BusinessDescription .
+  }
+}","count
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 1
+",,complete
+30,"Does any manufacturer hold a certificate labeled ""ISO 9001""?",Boolean/Existential,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+
+ASK WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:hasCertificate ?certificate .
+  ?certificate a sdk:ISO9001 .
+}","ASK Query Result: YES
+",,complete
+31,"Is there any manufacturer located in a state whose name contains ""Texas""?",Boolean/Existential,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+ASK {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:organizationLocatedIn ?site .
+  ?site sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  ?state rdfs:label ?stateLabel .
+  FILTER(CONTAINS(LCASE(STR(?stateLabel)), ""texas""))
+}","ASK Query Result: YES
+",,complete
+32,"Are there manufacturers that supply to both ""Renewable Energy"" and ""Utilities"" industries?",Boolean/Existential,gpt-5,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                rdfs:label ?manufacturerLabel ;
+                sdk:suppliesToIndustry ?indRE ;
+                sdk:suppliesToIndustry ?indUtil .
+  ?indRE a sdk:RenewableEnergyIndustry .
+  ?indUtil a sdk:UtilitiesIndustry .
+}","manufacturer	manufacturerLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 130",,complete
+33,"Does the manufacturer whose name contains ""Pipe"" have a primary NAICS recorded?",Boolean/Existential,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+ASK {
+  ?m a iof-core:Manufacturer ;
+     rdfs:label ?name ;
+     sdk:hasPrimaryNAICSClassifier ?naics .
+  FILTER(CONTAINS(LCASE(STR(?name)), ""pipe""))
+}","ASK Query Result: YES
+",,complete
+34,"Is there a manufacturer that makes a product whose name contains ""Valve""?",Boolean/Existential,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+ASK {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:manufactures ?product .
+  ?product rdfs:label ?productLabel .
+  FILTER(CONTAINS(LCASE(STR(?productLabel)), ""valve""))
+}","ASK Query Result: YES
+",,complete
+35,"Is there any manufacturer located in Phoenix  , Arizona  that lacks certifications?",Boolean/Existential,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:organizationLocatedIn ?site .
+  ?site sdk:locatedInCity ?city .
+  ?city rdfs:label ?cityLabel ;
+        sdk:locatedInState ?state .
+  ?state rdfs:label ?stateLabel .
+  FILTER (lcase(str(?cityLabel)) = ""phoenix"")
+  FILTER (lcase(str(?stateLabel)) = ""arizona"")
+  FILTER NOT EXISTS { ?manufacturer sdk:hasCertificate ?cert }
+}
+LIMIT 1","manufacturer
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 1
+",,complete
+36,Do any manufacturer sites have both latitude and longitude recorded?,Boolean/Existential,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+
+ASK WHERE {
+  ?org a iof-core:Manufacturer ;
+       sdk:organizationLocatedIn ?site .
+  ?site sdk:hasSpatialCoordinates ?coord .
+  ?coord sdk:hasLatitudeValue ?lat ;
+         sdk:hasLongitudeValue ?long .
+}","ASK Query Result: YES
+",,complete
+37,"Are there manufacturers with both a material capability labeled ""Bronze"" and one labeled ""Steel""?",Boolean/Existential,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:hasMaterialCapability ?bronzeCap, ?steelCap .
+  ?bronzeCap a sdk:BronzeProcessingCapability ;
+             rdfs:label ""Bronze"" .
+  ?steelCap a sdk:SteelProcessingCapability ;
+            rdfs:label ""Steel"" .
+  FILTER (?bronzeCap != ?steelCap)
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel . }
+}","manufacturer	manufacturerLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 2191",,complete
+38,Is there any manufacturer without any certificate linked?,Boolean/Existential,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+
+ASK WHERE {
+  ?m a iof-core:Manufacturer .
+  FILTER NOT EXISTS { ?m sdk:hasCertificate ?cert . }
+}","ASK Query Result: YES
+",,complete
+39,"Does the manufacturer whose name contains ""Coating"" have a business description recorded?",Boolean/Existential,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+
+ASK {
+  ?m a iof-core:Manufacturer ;
+     rdfs:label ?name ;
+     iof-core:describedBy ?desc .
+  ?desc a sdk:BusinessDescription ;
+        iof-scro:hasTextValue ?text .
+  FILTER(CONTAINS(LCASE(STR(?name)), ""coating""))
+}","ASK Query Result: YES
+",,complete
+40,List manufacturers with more than 500 employees.,Filters,gpt-5,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT ?org ?label ?employees
+WHERE {
+  ?org a iof-core:Manufacturer ;
+       rdfs:label ?label ;
+       sdk:hasNumberOfEmployees ?emp .
+  BIND(xsd:integer(REPLACE(STR(?emp), "","", """")) AS ?employees)
+  FILTER(?employees > 500)
+}
+ORDER BY DESC(?employees)","org	label	employees
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 44",,complete
+41,"Find manufacturers whose name matches the regex ""^A"".",Filters,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?name
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                rdfs:label ?name .
+  FILTER regex(?name, ""^A"")
+}","manufacturer	name
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 1453",,complete
+42,"List NAICS classifiers whose text contains ""PIPE"" (case-insensitive).",Filters,gpt-5,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+
+SELECT DISTINCT ?naics ?text
+WHERE {
+  ?naics sdk:hasNAICSTextValue ?text .
+  FILTER(CONTAINS(LCASE(STR(?text)), ""pipe""))
+}","naics	text
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 7",,complete
+43,"Return manufacturers whose ZIP code equals ""85027.0"".",Filters,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT ?manufacturer
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:organizationLocatedIn ?site .
+  ?site sdk:hasZIPcode ?zip .
+  ?zip sdk:hasIntegerValue ""85027.0""^^xsd:string .
+}","manufacturer
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 6
+",,complete
+44,"Find manufacturers in states whose name matches the regex ""^New "".",Filters,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?org ?orgLabel ?state ?stateName
+WHERE {
+  ?org a iof-core:Manufacturer ;
+       sdk:organizationLocatedIn ?site .
+  OPTIONAL { ?org rdfs:label ?orgLabel . }
+  ?site sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  ?state rdfs:label ?stateName .
+  FILTER regex(str(?stateName), ""^New "")
+}","org	orgLabel	state	stateName
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 278",,complete
+45,List manufacturers with latitude > 45.0 at their site coordinates.,Filters,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT ?manufacturer ?label ?latitude
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  OPTIONAL { ?manufacturer rdfs:label ?label . }
+  ?manufacturer sdk:organizationLocatedIn ?site .
+  ?site sdk:hasSpatialCoordinates ?coords .
+  ?coords sdk:hasLatitudeValue ?latitude .
+  FILTER(xsd:float(?latitude) > 45.0)
+}","manufacturer	label	latitude
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 543",,complete
+46,Find manufacturers with longitude < ?100.0 at their site coordinates.,Filters,gpt-5,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT ?manufacturer ?longitude
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:organizationLocatedIn ?site .
+  ?site sdk:hasSpatialCoordinates ?coords .
+  ?coords sdk:hasLongitudeValue ?longitude .
+  FILTER(xsd:float(?longitude) < ""100.0""^^xsd:float)
+}","manufacturer	longitude
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 10000",,complete
+47,"Return manufacturers supplying to an industry whose name contains ""Utilities"".",Filters,gpt-5,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:suppliesToIndustry ?industry ;
+                rdfs:label ?manufacturerLabel .
+  ?industry a sdk:UtilitiesIndustry .
+}","manufacturer	manufacturerLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 713",,complete
+48,"Find products whose name contains the substring Pipe""",Filters,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?product ?name
+WHERE {
+  ?product a iof-core:MaterialProduct ;
+           rdfs:label ?name .
+  FILTER(CONTAINS(LCASE(STR(?name)), ""pipe""))
+}","product	name
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 589",,complete
+49,Return manufacturer names longer than 8 characters.,Filters,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?name
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                rdfs:label ?name .
+  FILTER(STRLEN(STR(?name)) > 8)
+}","name
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 10000
+",,complete
+50,Which manufacturer has the highest number of employees overall?,Superlatives,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?manufacturer ?label ?employees
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:hasNumberOfEmployees ?empLit ;
+                rdfs:label ?label .
+  BIND(xsd:integer(REPLACE(STR(?empLit), "","", """")) AS ?employees)
+}
+ORDER BY DESC(?employees)
+LIMIT 1","manufacturer	label	employees
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 1
+",,complete
+51,"Which manufacturer has the fewest employees among those located in states whose name contains ""Ohio""?",Superlatives,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?man ?manLabel ?emp
+WHERE {
+  {
+    SELECT ?man ?manLabel (xsd:integer(REPLACE(STR(?empLit), ""[^0-9-]"", """")) AS ?emp)
+    WHERE {
+      ?man a iof-core:Manufacturer ;
+           rdfs:label ?manLabel ;
+           sdk:hasNumberOfEmployees ?empLit ;
+           sdk:organizationLocatedIn ?site .
+      ?site sdk:locatedInCity ?city .
+      ?city sdk:locatedInState ?state .
+      ?state rdfs:label ?stateLabel .
+      FILTER(CONTAINS(LCASE(?stateLabel), ""ohio""))
+    }
+  }
+  {
+    SELECT (MIN(xsd:integer(REPLACE(STR(?empLit2), ""[^0-9-]"", """"))) AS ?minEmp)
+    WHERE {
+      ?man2 a iof-core:Manufacturer ;
+            sdk:hasNumberOfEmployees ?empLit2 ;
+            sdk:organizationLocatedIn ?site2 .
+      ?site2 sdk:locatedInCity ?city2 .
+      ?city2 sdk:locatedInState ?state2 .
+      ?state2 rdfs:label ?stateLabel2 .
+      FILTER(CONTAINS(LCASE(?stateLabel2), ""ohio""))
+    }
+  }
+  FILTER(?emp = ?minEmp)
+}","man	manLabel	emp
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 1
+",,complete
+52,Which state has the largest number of manufacturers?,Superlatives,gpt-5,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?state ?stateLabel (COUNT(DISTINCT ?org) AS ?manufacturerCount)
+WHERE {
+  ?org a iof-core:Manufacturer ;
+       sdk:organizationLocatedIn ?site .
+  ?site sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  ?state a sdk:State .
+  OPTIONAL { ?state rdfs:label ?stateLabel . }
+}
+GROUP BY ?state ?stateLabel
+ORDER BY DESC(?manufacturerCount)
+LIMIT 1","state	stateLabel	manufacturerCount
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 1
+",,complete
+53,Which city has the largest number of manufacturers?,Superlatives,gpt-5,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?city ?cityLabel (COUNT(DISTINCT ?org) AS ?numManufacturers)
+WHERE {
+  ?org a iof-core:Manufacturer ;
+       sdk:organizationLocatedIn ?site .
+  ?site sdk:locatedInCity ?city .
+  OPTIONAL { ?city rdfs:label ?cityLabel . }
+}
+GROUP BY ?city ?cityLabel
+ORDER BY DESC(?numManufacturers)
+LIMIT 1","city	cityLabel	numManufacturers
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 1
+",,complete
+54,Which industry has the most supplier manufacturers?,Superlatives,gpt-5,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?industry ?industryLabel (COUNT(DISTINCT ?manufacturer) AS ?supplierCount)
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:suppliesToIndustry ?industry .
+  OPTIONAL { ?industry rdfs:label ?industryLabel . }
+}
+GROUP BY ?industry ?industryLabel
+ORDER BY DESC(?supplierCount)
+LIMIT 1","industry	industryLabel	supplierCount
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 1
+",,complete
+55,Which certificate is held by the greatest number of manufacturers?,Superlatives,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?certificate ?certificateLabel (COUNT(DISTINCT ?manufacturer) AS ?manufacturerCount)
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:hasCertificate ?certificate .
+  OPTIONAL { ?certificate rdfs:label ?certificateLabel . }
+}
+GROUP BY ?certificate ?certificateLabel
+ORDER BY DESC(?manufacturerCount)
+LIMIT 1","certificate	certificateLabel	manufacturerCount
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 1
+",,complete
+56,Which product is made by the most manufacturers?,Superlatives,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?product ?productLabel (COUNT(DISTINCT ?manufacturer) AS ?manufacturerCount)
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:manufactures ?product .
+  ?product a iof-core:MaterialProduct .
+  OPTIONAL { ?product rdfs:label ?productLabel . }
+}
+GROUP BY ?product ?productLabel
+ORDER BY DESC(?manufacturerCount) ?product
+LIMIT 1","product	productLabel	manufacturerCount
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 1
+",,complete
+57,Which manufacturer has the greatest number of distinct capabilities (combining process and material)?,Superlatives,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?label (COUNT(DISTINCT ?pair) AS ?numDistinctProcessMaterialCapabilities)
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:hasProcessCapability ?process ;
+                sdk:hasMaterialCapability ?material .
+  OPTIONAL { ?manufacturer rdfs:label ?label . }
+  BIND(CONCAT(STR(?process), ""|"", STR(?material)) AS ?pair)
+}
+GROUP BY ?manufacturer ?label
+ORDER BY DESC(?numDistinctProcessMaterialCapabilities)
+LIMIT 1","manufacturer	label	numDistinctProcessMaterialCapabilities
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 1
+",,complete
+58,Which NAICS classifier is most commonly used as a primary NAICS across manufacturers?,Superlatives,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?naics ?naicsCode ?naicsText (COUNT(DISTINCT ?org) AS ?manufacturerCount)
+WHERE {
+  ?org a iof-core:Manufacturer ;
+       sdk:hasPrimaryNAICSClassifier ?naics .
+  OPTIONAL { ?naics sdk:hasNAICSCodeValue ?naicsCode . }
+  OPTIONAL { ?naics sdk:hasNAICSTextValue ?naicsText . }
+}
+GROUP BY ?naics ?naicsCode ?naicsText
+ORDER BY DESC(?manufacturerCount)
+LIMIT 1","naics	naicsCode	naicsText	manufacturerCount
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 1
+",,complete
+59,Which manufacturer is located at the northernmost latitude among all sites?,Superlatives,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?manufacturer ?label ?latitude
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:organizationLocatedIn ?site .
+  OPTIONAL { ?manufacturer rdfs:label ?label }
+  ?site sdk:hasSpatialCoordinates ?coords .
+  ?coords sdk:hasLatitudeValue ?latitude .
+}
+ORDER BY DESC(xsd:float(?latitude))
+LIMIT 1","manufacturer	label	latitude
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 1
+",,complete
+60,"For each manufacturer, return its NAICS text if present; still list the manufacturer if the NAICS text is missing.",OPTIONAL/UNION,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+
+SELECT ?manufacturer ?naicsText
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  OPTIONAL {
+    ?manufacturer sdk:hasPrimaryNAICSClassifier ?naics .
+    ?naics sdk:hasNAICSTextValue ?naicsText .
+  }
+}
+ORDER BY ?manufacturer","manufacturer
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 10000",,complete
+61,"For each manufacturer, return its ZIP code if present; otherwise leave it blank.",OPTIONAL/UNION,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+
+SELECT ?manufacturer ?zip
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  OPTIONAL {
+    ?manufacturer sdk:organizationLocatedIn/sdk:hasZIPcode/sdk:hasIntegerValue ?zip .
+  }
+}","manufacturer
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 10000",,complete
+62,"List manufacturers that have either a process capability labeled ""Machining"" or a process capability labeled ""Coating"".",OPTIONAL/UNION,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:hasProcessCapability ?cap .
+  ?cap rdfs:label ?capLabel .
+  FILTER (?capLabel IN (""Machining"", ""Coating""))
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel }
+}","manufacturer	manufacturerLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 3352",,complete
+63,"For each manufacturer, list all capability names across process and material in one result.",OPTIONAL/UNION,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?manufacturerName (GROUP_CONCAT(DISTINCT ?capabilityName; separator="", "") AS ?capabilityNames)
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerName . }
+  OPTIONAL {
+    ?manufacturer (sdk:hasProcessCapability|sdk:hasMaterialCapability) ?capability .
+    ?capability rdfs:label ?capabilityName .
+  }
+}
+GROUP BY ?manufacturer ?manufacturerName
+ORDER BY ?manufacturerName","manufacturer	capabilityNames
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 10000",,complete
+64,"Return each manufacturer with its city and state; if city is missing, still return the state when available.",OPTIONAL/UNION,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?cityLabel ?stateLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  OPTIONAL {
+    ?manufacturer sdk:organizationLocatedIn ?site .
+    OPTIONAL {
+      ?site sdk:locatedInCity ?city .
+      OPTIONAL { ?city rdfs:label ?cityLabel . }
+    }
+    OPTIONAL {
+      ?site (sdk:locatedInState | (sdk:locatedInCity/sdk:locatedInState)) ?state .
+      OPTIONAL { ?state rdfs:label ?stateLabel . }
+    }
+  }
+}","manufacturer
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 10000",,complete
+65,"List manufacturers that supply to either ""Renewable Energy"" or ""Utilities"".",OPTIONAL/UNION,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:suppliesToIndustry ?industry ;
+                rdfs:label ?manufacturerLabel .
+  VALUES ?industryType { sdk:RenewableEnergyIndustry sdk:UtilitiesIndustry }
+  ?industry a ?industryType .
+}
+ORDER BY ?manufacturerLabel","manufacturer	manufacturerLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 1486",,complete
+66,"For each manufacturer, list either the products they make or the certificates they hold in one output.",OPTIONAL/UNION,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?kind ?itemName WHERE {
+  {
+    ?m a iof-core:Manufacturer ;
+       sdk:manufactures ?item .
+    OPTIONAL { ?m rdfs:label ?manLabel . }
+    OPTIONAL { ?item rdfs:label ?itemLabel . }
+    BIND(COALESCE(?manLabel, STR(?m)) AS ?manufacturer)
+    BIND(COALESCE(?itemLabel, STR(?item)) AS ?itemName)
+    BIND(""Product"" AS ?kind)
+  }
+  UNION
+  {
+    ?m a iof-core:Manufacturer ;
+       sdk:hasCertificate ?item .
+    OPTIONAL { ?m rdfs:label ?manLabel2 . }
+    OPTIONAL { ?item rdfs:label ?itemLabel2 . }
+    BIND(COALESCE(?manLabel2, STR(?m)) AS ?manufacturer)
+    BIND(COALESCE(?itemLabel2, STR(?item)) AS ?itemName)
+    BIND(""Certificate"" AS ?kind)
+  }
+}
+ORDER BY ?manufacturer ?kind ?itemName","manufacturer	kind	itemName
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 10000",,complete
+67,List manufacturers and their site coordinates (lat/long) when available; include manufacturers with no coordinates.,OPTIONAL/UNION,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel ?latitude ?longitude
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel . }
+  OPTIONAL {
+    ?manufacturer sdk:organizationLocatedIn ?site .
+    OPTIONAL {
+      ?site sdk:hasSpatialCoordinates ?coords .
+      OPTIONAL { ?coords sdk:hasLatitudeValue ?latitude . }
+      OPTIONAL { ?coords sdk:hasLongitudeValue ?longitude . }
+    }
+  }
+}","manufacturer
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 10000",,complete
+68,Return each manufacturer with business description text if available; otherwise fall back to the manufacturer's name.,OPTIONAL/UNION,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?text
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  OPTIONAL {
+    ?manufacturer iof-core:describedBy ?desc .
+    ?desc iof-scro:hasTextValue ?descText .
+  }
+  OPTIONAL { ?manufacturer rdfs:label ?name . }
+  BIND(COALESCE(?descText, ?name, """") AS ?text)
+}","manufacturer	text
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 10000",,complete
+69,"For each manufacturer, list any capability name whether it is a process or material capability.",OPTIONAL/UNION,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?manufacturerName ?capability ?capabilityName
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                rdfs:label ?manufacturerName .
+  {
+    ?manufacturer sdk:hasProcessCapability ?capability .
+  } UNION {
+    ?manufacturer sdk:hasMaterialCapability ?capability .
+  }
+  ?capability rdfs:label ?capabilityName .
+}
+ORDER BY ?manufacturerName ?capabilityName","manufacturer	manufacturerName	capability	capabilityName
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 10000",,complete
+70,"List all manufacturers located in a given city (match by city name substring, e.g., contains Rochester"").""",Temporal/Geospatial,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel ?city ?cityLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                rdfs:label ?manufacturerLabel ;
+                sdk:organizationLocatedIn ?site .
+  ?site sdk:locatedInCity ?city .
+  ?city rdfs:label ?cityLabel .
+  FILTER(CONTAINS(LCASE(?cityLabel), LCASE(""Rochester"")))
+}
+ORDER BY ?manufacturerLabel","manufacturer	manufacturerLabel	city	cityLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 36",,complete
+71,"List all manufacturers located in a given state (via site ? city ? state; match state name contains ""California"").",Temporal/Geospatial,gpt-5,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel ?state ?stateLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                rdfs:label ?manufacturerLabel ;
+                sdk:organizationLocatedIn ?site .
+  ?site sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  ?state rdfs:label ?stateLabel .
+  FILTER(CONTAINS(LCASE(STR(?stateLabel)), ""california""))
+}
+ORDER BY ?manufacturerLabel","manufacturer	manufacturerLabel	state	stateLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 1001",,complete
+72,"For each state, how many manufacturers are located there?",Temporal/Geospatial,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?state (SAMPLE(?lbl) AS ?stateLabel) (COUNT(DISTINCT ?m) AS ?manufacturerCount)
+WHERE {
+  ?m a iof-core:Manufacturer ;
+     sdk:organizationLocatedIn ?site .
+  ?site sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  OPTIONAL { ?state rdfs:label ?lbl }
+}
+GROUP BY ?state
+ORDER BY ?stateLabel","state	stateLabel	manufacturerCount
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 91",,complete
+73,"For each city, how many manufacturers are located there?",Temporal/Geospatial,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?city ?cityLabel (COUNT(DISTINCT ?org) AS ?manufacturerCount)
+WHERE {
+  ?org a iof-core:Manufacturer ;
+       sdk:organizationLocatedIn ?site .
+  ?site sdk:locatedInCity ?city .
+  ?city a sdk:City .
+  OPTIONAL { ?city rdfs:label ?cityLabel . }
+}
+GROUP BY ?city ?cityLabel
+ORDER BY ?cityLabel ?city","city	cityLabel	manufacturerCount
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 10000",,complete
+74,Which manufacturers are located at latitude > 40.0?,Temporal/Geospatial,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT ?m ?label ?lat
+WHERE {
+  ?m a iof-core:Manufacturer ;
+     sdk:organizationLocatedIn ?site .
+  OPTIONAL { ?m rdfs:label ?label . }
+  ?site sdk:hasSpatialCoordinates ?coords .
+  ?coords sdk:hasLatitudeValue ?lat .
+  FILTER(xsd:float(?lat) > ""40.0""^^xsd:float)
+}","m	label	lat
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 4244",,complete
+75,Which manufacturers are located at longitude < 90.0?,Temporal/Geospatial,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT ?manufacturer ?label ?longitude
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:organizationLocatedIn ?site .
+  OPTIONAL { ?manufacturer rdfs:label ?label }
+  ?site sdk:hasSpatialCoordinates ?coords .
+  ?coords sdk:hasLongitudeValue ?longitude .
+  FILTER(xsd:double(?longitude) < 90.0)
+}","manufacturer	label	longitude
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 10000",,complete
+76,"Which manufacturers have coordinates exactly at (33.364638, -111.931604)?",Temporal/Geospatial,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT ?manufacturer ?label
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:organizationLocatedIn ?site .
+  OPTIONAL { ?manufacturer rdfs:label ?label }
+  ?site sdk:hasSpatialCoordinates ?coords .
+  ?coords sdk:hasLatitudeValue ?lat ;
+          sdk:hasLongitudeValue ?lon .
+  FILTER(?lat = ""33.364638""^^xsd:float && ?lon = ""-111.931604""^^xsd:float)
+}","No results found.
+",,complete
+77,"For each manufacturer, return its city name and ZIP code.",Temporal/Geospatial,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?cityName ?zipCode
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:organizationLocatedIn ?site .
+  ?site sdk:locatedInCity ?city ;
+        sdk:hasZIPcode ?zip .
+  ?city rdfs:label ?cityName .
+  ?zip sdk:hasIntegerValue ?zipCode .
+}","manufacturer	cityName	zipCode
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 10000",,complete
+78,Which state has the highest number of manufacturers?,Temporal/Geospatial,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?state ?stateLabel (COUNT(DISTINCT ?org) AS ?manufacturerCount)
+WHERE {
+  ?org a iof-core:Manufacturer ;
+       sdk:organizationLocatedIn ?site .
+  ?site sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  OPTIONAL { ?state rdfs:label ?stateLabel . }
+}
+GROUP BY ?state ?stateLabel
+ORDER BY DESC(?manufacturerCount)
+LIMIT 1","state	stateLabel	manufacturerCount
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 1
+",,complete
+79,"List manufacturers in states whose names match the regex ""^New "".",Temporal/Geospatial,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel ?state ?stateLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:organizationLocatedIn ?site .
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel . }
+  ?site sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  ?state rdfs:label ?stateLabel .
+  FILTER (regex(?stateLabel, ""^New ""))
+}","manufacturer	manufacturerLabel	state	stateLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 278",,complete
+80,"Given the set of states {names containing Texas"" ""New York"" ""Florida""} how many manufacturers are in each?""",Nested Subqueries,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?stateName (COUNT(DISTINCT ?m) AS ?manufacturerCount)
+WHERE {
+  ?m a iof-core:Manufacturer ;
+     sdk:organizationLocatedIn ?site .
+  ?site sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  ?state rdfs:label ?stateName .
+  FILTER(REGEX(STR(?stateName), ""Texas|New York|Florida"", ""i""))
+}
+GROUP BY ?stateName
+ORDER BY ?stateName","stateName	manufacturerCount
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 3
+",,complete
+81,"For each state, return the top 3 manufacturers by employees.",Nested Subqueries,gpt-5,Yes,2,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?state ?stateLabel ?manufacturer ?manufacturerLabel ?employees
+WHERE {
+  {
+    SELECT ?state ?manufacturer ?employees ?stateLabel ?manufacturerLabel
+    WHERE {
+      ?manufacturer a iof-core:Manufacturer ;
+                    sdk:hasNumberOfEmployees ?empLit ;
+                    sdk:organizationLocatedIn ?site .
+      ?site sdk:locatedInCity ?city .
+      ?city sdk:locatedInState ?state .
+      OPTIONAL { ?state rdfs:label ?stateLabel . }
+      OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel . }
+      BIND(xsd:integer(REPLACE(STR(?empLit), "","", """")) AS ?employees)
+    }
+  }
+  {
+    SELECT ?state ?manufacturer ((1 + COUNT(DISTINCT ?m2)) AS ?rank)
+    WHERE {
+      ?manufacturer a iof-core:Manufacturer ;
+                    sdk:hasNumberOfEmployees ?empLit ;
+                    sdk:organizationLocatedIn ?site .
+      ?site sdk:locatedInCity ?city .
+      ?city sdk:locatedInState ?state .
+      BIND(xsd:integer(REPLACE(STR(?empLit), "","", """")) AS ?emp)
+
+      ?m2 a iof-core:Manufacturer ;
+          sdk:hasNumberOfEmployees ?empLit2 ;
+          sdk:organizationLocatedIn ?site2 .
+      ?site2 sdk:locatedInCity ?city2 .
+      ?city2 sdk:locatedInState ?state .
+      BIND(xsd:integer(REPLACE(STR(?empLit2), "","", """")) AS ?emp2)
+
+      FILTER(?emp2 > ?emp || (?emp2 = ?emp && STR(?m2) < STR(?manufacturer)))
+    }
+    GROUP BY ?state ?manufacturer
+  }
+  FILTER(?rank <= 3)
+}
+ORDER BY ?stateLabel ?rank DESC(?employees) ?manufacturerLabel","state	stateLabel	manufacturer	manufacturerLabel	employees
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 22",,complete
+82,"Bucket manufacturers into Small (?50), Medium (51-250), Large (>250) by employees and count companies per bucket.",Nested Subqueries,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?employeeBucket (COUNT(DISTINCT ?org) AS ?companyCount)
+WHERE {
+  ?org a iof-core:Manufacturer ;
+       sdk:hasNumberOfEmployees ?empLit .
+  BIND(xsd:integer(REPLACE(STR(?empLit), "","", """")) AS ?emp)
+  BIND(
+    IF(?emp <= 50, ""Small"",
+      IF(?emp >= 51 && ?emp <= 250, ""Medium"",
+        IF(?emp > 250, ""Large"", ""Other"")
+      )
+    ) AS ?employeeBucket
+  )
+  FILTER(?employeeBucket IN (""Small"",""Medium"",""Large""))
+}
+GROUP BY ?employeeBucket
+ORDER BY ?employeeBucket","employeeBucket	companyCount
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 3
+",,complete
+83,"Within each industry, list manufacturers whose employee count is above that industry's average.",Nested Subqueries,gpt-5,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?industry ?industryLabel ?manufacturer ?manufacturerLabel ?employeeCount ?industryAvg
+WHERE {
+  {
+    SELECT ?ind (AVG(?emp2) AS ?industryAvg)
+    WHERE {
+      ?m2 a iof-core:Manufacturer ;
+          sdk:suppliesToIndustry ?ind ;
+          sdk:hasNumberOfEmployees ?empLit2 .
+      BIND(xsd:decimal(REPLACE(STR(?empLit2), "","", """")) AS ?emp2)
+    }
+    GROUP BY ?ind
+  }
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:suppliesToIndustry ?ind ;
+                sdk:hasNumberOfEmployees ?empLit .
+  BIND(?ind AS ?industry)
+  BIND(xsd:decimal(REPLACE(STR(?empLit), "","", """")) AS ?employeeCount)
+  FILTER(?employeeCount > ?industryAvg)
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel }
+  OPTIONAL { ?industry rdfs:label ?industryLabel }
+}
+ORDER BY ?industry ?manufacturerLabel","industry	industryLabel	manufacturer	manufacturerLabel	employeeCount	industryAvg
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 1035",,complete
+84,"For each manufacturer, add a Has ISO 9001"" column computed from whether it holds that certificate.""",Nested Subqueries,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?manufacturerLabel ?hasISO9001
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel . }
+  BIND(EXISTS {
+    ?manufacturer sdk:hasCertificate ?cert .
+    ?cert a sdk:ISO9001 .
+  } AS ?hasISO9001)
+}
+ORDER BY ?manufacturerLabel ?manufacturer","manufacturer	hasISO9001
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 10000",,complete
+85,"Given the capability set {names containing Machining"" , ""Coating"",""Heat Treating""} return the count of manufacturers that have each capability or any of its subclasses.""",Nested Subqueries,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?category (COUNT(DISTINCT ?m) AS ?manufacturerCount)
+WHERE {
+  VALUES (?category ?class ?keyword) {
+    (""Machining"" sdk:MachiningCapability ""machining"")
+    (""Coating"" sdk:CoatingCapability ""coating"")
+    (""Heat Treating"" UNDEF ""heat treating"")
+  }
+  OPTIONAL {
+    ?m a iof-core:Manufacturer ;
+       sdk:hasProcessCapability ?cap .
+    OPTIONAL {
+      ?cap a ?capClass .
+      ?capClass rdfs:subClassOf* ?class .
+    }
+    OPTIONAL {
+      ?cap rdfs:label ?capLabel .
+      FILTER(CONTAINS(LCASE(STR(?capLabel)), ?keyword))
+      BIND(true AS ?labelHit)
+    }
+    FILTER(BOUND(?capClass) || BOUND(?labelHit))
+  }
+}
+GROUP BY ?category
+ORDER BY ?category","category	manufacturerCount
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 3
+",,complete
+86,"For each state, return the average employees of manufacturers that make any product whose name contains Pipe"".""",Nested Subqueries,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?state ?stateLabel (AVG(?empNum) AS ?avgEmployees)
+WHERE {
+  {
+    SELECT DISTINCT ?m ?state ?stateLabel ?empNum
+    WHERE {
+      ?m a iof-core:Manufacturer ;
+         sdk:manufactures ?prod ;
+         sdk:hasNumberOfEmployees ?emp ;
+         sdk:organizationLocatedIn ?site .
+      ?prod rdfs:label ?prodLabel .
+      FILTER(CONTAINS(STR(?prodLabel), ""Pipe""))
+      ?site sdk:locatedInCity ?city .
+      ?city sdk:locatedInState ?state .
+      OPTIONAL { ?state rdfs:label ?stateLabel }
+      BIND(xsd:integer(REPLACE(STR(?emp), "","", """")) AS ?empNum)
+    }
+  }
+}
+GROUP BY ?state ?stateLabel
+ORDER BY ?stateLabel","state	stateLabel	avgEmployees
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 3
+",,complete
+87,Return manufacturers whose number of certificates is above the overall average number of certificates per manufacturer.,Nested Subqueries,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX bfo: <http://purl.obolibrary.org/obo/>
+
+SELECT ?manufacturer ?label ?certCount
+WHERE {
+  {
+    SELECT ?manufacturer (COUNT(?cert) AS ?certCount)
+    WHERE {
+      ?manufacturer a iof-core:Manufacturer .
+      OPTIONAL { ?manufacturer sdk:hasCertificate ?cert . }
+    }
+    GROUP BY ?manufacturer
+  }
+  {
+    SELECT (AVG(?cnt) AS ?avgCerts)
+    WHERE {
+      SELECT ?m (COUNT(?c) AS ?cnt)
+      WHERE {
+        ?m a iof-core:Manufacturer .
+        OPTIONAL { ?m sdk:hasCertificate ?c . }
+      }
+      GROUP BY ?m
+    }
+  }
+  FILTER(?certCount > ?avgCerts)
+  OPTIONAL { ?manufacturer rdfs:label ?label . }
+}
+ORDER BY DESC(?certCount)","manufacturer	label	certCount
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 5444",,complete
+88,"For each NAICS classifier, list the top 5 states by number of manufacturers using that classifier as primary.",Nested Subqueries,gpt-5,Yes,2,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?naics ?naicsText ?state ?stateLabel ?count
+WHERE {
+  {
+    SELECT ?naics ?state (COUNT(?org) AS ?count)
+    WHERE {
+      ?org a iof-core:Manufacturer ;
+           sdk:hasPrimaryNAICSClassifier ?naics ;
+           sdk:organizationLocatedIn ?site .
+      ?site sdk:locatedInCity ?city .
+      ?city sdk:locatedInState ?state .
+    }
+    GROUP BY ?naics ?state
+  }
+  {
+    SELECT ?naics ?state (COUNT(?stateHigher) AS ?numHigher)
+    WHERE {
+      {
+        SELECT ?naics ?state (COUNT(?org) AS ?count)
+        WHERE {
+          ?org a iof-core:Manufacturer ;
+               sdk:hasPrimaryNAICSClassifier ?naics ;
+               sdk:organizationLocatedIn ?site .
+          ?site sdk:locatedInCity ?city .
+          ?city sdk:locatedInState ?state .
+        }
+        GROUP BY ?naics ?state
+      }
+      OPTIONAL {
+        {
+          SELECT ?naics ?stateHigher (COUNT(?orgH) AS ?countHigher)
+          WHERE {
+            ?orgH a iof-core:Manufacturer ;
+                  sdk:hasPrimaryNAICSClassifier ?naics ;
+                  sdk:organizationLocatedIn ?siteH .
+            ?siteH sdk:locatedInCity ?cityH .
+            ?cityH sdk:locatedInState ?stateHigher .
+          }
+          GROUP BY ?naics ?stateHigher
+        }
+        FILTER(?countHigher > ?count)
+      }
+    }
+    GROUP BY ?naics ?state
+  }
+  FILTER(?numHigher < 5)
+  OPTIONAL { ?state rdfs:label ?stateLabel . }
+  OPTIONAL { ?naics sdk:hasNAICSTextValue ?naicsText . }
+}
+ORDER BY ?naics DESC(?count) ?stateLabel","naics	naicsText	state	stateLabel	count
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 1744",,complete
+89,"For each manufacturer, compute a City, State string; if city or state is missing fill with ""Unknown"".""",Nested Subqueries,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?cityState
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  OPTIONAL {
+    ?manufacturer sdk:organizationLocatedIn ?site .
+    OPTIONAL {
+      ?site sdk:locatedInCity ?city .
+      OPTIONAL { ?city rdfs:label ?cityLabel . }
+      OPTIONAL {
+        ?city sdk:locatedInState ?state .
+        OPTIONAL { ?state rdfs:label ?stateLabel . }
+      }
+    }
+  }
+  BIND(COALESCE(?cityLabel, ""Unknown"") AS ?cityName)
+  BIND(COALESCE(?stateLabel, ""Unknown"") AS ?stateName)
+  BIND(CONCAT(?cityName, "", "", ?stateName) AS ?cityState)
+}","manufacturer	cityState
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 10000",,complete
+90,"List manufacturers that have any capability that is a subclass of the class labeled ""Machining"".",Reasoning-dependent,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:hasProcessCapability ?capability .
+  ?capability a ?capClass .
+  ?capClass rdfs:subClassOf* sdk:MachiningCapability .
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel. }
+}","manufacturer
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 7101",,complete
+91,"Count manufacturers with capabilities that are subclasses of the class labeled ""Surface Finishing"".",Reasoning-dependent,gpt-5,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT (COUNT(DISTINCT ?m) AS ?count)
+WHERE {
+  ?m a iof-core:Manufacturer ;
+     sdk:hasProcessCapability ?cap .
+  ?cap a ?capClass .
+  ?capClass rdfs:subClassOf* sdk:SurfaceFinishingCapability .
+}","count
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 1
+",,complete
+92,"Among manufacturers in states whose names contain Arizona"", how many have a capability that is a subclass of the class labeled ""Coating""?""",Reasoning-dependent,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT (COUNT(DISTINCT ?mfg) AS ?count)
+WHERE {
+  ?mfg a iof-core:Manufacturer ;
+       sdk:organizationLocatedIn ?site ;
+       sdk:hasProcessCapability ?cap .
+  ?site sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  ?state rdfs:label ?stateName .
+  FILTER(CONTAINS(LCASE(STR(?stateName)), ""arizona"")) .
+  
+  ?cap a ?capClass .
+  ?capClass rdfs:subClassOf* ?coatingClass .
+  ?coatingClass rdfs:label ?coatingLabel .
+  FILTER(LCASE(STR(?coatingLabel)) = ""coating"") .
+}","count
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 1
+",,complete
+93,"Return manufacturers that have Heat Treating or any subclass of the class labeled ""Heat Treating"".",Reasoning-dependent,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:hasProcessCapability ?cap .
+  ?cap a ?capType .
+  ?capType rdfs:subClassOf* sdk:HeatTreatingCapability .
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel }
+}","manufacturer	manufacturerLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 1369",,complete
+94,"List manufacturers that have capabilities in the subtree of the class labeled ""Hole Making"".",Reasoning-dependent,gpt-5,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  ?manufacturer sdk:hasProcessCapability ?cap .
+  ?cap a ?capClass .
+  ?capClass rdfs:subClassOf* sdk:HoleMakingCapability .
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel . }
+}","manufacturer	manufacturerLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 1099",,complete
+95,"Find manufacturers whose capability is a subclass of the class labeled ""Surface Preparation"".",Reasoning-dependent,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:hasProcessCapability ?cap .
+  ?cap a ?capClass .
+  ?capClass rdfs:subClassOf* sdk:SurfacePreparationCapability .
+}","manufacturer
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 1228",,complete
+96,"Count manufacturers with capabilities under the subtree of the class labeled ""Multipoint Cutting"".",Reasoning-dependent,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT (COUNT(DISTINCT ?manufacturer) AS ?manufacturerCount)
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:hasProcessCapability ?capability .
+  ?capability a ?capClass .
+  ?capClass rdfs:subClassOf* sdk:MultipointCuttingCapability .
+}","manufacturerCount
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 1
+",,complete
+97,"Count manufacturers with capabilities under the subtree of the class labeled ""Single-Point Cutting"".",Reasoning-dependent,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT (COUNT(DISTINCT ?m) AS ?count)
+WHERE {
+  ?m a iof-core:Manufacturer ;
+     sdk:hasProcessCapability ?cap .
+  ?cap a ?capClass .
+  ?capClass rdfs:subClassOf* sdk:SinglePointCuttingCapability .
+}","count
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 1
+",,complete
+98,"List manufacturers that have capabilities under the subtree of the class labeled ""Abrasive Machining"".",Reasoning-dependent,gpt-5,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:hasProcessCapability ?capability .
+  ?capability a ?capClass .
+  ?capClass rdfs:subClassOf* <http://asu.edu/semantics/SUDOKN/AbrassiveMachiningCapability> .
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel . }
+}
+ORDER BY ?manufacturer","manufacturer	manufacturerLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 1734",,complete
+99,"Among manufacturers that supply to an industry labeled Renewable Energy"", which ones have any capability that is a subclass of the class labeled ""Coating""?""",Reasoning-dependent,gpt-5,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:suppliesToIndustry ?industry ;
+                sdk:hasProcessCapability ?cap .
+  ?industry a sdk:RenewableEnergyIndustry .
+  ?cap a ?capType .
+  ?capType rdfs:subClassOf* sdk:CoatingCapability .
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel . }
+}","manufacturer	manufacturerLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 272",,complete
+100,"Which manufacturers have any capability under Additive Manufacturing (e.g., Polymer Deposition, Fused Deposition Modeling)?",Reasoning-dependent,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:hasProcessCapability ?cap .
+  ?cap a ?capClass .
+  VALUES ?capClass {
+    sdk:AdditiveManufacturingCapability
+    sdk:PolymerDepositionCapability
+    sdk:FusedDepositionModelingCapability
+    sdk:PowderDepositionCapability
+    sdk:SolidDepositionCapability
+    sdk:DropOnDemandCapability
+    sdk:SelectiveLaserSinteringCapability
+  }
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel }
+}
+ORDER BY ?manufacturerLabel ?manufacturer","manufacturer	manufacturerLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 944",,complete
+101,"Which manufacturers have a capability that is a subclass of Abrasive Finishing (e.g., Grinding, Lapping)?",Reasoning-dependent,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:hasProcessCapability ?capability .
+  VALUES ?targetType {
+    sdk:GrindingCapability
+    sdk:LappingCapability
+    sdk:CNCCylindricalGrindingCapability
+  }
+  ?capability a ?targetType .
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel }
+}","manufacturer	manufacturerLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 1612",,complete
+102,Which manufacturers have a capability that belongs to the Surface Finishing hierarchy?,Reasoning-dependent,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:hasProcessCapability ?capability .
+  ?capability a ?capClass .
+  ?capClass rdfs:subClassOf* sdk:SurfaceFinishingCapability .
+}","manufacturer
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 3552",,complete
+103,Which manufacturers have a process capability labeled Polymer Deposition?,Reasoning-dependent,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:hasProcessCapability ?cap .
+  ?cap a sdk:PolymerDepositionCapability .
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel . }
+}","manufacturer	manufacturerLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 17",,complete
+104,Count the manufacturers with any capability under Fused Deposition Modeling.,Reasoning-dependent,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT (COUNT(DISTINCT ?m) AS ?manufacturerCount)
+WHERE {
+  ?m a iof-core:Manufacturer ;
+     sdk:hasProcessCapability ?cap .
+  ?cap a ?capType .
+  ?capType rdfs:subClassOf* sdk:FusedDepositionModelingCapability .
+}","manufacturerCount
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 1
+",,complete
+105,Which manufacturers use Drop On Demand as an additive manufacturing process?,Reasoning-dependent,gpt-5,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?label
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:hasProcessCapability ?cap ;
+                rdfs:label ?label .
+  ?cap a sdk:DropOnDemandCapability .
+}
+ORDER BY ?label","manufacturer	label
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 18",,complete
+106,Which manufacturers have a capability that is a subclass of Subtractive Manufacturing?,Reasoning-dependent,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:hasProcessCapability ?cap .
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel . }
+  ?cap a ?capType .
+  ?capType rdfs:subClassOf+ ?subtractive .
+  ?subtractive rdfs:label ""Subtractive Manufacturing"" .
+}","No results found.
+",,complete
+107,"Which manufacturers have any capability under the Casting hierarchy (e.g., Sand Casting, Die Casting)?",Reasoning-dependent,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:hasProcessCapability ?cap .
+  ?cap a ?castingClass .
+  VALUES ?castingClass {
+    sdk:CastingCapability
+    sdk:SandCastingCapability
+    sdk:DieCastingCapability
+    sdk:GravityCastingCapability
+    sdk:PermanentMoldCastingCapability
+    sdk:CeramicMoldCastingCapability
+    sdk:InvestmentCastingCapability
+    sdk:MachiningOfCastingCapability
+    sdk:SqueezeCastingCapability
+    sdk:HotChamberDieCastingCapability
+  }
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel . }
+}","manufacturer	manufacturerLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 1316",,complete
+108,"Which manufacturers have any capability in Forming Processes (e.g., Forging, Rolling, Extrusion)?",Reasoning-dependent,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:hasProcessCapability ?capability .
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel }
+  ?capability a ?capType .
+  VALUES ?capType {
+    sdk:FormingCapability
+    sdk:ForgingCapability
+    sdk:RollForgingCapability
+    sdk:RollingCapability
+    sdk:PowderMetalFormingCapability
+  }
+}","manufacturer	manufacturerLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 2523",,complete
+109,Which manufacturers are linked to Machining subclasses like Turning or Milling?,Reasoning-dependent,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:hasProcessCapability ?capability .
+  ?capability a ?capType .
+  VALUES ?capType { sdk:TurningCapability sdk:MillingCapability }
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel }
+}","manufacturer	manufacturerLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 2624",,complete
+110,Which manufacturers supply to the Aerospace industry?,Industry-specific,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:suppliesToIndustry ?industry .
+  ?industry rdfs:label ?industryLabel .
+  FILTER(CONTAINS(LCASE(STR(?industryLabel)), ""aerospace""))
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel }
+}","manufacturer	manufacturerLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 4419",,complete
+111,Which manufacturers supply to the Automotive industry?,Industry-specific,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:suppliesToIndustry ?industry .
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel . }
+  ?industry rdfs:label ?industryLabel .
+  FILTER(LCASE(STR(?industryLabel)) = ""automotive"")
+}","manufacturer	manufacturerLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 4330",,complete
+112,Which manufacturers supply to the Agriculture industry?,Industry-specific,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel ?industry ?industryLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                rdfs:label ?manufacturerLabel ;
+                sdk:suppliesToIndustry ?industry .
+  ?industry rdfs:label ?industryLabel .
+  FILTER(CONTAINS(LCASE(STR(?industryLabel)), ""agriculture""))
+}","manufacturer	manufacturerLabel	industry	industryLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 2089",,complete
+113,Which manufacturers supply to the Apparel industry?,Industry-specific,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:suppliesToIndustry ?industry .
+  ?industry rdfs:label ?industryLabel .
+  FILTER(LCASE(STR(?industryLabel)) = ""apparel"")
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel . }
+}
+ORDER BY ?manufacturerLabel ?manufacturer","manufacturer	manufacturerLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 155
+",,complete
+114,Which manufacturers supply to the Audio and Visual industry?,Industry-specific,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                rdfs:label ?manufacturerLabel ;
+                sdk:suppliesToIndustry ?audioIndustry, ?visualIndustry .
+  ?audioIndustry rdfs:label ?audioLabel .
+  ?visualIndustry rdfs:label ?visualLabel .
+  FILTER (regex(str(?audioLabel), ""Audio"", ""i""))
+  FILTER (regex(str(?visualLabel), ""Visual"", ""i""))
+}
+ORDER BY ?manufacturerLabel","manufacturer	manufacturerLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 100",,complete
+115,How many manufacturers supply to the Construction industry?,Industry-specific,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT (COUNT(DISTINCT ?manufacturer) AS ?countManufacturers)
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:suppliesToIndustry ?industry .
+  ?industry rdfs:label ?industryLabel .
+  FILTER(CONTAINS(LCASE(STR(?industryLabel)), ""construction""))
+}","countManufacturers
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 1
+",,complete
+116,List manufacturers that supply to both Medical Devices and Pharmaceuticals industries.,Industry-specific,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:suppliesToIndustry ?indMed, ?indPharm ;
+                rdfs:label ?manufacturerLabel .
+  ?indMed rdfs:label ""Medical Devices"" .
+  ?indPharm rdfs:label ""Pharmaceuticals"" .
+}","No results found.
+",,complete
+117,Which industries have the largest number of manufacturers supplying to them?,Industry-specific,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?industry ?industryLabel ?manufacturerCount
+WHERE {
+  {
+    SELECT ?industry (COUNT(DISTINCT ?m) AS ?manufacturerCount)
+    WHERE {
+      ?m a iof-core:Manufacturer ;
+         sdk:suppliesToIndustry ?industry .
+    }
+    GROUP BY ?industry
+  }
+  OPTIONAL { ?industry rdfs:label ?industryLabel . }
+  {
+    SELECT (MAX(?cnt) AS ?maxCount)
+    WHERE {
+      {
+        SELECT ?industry2 (COUNT(DISTINCT ?m2) AS ?cnt)
+        WHERE {
+          ?m2 a iof-core:Manufacturer ;
+              sdk:suppliesToIndustry ?industry2 .
+        }
+        GROUP BY ?industry2
+      }
+    }
+  }
+  FILTER(?manufacturerCount = ?maxCount)
+}","industry	industryLabel	manufacturerCount
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 2
+",,complete
+118,Which industries have fewer than 5 manufacturers supplying to them?,Industry-specific,gpt-5,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?industry ?industryLabel (COUNT(DISTINCT ?manufacturer) AS ?manufacturerCount)
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:suppliesToIndustry ?industry .
+  OPTIONAL { ?industry rdfs:label ?industryLabel }
+}
+GROUP BY ?industry ?industryLabel
+HAVING (COUNT(DISTINCT ?manufacturer) < 5)
+ORDER BY ?manufacturerCount ?industryLabel","industry	manufacturerCount
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 10",,complete
+119,"Which manufacturers supply to industries whose names match the regex ""Energy""?",Industry-specific,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:suppliesToIndustry ?industry .
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel . }
+  ?industry a ?industryType .
+  FILTER regex(str(?industryType), ""Energy"", ""i"")
+}","manufacturer	manufacturerLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 3684",,complete
+120,Which manufacturers process Carbide?,Material Capabilities,gpt-5,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?label
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:hasMaterialCapability ?cap .
+  ?cap a sdk:CarbideProcessingCapability .
+  OPTIONAL { ?manufacturer rdfs:label ?label }
+}","manufacturer	label
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 370",,complete
+121,"Which manufacturers have material capabilities under Carbon (e.g., Graphite)?",Material Capabilities,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel ?capability ?capabilityLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:hasMaterialCapability ?capability .
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel . }
+  ?capability a ?capType .
+  OPTIONAL { ?capability rdfs:label ?capabilityLabel . }
+  VALUES ?capType { sdk:CarbonProcessingCapability sdk:GraphiteProcessingCapability }
+}
+ORDER BY ?manufacturerLabel ?capabilityLabel","manufacturer	manufacturerLabel	capability	capabilityLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 482",,complete
+122,"Which manufacturers have material capabilities in the Ceramic hierarchy (e.g., Zircon)?",Material Capabilities,gpt-5,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:hasMaterialCapability ?capability .
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel . }
+  ?capability a ?capClass .
+  ?capClass rdfs:subClassOf* sdk:CeramicProcessingCapability .
+}","manufacturer	manufacturerLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 1388",,complete
+123,Which manufacturers have an Aluminum material capability?,Material Capabilities,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:hasMaterialCapability ?cap .
+  ?cap a sdk:AluminumProcessingCapability .
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel . }
+}","manufacturer
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 7258",,complete
+124,Which manufacturers have both Steel and Bronze material capabilities?,Material Capabilities,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?label
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  OPTIONAL { ?manufacturer rdfs:label ?label . }
+  ?manufacturer sdk:hasMaterialCapability ?capSteel .
+  ?capSteel a sdk:SteelProcessingCapability .
+  ?manufacturer sdk:hasMaterialCapability ?capBronze .
+  ?capBronze a sdk:BronzeProcessingCapability .
+}","manufacturer	label
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 2419",,complete
+125,Which manufacturers do not have a primary NAICS recorded?,Missing Data,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?label
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  FILTER NOT EXISTS { ?manufacturer sdk:hasPrimaryNAICSClassifier ?naics . }
+  OPTIONAL { ?manufacturer rdfs:label ?label . }
+}
+ORDER BY ?manufacturer","manufacturer
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 5842",,complete
+126,"Which manufacturers lack any certificate (ISO 9001, ISO 14001, etc.)?",Missing Data,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?manufacturerLabel (COUNT(DISTINCT ?cert) AS ?certificateCount)
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel . }
+  OPTIONAL { ?manufacturer sdk:hasCertificate ?cert . }
+}
+GROUP BY ?manufacturer ?manufacturerLabel
+HAVING (COUNT(DISTINCT ?cert) = 0)
+ORDER BY ASC(?certificateCount) ASC(?manufacturerLabel)","manufacturer	manufacturerLabel	certificateCount
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 8504",,complete
+127,Which manufacturers are missing a postal address?,Missing Data,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel . }
+  FILTER NOT EXISTS {
+    ?manufacturer sdk:organizationLocatedIn ?site .
+    ?site sdk:hasPostalAddress ?addr .
+  }
+}","manufacturer
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 2834",,complete
+128,Which manufacturers have a site but no latitude/longitude recorded?,Missing Data,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:organizationLocatedIn ?site .
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel . }
+  FILTER NOT EXISTS {
+    ?site sdk:hasSpatialCoordinates ?coord .
+    ?coord sdk:hasLatitudeValue ?lat ;
+           sdk:hasLongitudeValue ?lon .
+  }
+}","manufacturer	manufacturerLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 106",,complete
+129,Which manufacturers do not have a business description?,Missing Data,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?label
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  OPTIONAL { ?manufacturer rdfs:label ?label . }
+  FILTER NOT EXISTS {
+    ?manufacturer iof-core:describedBy ?desc .
+    ?desc a sdk:BusinessDescription .
+    ?desc iof-scro:hasTextValue ?text .
+  }
+}
+ORDER BY ?label ?manufacturer","manufacturer
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 10000",,complete
+130,Which manufacturers have no products listed?,Missing Data,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?label
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  FILTER NOT EXISTS { ?manufacturer sdk:manufactures ?product . }
+  OPTIONAL { ?manufacturer rdfs:label ?label . }
+}","manufacturer
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 5082",,complete
+131,Which manufacturers are not linked to any industry?,Missing Data,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?label
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  OPTIONAL { ?manufacturer rdfs:label ?label . }
+  OPTIONAL { ?manufacturer sdk:suppliesToIndustry ?industry . }
+}
+GROUP BY ?manufacturer ?label
+HAVING (COUNT(DISTINCT ?industry) = 0)","manufacturer	label
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 2712",,complete
+132,Which manufacturers are missing a ZIP code?,Missing Data,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?label
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  OPTIONAL { ?manufacturer rdfs:label ?label . }
+  FILTER NOT EXISTS {
+    ?manufacturer sdk:organizationLocatedIn ?site .
+    ?site sdk:hasZIPcode ?zip .
+  }
+}","manufacturer
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 2834",,complete
+133,Which manufacturers have no process capabilities?,Missing Data,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?label
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  OPTIONAL { ?manufacturer rdfs:label ?label . }
+  OPTIONAL { ?manufacturer sdk:hasProcessCapability ?cap . }
+}
+GROUP BY ?manufacturer ?label
+HAVING (COUNT(DISTINCT ?cap) = 0)","manufacturer	label
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 3023",,complete
+134,Which manufacturers have no material capabilities?,Missing Data,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?label
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  OPTIONAL { ?manufacturer rdfs:label ?label . }
+  FILTER NOT EXISTS { ?manufacturer sdk:hasMaterialCapability ?cap . }
+}","manufacturer	label
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 3430",,complete
+135,Which manufacturers in Arizona with more than 50 employees have any capability under Additive Manufacturing?,Compositional,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT ?manufacturer ?label
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                rdfs:label ?label ;
+                sdk:hasNumberOfEmployees ?empLiteral ;
+                sdk:hasProcessCapability ?cap ;
+                sdk:organizationLocatedIn ?site .
+  ?site sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  ?state rdfs:label ""Arizona"" .
+  
+  ?cap a ?capType .
+  ?capType rdfs:subClassOf* sdk:AdditiveManufacturingCapability .
+
+  BIND(xsd:integer(REPLACE(STR(?empLiteral), "","", """")) AS ?emp)
+  FILTER(?emp > 50)
+}","manufacturer	label
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 9",,complete
+136,Which manufacturers that supply to Aerospace and Automotive also hold the certificate labeled ISO 9001?,Compositional,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:hasCertificate ?cert ;
+                sdk:suppliesToIndustry ?aeroInd, ?autoInd .
+  ?cert a sdk:ISO9001 .
+  ?aeroInd rdfs:label ?aeroLabel .
+  ?autoInd rdfs:label ?autoLabel .
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel . }
+  FILTER(CONTAINS(LCASE(STR(?aeroLabel)), ""aerospace""))
+  FILTER(CONTAINS(LCASE(STR(?autoLabel)), ""automotive""))
+}","manufacturer	manufacturerLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 1443",,complete
+137,"Among manufacturers in the Renewable Energy industry, which ones have a subclass of Coating capability and employ over 200 employees?",Compositional,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:suppliesToIndustry ?industry ;
+                sdk:hasProcessCapability ?cap ;
+                sdk:hasNumberOfEmployees ?empRaw .
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel . }
+  ?industry a sdk:RenewableEnergyIndustry .
+  ?cap a ?capClass .
+  ?capClass rdfs:subClassOf* sdk:CoatingCapability .
+  BIND(xsd:integer(REPLACE(STR(?empRaw), "","", """")) AS ?emp)
+  FILTER(?emp > 200)
+}","manufacturer	manufacturerLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 1
+",,complete
+138,"For each state, which manufacturer has the largest number of products and also holds at least one certificate?",Compositional,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?state ?stateLabel ?manufacturer ?manufacturerLabel ?productCount
+WHERE {
+  {
+    SELECT ?state ?manufacturer (COUNT(DISTINCT ?product) AS ?productCount)
+    WHERE {
+      ?manufacturer a iof-core:Manufacturer ;
+                    sdk:organizationLocatedIn ?site ;
+                    sdk:manufactures ?product .
+      ?site sdk:locatedInCity ?city .
+      ?city sdk:locatedInState ?state .
+      FILTER EXISTS { ?manufacturer sdk:hasCertificate ?cert . }
+    }
+    GROUP BY ?state ?manufacturer
+  }
+  {
+    SELECT ?state (MAX(?pc) AS ?maxCount)
+    WHERE {
+      {
+        SELECT ?state ?manufacturer (COUNT(DISTINCT ?product) AS ?pc)
+        WHERE {
+          ?manufacturer a iof-core:Manufacturer ;
+                        sdk:organizationLocatedIn ?site2 ;
+                        sdk:manufactures ?product .
+          ?site2 sdk:locatedInCity ?city2 .
+          ?city2 sdk:locatedInState ?state .
+          FILTER EXISTS { ?manufacturer sdk:hasCertificate ?c . }
+        }
+        GROUP BY ?state ?manufacturer
+      }
+    }
+    GROUP BY ?state
+  }
+  FILTER (?productCount = ?maxCount)
+  OPTIONAL { ?state rdfs:label ?stateLabel . }
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel . }
+}
+ORDER BY ?state ?manufacturer","state	stateLabel	manufacturer	manufacturerLabel	productCount
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 73",,complete
+139,"Which manufacturers that process Ceramic materials are located in states whose name begins with ""New""?",Compositional,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel ?state ?stateLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:hasMaterialCapability ?matCap ;
+                sdk:organizationLocatedIn ?site ;
+                rdfs:label ?manufacturerLabel .
+  ?matCap a sdk:CeramicProcessingCapability .
+  ?site sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  ?state a sdk:State ;
+         rdfs:label ?stateLabel .
+  FILTER(STRSTARTS(LCASE(STR(?stateLabel)), ""new""))
+}","manufacturer	manufacturerLabel	state	stateLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 37",,complete
+140,"Which industries have more than 100 suppliers that also make products containing the word ""Pipe""?",Compositional,gpt-5,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?industry ?industryLabel (COUNT(DISTINCT ?supplier) AS ?supplierCount)
+WHERE {
+  ?supplier a iof-core:Manufacturer ;
+            sdk:suppliesToIndustry ?industry ;
+            sdk:manufactures ?product .
+  ?product rdfs:label ?prodLabel .
+  FILTER(regex(str(?prodLabel), ""pipe"", ""i""))
+  OPTIONAL { ?industry rdfs:label ?industryLabel . }
+}
+GROUP BY ?industry ?industryLabel
+HAVING (COUNT(DISTINCT ?supplier) > 100)
+ORDER BY DESC(?supplierCount)","industry	industryLabel	supplierCount
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 9",,complete
+141,"Among manufacturers in the Automotive industry, which ones have both Machining and Surface Finishing capabilities?",Compositional,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                rdfs:label ?manufacturerLabel ;
+                sdk:suppliesToIndustry ?industry ;
+                sdk:hasProcessCapability ?capM , ?capS .
+  ?industry rdfs:label ""Automotive"" .
+  ?capM a sdk:MachiningCapability .
+  ?capS a sdk:SurfaceFinishingCapability .
+}
+ORDER BY ?manufacturerLabel","manufacturer	manufacturerLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 1179",,complete
+142,Which manufacturers that manufacture Graphite-related products are located in the same state as a Renewable Energy Industry supplier?,Compositional,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel ?state ?stateLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:hasMaterialCapability ?matCap ;
+                sdk:organizationLocatedIn ?manuSite .
+  ?matCap a sdk:GraphiteProcessingCapability .
+  ?manuSite sdk:locatedInCity ?manuCity .
+  ?manuCity sdk:locatedInState ?state .
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel . }
+  OPTIONAL { ?state rdfs:label ?stateLabel . }
+
+  ?supplier sdk:organizationLocatedIn ?supSite ;
+            sdk:suppliesToIndustry ?industry .
+  ?industry a sdk:RenewableEnergyIndustry .
+  ?supSite sdk:locatedInCity ?supCity .
+  ?supCity sdk:locatedInState ?state .
+}","manufacturer	manufacturerLabel	state	stateLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 168",,complete
+143,"For each city, return the average employee count of manufacturers with Heat Treating capabilities.",Compositional,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX bfo: <http://purl.obolibrary.org/obo/>
+
+SELECT ?city ?cityLabel (AVG(?emp) AS ?avgEmployeeCount)
+WHERE {
+  {
+    SELECT DISTINCT ?city ?cityLabel ?org (xsd:integer(REPLACE(STR(?rawEmp), "","", """")) AS ?emp)
+    WHERE {
+      ?org a iof-core:Manufacturer ;
+           sdk:hasProcessCapability ?cap ;
+           sdk:organizationLocatedIn ?site ;
+           sdk:hasNumberOfEmployees ?rawEmp .
+      ?cap a ?capType .
+      VALUES ?capType {
+        sdk:HeatTreatingCapability
+        sdk:StressRelievingCapability
+        sdk:ThroughHardeningCapability
+        sdk:AustemperingCapability
+        sdk:TemperingCapability
+        sdk:FullAnnealingCapability
+        sdk:SurfaceHardeningCapability
+        sdk:AnnealingCapability
+        sdk:HardeningCapability
+        sdk:ColdTreatmentCapability
+      }
+      ?site sdk:locatedInCity ?city .
+      OPTIONAL { ?city rdfs:label ?cityLabel . }
+    }
+  }
+}
+GROUP BY ?city ?cityLabel
+ORDER BY ?cityLabel","city	cityLabel	avgEmployeeCount
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 67",,complete
+144,Which manufacturers supply to both Agriculture and Construction industries and are located at latitude > 40.0?,Compositional,gpt-5,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel ?lat
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                rdfs:label ?manufacturerLabel ;
+                sdk:suppliesToIndustry ?indAgri ;
+                sdk:suppliesToIndustry ?indConstr ;
+                sdk:organizationLocatedIn ?site .
+  ?indAgri rdfs:label ?agriLabel .
+  ?indConstr rdfs:label ?constrLabel .
+  FILTER(LCASE(STR(?agriLabel)) = ""agriculture"")
+  FILTER(LCASE(STR(?constrLabel)) = ""construction"")
+  ?site sdk:hasSpatialCoordinates ?coords .
+  ?coords sdk:hasLatitudeValue ?lat .
+  FILTER(xsd:float(?lat) > 40.0)
+}","manufacturer	manufacturerLabel	lat
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 525",,complete
+145,Show me all companies that deliver goods or services to the Automotive sector.,Linguistic Diversity,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?company ?companyLabel ?industry ?industryLabel
+WHERE {
+  ?company a iof-core:Manufacturer ;
+           sdk:suppliesToIndustry ?industry .
+  OPTIONAL { ?company rdfs:label ?companyLabel . }
+  ?industry rdfs:label ?industryLabel .
+  FILTER(CONTAINS(LCASE(STR(?industryLabel)), ""automotive""))
+}","company	companyLabel	industry	industryLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 4545",,complete
+146,List companies capable of handling ceramics as a material.,Linguistic Diversity,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?company ?companyLabel
+WHERE {
+  ?company a iof-core:Manufacturer ;
+           sdk:hasMaterialCapability ?cap .
+  ?cap a sdk:CeramicProcessingCapability .
+  OPTIONAL { ?company rdfs:label ?companyLabel . }
+}","company	companyLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 1388",,complete
+147,Who is the largest employer among all manufacturers in the dataset?,Linguistic Diversity,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?manufacturer ?manufacturerLabel ?employees
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:hasNumberOfEmployees ?empLit .
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel . }
+  BIND(xsd:integer(REPLACE(STR(?empLit), "","", """")) AS ?employees)
+}
+ORDER BY DESC(?employees)
+LIMIT 1","manufacturer	manufacturerLabel	employees
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 1
+",,complete
+148,Which companies perform processes classified as additive manufacturing?,Linguistic Diversity,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?company ?companyLabel
+WHERE {
+  ?company a iof-core:Manufacturer ;
+           sdk:hasProcessCapability ?cap .
+  ?cap a ?capClass .
+  VALUES ?capClass {
+    sdk:AdditiveManufacturingCapability
+    sdk:PowderDepositionCapability
+    sdk:SolidDepositionCapability
+    sdk:FusedDepositionModelingCapability
+    sdk:PolymerDepositionCapability
+    sdk:DropOnDemandCapability
+    sdk:SelectiveLaserMeltingCapability
+    sdk:LaminatedObjectManufacturingCapability
+  }
+  OPTIONAL { ?company rdfs:label ?companyLabel }
+}","company	companyLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 944",,complete
+149,Which sectors attract the greatest number of supplier companies?,Linguistic Diversity,gpt-5,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?sector ?sectorLabel ?supplierCount
+WHERE {
+  {
+    SELECT ?sector (COUNT(DISTINCT ?org) AS ?supplierCount)
+    WHERE {
+      ?org a iof-core:Manufacturer ;
+           sdk:suppliesToIndustry ?sector .
+    }
+    GROUP BY ?sector
+  }
+  OPTIONAL { ?sector rdfs:label ?sectorLabel }
+  {
+    SELECT (MAX(?c) AS ?maxCount)
+    WHERE {
+      SELECT ?sector2 (COUNT(DISTINCT ?org2) AS ?c)
+      WHERE {
+        ?org2 a iof-core:Manufacturer ;
+              sdk:suppliesToIndustry ?sector2 .
+      }
+      GROUP BY ?sector2
+    }
+  }
+  FILTER (?supplierCount = ?maxCount)
+}","sector	sectorLabel	supplierCount
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 2
+",,complete
+150,Show manufacturers with at least 100 employees.,Filters,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT ?manufacturer ?label ?employees
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:hasNumberOfEmployees ?emp ;
+                rdfs:label ?label .
+  BIND(xsd:integer(REPLACE(STR(?emp), "","", """")) AS ?employees)
+  FILTER(?employees >= 100)
+}
+ORDER BY DESC(?employees)","manufacturer	label	employees
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 164",,complete
+151,Which manufacturers have a business description longer than 20 characters?,Filters,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel ?descText ?length
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                rdfs:label ?manufacturerLabel ;
+                iof-core:describedBy ?desc .
+  ?desc a sdk:BusinessDescription ;
+        iof-scro:hasTextValue ?descText .
+  BIND(STRLEN(STR(?descText)) AS ?length)
+  FILTER(?length > 20)
+}","manufacturer	manufacturerLabel	descText	length
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 2661",,complete
+152,"Which manufacturers use primary NAICS 332996 and whose NAICS text mentions ""PIPE""?",Filters,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?manufacturerLabel ?naics ?code ?text
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:hasPrimaryNAICSClassifier ?naics ;
+                rdfs:label ?manufacturerLabel .
+  ?naics sdk:hasNAICSCodeValue ?code ;
+         sdk:hasNAICSTextValue ?text .
+  FILTER(STRSTARTS(STR(?code), ""332996""))
+  FILTER(CONTAINS(LCASE(STR(?text)), ""pipe""))
+}
+ORDER BY ?manufacturerLabel","manufacturer	manufacturerLabel	naics	code	text
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 238",,complete
+153,Which manufacturers supply to exactly two industries?,Aggregation,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?label
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:suppliesToIndustry ?industry .
+  OPTIONAL { ?manufacturer rdfs:label ?label . }
+}
+GROUP BY ?manufacturer ?label
+HAVING (COUNT(DISTINCT ?industry) = 2)","manufacturer	label
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 1860",,complete
+154,"Which manufacturers have both process and material capabilities, totaling four capabilities overall?",Compositional,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?label
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                rdfs:label ?label ;
+                sdk:hasProcessCapability ?proc ;
+                sdk:hasMaterialCapability ?mat .
+  {
+    ?manufacturer sdk:hasProcessCapability ?cap .
+  } UNION {
+    ?manufacturer sdk:hasMaterialCapability ?cap .
+  }
+}
+GROUP BY ?manufacturer ?label
+HAVING (COUNT(DISTINCT ?cap) = 4)","manufacturer	label
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 527",,complete
+155,Which manufacturers supply only Renewable Energy and Utilities (no other industries)?,Compositional,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?label
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                rdfs:label ?label ;
+                sdk:suppliesToIndustry ?ind .
+
+  FILTER EXISTS {
+    ?manufacturer sdk:suppliesToIndustry ?reInd .
+    ?reInd a sdk:RenewableEnergyIndustry .
+  }
+
+  FILTER EXISTS {
+    ?manufacturer sdk:suppliesToIndustry ?utInd .
+    ?utInd a sdk:UtilitiesIndustry .
+  }
+
+  FILTER NOT EXISTS {
+    ?manufacturer sdk:suppliesToIndustry ?otherInd .
+    FILTER NOT EXISTS { ?otherInd a sdk:RenewableEnergyIndustry }
+    FILTER NOT EXISTS { ?otherInd a sdk:UtilitiesIndustry }
+  }
+}
+GROUP BY ?manufacturer ?label
+HAVING (COUNT(DISTINCT ?ind) = 2)","manufacturer	label
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 4
+",,complete
+156,Whose industry list is exactly Renewable Energy and Utilities?,Industry-specific,gpt-5,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?org ?orgLabel
+WHERE {
+  ?org a iof-core:Manufacturer ;
+       sdk:suppliesToIndustry ?ind ;
+       sdk:suppliesToIndustry ?renInd ;
+       sdk:suppliesToIndustry ?utilInd .
+  ?renInd a sdk:RenewableEnergyIndustry .
+  ?utilInd a sdk:UtilitiesIndustry .
+  OPTIONAL { ?org rdfs:label ?orgLabel. }
+}
+GROUP BY ?org ?orgLabel
+HAVING (COUNT(DISTINCT ?ind) = 2)","org	orgLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 4
+",,complete
+157,Which manufacturers hold both ISO 9001 and ISO 14001?,Compositional,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?name
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:hasCertificate ?c1, ?c2 .
+  ?c1 a sdk:ISO9001 .
+  ?c2 a sdk:ISO14001 .
+  OPTIONAL { ?manufacturer rdfs:label ?name }
+}
+ORDER BY ?name ?manufacturer","manufacturer	name
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 301",,complete
+158,Who makes the most products? Include ties.,Superlatives,gpt-5,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?org ?orgLabel ?count
+WHERE {
+  {
+    SELECT ?org (COUNT(DISTINCT ?prod) AS ?count)
+    WHERE {
+      ?org a iof-core:Manufacturer ;
+           sdk:manufactures ?prod .
+      ?prod a iof-core:MaterialProduct .
+    }
+    GROUP BY ?org
+  }
+  {
+    SELECT (MAX(?c) AS ?maxCount)
+    WHERE {
+      SELECT ?org (COUNT(DISTINCT ?prod) AS ?c)
+      WHERE {
+        ?org a iof-core:Manufacturer ;
+             sdk:manufactures ?prod .
+        ?prod a iof-core:MaterialProduct .
+      }
+      GROUP BY ?org
+    }
+  }
+  FILTER (?count = ?maxCount)
+  OPTIONAL { ?org rdfs:label ?orgLabel }
+}
+ORDER BY ?org","org	orgLabel	count
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 1
+",,complete
+159,Which industry type has the most supplier manufacturers? Include ties.,Industry-specific,gpt-5,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+
+SELECT ?industryType ?supplierCount
+WHERE {
+  {
+    SELECT ?industryType (COUNT(DISTINCT ?m) AS ?supplierCount)
+    WHERE {
+      ?m a iof-core:Manufacturer ;
+         sdk:suppliesToIndustry ?ind .
+      ?ind a ?industryType .
+    }
+    GROUP BY ?industryType
+  }
+  {
+    SELECT (MAX(?cnt) AS ?maxCount)
+    WHERE {
+      {
+        SELECT ?industryType (COUNT(DISTINCT ?m) AS ?cnt)
+        WHERE {
+          ?m a iof-core:Manufacturer ;
+             sdk:suppliesToIndustry ?ind .
+          ?ind a ?industryType .
+        }
+        GROUP BY ?industryType
+      }
+    }
+  }
+  FILTER(?supplierCount = ?maxCount)
+}
+ORDER BY ?industryType","industryType	supplierCount
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 1
+",,complete
+160,"For each state, who are the top employers by headcount? Include ties.",Nested Subqueries,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?state ?stateLabel ?org ?orgLabel ?headcount
+WHERE {
+  ?org a iof-core:Manufacturer ;
+       rdfs:label ?orgLabel ;
+       sdk:hasNumberOfEmployees ?empLit ;
+       sdk:organizationLocatedIn ?site .
+  ?site sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  ?state a sdk:State ;
+         rdfs:label ?stateLabel .
+  BIND(xsd:integer(REPLACE(STR(?empLit), "","", """")) AS ?headcount)
+
+  {
+    SELECT ?state (MAX(?emp) AS ?maxEmp)
+    WHERE {
+      ?org2 a iof-core:Manufacturer ;
+             sdk:hasNumberOfEmployees ?empLit2 ;
+             sdk:organizationLocatedIn ?site2 .
+      ?site2 sdk:locatedInCity ?city2 .
+      ?city2 sdk:locatedInState ?state .
+      BIND(xsd:integer(REPLACE(STR(?empLit2), "","", """")) AS ?emp)
+    }
+    GROUP BY ?state
+  }
+
+  FILTER(?headcount = ?maxEmp)
+}
+ORDER BY ?stateLabel ?orgLabel","state	stateLabel	org	orgLabel	headcount
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 34",,complete
+161,Who has the most total capabilities when you combine process and material?,Superlatives,gpt-5,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?org ?orgLabel (COUNT(DISTINCT ?cap) AS ?totalCapabilities)
+WHERE {
+  ?org a iof-core:Manufacturer .
+  OPTIONAL { ?org rdfs:label ?orgLabel . }
+  ?org (sdk:hasProcessCapability|sdk:hasMaterialCapability) ?cap .
+}
+GROUP BY ?org ?orgLabel
+ORDER BY DESC(?totalCapabilities)
+LIMIT 1","org	orgLabel	totalCapabilities
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 1
+",,complete
+162,Which primary NAICS code shows up most often across manufacturers?,Superlatives,gpt-5,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+
+SELECT ?naicsCode (COUNT(DISTINCT ?m) AS ?manufacturerCount)
+WHERE {
+  ?m a iof-core:Manufacturer ;
+     sdk:hasPrimaryNAICSClassifier ?naicsInst .
+  ?naicsInst sdk:hasNAICSCodeValue ?naicsCode .
+}
+GROUP BY ?naicsCode
+ORDER BY DESC(?manufacturerCount)
+LIMIT 1","naicsCode	manufacturerCount
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 1
+",,complete
+163,"For each manufacturer in the database, produce a ‘City, State’ field. Replace any missing city or state with ‘Unknown’.",OPTIONAL/UNION,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?cityState
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  OPTIONAL {
+    ?manufacturer sdk:organizationLocatedIn ?site .
+    OPTIONAL {
+      ?site sdk:locatedInCity ?city .
+      OPTIONAL { ?city rdfs:label ?cityLabel . }
+      OPTIONAL {
+        ?city sdk:locatedInState ?state .
+        OPTIONAL { ?state rdfs:label ?stateLabel . }
+      }
+    }
+  }
+  BIND(STR(COALESCE(?cityLabel, ""Unknown"")) AS ?cityStr)
+  BIND(STR(COALESCE(?stateLabel, ""Unknown"")) AS ?stateStr)
+  BIND(CONCAT(?cityStr, "", "", ?stateStr) AS ?cityState)
+}","manufacturer	cityState
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 10000",,complete
+164,"List each manufacturer with its site coordinates when available; otherwise say ""no-coords.""",OPTIONAL/UNION,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?manufacturerLabel ?coordinates
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel . }
+  OPTIONAL {
+    ?manufacturer sdk:organizationLocatedIn ?site .
+    OPTIONAL {
+      ?site sdk:hasSpatialCoordinates ?coord .
+      OPTIONAL { ?coord sdk:hasLatitudeValue ?lat . }
+      OPTIONAL { ?coord sdk:hasLongitudeValue ?long . }
+    }
+  }
+  BIND(IF(BOUND(?lat) && BOUND(?long),
+           CONCAT(STR(?lat), "","", STR(?long)),
+           ""no-coords"") AS ?coordinates)
+}","manufacturer	coordinates
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 10000",,complete
+165,"For each manufacturer, show the ZIP if it exists; otherwise the postal address text; otherwise the company name.",OPTIONAL/UNION,gpt-5,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer (COALESCE(?zipVal, ?addrText, ?name) AS ?preferredValue)
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  OPTIONAL { ?manufacturer rdfs:label ?name . }
+  OPTIONAL {
+    ?manufacturer sdk:organizationLocatedIn ?site .
+    OPTIONAL {
+      ?site sdk:hasZIPcode ?zip .
+      ?zip sdk:hasIntegerValue ?zipVal .
+    }
+    OPTIONAL {
+      ?site sdk:hasPostalAddress ?addr .
+      ?addr iof-scro:hasTextValue ?addrText .
+    }
+  }
+}","manufacturer
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 10000",,complete
+166,"For each manufacturer, list all capability names (process and material together) in one column.",OPTIONAL/UNION,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?manufacturerLabel ?capabilityLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                rdfs:label ?manufacturerLabel ;
+                (sdk:hasProcessCapability|sdk:hasMaterialCapability) ?capability .
+  ?capability rdfs:label ?capabilityLabel .
+}
+ORDER BY ?manufacturerLabel ?capabilityLabel","manufacturer	manufacturerLabel	capabilityLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 10000",,complete
+167,"Show manufacturers that either have a process capability ending in ""ing"" or have any material capability.",OPTIONAL/UNION,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel . }
+  {
+    ?manufacturer sdk:hasProcessCapability ?procCap .
+    ?procCap rdfs:label ?procLabel .
+    FILTER regex(str(?procLabel), ""ing$"", ""i"")
+  }
+  UNION
+  {
+    ?manufacturer sdk:hasMaterialCapability ?matCap .
+  }
+}","manufacturer	manufacturerLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 10000",,complete
+168,"Which manufacturers can you trace from company ? site ? city ? state, and what's the state name?",Multi-hop,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerName ?site ?city ?cityName ?state ?stateName
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                rdfs:label ?manufacturerName ;
+                sdk:organizationLocatedIn ?site .
+  ?site sdk:locatedInCity ?city .
+  ?city rdfs:label ?cityName ;
+        sdk:locatedInState ?state .
+  ?state rdfs:label ?stateName .
+}","manufacturer	manufacturerName	site	city	cityName	state	stateName
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 10000",,complete
+169,Which manufacturers reach a state either via site?city?state or by a direct company?state link?,OPTIONAL/UNION,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel ?state ?stateLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  {
+    ?manufacturer sdk:organizationLocatedIn ?site .
+    ?site sdk:locatedInCity ?city .
+    ?city sdk:locatedInState ?state .
+  }
+  UNION
+  {
+    ?manufacturer sdk:locatedInState ?state .
+  }
+  ?state a sdk:State .
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel . }
+  OPTIONAL { ?state rdfs:label ?stateLabel . }
+}","manufacturer	manufacturerLabel	state	stateLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 10000",,complete
+170,"Which manufacturers have process capability names where every one ends with ""ing""?",Boolean/Existential,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?manufacturerName
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                rdfs:label ?manufacturerName ;
+                sdk:hasProcessCapability ?cap .
+  ?cap rdfs:label ?capLabel .
+}
+GROUP BY ?manufacturer ?manufacturerName
+HAVING (COUNT(?cap) > 0 && SUM(IF(STRENDS(LCASE(STR(?capLabel)), ""ing""), 0, 1)) = 0)","manufacturer	manufacturerName
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 9189",,complete
+171,Which manufacturers' material capabilities are only Urethane and/or Stainless Steel and/or Iron and/or Bronze  (no others)?,Compositional,gpt-5,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                rdfs:label ?manufacturerLabel .
+
+  FILTER EXISTS {
+    ?manufacturer sdk:hasMaterialCapability ?capAllowed .
+    ?capAllowed a ?typeAllowed .
+    FILTER(?typeAllowed IN (
+      sdk:UrethaneProcessingCapability,
+      sdk:StainlessSteelProcessingCapability,
+      sdk:BronzeProcessingCapability
+    ))
+  }
+
+  FILTER NOT EXISTS {
+    ?manufacturer sdk:hasMaterialCapability ?capOther .
+    ?capOther a ?typeOther .
+    FILTER(?typeOther NOT IN (
+      sdk:UrethaneProcessingCapability,
+      sdk:StainlessSteelProcessingCapability,
+      sdk:BronzeProcessingCapability
+    ))
+  }
+}","No results found.
+",,complete
+172,Which manufacturers have a site but are missing either latitude or longitude?,Missing Data,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel ?site
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:organizationLocatedIn ?site .
+  ?site a sdk:GeospatialLocation .
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel . }
+  OPTIONAL { ?site sdk:hasSpatialCoordinates ?coord . }
+  OPTIONAL { ?coord sdk:hasLatitudeValue ?lat . }
+  OPTIONAL { ?coord sdk:hasLongitudeValue ?lon . }
+  FILTER(!BOUND(?lat) || !BOUND(?lon))
+}","manufacturer	manufacturerLabel	site
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 125",,complete
+173,Which manufacturers have at least one certificate but no products?,Missing Data,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?label
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:hasCertificate ?cert .
+  FILTER NOT EXISTS { ?manufacturer sdk:manufactures ?product }
+  OPTIONAL { ?manufacturer rdfs:label ?label }
+}","manufacturer
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 2453",,complete
+174,Which manufacturers have no business description-or only a blank one?,Missing Data,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?label
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  OPTIONAL { ?manufacturer rdfs:label ?label . }
+  OPTIONAL {
+    ?manufacturer iof-core:describedBy ?desc .
+    OPTIONAL { ?desc iof-scro:hasTextValue ?txt . }
+  }
+  FILTER ( !BOUND(?desc) || !BOUND(?txt) || REGEX(STR(?txt), ""^\\s*$"") )
+}","manufacturer
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 10000",,complete
+175,Which manufacturers don't supply to any industry?,Missing Data,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?manufacturerLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  FILTER NOT EXISTS { ?manufacturer sdk:suppliesToIndustry ?industry . }
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel . }
+}","manufacturer	manufacturerLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 2712",,complete
+176,Which manufacturers have more certificates than the overall average?,Nested Subqueries,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?manufacturerLabel ?certCount
+WHERE {
+  {
+    SELECT ?manufacturer (COUNT(DISTINCT ?cert) AS ?certCount)
+    WHERE {
+      ?manufacturer a iof-core:Manufacturer .
+      OPTIONAL { ?manufacturer sdk:hasCertificate ?cert . }
+    }
+    GROUP BY ?manufacturer
+  }
+  {
+    SELECT (AVG(?cnt) AS ?avgCerts)
+    WHERE {
+      SELECT ?m (COUNT(DISTINCT ?c) AS ?cnt)
+      WHERE {
+        ?m a iof-core:Manufacturer .
+        OPTIONAL { ?m sdk:hasCertificate ?c . }
+      }
+      GROUP BY ?m
+    }
+  }
+  FILTER (?certCount > ?avgCerts)
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel . }
+}
+ORDER BY DESC(?certCount)","manufacturer	manufacturerLabel	certCount
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 5444",,complete
+177,"Within each industry, which manufacturers have above-average employee counts?",Nested Subqueries,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?industry ?industryLabel ?manufacturer ?manufacturerLabel ?employeeCount ?avgEmp
+WHERE {
+  {
+    SELECT ?industry (AVG(xsd:decimal(?emp)) AS ?avgEmp)
+    WHERE {
+      ?m a iof-core:Manufacturer ;
+         sdk:suppliesToIndustry ?industry ;
+         sdk:hasNumberOfEmployees ?emp .
+    }
+    GROUP BY ?industry
+  }
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:suppliesToIndustry ?industry ;
+                sdk:hasNumberOfEmployees ?emp2 ;
+                rdfs:label ?manufacturerLabel .
+  OPTIONAL { ?industry rdfs:label ?industryLabel . }
+  BIND(xsd:decimal(?emp2) AS ?employeeCount)
+  FILTER(?employeeCount > ?avgEmp)
+}
+ORDER BY ?industryLabel ?manufacturerLabel","No results found.
+",,complete
+178,"For each state, what's the average employee count among manufacturers that make any product with a digit in the name?",Nested Subqueries,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?state ?stateLabel (AVG(?employees) AS ?avgEmployees)
+WHERE {
+  ?org a iof-core:Manufacturer ;
+       sdk:hasNumberOfEmployees ?empLit ;
+       sdk:organizationLocatedIn ?site .
+  ?site sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  ?state rdfs:label ?stateLabel .
+  FILTER EXISTS {
+    ?org sdk:manufactures ?prod .
+    ?prod rdfs:label ?prodLabel .
+    FILTER(REGEX(STR(?prodLabel), ""\\d""))
+  }
+  BIND(xsd:integer(REPLACE(STR(?empLit), "","", """")) AS ?employees)
+}
+GROUP BY ?state ?stateLabel
+ORDER BY ?stateLabel","state	stateLabel	avgEmployees
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 1
+",,complete
+179,"For each state, give two numbers: total process capabilities and total material capabilities.",Aggregation,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?state ?stateLabel
+       (COUNT(DISTINCT ?pCap) AS ?totalProcessCapabilities)
+       (COUNT(DISTINCT ?mCap) AS ?totalMaterialCapabilities)
+WHERE {
+  ?org a iof-core:Manufacturer ;
+       sdk:organizationLocatedIn ?site .
+  ?site sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  OPTIONAL { ?org sdk:hasProcessCapability ?pCap . }
+  OPTIONAL { ?org sdk:hasMaterialCapability ?mCap . }
+  OPTIONAL { ?state rdfs:label ?stateLabel . }
+}
+GROUP BY ?state ?stateLabel
+ORDER BY ?stateLabel","state	stateLabel	totalProcessCapabilities	totalMaterialCapabilities
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 91",,complete
+180,"For each primary NAICS code, show how many manufacturers use it, how many products those manufacturers make in total, and the average employee count.",Aggregation,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT
+  ?naicsCode
+  ?naicsText
+  (COUNT(DISTINCT ?org) AS ?manufacturerCount)
+  (COUNT(DISTINCT ?prod) AS ?totalProductCount)
+  (AVG(DISTINCT ?empClean) AS ?avgEmployeeCount)
+WHERE {
+  ?org a iof-core:Manufacturer ;
+       sdk:hasPrimaryNAICSClassifier ?naicsInst .
+  ?naicsInst sdk:hasNAICSCodeValue ?naicsCode .
+  OPTIONAL { ?naicsInst sdk:hasNAICSTextValue ?naicsText . }
+  OPTIONAL { ?org sdk:manufactures ?prod . }
+  OPTIONAL {
+    ?org sdk:hasNumberOfEmployees ?empLit .
+    BIND(xsd:integer(REPLACE(STR(?empLit), "","", """")) AS ?empClean)
+  }
+}
+GROUP BY ?naicsCode ?naicsText
+ORDER BY ?naicsCode","naicsCode	naicsText	manufacturerCount	totalProductCount	avgEmployeeCount
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 327",,complete
+181,Return company names in English only (or all if no language tags).,Filters,gpt-5,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?name
+WHERE {
+  ?org a iof-core:Manufacturer .
+  {
+    ?org rdfs:label ?name .
+    FILTER(langMatches(lang(?name), ""en""))
+  }
+  UNION
+  {
+    ?org rdfs:label ?name .
+    FILTER(lang(?name) = """")
+    FILTER NOT EXISTS {
+      ?org rdfs:label ?enName .
+      FILTER(langMatches(lang(?enName), ""en""))
+    }
+  }
+}
+ORDER BY ?name","name
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 10000",,complete
+182,"Which manufacturers have ""Company"" in either their name or their description?",Filters,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/>
+
+SELECT DISTINCT ?manufacturer ?name ?description
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  OPTIONAL { ?manufacturer rdfs:label ?name . }
+  OPTIONAL {
+    ?manufacturer iof-core:describedBy ?desc .
+    ?desc iof-scro:hasTextValue ?description .
+  }
+  FILTER(
+    (BOUND(?name) && CONTAINS(LCASE(STR(?name)), ""company"")) ||
+    (BOUND(?description) && CONTAINS(LCASE(STR(?description)), ""company""))
+  )
+}","manufacturer	name
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 933",,complete
+183,"Which manufacturers make products named exactly ""Tube Bending"" or ""Punching""?",Filters,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel ?product ?productLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:manufactures ?product ;
+                rdfs:label ?manufacturerLabel .
+  ?product a iof-core:MaterialProduct ;
+           rdfs:label ?productLabel .
+  FILTER(?productLabel = ""Tube Bending"" || ?productLabel = ""Punching"")
+}","manufacturer	manufacturerLabel	product	productLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 3
+",,complete
+184,"Who in California has at least 20 employees and at least one process capability whose name ends with ""ing""?",Compositional,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT ?org ?orgLabel
+WHERE {
+  ?org a iof-core:Manufacturer ;
+       rdfs:label ?orgLabel ;
+       sdk:organizationLocatedIn ?site ;
+       sdk:hasNumberOfEmployees ?num ;
+       sdk:hasProcessCapability ?cap .
+  ?cap rdfs:label ?capLabel .
+  FILTER(REGEX(?capLabel, ""ing$"", ""i""))
+  ?site sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  ?state rdfs:label ?stateLabel .
+  FILTER(LCASE(STR(?stateLabel)) = ""california"")
+  BIND(REPLACE(STR(?num), "","", """") AS ?numClean)
+  BIND(xsd:integer(?numClean) AS ?numInt)
+  FILTER(?numInt >= 20)
+}","org	orgLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 3
+",,complete
+185,Who supplies to both Renewable Energy and Utilities and also holds ISO 9001?,Compositional,gpt-5,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?org ?orgLabel
+WHERE {
+  ?org sdk:suppliesToIndustry ?indRE .
+  ?indRE a sdk:RenewableEnergyIndustry .
+  ?org sdk:suppliesToIndustry ?indUtil .
+  ?indUtil a sdk:UtilitiesIndustry .
+  ?org sdk:hasCertificate ?cert .
+  ?cert a sdk:ISO9001 .
+  OPTIONAL { ?org rdfs:label ?orgLabel . }
+}","org	orgLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 55",,complete
+186,"For each city, what's the average employee count among manufacturers with four or more total capabilities?",Compositional,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?city ?cityLabel (AVG(?emp) AS ?avgEmployeeCount)
+WHERE {
+  ?org a iof-core:Manufacturer ;
+       sdk:hasNumberOfEmployees ?empLit ;
+       sdk:organizationLocatedIn ?site .
+  BIND(xsd:integer(REPLACE(STR(?empLit), "","", """")) AS ?emp)
+  ?site sdk:locatedInCity ?city .
+  OPTIONAL { ?city rdfs:label ?cityLabel . }
+
+  {
+    SELECT ?org (COUNT(DISTINCT ?cap) AS ?capCount)
+    WHERE {
+      ?org a iof-core:Manufacturer .
+      { ?org sdk:hasProcessCapability ?cap . }
+      UNION
+      { ?org sdk:hasMaterialCapability ?cap . }
+    }
+    GROUP BY ?org
+  }
+  FILTER(?capCount >= 4)
+}
+GROUP BY ?city ?cityLabel
+ORDER BY ?cityLabel","city	cityLabel	avgEmployeeCount
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 1033",,complete
+187,"Which manufacturers located in Arizona have a ZIP code other than ""85001"" and a latitude greater than 33.4?",Filters,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel ?zipString ?lat
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                rdfs:label ?manufacturerLabel ;
+                sdk:organizationLocatedIn ?site .
+  ?site sdk:hasSpatialCoordinates ?coords ;
+        sdk:hasZIPcode ?zipRes ;
+        sdk:locatedInCity ?city .
+  ?coords sdk:hasLatitudeValue ?lat .
+  ?zipRes sdk:hasIntegerValue ?zip .
+  ?city sdk:locatedInState ?state .
+  ?state rdfs:label ""Arizona"" .
+  BIND(STR(?zip) AS ?zipString)
+  FILTER(?lat > ""33.4""^^xsd:float)
+  FILTER(?zipString != ""85001"")
+}","No results found.
+",,complete
+188,Which manufacturers have exactly two products or two process capabilities and two material capabilities?,Compositional,gpt-5,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+
+SELECT ?manufacturer
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  OPTIONAL { ?manufacturer sdk:manufactures ?prod . }
+  OPTIONAL { ?manufacturer sdk:hasProcessCapability ?pc . }
+  OPTIONAL { ?manufacturer sdk:hasMaterialCapability ?mc . }
+}
+GROUP BY ?manufacturer
+HAVING (
+  (COUNT(DISTINCT ?prod) = 2)
+  ||
+  ((COUNT(DISTINCT ?pc) = 2) && (COUNT(DISTINCT ?mc) = 2))
+)","manufacturer
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 346",,complete

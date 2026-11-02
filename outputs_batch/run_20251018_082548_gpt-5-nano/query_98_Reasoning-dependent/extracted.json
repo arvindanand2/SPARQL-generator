@@ -1,0 +1,60 @@
+{
+  "clauses": [
+    {
+      "object_hint": "Abrasive Machining",
+      "relation_hint": "has process capability",
+      "connective": "IMPLIED",
+      "filter": {
+        "op": "eq",
+        "value": "Abrasive Machining",
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "subject_hint": "manufacturers",
+      "enum_values": [
+        "Abrasive Machining"
+      ],
+      "type": "spo"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Abrasive Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/AbrassiveMachiningCapability"
+    },
+    {
+      "label": "Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/MachiningCapability"
+    },
+    {
+      "label": "Diamond Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/DiamondMachiningCapability"
+    },
+    {
+      "label": "Grinding",
+      "iri": "http://asu.edu/semantics/SUDOKN/GrindingCapability"
+    },
+    {
+      "label": "Specialized Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/SpecializedMachiningCapability"
+    },
+    {
+      "label": "Carbide Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/CarbideMachiningCapability"
+    },
+    {
+      "label": "Standard Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/MachiningCapability"
+    },
+    {
+      "label": "Nonconventional Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/MachiningCapability"
+    },
+    {
+      "label": "Laser Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/MachiningCapability"
+    }
+  ]
+}

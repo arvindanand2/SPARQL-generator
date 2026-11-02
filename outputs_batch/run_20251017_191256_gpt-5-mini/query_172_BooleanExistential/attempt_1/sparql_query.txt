@@ -1,0 +1,14 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  ?manufacturer sdk:hasProcessCapability ?cap .
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel. }
+  FILTER NOT EXISTS {
+    ?manufacturer sdk:hasProcessCapability ?cap2 .
+    ?cap2 rdfs:label ?cap2Label .
+    FILTER(!regex(?cap2Label, "ing$","i"))
+  }
+}

@@ -1,0 +1,12 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+
+SELECT ?manufacturer (BOUND(?hasISO9001) AS ?HasISO9001)
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  OPTIONAL {
+    ?manufacturer sdk:hasCertificate ?cert .
+    ?cert a <http://asu.edu/semantics/SUDOKN/ISO9001> .
+    BIND(true AS ?hasISO9001)
+  }
+}

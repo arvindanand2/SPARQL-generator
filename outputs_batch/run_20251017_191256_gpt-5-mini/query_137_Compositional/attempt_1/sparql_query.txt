@@ -1,0 +1,16 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT ?org ?orgLabel ?employeesNumber WHERE {
+  ?org a iof-core:Manufacturer ;
+       sdk:suppliesToIndustry ?industry ;
+       sdk:hasProcessCapability ?cap ;
+       sdk:hasNumberOfEmployees ?empStr .
+  ?industry a sdk:RenewableEnergyIndustry .
+  ?cap a sdk:CoatingCapability .
+  OPTIONAL { ?org rdfs:label ?orgLabel . }
+  BIND(xsd:integer(REPLACE(?empStr, ",", "")) AS ?employeesNumber)
+  FILTER(?employeesNumber > 200)
+}

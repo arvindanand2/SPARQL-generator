@@ -1,0 +1,66 @@
+Query_ID,Question,Category,Model,Success,Attempts,SPARQL_Query,Result_Preview,Error_Message,Stage
+0,"What is the number of employees for the company whose name contains ""Steel""?",Lookup,gpt-5-nano,No,10,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/> .
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/> .
+
+SELECT ?numEmployees WHERE {
+  ?manuf a iof-core:Manufacturer ;
+          rdfs:label ?name ;
+          sdk:hasNumberOfEmployees ?numEmployees .
+  FILTER(CONTAINS(LCASE(STR(?name)), ""steel""))
+}
+LIMIT 1",,"Attempt 1: Run 1 failed. Compressed error:
+Response:
+Response:
+b'MALFORMED QUERY: Encountered "" ""."" "". """" at line 1, column 78.\r\nWas expecting one of:\r\n    ""base"" ...\r\n    ""prefix"" ...\r\n    ""select"" ...\r\n    ""construct"" ...\r\n    ""describe"" ...\r\n    ""ask"" ...\r\n    '
+All retries failed.
+
+Attempt 2: Run 1 failed. Compressed error:
+Response:
+Response:
+b'MALFORMED QUERY: Encountered "" ""."" "". """" at line 1, column 78.\r\nWas expecting one of:\r\n    ""base"" ...\r\n    ""prefix"" ...\r\n   ",failed
+1,"What is the English name of the manufacturer that holds the certificate labeled ""ISO 9001""?",Lookup,gpt-5-nano,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?name WHERE {
+  ?manuf a sdk:Manufacturer ;
+          rdfs:label ?name ;
+          sdk:hasCertificate ?cert .
+  ?cert a sdk:ISO9001 .
+}","No results found.
+",,complete
+2,What is the NAICS text for the classifier with code 332996?,Lookup,gpt-5-nano,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?naicsText WHERE {
+  sdk:naics-332996.0-inst a sdk:NAICS332996.0 ;
+    sdk:hasNAICSTextValue ?naicsText ;
+    sdk:hasNAICSCodeValue ?code .
+  FILTER(?code = ""332996.0""^^xsd:integer)
+}","naicsText
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 2
+",,complete
+3,"What is the NAICS code for the classifier whose text contains ""PIPE AND PIPE FITTING""?",Lookup,gpt-5-nano,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+
+SELECT ?naicsCode ?naicsText
+WHERE {
+  ?naicsInst a sdk:NAICS332996.0 ;
+              sdk:hasNAICSTextValue ?naicsText ;
+              sdk:hasNAICSCodeValue ?naicsCode .
+  FILTER(CONTAINS(?naicsText, ""PIPE AND PIPE FITTING"")) .
+}","naicsCode	naicsText
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 1
+",,complete
+4,"Which process capability has a name that contains ""Machining""?",Lookup,gpt-5-nano,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?capability ?name
+WHERE {
+  ?capability a sdk:MachiningCapability ;
+              rdfs:label ?name .
+  FILTER (str(?name) = ""Machining"")
+}","capability	name
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 2866",,complete

@@ -1,0 +1,15 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX bfo: <http://purl.obolibrary.org/obo/>
+
+SELECT ?manufacturer ?label ?text
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                iof-core:describedBy ?desc .
+  ?desc iof-scro:hasTextValue ?text .
+  OPTIONAL { ?manufacturer rdfs:label ?label }
+  FILTER(STRLEN(STR(?text)) > 20)
+}

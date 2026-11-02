@@ -1,0 +1,53 @@
+{
+  "clauses": [
+    {
+      "object_hint": "business description text",
+      "subject_hint": "manufacturers",
+      "relation_hint": "has business description",
+      "type": "spo",
+      "connective": "IMPLIED"
+    },
+    {
+      "object_hint": "manufacturer name",
+      "subject_hint": "manufacturers",
+      "relation_hint": "company name term",
+      "type": "spo",
+      "connective": "FOLLOWUP"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "VDA",
+      "iri": "http://asu.edu/semantics/SUDOKN/VDA"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    },
+    {
+      "label": "QS Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QSQuality"
+    },
+    {
+      "label": "NIST",
+      "iri": "http://asu.edu/semantics/SUDOKN/nist"
+    },
+    {
+      "label": "BABA",
+      "iri": "http://asu.edu/semantics/SUDOKN/BABA"
+    },
+    {
+      "label": "IATF",
+      "iri": "http://asu.edu/semantics/SUDOKN/IATF"
+    }
+  ]
+}

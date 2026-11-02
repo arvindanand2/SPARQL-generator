@@ -1,0 +1,155 @@
+{
+  "clauses": [
+    {
+      "type": "spo",
+      "surface": "find gloves",
+      "char_start": 12,
+      "char_end": 22,
+      "subject_hint": "company",
+      "relation_hint": "produce",
+      "object_hint": "gloves",
+      "filter": {
+        "op": "eq",
+        "value": null,
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "enum_values": [],
+      "modifier": {
+        "kind": "limit",
+        "k": null,
+        "by": null
+      },
+      "connective": "IMPLIED",
+      "confidence": 0.78
+    },
+    {
+      "type": "spo",
+      "surface": "which are made for medical grade",
+      "char_start": 24,
+      "char_end": 55,
+      "subject_hint": "company",
+      "relation_hint": "made for",
+      "object_hint": "medical grade",
+      "filter": {
+        "op": "eq",
+        "value": null,
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "enum_values": [],
+      "modifier": {
+        "kind": "limit",
+        "k": null,
+        "by": null
+      },
+      "connective": "AND",
+      "confidence": 0.85
+    },
+    {
+      "type": "spo",
+      "surface": "in Savannah Georgia",
+      "char_start": 57,
+      "char_end": 75,
+      "subject_hint": "company",
+      "relation_hint": "located in",
+      "object_hint": "Savannah Georgia",
+      "filter": {
+        "op": "eq",
+        "value": null,
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "enum_values": [],
+      "modifier": {
+        "kind": "limit",
+        "k": null,
+        "by": null
+      },
+      "connective": "AND",
+      "confidence": 0.92
+    },
+    {
+      "type": "filter",
+      "surface": "which has more than 250 employees",
+      "char_start": 77,
+      "char_end": 109,
+      "subject_hint": "company",
+      "relation_hint": "employee count",
+      "object_hint": null,
+      "filter": {
+        "op": "gt",
+        "value": 250,
+        "unit": "employees",
+        "min": null,
+        "max": null
+      },
+      "enum_values": [],
+      "modifier": {
+        "kind": "limit",
+        "k": null,
+        "by": null
+      },
+      "connective": "AND",
+      "confidence": 0.82
+    },
+    {
+      "type": "spo",
+      "surface": "iso 9000 ceritified",
+      "char_start": 138,
+      "char_end": 156,
+      "subject_hint": "company",
+      "relation_hint": "have certification",
+      "object_hint": "ISO 9000",
+      "filter": {
+        "op": "eq",
+        "value": null,
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "enum_values": [],
+      "modifier": {
+        "kind": "limit",
+        "k": null,
+        "by": null
+      },
+      "connective": "FOLLOWUP",
+      "confidence": 0.86
+    },
+    {
+      "type": "spo",
+      "surface": "manufacture chips",
+      "char_start": 167,
+      "char_end": 183,
+      "subject_hint": "company",
+      "relation_hint": "manufacture",
+      "object_hint": "chips",
+      "filter": {
+        "op": "eq",
+        "value": null,
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "enum_values": [],
+      "modifier": {
+        "kind": "limit",
+        "k": null,
+        "by": null
+      },
+      "connective": "AND",
+      "confidence": 0.8
+    }
+  ],
+  "warnings": [
+    "Offsets are 0-based; char_end is inclusive.",
+    "Interpreting 'find gloves' as companies that produce/supply gloves.",
+    "Ambiguous antecedent for 'which has more than 250 employees' \u2014 assumed to refer to the company.",
+    "'Savannah Georgia' treated as City+State; consider mapping to locatedInCity=Savannah and locatedInState=Georgia.",
+    "Spelling note: 'ceritified' \u2248 'certified'; user specified ISO 9000 (not ISO 9001) \u2014 confirm intended certification class."
+  ]
+}

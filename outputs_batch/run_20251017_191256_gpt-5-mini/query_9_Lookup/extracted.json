@@ -1,0 +1,62 @@
+{
+  "clauses": [
+    {
+      "type": "spo",
+      "subject_hint": "cities",
+      "connective": "AND",
+      "filter": {
+        "op": "on",
+        "value": "San ",
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "relation_hint": "name contains",
+      "object_hint": "San "
+    },
+    {
+      "type": "spo",
+      "subject_hint": "cities",
+      "connective": "AND",
+      "relation_hint": "located in",
+      "object_hint": "states"
+    },
+    {
+      "type": "spo",
+      "subject_hint": "states",
+      "connective": "IMPLIED",
+      "relation_hint": "has name"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Silver",
+      "iri": "http://asu.edu/semantics/SUDOKN/SilverProcessingCapability"
+    },
+    {
+      "label": "Sand Blasting",
+      "iri": "http://asu.edu/semantics/SUDOKN/SandBlastingCapability"
+    },
+    {
+      "label": "Belt Sanding",
+      "iri": "http://asu.edu/semantics/SUDOKN/BeltSandingCapability"
+    },
+    {
+      "label": "Sintering",
+      "iri": "http://asu.edu/semantics/SUDOKN/SinteringCapability"
+    },
+    {
+      "label": "BABA",
+      "iri": "http://asu.edu/semantics/SUDOKN/BABA"
+    },
+    {
+      "label": "Silicone",
+      "iri": "http://asu.edu/semantics/SUDOKN/SiliconeProcessingCapability"
+    },
+    {
+      "label": "Submerged Arc Welding",
+      "iri": "http://asu.edu/semantics/SUDOKN/SubmergedArcWeldingCapability"
+    }
+  ]
+}

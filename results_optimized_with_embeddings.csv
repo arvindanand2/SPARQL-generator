@@ -1,0 +1,27 @@
+Query_ID,Question,Category,Model,Success,Attempts,Total_Time_Seconds,Extraction_Time,Extraction_LLM_Gen_Time,Extraction_Compression_Time,Extraction_IRI_Matching_Time,SPARQL_Gen_Time,Validation_Time,Correction_Time,SPARQL_Query,Result_Preview,Error_Message,Stage
+0,"What is the number of employees for the company whose name contains ""Steel""?",,Optimized (mini+4o),Yes,2,34.18,13.49,13.49,0.0,0.0,8.48,5.05,7.15,"PREFIX schema: <http://schema.org/>
+SELECT ?count WHERE {
+  ?org a schema:Organization ;
+       schema:name ?name ;
+       schema:numberOfEmployees ?count .
+  FILTER(CONTAINS(LCASE(?name), ""steel""))
+}
+LIMIT 1",No results found.,,complete
+1,"What is the English name of the manufacturer that holds the certificate labeled ""ISO 9001""?",,Optimized (mini+4o),No,3,47.91,8.72,8.72,0.0,0.0,8.06,14.47,16.65,,,"Query execution failed after 5 attempts:
+Attempt 1: <project>\.venv\Lib\site-packages\SPARQLWrapper\Wrapper.py:623: RuntimeWarning: not detected query type for query ''''
+  warnings.warn(
+<project>\.venv\Lib\site-packages\SPARQLWrapper\Wrapper.py:633: RuntimeWarning: unknown query type 'None'
+  warnings.warn(""unknown query type '%s'"" % r_queryType, RuntimeWarning)
+Run 1 failed. Compressed error:
+Response:
+Response:
+b'MALFORMED QUERY: Enco",initial_sparql_complete
+2,What is the NAICS text for the classifier with code 332996?,,Optimized (mini+4o),No,3,51.95,12.75,12.75,0.0,0.0,7.93,14.46,16.81,,,"Query execution failed after 5 attempts:
+Attempt 1: <project>\.venv\Lib\site-packages\SPARQLWrapper\Wrapper.py:623: RuntimeWarning: not detected query type for query ''''
+  warnings.warn(
+<project>\.venv\Lib\site-packages\SPARQLWrapper\Wrapper.py:633: RuntimeWarning: unknown query type 'None'
+  warnings.warn(""unknown query type '%s'"" % r_queryType, RuntimeWarning)
+Run 1 failed. Compressed error:
+Response:
+Response:
+b'MALFORMED QUERY: Enco",initial_sparql_complete

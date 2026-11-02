@@ -1,0 +1,3 @@
+manufacturer	codeValue	codeText
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 364

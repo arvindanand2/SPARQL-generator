@@ -1,0 +1,70 @@
+{
+  "clauses": [
+    {
+      "subject_hint": "manufacturers",
+      "filter": {
+        "op": "eq",
+        "value": "endswith:ing",
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "relation_hint": "has process capability",
+      "type": "spo",
+      "connective": "OR"
+    },
+    {
+      "object_hint": "any",
+      "subject_hint": "manufacturers",
+      "filter": {
+        "op": "eq",
+        "value": "any",
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "relation_hint": "has material capability",
+      "type": "spo",
+      "connective": "OR"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "Forming",
+      "iri": "http://asu.edu/semantics/SUDOKN/FormingCapability"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "NADCAP",
+      "iri": "http://asu.edu/semantics/SUDOKN/NADCAP"
+    },
+    {
+      "label": "Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/MachiningCapability"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    },
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    },
+    {
+      "label": "AS 9102",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9102"
+    }
+  ]
+}

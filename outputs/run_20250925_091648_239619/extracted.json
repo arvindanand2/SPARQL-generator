@@ -1,0 +1,40 @@
+{
+  "clauses": [
+    {
+      "type": "scope",
+      "enum_values": [
+        "Midwest, USA"
+      ],
+      "connective": "IMPLIED",
+      "subject_hint": "manufacturers",
+      "relation_hint": "located in",
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "region"
+      },
+      "filter": {
+        "op": "near",
+        "value": "Midwest, USA",
+        "unit": "region",
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "type": "spo",
+      "object_hint": "Aerospace",
+      "connective": "AND",
+      "subject_hint": "manufacturers",
+      "relation_hint": "supplies to industry",
+      "filter": {
+        "op": "eq",
+        "value": "Aerospace",
+        "unit": "",
+        "min": null,
+        "max": null
+      }
+    }
+  ],
+  "mapping": []
+}

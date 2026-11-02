@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "<project>\query_Graph.py", line 32, in <module>
+    print("\t".join(row))
+    ~~~~~^^^^^^^^^^^^^^^^
+  File "<user-home>\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\x83' in position 82: character maps to <undefined>

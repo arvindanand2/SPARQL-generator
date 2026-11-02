@@ -1,0 +1,5 @@
+Run 1 failed. Compressed error:
+Response:
+Response:
+b'MALFORMED QUERY: Encountered " "^^" "^^ "" at line 12, column 39.\r\nWas expecting one of:\r\n    ")" ...\r\n    "||" ...\r\n    "&&" ...\r\n    "+" ...\r\n    "-" ...\r\n    "*" ...\r\n    "/" ...\r\n    <INTEGER_POSITIVE> ...\r\n    <INTEGER_NEGATIVE> ...\r\n    <DECIMAL_POSITIVE> ...\r\n    <DECIMAL_NEGATIVE> ...\r\n    <DOUBLE_POSITIVE> ...\r\n    <DOUBLE_NEGATIVE> ...\r\n    '
+All retries failed.

@@ -1,0 +1,60 @@
+Label,Also Called,Hierarchy,Category,Definition
+Aerospace,,Aerospace,Aerospace,A manufacturer in this industry designs and builds aircraft, spacecraft, avionics, and propulsion systems for airlines, defense agencies, and space operators.
+Agriculture,,Agriculture,Agriculture,A manufacturer in this industry produces farm inputs and equipment—seeds, fertilizers, implements, and tractors—for growers and agribusinesses.
+Apparel,,Apparel,Apparel,A manufacturer in this industry makes garments, footwear, and accessories for fashion brands, retailers, and consumers.
+Audio And Visual,,Audio And Visual,Audio And Visual,A manufacturer in this industry produces TVs, speakers, cameras, and professional A/V systems for retailers, venues, and broadcasters.
+Automotive,,Automotive,Automotive,A manufacturer in this industry builds vehicles and components—powertrains, chassis, interiors, and ADAS—for OEMs, fleets, and dealers.
+Electric Automotive,,Automotive > Electric Automotive,Automotive,A manufacturer in this industry makes electric vehicles and systems—battery packs, e-axles, inverters, and chargers—for OEMs and fleets.
+Robotic In Automotive,,Automotive > Robotic In Automotive,Automotive,A manufacturer in this industry supplies industrial robots, vision systems, and tooling tailored to automotive assembly lines and Tier-1 suppliers.
+Business Equipment,,Business Equipment,Business Equipment,A manufacturer in this industry produces office hardware—printers, copiers, POS terminals, and scanners—for enterprises and channel partners.
+Chemical And Petrochemical,,Chemical And Petrochemical,Chemical And Petrochemical,A manufacturer in this industry synthesizes basic and specialty chemicals, polymers, and petrochemical feedstocks for industrial customers.
+Communications,,Communications,Communications,A manufacturer in this industry builds networking gear—routers, switches, and base stations—for carriers and enterprise networks.
+Construction,,Construction,Construction,A manufacturer in this industry fabricates building materials, prefab modules, and EPC components for contractors and infrastructure projects.
+Consumer Goods,,Consumer Goods,Consumer Goods,A manufacturer in this industry produces packaged goods and household products for retail distribution and consumer use.
+Defense,,Defense,Defense,A manufacturer in this industry delivers weapons systems, sensors, and military platforms for defense ministries and prime contractors.
+Education,,Education,Education,A manufacturer in this industry makes learning devices and classroom hardware for schools, universities, and training providers.
+Energy,,Energy,Energy,A manufacturer in this industry produces power-generation and grid equipment—turbines, switchgear, storage—for utilities and industrial users.
+Coal,,Energy > Coal,Energy,A manufacturer in this industry processes coal products and supplies equipment supporting coal extraction and power generation for utilities and steelmakers.
+Nuclear Energy,Nuclear,Energy > Nuclear Energy,Energy,A manufacturer in this industry builds reactor components, fuel assemblies, and balance-of-plant systems for nuclear utilities and governments.
+Oil And Gas,,Energy > Oil And Gas,Energy,A manufacturer in this industry supplies drilling, production, and refining equipment and materials for upstream, midstream, and downstream operators.
+Renewable Energy,,Energy > Renewable Energy,Energy,A manufacturer in this industry produces solar, wind, and storage equipment—modules, turbines, inverters—for developers and utilities.
+Offshore Wind Energy,,Energy > Renewable Energy > Offshore Wind Energy,Energy,A manufacturer in this industry builds offshore turbines, foundations, subsea cables, and substations for ocean-based wind farms.
+Solar Power,,Energy > Renewable Energy > Solar Power,Energy,A manufacturer in this industry makes PV cells/modules, inverters, and racking/BOS hardware for residential, commercial, and utility projects.
+Wind Energy,,Energy > Renewable Energy > Wind Energy,Energy,A manufacturer in this industry produces wind turbines, blades, towers, and nacelles for onshore and offshore wind projects.
+Entertainment And Media,,Entertainment And Media,Entertainment And Media,A manufacturer in this industry creates media hardware and devices—set-tops, consoles, cameras—for content creators and consumers.
+Food,,Food,Food,A manufacturer in this industry processes and packages food products and ingredients for retailers, foodservice, and brands.
+Beverage,,Food > Beverage,Food,A manufacturer in this industry formulates and bottles beverages—soft drinks, alcohol, and water—for retail and on-premise distribution.
+Restaurant,,Food > Restaurant,Food,A manufacturer in this industry produces commercial kitchen equipment and prepared meal products for restaurants and foodservice operators.
+Furniture,,Furniture,Furniture,A manufacturer in this industry makes residential and office furniture, fixtures, and mattresses for retailers and contract buyers.
+Government,,Government,Government,A manufacturer in this industry produces goods for public-sector needs—defense gear and infrastructure components—for government agencies.
+Healthcare,,Healthcare,Healthcare,A manufacturer in this industry supplies medical products and care-delivery equipment for hospitals, clinics, and providers.
+Information Technology,,Information Technology,Information Technology,A manufacturer in this industry builds IT products—hardware and integrated systems—and platforms for enterprises and consumers.
+Hardware And Devices,,Information Technology > Hardware And Devices,Information Technology,A manufacturer in this industry produces computing devices and peripherals for consumer and enterprise markets.
+Computer,,Information Technology > Hardware And Devices > Computer,Information Technology,A manufacturer in this industry makes PCs, servers, and components for businesses, consumers, and data centers.
+Electronic Product,,Information Technology > Hardware And Devices > Electronic Product,Information Technology,A manufacturer in this industry builds electronic assemblies and modules—sensors, power supplies—for OEMs and distributors.
+High Tech,,Information Technology > High Tech,Information Technology,A manufacturer in this industry produces advanced technology products across electronics and IT for enterprise and consumer applications.
+Machinery And Equipment,,Machinery And Equipment,Machinery And Equipment,A manufacturer in this industry fabricates capital equipment—CNC, compressors, pumps, and robotics—for industrial operations.
+Marine And Shipbuilding,,Marine And Shipbuilding,Marine And Shipbuilding,A manufacturer in this industry constructs ships and marine systems—hulls, propulsion, and offshore vessels—for navies and shipping lines.
+Medical Devices,,Medical Devices,Medical Devices,A manufacturer in this industry produces implants, diagnostics, imaging systems, and disposables for healthcare providers.
+Metal Production,,Metal Production,Metal Production,A manufacturer in this industry produces metals and alloys—steel, aluminum, copper—and castings for industrial sectors.
+Military,,Military,Military,A manufacturer in this industry supplies military platforms, munitions, and gear specifically for armed forces and defense contractors.
+Mining,,Mining,Mining,A manufacturer in this industry provides extraction equipment and processed mineral products for smelters, refiners, and manufacturers.
+Paper,,Paper,Paper,A manufacturer in this industry produces pulp and paper grades—printing, tissue, and packaging—for converters and publishers.
+Paperboard Products,Paper Board Product,Paper > Paperboard Products,Paper,A manufacturer in this industry makes cartons, corrugated boxes, and packaging board for CPG brands and e-commerce logistics.
+Pharmaceutical,,Pharmaceutical,Pharmaceutical,A manufacturer in this industry develops and produces drugs and APIs for wholesalers, pharmacies, hospitals, and healthcare systems.
+Plastic And Rubber,,Plastic And Rubber,Plastic And Rubber,A manufacturer in this industry produces polymers, elastomers, and molded parts—including tires—for industrial and consumer uses.
+Printing And Information,,Printing And Information,Printing And Information,A manufacturer in this industry produces printed materials, labels, and print systems for brands, publishers, and logistics.
+Recycling,,Recycling,Recycling,A manufacturer in this industry reprocesses recovered materials—metals, paper, plastics—into feedstock for industrial manufacturing.
+Retail,,Retail,Retail,A manufacturer in this industry produces private-label goods and in-store hardware/fixtures for retailers and direct-to-consumer channels.
+Semiconductor,,Semiconductor,Semiconductor,A manufacturer in this industry fabricates ICs/SoCs, memory, and analog/digital chips and wafers for electronics OEMs and hyperscalers.
+Sports And Leisure,,Sports And Leisure,Sports And Leisure,A manufacturer in this industry makes sporting goods, equipment, and recreation products for teams, retailers, and consumers.
+Telecommunications,,Telecommunications,Telecommunications,A manufacturer in this industry builds telecom equipment—RAN, optical, and routers—and carrier-grade systems for operators.
+Textiles,,Textiles,Textiles,A manufacturer in this industry spins yarns and weaves/knits fabrics and technical textiles for apparel and industrial users.
+Tool And Die,,Tool And Die,Tool And Die,A manufacturer in this industry makes tooling, molds, and dies for precision manufacturing across automotive, electronics, and machinery.
+Transportation,,Transportation,Transportation,A manufacturer in this industry produces transport vehicles and systems—railcars, buses, and logistics equipment—for shippers and agencies.
+Utilities,,Utilities,Utilities,A manufacturer in this industry supplies generation, transmission, and distribution equipment for electric, gas, and water utilities.
+Communication And Electronic Power Utilities,,Utilities > Communication And Electronic Power Utilities,Utilities,A manufacturer in this industry supplies telecom and power-utility equipment—networking and grid electronics—for carriers and municipalities.
+Water And Sewer Utilities,,Utilities > Water And Sewer Utilities,Utilities,A manufacturer in this industry produces water treatment systems, pipes, pumps, and metering for municipal utilities.
+Warehousing And Storage,,Warehousing And Storage,Warehousing And Storage,A manufacturer in this industry builds storage systems, racking, conveyors, and automation for warehouses and 3PL providers.
+Wood Product Manufacturing,,Wood Product Manufacturing,Wood Product Manufacturing,A manufacturer in this industry produces lumber, plywood, panels, engineered wood, and millwork for construction and furniture makers.
+

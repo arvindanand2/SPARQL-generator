@@ -1,0 +1,41 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?state ?stateLabel ?manufacturer ?manufacturerLabel ?productCount
+WHERE {
+  {
+    SELECT ?state ?manufacturer (COUNT(DISTINCT ?product) AS ?productCount)
+    WHERE {
+      ?manufacturer a iof-core:Manufacturer ;
+                    sdk:organizationLocatedIn ?site ;
+                    sdk:manufactures ?product .
+      ?site sdk:locatedInCity ?city .
+      ?city sdk:locatedInState ?state .
+      FILTER EXISTS { ?manufacturer sdk:hasCertificate ?cert . }
+    }
+    GROUP BY ?state ?manufacturer
+  }
+  {
+    SELECT ?state (MAX(?pc) AS ?maxCount)
+    WHERE {
+      {
+        SELECT ?state ?manufacturer (COUNT(DISTINCT ?product) AS ?pc)
+        WHERE {
+          ?manufacturer a iof-core:Manufacturer ;
+                        sdk:organizationLocatedIn ?site2 ;
+                        sdk:manufactures ?product .
+          ?site2 sdk:locatedInCity ?city2 .
+          ?city2 sdk:locatedInState ?state .
+          FILTER EXISTS { ?manufacturer sdk:hasCertificate ?c . }
+        }
+        GROUP BY ?state ?manufacturer
+      }
+    }
+    GROUP BY ?state
+  }
+  FILTER (?productCount = ?maxCount)
+  OPTIONAL { ?state rdfs:label ?stateLabel . }
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel . }
+}
+ORDER BY ?state ?manufacturer

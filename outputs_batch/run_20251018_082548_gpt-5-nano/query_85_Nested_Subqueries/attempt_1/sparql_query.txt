@@ -1,0 +1,21 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?manLabel ?cap ?capLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+               rdfs:label ?manLabel ;
+               sdk:hasProcessCapability ?cap .
+  ?cap a ?capClass .
+  FILTER (?capClass IN (
+    sdk:CoatingCapability,
+    sdk:VaporizedMetalCoatingCapability,
+    sdk:MechanicalCoatingCapability,
+    sdk:ChemicalCoatingCapability,
+    sdk:ThermalCoatingCapability,
+    sdk:PowderCoatingCapability,
+    sdk:PhosphateCoatingCapability
+  ))
+  ?cap rdfs:label ?capLabel .
+}

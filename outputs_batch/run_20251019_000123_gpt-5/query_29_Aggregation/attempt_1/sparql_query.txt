@@ -1,0 +1,11 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+
+SELECT (COUNT(DISTINCT ?m) AS ?count)
+WHERE {
+  ?m a iof-core:Manufacturer .
+  FILTER NOT EXISTS {
+    ?m iof-core:describedBy ?desc .
+    ?desc a sdk:BusinessDescription .
+  }
+}

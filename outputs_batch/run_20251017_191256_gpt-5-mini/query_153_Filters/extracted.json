@@ -1,0 +1,44 @@
+{
+  "clauses": [],
+  "mapping": [
+    "Input requires a length filter on a literal field (business description). The clause schema supports a filter, but callers should map 'has business description' with a 'gt 20 characters' filter to the appropriate literal-length check during planning."
+  ],
+  "relevant_iris": [
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "NIST",
+      "iri": "http://asu.edu/semantics/SUDOKN/nist"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "TL Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/TLQuality"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    },
+    {
+      "label": "ISO 14000",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO14000"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "TL 9000",
+      "iri": "http://asu.edu/semantics/SUDOKN/TL9000"
+    },
+    {
+      "label": "BABA",
+      "iri": "http://asu.edu/semantics/SUDOKN/BABA"
+    }
+  ]
+}

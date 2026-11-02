@@ -1,0 +1,22 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel ?stateLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                rdfs:label ?manufacturerLabel ;
+                sdk:organizationLocatedIn ?site .
+  ?site sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  ?state rdfs:label ?stateLabel .
+  FILTER(?stateLabel IN ("Illinois","Indiana","Iowa","Kansas","Michigan","Minnesota","Missouri","Nebraska","North Dakota","Ohio","South Dakota","Wisconsin"))
+
+  ?manufacturer sdk:hasCertificate ?cert .
+  ?cert a ?certType .
+  FILTER(?certType IN (
+    <http://asu.edu/semantics/SUDOKN/ISO9001>,
+    <http://asu.edu/semantics/SUDOKN/AS9100Certificate>,
+    <http://asu.edu/semantics/SUDOKN/ISO13485>
+  ))
+}

@@ -1,0 +1,1 @@
+Count manufacturers with capabilities that are subclasses of the class labeled Surface Finishing.

@@ -1,0 +1,68 @@
+{
+  "clauses": [
+    {
+      "relation_hint": "has process capability",
+      "connective": "IMPLIED",
+      "filter": {
+        "op": "near",
+        "value": null,
+        "unit": "process",
+        "min": null,
+        "max": null
+      },
+      "subject_hint": "manufacturers",
+      "enum_values": [
+        "Drilling",
+        "Boring",
+        "Reaming",
+        "Countersinking",
+        "Tapping",
+        "SpotFacing"
+      ],
+      "type": "spo"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Hole Making",
+      "iri": "http://asu.edu/semantics/SUDOKN/HoleMakingCapability"
+    },
+    {
+      "label": "Small Hole Drilling",
+      "iri": "http://asu.edu/semantics/SUDOKN/SmallHoleDrillingCapability"
+    },
+    {
+      "label": "Hole Drilling EDM",
+      "iri": "http://asu.edu/semantics/SUDOKN/HoleDrillingEDMCapability"
+    },
+    {
+      "label": "Deep Hole Drilling",
+      "iri": "http://asu.edu/semantics/SUDOKN/DeepHoleDrillingCapability"
+    },
+    {
+      "label": "Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/MachiningCapability"
+    },
+    {
+      "label": "Drilling",
+      "iri": "http://asu.edu/semantics/SUDOKN/DrillingCapability"
+    },
+    {
+      "label": "Live Tooling",
+      "iri": "http://asu.edu/semantics/SUDOKN/LiveToolingCapability"
+    },
+    {
+      "label": "Horizontal Boring",
+      "iri": "http://asu.edu/semantics/SUDOKN/HorizontalBoringCapability"
+    },
+    {
+      "label": "Horizontal Milling",
+      "iri": "http://asu.edu/semantics/SUDOKN/HorizontalMillingCapability"
+    },
+    {
+      "label": "Specialized Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/SpecializedMachiningCapability"
+    }
+  ]
+}

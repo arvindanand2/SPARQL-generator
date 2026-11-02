@@ -1,0 +1,23 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel ?cityLabel ?stateLabel ?latitude ?longitude
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+    rdfs:label ?manufacturerLabel ;
+    sdk:organizationLocatedIn ?site ;
+    sdk:suppliesToIndustry ?industry .
+  ?site sdk:hasSpatialCoordinates ?coordinates ;
+        sdk:locatedInCity ?city .
+  ?coordinates sdk:hasLatitudeValue ?latitude ;
+               sdk:hasLongitudeValue ?longitude .
+  ?city sdk:locatedInState ?state ;
+        rdfs:label ?cityLabel .
+  ?state rdfs:label ?stateLabel .
+  FILTER regex(?stateLabel, "Illinois|Indiana|Iowa|Kansas|Michigan|Minnesota|Missouri|Nebraska|North Dakota|Ohio|South Dakota|Wisconsin", "i")
+  FILTER regex(?industry, "Aerospace", "i")
+  BIND(( ( (?latitude-33.424239)*(?latitude-33.424239) + (?longitude-111.928052)*(?longitude-111.928052) ) ) AS ?distanceToASU)
+}
+ORDER BY ?distanceToASU

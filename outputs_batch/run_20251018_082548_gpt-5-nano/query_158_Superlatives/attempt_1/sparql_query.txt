@@ -1,0 +1,23 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?man ?label (COUNT(DISTINCT ?prod) AS ?productCount)
+WHERE {
+  ?man a iof-core:Manufacturer .
+  ?man sdk:manufactures ?prod .
+  OPTIONAL { ?man rdfs:label ?label . }
+}
+GROUP BY ?man ?label
+HAVING (COUNT(DISTINCT ?prod) = (
+  SELECT MAX(?c) WHERE {
+    {
+      SELECT (COUNT(DISTINCT ?pp) AS ?c)
+      WHERE {
+        ?m2 a iof-core:Manufacturer ;
+            sdk:manufactures ?pp .
+      }
+      GROUP BY ?m2
+    }
+  }
+))

@@ -1,0 +1,87 @@
+{
+  "clauses": [
+    {
+      "object_hint": "product with name containing 'Pipe'",
+      "relation_hint": "manufactures",
+      "connective": "AND",
+      "filter": {
+        "op": "near",
+        "value": "Pipe",
+        "unit": "string",
+        "min": null,
+        "max": null
+      },
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "state"
+      },
+      "subject_hint": "manufacturers",
+      "type": "spo"
+    },
+    {
+      "relation_hint": "headquartered in",
+      "connective": "IMPLIED",
+      "filter": {
+        "op": "near",
+        "value": "state",
+        "unit": "state",
+        "min": null,
+        "max": null
+      },
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "state"
+      },
+      "subject_hint": "manufacturers",
+      "type": "scope"
+    },
+    {
+      "relation_hint": "has average employee count",
+      "connective": "IMPLIED",
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "state"
+      },
+      "subject_hint": "manufacturers",
+      "type": "modifier"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Pipe Bending",
+      "iri": "http://asu.edu/semantics/SUDOKN/BendingCapability"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    },
+    {
+      "label": "AWS Welder",
+      "iri": "http://asu.edu/semantics/SUDOKN/AWSWelder"
+    },
+    {
+      "label": "PVC",
+      "iri": "http://asu.edu/semantics/SUDOKN/PVCProcessingCapability"
+    },
+    {
+      "label": "Brass",
+      "iri": "http://asu.edu/semantics/SUDOKN/BrassProcessingCapability"
+    },
+    {
+      "label": "HDPE",
+      "iri": "http://asu.edu/semantics/SUDOKN/HDPEProcessingCapability"
+    },
+    {
+      "label": "Tubing",
+      "iri": "http://asu.edu/semantics/SUDOKN/TubingCapability"
+    }
+  ]
+}

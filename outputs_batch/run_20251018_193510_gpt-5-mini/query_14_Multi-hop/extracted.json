@@ -1,0 +1,67 @@
+{
+  "clauses": [
+    {
+      "object_hint": "Metal",
+      "subject_hint": "companies",
+      "filter": {
+        "op": "eq",
+        "value": "Metal",
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "relation_hint": "company name term",
+      "type": "spo",
+      "connective": "AND"
+    },
+    {
+      "subject_hint": "companies",
+      "relation_hint": "has material capability",
+      "type": "spo",
+      "connective": "AND"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Metal",
+      "iri": "http://asu.edu/semantics/SUDOKN/MetalProcessingCapability"
+    },
+    {
+      "label": "Metal Joining",
+      "iri": "http://asu.edu/semantics/SUDOKN/JoiningCapability"
+    },
+    {
+      "label": "Sheet Metal Processing",
+      "iri": "http://asu.edu/semantics/SUDOKN/SheetMetalProcessingProcessingCapability"
+    },
+    {
+      "label": "Super Alloy",
+      "iri": "http://asu.edu/semantics/SUDOKN/SuperAlloyProcessingCapability"
+    },
+    {
+      "label": "Metal Additive Manufacturing",
+      "iri": "http://asu.edu/semantics/SUDOKN/AdditiveManufacturingCapability"
+    },
+    {
+      "label": "Exotic Material",
+      "iri": "http://asu.edu/semantics/SUDOKN/ExoticMaterialProcessingCapability"
+    },
+    {
+      "label": "Metal Coating",
+      "iri": "http://asu.edu/semantics/SUDOKN/VaporizedMetalCoatingCapability"
+    },
+    {
+      "label": "Alloy",
+      "iri": "http://asu.edu/semantics/SUDOKN/AlloyProcessingCapability"
+    },
+    {
+      "label": "Metal Forming",
+      "iri": "http://asu.edu/semantics/SUDOKN/PowderMetalFormingCapability"
+    },
+    {
+      "label": "NADCAP",
+      "iri": "http://asu.edu/semantics/SUDOKN/NADCAP"
+    }
+  ]
+}

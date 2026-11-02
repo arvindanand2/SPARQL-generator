@@ -1,0 +1,68 @@
+@prefix geo1: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix iof-core: <https://spec.industrialontologies.org/ontology/core/Core/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sdk: <http://asu.edu/semantics/SUDOKN/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] a sh:NodeShape ;
+    sh:property [ sh:datatype xsd:string ;
+            sh:minCount 0 ;
+            sh:name "label" ;
+            sh:path rdfs:label ] ;
+    sh:targetClass iof-core:MaterialProduct .
+
+[] a sh:NodeShape ;
+    sh:property [ sh:minCount 0 ;
+            sh:name "process capability" ;
+            sh:nodeKind sh:IRI ;
+            sh:path sdk:hasProcessCapability ],
+        [ sh:minCount 0 ;
+            sh:name "naics" ;
+            sh:nodeKind sh:IRI ;
+            sh:path sdk:hasPrimaryNAICSClassifier ],
+        [ sh:minCount 0 ;
+            sh:name "site" ;
+            sh:nodeKind sh:IRI ;
+            sh:path sdk:organizationLocatedIn ],
+        [ sh:minCount 0 ;
+            sh:name "manufactures" ;
+            sh:nodeKind sh:IRI ;
+            sh:path sdk:manufactures ],
+        [ sh:datatype xsd:string ;
+            sh:minCount 0 ;
+            sh:name "label" ;
+            sh:path rdfs:label ] ;
+    sh:targetClass iof-core:Manufacturer .
+
+[] a sh:NodeShape ;
+    sh:property [ sh:minCount 0 ;
+            sh:name "city" ;
+            sh:nodeKind sh:IRI ;
+            sh:path sdk:locatedInCity ],
+        [ sh:minCount 0 ;
+            sh:name "zip" ;
+            sh:nodeKind sh:IRI ;
+            sh:path sdk:hasZIPcode ],
+        [ sh:datatype xsd:decimal ;
+            sh:minCount 0 ;
+            sh:name "lat" ;
+            sh:path geo1:lat ],
+        [ sh:datatype xsd:decimal ;
+            sh:minCount 0 ;
+            sh:name "long" ;
+            sh:path geo1:long ] ;
+    sh:targetClass sdk:GeospatialLocation .
+
+[] a sh:NodeShape ;
+    sh:property [ sh:datatype xsd:string ;
+            sh:minCount 1 ;
+            sh:name "code" ;
+            sh:path skos:notation ],
+        [ sh:datatype xsd:string ;
+            sh:minCount 0 ;
+            sh:name "name" ;
+            sh:path skos:prefLabel ] ;
+    sh:targetClass skos:Concept .
+

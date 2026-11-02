@@ -1,0 +1,1 @@
+For each manufacturer, list any capability name whether it is a process or material capability.

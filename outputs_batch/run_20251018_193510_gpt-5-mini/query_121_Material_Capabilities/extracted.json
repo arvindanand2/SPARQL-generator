@@ -1,0 +1,57 @@
+{
+  "clauses": [
+    {
+      "subject_hint": "manufacturers",
+      "enum_values": [
+        "Carbon",
+        "Graphite"
+      ],
+      "relation_hint": "has material capability",
+      "type": "spo",
+      "connective": "AND"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Carbon Fiber",
+      "iri": "http://asu.edu/semantics/SUDOKN/CarbonFiberProcessingCapability"
+    },
+    {
+      "label": "Graphite",
+      "iri": "http://asu.edu/semantics/SUDOKN/GraphiteProcessingCapability"
+    },
+    {
+      "label": "Carbide",
+      "iri": "http://asu.edu/semantics/SUDOKN/CarbideProcessingCapability"
+    },
+    {
+      "label": "Carbon",
+      "iri": "http://asu.edu/semantics/SUDOKN/CarbonProcessingCapability"
+    },
+    {
+      "label": "NADCAP",
+      "iri": "http://asu.edu/semantics/SUDOKN/NADCAP"
+    },
+    {
+      "label": "Carbide Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/CarbideMachiningCapability"
+    },
+    {
+      "label": "Carbon Arc Welding",
+      "iri": "http://asu.edu/semantics/SUDOKN/CarbonArcWeldingCapability"
+    },
+    {
+      "label": "Titanium",
+      "iri": "http://asu.edu/semantics/SUDOKN/TitaniumProcessingCapability"
+    },
+    {
+      "label": "Fiber Glass",
+      "iri": "http://asu.edu/semantics/SUDOKN/FiberGlassProcessingCapability"
+    },
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    }
+  ]
+}

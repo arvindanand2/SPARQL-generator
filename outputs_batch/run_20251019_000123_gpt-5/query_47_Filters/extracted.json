@@ -1,0 +1,57 @@
+{
+  "clauses": [
+    {
+      "connective": "AND",
+      "type": "spo",
+      "filter": {
+        "op": "eq",
+        "value": "Utilities",
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "enum_values": [
+        "Utilities"
+      ],
+      "subject_hint": "manufacturers",
+      "relation_hint": "supplies to industry"
+    }
+  ],
+  "mapping": [
+    "Filter op 'contains' not available; approximated with equality to 'Utilities'."
+  ],
+  "relevant_iris": [
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    },
+    {
+      "label": "QS Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QSQuality"
+    },
+    {
+      "label": "ISO 50001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO50001"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "LEED",
+      "iri": "http://asu.edu/semantics/SUDOKN/LEED"
+    },
+    {
+      "label": "TL Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/TLQuality"
+    },
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    }
+  ]
+}

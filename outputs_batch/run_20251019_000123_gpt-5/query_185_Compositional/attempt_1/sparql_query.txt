@@ -1,0 +1,13 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?org ?orgLabel
+WHERE {
+  ?org sdk:suppliesToIndustry ?indRE .
+  ?indRE a sdk:RenewableEnergyIndustry .
+  ?org sdk:suppliesToIndustry ?indUtil .
+  ?indUtil a sdk:UtilitiesIndustry .
+  ?org sdk:hasCertificate ?cert .
+  ?cert a sdk:ISO9001 .
+  OPTIONAL { ?org rdfs:label ?orgLabel . }
+}

@@ -1,0 +1,57 @@
+{
+  "clauses": [
+    {
+      "object_hint": "Coating",
+      "relation_hint": "name contains",
+      "connective": "AND",
+      "filter": {
+        "op": "eq",
+        "value": "Coating",
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "subject_hint": "manufacturers",
+      "type": "spo"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Coating",
+      "iri": "http://asu.edu/semantics/SUDOKN/CoatingCapability"
+    },
+    {
+      "label": "Surface Coating",
+      "iri": "http://asu.edu/semantics/SUDOKN/CoatingCapability"
+    },
+    {
+      "label": "Metal Coating",
+      "iri": "http://asu.edu/semantics/SUDOKN/VaporizedMetalCoatingCapability"
+    },
+    {
+      "label": "Chemical Coating",
+      "iri": "http://asu.edu/semantics/SUDOKN/ChemicalCoatingCapability"
+    },
+    {
+      "label": "Mechanical Coating",
+      "iri": "http://asu.edu/semantics/SUDOKN/MechanicalCoatingCapability"
+    },
+    {
+      "label": "Thermal Coating",
+      "iri": "http://asu.edu/semantics/SUDOKN/ThermalCoatingCapability"
+    },
+    {
+      "label": "Phosphate Coating",
+      "iri": "http://asu.edu/semantics/SUDOKN/PhosphateCoatingCapability"
+    },
+    {
+      "label": "Electrocoating",
+      "iri": "http://asu.edu/semantics/SUDOKN/CoatingCapability"
+    },
+    {
+      "label": "Powder Coating",
+      "iri": "http://asu.edu/semantics/SUDOKN/PowderCoatingCapability"
+    }
+  ]
+}

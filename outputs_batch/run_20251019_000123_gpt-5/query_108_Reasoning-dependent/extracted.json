@@ -1,0 +1,58 @@
+{
+  "clauses": [
+    {
+      "connective": "AND",
+      "type": "spo",
+      "enum_values": [
+        "Forging",
+        "Rolling",
+        "Extrusion"
+      ],
+      "subject_hint": "manufacturers",
+      "relation_hint": "has process capability"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Metal Forming",
+      "iri": "http://asu.edu/semantics/SUDOKN/PowderMetalFormingCapability"
+    },
+    {
+      "label": "Forming",
+      "iri": "http://asu.edu/semantics/SUDOKN/FormingCapability"
+    },
+    {
+      "label": "Sheet Forming",
+      "iri": "http://asu.edu/semantics/SUDOKN/FormingCapability"
+    },
+    {
+      "label": "Flow Forming",
+      "iri": "http://asu.edu/semantics/SUDOKN/FormingCapability"
+    },
+    {
+      "label": "Forging",
+      "iri": "http://asu.edu/semantics/SUDOKN/ForgingCapability"
+    },
+    {
+      "label": "Roll Forging",
+      "iri": "http://asu.edu/semantics/SUDOKN/RollForgingCapability"
+    },
+    {
+      "label": "Superplastic Forming",
+      "iri": "http://asu.edu/semantics/SUDOKN/FormingCapability"
+    },
+    {
+      "label": "Ring Rolling",
+      "iri": "http://asu.edu/semantics/SUDOKN/RollingCapability"
+    },
+    {
+      "label": "Hot Forming",
+      "iri": "http://asu.edu/semantics/SUDOKN/FormingCapability"
+    },
+    {
+      "label": "Spin Forming",
+      "iri": "http://asu.edu/semantics/SUDOKN/FormingCapability"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "clauses": [
+    {
+      "object_hint": "products",
+      "subject_hint": "manufacturers",
+      "relation_hint": "manufactures",
+      "type": "spo",
+      "connective": "AND"
+    },
+    {
+      "object_hint": "Pipe",
+      "subject_hint": "products",
+      "relation_hint": "name contains",
+      "type": "spo",
+      "connective": "AND"
+    },
+    {
+      "subject_hint": "manufacturers",
+      "relation_hint": "has number of employees",
+      "type": "spo",
+      "connective": "AND"
+    },
+    {
+      "object_hint": "state",
+      "subject_hint": "manufacturers",
+      "relation_hint": "located in",
+      "type": "spo",
+      "connective": "AND"
+    },
+    {
+      "subject_hint": "manufacturers",
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "state; average of has number of employees"
+      },
+      "relation_hint": "has number of employees",
+      "type": "modifier",
+      "connective": "IMPLIED"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Pipe Bending",
+      "iri": "http://asu.edu/semantics/SUDOKN/BendingCapability"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    },
+    {
+      "label": "AWS Welder",
+      "iri": "http://asu.edu/semantics/SUDOKN/AWSWelder"
+    },
+    {
+      "label": "PVC",
+      "iri": "http://asu.edu/semantics/SUDOKN/PVCProcessingCapability"
+    },
+    {
+      "label": "Brass",
+      "iri": "http://asu.edu/semantics/SUDOKN/BrassProcessingCapability"
+    },
+    {
+      "label": "HDPE",
+      "iri": "http://asu.edu/semantics/SUDOKN/HDPEProcessingCapability"
+    },
+    {
+      "label": "Tubing",
+      "iri": "http://asu.edu/semantics/SUDOKN/TubingCapability"
+    }
+  ]
+}

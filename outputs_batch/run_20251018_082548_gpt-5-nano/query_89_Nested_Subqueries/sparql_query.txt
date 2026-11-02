@@ -1,0 +1,18 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?cap ?type ?label
+WHERE {
+  VALUES ?type {
+    sdk:ExoticMaterialProcessingCapability
+    sdk:InvarProcessingCapability
+    sdk:AcrylicProcessingCapability
+    sdk:DelrinProcessingCapability
+    sdk:PlexiglasProcessingCapability
+    sdk:CTFEProcessingCapability
+    sdk:TorlonProcessingCapability
+    sdk:SiliconeProcessingCapability
+  }
+  ?cap a ?type .
+  OPTIONAL { ?cap rdfs:label ?label . }
+}

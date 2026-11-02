@@ -1,0 +1,28 @@
+You are an expert in semantic web and SPARQL query generation.
+
+Your task: Generate a valid SPARQL query using the extracted clauses, relevant IRIs, and reference Turtle data provided below.
+
+Instructions:
+- Use the extracted clause data provided below to determine the logic and constraints for the SPARQL query.
+- **CRITICAL: DO NOT INVENT OR CREATE ANY NEW NAMED CLASSES OR PREDICATES in your custom namespaces (sdk:, iof-core:, iof-scro:, bfo:). Only use classes and predicates that exist in the provided relevant_iris or Reference Turtle Data.**
+- **FORBIDDEN: Do not create URIs like sdk:NewClass, sdk:newProperty, or any other invented classes/predicates in custom namespaces.**
+- **REQUIRED: All custom namespace classes and predicates must be taken exactly from the provided relevant_iris array or the Reference Turtle Data below.**
+- **REQUIRED: If a class or predicate exactly matches a Relevant IRI, use the IRI itself (not its label).**
+- Use the Turtle data only for reference to predicate and class names. Do not invent new predicates or classes in custom namespaces.
+- Prefix namespace classes and predicates with the appropriate prefixes that are present in the Reference Turtle data.
+- Strictly follow the predicate and class naming conventions as shown in the Turtle data.
+- Output only a valid SPARQL query. Do not include any explanation or commentary.
+
+INPUTS:
+
+###User Query
+{USER_QUERY}
+
+### Extracted Clauses
+{EXTRACTED_Clauses}
+
+### Relevant IRIs
+{EXTRACTED_IRI}
+
+### Reference Turtle Data
+{REFERENCE_TURTLE_DATA}

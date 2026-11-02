@@ -1,0 +1,79 @@
+{
+  "clauses": [
+    {
+      "enum_values": [
+        "Heat Treating"
+      ],
+      "type": "spo",
+      "subject_hint": "manufacturers",
+      "connective": "AND",
+      "relation_hint": "has process capability"
+    },
+    {
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "city"
+      },
+      "type": "scope",
+      "subject_hint": "manufacturers",
+      "connective": "IMPLIED",
+      "relation_hint": "located in",
+      "object_hint": "city"
+    },
+    {
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "city; aggregate:avg(employee count)"
+      },
+      "type": "modifier",
+      "subject_hint": "manufacturers",
+      "connective": "IMPLIED",
+      "relation_hint": "has employee count"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Heat Treating",
+      "iri": "http://asu.edu/semantics/SUDOKN/HeatTreatingCapability"
+    },
+    {
+      "label": "Stress Relieving",
+      "iri": "http://asu.edu/semantics/SUDOKN/StressRelievingCapability"
+    },
+    {
+      "label": "Through Hardening",
+      "iri": "http://asu.edu/semantics/SUDOKN/ThroughHardeningCapability"
+    },
+    {
+      "label": "Austempering",
+      "iri": "http://asu.edu/semantics/SUDOKN/AustemperingCapability"
+    },
+    {
+      "label": "Tempering",
+      "iri": "http://asu.edu/semantics/SUDOKN/TemperingCapability"
+    },
+    {
+      "label": "Full Annealing",
+      "iri": "http://asu.edu/semantics/SUDOKN/FullAnnealingCapability"
+    },
+    {
+      "label": "Surface Hardening",
+      "iri": "http://asu.edu/semantics/SUDOKN/SurfaceHardeningCapability"
+    },
+    {
+      "label": "Annealing",
+      "iri": "http://asu.edu/semantics/SUDOKN/AnnealingCapability"
+    },
+    {
+      "label": "Hardening",
+      "iri": "http://asu.edu/semantics/SUDOKN/HardeningCapability"
+    },
+    {
+      "label": "Cold Treatment",
+      "iri": "http://asu.edu/semantics/SUDOKN/ColdTreatmentCapability"
+    }
+  ]
+}

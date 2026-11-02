@@ -1,0 +1,61 @@
+{
+  "clauses": [
+    {
+      "connective": "IMPLIED",
+      "type": "spo",
+      "subject_hint": "manufacturers",
+      "relation_hint": "has process capability"
+    },
+    {
+      "connective": "IMPLIED",
+      "type": "spo",
+      "subject_hint": "manufacturers",
+      "relation_hint": "has material capability"
+    },
+    {
+      "connective": "IMPLIED",
+      "type": "modifier",
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "manufacturer"
+      },
+      "subject_hint": "manufacturers"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "NADCAP",
+      "iri": "http://asu.edu/semantics/SUDOKN/NADCAP"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "AS 9102",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9102"
+    },
+    {
+      "label": "Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/MachiningCapability"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "Textile Process",
+      "iri": "http://asu.edu/semantics/SUDOKN/TextileProcessCapability"
+    }
+  ]
+}

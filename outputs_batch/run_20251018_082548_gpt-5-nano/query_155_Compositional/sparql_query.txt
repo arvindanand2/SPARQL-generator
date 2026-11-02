@@ -1,0 +1,16 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+
+SELECT ?manufacturer
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  ?manufacturer sdk:suppliesToIndustry ?ren .
+  ?ren a sdk:RenewableEnergyIndustry .
+  ?manufacturer sdk:suppliesToIndustry ?util .
+  ?util a sdk:UtilitiesIndustry .
+  FILTER NOT EXISTS {
+    ?manufacturer sdk:suppliesToIndustry ?other .
+    ?other a ?type .
+    FILTER(?type != sdk:RenewableEnergyIndustry && ?type != sdk:UtilitiesIndustry)
+  }
+}

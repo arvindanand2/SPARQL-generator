@@ -1,0 +1,38 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel ?cityLabel ?stateLabel ?lat ?lon ?distance2
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                rdfs:label ?manufacturerLabel ;
+                sdk:organizationLocatedIn ?site ;
+                sdk:suppliesToIndustry ?industry ;
+                sdk:hasCertificate ?cert .
+  VALUES ?certType { sdk:ISO9001 sdk:AS9100Certificate }
+  ?cert a ?certType .
+
+  ?site sdk:hasSpatialCoordinates ?coords ;
+        sdk:locatedInCity ?city .
+  ?city rdfs:label ?cityLabel ;
+        sdk:locatedInState ?state .
+  ?state rdfs:label ?stateLabel .
+
+  ?coords sdk:hasLatitudeValue ?latLit ;
+          sdk:hasLongitudeValue ?lonLit .
+  BIND(xsd:double(?latLit) AS ?lat)
+  BIND(xsd:double(?lonLit) AS ?lon)
+
+  ?industry rdfs:label ?industryLabel .
+  FILTER(CONTAINS(LCASE(STR(?industryLabel)), "aerospace") || CONTAINS(LCASE(STR(?industryLabel)), "agric"))
+
+  FILTER(LCASE(STR(?stateLabel)) IN (
+    "illinois","indiana","iowa","kansas","michigan","minnesota","missouri","nebraska","north dakota","ohio","south dakota","wisconsin"
+  ))
+
+  BIND(33.424239 AS ?asuLat)
+  BIND(-111.928053 AS ?asuLon)
+  BIND((?lat - ?asuLat) * (?lat - ?asuLat) + (?lon - ?asuLon) * (?lon - ?asuLon) AS ?distance2)
+}
+ORDER BY ASC(?distance2)

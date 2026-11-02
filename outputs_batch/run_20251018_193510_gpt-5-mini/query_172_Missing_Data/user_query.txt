@@ -1,0 +1,1 @@
+Which manufacturers have a site but are missing either latitude or longitude?

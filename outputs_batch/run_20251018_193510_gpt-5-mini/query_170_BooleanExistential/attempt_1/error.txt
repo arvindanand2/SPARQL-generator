@@ -1,0 +1,5 @@
+Run 1 failed. Compressed error:
+Response:
+Response:
+b'MALFORMED QUERY: Encountered " "regex" "regex "" at line 13, column 16.\r\nWas expecting:\r\n    "exists" ...\r\n    '
+All retries failed.

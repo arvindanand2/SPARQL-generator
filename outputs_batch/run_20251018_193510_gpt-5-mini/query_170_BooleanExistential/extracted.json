@@ -1,0 +1,52 @@
+{
+  "clauses": [
+    {
+      "object_hint": "process name ends with \"ing\"",
+      "subject_hint": "manufacturers",
+      "relation_hint": "has process capability",
+      "type": "spo",
+      "connective": "AND"
+    }
+  ],
+  "mapping": [
+    "String-suffix constraint represented in object_hint because schema filter ops do not include 'endswith'."
+  ],
+  "relevant_iris": [
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "Forming",
+      "iri": "http://asu.edu/semantics/SUDOKN/FormingCapability"
+    },
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    },
+    {
+      "label": "Chemical Processing",
+      "iri": "http://asu.edu/semantics/SUDOKN/ChemicalProcessingCapability"
+    },
+    {
+      "label": "Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/MachiningCapability"
+    },
+    {
+      "label": "LEED",
+      "iri": "http://asu.edu/semantics/SUDOKN/LEED"
+    },
+    {
+      "label": "NADCAP",
+      "iri": "http://asu.edu/semantics/SUDOKN/NADCAP"
+    }
+  ]
+}

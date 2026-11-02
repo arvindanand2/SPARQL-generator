@@ -1,0 +1,54 @@
+{
+  "clauses": [
+    {
+      "object_hint": "product name",
+      "subject_hint": "manufacturers",
+      "enum_values": [
+        "Tube Bending",
+        "Punching"
+      ],
+      "relation_hint": "manufactures",
+      "type": "spo",
+      "connective": "AND"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Tube Bending",
+      "iri": "http://asu.edu/semantics/SUDOKN/TubeBendingCapability"
+    },
+    {
+      "label": "Tubing",
+      "iri": "http://asu.edu/semantics/SUDOKN/TubingCapability"
+    },
+    {
+      "label": "Pipe Bending",
+      "iri": "http://asu.edu/semantics/SUDOKN/BendingCapability"
+    },
+    {
+      "label": "Sheet Bending",
+      "iri": "http://asu.edu/semantics/SUDOKN/BendingCapability"
+    },
+    {
+      "label": "Bending",
+      "iri": "http://asu.edu/semantics/SUDOKN/BendingCapability"
+    },
+    {
+      "label": "Custom Tubing",
+      "iri": "http://asu.edu/semantics/SUDOKN/CustomTubingCapability"
+    },
+    {
+      "label": "Bulge Forming",
+      "iri": "http://asu.edu/semantics/SUDOKN/BulgeFormingCapability"
+    },
+    {
+      "label": "Tube Drawing",
+      "iri": "http://asu.edu/semantics/SUDOKN/TubeDrawingCapability"
+    },
+    {
+      "label": "Punching",
+      "iri": "http://asu.edu/semantics/SUDOKN/PunchingCapability"
+    }
+  ]
+}

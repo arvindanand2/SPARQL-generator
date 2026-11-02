@@ -1,0 +1,71 @@
+{
+  "clauses": [
+    {
+      "subject_hint": "manufacturers",
+      "enum_values": [
+        "Renewable Energy"
+      ],
+      "relation_hint": "supplies to industry",
+      "type": "scope",
+      "connective": "IMPLIED"
+    },
+    {
+      "object_hint": "subclass of Coating",
+      "subject_hint": "manufacturers",
+      "enum_values": [
+        "Coating"
+      ],
+      "relation_hint": "has process capability",
+      "type": "spo",
+      "connective": "AND"
+    },
+    {
+      "subject_hint": "manufacturers",
+      "filter": {
+        "op": "gt",
+        "value": 200,
+        "unit": "employees",
+        "min": null,
+        "max": null
+      },
+      "relation_hint": "has number of employees",
+      "type": "spo",
+      "connective": "AND"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "ISO 50001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO50001"
+    },
+    {
+      "label": "Thermal Coating",
+      "iri": "http://asu.edu/semantics/SUDOKN/ThermalCoatingCapability"
+    },
+    {
+      "label": "LEED",
+      "iri": "http://asu.edu/semantics/SUDOKN/LEED"
+    },
+    {
+      "label": "AWS Welder",
+      "iri": "http://asu.edu/semantics/SUDOKN/AWSWelder"
+    },
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "ISO 14000",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO14000"
+    },
+    {
+      "label": "ISO 14001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO14001"
+    }
+  ]
+}

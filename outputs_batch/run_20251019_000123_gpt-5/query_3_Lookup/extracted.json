@@ -1,0 +1,62 @@
+{
+  "clauses": [
+    {
+      "connective": "IMPLIED",
+      "type": "scope",
+      "filter": {
+        "op": "eq",
+        "value": "NAICS",
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "enum_values": [
+        "NAICS"
+      ],
+      "subject_hint": "classifiers",
+      "relation_hint": "is in classification system"
+    },
+    {
+      "object_hint": "PIPE AND PIPE FITTING",
+      "connective": "AND",
+      "type": "spo",
+      "subject_hint": "classifiers",
+      "relation_hint": "text contains"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    },
+    {
+      "label": "NADCAP",
+      "iri": "http://asu.edu/semantics/SUDOKN/NADCAP"
+    },
+    {
+      "label": "AWS Welder",
+      "iri": "http://asu.edu/semantics/SUDOKN/AWSWelder"
+    },
+    {
+      "label": "Tubing",
+      "iri": "http://asu.edu/semantics/SUDOKN/TubingCapability"
+    },
+    {
+      "label": "Pipe Bending",
+      "iri": "http://asu.edu/semantics/SUDOKN/BendingCapability"
+    },
+    {
+      "label": "AS 9102",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9102"
+    },
+    {
+      "label": "NIST 800171",
+      "iri": "http://asu.edu/semantics/SUDOKN/NIST800171"
+    },
+    {
+      "label": "ISO 13485",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO13485"
+    }
+  ]
+}

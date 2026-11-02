@@ -1,0 +1,18 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT ?org ?orgLabel ?employees ?proc ?procLabel WHERE {
+  ?org rdfs:label ?orgLabel ;
+       sdk:hasNumberOfEmployees ?employees ;
+       sdk:organizationLocatedIn ?site ;
+       sdk:hasProcessCapability ?proc .
+  ?site sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  ?state rdfs:label ?stateLabel .
+  ?proc rdfs:label ?procLabel .
+
+  FILTER(str(?stateLabel) = "California")
+  FILTER(xsd:integer(?employees) >= 20)
+  FILTER(regex(str(?procLabel), "ing$", "i"))
+}

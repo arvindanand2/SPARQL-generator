@@ -1,0 +1,38 @@
+{
+  "clauses": [],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Silver",
+      "iri": "http://asu.edu/semantics/SUDOKN/SilverProcessingCapability"
+    },
+    {
+      "label": "Sand Blasting",
+      "iri": "http://asu.edu/semantics/SUDOKN/SandBlastingCapability"
+    },
+    {
+      "label": "BABA",
+      "iri": "http://asu.edu/semantics/SUDOKN/BABA"
+    },
+    {
+      "label": "Belt Sanding",
+      "iri": "http://asu.edu/semantics/SUDOKN/BeltSandingCapability"
+    },
+    {
+      "label": "Silicone",
+      "iri": "http://asu.edu/semantics/SUDOKN/SiliconeProcessingCapability"
+    },
+    {
+      "label": "Sintering",
+      "iri": "http://asu.edu/semantics/SUDOKN/SinteringCapability"
+    },
+    {
+      "label": "Passivation",
+      "iri": "http://asu.edu/semantics/SUDOKN/PassivationCapability"
+    },
+    {
+      "label": "Submerged Arc Welding",
+      "iri": "http://asu.edu/semantics/SUDOKN/SubmergedArcWeldingCapability"
+    }
+  ]
+}

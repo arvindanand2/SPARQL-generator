@@ -1,0 +1,16 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?label ?site
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:organizationLocatedIn ?site .
+  OPTIONAL { ?manufacturer rdfs:label ?label. }
+  OPTIONAL {
+    ?site sdk:hasSpatialCoordinates ?coords .
+    OPTIONAL { ?coords sdk:hasLatitudeValue ?lat. }
+    OPTIONAL { ?coords sdk:hasLongitudeValue ?long. }
+  }
+  FILTER( !bound(?lat) || !bound(?long) )
+}

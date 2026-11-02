@@ -1,0 +1,18 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/>
+
+SELECT (COUNT(DISTINCT ?manufacturer) AS ?count)
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:organizationLocatedIn ?site ;
+                (sdk:hasProcessCapability|sdk:hasMaterialCapability) ?cap .
+  ?site sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  ?state rdfs:label ?stateLabel .
+  FILTER(CONTAINS(LCASE(STR(?stateLabel)), "arizona"))
+  ?cap a ?capClass .
+  ?capClass rdfs:subClassOf* ?coatingClass .
+  ?coatingClass rdfs:label "Coating" .
+}

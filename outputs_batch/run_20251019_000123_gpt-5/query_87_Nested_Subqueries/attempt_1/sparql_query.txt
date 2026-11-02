@@ -1,0 +1,32 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX bfo: <http://purl.obolibrary.org/obo/>
+
+SELECT ?manufacturer ?label ?certCount
+WHERE {
+  {
+    SELECT ?manufacturer (COUNT(?cert) AS ?certCount)
+    WHERE {
+      ?manufacturer a iof-core:Manufacturer .
+      OPTIONAL { ?manufacturer sdk:hasCertificate ?cert . }
+    }
+    GROUP BY ?manufacturer
+  }
+  {
+    SELECT (AVG(?cnt) AS ?avgCerts)
+    WHERE {
+      SELECT ?m (COUNT(?c) AS ?cnt)
+      WHERE {
+        ?m a iof-core:Manufacturer .
+        OPTIONAL { ?m sdk:hasCertificate ?c . }
+      }
+      GROUP BY ?m
+    }
+  }
+  FILTER(?certCount > ?avgCerts)
+  OPTIONAL { ?manufacturer rdfs:label ?label . }
+}
+ORDER BY DESC(?certCount)

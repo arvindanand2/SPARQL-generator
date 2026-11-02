@@ -1,0 +1,123 @@
+{
+  "clauses": [
+    {
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "primary NAICS code"
+      },
+      "type": "spo",
+      "subject_hint": "manufacturers",
+      "connective": "IMPLIED",
+      "relation_hint": "has primary NAICS code"
+    },
+    {
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "primary NAICS code"
+      },
+      "type": "modifier",
+      "subject_hint": "manufacturers",
+      "connective": "IMPLIED"
+    },
+    {
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "primary NAICS code"
+      },
+      "type": "modifier",
+      "subject_hint": "manufacturers",
+      "connective": "AND",
+      "relation_hint": "number of distinct manufacturers"
+    },
+    {
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "primary NAICS code"
+      },
+      "type": "spo",
+      "subject_hint": "manufacturers",
+      "connective": "IMPLIED",
+      "relation_hint": "manufactures"
+    },
+    {
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "primary NAICS code"
+      },
+      "type": "modifier",
+      "subject_hint": "manufacturers",
+      "connective": "AND",
+      "relation_hint": "number of products manufactured"
+    },
+    {
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "primary NAICS code"
+      },
+      "type": "spo",
+      "subject_hint": "manufacturers",
+      "connective": "IMPLIED",
+      "relation_hint": "has employee count"
+    },
+    {
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "primary NAICS code"
+      },
+      "type": "modifier",
+      "subject_hint": "manufacturers",
+      "connective": "AND",
+      "relation_hint": "average employee count"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "NIST",
+      "iri": "http://asu.edu/semantics/SUDOKN/nist"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "Occupational Health And Safety",
+      "iri": "http://asu.edu/semantics/SUDOKN/OccupationalHealthAndSafety"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "NADCAP",
+      "iri": "http://asu.edu/semantics/SUDOKN/NADCAP"
+    },
+    {
+      "label": "AS 9120",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9120"
+    },
+    {
+      "label": "AS 9102",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9102"
+    },
+    {
+      "label": "AS 9000",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9000"
+    },
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    }
+  ]
+}

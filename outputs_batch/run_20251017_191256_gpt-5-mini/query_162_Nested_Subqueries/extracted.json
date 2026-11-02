@@ -1,0 +1,78 @@
+{
+  "clauses": [
+    {
+      "type": "spo",
+      "subject_hint": "employers",
+      "connective": "AND",
+      "relation_hint": "has headcount",
+      "object_hint": "headcount"
+    },
+    {
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "state"
+      },
+      "type": "modifier",
+      "subject_hint": "employers",
+      "connective": "IMPLIED",
+      "filter": {
+        "op": "near",
+        "value": "state",
+        "unit": "region",
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "modifier": {
+        "kind": "topN",
+        "k": 1,
+        "by": "headcount (include ties)"
+      },
+      "type": "modifier",
+      "subject_hint": "employers",
+      "connective": "IMPLIED",
+      "relation_hint": "has headcount"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "NIST",
+      "iri": "http://asu.edu/semantics/SUDOKN/nist"
+    },
+    {
+      "label": "NIST 800171",
+      "iri": "http://asu.edu/semantics/SUDOKN/NIST800171"
+    },
+    {
+      "label": "BABA",
+      "iri": "http://asu.edu/semantics/SUDOKN/BABA"
+    },
+    {
+      "label": "ITAR",
+      "iri": "http://asu.edu/semantics/SUDOKN/ITAR"
+    },
+    {
+      "label": "Occupational Health And Safety",
+      "iri": "http://asu.edu/semantics/SUDOKN/OccupationalHealthAndSafety"
+    },
+    {
+      "label": "QS Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QSQuality"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "TL Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/TLQuality"
+    },
+    {
+      "label": "AWS Welder",
+      "iri": "http://asu.edu/semantics/SUDOKN/AWSWelder"
+    }
+  ]
+}

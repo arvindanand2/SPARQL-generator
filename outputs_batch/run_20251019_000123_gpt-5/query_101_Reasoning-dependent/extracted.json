@@ -1,0 +1,42 @@
+{
+  "clauses": [
+    {
+      "object_hint": "Abrasive Finishing",
+      "connective": "AND",
+      "type": "spo",
+      "subject_hint": "manufacturers",
+      "relation_hint": "has process capability subclass of"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Grinding",
+      "iri": "http://asu.edu/semantics/SUDOKN/GrindingCapability"
+    },
+    {
+      "label": "Lapping",
+      "iri": "http://asu.edu/semantics/SUDOKN/LappingCapability"
+    },
+    {
+      "label": "Abrasive Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/AbrassiveMachiningCapability"
+    },
+    {
+      "label": "Diamond Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/DiamondMachiningCapability"
+    },
+    {
+      "label": "Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/MachiningCapability"
+    },
+    {
+      "label": "Specialized Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/SpecializedMachiningCapability"
+    },
+    {
+      "label": "CNC Cylindrical Grinding",
+      "iri": "http://asu.edu/semantics/SUDOKN/CNCCylindricalGrindingCapability"
+    }
+  ]
+}

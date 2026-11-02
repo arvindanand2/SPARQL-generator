@@ -1,0 +1,13 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?manufacturerName
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                rdfs:label ?manufacturerName ;
+                sdk:hasProcessCapability ?cap .
+  ?cap rdfs:label ?capLabel .
+}
+GROUP BY ?manufacturer ?manufacturerName
+HAVING (COUNT(?cap) > 0 && SUM(IF(STRENDS(LCASE(STR(?capLabel)), "ing"), 0, 1)) = 0)

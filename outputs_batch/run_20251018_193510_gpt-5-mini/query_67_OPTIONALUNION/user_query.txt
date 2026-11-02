@@ -1,0 +1,1 @@
+List manufacturers and their site coordinates (lat/long) when available; include manufacturers with no coordinates.

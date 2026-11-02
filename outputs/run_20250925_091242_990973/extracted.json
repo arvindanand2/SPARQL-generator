@@ -1,0 +1,19 @@
+{
+  "clauses": [
+    {
+      "subject_hint": "manufacturers",
+      "connective": "IMPLIED",
+      "type": "scope",
+      "relation_hint": "located in",
+      "object_hint": "Midwestern United States"
+    },
+    {
+      "subject_hint": "manufacturers",
+      "connective": "AND",
+      "type": "spo",
+      "relation_hint": "supplies to industry",
+      "object_hint": "Aerospace"
+    }
+  ],
+  "mapping": []
+}

@@ -1,0 +1,3 @@
+processCapability	processCapabilityLabel	company	companyLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 467

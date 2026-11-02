@@ -1,0 +1,40 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel ?latitude ?longitude
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                rdfs:label ?manufacturerLabel ;
+                sdk:organizationLocatedIn ?site ;
+                sdk:hasCertificate ?cert .
+  ?site sdk:hasSpatialCoordinates ?coords .
+  ?coords sdk:hasLatitudeValue ?latitude ;
+          sdk:hasLongitudeValue ?longitude .
+  # Filter: must have one of the quality certifications
+  VALUES ?certClass {
+    <http://asu.edu/semantics/SUDOKN/ISO9001>
+    <http://asu.edu/semantics/SUDOKN/AS9100Certificate>
+    <http://asu.edu/semantics/SUDOKN/ISOQualityCertificate>
+    <http://asu.edu/semantics/SUDOKN/IATF16949>
+    <http://asu.edu/semantics/SUDOKN/QualityCertificate>
+    <http://asu.edu/semantics/SUDOKN/QSQuality>
+    <http://asu.edu/semantics/SUDOKN/AS9120>
+    <http://asu.edu/semantics/SUDOKN/AS9003>
+    <http://asu.edu/semantics/SUDOKN/AerospaceQualityCertificate>
+    <http://asu.edu/semantics/SUDOKN/AS9000>
+  }
+  ?cert a ?certClass .
+  # Filter for Midwest (example: list states)
+  ?site sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  ?state rdfs:label ?stateLabel .
+  FILTER(?stateLabel IN ("Illinois", "Indiana", "Iowa", "Kansas", "Michigan", "Minnesota", "Missouri", "Nebraska", "North Dakota", "Ohio", "South Dakota", "Wisconsin"))
+  # Geospatial position of ASU Tempe campus
+  BIND(33.421204 AS ?asuLat)
+  BIND(-111.93301 AS ?asuLong)
+  BIND(xsd:double(?latitude) AS ?lat)
+  BIND(xsd:double(?longitude) AS ?long)
+  BIND(ABS(?lat - ?asuLat) + ABS(?long - ?asuLong) AS ?distance)
+}
+ORDER BY ?distance

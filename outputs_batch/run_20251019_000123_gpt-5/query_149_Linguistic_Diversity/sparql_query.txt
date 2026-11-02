@@ -1,0 +1,28 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?sector ?sectorLabel ?supplierCount
+WHERE {
+  {
+    SELECT ?sector (COUNT(DISTINCT ?org) AS ?supplierCount)
+    WHERE {
+      ?org a iof-core:Manufacturer ;
+           sdk:suppliesToIndustry ?sector .
+    }
+    GROUP BY ?sector
+  }
+  OPTIONAL { ?sector rdfs:label ?sectorLabel }
+  {
+    SELECT (MAX(?c) AS ?maxCount)
+    WHERE {
+      SELECT ?sector2 (COUNT(DISTINCT ?org2) AS ?c)
+      WHERE {
+        ?org2 a iof-core:Manufacturer ;
+              sdk:suppliesToIndustry ?sector2 .
+      }
+      GROUP BY ?sector2
+    }
+  }
+  FILTER (?supplierCount = ?maxCount)
+}

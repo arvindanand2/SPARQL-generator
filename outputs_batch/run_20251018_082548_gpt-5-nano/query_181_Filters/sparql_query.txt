@@ -1,0 +1,8 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?companyName WHERE {
+  ?org a iof-core:Manufacturer ;
+       rdfs:label ?companyName .
+  FILTER ( LANG(?companyName) = "en" || LANG(?companyName) = "" )
+}

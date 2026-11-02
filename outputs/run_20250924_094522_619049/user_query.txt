@@ -1,0 +1,1 @@
+Get the number of manufacturers in the KG serving each type of Industry. Display the Industry name and corresponding count.

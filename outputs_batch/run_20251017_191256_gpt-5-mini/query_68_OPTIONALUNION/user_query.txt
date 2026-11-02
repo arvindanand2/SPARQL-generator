@@ -1,0 +1,1 @@
+Return each manufacturer with business description text if available; otherwise fall back to the manufacturers name.

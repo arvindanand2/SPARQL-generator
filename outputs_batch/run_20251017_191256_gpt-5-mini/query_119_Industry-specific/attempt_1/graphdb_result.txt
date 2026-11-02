@@ -1,0 +1,3 @@
+manufacturer	manufacturerLabel	industry	industryLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 8077

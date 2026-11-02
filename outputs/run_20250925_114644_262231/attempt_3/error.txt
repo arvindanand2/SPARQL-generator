@@ -1,0 +1,35 @@
+Traceback (most recent call last):
+  File "<project>\.venv\Lib\site-packages\SPARQLWrapper\Wrapper.py", line 926, in _query
+    response = urlopener(request)
+  File "<user-home>\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 189, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "<user-home>\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 495, in open
+    response = meth(req, response)
+  File "<user-home>\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 604, in http_response
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "<user-home>\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 533, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "<user-home>\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 466, in _call_chain
+    result = func(*args)
+  File "<user-home>\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 613, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 400: 
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<project>\query_Graph.py", line 24, in <module>
+    results = sparql.query().convert()
+              ~~~~~~~~~~~~^^
+  File "<project>\.venv\Lib\site-packages\SPARQLWrapper\Wrapper.py", line 960, in query
+    return QueryResult(self._query())
+                       ~~~~~~~~~~~^^
+  File "<project>\.venv\Lib\site-packages\SPARQLWrapper\Wrapper.py", line 930, in _query
+    raise QueryBadFormed(e.read())
+SPARQLWrapper.SPARQLExceptions.QueryBadFormed: QueryBadFormed: A bad request has been sent to the endpoint: probably the SPARQL query is badly formed. 
+
+Response:
+b'MALFORMED QUERY: Encountered " "as" "AS "" at line 27, column 7.\r\nWas expecting one of:\r\n    "(" ...\r\n    "!" ...\r\n    "+" ...\r\n    "-" ...\r\n    "not" ...\r\n    "exists" ...\r\n    "str" ...\r\n    "lang" ...\r\n    "langmatches" ...\r\n    "datatype" ...\r\n    "bound" ...\r\n    "sameTerm" ...\r\n    <IS_IRI> ...\r\n    "isBlank" ...\r\n    "isLiteral" ...\r\n    "isNumeric" ...\r\n    "coalesce" ...\r\n    "bnode" ...\r\n    "strdt" ...\r\n    "strlang" ...\r\n    "uuid" ...\r\n    "struuid" ...\r\n    <IRI> ...\r\n    "if" ...\r\n    "count" ...\r\n    "sum" ...\r\n    "min" ...\r\n    "max" ...\r\n    "avg" ...\r\n    "sample" ...\r\n    "group_concat" ...\r\n    "regex" ...\r\n    "true" ...\r\n    "false" ...\r\n    "strlen" ...\r\n    "substr" ...\r\n    "strStarts" ...\r\n    "strEnds" ...\r\n    "strBefore" ...\r\n    "strAfter" ...\r\n    "replace" ...\r\n    "ucase" ...\r\n    "lcase" ...\r\n    "concat" ...\r\n    "contains" ...\r\n    "encode_for_URI" ...\r\n    "rand" ...\r\n    "abs" ...\r\n    "ceil" ...\r\n    "floor" ...\r\n    "round" ...\r\n    "now" ...\r\n    "year" ...\r\n    "month" ...\r\n    "day" ...\r\n    "hours" ...\r\n    "minutes" ...\r\n    "seconds" ...\r\n    "timezone" ...\r\n    "tz" ...\r\n    "md5" ...\r\n    "sha1" ...\r\n    "sha224" ...\r\n    "sha256" ...\r\n    "sha384" ...\r\n    "sha512" ...\r\n    <Q_IRI_REF> ...\r\n    <PNAME_NS> ...\r\n    <PNAME_LN> ...\r\n    <VAR1> ...\r\n    <VAR2> ...\r\n    <INTEGER> ...\r\n    <INTEGER_POSITIVE> ...\r\n    <INTEGER_NEGATIVE> ...\r\n    <DECIMAL> ...\r\n    <DECIMAL_POSITIVE> ...\r\n    <DECIMAL_NEGATIVE> ...\r\n    <DOUBLE> ...\r\n    <DOUBLE_POSITIVE> ...\r\n    <DOUBLE_NEGATIVE> ...\r\n    <STRING_LITERAL1> ...\r\n    <STRING_LITERAL2> ...\r\n    <STRING_LITERAL_LONG1> ...\r\n    <STRING_LITERAL_LONG2> ...\r\n    "<<" ...\r\n    '

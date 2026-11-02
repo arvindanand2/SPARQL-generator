@@ -1,0 +1,43 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?state ?stateLabel ?manufacturer ?manufacturerLabel ?numProducts WHERE {
+  {
+    SELECT ?state ?manufacturer (COUNT(DISTINCT ?product) AS ?numProducts)
+    WHERE {
+      ?manufacturer a iof-core:Manufacturer ;
+                    sdk:organizationLocatedIn ?site ;
+                    sdk:manufactures ?product .
+      OPTIONAL { ?manufacturer sdk:hasCertificate ?cert . }
+      ?site sdk:locatedInCity ?city .
+      ?city sdk:locatedInState ?state .
+    }
+    GROUP BY ?state ?manufacturer
+    HAVING (COUNT(DISTINCT ?cert) >= 1)
+  }
+  {
+    SELECT ?state (MAX(?numP) AS ?maxNum)
+    WHERE {
+      {
+        SELECT ?state ?manufacturer (COUNT(DISTINCT ?product) AS ?numP)
+        WHERE {
+          ?manufacturer a iof-core:Manufacturer ;
+                        sdk:organizationLocatedIn ?site ;
+                        sdk:manufactures ?product .
+          OPTIONAL { ?manufacturer sdk:hasCertificate ?cert . }
+          ?site sdk:locatedInCity ?city .
+          ?city sdk:locatedInState ?state .
+        }
+        GROUP BY ?state ?manufacturer
+        HAVING (COUNT(DISTINCT ?cert) >= 1)
+      }
+    }
+    GROUP BY ?state
+  }
+  FILTER(?numProducts = ?maxNum)
+  OPTIONAL { ?state rdfs:label ?stateLabel . }
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel . }
+}
+ORDER BY ?stateLabel ?manufacturerLabel

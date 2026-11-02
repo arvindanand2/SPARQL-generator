@@ -1,0 +1,16 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?naics ?state ?stateLabel (COUNT(?org) AS ?manufacturerCount)
+WHERE {
+  ?org a iof-core:Manufacturer .
+  ?org sdk:hasPrimaryNAICSClassifier ?naics .
+  ?org sdk:organizationLocatedIn ?site .
+  ?site sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  OPTIONAL { ?state rdfs:label ?stateLabel . }
+}
+GROUP BY ?naics ?state ?stateLabel
+ORDER BY ?naics ?manufacturerCount DESC
+LIMIT 5

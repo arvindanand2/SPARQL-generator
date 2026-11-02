@@ -1,0 +1,13 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manuf ?manufLabel ?prod ?prodLabel
+WHERE {
+  ?manuf a iof-core:Manufacturer ;
+          rdfs:label ?manufLabel ;
+          sdk:manufactures ?prod .
+  ?prod a iof-core:MaterialProduct ;
+        rdfs:label ?prodLabel .
+}
+ORDER BY ?manufLabel

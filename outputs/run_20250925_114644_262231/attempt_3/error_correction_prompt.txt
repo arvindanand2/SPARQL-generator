@@ -1,0 +1,183 @@
+# SPARQL Error Correction Prompt
+
+You are an expert in semantic web and SPARQL query generation.
+
+Instructions:
+- You are given an error message from GraphDB and the previous SPARQL query.
+- Analyze the error and fix the SPARQL query accordingly.
+- Use the extracted clause data, relevant IRIs, and Turtle data below for context.
+- Strictly follow the predicate and class naming conventions as shown in the Turtle data.
+- Only use prefixes and endpoints that are present in the Turtle data block below. Do not invent or use any other prefixes/endpoints.
+- Output only the corrected SPARQL query. Do not include any explanation or commentary.
+
+### User Query
+Get the manufacturers in the mid west that aerospace or agriculture manufacturers  .Order by those closest to asu tempe campus
+
+### Error message from GraphDB
+Traceback (most recent call last):
+  File "<project>\.venv\Lib\site-packages\SPARQLWrapper\Wrapper.py", line 926, in _query
+    response = urlopener(request)
+  File "<user-home>\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 189, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "<user-home>\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 495, in open
+    response = meth(req, response)
+  File "<user-home>\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 604, in http_response
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "<user-home>\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 533, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "<user-home>\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 466, in _call_chain
+    result = func(*args)
+  File "<user-home>\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 613, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 400: 
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<project>\query_Graph.py", line 24, in <module>
+    results = sparql.query().convert()
+              ~~~~~~~~~~~~^^
+  File "<project>\.venv\Lib\site-packages\SPARQLWrapper\Wrapper.py", line 960, in query
+    return QueryResult(self._query())
+                       ~~~~~~~~~~~^^
+  File "<project>\.venv\Lib\site-packages\SPARQLWrapper\Wrapper.py", line 930, in _query
+    raise QueryBadFormed(e.read())
+SPARQLWrapper.SPARQLExceptions.QueryBadFormed: QueryBadFormed: A bad request has been sent to the endpoint: probably the SPARQL query is badly formed. 
+
+Response:
+b'MALFORMED QUERY: Encountered " "as" "AS "" at line 27, column 7.\r\nWas expecting one of:\r\n    "(" ...\r\n    "!" ...\r\n    "+" ...\r\n    "-" ...\r\n    "not" ...\r\n    "exists" ...\r\n    "str" ...\r\n    "lang" ...\r\n    "langmatches" ...\r\n    "datatype" ...\r\n    "bound" ...\r\n    "sameTerm" ...\r\n    <IS_IRI> ...\r\n    "isBlank" ...\r\n    "isLiteral" ...\r\n    "isNumeric" ...\r\n    "coalesce" ...\r\n    "bnode" ...\r\n    "strdt" ...\r\n    "strlang" ...\r\n    "uuid" ...\r\n    "struuid" ...\r\n    <IRI> ...\r\n    "if" ...\r\n    "count" ...\r\n    "sum" ...\r\n    "min" ...\r\n    "max" ...\r\n    "avg" ...\r\n    "sample" ...\r\n    "group_concat" ...\r\n    "regex" ...\r\n    "true" ...\r\n    "false" ...\r\n    "strlen" ...\r\n    "substr" ...\r\n    "strStarts" ...\r\n    "strEnds" ...\r\n    "strBefore" ...\r\n    "strAfter" ...\r\n    "replace" ...\r\n    "ucase" ...\r\n    "lcase" ...\r\n    "concat" ...\r\n    "contains" ...\r\n    "encode_for_URI" ...\r\n    "rand" ...\r\n    "abs" ...\r\n    "ceil" ...\r\n    "floor" ...\r\n    "round" ...\r\n    "now" ...\r\n    "year" ...\r\n    "month" ...\r\n    "day" ...\r\n    "hours" ...\r\n    "minutes" ...\r\n    "seconds" ...\r\n    "timezone" ...\r\n    "tz" ...\r\n    "md5" ...\r\n    "sha1" ...\r\n    "sha224" ...\r\n    "sha256" ...\r\n    "sha384" ...\r\n    "sha512" ...\r\n    <Q_IRI_REF> ...\r\n    <PNAME_NS> ...\r\n    <PNAME_LN> ...\r\n    <VAR1> ...\r\n    <VAR2> ...\r\n    <INTEGER> ...\r\n    <INTEGER_POSITIVE> ...\r\n    <INTEGER_NEGATIVE> ...\r\n    <DECIMAL> ...\r\n    <DECIMAL_POSITIVE> ...\r\n    <DECIMAL_NEGATIVE> ...\r\n    <DOUBLE> ...\r\n    <DOUBLE_POSITIVE> ...\r\n    <DOUBLE_NEGATIVE> ...\r\n    <STRING_LITERAL1> ...\r\n    <STRING_LITERAL2> ...\r\n    <STRING_LITERAL_LONG1> ...\r\n    <STRING_LITERAL_LONG2> ...\r\n    "<<" ...\r\n    '
+
+
+### Previous SPARQL query
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT ?manufacturer ?label ?latitude ?longitude
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                rdfs:label ?label ;
+                sdk:organizationLocatedIn ?site ;
+                sdk:suppliesToIndustry ?industry .
+  ?site sdk:hasSpatialCoordinates ?coords .
+  ?coords sdk:hasLatitudeValue ?latitude ;
+          sdk:hasLongitudeValue ?longitude .
+  ?site sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  ?state rdfs:label ?stateLabel .
+  FILTER (?stateLabel IN ("Illinois", "Indiana", "Iowa", "Kansas", "Michigan", "Minnesota", "Missouri", "Nebraska", "North Dakota", "Ohio", "South Dakota", "Wisconsin"))
+  ?industry rdfs:label ?industryLabel .
+  FILTER (lcase(str(?industryLabel)) = "aerospace" || lcase(str(?industryLabel)) = "agriculture")
+  BIND(xsd:double(?latitude) AS ?lat)
+  BIND(xsd:double(?longitude) AS ?long)
+  BIND(33.4212 AS ?asuLat)
+  BIND(-111.9336 AS ?asuLong)
+  BIND(
+    6371 * 2 *
+    ( ASIN (
+      SQRT (
+        (SIN(RADIANS((?lat - ?asuLat)/2))) * (SIN(RADIANS((?lat - ?asuLat)/2))) +
+        COS(RADIANS(?asuLat)) * COS(RADIANS(?lat)) *
+        (SIN(RADIANS((?long - ?asuLong)/2))) * (SIN(RADIANS((?long - ?asuLong)/2)))
+       )
+     ) )
+    AS ?distanceKm
+  )
+}
+ORDER BY ?distanceKm
+
+### Extracted Clauses
+{"clauses":[{"enum_values":["Midwest"],"relation_hint":"located in","subject_hint":"manufacturers","connective":"IMPLIED","type":"scope"},{"enum_values":["Aerospace","Agriculture"],"relation_hint":"supplies to industry","subject_hint":"manufacturers","connective":"AND","type":"spo"},{"modifier":{"kind":"nearest","k":null,"by":"ASU Tempe campus"},"filter":{"op":"near","value":"ASU Tempe campus","unit":"poi","min":null,"max":null},"relation_hint":"located near","subject_hint":"manufacturers","connective":"FOLLOWUP","type":"modifier"}],"mapping":[],"relevant_iris":[{"label":"Aerospace Quality","iri":"http://asu.edu/semantics/SUDOKN/AerospaceQualityCertificate"},{"label":"AS 9120","iri":"http://asu.edu/semantics/SUDOKN/AS9120"},{"label":"AS 9003","iri":"http://asu.edu/semantics/SUDOKN/AS9003"},{"label":"AS 9100","iri":"http://asu.edu/semantics/SUDOKN/AS9100Certificate"},{"label":"AWS Welder","iri":"http://asu.edu/semantics/SUDOKN/AWSWelder"},{"label":"AS 9000","iri":"http://asu.edu/semantics/SUDOKN/AS9000"},{"label":"AS 9102","iri":"http://asu.edu/semantics/SUDOKN/AS9102"},{"label":"Professional","iri":"http://asu.edu/semantics/SUDOKN/Professional"},{"label":"NADCAP","iri":"http://asu.edu/semantics/SUDOKN/NADCAP"},{"label":"QS Quality","iri":"http://asu.edu/semantics/SUDOKN/QSQuality"}]}
+
+### Relevant IRIs
+[{"label":"Aerospace Quality","iri":"http://asu.edu/semantics/SUDOKN/AerospaceQualityCertificate"},{"label":"AS 9120","iri":"http://asu.edu/semantics/SUDOKN/AS9120"},{"label":"AS 9003","iri":"http://asu.edu/semantics/SUDOKN/AS9003"},{"label":"AS 9100","iri":"http://asu.edu/semantics/SUDOKN/AS9100Certificate"},{"label":"AWS Welder","iri":"http://asu.edu/semantics/SUDOKN/AWSWelder"},{"label":"AS 9000","iri":"http://asu.edu/semantics/SUDOKN/AS9000"},{"label":"AS 9102","iri":"http://asu.edu/semantics/SUDOKN/AS9102"},{"label":"Professional","iri":"http://asu.edu/semantics/SUDOKN/Professional"},{"label":"NADCAP","iri":"http://asu.edu/semantics/SUDOKN/NADCAP"},{"label":"QS Quality","iri":"http://asu.edu/semantics/SUDOKN/QSQuality"}]
+
+### Reference Turtle Data
+@base <http://asu.edu/semantics/SUDOKN/> .
+@prefix iof-core: <https://spec.industrialontologies.org/ontology/core/Core/> .
+@prefix sdk: <http://asu.edu/semantics/SUDOKN/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bfo: <http://purl.obolibrary.org/obo/> .
+
+
+sdk:org-001 a iof-core:Manufacturer ;
+  rdfs:label "Company A" ;
+  sdk:hasNumberOfEmployees "100"^^xsd:string ;
+  sdk:hasCertificate sdk:cert-001 ,sdk:cert-002 ;
+  sdk:suppliesToIndustry sdk:industry-001, sdk:industry-002 ;
+  sdk:hasProcessCapability sdk:org-001-cap-machining, sdk:org-001-cap-coating ;
+  sdk:hasMaterialCapability sdk:org-001-mat-bronze, sdk:org-001-mat-steel ;
+  sdk:hasPrimaryNAICSClassifier sdk:naics-332996.0-inst ;
+  sdk:organizationLocatedIn sdk:site-001 ;
+  sdk:manufactures sdk:prod-001, sdk:prod-002 ;
+  iof-core:describedBy sdk:org-001-description .
+
+sdk:industry-001 a sdk:RenewableEnergyIndustry ;
+  rdfs:label "Industry A" .
+
+sdk:industry-002 a sdk:UtilitiesIndustry ;
+  rdfs:label "Industry B" .
+
+# --- Process capabilities (2) ---
+sdk:org-001-cap-machining a sdk:MachiningCapability ;
+  rdfs:label "Machining" .
+
+sdk:org-001-cap-coating a sdk:CoatingCapability ;
+  rdfs:label "Coating" .
+
+# --- Material capabilities (2) ---
+sdk:org-001-mat-bronze a sdk:BronzeProcessingCapability ;
+  rdfs:label "Bronze" .
+
+sdk:org-001-mat-steel a sdk:SteelProcessingCapability ;
+  rdfs:label "Steel" .
+
+# --- NAICS ---
+sdk:naics-332996.0-inst a sdk:NAICS332996.0 ;
+  sdk:hasNAICSCodeValue "332996.0"^^xsd:integer ;
+  sdk:hasNAICSTextValue "FABRICATED PIPE AND PIPE FITTING MANUFACTURING" .
+
+# --- Site / location (anonymized) ---
+sdk:site-001 a sdk:GeospatialLocation ;
+  sdk:hasSpatialCoordinates sdk:site-001-coordinates ;
+  sdk:locatedInCity sdk:city-001 ;
+  sdk:hasZIPcode sdk:site-001-zip ;
+  sdk:hasPostalAddress sdk:site-001-address .
+
+sdk:site-001-coordinates a sdk:TwoDimensionalCartesianSpatialCoordinateDatum ;
+  sdk:hasLatitudeValue "0.0000000" ;
+  sdk:hasLongitudeValue "0.0000000" .
+
+sdk:city-001 a sdk:City ;
+  sdk:locatedInState sdk:state-001 ;
+  rdfs:label "City A" .
+
+sdk:state-001 a sdk:State ;
+  rdfs:label "State A" .
+
+sdk:site-001-zip a sdk:USPostalCode ;
+  sdk:hasIntegerValue "00000" .
+
+sdk:site-001-address a sdk:PostalAddress ;
+  iof-scro:hasTextValue "Address Line 1" .
+
+# --- Products (2) ---
+sdk:prod-001 a iof-core:MaterialProduct ; rdfs:label "Product 1" .
+sdk:prod-002 a iof-core:MaterialProduct ; rdfs:label "Product 2" .
+
+# --- Cert & description ---
+sdk:cert-001 a sdk:ISO9001 ;
+  rdfs:label "ISO 9001" .
+
+sdk:cert-002 a sdk:ISO14001 ;
+  rdfs:label "ISO 14001" .
+
+sdk:org-001-description a sdk:BusinessDescription .
+  iof-scro:hasTextValue "This is a sample business description for Company A." .
+

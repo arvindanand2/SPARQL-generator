@@ -1,0 +1,99 @@
+User Query: Among manufacturers headquartered in Texas or Indiana,that perform both CNC milling and anodizing on aluminum or titanium,have a public web address, and supply to both the aerospace and military industries: which 5 companies have the highest number of distinct process capabilities (counted across all their U.S. sites), and for each return company name, a representative site city/state, the count of distinct processes? Break ties by choosing the companies nearest to Austin.
+# SPARQL Query Generation Prompt
+
+You are an expert in semantic web and SPARQL query generation.
+
+Instructions:
+- Use the extracted clause data provided below to determine the logic and constraints for the SPARQL query.
+- Use the Turtle data only for reference to predicate and class names. Do not invent new predicates or classes.
+- Strictly follow the predicate and class naming conventions as shown in the Turtle data.
+- Output only a valid SPARQL query. Do not include any explanation or commentary.
+
+Extracted Clauses:
+{"clauses":[{"type":"scope","modifier":{"kind":"group","k":null,"by":"company"},"subject_hint":"manufacturers","enum_values":["Texas","Indiana"],"connective":"IMPLIED","relation_hint":"headquartered in"},{"type":"spo","modifier":{"kind":"group","k":null,"by":"process and material"},"subject_hint":"manufacturers","enum_values":["CNC milling","anodizing"],"connective":"AND","relation_hint":"perform"},{"type":"enum","modifier":{"kind":"group","k":null,"by":"material"},"subject_hint":"process input","enum_values":["aluminum","titanium"],"connective":"IMPLIED","relation_hint":"material"},{"type":"spo","modifier":{"kind":"group","k":null,"by":"company"},"object_hint":"public","subject_hint":"manufacturers","connective":"AND","relation_hint":"has web address"},{"type":"spo","modifier":{"kind":"group","k":null,"by":"industry"},"subject_hint":"manufacturers","enum_values":["aerospace","military"],"connective":"AND","relation_hint":"supplies to industry"},{"type":"modifier","modifier":{"kind":"topN","k":5,"by":"count_distinct_process_capabilities_across_US_sites"},"object_hint":"number","subject_hint":"companies","connective":"IMPLIED","relation_hint":"process capabilities"},{"type":"modifier","filter":{"op":"near","value":"Austin","unit":"city","min":null,"max":null},"modifier":{"kind":"nearest","k":null,"by":"distance_to_Austin"},"object_hint":"Austin","subject_hint":"companies","connective":"FOLLOWUP","relation_hint":"located near"}],"warnings":["Clause #2\u20133 decomposes 'CNC milling and anodizing on aluminum or titanium' to enum over both processes and materials; ambiguity about process-material combination mapping.","Offsets best-effort, but approximate due to clause interleaving; see clause char_start/char_end.","'counted across all their U.S. sites' reflected in modifier group by 'count_distinct_process_capabilities_across_US_sites'.","'representative site city/state' and required outputs are implicit\u2014no clauses for select-returns, only for filter relationships and ordering.","Break tie on 'nearest to Austin' mapped as a modifier."],"relevant_iris":[{"label":"Five Axis Machining","iri":"http://asu.edu/semantics/SUDOKN/FiveAxisMachiningCapability"},{"label":"Seven Axis Machining","iri":"http://asu.edu/semantics/SUDOKN/SevenAxisMachiningCapability"},{"label":"NADCAP","iri":"http://asu.edu/semantics/SUDOKN/NADCAP"},{"label":"Specialized Machining","iri":"http://asu.edu/semantics/SUDOKN/SpecializedMachiningCapability"},{"label":"Aerospace Quality","iri":"http://asu.edu/semantics/SUDOKN/AerospaceQualityCertificate"},{"label":"Anodizing","iri":"http://asu.edu/semantics/SUDOKN/AnodizingCapability"},{"label":"CNC Machining","iri":"http://asu.edu/semantics/SUDOKN/CNCMachiningCapability"},{"label":"CNC Cylindrical Grinding","iri":"http://asu.edu/semantics/SUDOKN/CNCCylindricalGrindingCapability"},{"label":"AWS Welder","iri":"http://asu.edu/semantics/SUDOKN/AWSWelder"},{"label":"AS 9102","iri":"http://asu.edu/semantics/SUDOKN/AS9102"}]}
+
+Reference Turtle Data:
+@base <http://asu.edu/semantics/SUDOKN/> .
+@prefix iof-core: <https://spec.industrialontologies.org/ontology/core/Core/> .
+@prefix sdk: <http://asu.edu/semantics/SUDOKN/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bfo: <http://purl.obolibrary.org/obo/> .
+
+
+sdk:org-001 a iof-core:Manufacturer ;
+  rdfs:label "Company A" ;
+  sdk:hasNumberOfEmployees "100"^^xsd:string ;
+  sdk:hasCertificate sdk:cert-001 ,sdk:cert-002 ;
+  sdk:suppliesToIndustry sdk:industry-001, sdk:industry-002 ;
+  sdk:hasProcessCapability sdk:org-001-cap-machining, sdk:org-001-cap-coating ;
+  sdk:hasMaterialCapability sdk:org-001-mat-bronze, sdk:org-001-mat-steel ;
+  sdk:hasPrimaryNAICSClassifier sdk:naics-332996.0-inst ;
+  sdk:organizationLocatedIn sdk:site-001 ;
+  sdk:manufactures sdk:prod-001, sdk:prod-002 ;
+  iof-core:describedBy sdk:org-001-description .
+
+sdk:industry-001 a sdk:RenewableEnergyIndustry ;
+  rdfs:label "Industry A" .
+
+sdk:industry-002 a sdk:UtilitiesIndustry ;
+  rdfs:label "Industry B" .
+
+# --- Process capabilities (2) ---
+sdk:org-001-cap-machining a sdk:MachiningCapability ;
+  rdfs:label "Machining" .
+
+sdk:org-001-cap-coating a sdk:CoatingCapability ;
+  rdfs:label "Coating" .
+
+# --- Material capabilities (2) ---
+sdk:org-001-mat-bronze a sdk:BronzeProcessingCapability ;
+  rdfs:label "Bronze" .
+
+sdk:org-001-mat-steel a sdk:SteelProcessingCapability ;
+  rdfs:label "Steel" .
+
+# --- NAICS ---
+sdk:naics-332996.0-inst a sdk:NAICS332996.0 ;
+  sdk:hasNAICSCodeValue "332996.0"^^xsd:integer ;
+  sdk:hasNAICSTextValue "FABRICATED PIPE AND PIPE FITTING MANUFACTURING" .
+
+# --- Site / location (anonymized) ---
+sdk:site-001 a sdk:GeospatialLocation ;
+  sdk:hasSpatialCoordinates sdk:site-001-coordinates ;
+  sdk:locatedInCity sdk:city-001 ;
+  sdk:hasZIPcode sdk:site-001-zip ;
+  sdk:hasPostalAddress sdk:site-001-address .
+
+sdk:site-001-coordinates a sdk:TwoDimensionalCartesianSpatialCoordinateDatum ;
+  sdk:hasLatitudeValue "0.0000000" ;
+  sdk:hasLongitudeValue "0.0000000" .
+
+sdk:city-001 a sdk:City ;
+  sdk:locatedInState sdk:state-001 ;
+  rdfs:label "City A" .
+
+sdk:state-001 a sdk:State ;
+  rdfs:label "State A" .
+
+sdk:site-001-zip a sdk:USPostalCode ;
+  sdk:hasIntegerValue "00000" .
+
+sdk:site-001-address a sdk:PostalAddress ;
+  iof-scro:hasTextValue "Address Line 1" .
+
+# --- Products (2) ---
+sdk:prod-001 a iof-core:MaterialProduct ; rdfs:label "Product 1" .
+sdk:prod-002 a iof-core:MaterialProduct ; rdfs:label "Product 2" .
+
+# --- Cert & description ---
+sdk:cert-001 a sdk:ISO-9001 ;
+  rdfs:label "ISO 9001" .
+
+sdk:cert-002 a sdk:ISO-14001 ;
+  rdfs:label "ISO 14001" .
+
+sdk:org-001-description a sdk:BusinessDescription .
+  iof-scro:hasTextValue "This is a sample business description for Company A." .
+

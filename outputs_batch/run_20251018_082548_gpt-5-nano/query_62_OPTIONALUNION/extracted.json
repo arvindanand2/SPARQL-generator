@@ -1,0 +1,64 @@
+{
+  "clauses": [
+    {
+      "relation_hint": "has process capability",
+      "connective": "IMPLIED",
+      "filter": {
+        "op": "near",
+        "value": "",
+        "unit": "city",
+        "min": null,
+        "max": null
+      },
+      "subject_hint": "manufacturers",
+      "enum_values": [
+        "Machining",
+        "Coating"
+      ],
+      "type": "spo"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/MachiningCapability"
+    },
+    {
+      "label": "NADCAP",
+      "iri": "http://asu.edu/semantics/SUDOKN/NADCAP"
+    },
+    {
+      "label": "Specialized Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/SpecializedMachiningCapability"
+    },
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "Standard Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/MachiningCapability"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "Mechanical Coating",
+      "iri": "http://asu.edu/semantics/SUDOKN/MechanicalCoatingCapability"
+    },
+    {
+      "label": "Chemical Processing",
+      "iri": "http://asu.edu/semantics/SUDOKN/ChemicalProcessingCapability"
+    },
+    {
+      "label": "Milling",
+      "iri": "http://asu.edu/semantics/SUDOKN/MillingCapability"
+    },
+    {
+      "label": "Nonconventional Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/MachiningCapability"
+    }
+  ]
+}

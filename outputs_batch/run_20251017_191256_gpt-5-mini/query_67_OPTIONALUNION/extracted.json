@@ -1,0 +1,52 @@
+{
+  "clauses": [
+    {
+      "type": "scope",
+      "subject_hint": "manufacturers",
+      "connective": "AND",
+      "relation_hint": "is manufacturer"
+    },
+    {
+      "type": "spo",
+      "subject_hint": "manufacturers",
+      "connective": "IMPLIED",
+      "relation_hint": "has site coordinates",
+      "object_hint": "latitude/longitude"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "LEED",
+      "iri": "http://asu.edu/semantics/SUDOKN/LEED"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    },
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "NIST",
+      "iri": "http://asu.edu/semantics/SUDOKN/nist"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "ISO 27001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO27001"
+    },
+    {
+      "label": "ISO 14001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO14001"
+    }
+  ]
+}

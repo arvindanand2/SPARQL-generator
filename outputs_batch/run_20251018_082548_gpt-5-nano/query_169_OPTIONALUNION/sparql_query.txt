@@ -1,0 +1,18 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?mLabel ?state ?stateLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+               rdfs:label ?mLabel .
+  {
+    ?manufacturer sdk:organizationLocatedIn ?site .
+    ?site sdk:locatedInCity ?city .
+    ?city sdk:locatedInState ?state .
+  } UNION {
+    ?manufacturer sdk:organizationLocatedIn ?state .
+    ?state a sdk:State .
+  }
+  ?state rdfs:label ?stateLabel .
+}

@@ -1,0 +1,45 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+
+SELECT DISTINCT ?org ?orgLabel ?cityLabel ?procCapLabel ?matCapLabel
+WHERE {
+  ?org a iof-core:Manufacturer ;
+       rdfs:label ?orgLabel ;
+       sdk:organizationLocatedIn ?site .
+  ?site sdk:locatedInCity ?city .
+  ?city rdfs:label ?cityLabel .
+  FILTER (str(?cityLabel) = "New York")
+  OPTIONAL {
+     ?org sdk:hasProcessCapability ?procCap .
+     ?procCap rdfs:label ?procCapLabel .
+     ?procCap a ?procCapType .
+     VALUES ?procCapType {
+        <http://asu.edu/semantics/SUDOKN/NylonProcessingCapability>
+        <http://asu.edu/semantics/SUDOKN/AcetalProcessingCapability>
+        <http://asu.edu/semantics/SUDOKN/NickelProcessingCapability>
+        <http://asu.edu/semantics/SUDOKN/PlasticProcessingCapability>
+        <http://asu.edu/semantics/SUDOKN/ZytelProcessingCapability>
+        <http://asu.edu/semantics/SUDOKN/AcrylicProcessingCapability>
+        <http://asu.edu/semantics/SUDOKN/GlassProcessingCapability>
+        <http://asu.edu/semantics/SUDOKN/MetalProcessingCapability>
+        <http://asu.edu/semantics/SUDOKN/BabbitProcessingCapability>
+     }
+  }
+  OPTIONAL {
+     ?org sdk:hasMaterialCapability ?matCap .
+     ?matCap rdfs:label ?matCapLabel .
+     ?matCap a ?matCapType .
+     VALUES ?matCapType {
+        <http://asu.edu/semantics/SUDOKN/NylonProcessingCapability>
+        <http://asu.edu/semantics/SUDOKN/AcetalProcessingCapability>
+        <http://asu.edu/semantics/SUDOKN/NickelProcessingCapability>
+        <http://asu.edu/semantics/SUDOKN/PlasticProcessingCapability>
+        <http://asu.edu/semantics/SUDOKN/ZytelProcessingCapability>
+        <http://asu.edu/semantics/SUDOKN/AcrylicProcessingCapability>
+        <http://asu.edu/semantics/SUDOKN/GlassProcessingCapability>
+        <http://asu.edu/semantics/SUDOKN/MetalProcessingCapability>
+        <http://asu.edu/semantics/SUDOKN/BabbitProcessingCapability>
+     }
+  }
+}

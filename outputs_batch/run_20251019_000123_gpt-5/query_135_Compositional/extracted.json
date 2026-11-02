@@ -1,0 +1,78 @@
+{
+  "clauses": [
+    {
+      "connective": "IMPLIED",
+      "type": "scope",
+      "enum_values": [
+        "Arizona"
+      ],
+      "subject_hint": "manufacturers",
+      "relation_hint": "located in"
+    },
+    {
+      "connective": "AND",
+      "type": "spo",
+      "filter": {
+        "op": "gt",
+        "value": 50,
+        "unit": "employees",
+        "min": null,
+        "max": null
+      },
+      "subject_hint": "manufacturers",
+      "relation_hint": "has employee count"
+    },
+    {
+      "connective": "AND",
+      "type": "spo",
+      "enum_values": [
+        "Additive Manufacturing"
+      ],
+      "subject_hint": "manufacturers",
+      "relation_hint": "has process capability"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Metal Additive Manufacturing",
+      "iri": "http://asu.edu/semantics/SUDOKN/AdditiveManufacturingCapability"
+    },
+    {
+      "label": "Additive Manufacturing",
+      "iri": "http://asu.edu/semantics/SUDOKN/AdditiveManufacturingCapability"
+    },
+    {
+      "label": "AS 9102",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9102"
+    },
+    {
+      "label": "AWS Welder",
+      "iri": "http://asu.edu/semantics/SUDOKN/AWSWelder"
+    },
+    {
+      "label": "NADCAP",
+      "iri": "http://asu.edu/semantics/SUDOKN/NADCAP"
+    },
+    {
+      "label": "Five Axis Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/FiveAxisMachiningCapability"
+    },
+    {
+      "label": "Fused Deposition Modeling",
+      "iri": "http://asu.edu/semantics/SUDOKN/FusedDepositionModelingCapability"
+    },
+    {
+      "label": "Aerospace Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/AerospaceQualityCertificate"
+    },
+    {
+      "label": "Solid Deposition",
+      "iri": "http://asu.edu/semantics/SUDOKN/SolidDepositionCapability"
+    },
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    }
+  ]
+}

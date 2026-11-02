@@ -1,0 +1,5 @@
+Run 1 failed. Compressed error:
+Response:
+Response:
+b"MALFORMED QUERY: QName 'iof-core:Manufacturer' uses an undefined prefix"
+All retries failed.

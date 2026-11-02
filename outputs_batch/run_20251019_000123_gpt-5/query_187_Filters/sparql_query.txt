@@ -1,0 +1,21 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel ?zipString ?lat
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                rdfs:label ?manufacturerLabel ;
+                sdk:organizationLocatedIn ?site .
+  ?site sdk:hasSpatialCoordinates ?coords ;
+        sdk:hasZIPcode ?zipRes ;
+        sdk:locatedInCity ?city .
+  ?coords sdk:hasLatitudeValue ?lat .
+  ?zipRes sdk:hasIntegerValue ?zip .
+  ?city sdk:locatedInState ?state .
+  ?state rdfs:label "Arizona" .
+  BIND(STR(?zip) AS ?zipString)
+  FILTER(?lat > "33.4"^^xsd:float)
+  FILTER(?zipString != "85001")
+}

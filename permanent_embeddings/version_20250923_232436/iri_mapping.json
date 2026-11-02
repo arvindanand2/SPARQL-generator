@@ -1,0 +1,5792 @@
+{
+  "abrasive cleaning": {
+    "iri": "http://asu.edu/semantics/SUDOKN/AbrasiveCleaningCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "abrasive machining": {
+    "iri": "http://asu.edu/semantics/SUDOKN/AbrassiveMachiningCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "abrasivemachiningcapability": {
+    "iri": "http://asu.edu/semantics/SUDOKN/AbrasiveMachiningCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "abs": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ABSProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "acetal": {
+    "iri": "http://asu.edu/semantics/SUDOKN/AcetalProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "acetron": {
+    "iri": "http://asu.edu/semantics/SUDOKN/AcetronProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "acrylic": {
+    "iri": "http://asu.edu/semantics/SUDOKN/AcrylicProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "additive manufacturing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/AdditiveManufacturingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "adhesive bonding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/AdhesiveBondingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "aerospace": {
+    "iri": "http://asu.edu/semantics/SUDOKN/AerospaceIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "aerospace quality": {
+    "iri": "http://asu.edu/semantics/SUDOKN/AerospaceQualityCertificate",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "aerospaceindustry": {
+    "iri": "http://asu.edu/semantics/SUDOKN/aerospaceIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "aerospacequality": {
+    "iri": "http://asu.edu/semantics/SUDOKN/AerospaceQuality",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "agequenchhardeningcapability": {
+    "iri": "http://asu.edu/semantics/SUDOKN/AgeQuenchHardeningCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "agriculture": {
+    "iri": "http://asu.edu/semantics/SUDOKN/AgricultureIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "alkaline oxide conversion coating": {
+    "iri": "http://asu.edu/semantics/SUDOKN/AlkalineOxideConversionCoatingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "alldisjointclasses": {
+    "iri": "http://www.w3.org/2002/07/owl#AllDisjointClasses",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "alloy": {
+    "iri": "http://asu.edu/semantics/SUDOKN/AlloyProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "alloy steel": {
+    "iri": "http://asu.edu/semantics/SUDOKN/AlloySteelProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "aluminum": {
+    "iri": "http://asu.edu/semantics/SUDOKN/AluminumProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "annealing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/AnnealingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "annotationproperty": {
+    "iri": "http://www.w3.org/2002/07/owl#AnnotationProperty",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "anodizing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/AnodizingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "apparel": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ApparelIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "apparelindustry": {
+    "iri": "http://asu.edu/semantics/SUDOKN/apparelIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "as 9100": {
+    "iri": "http://asu.edu/semantics/SUDOKN/AS9100Certificate",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "as9000": {
+    "iri": "http://asu.edu/semantics/SUDOKN/AS9000",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "as9003": {
+    "iri": "http://asu.edu/semantics/SUDOKN/AS9003",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "as9100": {
+    "iri": "http://asu.edu/semantics/SUDOKN/AS9100",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "as9102": {
+    "iri": "http://asu.edu/semantics/SUDOKN/AS9102",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "as9120": {
+    "iri": "http://asu.edu/semantics/SUDOKN/AS9120",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "asme": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ASME",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "atomic hydrogen welding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/AtomicHydrogenWeldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "attests to": {
+    "iri": "http://asu.edu/semantics/SUDOKN/attestsTo",
+    "type": "predicate",
+    "id": "pred:attestsTo@v1",
+    "source_file": "predicates_with_embeddings.jsonl"
+  },
+  "audio and visual": {
+    "iri": "http://asu.edu/semantics/SUDOKN/AudioAndVisualIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "austempering": {
+    "iri": "http://asu.edu/semantics/SUDOKN/AustemperingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "automotive": {
+    "iri": "http://asu.edu/semantics/SUDOKN/AutomotiveIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "awswelder": {
+    "iri": "http://asu.edu/semantics/SUDOKN/AWSWelder",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "baba": {
+    "iri": "http://asu.edu/semantics/SUDOKN/BABA",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "babbit": {
+    "iri": "http://asu.edu/semantics/SUDOKN/BabbitProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "bar drawing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/BarDrawingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "barrel finishing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/BarrelFinishingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "bead blasting": {
+    "iri": "http://asu.edu/semantics/SUDOKN/BeadBlastingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "belt sanding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/BeltSandingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "bending": {
+    "iri": "http://asu.edu/semantics/SUDOKN/BendingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "beryllium": {
+    "iri": "http://asu.edu/semantics/SUDOKN/BerylliumProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "beverage": {
+    "iri": "http://asu.edu/semantics/SUDOKN/BeverageIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "beverageindustry": {
+    "iri": "http://asu.edu/semantics/SUDOKN/beverageIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "bfo_0000019": {
+    "iri": "http://purl.obolibrary.org/obo/BFO_0000019",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "bfo_0000029": {
+    "iri": "http://purl.obolibrary.org/obo/BFO_0000029",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "black oxide coating": {
+    "iri": "http://asu.edu/semantics/SUDOKN/BlackOxideCoatingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "blow molding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/BlowMoldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "blue temp steel": {
+    "iri": "http://asu.edu/semantics/SUDOKN/BlueTempSteelProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "boring": {
+    "iri": "http://asu.edu/semantics/SUDOKN/BoringCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "brand name": {
+    "iri": "http://asu.edu/semantics/SUDOKN/BrandName",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "brass": {
+    "iri": "http://asu.edu/semantics/SUDOKN/BrassProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "braze welding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/BrazeWeldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "brazing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/BrazingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "britishretailconsortium": {
+    "iri": "http://asu.edu/semantics/SUDOKN/BritishRetailConsortium",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "broaching": {
+    "iri": "http://asu.edu/semantics/SUDOKN/BroachingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "bronze": {
+    "iri": "http://asu.edu/semantics/SUDOKN/BronzeProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "buffing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/BuffingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "building number": {
+    "iri": "http://asu.edu/semantics/SUDOKN/BuildingNumber",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "bulge forming": {
+    "iri": "http://asu.edu/semantics/SUDOKN/BulgeFormingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "business equipment": {
+    "iri": "http://asu.edu/semantics/SUDOKN/BusinessEquipmentIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "businessdescription": {
+    "iri": "http://asu.edu/semantics/SUDOKN/BusinessDescription",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "businessequipmentindustry": {
+    "iri": "http://asu.edu/semantics/SUDOKN/businessequipmentIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "butt welding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ButtWeldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "cadmium plating": {
+    "iri": "http://asu.edu/semantics/SUDOKN/CadmiumPlatingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "carbide": {
+    "iri": "http://asu.edu/semantics/SUDOKN/CarbideProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "carbide machining": {
+    "iri": "http://asu.edu/semantics/SUDOKN/CarbideMachiningCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "carbon": {
+    "iri": "http://asu.edu/semantics/SUDOKN/CarbonProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "carbon arc welding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/CarbonArcWeldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "carbon dioxide mold casting": {
+    "iri": "http://asu.edu/semantics/SUDOKN/CarbonDioxideMoldCastingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "carbon fiber": {
+    "iri": "http://asu.edu/semantics/SUDOKN/CarbonFiberProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "carbonitriding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/CarbonitridingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "carburizing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/CarburizingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "cast steel": {
+    "iri": "http://asu.edu/semantics/SUDOKN/CastSteelProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "casting": {
+    "iri": "http://asu.edu/semantics/SUDOKN/CastingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "centerless grinding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/CenterlessGrindingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "centrifugal casting": {
+    "iri": "http://asu.edu/semantics/SUDOKN/CentrifugalCastingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "ceramic": {
+    "iri": "http://asu.edu/semantics/SUDOKN/CeramicProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "ceramic mold casting": {
+    "iri": "http://asu.edu/semantics/SUDOKN/CeramicMoldCastingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "ceramicprocessingcapability": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ceramicProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "certificate": {
+    "iri": "http://asu.edu/semantics/SUDOKN/Certificate",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "chemical and petrochemical": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ChemicalAndPetrochemicalIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "chemical cleaning": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ChemicalCleaningCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "chemical coating": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ChemicalCoatingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "chemical conversion coating": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ChemicalConversionCoatingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "chemical engraving": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ChemicalEngravingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "chemical machining": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ChemicalMachiningCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "chemical mechanical polishing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ChemicalMechanicalPolishingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "chemical polishing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ChemicalPolishingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "chemical vapor deposition": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ChemicalVaporDepositionCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "chemicalcoatingcapability": {
+    "iri": "http://asu.edu/semantics/SUDOKN/chemicalcoatingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "chemicalindustry": {
+    "iri": "http://asu.edu/semantics/SUDOKN/chemicalIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "chemicalprocessingcapability": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ChemicalProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "chemicals": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ChemicalsProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "chromate conversion coating": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ChromateConversionCoatingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "chrome plating": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ChromePlatingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "chromium": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ChromiumProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "chromizing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ChromizingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "city": {
+    "iri": "http://asu.edu/semantics/SUDOKN/City",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "city of": {
+    "iri": "http://asu.edu/semantics/SUDOKN/CityOf",
+    "type": "predicate",
+    "id": "pred:CityOf@v1",
+    "source_file": "predicates_with_embeddings.jsonl"
+  },
+  "city of address": {
+    "iri": "http://asu.edu/semantics/SUDOKN/CityOfAddress",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "class": {
+    "iri": "http://www.w3.org/2000/01/rdf-schema#Class",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "classifier": {
+    "iri": "http://asu.edu/semantics/SUDOKN/Classifier",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "clyindricalgrindingcapability": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ClyindricalGrindingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "cnc cylindrical grinding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/CNCCylindricalGrindingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "cnc laser cutting": {
+    "iri": "http://asu.edu/semantics/SUDOKN/CNCLaserCuttingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "cnc machining": {
+    "iri": "http://asu.edu/semantics/SUDOKN/CNCMachiningCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "cnc milling": {
+    "iri": "http://asu.edu/semantics/SUDOKN/CNCMillingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "cnc routing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/CNCRoutingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "cnc turning": {
+    "iri": "http://asu.edu/semantics/SUDOKN/CNCTurningCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "coal": {
+    "iri": "http://asu.edu/semantics/SUDOKN/CoalIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "coating": {
+    "iri": "http://asu.edu/semantics/SUDOKN/CoatingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "coatingcapability": {
+    "iri": "http://asu.edu/semantics/SUDOKN/coatingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "cobalt": {
+    "iri": "http://asu.edu/semantics/SUDOKN/CobaltProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "coining": {
+    "iri": "http://asu.edu/semantics/SUDOKN/CoiningCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "cold chamber die casting": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ColdChamberDieCastingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "cold rolled steel": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ColdRolledSteelProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "cold treatment": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ColdTreatmentCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "cold vacuum pressing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ColdVacuumPressingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "combustible gas welding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/CombustibleGasWeldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "communication and electronic power utilities": {
+    "iri": "http://asu.edu/semantics/SUDOKN/CommunicationAndElectronicPowerUtilitiesIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "communicationindustry": {
+    "iri": "http://asu.edu/semantics/SUDOKN/communicationIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "communications": {
+    "iri": "http://asu.edu/semantics/SUDOKN/CommunicationsIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "composite": {
+    "iri": "http://asu.edu/semantics/SUDOKN/CompositeProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "compression molding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/CompressionMoldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "computer": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ComputerIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "concrete": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ConcreteProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "construction": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ConstructionIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "constructionindustry": {
+    "iri": "http://asu.edu/semantics/SUDOKN/constructionIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "consumer goods": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ConsumerGoodsIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "containermembershipproperty": {
+    "iri": "http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "continuous casting": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ContinuousCastingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "copper": {
+    "iri": "http://asu.edu/semantics/SUDOKN/CopperProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "copperplatingcapability": {
+    "iri": "http://asu.edu/semantics/SUDOKN/CopperPlatingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "counter boring": {
+    "iri": "http://asu.edu/semantics/SUDOKN/CounterBoringCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "counter sinking": {
+    "iri": "http://asu.edu/semantics/SUDOKN/CounterSinkingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "country of address": {
+    "iri": "http://asu.edu/semantics/SUDOKN/CountryOfAddress",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "cpvc": {
+    "iri": "http://asu.edu/semantics/SUDOKN/CPVCProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "creep feed grinding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/CreepFeedGrindingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "crochet": {
+    "iri": "http://asu.edu/semantics/SUDOKN/CrochetCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "ctfe": {
+    "iri": "http://asu.edu/semantics/SUDOKN/CTFEProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "curvic grinding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/CurvicGrindingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "custom tubing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/CustomTubingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "cuttolengthtubingcapability": {
+    "iri": "http://asu.edu/semantics/SUDOKN/CuttoLengthTubingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "cyaniding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/CyanidingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "cylindrical grinding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/CylindricalGrindingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "datatype": {
+    "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "datatypeproperty": {
+    "iri": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "deburring": {
+    "iri": "http://asu.edu/semantics/SUDOKN/DeburringCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "decorative anodizing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/DecorativeAnodizingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "deep hole drilling": {
+    "iri": "http://asu.edu/semantics/SUDOKN/DeepHoleDrillingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "defense": {
+    "iri": "http://asu.edu/semantics/SUDOKN/DefenseIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "defenseindustry": {
+    "iri": "http://asu.edu/semantics/SUDOKN/defenseIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "delrin": {
+    "iri": "http://asu.edu/semantics/SUDOKN/DelrinProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "designative name": {
+    "iri": "http://asu.edu/semantics/SUDOKN/DesignativeName",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "diamond machining": {
+    "iri": "http://asu.edu/semantics/SUDOKN/DiamondMachiningCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "die casting": {
+    "iri": "http://asu.edu/semantics/SUDOKN/DieCastingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "diffusion bonding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/DiffusionBondingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "diffusion hardening": {
+    "iri": "http://asu.edu/semantics/SUDOKN/DiffusionHardeningCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "dip brazing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/DipBrazingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "direct extrusion": {
+    "iri": "http://asu.edu/semantics/SUDOKN/DirectExtrusionCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "drawing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/DrawingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "drilling": {
+    "iri": "http://asu.edu/semantics/SUDOKN/DrillingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "drop on demand": {
+    "iri": "http://asu.edu/semantics/SUDOKN/DropOnDemandCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "dyeing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/DyeingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "ecg tube cutting": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ECGTubeCuttingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "edm": {
+    "iri": "http://asu.edu/semantics/SUDOKN/EDMCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "education": {
+    "iri": "http://asu.edu/semantics/SUDOKN/EducationIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "electric arc welding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ElectricArcWeldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "electric automotive": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ElectricAutomotiveIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "electrical resistance welding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ElectricalResistanceWeldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "electro slag welding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ElectroSlagWeldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "electrochemical grinding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ElectrochemicalGrindingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "electroless nickel plating": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ElectrolessNickelPlatingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "electron beam machining": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ElectronBeamMachiningCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "electron beam welding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ElectronBeamWeldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "electronic product": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ElectronicProductIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "electronicproductindustry": {
+    "iri": "http://asu.edu/semantics/SUDOKN/electronicproductIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "electroplating": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ElectroPlatingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "electroplatingcapability": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ElectroplatingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "electropolishing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ElectropolishingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "email address": {
+    "iri": "http://asu.edu/semantics/SUDOKN/EmailAddress",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "embossing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/EmbossingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "end milling": {
+    "iri": "http://asu.edu/semantics/SUDOKN/EndMillingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "energy": {
+    "iri": "http://asu.edu/semantics/SUDOKN/EnergyIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "energyproductionindustry": {
+    "iri": "http://asu.edu/semantics/SUDOKN/energyproductionIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "engraving": {
+    "iri": "http://asu.edu/semantics/SUDOKN/EngravingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "entertainment and media": {
+    "iri": "http://asu.edu/semantics/SUDOKN/EntertainmentAndMediaIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "entertainmentandmediaindustry": {
+    "iri": "http://asu.edu/semantics/SUDOKN/entertainmentandmediaIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "erosion machining": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ErosionMachiningCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "ertalyte": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ErtalyteProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "etching": {
+    "iri": "http://asu.edu/semantics/SUDOKN/EtchingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "exotic material": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ExoticMaterialProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "explosive welding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ExplosiveWeldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "extruding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ExtrudingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "extrusion blow molding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ExtrusionBlowMoldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "fabricating": {
+    "iri": "http://asu.edu/semantics/SUDOKN/FabricatingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "fabricatingcapability": {
+    "iri": "http://asu.edu/semantics/SUDOKN/fabricatingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "face milling": {
+    "iri": "http://asu.edu/semantics/SUDOKN/FaceMillingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "fda": {
+    "iri": "http://asu.edu/semantics/SUDOKN/FDA",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "fda21cfrpart820": {
+    "iri": "http://asu.edu/semantics/SUDOKN/FDA21CFRPart820",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "fdagmp": {
+    "iri": "http://asu.edu/semantics/SUDOKN/FDAGMP",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "fdapma": {
+    "iri": "http://asu.edu/semantics/SUDOKN/FDAPMA",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "fiber": {
+    "iri": "http://asu.edu/semantics/SUDOKN/FiberProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "fiber glass": {
+    "iri": "http://asu.edu/semantics/SUDOKN/FiberGlassProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "fiveaxismachiningcapability": {
+    "iri": "http://asu.edu/semantics/SUDOKN/FiveAxisMachiningCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "flame hardening": {
+    "iri": "http://asu.edu/semantics/SUDOKN/FlameHardeningCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "flame spraying": {
+    "iri": "http://asu.edu/semantics/SUDOKN/FlameSprayingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "flanging edm": {
+    "iri": "http://asu.edu/semantics/SUDOKN/FlangingEDMCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "flux-coredarcweldingcapability": {
+    "iri": "http://asu.edu/semantics/SUDOKN/Flux-CoredArcWeldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "foam": {
+    "iri": "http://asu.edu/semantics/SUDOKN/FoamProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "food": {
+    "iri": "http://asu.edu/semantics/SUDOKN/FoodIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "foodandbeverageindustry": {
+    "iri": "http://asu.edu/semantics/SUDOKN/foodandbeverageIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "foodindustry": {
+    "iri": "http://asu.edu/semantics/SUDOKN/foodIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "forging": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ForgingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "forming": {
+    "iri": "http://asu.edu/semantics/SUDOKN/FormingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "fractional tubing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/FractionalTubingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "friction welding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/FrictionWeldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "full annealing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/FullAnnealingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "furnace brazing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/FurnaceBrazingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "furniture": {
+    "iri": "http://asu.edu/semantics/SUDOKN/FurnitureIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "fused deposition modeling": {
+    "iri": "http://asu.edu/semantics/SUDOKN/FusedDepositionModelingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "fused nitrate conversion coating": {
+    "iri": "http://asu.edu/semantics/SUDOKN/FusedNitrateConversionCoatingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "galvanizing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/GalvanizingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "galvanizingcapability": {
+    "iri": "http://asu.edu/semantics/SUDOKN/galvanizingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "gas brazing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/GasBrazingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "gas metal arc welding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/GasMetalArcWeldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "gas tungsten arc welding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/GasTungstenArcWeldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "gas welding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/GasWeldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "gaswedlingcapability": {
+    "iri": "http://asu.edu/semantics/SUDOKN/GasWedlingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "gear cutting": {
+    "iri": "http://asu.edu/semantics/SUDOKN/GearCuttingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "gear gashing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/GearGashingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "gear hobbing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/GearHobbingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "geopoliticalsite": {
+    "iri": "http://asu.edu/semantics/SUDOKN/GeopoliticalSite",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "geospatiallocation": {
+    "iri": "http://asu.edu/semantics/SUDOKN/GeospatialLocation",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "glass": {
+    "iri": "http://asu.edu/semantics/SUDOKN/GlassProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "glassprocessingcapability": {
+    "iri": "http://asu.edu/semantics/SUDOKN/glassProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "gold plating": {
+    "iri": "http://asu.edu/semantics/SUDOKN/GoldPlatingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "government": {
+    "iri": "http://asu.edu/semantics/SUDOKN/GovernmentIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "graphite": {
+    "iri": "http://asu.edu/semantics/SUDOKN/GraphiteProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "gravity casting": {
+    "iri": "http://asu.edu/semantics/SUDOKN/GravityCastingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "grinding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/GrindingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "grit blasting": {
+    "iri": "http://asu.edu/semantics/SUDOKN/GritBlastingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "gun drilling": {
+    "iri": "http://asu.edu/semantics/SUDOKN/GunDrillingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "haccp": {
+    "iri": "http://asu.edu/semantics/SUDOKN/HACCP",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "hardening": {
+    "iri": "http://asu.edu/semantics/SUDOKN/HardeningCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "hardware and devices": {
+    "iri": "http://asu.edu/semantics/SUDOKN/HardwareAndDevicesIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "harperizing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/HarperizingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "has address part": {
+    "iri": "http://asu.edu/semantics/SUDOKN/hasAddressPart",
+    "type": "predicate",
+    "id": "pred:hasAddressPart@v1",
+    "source_file": "predicates_with_embeddings.jsonl"
+  },
+  "has certificate": {
+    "iri": "http://asu.edu/semantics/SUDOKN/hasCertificate",
+    "type": "predicate",
+    "id": "pred:hasCertificate@v1",
+    "source_file": "predicates_with_embeddings.jsonl"
+  },
+  "has email address": {
+    "iri": "http://asu.edu/semantics/SUDOKN/hasEmailAddress",
+    "type": "predicate",
+    "id": "pred:hasEmailAddress@v1",
+    "source_file": "predicates_with_embeddings.jsonl"
+  },
+  "has integer value": {
+    "iri": "http://asu.edu/semantics/SUDOKN/hasIntegerValue",
+    "type": "predicate",
+    "id": "pred:hasIntegerValue@v1",
+    "source_file": "predicates_with_embeddings.jsonl"
+  },
+  "has latitude value": {
+    "iri": "http://asu.edu/semantics/SUDOKN/hasLatitudeValue",
+    "type": "predicate",
+    "id": "pred:hasLatitudeValue@v1",
+    "source_file": "predicates_with_embeddings.jsonl"
+  },
+  "has logitude value": {
+    "iri": "http://asu.edu/semantics/SUDOKN/hasLongitudeValue",
+    "type": "predicate",
+    "id": "pred:hasLongitudeValue@v1",
+    "source_file": "predicates_with_embeddings.jsonl"
+  },
+  "has management capability": {
+    "iri": "http://asu.edu/semantics/SUDOKN/hasManagementCapability",
+    "type": "predicate",
+    "id": "pred:hasManagementCapability@v1",
+    "source_file": "predicates_with_embeddings.jsonl"
+  },
+  "has material capability": {
+    "iri": "http://asu.edu/semantics/SUDOKN/hasMaterialCapability",
+    "type": "predicate",
+    "id": "pred:hasMaterialCapability@v1",
+    "source_file": "predicates_with_embeddings.jsonl"
+  },
+  "has naics classifier": {
+    "iri": "http://asu.edu/semantics/SUDOKN/hasNAICSClassifier",
+    "type": "predicate",
+    "id": "pred:hasNAICSClassifier@v1",
+    "source_file": "predicates_with_embeddings.jsonl"
+  },
+  "has naics code value": {
+    "iri": "http://asu.edu/semantics/SUDOKN/hasNAICSCodeValue",
+    "type": "predicate",
+    "id": "pred:hasNAICSCodeValue@v1",
+    "source_file": "predicates_with_embeddings.jsonl"
+  },
+  "has naics text value": {
+    "iri": "http://asu.edu/semantics/SUDOKN/hasNAICSTextValue",
+    "type": "predicate",
+    "id": "pred:hasNAICSTextValue@v1",
+    "source_file": "predicates_with_embeddings.jsonl"
+  },
+  "has name": {
+    "iri": "http://asu.edu/semantics/SUDOKN/hasName",
+    "type": "predicate",
+    "id": "pred:hasName@v1",
+    "source_file": "predicates_with_embeddings.jsonl"
+  },
+  "has ownership status classifier": {
+    "iri": "http://asu.edu/semantics/SUDOKN/hasOwnershipStatusClassifier",
+    "type": "predicate",
+    "id": "pred:hasOwnershipStatusClassifier@v1",
+    "source_file": "predicates_with_embeddings.jsonl"
+  },
+  "has postal address": {
+    "iri": "http://asu.edu/semantics/SUDOKN/hasPostalAddress",
+    "type": "predicate",
+    "id": "pred:hasPostalAddress@v1",
+    "source_file": "predicates_with_embeddings.jsonl"
+  },
+  "has primary naics classifier": {
+    "iri": "http://asu.edu/semantics/SUDOKN/hasPrimaryNAICSClassifier",
+    "type": "predicate",
+    "id": "pred:hasPrimaryNAICSClassifier@v1",
+    "source_file": "predicates_with_embeddings.jsonl"
+  },
+  "has process capability": {
+    "iri": "http://asu.edu/semantics/SUDOKN/hasProcessCapability",
+    "type": "predicate",
+    "id": "pred:hasProcessCapability@v1",
+    "source_file": "predicates_with_embeddings.jsonl"
+  },
+  "has secondary naics classifier": {
+    "iri": "http://asu.edu/semantics/SUDOKN/hasSecondaryNIACSClassifier",
+    "type": "predicate",
+    "id": "pred:hasSecondaryNIACSClassifier@v1",
+    "source_file": "predicates_with_embeddings.jsonl"
+  },
+  "has spatial coordinates": {
+    "iri": "http://asu.edu/semantics/SUDOKN/hasSpatialCoordinates",
+    "type": "predicate",
+    "id": "pred:hasSpatialCoordinates@v1",
+    "source_file": "predicates_with_embeddings.jsonl"
+  },
+  "has special business status classifier": {
+    "iri": "http://asu.edu/semantics/SUDOKN/hasSpecialBusinessStatusClassifier",
+    "type": "predicate",
+    "id": "pred:hasSpecialBusinessStatusClassifier@v1",
+    "source_file": "predicates_with_embeddings.jsonl"
+  },
+  "has web address": {
+    "iri": "http://asu.edu/semantics/SUDOKN/hasWebAddress",
+    "type": "predicate",
+    "id": "pred:hasWebAddress@v1",
+    "source_file": "predicates_with_embeddings.jsonl"
+  },
+  "hasnumberofemployees": {
+    "iri": "http://asu.edu/semantics/SUDOKN/hasNumberOfEmployees",
+    "type": "predicate",
+    "id": "pred:hasNumberOfEmployees@v1",
+    "source_file": "predicates_with_embeddings.jsonl"
+  },
+  "hasorganizationyearofestablishment": {
+    "iri": "http://asu.edu/semantics/SUDOKN/hasOrganizationYearOfEstablishment",
+    "type": "predicate",
+    "id": "pred:hasOrganizationYearOfEstablishment@v1",
+    "source_file": "predicates_with_embeddings.jsonl"
+  },
+  "hastelloy": {
+    "iri": "http://asu.edu/semantics/SUDOKN/HastelloyProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "haszipcode": {
+    "iri": "http://asu.edu/semantics/SUDOKN/hasZIPCode",
+    "type": "predicate",
+    "id": "pred:hasZIPCode@v1",
+    "source_file": "predicates_with_embeddings.jsonl"
+  },
+  "haynes": {
+    "iri": "http://asu.edu/semantics/SUDOKN/HaynesProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "hdpe": {
+    "iri": "http://asu.edu/semantics/SUDOKN/HDPEProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "healthcareindustry": {
+    "iri": "http://asu.edu/semantics/SUDOKN/HealthcareIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "healthcareservicesindustry": {
+    "iri": "http://asu.edu/semantics/SUDOKN/healthcareservicesIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "heat treating": {
+    "iri": "http://asu.edu/semantics/SUDOKN/HeatTreatingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "high energy beam machining": {
+    "iri": "http://asu.edu/semantics/SUDOKN/HighEnergyBeamMachiningCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "high energy beam welding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/HighEnergyBeamWeldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "high tech": {
+    "iri": "http://asu.edu/semantics/SUDOKN/HighTechIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "hole drilling edm": {
+    "iri": "http://asu.edu/semantics/SUDOKN/HoleDrillingEDMCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "hole making": {
+    "iri": "http://asu.edu/semantics/SUDOKN/HoleMakingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "honing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/HoningCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "horizontal boring": {
+    "iri": "http://asu.edu/semantics/SUDOKN/HorizontalBoringCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "horizontal milling": {
+    "iri": "http://asu.edu/semantics/SUDOKN/HorizontalMillingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "hot chamber die casting": {
+    "iri": "http://asu.edu/semantics/SUDOKN/HotChamberDieCastingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "hot vacuum pressing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/HotVacuumPressingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "hypodermic tubing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/HypodermicTubingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "iatf": {
+    "iri": "http://asu.edu/semantics/SUDOKN/IATF",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "iatf16949": {
+    "iri": "http://asu.edu/semantics/SUDOKN/IATF16949",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "id-odgrindingcapability": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ID-ODGrindingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "identifier": {
+    "iri": "https://spec.industrialontologies.org/ontology/core/Core/Identifier",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "impression die forging": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ImpressionDieForgingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "inconel": {
+    "iri": "http://asu.edu/semantics/SUDOKN/InconelProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "indirect extrusion": {
+    "iri": "http://asu.edu/semantics/SUDOKN/IndirectExtrusionCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "induction brazing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/InductionBrazingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "induction hardening": {
+    "iri": "http://asu.edu/semantics/SUDOKN/InductionHardeningCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "induction soldering": {
+    "iri": "http://asu.edu/semantics/SUDOKN/InductionSolderingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "industry": {
+    "iri": "https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/Industry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "information technology": {
+    "iri": "http://asu.edu/semantics/SUDOKN/InformationTechnologyIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "informationcontententity": {
+    "iri": "https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "infrared brazing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/InfraredBrazingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "injection blow molding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/InjectionBlowMoldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "injection molding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/InjectionMoldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "invar": {
+    "iri": "http://asu.edu/semantics/SUDOKN/InvarProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "investment casting": {
+    "iri": "http://asu.edu/semantics/SUDOKN/InvestmentCastingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "iridite": {
+    "iri": "http://asu.edu/semantics/SUDOKN/IriditeCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "iron": {
+    "iri": "http://asu.edu/semantics/SUDOKN/IronProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "ironprocessingcapability": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ironProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "iso 9000": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ISO9000Certificate",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "iso quality": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "iso13485": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ISO13485",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "iso14000": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ISO14000",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "iso14001": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ISO14001",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "iso16949": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ISO16949",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "iso22000": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ISO22000",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "iso27001": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ISO27001",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "iso45001": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ISO45001",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "iso50001": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ISO50001",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "iso9000": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ISO9000",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "iso9001": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ISO9001",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "isoquality": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ISOQuality",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "itar": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ITAR",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "joining": {
+    "iri": "http://asu.edu/semantics/SUDOKN/JoiningCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "joiningcapability": {
+    "iri": "http://asu.edu/semantics/SUDOKN/joiningCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "kapton": {
+    "iri": "http://asu.edu/semantics/SUDOKN/KaptonProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "kevlar": {
+    "iri": "http://asu.edu/semantics/SUDOKN/KevlarProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "kitting": {
+    "iri": "http://asu.edu/semantics/SUDOKN/KittingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "knitting": {
+    "iri": "http://asu.edu/semantics/SUDOKN/KnittingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "knurling": {
+    "iri": "http://asu.edu/semantics/SUDOKN/KnurlingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "kosherapproved": {
+    "iri": "http://asu.edu/semantics/SUDOKN/KosherApproved",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "kovar": {
+    "iri": "http://asu.edu/semantics/SUDOKN/KovarProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "labeling": {
+    "iri": "http://asu.edu/semantics/SUDOKN/LabelingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "laminated object manufacturing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/LaminatedObjectManufacturingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "lapping": {
+    "iri": "http://asu.edu/semantics/SUDOKN/LappingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "laser beam welding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/LaserBeamWeldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "laser brazing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/LaserBrazingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "laser cutting": {
+    "iri": "http://asu.edu/semantics/SUDOKN/LaserCuttingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "laser engraving": {
+    "iri": "http://asu.edu/semantics/SUDOKN/LaserEngravingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "laser etching": {
+    "iri": "http://asu.edu/semantics/SUDOKN/LaserEtchingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "ldpe": {
+    "iri": "http://asu.edu/semantics/SUDOKN/LDPEProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "lead": {
+    "iri": "http://asu.edu/semantics/SUDOKN/LeadProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "leed": {
+    "iri": "http://asu.edu/semantics/SUDOKN/LEED",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "lexan": {
+    "iri": "http://asu.edu/semantics/SUDOKN/LexanProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "list": {
+    "iri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "live tooling": {
+    "iri": "http://asu.edu/semantics/SUDOKN/LiveToolingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "located in city": {
+    "iri": "http://asu.edu/semantics/SUDOKN/locatedInCity",
+    "type": "predicate",
+    "id": "pred:locatedInCity@v1",
+    "source_file": "predicates_with_embeddings.jsonl"
+  },
+  "located in state": {
+    "iri": "http://asu.edu/semantics/SUDOKN/locatedInState",
+    "type": "predicate",
+    "id": "pred:locatedInState@v1",
+    "source_file": "predicates_with_embeddings.jsonl"
+  },
+  "lost foam casting": {
+    "iri": "http://asu.edu/semantics/SUDOKN/LostFoamCastingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "low alloy steel lead": {
+    "iri": "http://asu.edu/semantics/SUDOKN/LowAlloySteelLeadProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "lucite": {
+    "iri": "http://asu.edu/semantics/SUDOKN/LuciteProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "machinery and equipment": {
+    "iri": "http://asu.edu/semantics/SUDOKN/MachineryAndEquipmentIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "machining": {
+    "iri": "http://asu.edu/semantics/SUDOKN/MachiningCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "machining of casting": {
+    "iri": "http://asu.edu/semantics/SUDOKN/MachiningOfCastingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "magnesium alloy": {
+    "iri": "http://asu.edu/semantics/SUDOKN/MagnesiumAlloyProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "man made fiber": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ManMadeFiberProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "manufacturer": {
+    "iri": "https://spec.industrialontologies.org/ontology/core/Core/Manufacturer",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "manufactures": {
+    "iri": "http://asu.edu/semantics/SUDOKN/manufactures",
+    "type": "predicate",
+    "id": "pred:manufactures@v1",
+    "source_file": "predicates_with_embeddings.jsonl"
+  },
+  "manufacturing process capability": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ManufacturingProcessCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "marine and shipbuilding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/MarineAndShipbuildingIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "martempering": {
+    "iri": "http://asu.edu/semantics/SUDOKN/MartemperingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "material processing capability": {
+    "iri": "http://asu.edu/semantics/SUDOKN/MaterialProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "materialproduct": {
+    "iri": "https://spec.industrialontologies.org/ontology/core/Core/MaterialProduct",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "mechanical coating": {
+    "iri": "http://asu.edu/semantics/SUDOKN/MechanicalCoatingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "mechanical joining": {
+    "iri": "http://asu.edu/semantics/SUDOKN/MechanicalJoiningCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "mechanical polishing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/MechanicalPolishingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "mechanical welding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/MechanicalWeldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "mechanicalcapability": {
+    "iri": "http://asu.edu/semantics/SUDOKN/MechanicalCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "mechanicaljoiningcapability": {
+    "iri": "http://asu.edu/semantics/SUDOKN/mechanicaljoiningCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "medical devices": {
+    "iri": "http://asu.edu/semantics/SUDOKN/MedicalDevicesIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "medicalindustry": {
+    "iri": "http://asu.edu/semantics/SUDOKN/medicalIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "metal": {
+    "iri": "http://asu.edu/semantics/SUDOKN/MetalProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "metal injection molding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/MetalInjectionMoldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "metal production": {
+    "iri": "http://asu.edu/semantics/SUDOKN/MetalProductionIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "metric tubing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/MetricTubingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "micro drilling": {
+    "iri": "http://asu.edu/semantics/SUDOKN/MicroDrillingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "mig welding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/MIGWeldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "military": {
+    "iri": "http://asu.edu/semantics/SUDOKN/MilitaryIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "milling": {
+    "iri": "http://asu.edu/semantics/SUDOKN/MillingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "mining": {
+    "iri": "http://asu.edu/semantics/SUDOKN/MiningIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "miningindustry": {
+    "iri": "http://asu.edu/semantics/SUDOKN/miningIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "mold making": {
+    "iri": "http://asu.edu/semantics/SUDOKN/MoldMakingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "molding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/MoldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "molybdenum": {
+    "iri": "http://asu.edu/semantics/SUDOKN/MolybdenumProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "multipoint cutting": {
+    "iri": "http://asu.edu/semantics/SUDOKN/MultipointCuttingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "nadcap": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NADCAP",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics classifier": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICSClassifier",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics311111.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS311111.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics311119.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS311119.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics311225.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS311225.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics311340.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS311340.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics311412.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS311412.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics311421.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS311421.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics311422.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS311422.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics311423.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS311423.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics311511.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS311511.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics311514.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS311514.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics311520.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS311520.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics311611.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS311611.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics311612.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS311612.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics311613.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS311613.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics311710.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS311710.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics311812.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS311812.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics311813.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS311813.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics311821.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS311821.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics311830.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS311830.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics311919.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS311919.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics311920.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS311920.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics311941.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS311941.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics311942.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS311942.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics311999.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS311999.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics312111.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS312111.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics312112.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS312112.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics312113.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS312113.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics312120.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS312120.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics312130.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS312130.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics312140.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS312140.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics313110.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS313110.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics313210.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS313210.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics313310.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS313310.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics314110.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS314110.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics314120.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS314120.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics314910.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS314910.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics314994.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS314994.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics314999.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS314999.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics315120.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS315120.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics315250.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS315250.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics315990.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS315990.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics316110.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS316110.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics316210.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS316210.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics316990.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS316990.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics321113.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS321113.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics321114.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS321114.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics321215.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS321215.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics321911.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS321911.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics321912.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS321912.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics321918.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS321918.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics321920.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS321920.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics321991.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS321991.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics321992.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS321992.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics321999.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS321999.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics322110.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS322110.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics322120.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS322120.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics322130.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS322130.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics322211.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS322211.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics322219.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS322219.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics322220.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS322220.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics322230.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS322230.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics322291.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS322291.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics322299.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS322299.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics323111.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS323111.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics323113.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS323113.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics323117.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS323117.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics323120.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS323120.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics324110.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS324110.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics324121.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS324121.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics324122.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS324122.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics324191.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS324191.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics325110.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS325110.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics325120.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS325120.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics325180.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS325180.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics325199.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS325199.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics325211.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS325211.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics325311.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS325311.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics325312.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS325312.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics325314.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS325314.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics325315.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS325315.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics325320.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS325320.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics325411.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS325411.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics325412.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS325412.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics325413.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS325413.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics325414.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS325414.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics325510.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS325510.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics325520.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS325520.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics325611.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS325611.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics325612.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS325612.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics325620.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS325620.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics325910.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS325910.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics325920.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS325920.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics325992.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS325992.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics325998.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS325998.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics326111.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS326111.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics326112.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS326112.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics326121.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS326121.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics326122.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS326122.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics326130.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS326130.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics326150.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS326150.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics326160.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS326160.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics326199.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS326199.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics326211.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS326211.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics326220.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS326220.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics326299.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS326299.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics327110.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS327110.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics327120.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS327120.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics327211.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS327211.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics327212.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS327212.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics327213.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS327213.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics327215.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS327215.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics327310.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS327310.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics327320.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS327320.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics327331.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS327331.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics327332.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS327332.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics327390.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS327390.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics327420.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS327420.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics327910.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS327910.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics327991.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS327991.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics327992.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS327992.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics327993.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS327993.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics327999.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS327999.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics331110.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS331110.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics331210.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS331210.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics331222.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS331222.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics331313.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS331313.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics331318.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS331318.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics331410.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS331410.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics331420.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS331420.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics331491.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS331491.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics331492.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS331492.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics331511.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS331511.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics331512.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS331512.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics331524.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS331524.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics331529.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS331529.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics332111.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS332111.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics332112.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS332112.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics332114.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS332114.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics332115.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS332115.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics332116.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS332116.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics332117.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS332117.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics332119.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS332119.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics332211.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS332211.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics332212.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS332212.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics332213.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS332213.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics332214.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS332214.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics332215.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS332215.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics332216.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS332216.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics332311.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS332311.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics332312.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS332312.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics332313.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS332313.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics332321.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS332321.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics332322.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS332322.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics332323.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS332323.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics332410.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS332410.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics332420.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS332420.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics332431.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS332431.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics332439.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS332439.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics332510.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS332510.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics332611.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS332611.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics332612.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS332612.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics332613.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS332613.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics332618.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS332618.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics332710.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS332710.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics332721.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS332721.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics332722.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS332722.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics332811.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS332811.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics332812.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS332812.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics332813.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS332813.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics332911.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS332911.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics332912.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS332912.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics332913.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS332913.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics332919.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS332919.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics332991.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS332991.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics332992.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS332992.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics332994.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS332994.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics332995.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS332995.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics332996.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS332996.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics332997.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS332997.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics332998.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS332998.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics332999.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS332999.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics333111.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS333111.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics333112.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS333112.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics333120.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS333120.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics333131.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS333131.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics333132.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS333132.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics333241.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS333241.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics333242.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS333242.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics333243.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS333243.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics333248.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS333248.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics333310.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS333310.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics333413.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS333413.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics333414.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS333414.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics333415.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS333415.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics333511.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS333511.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics333514.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS333514.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics333515.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS333515.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics333517.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS333517.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics333519.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS333519.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics333611.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS333611.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics333618.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS333618.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics333912.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS333912.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics333914.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS333914.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics333922.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS333922.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics333923.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS333923.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics333924.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS333924.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics333991.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS333991.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics333992.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS333992.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics333993.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS333993.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics333994.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS333994.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics333996.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS333996.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics333998.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS333998.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics334111.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS334111.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics334112.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS334112.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics334118.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS334118.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics334210.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS334210.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics334220.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS334220.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics334290.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS334290.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics334310.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS334310.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics334412.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS334412.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics334413.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS334413.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics334416.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS334416.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics334417.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS334417.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics334418.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS334418.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics334419.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS334419.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics334510.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS334510.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics334511.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS334511.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics334512.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS334512.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics334513.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS334513.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics334514.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS334514.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics334515.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS334515.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics334516.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS334516.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics334519.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS334519.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics334610.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS334610.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics335131.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS335131.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics335132.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS335132.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics335139.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS335139.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics335210.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS335210.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics335220.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS335220.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics335311.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS335311.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics335312.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS335312.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics335313.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS335313.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics335314.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS335314.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics335910.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS335910.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics335921.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS335921.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics335929.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS335929.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics335931.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS335931.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics335932.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS335932.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics335991.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS335991.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics335999.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS335999.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics336110.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS336110.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics336120.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS336120.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics336211.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS336211.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics336212.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS336212.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics336214.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS336214.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics336310.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS336310.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics336320.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS336320.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics336330.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS336330.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics336340.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS336340.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics336350.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS336350.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics336360.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS336360.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics336370.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS336370.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics336390.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS336390.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics336411.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS336411.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics336412.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS336412.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics336413.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS336413.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics336414.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS336414.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics336415.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS336415.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics336419.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS336419.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics336510.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS336510.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics336611.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS336611.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics336612.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS336612.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics336991.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS336991.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics336992.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS336992.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics336999.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS336999.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics337110.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS337110.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics337121.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS337121.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics337122.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS337122.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics337126.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS337126.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics337127.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS337127.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics337211.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS337211.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics337212.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS337212.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics337214.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS337214.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics337215.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS337215.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics337910.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS337910.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics337920.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS337920.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics339112.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS339112.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics339113.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS339113.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics339114.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS339114.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics339115.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS339115.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics339116.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS339116.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics339910.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS339910.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics339920.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS339920.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics339930.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS339930.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics339940.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS339940.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics339950.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS339950.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics339991.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS339991.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics339992.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS339992.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics339994.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS339994.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics339995.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS339995.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "naics339999.0": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NAICS339999.0",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "namedindividual": {
+    "iri": "http://www.w3.org/2002/07/owl#NamedIndividual",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "natural fiber": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NaturalFiberProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "nickel": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NickelProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "nickel plating": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NickelPlatingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "nist": {
+    "iri": "http://asu.edu/semantics/SUDOKN/nist",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "nist800171": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NIST800171",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "nitriding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NitridingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "noryl": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NorylProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "notching": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NotchingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "nuclear energy": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NuclearEnergyIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "nylon": {
+    "iri": "http://asu.edu/semantics/SUDOKN/NylonProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "objectproperty": {
+    "iri": "http://www.w3.org/2002/07/owl#ObjectProperty",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "occupationalhealthandsafety": {
+    "iri": "http://asu.edu/semantics/SUDOKN/OccupationalHealthAndSafety",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "offshore wind energy": {
+    "iri": "http://asu.edu/semantics/SUDOKN/OffshoreWindEnergyIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "ohsas18001": {
+    "iri": "http://asu.edu/semantics/SUDOKN/OHSAS18001",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "oil and gas": {
+    "iri": "http://asu.edu/semantics/SUDOKN/OilAndGasIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "oil grooving": {
+    "iri": "http://asu.edu/semantics/SUDOKN/OilGroovingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "oil quench hardening": {
+    "iri": "http://asu.edu/semantics/SUDOKN/OilQuenchHardeningCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "oilandgasindustry": {
+    "iri": "http://asu.edu/semantics/SUDOKN/oilandgasIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "ontology": {
+    "iri": "http://www.w3.org/2002/07/owl#Ontology",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "open die forging": {
+    "iri": "http://asu.edu/semantics/SUDOKN/OpenDieForgingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "organization located in": {
+    "iri": "http://asu.edu/semantics/SUDOKN/OrganizationLocatedIn",
+    "type": "predicate",
+    "id": "pred:OrganizationLocatedIn@v1",
+    "source_file": "predicates_with_embeddings.jsonl"
+  },
+  "organization name": {
+    "iri": "http://asu.edu/semantics/SUDOKN/OrganizationName",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "organization size": {
+    "iri": "http://asu.edu/semantics/SUDOKN//OrganizationSize",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "ownership status classifier": {
+    "iri": "http://asu.edu/semantics/SUDOKN/OwnershipStatusClassifier",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "oxy-fuelcuttingcapability": {
+    "iri": "http://asu.edu/semantics/SUDOKN/Oxy-FuelCuttingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "packing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PackingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "painting": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PrintingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "paintingcapability": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PaintingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "palladium": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PalladiumProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "paper": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PaperIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "paperboard products": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PaperboardProductsIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "passivation": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PassivationCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "peek": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PeekProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "percussion welding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PercussionWeldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "permanent mold casting": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PermanentMoldCastingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "pet": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PETProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "petrochemicalindustry": {
+    "iri": "http://asu.edu/semantics/SUDOKN/petrochemicalIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "pharmaceutical": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PharmaceuticalIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "pharmaceuticalindustry": {
+    "iri": "http://asu.edu/semantics/SUDOKN/pharmaceuticalIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "phosphate coating": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PhosphateCoatingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "phosphate conversion coating": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PhosphateConversionCoatingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "phosphor bronze": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PhosphorBronzeProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "photochemicalmachiningcapability": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PhotochemicalMachiningCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "physical vapor deposition": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PhysicalVaporDepositionCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "physicallocationidentifier": {
+    "iri": "https://spec.industrialontologies.org/ontology/core/Core/PhysicalLocationIdentifier",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "planarization": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PlanarizationCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "planing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PlaningCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "plasma arc welding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PlasmaArcWeldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "plasma cutting": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PlasmaCuttingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "plasma spraying": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PlasmaSprayingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "plaster mold casting": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PlasterMoldCastingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "plastic": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PlasticProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "plastic and rubber": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PlasticAndRubberIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "plastic machining": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PlasticMachiningCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "plasticprocessingcapability": {
+    "iri": "http://asu.edu/semantics/SUDOKN/plasticProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "plating": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PlatingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "platinum": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PlatinumProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "plexiglas": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PlexiglasProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "plunge grinding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PlungeGrindingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "polishing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PolishingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "polycarbonate": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PolycarbonateProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "polycrystalline diamond machining": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PolycrystallineDiamondMachiningCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "polyethylene": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PolyethyleneProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "polymer deposition": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PolymerDepositionCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "polysulfone": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PolysulfoneProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "polywood": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PolywoodProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "postal address": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PostalAddress",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "powder coating": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PowderCoatingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "powder deposition": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PowderDepositionCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "powder metal forming": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PowderMetalFormingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "pps": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PPSProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "press fitting": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PressFittingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "press forging": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PressForgingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "pressure welding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PressureWeldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "printing and information": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PrintingAndInformationIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "process annealing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ProcessAnnealingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "productioncapability": {
+    "iri": "https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/ProductionCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "professional": {
+    "iri": "http://asu.edu/semantics/SUDOKN/Professional",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "professionalservicesindustry": {
+    "iri": "http://asu.edu/semantics/SUDOKN/professionalservicesIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "projection welding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ProjectionWeldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "property": {
+    "iri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "punching": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PunchingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "pvc": {
+    "iri": "http://asu.edu/semantics/SUDOKN/PVCProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "qs9000": {
+    "iri": "http://asu.edu/semantics/SUDOKN/QS9000",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "qsquality": {
+    "iri": "http://asu.edu/semantics/SUDOKN/QSQuality",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "quality": {
+    "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "quality management capability": {
+    "iri": "http://asu.edu/semantics/SUDOKN/QualityManagementCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "radel": {
+    "iri": "http://asu.edu/semantics/SUDOKN/RadelProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "ram edm": {
+    "iri": "http://asu.edu/semantics/SUDOKN/RamEDMCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "reaction injection molding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ReactionInjectionMoldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "reaming": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ReamingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "recovery annealing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/RecoveryAnnealingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "recrystallization": {
+    "iri": "http://asu.edu/semantics/SUDOKN/RecrystallizationCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "recycling": {
+    "iri": "http://asu.edu/semantics/SUDOKN/RecyclingIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "renewable energy": {
+    "iri": "http://asu.edu/semantics/SUDOKN/RenewableEnergyIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "renewableenergyindustry": {
+    "iri": "http://asu.edu/semantics/SUDOKN/renewableenergyIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "resin transfer molding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ResinTransferMoldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "resistance brazing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ResistanceBrazingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "resistance soldering": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ResistanceSolderingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "restaurant": {
+    "iri": "http://asu.edu/semantics/SUDOKN/RestaurantIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "retail": {
+    "iri": "http://asu.edu/semantics/SUDOKN/RetailIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "retailindustry": {
+    "iri": "http://asu.edu/semantics/SUDOKN/retailIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "riveting": {
+    "iri": "http://asu.edu/semantics/SUDOKN/RivetingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "robotic in automotive": {
+    "iri": "http://asu.edu/semantics/SUDOKN/RoboticInAutomotiveIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "roll die engraving": {
+    "iri": "http://asu.edu/semantics/SUDOKN/RollDieEngravingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "roll forging": {
+    "iri": "http://asu.edu/semantics/SUDOKN/RollForgingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "roll forming": {
+    "iri": "http://asu.edu/semantics/SUDOKN/RollFormingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "rolling": {
+    "iri": "http://asu.edu/semantics/SUDOKN/RollingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "rotary broaching": {
+    "iri": "http://asu.edu/semantics/SUDOKN/RotaryBroachingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "rotational molding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/RotationalMoldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "rubber": {
+    "iri": "http://asu.edu/semantics/SUDOKN/RubberProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "rubber injection molding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/RubberInjectionMoldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "rubberinjectionmmoldingcapability": {
+    "iri": "http://asu.edu/semantics/SUDOKN/RubberInjectionmMoldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "ryton": {
+    "iri": "http://asu.edu/semantics/SUDOKN/RytonProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "sand blasting": {
+    "iri": "http://asu.edu/semantics/SUDOKN/SandBlastingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "sand casting": {
+    "iri": "http://asu.edu/semantics/SUDOKN/SandCastingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "sawing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/SawingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "seam welding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/SeamWeldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "selective laser melting": {
+    "iri": "http://asu.edu/semantics/SUDOKN/SelectiveLaserMeltingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "selective laser sintering": {
+    "iri": "http://asu.edu/semantics/SUDOKN/SelectiveLaserSinteringCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "selective mask sintering": {
+    "iri": "http://asu.edu/semantics/SUDOKN/SelectiveMaskSinteringCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "semiconductor": {
+    "iri": "http://asu.edu/semantics/SUDOKN/SemiconductorIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "semiconductor fabricating": {
+    "iri": "http://asu.edu/semantics/SUDOKN/SemiconductorFabricatingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "semiconductorfabricatingcapability": {
+    "iri": "http://asu.edu/semantics/SUDOKN/semiconductorfabricatingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "sevenaxismachiningcapability": {
+    "iri": "http://asu.edu/semantics/SUDOKN/SevenAxisMachiningCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "shaping": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ShapingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "shearing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ShearingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "sheet metal processing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/SheetMetalProcessingProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "sheetmetalprocessingcapability": {
+    "iri": "http://asu.edu/semantics/SUDOKN/SheetMetalProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "shell molding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ShellMoldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "shielded metal arc welding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ShieldedMetalArcWeldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "shot peening": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ShotPeeningCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "shrink fitting": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ShrinkFittingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "silicone": {
+    "iri": "http://asu.edu/semantics/SUDOKN/SiliconeProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "silver": {
+    "iri": "http://asu.edu/semantics/SUDOKN/SilverProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "silver plating": {
+    "iri": "http://asu.edu/semantics/SUDOKN/SilverPlatingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "single-point cutting": {
+    "iri": "http://asu.edu/semantics/SUDOKN/SinglePointCuttingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "single-pointcuttingcapability": {
+    "iri": "http://asu.edu/semantics/SUDOKN/Single-PointCuttingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "sinker edm": {
+    "iri": "http://asu.edu/semantics/SUDOKN/SinkerEDMCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "sintering": {
+    "iri": "http://asu.edu/semantics/SUDOKN/SinteringCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "slab milling": {
+    "iri": "http://asu.edu/semantics/SUDOKN/SlabMillingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "slitting": {
+    "iri": "http://asu.edu/semantics/SUDOKN/SlittingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "slittingcapabilitycapability": {
+    "iri": "http://asu.edu/semantics/SUDOKN/SlittingCapabilityCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "small hole drilling": {
+    "iri": "http://asu.edu/semantics/SUDOKN/SmallHoleDrillingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "solar power": {
+    "iri": "http://asu.edu/semantics/SUDOKN/SolarPowerIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "soldering": {
+    "iri": "http://asu.edu/semantics/SUDOKN/SolderingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "solid deposition": {
+    "iri": "http://asu.edu/semantics/SUDOKN/SolidDepositionCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "spark plasma sintering": {
+    "iri": "http://asu.edu/semantics/SUDOKN/SparkPlasmaSinteringCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "special business status classifier": {
+    "iri": "http://asu.edu/semantics/SUDOKN/SpecialBusinessStatusClassifier",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "specialized machining": {
+    "iri": "http://asu.edu/semantics/SUDOKN/SpecializedMachiningCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "spinning": {
+    "iri": "http://asu.edu/semantics/SUDOKN/SpinningCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "sports and leisure": {
+    "iri": "http://asu.edu/semantics/SUDOKN/SportsAndLeisureIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "spot welding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/SpotWeldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "square tubing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/SquareTubingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "squeeze casting": {
+    "iri": "http://asu.edu/semantics/SUDOKN/SqueezeCastingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "stainless steel": {
+    "iri": "http://asu.edu/semantics/SUDOKN/StainlessSteelProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "stamping": {
+    "iri": "http://asu.edu/semantics/SUDOKN/StampingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "state": {
+    "iri": "http://asu.edu/semantics/SUDOKN/State",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "state of": {
+    "iri": "http://asu.edu/semantics/SUDOKN/stateOf",
+    "type": "predicate",
+    "id": "pred:stateOf@v1",
+    "source_file": "predicates_with_embeddings.jsonl"
+  },
+  "state of address": {
+    "iri": "http://asu.edu/semantics/SUDOKN/StateOfAddress",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "steel": {
+    "iri": "http://asu.edu/semantics/SUDOKN/SteelProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "steelprocessingcapability": {
+    "iri": "http://asu.edu/semantics/SUDOKN/steelProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "stereolithography": {
+    "iri": "http://asu.edu/semantics/SUDOKN/StereolithographyCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "street of address": {
+    "iri": "http://asu.edu/semantics/SUDOKN/StreetAddress",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "stress relieving": {
+    "iri": "http://asu.edu/semantics/SUDOKN/StressRelievingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "stretch blow molding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/StretchBlowMoldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "stretch forming": {
+    "iri": "http://asu.edu/semantics/SUDOKN/StretchFormingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "stud welding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/StudWeldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "submerged arc welding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/SubmergedArcWeldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "super alloy": {
+    "iri": "http://asu.edu/semantics/SUDOKN/SuperAlloyProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "supplies to industry": {
+    "iri": "http://asu.edu/semantics/SUDOKN/suppliesToIndustry",
+    "type": "predicate",
+    "id": "pred:suppliesToIndustry@v1",
+    "source_file": "predicates_with_embeddings.jsonl"
+  },
+  "surface finishing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/SurfaceFinishingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "surface hardening": {
+    "iri": "http://asu.edu/semantics/SUDOKN/SurfaceHardeningCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "surface preparation": {
+    "iri": "http://asu.edu/semantics/SUDOKN/SurfacePreparationCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "swagging": {
+    "iri": "http://asu.edu/semantics/SUDOKN/SwaggingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "swiss machining": {
+    "iri": "http://asu.edu/semantics/SUDOKN/SwissMachiningCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "symmetricproperty": {
+    "iri": "http://www.w3.org/2002/07/owl#SymmetricProperty",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "tantalum": {
+    "iri": "http://asu.edu/semantics/SUDOKN/TantalumProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "tapping": {
+    "iri": "http://asu.edu/semantics/SUDOKN/TappingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "techtron": {
+    "iri": "http://asu.edu/semantics/SUDOKN/TechtronProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "teflon": {
+    "iri": "http://asu.edu/semantics/SUDOKN/TeflonProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "telecommunications": {
+    "iri": "http://asu.edu/semantics/SUDOKN/TelecommunicationsIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "telecommunicationsindustry": {
+    "iri": "http://asu.edu/semantics/SUDOKN/telecommunicationsIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "tempering": {
+    "iri": "http://asu.edu/semantics/SUDOKN/TemperingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "textile process": {
+    "iri": "http://asu.edu/semantics/SUDOKN/TextileProcessCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "textiles": {
+    "iri": "http://asu.edu/semantics/SUDOKN/TextilesIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "thermal coating": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ThermalCoatingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "thermal deburring": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ThermalDeburringCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "thermal joining": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ThermaJoiningCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "thermal spray coating": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ThermalSprayCoatingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "thermal subtraction": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ThermalSubtractionCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "thermal welding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ThermalWeldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "thermaljoiningcapability": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ThermalJoiningCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "thermaweldingcapability": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ThermaweldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "thermoforming": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ThermoformingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "thin wall machining": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ThinWallMachiningCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "thread milling": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ThreadMillingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "threading": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ThreadingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "through hardening": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ThroughHardeningCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "tig welding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/TIGWeldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "tin plating": {
+    "iri": "http://asu.edu/semantics/SUDOKN/TinPlatingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "titanium": {
+    "iri": "http://asu.edu/semantics/SUDOKN/TitaniumProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "tl9000": {
+    "iri": "http://asu.edu/semantics/SUDOKN/TL9000",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "tlquality": {
+    "iri": "http://asu.edu/semantics/SUDOKN/TLQuality",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "tool and die": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ToolAndDieIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "tool making": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ToolMakingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "torch brazing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/TorchBrazingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "torch cutting": {
+    "iri": "http://asu.edu/semantics/SUDOKN/TorchCuttingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "torlon": {
+    "iri": "http://asu.edu/semantics/SUDOKN/TorlonProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "transfer molding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/TransferMoldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "transitiveproperty": {
+    "iri": "http://www.w3.org/2002/07/owl#TransitiveProperty",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "transportation": {
+    "iri": "http://asu.edu/semantics/SUDOKN/TransportationIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "transportationindustry": {
+    "iri": "http://asu.edu/semantics/SUDOKN/transportationIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "tube bending": {
+    "iri": "http://asu.edu/semantics/SUDOKN/TubeBendingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "tube drawing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/TubeDrawingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "tubing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/TubingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "tuffak": {
+    "iri": "http://asu.edu/semantics/SUDOKN/TuffakProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "tumbling": {
+    "iri": "http://asu.edu/semantics/SUDOKN/TumblingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "tungsten": {
+    "iri": "http://asu.edu/semantics/SUDOKN/TungstenProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "turning": {
+    "iri": "http://asu.edu/semantics/SUDOKN/TurningCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "two dimensional cartesian spatial coordinate datum": {
+    "iri": "http://asu.edu/semantics/SUDOKN/TwoDimensionalCartesianSpatialCoordinateDatum",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "uhmw": {
+    "iri": "http://asu.edu/semantics/SUDOKN/UHMWProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "ultrasonic cleaning": {
+    "iri": "http://asu.edu/semantics/SUDOKN/UltrasonicCleaningCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "ultrasonic welding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/UltrasonicWeldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "upset forging": {
+    "iri": "http://asu.edu/semantics/SUDOKN/UpsetForgingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "urethane": {
+    "iri": "http://asu.edu/semantics/SUDOKN/UrethaneProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "us postal code": {
+    "iri": "http://asu.edu/semantics/SUDOKN/USPostalCode",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "utilities": {
+    "iri": "http://asu.edu/semantics/SUDOKN/UtilitiesIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "vacuum assisted resin transfer molding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/VacuumAssistedResinTransferMoldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "vacuum brazing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/VacuumBrazingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "vacuum casting": {
+    "iri": "http://asu.edu/semantics/SUDOKN/VacuumCastingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "vacuum forming": {
+    "iri": "http://asu.edu/semantics/SUDOKN/VacuumFormingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "vacuum hardening": {
+    "iri": "http://asu.edu/semantics/SUDOKN/VacuumHardeningCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "vacuum molding": {
+    "iri": "http://asu.edu/semantics/SUDOKN/VacuumMoldingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "vacuum packaging": {
+    "iri": "http://asu.edu/semantics/SUDOKN/VacuumPackagingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "vacuum pressing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/VacuumPressingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "vacuum thermoforming": {
+    "iri": "http://asu.edu/semantics/SUDOKN/VacuumThermoformingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "vaporized metal coating": {
+    "iri": "http://asu.edu/semantics/SUDOKN/VaporizedMetalCoatingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "vda": {
+    "iri": "http://asu.edu/semantics/SUDOKN/VDA",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "vertical boring": {
+    "iri": "http://asu.edu/semantics/SUDOKN/VerticalBoringCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "vertical milling": {
+    "iri": "http://asu.edu/semantics/SUDOKN/VerticalMillingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "vespel": {
+    "iri": "http://asu.edu/semantics/SUDOKN/VespelProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "vibratory deburring": {
+    "iri": "http://asu.edu/semantics/SUDOKN/VibratoryDeburringCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "virtual location identifier": {
+    "iri": "http://asu.edu/semantics/SUDOKN/VitualLocationIdentifier",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "warehousingandstorageindustry": {
+    "iri": "http://asu.edu/semantics/SUDOKN/WarehousingAndStorageIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "waspaloy": {
+    "iri": "http://asu.edu/semantics/SUDOKN/WaspaloyProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "water and sewer utilities": {
+    "iri": "http://asu.edu/semantics/SUDOKN/WaterAndSewerUtilitiesIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "water quench hardening": {
+    "iri": "http://asu.edu/semantics/SUDOKN/WaterQuenchHardeningCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "waterandsewerutilitiesindustry": {
+    "iri": "http://asu.edu/semantics/SUDOKN/waterandsewerutilitiesIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "waterjet cutting": {
+    "iri": "http://asu.edu/semantics/SUDOKN/WaterjetCuttingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "watertreatmentandmanagementindustry": {
+    "iri": "http://asu.edu/semantics/SUDOKN/watertreatmentandmanagementIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "wave soldering": {
+    "iri": "http://asu.edu/semantics/SUDOKN/WaveSolderingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "wavesoldeingcapability": {
+    "iri": "http://asu.edu/semantics/SUDOKN/WaveSoldeingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "weaving": {
+    "iri": "http://asu.edu/semantics/SUDOKN/WeavingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "web address": {
+    "iri": "http://asu.edu/semantics/SUDOKN/WebAddress",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "wet painting": {
+    "iri": "http://asu.edu/semantics/SUDOKN/WetPaintingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "wind energy": {
+    "iri": "http://asu.edu/semantics/SUDOKN/WindEnergyIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "wire bending": {
+    "iri": "http://asu.edu/semantics/SUDOKN/WireBendingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "wire drawing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/WireDrawingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "wire edm": {
+    "iri": "http://asu.edu/semantics/SUDOKN/WireEDMCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "wire harness assembly": {
+    "iri": "http://asu.edu/semantics/SUDOKN/WireHarnessAssemblyCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "wiredawingcapability": {
+    "iri": "http://asu.edu/semantics/SUDOKN/WireDawingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "wood": {
+    "iri": "http://asu.edu/semantics/SUDOKN/WoodProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "wood product manufacturing": {
+    "iri": "http://asu.edu/semantics/SUDOKN/WoodProductManufacturingIndustry",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "wood working": {
+    "iri": "http://asu.edu/semantics/SUDOKN/WoodWorkingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "zelux": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ZeluxProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "zero stock machining": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ZeroStockMachiningCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "zinc alloy": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ZincAlloyProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "zinc plating": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ZincPlatingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "zincalloyprocessingcapability": {
+    "iri": "http://asu.edu/semantics/SUDOKN/zincalloyProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "zircon": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ZirconProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  },
+  "zytel": {
+    "iri": "http://asu.edu/semantics/SUDOKN/ZytelProcessingCapability",
+    "type": "class",
+    "id": NaN,
+    "source_file": "classes_with_embeddings.jsonl"
+  }
+}

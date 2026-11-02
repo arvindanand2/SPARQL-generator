@@ -1,0 +1,8 @@
+{
+  "batch_id": "batch_68f4922d913481909b6e44561941639a",
+  "input_file_id": "file-MTeoceJ6ZfJz1KAWTXmh8h",
+  "input_file_path": "batch_logs\\batch_input_20251019_002427_445190.jsonl",
+  "description": "Initial SPARQL generation (all queries)",
+  "timestamp": "20251019_002427_445190",
+  "num_requests": 189
+}

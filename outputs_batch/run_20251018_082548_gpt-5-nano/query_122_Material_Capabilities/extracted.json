@@ -1,0 +1,63 @@
+{
+  "clauses": [
+    {
+      "relation_hint": "has material capability",
+      "connective": "IMPLIED",
+      "filter": {
+        "op": "near",
+        "value": null,
+        "unit": "material",
+        "min": null,
+        "max": null
+      },
+      "subject_hint": "manufacturers",
+      "enum_values": [
+        "Zircon"
+      ],
+      "type": "spo"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Ceramic",
+      "iri": "http://asu.edu/semantics/SUDOKN/CeramicProcessingCapability"
+    },
+    {
+      "label": "Zircon",
+      "iri": "http://asu.edu/semantics/SUDOKN/ZirconProcessingCapability"
+    },
+    {
+      "label": "Ceramic Mold Casting",
+      "iri": "http://asu.edu/semantics/SUDOKN/CeramicMoldCastingCapability"
+    },
+    {
+      "label": "Titanium",
+      "iri": "http://asu.edu/semantics/SUDOKN/TitaniumProcessingCapability"
+    },
+    {
+      "label": "Zinc Alloy",
+      "iri": "http://asu.edu/semantics/SUDOKN/ZincAlloyProcessingCapability"
+    },
+    {
+      "label": "Zytel",
+      "iri": "http://asu.edu/semantics/SUDOKN/ZytelProcessingCapability"
+    },
+    {
+      "label": "Carbide",
+      "iri": "http://asu.edu/semantics/SUDOKN/CarbideProcessingCapability"
+    },
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    },
+    {
+      "label": "ITAR",
+      "iri": "http://asu.edu/semantics/SUDOKN/ITAR"
+    }
+  ]
+}

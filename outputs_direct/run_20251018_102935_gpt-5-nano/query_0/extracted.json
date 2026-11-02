@@ -1,0 +1,36 @@
+{
+  "clauses": [
+    {
+      "filter": {
+        "op": "near",
+        "value": null,
+        "unit": "state",
+        "min": null,
+        "max": null
+      },
+      "type": "scope",
+      "connective": "IMPLIED",
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "state"
+      },
+      "subject_hint": "manufacturers",
+      "relation_hint": "located in"
+    },
+    {
+      "type": "spo",
+      "object_hint": "number of employees",
+      "connective": "AND",
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "state"
+      },
+      "subject_hint": "manufacturers",
+      "relation_hint": "has employee count"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": []
+}

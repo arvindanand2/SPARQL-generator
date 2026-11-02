@@ -1,0 +1,265 @@
+{
+  "clauses": [
+    {
+      "type": "scope",
+      "surface": "Among manufacturers headquartered in the midwest,",
+      "char_start": -1,
+      "char_end": -1,
+      "subject_hint": "manufacturers",
+      "relation_hint": "headquartered in",
+      "object_hint": "the midwest",
+      "filter": {
+        "op": "eq",
+        "value": null,
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "enum_values": [],
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": null
+      },
+      "connective": "IMPLIED",
+      "confidence": 0.86
+    },
+    {
+      "type": "spo",
+      "surface": "headquartered in the midwest",
+      "char_start": -1,
+      "char_end": -1,
+      "subject_hint": "manufacturers",
+      "relation_hint": "headquartered in",
+      "object_hint": "the midwest",
+      "filter": {
+        "op": "eq",
+        "value": null,
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "enum_values": [],
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": null
+      },
+      "connective": "IMPLIED",
+      "confidence": 0.9
+    },
+    {
+      "type": "spo",
+      "surface": "perform  anodizing on aluminum or titanium",
+      "char_start": -1,
+      "char_end": -1,
+      "subject_hint": "manufacturers",
+      "relation_hint": "perform anodizing on",
+      "object_hint": "anodizing",
+      "filter": {
+        "op": "eq",
+        "value": null,
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "enum_values": [
+        "aluminum",
+        "titanium"
+      ],
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": null
+      },
+      "connective": "AND",
+      "confidence": 0.92
+    },
+    {
+      "type": "spo",
+      "surface": "also offer passivation OR powder coating",
+      "char_start": -1,
+      "char_end": -1,
+      "subject_hint": "manufacturers",
+      "relation_hint": "offer",
+      "object_hint": null,
+      "filter": {
+        "op": "eq",
+        "value": null,
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "enum_values": [
+        "passivation",
+        "powder coating"
+      ],
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": null
+      },
+      "connective": "AND",
+      "confidence": 0.9
+    },
+    {
+      "type": "spo",
+      "surface": "are not woman-owned",
+      "char_start": -1,
+      "char_end": -1,
+      "subject_hint": "manufacturers",
+      "relation_hint": "not woman-owned",
+      "object_hint": "woman-owned",
+      "filter": {
+        "op": "eq",
+        "value": null,
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "enum_values": [],
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": null
+      },
+      "connective": "AND",
+      "confidence": 0.82
+    },
+    {
+      "type": "spo",
+      "surface": "have a web address",
+      "char_start": -1,
+      "char_end": -1,
+      "subject_hint": "manufacturers",
+      "relation_hint": "has web address",
+      "object_hint": null,
+      "filter": {
+        "op": "eq",
+        "value": null,
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "enum_values": [],
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": null
+      },
+      "connective": "AND",
+      "confidence": 0.94
+    },
+    {
+      "type": "spo",
+      "surface": "supply to both the aerospace and military industries",
+      "char_start": -1,
+      "char_end": -1,
+      "subject_hint": "manufacturers",
+      "relation_hint": "supply to industry",
+      "object_hint": null,
+      "filter": {
+        "op": "eq",
+        "value": null,
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "enum_values": [
+        "aerospace",
+        "military"
+      ],
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": null
+      },
+      "connective": "AND",
+      "confidence": 0.91
+    },
+    {
+      "type": "modifier",
+      "surface": "which 10 companies have the highest number of distinct process capabilities (counted across all their U.S. sites)",
+      "char_start": -1,
+      "char_end": -1,
+      "subject_hint": "companies",
+      "relation_hint": "rank by count of distinct process capabilities across U.S. sites",
+      "object_hint": null,
+      "filter": {
+        "op": "eq",
+        "value": null,
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "enum_values": [],
+      "modifier": {
+        "kind": "topN",
+        "k": 10,
+        "by": "highest number of distinct process capabilities (counted across all their U.S. sites)"
+      },
+      "connective": "FOLLOWUP",
+      "confidence": 0.93
+    },
+    {
+      "type": "scope",
+      "surface": "for each return company name, a representative site city/state, the count of distinct processes, and their primary NAICS",
+      "char_start": -1,
+      "char_end": -1,
+      "subject_hint": "companies",
+      "relation_hint": "return fields",
+      "object_hint": "company name; representative site city/state; count of distinct processes; primary NAICS",
+      "filter": {
+        "op": "eq",
+        "value": null,
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "enum_values": [],
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": null
+      },
+      "connective": "FOLLOWUP",
+      "confidence": 0.78
+    },
+    {
+      "type": "modifier",
+      "surface": "Break ties by choosing the companies nearest to Austin.",
+      "char_start": -1,
+      "char_end": -1,
+      "subject_hint": "companies",
+      "relation_hint": "tie-break by nearest to",
+      "object_hint": "Austin",
+      "filter": {
+        "op": "near",
+        "value": "Austin",
+        "unit": "distance",
+        "min": null,
+        "max": null
+      },
+      "enum_values": [],
+      "modifier": {
+        "kind": "nearest",
+        "k": null,
+        "by": "Austin"
+      },
+      "connective": "FOLLOWUP",
+      "confidence": 0.88
+    }
+  ],
+  "warnings": [
+    "Offsets set to -1 for brevity; ensure exact substring matching (note the double space in 'perform  anodizing').",
+    "Region term 'the midwest' likely needs expansion to a set of states; map via locatedInState/Region.",
+    "Map processes to hasProcessCapability: anodizing, passivation, powder coating.",
+    "Map materials to hasMaterialCapability: aluminum, titanium.",
+    "Map 'supply to ... industries' to suppliesToIndustry; 'both' implies intersection (require both aerospace and military).",
+    "Map 'have a web address' to hasWebAddress.",
+    "Map 'are not woman-owned' to NOT hasSpecialBusinessStatusClassifier = woman-owned (handle negation in SPARQL).",
+    "Top 10 by highest number of distinct process capabilities requires COUNT(DISTINCT process) aggregated across all U.S. sites and grouped by company.",
+    "Tie-breaker 'nearest to Austin' requires geospatial distance computation to Austin; ensure representative site selection aligns with distance calculation.",
+    "Projection phrase 'for each return ...' specifies output columns, not filters."
+  ]
+}

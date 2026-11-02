@@ -1,0 +1,1 @@
+Return manufacturers supplying to an industry whose name contains "Utilities".

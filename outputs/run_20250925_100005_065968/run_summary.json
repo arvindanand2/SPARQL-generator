@@ -1,0 +1,6 @@
+{
+  "user_query": "Get the number of manufacturers in the KG serving each type of Industry. Display the Industry name and corresponding count.",
+  "total_attempts": 0,
+  "final_status": "success",
+  "timestamp": "2025-09-25T10:00:05.373859"
+}

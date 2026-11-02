@@ -1,0 +1,63 @@
+{
+  "clauses": [
+    {
+      "relation_hint": "has process capability",
+      "connective": "IMPLIED",
+      "filter": {
+        "op": "eq",
+        "value": "Heat Treating",
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "subject_hint": "manufacturers",
+      "enum_values": [
+        "Heat Treating"
+      ],
+      "type": "spo"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Heat Treating",
+      "iri": "http://asu.edu/semantics/SUDOKN/HeatTreatingCapability"
+    },
+    {
+      "label": "Surface Hardening",
+      "iri": "http://asu.edu/semantics/SUDOKN/SurfaceHardeningCapability"
+    },
+    {
+      "label": "Hardening",
+      "iri": "http://asu.edu/semantics/SUDOKN/HardeningCapability"
+    },
+    {
+      "label": "Through Hardening",
+      "iri": "http://asu.edu/semantics/SUDOKN/ThroughHardeningCapability"
+    },
+    {
+      "label": "Stress Relieving",
+      "iri": "http://asu.edu/semantics/SUDOKN/StressRelievingCapability"
+    },
+    {
+      "label": "Austempering",
+      "iri": "http://asu.edu/semantics/SUDOKN/AustemperingCapability"
+    },
+    {
+      "label": "Tempering",
+      "iri": "http://asu.edu/semantics/SUDOKN/TemperingCapability"
+    },
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    },
+    {
+      "label": "Cold Treatment",
+      "iri": "http://asu.edu/semantics/SUDOKN/ColdTreatmentCapability"
+    },
+    {
+      "label": "Chemical Processing",
+      "iri": "http://asu.edu/semantics/SUDOKN/ChemicalProcessingCapability"
+    }
+  ]
+}

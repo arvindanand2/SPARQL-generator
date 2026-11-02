@@ -1,0 +1,44 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?state ?stateLabel ?manufacturer ?manufacturerLabel ?employees
+WHERE {
+  {
+    SELECT ?state ?manufacturer ?employees ?stateLabel ?manufacturerLabel
+    WHERE {
+      ?manufacturer a iof-core:Manufacturer ;
+                    sdk:hasNumberOfEmployees ?empLit ;
+                    sdk:organizationLocatedIn ?site .
+      ?site sdk:locatedInCity ?city .
+      ?city sdk:locatedInState ?state .
+      OPTIONAL { ?state rdfs:label ?stateLabel . }
+      OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel . }
+      BIND(xsd:integer(REPLACE(STR(?empLit), ",", "")) AS ?employees)
+    }
+  }
+  {
+    SELECT ?state ?manufacturer ((1 + COUNT(DISTINCT ?m2)) AS ?rank)
+    WHERE {
+      ?manufacturer a iof-core:Manufacturer ;
+                    sdk:hasNumberOfEmployees ?empLit ;
+                    sdk:organizationLocatedIn ?site .
+      ?site sdk:locatedInCity ?city .
+      ?city sdk:locatedInState ?state .
+      BIND(xsd:integer(REPLACE(STR(?empLit), ",", "")) AS ?emp)
+
+      ?m2 a iof-core:Manufacturer ;
+          sdk:hasNumberOfEmployees ?empLit2 ;
+          sdk:organizationLocatedIn ?site2 .
+      ?site2 sdk:locatedInCity ?city2 .
+      ?city2 sdk:locatedInState ?state .
+      BIND(xsd:integer(REPLACE(STR(?empLit2), ",", "")) AS ?emp2)
+
+      FILTER(?emp2 > ?emp || (?emp2 = ?emp && STR(?m2) < STR(?manufacturer)))
+    }
+    GROUP BY ?state ?manufacturer
+  }
+  FILTER(?rank <= 3)
+}
+ORDER BY ?stateLabel ?rank DESC(?employees) ?manufacturerLabel

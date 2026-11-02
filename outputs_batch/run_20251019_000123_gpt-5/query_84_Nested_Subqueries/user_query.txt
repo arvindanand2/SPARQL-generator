@@ -1,0 +1,1 @@
+For each manufacturer, add a Has ISO 9001" column computed from whether it holds that certificate."

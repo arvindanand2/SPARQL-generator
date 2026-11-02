@@ -1,0 +1,14 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?certificate ?certificateLabel (COUNT(DISTINCT ?manufacturer) AS ?numManufacturers)
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+              sdk:hasCertificate ?certificate .
+  ?certificate a ?certClass .
+  FILTER(?certClass IN (sdk:ISO9001, sdk:ISO14001, sdk:ISO27001, sdk:ISO45001, sdk:ISO13485, sdk:ISOQualityCertificate, sdk:ISO50001, sdk:TL9000, sdk:QualityCertificate))
+  OPTIONAL { ?certificate rdfs:label ?certificateLabel . }
+}
+GROUP BY ?certificate ?certificateLabel
+ORDER BY ?certificateLabel

@@ -1,0 +1,1708 @@
+{
+  "total": 189,
+  "successful": 189,
+  "failed": 0,
+  "results": [
+    {
+      "query_id": 0,
+      "query": "What is the number of employees for the company whose name contains \"Steel\"?",
+      "expected_label": "Lookup",
+      "success": true,
+      "result": "empCount\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 19\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 1,
+      "query": "What is the English name of the manufacturer that holds the certificate labeled \"ISO 9001\"?",
+      "expected_label": "Lookup",
+      "success": true,
+      "result": "englishName\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 4032\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 2,
+      "query": "What is the NAICS text for the classifier with code 332996?",
+      "expected_label": "Lookup",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 3,
+      "query": "What is the NAICS code for the classifier whose text contains \"PIPE AND PIPE FITTING\"?",
+      "expected_label": "Lookup",
+      "success": true,
+      "result": "code\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 1\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 4,
+      "query": "Which process capability has a name that contains \"Machining\"?",
+      "expected_label": "Lookup",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 5,
+      "query": "Which material capability has a name that contains \"Steel\"?",
+      "expected_label": "Lookup",
+      "success": true,
+      "result": "cap\tlabel\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 6\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 6,
+      "query": "What is the business description for the manufacturer whose name contains \"Fabrication\"?",
+      "expected_label": "Lookup",
+      "success": true,
+      "result": "manufacturer\tdescriptionText\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 20\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 7,
+      "query": "What is the ZIP code for the site whose postal address contains \"Suite\"?",
+      "expected_label": "Lookup",
+      "success": true,
+      "result": "site\tzip\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 182\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 8,
+      "query": "What is the latitude for the site whose city name contains \"Springfield\"?",
+      "expected_label": "Lookup",
+      "success": true,
+      "result": "lat\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 20\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 9,
+      "query": "What is the state name linked from any city whose name contains \"San \"?",
+      "expected_label": "Lookup",
+      "success": true,
+      "result": "stateName\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 3\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 10,
+      "query": "What NAICS code is used as the primary NAICS for the manufacturer whose name contains \"Precision\"?",
+      "expected_label": "Multi-hop",
+      "success": true,
+      "result": "manufacturer\tcodeValue\tcodeText\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 364\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 11,
+      "query": "Which industries does the manufacturer whose name contains \"Automation\" supply to?",
+      "expected_label": "Multi-hop",
+      "success": true,
+      "result": "manufacturer\tindustry\tindustryLabel\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 129\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 12,
+      "query": "Which products are manufactured by the company whose name contains \"Tooling\"?",
+      "expected_label": "Multi-hop",
+      "success": true,
+      "result": "product\tproductLabel\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 158\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 13,
+      "query": "Which process capabilities are linked for the company whose name contains \"Aerospace\"?",
+      "expected_label": "Multi-hop",
+      "success": true,
+      "result": "cap\tcapLabel\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 467\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 14,
+      "query": "Which material capabilities are linked for the company whose name contains \"Metal\"?",
+      "expected_label": "Multi-hop",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 15,
+      "query": "Which certificates are linked for the manufacturer whose name contains \"Plastics\"?",
+      "expected_label": "Multi-hop",
+      "success": true,
+      "result": "manufacturer\tmanLabel\tcert\tcertLabel\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 195\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 16,
+      "query": "Which city is the company whose name contains \"Robotics\" located in (via organization ? site ? city)?",
+      "expected_label": "Multi-hop",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 17,
+      "query": "Which state is the manufacturer whose name contains \"Valve\" located in (via site ? city ? state)?",
+      "expected_label": "Multi-hop",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 18,
+      "query": "What is the ZIP code for the location of the company whose name contains \"Casting\"?",
+      "expected_label": "Multi-hop",
+      "success": true,
+      "result": "zip\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 30\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 19,
+      "query": "What are the latitude and longitude for the site linked to the company whose name contains \"Surface Finish\"?",
+      "expected_label": "Multi-hop",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 20,
+      "query": "How many manufacturers are located in each state?",
+      "expected_label": "Aggregation",
+      "success": true,
+      "result": "stateLabel\tcount\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 91\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 21,
+      "query": "How many manufacturers are located in each city?",
+      "expected_label": "Aggregation",
+      "success": true,
+      "result": "cityLabel\tmanufacturers\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 2729\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 22,
+      "query": "For each industry, how many manufacturers supply to it?",
+      "expected_label": "Aggregation",
+      "success": true,
+      "result": "industry\tindustryLabel\tManufacturerCount\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 5\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 23,
+      "query": "For each state, what is the average number of employees among manufacturers located there?",
+      "expected_label": "Aggregation",
+      "success": true,
+      "result": "stateLabel\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 32\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 24,
+      "query": "For each state, what is the total number of employees among manufacturers located there?",
+      "expected_label": "Aggregation",
+      "success": true,
+      "result": "stateLabel\ttotalEmployees\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 32\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 25,
+      "query": "For each certificate, how many manufacturers hold it?",
+      "expected_label": "Aggregation",
+      "success": true,
+      "result": "certificate\tnumManufacturers\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 4935\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 26,
+      "query": "For each NAICS classifier, how many manufacturers use it as their primary NAICS?",
+      "expected_label": "Aggregation",
+      "success": true,
+      "result": "naics\tnumManufacturers\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 301\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 27,
+      "query": "For each manufacturer, how many products does it make?",
+      "expected_label": "Aggregation",
+      "success": true,
+      "result": "manufacturer\tmanufacturerLabel\tproductCount\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 8866\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 28,
+      "query": "For each manufacturer, how many total capabilities does it have across process and material?",
+      "expected_label": "Aggregation",
+      "success": true,
+      "result": "manufacturer\ttotalCapabilities\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 10000\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 29,
+      "query": "How many manufacturers lack a business description?",
+      "expected_label": "Aggregation",
+      "success": true,
+      "result": "countWithoutDescription\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 1\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 30,
+      "query": "Does any manufacturer hold a certificate labeled \"ISO 9001\"?",
+      "expected_label": "Boolean/Existential",
+      "success": true,
+      "result": "manufacturer\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 4020\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 31,
+      "query": "Is there any manufacturer located in a state whose name contains \"Texas\"?",
+      "expected_label": "Boolean/Existential",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 32,
+      "query": "Are there manufacturers that supply to both \"Renewable Energy\" and \"Utilities\" industries?",
+      "expected_label": "Boolean/Existential",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 33,
+      "query": "Does the manufacturer whose name contains \"Pipe\" have a primary NAICS recorded?",
+      "expected_label": "Boolean/Existential",
+      "success": true,
+      "result": "manuf\tname\thasPrimaryNAICS\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 44\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 34,
+      "query": "Is there a manufacturer that makes a product whose name contains \"Valve\"?",
+      "expected_label": "Boolean/Existential",
+      "success": true,
+      "result": "manuf\tmanufLabel\tprod\tprodLabel\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 1320\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 35,
+      "query": "Is there any manufacturer located in Phoenix  , Arizona  that lacks certifications?",
+      "expected_label": "Boolean/Existential",
+      "success": true,
+      "result": "org\torgLabel\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 689\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 36,
+      "query": "Do any manufacturer sites have both latitude and longitude recorded?",
+      "expected_label": "Boolean/Existential",
+      "success": true,
+      "result": "site\tlat\tlon\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 10000\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 37,
+      "query": "Are there manufacturers with both a material capability labeled \"Bronze\" and one labeled \"Steel\"?",
+      "expected_label": "Boolean/Existential",
+      "success": true,
+      "result": "manufacturer\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 2408\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 38,
+      "query": "Is there any manufacturer without any certificate linked?",
+      "expected_label": "Boolean/Existential",
+      "success": true,
+      "result": "ASK Query Result: YES\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 39,
+      "query": "Does the manufacturer whose name contains \"Coating\" have a business description recorded?",
+      "expected_label": "Boolean/Existential",
+      "success": true,
+      "result": "ASK Query Result: YES\n",
+      "attempts": 2,
+      "error": null
+    },
+    {
+      "query_id": 40,
+      "query": "List manufacturers with more than 500 employees.",
+      "expected_label": "Filters",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 41,
+      "query": "Find manufacturers whose name matches the regex \"^A\".",
+      "expected_label": "Filters",
+      "success": true,
+      "result": "manuf\tname\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 1453\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 42,
+      "query": "List NAICS classifiers whose text contains \"PIPE\" (case-insensitive).",
+      "expected_label": "Filters",
+      "success": true,
+      "result": "naics\ttext\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 2\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 43,
+      "query": "Return manufacturers whose ZIP code equals \"85027.0\".",
+      "expected_label": "Filters",
+      "success": true,
+      "result": "manufacturer\tname\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 6\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 44,
+      "query": "Find manufacturers in states whose name matches the regex \"^New \".",
+      "expected_label": "Filters",
+      "success": true,
+      "result": "manuf\tmanufLabel\tstateLabel\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 278\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 45,
+      "query": "List manufacturers with latitude > 45.0 at their site coordinates.",
+      "expected_label": "Filters",
+      "success": true,
+      "result": "manuf\tname\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 543\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 46,
+      "query": "Find manufacturers with longitude < ?100.0 at their site coordinates.",
+      "expected_label": "Filters",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 47,
+      "query": "Return manufacturers supplying to an industry whose name contains \"Utilities\".",
+      "expected_label": "Filters",
+      "success": true,
+      "result": "manufacturer\tmanLabel\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 713\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 48,
+      "query": " and list the manufacturers that make them.\"",
+      "expected_label": "Filters",
+      "success": true,
+      "result": "manuf\tmanufLabel\tprod\tprodLabel\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 10000\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 49,
+      "query": "Return manufacturer names longer than 8 characters.",
+      "expected_label": "Filters",
+      "success": true,
+      "result": "manufacturerName\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 10000\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 50,
+      "query": "Which manufacturer has the highest number of employees overall?",
+      "expected_label": "Superlatives",
+      "success": true,
+      "result": "manufacturer\tname\temployees\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 1\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 51,
+      "query": "Which manufacturer has the fewest employees among those located in states whose name contains \"Ohio\"?",
+      "expected_label": "Superlatives",
+      "success": true,
+      "result": "manuf\tmanufLabel\temployees\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 1\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 52,
+      "query": "Which state has the largest number of manufacturers?",
+      "expected_label": "Superlatives",
+      "success": true,
+      "result": "state\tstateLabel\tmanufacturers\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 1\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 53,
+      "query": "Which city has the largest number of manufacturers?",
+      "expected_label": "Superlatives",
+      "success": true,
+      "result": "city\tcityLabel\tnumManufacturers\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 1\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 54,
+      "query": "Which industry has the most supplier manufacturers?",
+      "expected_label": "Superlatives",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 55,
+      "query": "Which certificate is held by the greatest number of manufacturers?",
+      "expected_label": "Superlatives",
+      "success": true,
+      "result": "certificate\tcertificateLabel\tmanufacturerCount\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 1\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 56,
+      "query": "Which product is made by the most manufacturers?",
+      "expected_label": "Superlatives",
+      "success": true,
+      "result": "product\tnumManufacturers\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 1\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 57,
+      "query": "Which manufacturer has the greatest number of distinct capabilities (combining process and material)?",
+      "expected_label": "Superlatives",
+      "success": true,
+      "result": "manufacturer\tdistinctCapabilities\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 1\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 58,
+      "query": "Which NAICS classifier is most commonly used as a primary NAICS across manufacturers?",
+      "expected_label": "Superlatives",
+      "success": true,
+      "result": "naics\tcode\ttext\tnumManufacturers\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 1\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 59,
+      "query": "Which manufacturer is located at the northernmost latitude among all sites?",
+      "expected_label": "Superlatives",
+      "success": true,
+      "result": "manufacturer\tname\tlat\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 1\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 60,
+      "query": "For each manufacturer, return its NAICS text if present; still list the manufacturer if the NAICS text is missing.",
+      "expected_label": "OPTIONAL/UNION",
+      "success": true,
+      "result": "manufacturer\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 10000\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 61,
+      "query": "For each manufacturer, return its ZIP code if present; otherwise leave it blank.",
+      "expected_label": "OPTIONAL/UNION",
+      "success": true,
+      "result": "manufacturer\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 10000\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 62,
+      "query": "List manufacturers that have either a process capability labeled \"Machining\" or a process capability labeled \"Coating\".",
+      "expected_label": "OPTIONAL/UNION",
+      "success": true,
+      "result": "manufacturer\tname\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 7946\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 63,
+      "query": "For each manufacturer, list all capability names across process and material in one result.",
+      "expected_label": "OPTIONAL/UNION",
+      "success": true,
+      "result": "manufacturer\tcapNames\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 10000\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 64,
+      "query": "Return each manufacturer with its city and state; if city is missing, still return the state when available.",
+      "expected_label": "OPTIONAL/UNION",
+      "success": true,
+      "result": "manufacturer\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 10000\n",
+      "attempts": 2,
+      "error": null
+    },
+    {
+      "query_id": 65,
+      "query": "List manufacturers that supply to either \"Renewable Energy\" or \"Utilities\".",
+      "expected_label": "OPTIONAL/UNION",
+      "success": true,
+      "result": "manufacturer\tlabel\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 1486\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 66,
+      "query": "For each manufacturer, list either the products they make or the certificates they hold in one output.",
+      "expected_label": "OPTIONAL/UNION",
+      "success": true,
+      "result": "manufacturer\tmanufacturerLabel\titemLabel\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 10000\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 67,
+      "query": "List manufacturers and their site coordinates (lat/long) when available; include manufacturers with no coordinates.",
+      "expected_label": "OPTIONAL/UNION",
+      "success": true,
+      "result": "manufacturer\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 10000\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 68,
+      "query": "Return each manufacturer with business description text if available; otherwise fall back to the manufacturer's name.",
+      "expected_label": "OPTIONAL/UNION",
+      "success": true,
+      "result": "manufacturer\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 10000\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 69,
+      "query": "For each manufacturer, list any capability name whether it is a process or material capability.",
+      "expected_label": "OPTIONAL/UNION",
+      "success": true,
+      "result": "manufacturer\tcapLabel\tcapType\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 10000\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 70,
+      "query": "List all manufacturers located in a given city (match by city name substring, e.g., contains Rochester\").\"",
+      "expected_label": "Temporal/Geospatial",
+      "success": true,
+      "result": "manufacturer\tmanufacturerLabel\tcityLabel\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 36\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 71,
+      "query": "List all manufacturers located in a given state (via site ? city ? state; match state name contains \"California\").",
+      "expected_label": "Temporal/Geospatial",
+      "success": true,
+      "result": "manufacturer\tmanufacturerLabel\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 1001\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 72,
+      "query": "For each state, how many manufacturers are located there?",
+      "expected_label": "Temporal/Geospatial",
+      "success": true,
+      "result": "state\tstateLabel\tmanufacturerCount\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 91\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 73,
+      "query": "For each city, how many manufacturers are located there?",
+      "expected_label": "Temporal/Geospatial",
+      "success": true,
+      "result": "city\tcityLabel\tnumManufacturers\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 10000\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 74,
+      "query": "Which manufacturers are located at latitude > 40.0?",
+      "expected_label": "Temporal/Geospatial",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 75,
+      "query": "Which manufacturers are located at longitude < 90.0?",
+      "expected_label": "Temporal/Geospatial",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 76,
+      "query": "Which manufacturers have coordinates exactly at (33.364638, -111.931604)?",
+      "expected_label": "Temporal/Geospatial",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 77,
+      "query": "For each manufacturer, return its city name and ZIP code.",
+      "expected_label": "Temporal/Geospatial",
+      "success": true,
+      "result": "manufacturer\tcityName\tzipCode\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 10000\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 78,
+      "query": "Which state has the highest number of manufacturers?",
+      "expected_label": "Temporal/Geospatial",
+      "success": true,
+      "result": "state\tstateLabel\tmanufacturers\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 1\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 79,
+      "query": "List manufacturers in states whose names match the regex \"^New \".",
+      "expected_label": "Temporal/Geospatial",
+      "success": true,
+      "result": "manufacturer\tmanufacturerLabel\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 278\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 80,
+      "query": " Ã¢Â€ÂœNew YorkÃ¢Â€Â\"",
+      "expected_label": "Nested Subqueries",
+      "success": true,
+      "result": "org\torgLabel\tcityLabel\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 16\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 81,
+      "query": "For each state, return the top 3 manufacturers by employees.",
+      "expected_label": "Nested Subqueries",
+      "success": true,
+      "result": "stateLabel\torg\temp\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 3\n",
+      "attempts": 2,
+      "error": null
+    },
+    {
+      "query_id": 82,
+      "query": " Large (>250) by employees and count companies per bucket.\"",
+      "expected_label": "Nested Subqueries",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 83,
+      "query": "Within each industry, list manufacturers whose employee count is above that industry's average.",
+      "expected_label": "Nested Subqueries",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 84,
+      "query": "For each manufacturer, add a Has ISO 9001\" column computed from whether it holds that certificate.\"",
+      "expected_label": "Nested Subqueries",
+      "success": true,
+      "result": "manufacturer\tHasISO9001\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 10000\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 85,
+      "query": " Ã¢Â€ÂœCoatingÃ¢Â€Â\"",
+      "expected_label": "Nested Subqueries",
+      "success": true,
+      "result": "manufacturer\tmanLabel\tcap\tcapLabel\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 9872\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 86,
+      "query": "For each state, return the average employees of manufacturers that make any product whose name contains Pipe\".\"",
+      "expected_label": "Nested Subqueries",
+      "success": true,
+      "result": "stateLabel\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 3\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 87,
+      "query": "Return manufacturers whose number of certificates is above the overall average number of certificates per manufacturer.",
+      "expected_label": "Nested Subqueries",
+      "success": true,
+      "result": "manufacturer\tcount\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 5432\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 88,
+      "query": "For each NAICS classifier, list the top 5 states by number of manufacturers using that classifier as primary.",
+      "expected_label": "Nested Subqueries",
+      "success": true,
+      "result": "naics\tstate\tstateLabel\tmanufacturerCount\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 5\n",
+      "attempts": 2,
+      "error": null
+    },
+    {
+      "query_id": 89,
+      "query": " fill with Ã¢Â€ÂœUnknownÃ¢Â€Â\".\"",
+      "expected_label": "Nested Subqueries",
+      "success": true,
+      "result": "cap\ttype\tlabel\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 3949\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 90,
+      "query": "List manufacturers that have any capability that is a subclass of the class labeled \"Machining\".",
+      "expected_label": "Reasoning-dependent",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 91,
+      "query": "Count manufacturers with capabilities that are subclasses of the class labeled \"Surface Finishing\".",
+      "expected_label": "Reasoning-dependent",
+      "success": true,
+      "result": "count\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 1\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 92,
+      "query": " how many have a capability that is a subclass of the class labeled Ã¢Â€ÂœCoatingÃ¢Â€Â\"?\"",
+      "expected_label": "Reasoning-dependent",
+      "success": true,
+      "result": "count\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 1\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 93,
+      "query": "Return manufacturers that have Heat Treating or any subclass of the class labeled \"Heat Treating\".",
+      "expected_label": "Reasoning-dependent",
+      "success": true,
+      "result": "manufacturer\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 1368\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 94,
+      "query": "List manufacturers that have capabilities in the subtree of the class labeled \"Hole Making\".",
+      "expected_label": "Reasoning-dependent",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 95,
+      "query": "Find manufacturers whose capability is a subclass of the class labeled \"Surface Preparation\".",
+      "expected_label": "Reasoning-dependent",
+      "success": true,
+      "result": "manufacturer\tmanufLabel\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 1229\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 96,
+      "query": "Count manufacturers with capabilities under the subtree of the class labeled \"Multipoint Cutting\".",
+      "expected_label": "Reasoning-dependent",
+      "success": true,
+      "result": "count\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 1\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 97,
+      "query": "Count manufacturers with capabilities under the subtree of the class labeled \"Single-Point Cutting\".",
+      "expected_label": "Reasoning-dependent",
+      "success": true,
+      "result": "count\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 1\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 98,
+      "query": "List manufacturers that have capabilities under the subtree of the class labeled \"Abrasive Machining\".",
+      "expected_label": "Reasoning-dependent",
+      "success": true,
+      "result": "manufacturer\tname\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 1734\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 99,
+      "query": " which ones have any capability that is a subclass of the class labeled Ã¢Â€ÂœCoatingÃ¢Â€Â\"?\"",
+      "expected_label": "Reasoning-dependent",
+      "success": true,
+      "result": "manufacturer\tmanufacturerLabel\tcap\tcapLabel\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 10000\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 100,
+      "query": "Which manufacturers have any capability under Additive Manufacturing (e.g., Polymer Deposition, Fused Deposition Modeling)?",
+      "expected_label": "Reasoning-dependent",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 101,
+      "query": "Which manufacturers have a capability that is a subclass of Abrasive Finishing (e.g., Grinding, Lapping)?",
+      "expected_label": "Reasoning-dependent",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 102,
+      "query": "Which manufacturers have a capability that belongs to the Surface Finishing hierarchy?",
+      "expected_label": "Reasoning-dependent",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 103,
+      "query": "Which manufacturers have a process capability labeled Polymer Deposition?",
+      "expected_label": "Reasoning-dependent",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 104,
+      "query": "Count the manufacturers with any capability under Fused Deposition Modeling.",
+      "expected_label": "Reasoning-dependent",
+      "success": true,
+      "result": "count\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 1\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 105,
+      "query": "Which manufacturers use Drop On Demand as an additive manufacturing process?",
+      "expected_label": "Reasoning-dependent",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 106,
+      "query": "Which manufacturers have a capability that is a subclass of Subtractive Manufacturing?",
+      "expected_label": "Reasoning-dependent",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 107,
+      "query": "Which manufacturers have any capability under the Casting hierarchy (e.g., Sand Casting, Die Casting)?",
+      "expected_label": "Reasoning-dependent",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 108,
+      "query": "Which manufacturers have any capability in Forming Processes (e.g., Forging, Rolling, Extrusion)?",
+      "expected_label": "Reasoning-dependent",
+      "success": true,
+      "result": "manufacturer\tname\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 4060\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 109,
+      "query": "Which manufacturers are linked to Machining subclasses like Turning or Milling?",
+      "expected_label": "Reasoning-dependent",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 110,
+      "query": "Which manufacturers supply to the Aerospace industry?",
+      "expected_label": "Industry-specific",
+      "success": true,
+      "result": "manufacturer\tmanufacturerLabel\tindustryLabel\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 4419\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 111,
+      "query": "Which manufacturers supply to the Automotive industry?",
+      "expected_label": "Industry-specific",
+      "success": true,
+      "result": "manufacturer\tmanufLabel\tindustry\tindLabel\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 4545\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 112,
+      "query": "Which manufacturers supply to the Agriculture industry?",
+      "expected_label": "Industry-specific",
+      "success": true,
+      "result": "manufacturer\tmanufacturerLabel\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 2089\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 113,
+      "query": "Which manufacturers supply to the Apparel industry?",
+      "expected_label": "Industry-specific",
+      "success": true,
+      "result": "manufacturer\tmanufacturerName\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 10\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 114,
+      "query": "Which manufacturers supply to the Audio and Visual industry?",
+      "expected_label": "Industry-specific",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 115,
+      "query": "How many manufacturers supply to the Construction industry?",
+      "expected_label": "Industry-specific",
+      "success": true,
+      "result": "count\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 1\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 116,
+      "query": "List manufacturers that supply to both Medical Devices and Pharmaceuticals industries.",
+      "expected_label": "Industry-specific",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 117,
+      "query": "Which industries have the largest number of manufacturers supplying to them?",
+      "expected_label": "Industry-specific",
+      "success": true,
+      "result": "industry\tindustryLabel\tnumManufacturers\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 84\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 118,
+      "query": "Which industries have fewer than 5 manufacturers supplying to them?",
+      "expected_label": "Industry-specific",
+      "success": true,
+      "result": "industry\tmanufacturerCount\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 10\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 119,
+      "query": "Which manufacturers supply to industries whose names match the regex \"Energy\"?",
+      "expected_label": "Industry-specific",
+      "success": true,
+      "result": "manufacturer\tmanuLabel\tindustryCount\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 10\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 120,
+      "query": "Which manufacturers process Carbide?",
+      "expected_label": "Material Capabilities",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 121,
+      "query": "Which manufacturers have material capabilities under Carbon (e.g., Graphite)?",
+      "expected_label": "Material Capabilities",
+      "success": true,
+      "result": "manufacturer\tname\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 226\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 122,
+      "query": "Which manufacturers have material capabilities in the Ceramic hierarchy (e.g., Zircon)?",
+      "expected_label": "Material Capabilities",
+      "success": true,
+      "result": "manufacturer\tname\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 103\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 123,
+      "query": "Which manufacturers have an Aluminum material capability?",
+      "expected_label": "Material Capabilities",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 124,
+      "query": "Which manufacturers have both Steel and Bronze material capabilities?",
+      "expected_label": "Material Capabilities",
+      "success": true,
+      "result": "manufacturer\tmanufacturerLabel\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 2419\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 125,
+      "query": "Which manufacturers do not have a primary NAICS recorded?",
+      "expected_label": "Missing Data",
+      "success": true,
+      "result": "manufacturer\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 5842\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 126,
+      "query": "Which manufacturers lack any certificate (ISO 9001, ISO 14001, etc.)?",
+      "expected_label": "Missing Data",
+      "success": true,
+      "result": "manufacturer\tname\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 8504\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 127,
+      "query": "Which manufacturers are missing a postal address?",
+      "expected_label": "Missing Data",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 128,
+      "query": "Which manufacturers have a site but no latitude/longitude recorded?",
+      "expected_label": "Missing Data",
+      "success": true,
+      "result": "manufacturer\tsite\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 116\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 129,
+      "query": "Which manufacturers do not have a business description?",
+      "expected_label": "Missing Data",
+      "success": true,
+      "result": "manufacturer\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 1\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 130,
+      "query": "Which manufacturers have no products listed?",
+      "expected_label": "Missing Data",
+      "success": true,
+      "result": "manufacturer\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 5082\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 131,
+      "query": "Which manufacturers are not linked to any industry?",
+      "expected_label": "Missing Data",
+      "success": true,
+      "result": "manufacturer\tname\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 2712\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 132,
+      "query": "Which manufacturers are missing a ZIP code?",
+      "expected_label": "Missing Data",
+      "success": true,
+      "result": "manufacturer\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 2834\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 133,
+      "query": "Which manufacturers have no process capabilities?",
+      "expected_label": "Missing Data",
+      "success": true,
+      "result": "manufacturer\tlabel\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 3023\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 134,
+      "query": "Which manufacturers have no material capabilities?",
+      "expected_label": "Missing Data",
+      "success": true,
+      "result": "manufacturer\tname\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 3430\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 135,
+      "query": "Which manufacturers in Arizona with more than 50 employees have any capability under Additive Manufacturing?",
+      "expected_label": "Compositional",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 136,
+      "query": "Which manufacturers that supply to Aerospace and Automotive also hold the certificate labeled ISO 9001?",
+      "expected_label": "Compositional",
+      "success": true,
+      "result": "manufacturer\tmanLabel\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 1416\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 137,
+      "query": "Among manufacturers in the Renewable Energy industry, which ones have a subclass of Coating capability and employ over 200 employees?",
+      "expected_label": "Compositional",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 138,
+      "query": "For each state, which manufacturer has the largest number of products and also holds at least one certificate?",
+      "expected_label": "Compositional",
+      "success": true,
+      "result": "stateLabel\tmanuf\tnumProducts\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 1\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 139,
+      "query": "Which manufacturers that process Ceramic materials are located in states whose name begins with \"New\"?",
+      "expected_label": "Compositional",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 140,
+      "query": "Which industries have more than 100 suppliers that also make products containing the word \"Pipe\"?",
+      "expected_label": "Compositional",
+      "success": true,
+      "result": "industry\tindustryLabel\tsupplierCount\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 9\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 141,
+      "query": "Among manufacturers in the Automotive industry, which ones have both Machining and Surface Finishing capabilities?",
+      "expected_label": "Compositional",
+      "success": true,
+      "result": "org\torgLabel\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 1179\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 142,
+      "query": "Which manufacturers that manufacture Graphite-related products are located in the same state as a Renewable Energy Industry supplier?",
+      "expected_label": "Compositional",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 143,
+      "query": "For each city, return the average employee count of manufacturers with Heat Treating capabilities.",
+      "expected_label": "Compositional",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 144,
+      "query": "Which manufacturers supply to both Agriculture and Construction industries and are located at latitude > 40.0?",
+      "expected_label": "Compositional",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 145,
+      "query": "Show me all companies that deliver goods or services to the Automotive sector.",
+      "expected_label": "Linguistic Diversity",
+      "success": true,
+      "result": "company\tlabel\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 4330\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 146,
+      "query": "List companies capable of handling ceramics as a material.",
+      "expected_label": "Linguistic Diversity",
+      "success": true,
+      "result": "company\tname\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 1388\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 147,
+      "query": "Who is the largest employer among all manufacturers in the dataset?",
+      "expected_label": "Linguistic Diversity",
+      "success": true,
+      "result": "manufacturer\tlabel\temployees\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 1\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 148,
+      "query": "Which companies perform processes classified as additive manufacturing?",
+      "expected_label": "Linguistic Diversity",
+      "success": true,
+      "result": "companyLabel\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 943\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 149,
+      "query": "Which sectors attract the greatest number of supplier companies?",
+      "expected_label": "Linguistic Diversity",
+      "success": true,
+      "result": "industry\tindustryLabel\tnumDistinctSupplierCompanies\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 1\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 150,
+      "query": "Show manufacturers with at least 100 employees.",
+      "expected_label": "Filters",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 151,
+      "query": "Which manufacturers have a business description longer than 20 characters?",
+      "expected_label": "Filters",
+      "success": true,
+      "result": "manufacturer\tlabel\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 2635\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 152,
+      "query": "Which manufacturers use primary NAICS 332996 and whose NAICS text mentions \"PIPE\"?",
+      "expected_label": "Filters",
+      "success": true,
+      "result": "manufacturer\tname\tnaicsText\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 238\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 153,
+      "query": "Which manufacturers supply to exactly two industries?",
+      "expected_label": "Aggregation",
+      "success": true,
+      "result": "manufacturer\tindustryCount\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 1859\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 154,
+      "query": "Which manufacturers have both process and material capabilities, totaling four capabilities overall?",
+      "expected_label": "Compositional",
+      "success": true,
+      "result": "manufacturer\tname\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 155\n",
+      "attempts": 2,
+      "error": null
+    },
+    {
+      "query_id": 155,
+      "query": "Which manufacturers supply only Renewable Energy and Utilities (no other industries)?",
+      "expected_label": "Compositional",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 156,
+      "query": "Whose industry list is exactly Renewable Energy and Utilities?",
+      "expected_label": "Industry-specific",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 157,
+      "query": "Which manufacturers hold both ISO 9001 and ISO 14001?",
+      "expected_label": "Compositional",
+      "success": true,
+      "result": "manufacturer\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 301\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 158,
+      "query": "Who makes the most products? Include ties.",
+      "expected_label": "Superlatives",
+      "success": true,
+      "result": "man\tlabel\tproductCount\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 1\n",
+      "attempts": 3,
+      "error": null
+    },
+    {
+      "query_id": 159,
+      "query": "Which industry type has the most supplier manufacturers? Include ties.",
+      "expected_label": "Industry-specific",
+      "success": true,
+      "result": "industry\tindustryLabel\tmanufacturerCount\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 85\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 160,
+      "query": "For each state, who are the top employers by headcount? Include ties.",
+      "expected_label": "Nested Subqueries",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 161,
+      "query": "Who has the most total capabilities when you combine process and material?",
+      "expected_label": "Superlatives",
+      "success": true,
+      "result": "org\tlabel\ttotal\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 1\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 162,
+      "query": "Which primary NAICS code shows up most often across manufacturers?",
+      "expected_label": "Superlatives",
+      "success": true,
+      "result": "code\ttext\tnumManufacturers\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 1\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 163,
+      "query": "For each manufacturer, give a City",
+      "expected_label": "OPTIONAL/UNION",
+      "success": true,
+      "result": "manufacturer\tcityLabel\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 10000\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 164,
+      "query": "List each manufacturer with its site coordinates when available; otherwise say \"no-coords.\"",
+      "expected_label": "OPTIONAL/UNION",
+      "success": true,
+      "result": "manufacturer\tcoords\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 10000\n",
+      "attempts": 2,
+      "error": null
+    },
+    {
+      "query_id": 165,
+      "query": "For each manufacturer, show the ZIP if it exists; otherwise the postal address text; otherwise the company name.",
+      "expected_label": "OPTIONAL/UNION",
+      "success": true,
+      "result": "manufacturer\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 10000\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 166,
+      "query": "For each manufacturer, list all capability names (process and material together) in one column.",
+      "expected_label": "OPTIONAL/UNION",
+      "success": true,
+      "result": "manufacturerLabel\tCapabilities\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 10000\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 167,
+      "query": "Show manufacturers that either have a process capability ending in \"ing\" or have any material capability.",
+      "expected_label": "OPTIONAL/UNION",
+      "success": true,
+      "result": "manufacturer\tmanufacturerLabel\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 10000\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 168,
+      "query": "Which manufacturers can you trace from company ? site ? city ? state, and what's the state name?",
+      "expected_label": "Multi-hop",
+      "success": true,
+      "result": "manufacturer\tmanufLabel\tsite\tcity\tcityLabel\tstate\tstateLabel\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 10000\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 169,
+      "query": "Which manufacturers reach a state either via site?city?state or by a direct company?state link?",
+      "expected_label": "OPTIONAL/UNION",
+      "success": true,
+      "result": "manufacturer\tmLabel\tstate\tstateLabel\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 10000\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 170,
+      "query": "Which manufacturers have process capability names where every one ends with \"ing\"?",
+      "expected_label": "Boolean/Existential",
+      "success": true,
+      "result": "manufacturer\tname\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 10000\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 171,
+      "query": "Which manufacturers' material capabilities are only Urethane and/or Stainless Steel and/or Iron and/or Bronze  (no others)?",
+      "expected_label": "Compositional",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 172,
+      "query": "Which manufacturers have a site but are missing either latitude or longitude?",
+      "expected_label": "Missing Data",
+      "success": true,
+      "result": "manufacturer\tmanufLabel\tsite\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 125\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 173,
+      "query": "Which manufacturers have at least one certificate but no products?",
+      "expected_label": "Missing Data",
+      "success": true,
+      "result": "manufacturer\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 4408\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 174,
+      "query": "Which manufacturers have no business description-or only a blank one?",
+      "expected_label": "Missing Data",
+      "success": true,
+      "result": "manufacturer\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 10000\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 175,
+      "query": "Which manufacturers don't supply to any industry?",
+      "expected_label": "Missing Data",
+      "success": true,
+      "result": "manufacturer\tlabel\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 2712\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 176,
+      "query": "Which manufacturers have more certificates than the overall average?",
+      "expected_label": "Nested Subqueries",
+      "success": true,
+      "result": "org\torgLabel\tcertCount\tavgCerts\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 5443\n",
+      "attempts": 2,
+      "error": null
+    },
+    {
+      "query_id": 177,
+      "query": "Within each industry, which manufacturers have above-average employee counts?",
+      "expected_label": "Nested Subqueries",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 178,
+      "query": "For each state, what's the average employee count among manufacturers that make any product with a digit in the name?",
+      "expected_label": "Nested Subqueries",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 179,
+      "query": "For each state, give two numbers: total process capabilities and total material capabilities.",
+      "expected_label": "Aggregation",
+      "success": true,
+      "result": "stateLabel\ttotalProcessCapabilities\ttotalMaterialCapabilities\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 84\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 180,
+      "query": "For each primary NAICS code, show how many manufacturers use it, how many products those manufacturers make in total, and the average employee count.",
+      "expected_label": "Aggregation",
+      "success": true,
+      "result": "naicsCodeValue\tmanufacturerCount\tproductCount\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 1\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 181,
+      "query": "Return company names in English only (or all if no language tags).",
+      "expected_label": "Filters",
+      "success": true,
+      "result": "companyName\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 10000\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 182,
+      "query": "Which manufacturers have \"Company\" in either their name or their description?",
+      "expected_label": "Filters",
+      "success": true,
+      "result": "manufacturer\tname\tdescription\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 159\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 183,
+      "query": "Which manufacturers make products named exactly \"Tube Bending\" or \"Punching\"?",
+      "expected_label": "Filters",
+      "success": true,
+      "result": "manufacturer\tmanufacturerLabel\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 3\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 184,
+      "query": "Who in California has at least 20 employees and at least one process capability whose name ends with \"ing\"?",
+      "expected_label": "Compositional",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 185,
+      "query": "Who supplies to both Renewable Energy and Utilities and also holds ISO 9001?",
+      "expected_label": "Compositional",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 186,
+      "query": "For each city, what's the average employee count among manufacturers with four or more total capabilities?",
+      "expected_label": "Compositional",
+      "success": true,
+      "result": "cityLabel\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 164\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 187,
+      "query": "Which manufacturers located in Arizona have a ZIP code other than \"85001\" and a latitude greater than 33.4?",
+      "expected_label": "Filters",
+      "success": true,
+      "result": "No results found.\n",
+      "attempts": 1,
+      "error": null
+    },
+    {
+      "query_id": 188,
+      "query": "Which manufacturers have exactly two products or two process capabilities and two material capabilities?",
+      "expected_label": "Compositional",
+      "success": true,
+      "result": "manufacturer\tlabel\tprodCount\tprocCount\tmatCount\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 347\n",
+      "attempts": 1,
+      "error": null
+    }
+  ]
+}

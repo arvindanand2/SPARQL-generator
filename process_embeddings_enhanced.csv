@@ -1,0 +1,465 @@
+Label,Also Called,Hierarchy,Category
+Abrasive Finishing,Rapid Prototyping,Abrasive Finishing,Abrasive Finishing
+Additive Manufacturing,"3D Printing, Rapid Prototyping, AM, Layered Manufacturing",Additive Manufacturing,Additive Manufacturing
+Directed Energy Deposition,"DED, Laser Metal Deposition, LMD, Direct Metal Deposition, DMD, Directed Energy 3D Printing, Metal Deposition 3D Printing",Additive Manufacturing > Directed Energy Deposition,Additive Manufacturing
+Drop On Demand,"DoD Printing, Inkjet 3D Printing, Drop-Based 3D Printing, Binder Droplet Printing",Additive Manufacturing > Drop On Demand,Additive Manufacturing
+Fused Deposition Modeling,"Melted Filament Printing, Extrusion 3D Printing",Additive Manufacturing > Fused Deposition Modeling,Additive Manufacturing
+Fused Filament Fabrication,"FFF, Extrusion Printing",Additive Manufacturing > Fused Deposition Modeling > Fused Filament Fabrication,Additive Manufacturing
+Laminated Object Manufacturing,"LOM, Layered Sheet Printing, Paper 3D Printing",Additive Manufacturing > Laminated Object Manufacturing,Additive Manufacturing
+Metal Additive Manufacturing,"Metal 3D Printing, Metal AM, Metal-Based Additive Manufacturing, Direct Metal Printing",Additive Manufacturing > Metal Additive Manufacturing,Additive Manufacturing
+Polymer Deposition,"Polymer Extrusion, Polymer 3D Printing, Plastic Deposition Printing, Thermoplastic Printing",Additive Manufacturing > Polymer Deposition,Additive Manufacturing
+Powder Deposition,"Powder-Based Additive Manufacturing, Powder Deposition Printing, Blown Powder 3D Printing",Additive Manufacturing > Powder Deposition,Additive Manufacturing
+Selective Laser Melting,"SLM, Laser Melting, Laser Metal Fusion, LMF, Metal Laser Printing",Additive Manufacturing > Selective Laser Melting,Additive Manufacturing
+Powder Bed Fusion,"PBF, Laser Powder Bed Fusion, LPBF, Electron Beam Powder Bed Fusion, EB-PBF, Metal Powder Bed Fusion, Powder-Based 3D Printing",Additive Manufacturing > Selective Laser Melting > Powder Bed Fusion,Additive Manufacturing
+Selective Laser Sintering,"SLS, Laser Sintering, Powder Sintering 3D Printing",Additive Manufacturing > Selective Laser Sintering,Additive Manufacturing
+Selective Mask Sintering,"SMS, Mask-Based Sintering, Mask Sintering 3D Printing",Additive Manufacturing > Selective Mask Sintering,Additive Manufacturing
+Solid Deposition,"Solid Freeform Fabrication, SFF, Solid Deposition Modeling, SDM",Additive Manufacturing > Solid Deposition,Additive Manufacturing
+Stereolithography,"SLA, Resin 3D Printing, Photopolymer Printing, UV Cured 3D Printing",Additive Manufacturing > Stereolithography,Additive Manufacturing
+Photopolymerization,"Vat Photopolymerization, Resin Curing, UV Resin Printing, Digital Light Processing, DLP",Additive Manufacturing > Stereolithography > Photopolymerization,Additive Manufacturing
+Binder Jetting,"BJ 3D Printing, Inkjet Powder Printing, Binder-Based 3D Printing, Powder Binder Printing",Additive Manufacturing > Binder Jetting,Additive Manufacturing
+Casting,"Metal Casting, Foundry Casting, Mold Casting, Liquid Metal Shaping",Casting,Casting
+Carbon Dioxide Mold Casting,"CO2 Sand Casting, Gas-Hardened Casting, Carbon Dioxide Sand Mold Casting",Casting > Carbon Dioxide Mold Casting,Casting
+Centrifugal Casting,"Spin Mold Casting, Centrifugal Mold Casting, Rotational Casting",Casting > Centrifugal Casting,Casting
+Ceramic Mold Casting,Ceramic Casting,Casting > Ceramic Mold Casting,Casting
+Continuous Casting,"Strand Casting, Continuous Metal Casting, Continuous Pour Casting",Casting > Continuous Casting,Casting
+Die Casting,"Pressure Die Casting, Metal Die Casting",Casting > Die Casting,Casting
+Cold Chamber Die Casting,"Cold Chamber Process, Cold Chamber Pressure Casting",Casting > Die Casting > Cold Chamber Die Casting,Casting
+Hot Chamber Die Casting,"Hot Chamber Process, Hot Chamber Pressure Casting",Casting > Die Casting > Hot Chamber Die Casting,Casting
+Gravity Casting,Gravity Pour Casting,Casting > Gravity Casting,Casting
+Permanent Mold Casting,Reusable Mold Casting,Casting > Gravity Casting > Permanent Mold Casting,Casting
+Investment Casting,"Lost Wax Casting, Precision Casting",Casting > Investment Casting,Casting
+Lost Foam Casting,"Foam Pattern Casting, Evaporative Pattern Casting",Casting > Lost Foam Casting,Casting
+Plaster Mold Casting,"Plaster Casting, Gypsum Mold Casting",Casting > Plaster Mold Casting,Casting
+Sand Casting,"No Bake Sand Casting, Sand Mold Casting, Green Sand Casting, Foundry Sand Casting",Casting > Sand Casting,Casting
+Shell Molding,"Shell Mold Casting, Resin Coated Sand Casting",Casting > Shell Molding,Casting
+Spin Casting,"Centrifugal Spin Casting, Rubber Mold Spin Casting",Casting > Spin Casting,Casting
+Squeeze Casting,"Liquid Metal Forging, Pressure Casting, High Pressure Casting",Casting > Squeeze Casting,Casting
+Vacuum Casting,"Vacuum-Assisted Casting, Vacuum Die Casting, V-Process Casting",Casting > Vacuum Casting,Casting
+Chemical Processing,"Chemical Manufacturing, Chemical Treatment, Chemical Engineering Processes",Chemical Processing,Chemical Processing
+Electrochemical Processes,"Electrochemical Machining, Electrolytic Machining",Electrochemical Processes,Electrochemical Processes
+Fabricating,"Metal Fabrication, Structural Fabrication",Fabricating,Fabricating
+Kitting,"Assembly Kitting, Manufacturing Kitting, Production Kitting",Fabricating > Kitting,Fabricating
+Micro Fabrication,"Microfabrication, MEMS Fabrication, Micro-Scale Manufacturing",Fabricating > Micro Fabrication,Fabricating
+Semiconductor Fabricating,"Semiconductor Manufacturing, Wafer Fabrication, Chip Fabrication",Fabricating > Semiconductor Fabricating,Fabricating
+Wire Harness Assembly,"Cable Harness Assembly, Wiring Loom Assembly, Electrical Harness Assembly",Fabricating > Wire Harness Assembly,Fabricating
+Filament Winding,"Composite Winding, Fiber Winding, Resin Winding",Filament Winding,Filament Winding
+Forging,"Metal Forging, Forged Metal Forming, Hot Forging (general), Cold Forging (general), Hammer Forging",Forging,Forging
+Coining,"Coin Forging, Precision Coining, Coin Pressing",Forging > Coining,Forging
+Cold Forging,"Cold Forming Forging, Room Temperature Forging",Forging > Cold Forging,Forging
+Die Forging,"Impression Die Forging (general), Tool Die Forging",Forging > Die Forging,Forging
+Drop Forging,"Hammer Drop Forging, Impact Forging",Forging > Drop Forging,Forging
+Impression Die Forging,Shaped Die Forging,Forging > Impression Die Forging,Forging
+Open Die Forging,"Smith Forging, Free Forging, Hand Forging",Forging > Open Die Forging,Forging
+Heading,"Cold Heading, Fastener Heading, Bolt Heading",Forging > Open Die Forging > Heading,Forging
+Press Forging,"Hydraulic Press Forging, Mechanical Press Forging",Forging > Press Forging,Forging
+Roll Forging,"Roll Die Forging, Shaped Bar Forging",Forging > Roll Forging,Forging
+Swedging,,Forging > Swedging,Forging
+Upset Forging,"Upsetting Forging, Bolt Forging, Fastener Forging",Forging > Upset Forging,Forging
+Upsetting,"Upset Forming, End Forming",Forging > Upset Forging > Upsetting,Forging
+Forming,"Material Shaping, Plastic Deformation Processes",Forming,Forming
+Cold Forming,"Cold Metal Forming, Room Temperature Forming",Forming > Cold Forming,Forming
+Sheet Forming,"Sheet Shaping, Sheet Forming Process",Forming > Sheet Forming,Forming
+Drawing,"Metal Drawing, Wire and Bar Drawing (general), Material Drawing",Forming > Drawing,Forming
+Bar Drawing,"Rod Drawing, Metal Bar Drawing",Forming > Drawing > Bar Drawing,Forming
+Ironing,"Wall Thinning, Metal Ironing, Deep Cup Ironing",Forming > Drawing > Bar Drawing > Ironing,Forming
+Cold Drawing,"Cold Wire Drawing, Cold Bar Drawing",Forming > Drawing > Cold Drawing,Forming
+Deep Drawing,"Cup Drawing, Metal Cup Forming, Sheet Deep Drawing",Forming > Drawing > Deep Drawing,Forming
+Tube Drawing,"Pipe Drawing, Hollow Tube Drawing",Forming > Drawing > Tube Drawing,Forming
+Wire Drawing,"Wire Reduction, Metal Wire Drawing",Forming > Drawing > Wire Drawing,Forming
+Electro Forming,"Electroforming, Electroplated Forming",Forming > Electro Forming,Forming
+Explosion Forming,"Explosive Forming, Shockwave Forming",Forming > Explosion Forming,Forming
+Extruding,"Extrusion, Metal Extrusion, Plastic Extrusion, Profile Extrusion",Forming > Extruding,Forming
+Cold Extrusion,"Cold Metal Extrusion, Cold Plastic Extrusion",Forming > Extruding > Cold Extrusion,Forming
+Direct Extrusion,"Forward Extrusion, Direct Metal Extrusion",Forming > Extruding > Direct Extrusion,Forming
+Hot Extrusion,"Hot Metal Extrusion, Heated Extrusion",Forming > Extruding > Hot Extrusion,Forming
+Indirect Extrusion,"Backward Extrusion, Reverse Extrusion",Forming > Extruding > Indirect Extrusion,Forming
+Flow Forming,"Flow Turning, Rotary Flow Forming, Metal Flow Forming",Forming > Flow Forming,Forming
+Hot Forming,"Heated Forming, Thermal Forming",Forming > Hot Forming,Forming
+Hydroforming,"Fluid Forming, Tube Hydroforming, High Pressure Forming",Forming > Hydroforming,Forming
+Knurling,"Surface Knurling, Pattern Knurling, Texturing Knurling",Forming > Knurling,Forming
+Metal Forming,"Metalforming, Bulk Metal Forming",Forming > Metal Forming,Forming
+Peen Forming,"Shot Peen Forming, Surface Peening Forming",Forming > Peen Forming,Forming
+Powder Metal Forming,"Powder Metallurgy Forming, PM Forming",Forming > Powder Metal Forming,Forming
+Isostatic Pressing,"Cold Isostatic Pressing, Powder Compaction Pressing",Forming > Powder Metal Forming > Isostatic Pressing,Forming
+Cold Isostatics Pressing,"Cold Isostatic Molding, Cold Powder Pressing",Forming > Powder Metal Forming > Isostatic Pressing > Cold Isostatics Pressing,Forming
+Powder Compacting,"Powder Compression, Powder Compaction, Green Part Pressing",Forming > Powder Metal Forming > Powder Compacting,Forming
+Powder Metallurgy,"PM, Powder Metal Processing, Metal Powder Processing",Forming > Powder Metal Forming > Powder Metallurgy,Forming
+Spark Plasma Sintering,"SPS, Field Assisted Sintering, FAST, Plasma Sintering",Forming > Powder Metal Forming > Spark Plasma Sintering,Forming
+Press Forming,"Sheet Metal Pressing, Mechanical Press Forming, Hydraulic Press Forming",Forming > Press Forming,Forming
+Roll Die Engraving,"Die Rolling, Roll Engraving, Pattern Roll Engraving",Forming > Roll Die Engraving,Forming
+Roll Forming,"Sheet Roll Forming, Profile Roll Forming",Forming > Roll Forming,Forming
+Roller Forming,"Rotary Roller Forming, Continuous Roller Forming",Forming > Roller Forming,Forming
+Rolling,"Metal Rolling, Sheet Rolling (general), Bulk Rolling",Forming > Rolling,Forming
+Cold Rolling,"Cold Rolled Metal, Cold Reduction Rolling",Forming > Rolling > Cold Rolling,Forming
+Flat Rolling,"Sheet Flat Rolling, Plate Flat Rolling",Forming > Rolling > Flat Rolling,Forming
+Hot Rolling,"Hot Rolled Metal, Thermal Rolling",Forming > Rolling > Hot Rolling,Forming
+Plate Rolling,"Metal Plate Rolling, Heavy Plate Rolling",Forming > Rolling > Plate Rolling,Forming
+Ring Rolling,"Seamless Ring Rolling, Rolled Ring Forging",Forming > Rolling > Ring Rolling,Forming
+Shape Rolling,"Profile Rolling, Structural Shape Rolling",Forming > Rolling > Shape Rolling,Forming
+Sheet Rolling,Thin Sheet Rolling,Forming > Rolling > Sheet Rolling,Forming
+Sheet Metal Rolling,"Thin Sheet Metal Rolling, Sheet Rolling Process",Forming > Rolling > Sheet Rolling > Sheet Metal Rolling,Forming
+Thread Rolling,"Rolled Thread Forming, Screw Thread Rolling, Bolt Thread Rolling",Forming > Rolling > Thread Rolling,Forming
+Shear Forming,Shear Spun Forming,Forming > Shear Forming,Forming
+Spin Forming,Rotary Forming,Forming > Spin Forming,Forming
+Superplastic Forming,"Super Plastic Forming, SPF, High Elongation Forming",Forming > Superplastic Forming,Forming
+Swagging,,Forming > Swagging,Forming
+Thermoforming,"Plastic Thermoforming, Heat Forming, Sheet Thermoforming",Forming > Thermoforming,Forming
+Roll Bonding,"Roll Welding, Roll Cladding, Bonded Rolling",Forming > Thermoforming > Roll Bonding,Forming
+Vacuum Thermoforming,Vacuum Formed Plastic,Forming > Thermoforming > Vacuum Thermoforming,Forming
+Tubing,"Tube Forming, Pipe Manufacturing, Tube Shaping",Forming > Tubing,Forming
+Custom Tubing,"Custom Tube Fabrication, Specialized Tubing",Forming > Tubing > Custom Tubing,Forming
+Cut to Length Tubing,"Precision Cut Tubing, Tube Cutting, Length-Specific Tubing",Forming > Tubing > Cut to Length Tubing,Forming
+Fractional Tubing,"Fractional Tube Sizes, Small Diameter Tubing",Forming > Tubing > Fractional Tubing,Forming
+Hypodermic Tubing,"Needle Tubing, Medical Tubing, Hypo Tube",Forming > Tubing > Hypodermic Tubing,Forming
+Metric Tubing,"Metric Tube Sizes, Metric Pipes",Forming > Tubing > Metric Tubing,Forming
+Square Tubing,"Rectangular Tubing, Hollow Structural Section, HSS Tubing",Forming > Tubing > Square Tubing,Forming
+Vacuum Forming,"Vacuum Plastic Forming, Plastic Vacuum Molding",Forming > Vacuum Forming,Forming
+Vacuum Pressing,"Vacuum Compaction, Vacuum Compression Forming",Forming > Vacuum Pressing,Forming
+Cold Vacuum Pressing,"Cold Vacuum Compaction, Cold Isostatic Vacuum Pressing",Forming > Vacuum Pressing > Cold Vacuum Pressing,Forming
+Hot Vacuum Pressing,"Hot Vacuum Compaction, Hot Press Sintering",Forming > Vacuum Pressing > Hot Vacuum Pressing,Forming
+Hot Isostatic,,Forming > Vacuum Pressing > Hot Vacuum Pressing > Hot Isostatic,Forming
+Wire Forming,"Wire Shaping, Wire Fabrication",Forming > Wire Forming,Forming
+Heat Treating,"Thermal Processing, Heat Treatment",Heat Treating,Heat Treating
+Annealing,"Heat Soften Treatment, Stress Relief Heating",Heat Treating > Annealing,Heat Treating
+Recovery Annealing,"Recovery Heat Treatment, Softening Recovery",Heat Treating > Annealing > Recovery Annealing,Heat Treating
+Stress Relieving,"Stress Relief Annealing, Thermal Stress Relieving",Heat Treating > Annealing > Recovery Annealing > Stress Relieving,Heat Treating
+Tempering,"Heat Tempering, Stress Tempering",Heat Treating > Annealing > Recovery Annealing > Tempering,Heat Treating
+Recrystallization,"Recrystallization Annealing, Grain Refinement Annealing",Heat Treating > Annealing > Recrystallization,Heat Treating
+Full Annealing,"Complete Annealing, Furnace Annealing",Heat Treating > Annealing > Recrystallization > Full Annealing,Heat Treating
+Process Annealing,"Intermediate Annealing, In-Process Annealing",Heat Treating > Annealing > Recrystallization > Process Annealing,Heat Treating
+Cold Working,"Cold Work, Cold Deformation",Heat Treating > Annealing > Recrystallization > Process Annealing > Cold Working,Heat Treating
+Hot Working,"Hot Deformation, Heated Metal Forming",Heat Treating > Annealing > Recrystallization > Process Annealing > Hot Working,Heat Treating
+Short Cycle Annealing,"Quick Annealing, Rapid Annealing",Heat Treating > Annealing > Recrystallization > Short Cycle Annealing,Heat Treating
+Cold Treatment,"Cryogenic Treatment, Sub-Zero Treatment",Heat Treating > Cold Treatment,Heat Treating
+Hardening,"Heat Hardening, Metal Hardening",Heat Treating > Hardening,Heat Treating
+Quench Hardening,"Quench and Temper, Rapid Cooling Hardening",Heat Treating > Hardening > Quench Hardening,Heat Treating
+Quenching,"Rapid Cooling, Water Quenching, Oil Quenching (general)",Heat Treating > Hardening > Quenching,Heat Treating
+Surface Hardening,"Case Hardening, Face Hardening, Surface Heat Hardening",Heat Treating > Hardening > Surface Hardening,Heat Treating
+Chromizing,"Chrome Diffusion Coating, Chromium Surface Hardening",Heat Treating > Hardening > Surface Hardening > Chromizing,Heat Treating
+Cyaniding,"Cyanide Case Hardening, Cyanide Heat Treatment",Heat Treating > Hardening > Surface Hardening > Cyaniding,Heat Treating
+Diffusion Hardening,"Diffusion Heat Treatment, Surface Diffusion Hardening",Heat Treating > Hardening > Surface Hardening > Diffusion Hardening,Heat Treating
+Carbonitriding,"Carbo-Nitriding, Carbon-Nitrogen Hardening",Heat Treating > Hardening > Surface Hardening > Diffusion Hardening > Carbonitriding,Heat Treating
+Carburizing,"Carburising, Case Carburizing",Heat Treating > Hardening > Surface Hardening > Diffusion Hardening > Carburizing,Heat Treating
+Nitriding,"Gas Nitriding, Plasma Nitriding, Ion Nitriding",Heat Treating > Hardening > Surface Hardening > Diffusion Hardening > Nitriding,Heat Treating
+Flame Hardening,"Flame Surface Hardening, Torch Hardening",Heat Treating > Hardening > Surface Hardening > Flame Hardening,Heat Treating
+Oxyacetylene Cutting,,Heat Treating > Hardening > Surface Hardening > Flame Hardening > Oxyacetylene Cutting,Heat Treating
+Induction Hardening,"Induction Surface Hardening, Induction Heat Treatment",Heat Treating > Hardening > Surface Hardening > Induction Hardening,Heat Treating
+Vacuum Hardening,"Vacuum Heat Treatment, Vacuum Quenching",Heat Treating > Hardening > Surface Hardening > Vacuum Hardening,Heat Treating
+Through Hardening,"Bulk Hardening, Full Section Hardening",Heat Treating > Hardening > Through Hardening,Heat Treating
+Age Quench Hardening,"Aging Hardening, Precipitation Hardening (age-quench specific)",Heat Treating > Hardening > Through Hardening > Age Quench Hardening,Heat Treating
+Air Quench Hardening,Air Cooling Hardening,Heat Treating > Hardening > Through Hardening > Air Quench Hardening,Heat Treating
+Austempering,Bainitic Transformation Heat Treatment,Heat Treating > Hardening > Through Hardening > Austempering,Heat Treating
+Martempering,"Marquenching, Step Quenching",Heat Treating > Hardening > Through Hardening > Martempering,Heat Treating
+Oil Quench Hardening,Oil Cooling Hardening,Heat Treating > Hardening > Through Hardening > Oil Quench Hardening,Heat Treating
+Water Quench Hardening,Water Cooling Hardening,Heat Treating > Hardening > Through Hardening > Water Quench Hardening,Heat Treating
+Sintering,"Powder Sintering, Thermal Powder Bonding",Heat Treating > Sintering,Heat Treating
+Induction Heading,"Induction Forming, Induction Upsetting",Induction Heading,Induction Heading
+Joining,"Assembly, Bonding Processes",Joining,Joining
+Adhesive Bonding,"Adhesive Joining, Glue Bonding, Structural Adhesive Bonding",Joining > Adhesive Bonding,Joining
+Lamination,"Layer Bonding, Laminated Bonding",Joining > Adhesive Bonding > Lamination,Joining
+Fusion Joining,,Joining > Fusion Joining,Joining
+Heat Sealing,"Thermal Sealing, Plastic Heat Sealing",Joining > Heat Sealing,Joining
+Mechanical Joining,"Mechanical Assembly, Mechanical Fastening, Mechanical Bonding",Joining > Mechanical Joining,Joining
+Mechanical Welding,"Solid-State Welding, Mechanical Bond Welding",Joining > Mechanical Joining > Mechanical Welding,Joining
+Explosive Welding,"Explosion Welding, Detonation Welding",Joining > Mechanical Joining > Mechanical Welding > Explosive Welding,Joining
+Friction Welding,"FRW, Rotary Friction Welding, Linear Friction Welding",Joining > Mechanical Joining > Mechanical Welding > Friction Welding,Joining
+Friction Stri Welding,"Friction Stir Welding, FSW",Joining > Mechanical Joining > Mechanical Welding > Friction Welding > Friction Stri Welding,Joining
+Pressure Welding,"Pressure Bonding, Solid Pressure Welding",Joining > Mechanical Joining > Mechanical Welding > Pressure Welding,Joining
+Ultrasonic Welding,High-Frequency Welding,Joining > Mechanical Joining > Mechanical Welding > Ultrasonic Welding,Joining
+Press Fitting,"Interference Fitting, Force Fitting",Joining > Mechanical Joining > Press Fitting,Joining
+Shrink Fitting,"Thermal Expansion Fitting, Heat Shrink Fitting",Joining > Mechanical Joining > Press Fitting > Shrink Fitting,Joining
+Riveting,"Rivet Joining, Rivet Assembly",Joining > Mechanical Joining > Riveting,Joining
+Metal Joining,"Metal Bonding, Metallic Joining",Joining > Metal Joining,Joining
+Thermal Joining,"Thermal Bonding, Heat Joining",Joining > Thermal Joining,Joining
+Brazing,"Torch Brazing (general), Metal Brazing",Joining > Thermal Joining > Brazing,Joining
+Dip Brazing,"Immersion Brazing, Salt Bath Brazing",Joining > Thermal Joining > Brazing > Dip Brazing,Joining
+Clinching,"Sheet Clinching, Button Clinching",Joining > Thermal Joining > Brazing > Dip Brazing > Clinching,Joining
+Furnace Brazing,"Batch Brazing, Continuous Furnace Brazing",Joining > Thermal Joining > Brazing > Furnace Brazing,Joining
+Induction Brazing,Induction Heating Brazing,Joining > Thermal Joining > Brazing > Induction Brazing,Joining
+Infrared Brazing,"IR Brazing, Radiant Brazing",Joining > Thermal Joining > Brazing > Infrared Brazing,Joining
+Laser Brazing,"Brazing Laser Welding, Laser-Assisted Brazing",Joining > Thermal Joining > Brazing > Laser Brazing,Joining
+Resistance Brazing,Electrical Resistance Brazing,Joining > Thermal Joining > Brazing > Resistance Brazing,Joining
+Torch Brazing,Hand Torch Brazing,Joining > Thermal Joining > Brazing > Torch Brazing,Joining
+Vacuum Brazing,"Controlled Atmosphere Brazing, Furnace Vacuum Brazing",Joining > Thermal Joining > Brazing > Vacuum Brazing,Joining
+Soldering,"Soft Soldering, Low-Temperature Joining",Joining > Thermal Joining > Soldering,Joining
+Dip Soldering,"Immersion Soldering, Bath Soldering",Joining > Thermal Joining > Soldering > Dip Soldering,Joining
+Induction Soldering,Induction Heating Soldering,Joining > Thermal Joining > Soldering > Induction Soldering,Joining
+Infrared Soldering,"IR Soldering, Radiant Heat Soldering",Joining > Thermal Joining > Soldering > Infrared Soldering,Joining
+Iron Soldering,"Hand Soldering, Soldering Iron Joining",Joining > Thermal Joining > Soldering > Iron Soldering,Joining
+Resistance Soldering,Electrical Resistance Soldering,Joining > Thermal Joining > Soldering > Resistance Soldering,Joining
+Torch Soldering,"Flame Soldering, Hand Torch Joining",Joining > Thermal Joining > Soldering > Torch Soldering,Joining
+Ultrasonic Soldering,High-Frequency Soldering,Joining > Thermal Joining > Soldering > Ultrasonic Soldering,Joining
+Wave Soldering,"Flow Soldering, PCB Wave Soldering",Joining > Thermal Joining > Soldering > Wave Soldering,Joining
+Thermal Welding,"Heat Welding, Thermal Fusion",Joining > Thermal Joining > Thermal Welding,Joining
+Braze Welding,"Welding Brazing, Bronze Welding",Joining > Thermal Joining > Thermal Welding > Braze Welding,Joining
+Carbon Arc Brazing,Carbon Electrode Brazing,Joining > Thermal Joining > Thermal Welding > Braze Welding > Carbon Arc Brazing,Joining
+Gas Brazing,Torch Gas Brazing,Joining > Thermal Joining > Thermal Welding > Braze Welding > Gas Brazing,Joining
+Diffusion Bonding,"Diffusion Welding, Solid-State Diffusion Joining",Joining > Thermal Joining > Thermal Welding > Diffusion Bonding,Joining
+Electric Arc Welding,Arc Welding,Joining > Thermal Joining > Thermal Welding > Electric Arc Welding,Joining
+Carbon Arc Welding,"CAW, Carbon Electrode Arc Welding",Joining > Thermal Joining > Thermal Welding > Electric Arc Welding > Carbon Arc Welding,Joining
+Flux-Cored Arc Welding,"FCAW, Flux Core Welding, Self-Shielded Welding",Joining > Thermal Joining > Thermal Welding > Electric Arc Welding > Flux-Cored Arc Welding,Joining
+Gas Metal Arc Welding,GMAW,Joining > Thermal Joining > Thermal Welding > Electric Arc Welding > Gas Metal Arc Welding,Joining
+MIG Welding,Gas Metal Inert Welding,Joining > Thermal Joining > Thermal Welding > Electric Arc Welding > Gas Metal Arc Welding > MIG Welding,Joining
+Pulsed Gas Metal Arc Welding,"GMAW-P, Pulsed MIG Welding",Joining > Thermal Joining > Thermal Welding > Electric Arc Welding > Gas Metal Arc Welding > Pulsed Gas Metal Arc Welding,Joining
+Gas Tungsten Arc Welding,GTAW,Joining > Thermal Joining > Thermal Welding > Electric Arc Welding > Gas Tungsten Arc Welding,Joining
+Pulsed Gas Tungsten Arc Welding,"GTAW-P, Pulsed TIG Welding",Joining > Thermal Joining > Thermal Welding > Electric Arc Welding > Gas Tungsten Arc Welding > Pulsed Gas Tungsten Arc Welding,Joining
+TIG Welding,"TIG, TIG Weld",Joining > Thermal Joining > Thermal Welding > Electric Arc Welding > Gas Tungsten Arc Welding > TIG Welding,Joining
+Shielded Metal Arc Welding,Stick Welding,Joining > Thermal Joining > Thermal Welding > Electric Arc Welding > Shielded Metal Arc Welding,Joining
+Stud Welding,"Arc Stud Welding, Stud Arc Welding",Joining > Thermal Joining > Thermal Welding > Electric Arc Welding > Stud Welding,Joining
+Submerged Arc Welding,"SAW Welding, Sub-Arc Welding",Joining > Thermal Joining > Thermal Welding > Electric Arc Welding > Submerged Arc Welding,Joining
+Electrical Resistance Welding,"ERW, Resistance Arc Welding",Joining > Thermal Joining > Thermal Welding > Electrical Resistance Welding,Joining
+Butt Welding,"Resistance Butt Welding, End-to-End Welding",Joining > Thermal Joining > Thermal Welding > Electrical Resistance Welding > Butt Welding,Joining
+Electro Slag Welding,"ESW Welding, Electroslag Welding",Joining > Thermal Joining > Thermal Welding > Electrical Resistance Welding > Electro Slag Welding,Joining
+Percussion Welding,"Percussion Bonding, Spark Impact Welding",Joining > Thermal Joining > Thermal Welding > Electrical Resistance Welding > Percussion Welding,Joining
+Projection Welding,Resistance Projection Welding,Joining > Thermal Joining > Thermal Welding > Electrical Resistance Welding > Projection Welding,Joining
+Resistance Welding,"RW, Resistance Bonding",Joining > Thermal Joining > Thermal Welding > Electrical Resistance Welding > Resistance Welding,Joining
+Seam Welding,"Resistance Seam Welding, Continuous Weld Seam",Joining > Thermal Joining > Thermal Welding > Electrical Resistance Welding > Seam Welding,Joining
+Metal Clinching,"Sheet Metal Clinching, Mechanical Clinching",Joining > Thermal Joining > Thermal Welding > Electrical Resistance Welding > Seam Welding > Metal Clinching,Joining
+Spot Welding,"Resistance Spot Welding (general), Spot Bonding",Joining > Thermal Joining > Thermal Welding > Electrical Resistance Welding > Spot Welding,Joining
+Resistance Spot Welding,"RSW, Electric Spot Welding",Joining > Thermal Joining > Thermal Welding > Electrical Resistance Welding > Spot Welding > Resistance Spot Welding,Joining
+Fusion Welding,Full Fusion Welding,Joining > Thermal Joining > Thermal Welding > Fusion Welding,Joining
+Gas Welding,"Oxy-Fuel Welding, Oxyacetylene Welding",Joining > Thermal Joining > Thermal Welding > Gas Welding,Joining
+Atomic Hydrogen Welding,"AHW, Hydrogen Arc Welding",Joining > Thermal Joining > Thermal Welding > Gas Welding > Atomic Hydrogen Welding,Joining
+Combustible Gas Welding,"Fuel Gas Welding, Oxy-Fuel Gas Welding",Joining > Thermal Joining > Thermal Welding > Gas Welding > Combustible Gas Welding,Joining
+High Energy Beam Welding,"Beam Welding, Energy Beam Welding",Joining > Thermal Joining > Thermal Welding > High Energy Beam Welding,Joining
+Electron Beam Welding,"EBW, Electron Welding",Joining > Thermal Joining > Thermal Welding > High Energy Beam Welding > Electron Beam Welding,Joining
+Laser Beam Welding,"LBW, Laser Welding",Joining > Thermal Joining > Thermal Welding > High Energy Beam Welding > Laser Beam Welding,Joining
+Plasma Arc Welding,"PAW, Plasma Welding",Joining > Thermal Joining > Thermal Welding > High Energy Beam Welding > Plasma Arc Welding,Joining
+Machining,"Material Removal Process, Subtractive Process, Metal Cutting",Machining,Machining
+Abrasive Machining,"Abrasive Cutting, Abrasive Removal",Machining > Abrasive Machining,Machining
+Buffing,Surface Buffing,Machining > Abrasive Machining > Buffing,Machining
+Grinding,"Surface Grinding, Material Grinding",Machining > Abrasive Machining > Grinding,Machining
+Centerless Grinding,"Throughfeed Grinding, Centerless Through Grinding",Machining > Abrasive Machining > Grinding > Centerless Grinding,Machining
+Creep Feed Grinding,"Deep Grinding, Continuous Grinding",Machining > Abrasive Machining > Grinding > Creep Feed Grinding,Machining
+Curvic Grinding,"Curvic Coupling Grinding, Precision Curvic Grinding",Machining > Abrasive Machining > Grinding > Curvic Grinding,Machining
+Cylindrical Grinding,"Cylindrical Surface Grinding, OD Grinding",Machining > Abrasive Machining > Grinding > Cylindrical Grinding,Machining
+CNC Cylindrical Grinding,Computer-Controlled Cylindrical Grinding,Machining > Abrasive Machining > Grinding > Cylindrical Grinding > CNC Cylindrical Grinding,Machining
+Electrochemical Grinding,"ECG, Hybrid Grinding",Machining > Abrasive Machining > Grinding > Electrochemical Grinding,Machining
+ECG Tube Cutting,"Electrochemical Tube Cutting, Precision ECG Cutting",Machining > Abrasive Machining > Grinding > Electrochemical Grinding > ECG Tube Cutting,Machining
+ID-OD Grinding,"Internal/External Grinding, ID/OD Grinding",Machining > Abrasive Machining > Grinding > ID-OD Grinding,Machining
+Plunge Grinding,"Infeed Grinding, Plunge-Cut Grinding",Machining > Abrasive Machining > Grinding > Plunge Grinding,Machining
+Honing,"Bore Honing, Surface Honing",Machining > Abrasive Machining > Honing,Machining
+Lapping,"Fine Polishing, Precision Lapping",Machining > Abrasive Machining > Lapping,Machining
+CNC Machining,Computer Numerical Control Machining,Machining > CNC Machining,Machining
+CNC Routing,CNC Router Cutting,Machining > CNC Machining > CNC Routing,Machining
+Five Axis Machining,"5 Axis Machining, 5-Axis Machining, 5 Axis CNC",Machining > CNC Machining > Five Axis Machining,Machining
+Seven Axis Machining,"7 Axis Machining, 7-Axis Machining, 7 Axis CNC",Machining > CNC Machining > Seven Axis Machining,Machining
+Chemical Machining,"Chemical Milling, Chem Milling",Machining > Chemical Machining,Machining
+Chemical Engraving,Chemical Etching Engraving,Machining > Chemical Machining > Chemical Engraving,Machining
+Etching,"Surface Etching, Metal Etching",Machining > Chemical Machining > Etching,Machining
+Chemical Etching,"Chem Etching, Metal Chemical Etching",Machining > Chemical Machining > Etching > Chemical Etching,Machining
+Photo Etching,"Photochemical Etching, Precision Photoetching",Machining > Chemical Machining > Etching > Photo Etching,Machining
+Stretching,"Chemical Stretching, Surface Stretching",Machining > Chemical Machining > Etching > Stretching,Machining
+Photochemical Machining,"PCM, Photo-Chemical Milling",Machining > Chemical Machining > Photochemical Machining,Machining
+Deburring,"Debur, Edge Finishing",Machining > Deburring,Machining
+Thermal Deburring,"Explosion Deburring, Thermal Energy Deburring (TED)",Machining > Deburring > Thermal Deburring,Machining
+Vibratory Deburring,Mass Finishing,Machining > Deburring > Vibratory Deburring,Machining
+Electro Chemical Machining,Electrochemical Removal,Machining > Electro Chemical Machining,Machining
+Engraving,"Surface Engraving, Manual Engraving",Machining > Engraving,Machining
+Laser Engraving,,Machining > Engraving > Laser Engraving,Machining
+Erosion Machining,"Erosive Machining, Erosion Cutting",Machining > Erosion Machining,Machining
+Waterjet Cutting,"Water Jet Cutting, Water Jet Machining, Hydrojet Cutting",Machining > Erosion Machining > Waterjet Cutting,Machining
+Laser Machining,Laser Processing,Machining > Laser Machining,Machining
+Multipoint Cutting,Multi-Edge Cutting,Machining > Multipoint Cutting,Machining
+Broaching,"Pull Broaching, Push Broaching",Machining > Multipoint Cutting > Broaching,Machining
+Rotary Broaching,"Wobble Broaching, Hex Broaching",Machining > Multipoint Cutting > Broaching > Rotary Broaching,Machining
+Gear Cutting,"Gear Machining, Gear Shaping",Machining > Multipoint Cutting > Gear Cutting,Machining
+Gear Hobbing,"Hobbing Process, Gear Manufacturing",Machining > Multipoint Cutting > Gear Hobbing,Machining
+Hobbing,"Gear Hobbing (general), Hob Machining",Machining > Multipoint Cutting > Hobbing,Machining
+Hole Making,Hole Processing,Machining > Multipoint Cutting > Hole Making,Machining
+Counter Boring,Counterbore Machining,Machining > Multipoint Cutting > Hole Making > Counter Boring,Machining
+Counter Sinking,"Countersink Drilling, Countersinking",Machining > Multipoint Cutting > Hole Making > Counter Sinking,Machining
+Drilling,Drill Machining,Machining > Multipoint Cutting > Hole Making > Drilling,Machining
+Deep Hole Drilling,"Deep Hole Machining, BTA Drilling",Machining > Multipoint Cutting > Hole Making > Drilling > Deep Hole Drilling,Machining
+Gun Drilling,"Single Lip Drilling, Gundrill Machining",Machining > Multipoint Cutting > Hole Making > Drilling > Deep Hole Drilling > Gun Drilling,Machining
+Trepanning,"Core Drilling, Circular Hole Cutting",Machining > Multipoint Cutting > Hole Making > Drilling > Deep Hole Drilling > Trepanning,Machining
+Friction Drilling,"Thermal Drilling, Flow Drilling",Machining > Multipoint Cutting > Hole Making > Drilling > Friction Drilling,Machining
+Micro Drilling,"Micro Hole Drilling, Precision Micro Drilling",Machining > Multipoint Cutting > Hole Making > Drilling > Micro Drilling,Machining
+Small Hole Drilling,"Fine Hole Drilling, Precision Small Hole Drilling",Machining > Multipoint Cutting > Hole Making > Drilling > Small Hole Drilling,Machining
+Perforating,"Hole Punching, Sheet Perforation",Machining > Multipoint Cutting > Hole Making > Perforating,Machining
+Reaming,"Bore Finishing, Hole Reaming",Machining > Multipoint Cutting > Hole Making > Reaming,Machining
+Tapping,"Thread Tapping, Hole Tapping",Machining > Multipoint Cutting > Hole Making > Tapping,Machining
+Milling,"Milling Process, Metal Milling",Machining > Multipoint Cutting > Milling,Machining
+CNC Milling,Computer-Controlled Milling,Machining > Multipoint Cutting > Milling > CNC Milling,Machining
+Gear Gashing,"Gear Slotting, Gear Cutting Gash",Machining > Multipoint Cutting > Milling > Gear Gashing,Machining
+Horizontal Milling,Horizontal Mill,Machining > Multipoint Cutting > Milling > Horizontal Milling,Machining
+Slab Milling,"Wide Cut Milling, Slab Cutting",Machining > Multipoint Cutting > Milling > Horizontal Milling > Slab Milling,Machining
+Thread Milling,Screw Thread Milling,Machining > Multipoint Cutting > Milling > Thread Milling,Machining
+Vertical Milling,"Vertical Mill, Vertical CNC Milling",Machining > Multipoint Cutting > Milling > Vertical Milling,Machining
+End Milling,"End Mill Cutting, Profile Milling",Machining > Multipoint Cutting > Milling > Vertical Milling > End Milling,Machining
+Face Milling,"Face Cut Milling, Surface Milling",Machining > Multipoint Cutting > Milling > Vertical Milling > Face Milling,Machining
+Sawing,"Saw Cutting, Metal Sawing",Machining > Multipoint Cutting > Sawing,Machining
+Bevelling,"Edge Beveling, Chamfer Cutting",Machining > Multipoint Cutting > Sawing > Bevelling,Machining
+Nonconventional Machining,Advanced Machining,Machining > Nonconventional Machining,Machining
+Plastic Machining,"Polymer Machining, Plastic Cutting",Machining > Plastic Machining,Machining
+Polycrystalline Diamond Machining,"PCD Machining, Diamond Tool Machining",Machining > Polycrystalline Diamond Machining,Machining
+Single-Point Cutting,Single Tool Cutting,Machining > Single-Point Cutting,Machining
+Diamond Machining,"Polycrystaline Diamond Machining, Precision Diamond Cutting",Machining > Single-Point Cutting > Diamond Machining,Machining
+Oil Grooving,"Groove Cutting, Lubrication Grooving",Machining > Single-Point Cutting > Oil Grooving,Machining
+Planing,"Planer Machining, Surface Planing",Machining > Single-Point Cutting > Planing,Machining
+Skiving,"Shave Cutting, Skive Machining",Machining > Single-Point Cutting > Planing > Skiving,Machining
+Shaping,Shaper Machining,Machining > Single-Point Cutting > Shaping,Machining
+Turning,"Lathe Work, Lathe Turning",Machining > Single-Point Cutting > Turning,Machining
+Boring,"Bore Machining, Hole Boring",Machining > Single-Point Cutting > Turning > Boring,Machining
+Horizontal Boring,Horizontal Bore Machining,Machining > Single-Point Cutting > Turning > Boring > Horizontal Boring,Machining
+Jig Boring,Precision Jig Boring,Machining > Single-Point Cutting > Turning > Boring > Jig Boring,Machining
+Vertical Boring,Vertical Bore Machining,Machining > Single-Point Cutting > Turning > Boring > Vertical Boring,Machining
+CNC Turning,"Large CNC Turning, Computer-Controlled Turning",Machining > Single-Point Cutting > Turning > CNC Turning,Machining
+Live Tooling,"Live-Tooling, Driven Tooling",Machining > Single-Point Cutting > Turning > Live Tooling,Machining
+Specialized Machining,"Special Process Machining, Niche Machining",Machining > Specialized Machining,Machining
+Carbide Machining,"Tungsten Carbide Machining, Carbide Cutting",Machining > Specialized Machining > Carbide Machining,Machining
+Machining Of Casting,"Casting Machining, Post-Cast Machining",Machining > Specialized Machining > Machining Of Casting,Machining
+Thin Wall Machining,"Thin-Walled Machining, Lightweight Wall Machining",Machining > Specialized Machining > Thin Wall Machining,Machining
+Standard Machining,"Conventional Machining, General Machining",Machining > Standard Machining,Machining
+Swiss Machining,"Screw Machining, Swiss CNC Machining, Swiss Style Machining, Swiss Turning, Swiss Type Turning, Swiss-Style Machining, Swiss-Type Turning",Machining > Swiss Machining,Machining
+Thermal Subtraction,"Thermal Material Removal, Thermal Cutting",Machining > Thermal Subtraction,Machining
+EDM,"Electric Discharge Machining, Spark Erosion",Machining > Thermal Subtraction > EDM,Machining
+Flanging EDM,"Flange EDM Cutting, EDM Flanging",Machining > Thermal Subtraction > EDM > Flanging EDM,Machining
+Hole Drilling EDM,"EDM Hole Drilling, EDM Drilling, Fast Hole EDM, Small Hole EDM",Machining > Thermal Subtraction > EDM > Hole Drilling EDM,Machining
+Die Sinking,"Sinker EDM Die Sinking, Cavity Sinking, EDM Die Sinking",Machining > Thermal Subtraction > EDM > Hole Drilling EDM > Die Sinking,Machining
+Ram EDM,,Machining > Thermal Subtraction > EDM > Ram EDM,Machining
+Sinker EDM,,Machining > Thermal Subtraction > EDM > Sinker EDM,Machining
+Wire EDM,"Wire EDM Cutting, Wire Electrical Discharge Machining, Wire-EDM, Wire Cut EDM, EDM Wire Cutting",Machining > Thermal Subtraction > EDM > Wire EDM,Machining
+High Energy Beam Machining,"HEBM, Beam Machining, Energy Beam Machining",Machining > Thermal Subtraction > High Energy Beam Machining,Machining
+Electron Beam Machining,"EBM, Electron Beam Drilling/Cutting, Electron Beam Processing",Machining > Thermal Subtraction > High Energy Beam Machining > Electron Beam Machining,Machining
+Laser Cutting,"Laser Beam Cutting, Laser Profiling, Laser CNC Cutting",Machining > Thermal Subtraction > High Energy Beam Machining > Laser Cutting,Machining
+CNC Laser Cutting,"Computer-Controlled Laser Cutting, Laser CNC Profiling",Machining > Thermal Subtraction > High Energy Beam Machining > Laser Cutting > CNC Laser Cutting,Machining
+Laser Etching,"Laser Engrave Etching, Surface Laser Etching",Machining > Thermal Subtraction > High Energy Beam Machining > Laser Etching,Machining
+Torch Cutting,"Flame Cutting (general), Thermal Torch Cutting",Machining > Thermal Subtraction > Torch Cutting,Machining
+Oxy-Fuel Cutting,"Flame Cutting, Oxy-Acetylene Cutting, Oxyfuel Gas Cutting, Oxyfuel Cutting",Machining > Thermal Subtraction > Torch Cutting > Oxy-Fuel Cutting,Machining
+Plasma Cutting,"Plasma Arc Cutting, CNC Plasma Cutting",Machining > Thermal Subtraction > Torch Cutting > Plasma Cutting,Machining
+Threading,"Thread Cutting, Thread Forming (cutting), Threads Machining",Machining > Threading,Machining
+Ultrasonic Machining,"USM, Ultrasonic Assisted Machining, Ultrasonic Drilling/Cutting",Machining > Ultrasonic Machining,Machining
+Unconventional Machining,Advanced Machining Processes,Machining > Unconventional Machining,Machining
+Zero Stock Machining,"Negative Stock Machining, Net Shape Machining, ZSM, Near Net Shape Machining",Machining > Zero Stock Machining,Machining
+Molding,"Moulding, Molded Parts Manufacturing",Molding,Molding
+Blow Molding,"Blow Moulding, Hollow Part Molding",Molding > Blow Molding,Molding
+Extrusion Blow Molding,"EBM (Blow), Continuous Extrusion Blow Molding",Molding > Blow Molding > Extrusion Blow Molding,Molding
+Injection Blow Molding,"IBM, Injection-Blow Molding",Molding > Blow Molding > Injection Blow Molding,Molding
+Stretch Blow Molding,"SBM, Injection Stretch Blow Molding (ISBM)",Molding > Blow Molding > Stretch Blow Molding,Molding
+Compression Molding,"CRTM, Compression Resin Transfer Molding, Compression Molded",Molding > Compression Molding,Molding
+Injection Molding,"Plastic Molding, Injection Moulding, Plastic Injection Molding",Molding > Injection Molding,Molding
+Metal Injection Molding,"MIM, Powder Metal Injection Molding",Molding > Injection Molding > Metal Injection Molding,Molding
+Reaction Injection Molding,"RIM, PU RIM (Polyurethane RIM)",Molding > Injection Molding > Reaction Injection Molding,Molding
+Rubber Injection Molding,"Elastomer Injection Molding, Rubber Moulding",Molding > Injection Molding > Rubber Injection Molding,Molding
+Rotational Molding,Rotocasting,Molding > Rotational Molding,Molding
+Rotomolding,Roto-Molding,Molding > Rotomolding,Molding
+Transfer Molding,"Transfer Moulding, Resin Transfer Molding (general)",Molding > Transfer Molding,Molding
+Resin Transfer Molding,"RTM, Closed Moulding RTM",Molding > Transfer Molding > Resin Transfer Molding,Molding
+Pultrusion,"Pultrusion Process, Pultruded Profiles",Molding > Transfer Molding > Resin Transfer Molding > Pultrusion,Molding
+Vacuum Assisted Resin Transfer Molding,"VARTM, Vacuum RTM, Vacuum Infusion (RTM)",Molding > Transfer Molding > Vacuum Assisted Resin Transfer Molding,Molding
+Vacuum Molding,"Vacuum Moulding, Vacuum Form Molding",Molding > Vacuum Molding,Molding
+Packing,"Packaging, Product Packing",Packing,Packing
+Labeling,"Product Labeling, Packaging Labels",Packing > Labeling,Packing
+Vacuum Packaging,"Vacuum Packing, Vacuum Sealing",Packing > Vacuum Packaging,Packing
+Sheet Metal Processing,"Precision sheet metal fabrication, Sheet Metal, Sheet Metal Work, Sheet Metal Processing Services",Sheet Metal Processing,Sheet Metal Processing
+Bending,"Sheet Bending (general), Metal Bending, Press Brake Bending",Sheet Metal Processing > Bending,Sheet Metal Processing
+Pipe Bending,"Tube Bending (pipe), Mandrel Bending",Sheet Metal Processing > Bending > Pipe Bending,Sheet Metal Processing
+Sheet Bending,"Sheet Metal Bending, Panel Bending",Sheet Metal Processing > Bending > Sheet Bending,Sheet Metal Processing
+Tube Bending,"Rotary Draw Bending, Roll Bending (tubes)",Sheet Metal Processing > Bending > Tube Bending,Sheet Metal Processing
+Wire Bending,"Wire Forming (bending), CNC Wire Bending",Sheet Metal Processing > Bending > Wire Bending,Sheet Metal Processing
+Bulge Forming,"Bulging, Bulging Process, Hydraulic Bulge Forming",Sheet Metal Processing > Bulge Forming,Sheet Metal Processing
+Corrugation,"Corrugating, Sheet Corrugation",Sheet Metal Processing > Corrugation,Sheet Metal Processing
+Embossing,"Sheet Metal Embossing, Pattern Embossing",Sheet Metal Processing > Embossing,Sheet Metal Processing
+Hemming,"Edge Hemming, Sheet Hemming",Sheet Metal Processing > Hemming,Sheet Metal Processing
+Hot Stamping,"Press Hardening, Hot Formed Stamping",Sheet Metal Processing > Hot Stamping,Sheet Metal Processing
+Notching,"Corner Notching, Sheet Notching",Sheet Metal Processing > Notching,Sheet Metal Processing
+Punching,"CNC Punching, Turret Punching",Sheet Metal Processing > Punching,Sheet Metal Processing
+Piercing,"Punch Piercing, Hole Piercing",Sheet Metal Processing > Punching > Piercing,Sheet Metal Processing
+Shearing,"Guillotine Shearing, Sheet Shear Cutting",Sheet Metal Processing > Shearing,Sheet Metal Processing
+Slitting,"Coil Slitting, Sheet Slitting",Sheet Metal Processing > Slitting,Sheet Metal Processing
+Spinning,Flow Spinning (general),Sheet Metal Processing > Spinning,Sheet Metal Processing
+Hot Spinning,"Heated Spinning, Hot Flow Spinning",Sheet Metal Processing > Spinning > Hot Spinning,Sheet Metal Processing
+Shear Spinning,"Shear-Forming, Shear Spin Forming",Sheet Metal Processing > Spinning > Shear Spinning,Sheet Metal Processing
+Tufting,Tuft Forming (sheet),Sheet Metal Processing > Spinning > Tufting,Sheet Metal Processing
+Stamping,"Metal Stamping, Sheet Stamping, Press Stamping",Sheet Metal Processing > Stamping,Sheet Metal Processing
+Blanking,"Sheet Blanking, Coil Blanking",Sheet Metal Processing > Stamping > Blanking,Sheet Metal Processing
+Fine Blanking,"Fineblanking, Precision Blanking",Sheet Metal Processing > Stamping > Fine Blanking,Sheet Metal Processing
+Press Work,"Pressworking, Press Forming (stamping)",Sheet Metal Processing > Stamping > Press Work,Sheet Metal Processing
+Stretch Forming,"Sheet Stretch Forming, Stretch Wrap Forming",Sheet Metal Processing > Stretch Forming,Sheet Metal Processing
+Singeing,"Fabric Singeing, Surface Singeing",Singeing,Singeing
+Surface Finishing,"Surface Treatment, Surface Finishes",Surface Finishing,Surface Finishing
+Coating,"Surface Coating (general), Protective Coating",Surface Finishing > Coating,Surface Finishing
+Babbitting,"Babbitt Lining, Bearing Babbitting",Surface Finishing > Coating > Babbitting,Surface Finishing
+Black Oxide Coating,"Black Oxide, Blackening, Blacking, Black Oxide Finish",Surface Finishing > Coating > Black Oxide Coating,Surface Finishing
+Chemical Coating,"Chemical Surface Coating, Conversion/Phosphate/Chromate Coatings (general)",Surface Finishing > Coating > Chemical Coating,Surface Finishing
+Anodizing,"Anodization, Anodic Oxidation",Surface Finishing > Coating > Chemical Coating > Anodizing,Surface Finishing
+Decorative Anodizing,"Cosmetic Anodizing, Color Anodizing",Surface Finishing > Coating > Chemical Coating > Anodizing > Decorative Anodizing,Surface Finishing
+Iridite,"Chromate Conversion (Iridite), Alodine/Iridite",Surface Finishing > Coating > Chemical Coating > Anodizing > Iridite,Surface Finishing
+Chemical Conversion Coating,"Chem Filming, Conversion Coating, Chromate/Phosphate Conversion (general)",Surface Finishing > Coating > Chemical Coating > Chemical Conversion Coating,Surface Finishing
+Alkaline Oxide Conversion Coating,Alkaline Oxidation Coating,Surface Finishing > Coating > Chemical Coating > Chemical Conversion Coating > Alkaline Oxide Conversion Coating,Surface Finishing
+Chromate Conversion Coating,"Chromate Coating, Yellow/Green Chromate",Surface Finishing > Coating > Chemical Coating > Chemical Conversion Coating > Chromate Conversion Coating,Surface Finishing
+Fused Nitrate Conversion Coating,Nitrate Salt Oxidation Coating,Surface Finishing > Coating > Chemical Coating > Chemical Conversion Coating > Fused Nitrate Conversion Coating,Surface Finishing
+Phosphate Conversion Coating,"Phosphate Coating (conversion), Phosphating (general)",Surface Finishing > Coating > Chemical Coating > Chemical Conversion Coating > Phosphate Conversion Coating,Surface Finishing
+Phosphating,Iron/Zinc/Manganese Phosphating,Surface Finishing > Coating > Chemical Coating > Chemical Conversion Coating > Phosphate Conversion Coating > Phosphating,Surface Finishing
+Plating,"Electro/Immersion Plating (general), Metal Plating",Surface Finishing > Coating > Chemical Coating > Plating,Surface Finishing
+Electroplating,"Electro-Plating, Electropolish (general)",Surface Finishing > Coating > Chemical Coating > Plating > Electroplating,Surface Finishing
+Cadmium Plating,Cad Plating,Surface Finishing > Coating > Chemical Coating > Plating > Electroplating > Cadmium Plating,Surface Finishing
+Chrome Plating,"Chromium Plating, Hard Chrome",Surface Finishing > Coating > Chemical Coating > Plating > Electroplating > Chrome Plating,Surface Finishing
+Copper Plating,Electrolytic Copper Plating,Surface Finishing > Coating > Chemical Coating > Plating > Electroplating > Copper Plating,Surface Finishing
+Electro Deposition,"Electrodeposition, Electrolytic Deposition",Surface Finishing > Coating > Chemical Coating > Plating > Electroplating > Copper Plating > Electro Deposition,Surface Finishing
+Electroless Nickel Plating,"EN Plating, Autocatalytic Nickel Plating",Surface Finishing > Coating > Chemical Coating > Plating > Electroplating > Electroless Nickel Plating,Surface Finishing
+Gold Plating,"Au Plating, Gold Electroplating",Surface Finishing > Coating > Chemical Coating > Plating > Electroplating > Gold Plating,Surface Finishing
+Nickel Plating,Electrolytic Nickel Plating,Surface Finishing > Coating > Chemical Coating > Plating > Electroplating > Nickel Plating,Surface Finishing
+Silver Plating,"Ag Plating, Silver Electroplating",Surface Finishing > Coating > Chemical Coating > Plating > Electroplating > Silver Plating,Surface Finishing
+Tin Plating,"Sn Plating, Tin Electroplating",Surface Finishing > Coating > Chemical Coating > Plating > Electroplating > Tin Plating,Surface Finishing
+Zinc Plating,"Zn Plating, Zinc Electroplating",Surface Finishing > Coating > Chemical Coating > Plating > Electroplating > Zinc Plating,Surface Finishing
+Cladding,"Metal Cladding, Overlay Cladding",Surface Finishing > Coating > Cladding,Surface Finishing
+Electrocoating,"E-Coat, Electrophoretic Coating",Surface Finishing > Coating > Electrocoating,Surface Finishing
+Electrodeposited Coating,"Electrolytic Coating, Electrodeposition Coating",Surface Finishing > Coating > Electrodeposited Coating,Surface Finishing
+Galvanizing,"Galvanization, Hot-Dip Galvanizing",Surface Finishing > Coating > Galvanizing,Surface Finishing
+Mechanical Coating,"Mechanical Plating/Coating, Peen Plating",Surface Finishing > Coating > Mechanical Coating,Surface Finishing
+Powder Coating,"Dry Powder Coating, Electrostatic Powder Coating",Surface Finishing > Coating > Mechanical Coating > Powder Coating,Surface Finishing
+Metal Coating,"Metallic Coating, Metal Surface Coating",Surface Finishing > Coating > Metal Coating,Surface Finishing
+Passivation,"Passivating, Stainless Steel Passivation",Surface Finishing > Coating > Passivation,Surface Finishing
+Phosphate Coating,"Phosphatizing, Phosphate Surface Coating",Surface Finishing > Coating > Phosphate Coating,Surface Finishing
+Press Forming,"Pressing (coating prep), Press Form Prep",Surface Finishing > Coating > Press Forming,Surface Finishing
+Painting,"Spray Painting, Industrial Painting",Surface Finishing > Coating > Painting,Surface Finishing
+Wet Painting,"Liquid Painting, Wet Coat Painting",Surface Finishing > Coating > Painting > Wet Painting,Surface Finishing
+Roll Coating,"Roller Coating, Coil Coating (roll)",Surface Finishing > Coating > Roll Coating,Surface Finishing
+Surface Coating,"Protective Surface Coating, Applied Surface Coating",Surface Finishing > Coating > Surface Coating,Surface Finishing
+Thermal Coating,"Thermal Barrier Coating, High-Temp Coating",Surface Finishing > Coating > Thermal Coating,Surface Finishing
+Thermal Spray Coating,"Thermal Spray, Thermal Sprayed Coating",Surface Finishing > Coating > Thermal Coating > Thermal Spray Coating,Surface Finishing
+Flame Spraying,"Flame Spray, Combustion Spray",Surface Finishing > Coating > Thermal Coating > Thermal Spray Coating > Flame Spraying,Surface Finishing
+Thermal Spraying,"Thermal Spray Process, Thermal Spray Application",Surface Finishing > Coating > Thermal Coating > Thermal Spray Coating > Flame Spraying > Thermal Spraying,Surface Finishing
+Plasma Spraying,"Plasma Spray, APS (Atmospheric Plasma Spray)",Surface Finishing > Coating > Thermal Coating > Thermal Spray Coating > Plasma Spraying,Surface Finishing
+Vaporized Metal Coating,"Vacuum Metalizing, Vapor Metalizing, Vacuum Deposition Coating",Surface Finishing > Coating > Thermal Coating > Vaporized Metal Coating,Surface Finishing
+Chemical Vapor Deposition,CVD,Surface Finishing > Coating > Thermal Coating > Vaporized Metal Coating > Chemical Vapor Deposition,Surface Finishing
+Plasma Enhanced Chemical Vapor Deposition,PECVD,Surface Finishing > Coating > Thermal Coating > Vaporized Metal Coating > Chemical Vapor Deposition > Plasma Enhanced Chemical Vapor Deposition,Surface Finishing
+Physical Vapor Deposition,PVD,Surface Finishing > Coating > Thermal Coating > Vaporized Metal Coating > Physical Vapor Deposition,Surface Finishing
+Vapor Deposition,"Vacuum Deposition, Vapor Phase Deposition",Surface Finishing > Coating > Thermal Coating > Vaporized Metal Coating > Vapor Deposition,Surface Finishing
+MicroFinishing,"Micro Finishing, Superfinishing (micro)",Surface Finishing > MicroFinishing,Surface Finishing
+Surface Preparation,"Surface Cleaning, Pre-Coating Surface Prep",Surface Finishing > Surface Preparation,Surface Finishing
+Abrasive Cleaning,"Abrasive Blast Cleaning, Media Blast Cleaning",Surface Finishing > Surface Preparation > Abrasive Cleaning,Surface Finishing
+Bead Blasting,"Glass Bead Blasting, Bead Blast Finishing",Surface Finishing > Surface Preparation > Abrasive Cleaning > Bead Blasting,Surface Finishing
+Chemical Cleaning,"Chemical Degreasing, Chemical Surface Cleaning",Surface Finishing > Surface Preparation > Abrasive Cleaning > Chemical Cleaning,Surface Finishing
+Surface Blasting,"Abrasive Surface Blasting, Blast Cleaning",Surface Finishing > Surface Preparation > Abrasive Cleaning > Surface Blasting,Surface Finishing
+Tumbling,"Mass Tumbling, Barrel/Vibe Tumbling (general)",Surface Finishing > Surface Preparation > Abrasive Cleaning > Tumbling,Surface Finishing
+Barrel Finishing,"Barrel Tumbling, Barrel Polishing",Surface Finishing > Surface Preparation > Abrasive Cleaning > Tumbling > Barrel Finishing,Surface Finishing
+Vibratory Tumbling,"Vibratory Finishing (tumbling), Vibro Tumbling",Surface Finishing > Surface Preparation > Abrasive Cleaning > Tumbling > Vibratory Tumbling,Surface Finishing
+Belt Sanding,"Sanding, Belt Grinding (sanding)",Surface Finishing > Surface Preparation > Belt Sanding,Surface Finishing
+Harperizing,"Harperizing Process, Surface Conditioning (Harperizing)",Surface Finishing > Surface Preparation > Harperizing,Surface Finishing
+Polishing,"Mechanical/Hand Polishing (general), Surface Polishing",Surface Finishing > Surface Preparation > Polishing,Surface Finishing
+Chemical Polishing,"Chem Polishing, Chemical Brightening",Surface Finishing > Surface Preparation > Polishing > Chemical Polishing,Surface Finishing
+Pickling,"Acid Pickling, Chemical Pickle Cleaning",Surface Finishing > Surface Preparation > Polishing > Chemical Polishing > Pickling,Surface Finishing
+Electropolishing,"Electrochemical Polishing, Electrolytic Polishing, EP",Surface Finishing > Surface Preparation > Polishing > Electropolishing,Surface Finishing
+Mechanical Polishing,"Mech Polishing, Abrasive Polishing",Surface Finishing > Surface Preparation > Polishing > Mechanical Polishing,Surface Finishing
+Planarization,"Surface Planarizing, Planar Polish",Surface Finishing > Surface Preparation > Polishing > Planarization,Surface Finishing
+Chemical Mechanical Polishing,"CMP, Chem-Mechanical Planarization",Surface Finishing > Surface Preparation > Polishing > Planarization > Chemical Mechanical Polishing,Surface Finishing
+Sand Blasting,"Abrasive Blasting, Sandblasting, Grit Blasting (general)",Surface Finishing > Surface Preparation > Sand Blasting,Surface Finishing
+Grit Blasting,"Grit Blast Cleaning, Angular Media Blasting",Surface Finishing > Surface Preparation > Sand Blasting > Grit Blasting,Surface Finishing
+Shot Peening,"Shot Blasting (peening), Surface Peening",Surface Finishing > Surface Preparation > Shot Peening,Surface Finishing
+Peening,"Mechanical Peening, Surface Work Hardening (peen)",Surface Finishing > Surface Preparation > Shot Peening > Peening,Surface Finishing
+Ultrasonic Cleaning,"Ultrasonic Degreasing, Ultrasonic Bath Cleaning",Surface Finishing > Surface Preparation > Ultrasonic Cleaning,Surface Finishing
+Tumble Finishing,Tumbling Finish,Surface Finishing > Tumble Finishing,Surface Finishing
+Vibratory Finishing,"Vibro Finishing, Vibratory Polishing",Surface Finishing > Vibratory Finishing,Surface Finishing
+Textile Process,"Textile Manufacturing Processes, Textile Processing",Textile Process,Textile Process
+Crochet,"Crochet Knitting, Crochet Fabrication",Textile Process > Crochet,Textile Process
+Dyeing,"Textile Dyeing, Fabric Dyeing",Textile Process > Dyeing,Textile Process
+Knitting,"Fabric Knitting, Circular/Flat Knitting",Textile Process > Knitting,Textile Process
+Weaving,"Fabric Weaving, Loom Weaving",Textile Process > Weaving,Textile Process
+Tool Making,"Tooling, Tool Manufacture",Tool Making,Tool Making
+Die Making,"Die Tooling, Die Manufacture",Tool Making > Die Making,Tool Making
+Mold Making,"Mould Making, Mold Manufacture",Tool Making > Mold Making,Tool Making
+Coremaking,"Core Making, Foundry Coremaking",Tool Making > Mold Making > Coremaking,Tool Making
+Wood Working,"Woodworking, Wood Fabrication",Wood Working,Wood Working

@@ -1,0 +1,159 @@
+# SPARQL Error Correction Prompt
+
+You are an expert in semantic web and SPARQL query generation.
+
+Instructions:
+- You are given an error message from GraphDB and the previous SPARQL query.
+- Analyze the error and fix the SPARQL query accordingly.
+- Use the extracted clause data, relevant IRIs, and Turtle data below for context.
+- Strictly follow the predicate and class naming conventions as shown in the Turtle data.
+- Only use prefixes and endpoints that are present in the Turtle data block below. Do not invent or use any other prefixes/endpoints.
+- Output only the corrected SPARQL query. Do not include any explanation or commentary.
+
+### User Query
+Get the manufacturers in the mid west which have quality management certification .Order by those closest to asu tempe campus
+
+### Error message from GraphDB
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+
+
+### Previous SPARQL query
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel ?cityLabel ?stateLabel ?distance
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                rdfs:label ?manufacturerLabel ;
+                sdk:hasCertificate ?cert ;
+                sdk:organizationLocatedIn ?site .
+  ?cert a ?certType .
+  VALUES ?certType {
+    sdk:QualityCertificate
+    sdk:QSQuality
+    sdk:ISO9001
+    sdk:AS9100Certificate
+    sdk:ISOQualityCertificate
+    sdk:AS9120
+    sdk:AS9003
+    sdk:AerospaceQualityCertificate
+    sdk:AS9000
+  }
+  ?site sdk:hasSpatialCoordinates ?coords ;
+        sdk:locatedInCity ?city .
+  ?coords sdk:hasLatitudeValue ?latLit ;
+          sdk:hasLongitudeValue ?lonLit .
+  BIND(xsd:double(?latLit) AS ?lat)
+  BIND(xsd:double(?lonLit) AS ?lon)
+  ?city sdk:locatedInState ?state ;
+        rdfs:label ?cityLabel .
+  ?state rdfs:label ?stateLabel .
+
+  BIND(33.424239 AS ?asuLat)
+  BIND(-111.928052 AS ?asuLon)
+  BIND(((?lat - ?asuLat) * (?lat - ?asuLat) + (?lon - ?asuLon) * (?lon - ?asuLon)) AS ?distance)
+
+  FILTER(LCASE(STR(?stateLabel)) IN (
+    "illinois","indiana","iowa","kansas","michigan","minnesota",
+    "missouri","nebraska","north dakota","ohio","south dakota","wisconsin"
+  ))
+
+  FILTER(regex(STR(?manufacturerLabel), "^[\\p{ASCII}]*$"))
+  FILTER(regex(STR(?cityLabel), "^[\\p{ASCII}]*$"))
+  FILTER(regex(STR(?stateLabel), "^[\\p{ASCII}]*$"))
+}
+ORDER BY ASC(?distance)
+
+### Extracted Clauses
+{"clauses":[{"connective":"IMPLIED","type":"scope","subject_hint":"manufacturers","filter":{"op":"eq","value":"Midwest","unit":"region","min":null,"max":null},"relation_hint":"located in","enum_values":["Midwest"]},{"object_hint":"quality management certification","connective":"AND","type":"spo","subject_hint":"manufacturers","relation_hint":"has certificate"},{"modifier":{"kind":"nearest","k":null,"by":"ASU Tempe campus"},"connective":"FOLLOWUP","type":"modifier","subject_hint":"manufacturers","filter":{"op":"near","value":"ASU Tempe campus","unit":"poi","min":null,"max":null},"relation_hint":"located near"}],"mapping":["The phrase 'quality management certification' is vague; no specific standard (e.g., ISO 9001) was specified."],"relevant_iris":[{"label":"Quality","iri":"http://asu.edu/semantics/SUDOKN/QualityCertificate"},{"label":"QS Quality","iri":"http://asu.edu/semantics/SUDOKN/QSQuality"},{"label":"ISO 9001","iri":"http://asu.edu/semantics/SUDOKN/ISO9001"},{"label":"AS 9100","iri":"http://asu.edu/semantics/SUDOKN/AS9100Certificate"},{"label":"ISO Quality","iri":"http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"},{"label":"AS 9120","iri":"http://asu.edu/semantics/SUDOKN/AS9120"},{"label":"AS 9003","iri":"http://asu.edu/semantics/SUDOKN/AS9003"},{"label":"Aerospace Quality","iri":"http://asu.edu/semantics/SUDOKN/AerospaceQualityCertificate"},{"label":"AWS Welder","iri":"http://asu.edu/semantics/SUDOKN/AWSWelder"},{"label":"AS 9000","iri":"http://asu.edu/semantics/SUDOKN/AS9000"}]}
+
+### Relevant IRIs
+[{"label":"Quality","iri":"http://asu.edu/semantics/SUDOKN/QualityCertificate"},{"label":"QS Quality","iri":"http://asu.edu/semantics/SUDOKN/QSQuality"},{"label":"ISO 9001","iri":"http://asu.edu/semantics/SUDOKN/ISO9001"},{"label":"AS 9100","iri":"http://asu.edu/semantics/SUDOKN/AS9100Certificate"},{"label":"ISO Quality","iri":"http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"},{"label":"AS 9120","iri":"http://asu.edu/semantics/SUDOKN/AS9120"},{"label":"AS 9003","iri":"http://asu.edu/semantics/SUDOKN/AS9003"},{"label":"Aerospace Quality","iri":"http://asu.edu/semantics/SUDOKN/AerospaceQualityCertificate"},{"label":"AWS Welder","iri":"http://asu.edu/semantics/SUDOKN/AWSWelder"},{"label":"AS 9000","iri":"http://asu.edu/semantics/SUDOKN/AS9000"}]
+
+### Reference Turtle Data
+@base <http://asu.edu/semantics/SUDOKN/> .
+@prefix iof-core: <https://spec.industrialontologies.org/ontology/core/Core/> .
+@prefix sdk: <http://asu.edu/semantics/SUDOKN/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bfo: <http://purl.obolibrary.org/obo/> .
+
+
+sdk:org-001 a iof-core:Manufacturer ;
+  rdfs:label "Company A" ;
+  sdk:hasNumberOfEmployees "100"^^xsd:string ;
+  sdk:hasCertificate sdk:cert-001 ,sdk:cert-002 ;
+  sdk:suppliesToIndustry sdk:industry-001, sdk:industry-002 ;
+  sdk:hasProcessCapability sdk:org-001-cap-machining, sdk:org-001-cap-coating ;
+  sdk:hasMaterialCapability sdk:org-001-mat-bronze, sdk:org-001-mat-steel ;
+  sdk:hasPrimaryNAICSClassifier sdk:naics-332996.0-inst ;
+  sdk:organizationLocatedIn sdk:site-001 ;
+  sdk:manufactures sdk:prod-001, sdk:prod-002 ;
+  iof-core:describedBy sdk:org-001-description .
+
+sdk:industry-001 a sdk:RenewableEnergyIndustry ;
+  rdfs:label "Industry A" .
+
+sdk:industry-002 a sdk:UtilitiesIndustry ;
+  rdfs:label "Industry B" .
+
+# --- Process capabilities (2) ---
+sdk:org-001-cap-machining a sdk:MachiningCapability ;
+  rdfs:label "Machining" .
+
+sdk:org-001-cap-coating a sdk:CoatingCapability ;
+  rdfs:label "Coating" .
+
+# --- Material capabilities (2) ---
+sdk:org-001-mat-bronze a sdk:BronzeProcessingCapability ;
+  rdfs:label "Bronze" .
+
+sdk:org-001-mat-steel a sdk:SteelProcessingCapability ;
+  rdfs:label "Steel" .
+
+# --- NAICS ---
+sdk:naics-332996.0-inst a sdk:NAICS332996.0 ;
+  sdk:hasNAICSCodeValue "332996.0"^^xsd:integer ;
+  sdk:hasNAICSTextValue "FABRICATED PIPE AND PIPE FITTING MANUFACTURING" .
+
+# --- Site / location (anonymized) ---
+sdk:site-001 a sdk:GeospatialLocation ;
+  sdk:hasSpatialCoordinates sdk:site-001-coordinates ;
+  sdk:locatedInCity sdk:city-001 ;
+  sdk:hasZIPcode sdk:site-001-zip ;
+  sdk:hasPostalAddress sdk:site-001-address .
+
+sdk:site-001-coordinates a sdk:TwoDimensionalCartesianSpatialCoordinateDatum ;
+  sdk:hasLatitudeValue "0.0000000" ;
+  sdk:hasLongitudeValue "0.0000000" .
+
+sdk:city-001 a sdk:City ;
+  sdk:locatedInState sdk:state-001 ;
+  rdfs:label "City A" .
+
+sdk:state-001 a sdk:State ;
+  rdfs:label "State A" .
+
+sdk:site-001-zip a sdk:USPostalCode ;
+  sdk:hasIntegerValue "00000" .
+
+sdk:site-001-address a sdk:PostalAddress ;
+  iof-scro:hasTextValue "Address Line 1" .
+
+# --- Products (2) ---
+sdk:prod-001 a iof-core:MaterialProduct ; rdfs:label "Product 1" .
+sdk:prod-002 a iof-core:MaterialProduct ; rdfs:label "Product 2" .
+
+# --- Cert & description ---
+sdk:cert-001 a sdk:ISO9001 ;
+  rdfs:label "ISO 9001" .
+
+sdk:cert-002 a sdk:ISO14001 ;
+  rdfs:label "ISO 14001" .
+
+sdk:org-001-description a sdk:BusinessDescription .
+  iof-scro:hasTextValue "This is a sample business description for Company A." .
+

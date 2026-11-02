@@ -1,0 +1,13 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?cityLabel WHERE {
+  ?m a iof-core:Manufacturer ;
+     rdfs:label ?name ;
+     sdk:organizationLocatedIn ?site .
+  FILTER (str(?name) = "Robotics") .
+  ?site sdk:locatedInCity ?city .
+  ?city a sdk:City ;
+        rdfs:label ?cityLabel .
+}

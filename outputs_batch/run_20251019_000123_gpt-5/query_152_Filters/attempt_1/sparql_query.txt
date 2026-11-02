@@ -1,0 +1,15 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?manufacturerLabel ?naics ?code ?text
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:hasPrimaryNAICSClassifier ?naics ;
+                rdfs:label ?manufacturerLabel .
+  ?naics sdk:hasNAICSCodeValue ?code ;
+         sdk:hasNAICSTextValue ?text .
+  FILTER(STRSTARTS(STR(?code), "332996"))
+  FILTER(CONTAINS(LCASE(STR(?text)), "pipe"))
+}
+ORDER BY ?manufacturerLabel

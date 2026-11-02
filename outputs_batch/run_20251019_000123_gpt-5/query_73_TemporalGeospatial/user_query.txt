@@ -1,0 +1,1 @@
+For each city, how many manufacturers are located there?

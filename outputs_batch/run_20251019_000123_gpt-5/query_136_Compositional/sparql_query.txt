@@ -1,0 +1,16 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:hasCertificate ?cert ;
+                sdk:suppliesToIndustry ?aeroInd, ?autoInd .
+  ?cert a sdk:ISO9001 .
+  ?aeroInd rdfs:label ?aeroLabel .
+  ?autoInd rdfs:label ?autoLabel .
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel . }
+  FILTER(CONTAINS(LCASE(STR(?aeroLabel)), "aerospace"))
+  FILTER(CONTAINS(LCASE(STR(?autoLabel)), "automotive"))
+}

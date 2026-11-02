@@ -1,0 +1,1 @@
+For each manufacturer, how many total capabilities does it have across process and material?

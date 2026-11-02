@@ -1,0 +1,64 @@
+{
+  "clauses": [
+    {
+      "subject_hint": "companies",
+      "filter": {
+        "op": "near",
+        "value": "New York",
+        "unit": "city",
+        "min": null,
+        "max": null
+      },
+      "modifier": {
+        "kind": "nearest",
+        "k": null,
+        "by": "New York"
+      },
+      "enum_values": [
+        "New York"
+      ],
+      "relation_hint": "located in",
+      "type": "scope",
+      "connective": "IMPLIED"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Nylon",
+      "iri": "http://asu.edu/semantics/SUDOKN/NylonProcessingCapability"
+    },
+    {
+      "label": "Acetal",
+      "iri": "http://asu.edu/semantics/SUDOKN/AcetalProcessingCapability"
+    },
+    {
+      "label": "Nickel",
+      "iri": "http://asu.edu/semantics/SUDOKN/NickelProcessingCapability"
+    },
+    {
+      "label": "Plastic",
+      "iri": "http://asu.edu/semantics/SUDOKN/PlasticProcessingCapability"
+    },
+    {
+      "label": "Zytel",
+      "iri": "http://asu.edu/semantics/SUDOKN/ZytelProcessingCapability"
+    },
+    {
+      "label": "Acrylic",
+      "iri": "http://asu.edu/semantics/SUDOKN/AcrylicProcessingCapability"
+    },
+    {
+      "label": "Glass",
+      "iri": "http://asu.edu/semantics/SUDOKN/GlassProcessingCapability"
+    },
+    {
+      "label": "Metal",
+      "iri": "http://asu.edu/semantics/SUDOKN/MetalProcessingCapability"
+    },
+    {
+      "label": "Babbit",
+      "iri": "http://asu.edu/semantics/SUDOKN/BabbitProcessingCapability"
+    }
+  ]
+}

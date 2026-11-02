@@ -1,0 +1,1 @@
+Which manufacturers have exactly two products, two process capabilities, and two material capabilities?

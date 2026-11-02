@@ -1,0 +1,1 @@
+Show manufacturers whose ZIP isnt 00000 and whose latitude is greater than ?1.

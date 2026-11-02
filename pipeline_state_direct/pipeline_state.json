@@ -1,0 +1,93 @@
+{
+  "run_id": "20251018_092653",
+  "model": "gpt-5-nano",
+  "max_attempts": 10,
+  "queries": {
+    "0": {
+      "extracted": {
+        "clauses": [
+          {
+            "connective": "AND",
+            "object_hint": "product with name containing Pipe",
+            "relation_hint": "manufactures",
+            "type": "spo",
+            "subject_hint": "manufacturers"
+          },
+          {
+            "connective": "IMPLIED",
+            "modifier": {
+              "kind": "group",
+              "k": null,
+              "by": "state"
+            },
+            "filter": {
+              "op": "near",
+              "value": "<state>",
+              "unit": "city",
+              "min": null,
+              "max": null
+            },
+            "type": "modifier",
+            "subject_hint": "manufacturers"
+          },
+          {
+            "connective": "IMPLIED",
+            "relation_hint": "has average employee count",
+            "type": "spo",
+            "subject_hint": "manufacturers"
+          }
+        ],
+        "mapping": [],
+        "relevant_iris": [
+          {
+            "label": "Pipe Bending",
+            "iri": "http://asu.edu/semantics/SUDOKN/BendingCapability"
+          },
+          {
+            "label": "ASME",
+            "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+          },
+          {
+            "label": "Professional",
+            "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+          },
+          {
+            "label": "AWS Welder",
+            "iri": "http://asu.edu/semantics/SUDOKN/AWSWelder"
+          },
+          {
+            "label": "Tubing",
+            "iri": "http://asu.edu/semantics/SUDOKN/TubingCapability"
+          },
+          {
+            "label": "HDPE",
+            "iri": "http://asu.edu/semantics/SUDOKN/HDPEProcessingCapability"
+          },
+          {
+            "label": "BABA",
+            "iri": "http://asu.edu/semantics/SUDOKN/BABA"
+          },
+          {
+            "label": "PVC",
+            "iri": "http://asu.edu/semantics/SUDOKN/PVCProcessingCapability"
+          }
+        ]
+      },
+      "stage": "complete",
+      "llm_prompt": "You are an expert in semantic web and SPARQL query generation.\n\nYour task: Generate a valid SPARQL query using the extracted clauses, relevant IRIs, and reference Turtle data provided below.\n\nInstructions:\n- Use the extracted clause data provided below to determine the logic and constraints for the SPARQL query.\n- **CRITICAL: DO NOT INVENT OR CREATE ANY NEW NAMED CLASSES OR PREDICATES in your custom namespaces (sdk:, iof-core:, iof-scro:, bfo:). Only use classes and predicates that exist in the provided relevant_iris or Reference Turtle Data.**\n- **FORBIDDEN: Do not create URIs like sdk:NewClass, sdk:newProperty, or any other invented classes/predicates in custom namespaces.**\n- **REQUIRED: All custom namespace classes and predicates must be taken exactly from the provided relevant_iris array or the Reference Turtle Data below.**\n- **REQUIRED: If a class or predicate exactly matches a Relevant IRI, use the IRI itself (not its label).**\n- Use the Turtle data only for reference to predicate and class names. Do not invent new predicates or classes in custom namespaces.\n- Prefix namespace classes and predicates with the appropriate prefixes that are present in the Reference Turtle data.\n- Strictly follow the predicate and class naming conventions as shown in the Turtle data.\n- Output only a valid SPARQL query. Do not include any explanation or commentary.\n\nINPUTS:\n\n###User Query\nFor each state, return the average employees of manufacturers that make any product whose name contains Pipe.\n\n### Extracted Clauses\n{\"clauses\":[{\"connective\":\"AND\",\"object_hint\":\"product with name containing Pipe\",\"relation_hint\":\"manufactures\",\"type\":\"spo\",\"subject_hint\":\"manufacturers\"},{\"connective\":\"IMPLIED\",\"modifier\":{\"kind\":\"group\",\"k\":null,\"by\":\"state\"},\"filter\":{\"op\":\"near\",\"value\":\"<state>\",\"unit\":\"city\",\"min\":null,\"max\":null},\"type\":\"modifier\",\"subject_hint\":\"manufacturers\"},{\"connective\":\"IMPLIED\",\"relation_hint\":\"has average employee count\",\"type\":\"spo\",\"subject_hint\":\"manufacturers\"}],\"mapping\":[],\"relevant_iris\":[{\"label\":\"Pipe Bending\",\"iri\":\"http://asu.edu/semantics/SUDOKN/BendingCapability\"},{\"label\":\"ASME\",\"iri\":\"http://asu.edu/semantics/SUDOKN/ASME\"},{\"label\":\"Professional\",\"iri\":\"http://asu.edu/semantics/SUDOKN/Professional\"},{\"label\":\"AWS Welder\",\"iri\":\"http://asu.edu/semantics/SUDOKN/AWSWelder\"},{\"label\":\"Tubing\",\"iri\":\"http://asu.edu/semantics/SUDOKN/TubingCapability\"},{\"label\":\"HDPE\",\"iri\":\"http://asu.edu/semantics/SUDOKN/HDPEProcessingCapability\"},{\"label\":\"BABA\",\"iri\":\"http://asu.edu/semantics/SUDOKN/BABA\"},{\"label\":\"PVC\",\"iri\":\"http://asu.edu/semantics/SUDOKN/PVCProcessingCapability\"}]}\n\n### Relevant IRIs\n[{\"label\":\"Pipe Bending\",\"iri\":\"http://asu.edu/semantics/SUDOKN/BendingCapability\"},{\"label\":\"ASME\",\"iri\":\"http://asu.edu/semantics/SUDOKN/ASME\"},{\"label\":\"Professional\",\"iri\":\"http://asu.edu/semantics/SUDOKN/Professional\"},{\"label\":\"AWS Welder\",\"iri\":\"http://asu.edu/semantics/SUDOKN/AWSWelder\"},{\"label\":\"Tubing\",\"iri\":\"http://asu.edu/semantics/SUDOKN/TubingCapability\"},{\"label\":\"HDPE\",\"iri\":\"http://asu.edu/semantics/SUDOKN/HDPEProcessingCapability\"},{\"label\":\"BABA\",\"iri\":\"http://asu.edu/semantics/SUDOKN/BABA\"},{\"label\":\"PVC\",\"iri\":\"http://asu.edu/semantics/SUDOKN/PVCProcessingCapability\"}]\n\n### Reference Turtle Data\n@base <http://asu.edu/semantics/SUDOKN/>\n@prefix iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>\n@prefix sdk: <http://asu.edu/semantics/SUDOKN/>\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n@prefix iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/>\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#>\n@prefix bfo: <http://purl.obolibrary.org/obo/>\n\n\nsdk:org-001 a iof-core:Manufacturer ;\n  rdfs:label \"Company A\" ;\n  sdk:hasNumberOfEmployees \"1,000\"^^xsd:int ;\n  sdk:hasCertificate sdk:cert-001 ,sdk:cert-002 ;\n  sdk:suppliesToIndustry sdk:industry-001, sdk:industry-002 ;\n  sdk:hasProcessCapability sdk:org-001-cap-machining, sdk:org-001-cap-coating ;\n  sdk:hasMaterialCapability sdk:org-001-mat-bronze, sdk:org-001-mat-steel ;\n  sdk:hasPrimaryNAICSClassifier sdk:naics-332996.0-inst ;\n  sdk:organizationLocatedIn sdk:site-001 ;\n  sdk:manufactures sdk:prod-001, sdk:prod-002 ;\n  iof-core:describedBy sdk:org-001-description .\n\nsdk:industry-001 a sdk:RenewableEnergyIndustry ;\n  rdfs:label \"Industry A\" .\n\nsdk:industry-002 a sdk:UtilitiesIndustry ;\n  rdfs:label \"Industry B\" .\n\n# --- Process capabilities (2) ---\nsdk:org-001-cap-machining a sdk:MachiningCapability ;\n  rdfs:label \"Machining\" .\n\nsdk:org-001-cap-coating a sdk:CoatingCapability ;\n  rdfs:label \"Coating\" .\n\n# --- Material capabilities (2) ---\nsdk:org-001-mat-bronze a sdk:BronzeProcessingCapability ;\n  rdfs:label \"Bronze\" .\n\nsdk:org-001-mat-steel a sdk:SteelProcessingCapability ;\n  rdfs:label \"Steel\" .\n\n# --- NAICS ---\nsdk:naics-332996.0-inst a sdk:NAICS332996.0 ;\n  sdk:hasNAICSCodeValue \"332996.0\"^^xsd:integer ;\n  sdk:hasNAICSTextValue \"FABRICATED PIPE AND PIPE FITTING MANUFACTURING\" .\n\n# --- Site / location (anonymized) ---\nsdk:site-001 a sdk:GeospatialLocation ;\n  sdk:hasSpatialCoordinates sdk:site-001-coordinates ;\n  sdk:locatedInCity sdk:city-001 ;\n  sdk:hasZIPcode sdk:site-001-zip ;\n  sdk:hasPostalAddress sdk:site-001-address .\n\nsdk:site-001-coordinates a sdk:TwoDimensionalCartesianSpatialCoordinateDatum ;\n  sdk:hasLatitudeValue \"0.0000000\"^^xsd:float ;\n  sdk:hasLongitudeValue \"0.0000000\"^^xsd:float .\n\nsdk:city-001 a sdk:City ;\n  sdk:locatedInState sdk:state-001 ;\n  rdfs:label \"City A\" .\n\nsdk:state-001 a sdk:State ;\n  rdfs:label \"State A\" .\n\nsdk:site-001-zip a sdk:USPostalCode ;\n  sdk:hasIntegerValue \"00000.0\"^^xsd:string .\n\nsdk:site-001-address a sdk:PostalAddress ;\n  iof-scro:hasTextValue \"Address Line 1\" .\n\n# --- Products (2) ---\nsdk:prod-001 a iof-core:MaterialProduct ; rdfs:label \"Product 1\" .\nsdk:prod-002 a iof-core:MaterialProduct ; rdfs:label \"Product 2\" .\n\n# --- Cert & description ---\nsdk:cert-001 a sdk:ISO9001 ;\n  rdfs:label \"ISO 9001\" .\n\nsdk:cert-002 a sdk:ISO14001 ;\n  rdfs:label \"ISO 14001\" .\n\nsdk:org-001-description a sdk:BusinessDescription ;\n  iof-scro:hasTextValue \"This is a sample business description for Company A.\" .\n\n",
+      "sparql_query": "PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>\nPREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n\nSELECT ?stateLabel (AVG(?employees) AS ?avgEmployees)\nWHERE {\n  ?manuf a iof-core:Manufacturer ;\n          sdk:hasNumberOfEmployees ?employees ;\n          sdk:manufactures ?prod ;\n          sdk:organizationLocatedIn ?site .\n  ?prod rdfs:label ?prodLabel .\n  FILTER(CONTAINS(LCASE(?prodLabel), \"pipe\"))\n  ?site sdk:locatedInCity ?city .\n  ?city sdk:locatedInState ?state .\n  ?state rdfs:label ?stateLabel .\n}\nGROUP BY ?stateLabel\nORDER BY ?stateLabel",
+      "current_attempt": 1,
+      "attempt_1_result": "stateLabel\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 3\n",
+      "success": true,
+      "total_time": 58.0940842628479,
+      "timing_breakdown": {
+        "extraction": 33.79347562789917,
+        "initial_sparql": 23.953669786453247,
+        "validation": 0.34079694747924805,
+        "correction": 0.0
+      }
+    }
+  },
+  "started_at": "2025-10-18T09:26:53.381446",
+  "last_updated": "2025-10-18T09:27:51.477652"
+}

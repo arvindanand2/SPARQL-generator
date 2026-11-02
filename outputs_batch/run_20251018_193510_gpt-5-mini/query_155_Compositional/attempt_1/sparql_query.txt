@@ -1,0 +1,19 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?label (COUNT(DISTINCT ?industry) AS ?numIndustries)
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  ?manufacturer sdk:suppliesToIndustry ?industry .
+  ?industry a ?itype .
+  FILTER(?itype IN (sdk:RenewableEnergyIndustry, sdk:UtilitiesIndustry))
+  FILTER NOT EXISTS {
+    ?manufacturer sdk:suppliesToIndustry ?otherIndustry .
+    FILTER NOT EXISTS { ?otherIndustry a sdk:RenewableEnergyIndustry . }
+    FILTER NOT EXISTS { ?otherIndustry a sdk:UtilitiesIndustry . }
+  }
+  OPTIONAL { ?manufacturer rdfs:label ?label }
+}
+GROUP BY ?manufacturer ?label
+HAVING (COUNT(DISTINCT ?industry) = 2)

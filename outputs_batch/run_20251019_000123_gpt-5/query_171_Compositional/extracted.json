@@ -1,0 +1,83 @@
+{
+  "clauses": [
+    {
+      "connective": "AND",
+      "type": "spo",
+      "enum_values": [
+        "Urethane",
+        "Stainless Steel",
+        "Iron",
+        "Bronze"
+      ],
+      "subject_hint": "manufacturers",
+      "relation_hint": "has material capability"
+    },
+    {
+      "connective": "IMPLIED",
+      "type": "modifier",
+      "filter": {
+        "op": "eq",
+        "value": 0,
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "modifier": {
+        "kind": "limit",
+        "k": null,
+        "by": null
+      },
+      "enum_values": [
+        "Urethane",
+        "Stainless Steel",
+        "Iron",
+        "Bronze"
+      ],
+      "subject_hint": "manufacturers",
+      "relation_hint": "number of distinct materials outside set"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Stainless Steel",
+      "iri": "http://asu.edu/semantics/SUDOKN/StainlessSteelProcessingCapability"
+    },
+    {
+      "label": "Urethane",
+      "iri": "http://asu.edu/semantics/SUDOKN/UrethaneProcessingCapability"
+    },
+    {
+      "label": "Super Alloy",
+      "iri": "http://asu.edu/semantics/SUDOKN/SuperAlloyProcessingCapability"
+    },
+    {
+      "label": "Alloy Steel",
+      "iri": "http://asu.edu/semantics/SUDOKN/AlloySteelProcessingCapability"
+    },
+    {
+      "label": "Cast Steel",
+      "iri": "http://asu.edu/semantics/SUDOKN/CastSteelProcessingCapability"
+    },
+    {
+      "label": "Low Alloy Steel Lead",
+      "iri": "http://asu.edu/semantics/SUDOKN/LowAlloySteelLeadProcessingCapability"
+    },
+    {
+      "label": "Inconel",
+      "iri": "http://asu.edu/semantics/SUDOKN/InconelProcessingCapability"
+    },
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    },
+    {
+      "label": "Steel",
+      "iri": "http://asu.edu/semantics/SUDOKN/SteelProcessingCapability"
+    },
+    {
+      "label": "Brass",
+      "iri": "http://asu.edu/semantics/SUDOKN/BrassProcessingCapability"
+    }
+  ]
+}

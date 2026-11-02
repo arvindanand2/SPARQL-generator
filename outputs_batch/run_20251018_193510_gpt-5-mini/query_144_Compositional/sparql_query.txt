@@ -1,0 +1,16 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT ?org ?orgLabel ?lat WHERE {
+  ?org a iof-core:Manufacturer ;
+       sdk:suppliesToIndustry ?ind1 , ?ind2 ;
+       sdk:organizationLocatedIn ?site .
+  ?ind1 rdfs:label "Agriculture" .
+  ?ind2 rdfs:label "Construction" .
+  ?site sdk:hasSpatialCoordinates ?coords .
+  ?coords sdk:hasLatitudeValue ?lat .
+  FILTER(xsd:float(?lat) > 40.0)
+  OPTIONAL { ?org rdfs:label ?orgLabel . }
+}

@@ -1,0 +1,1 @@
+Count manufacturers with capabilities under the subtree of the class labeled "Multipoint Cutting".

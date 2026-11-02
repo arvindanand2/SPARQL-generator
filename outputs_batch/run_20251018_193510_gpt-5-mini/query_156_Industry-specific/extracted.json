@@ -1,0 +1,63 @@
+{
+  "clauses": [
+    {
+      "subject_hint": "companies",
+      "enum_values": [
+        "Renewable Energy",
+        "Utilities"
+      ],
+      "relation_hint": "supplies to industry",
+      "type": "spo",
+      "connective": "AND"
+    },
+    {
+      "subject_hint": "companies",
+      "filter": {
+        "op": "eq",
+        "value": 2,
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "modifier": {
+        "kind": "limit",
+        "k": 2,
+        "by": "number of distinct supplies to industry"
+      },
+      "relation_hint": "number of distinct supplies to industry",
+      "type": "modifier",
+      "connective": "IMPLIED"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "ISO 50001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO50001"
+    },
+    {
+      "label": "LEED",
+      "iri": "http://asu.edu/semantics/SUDOKN/LEED"
+    },
+    {
+      "label": "ISO 14000",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO14000"
+    },
+    {
+      "label": "ITAR",
+      "iri": "http://asu.edu/semantics/SUDOKN/ITAR"
+    },
+    {
+      "label": "ISO 14001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO14001"
+    },
+    {
+      "label": "NIST",
+      "iri": "http://asu.edu/semantics/SUDOKN/nist"
+    },
+    {
+      "label": "TL Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/TLQuality"
+    }
+  ]
+}

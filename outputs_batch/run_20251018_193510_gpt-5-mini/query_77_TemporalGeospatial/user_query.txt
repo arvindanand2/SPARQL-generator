@@ -1,0 +1,1 @@
+For each manufacturer, return its city name and ZIP code.

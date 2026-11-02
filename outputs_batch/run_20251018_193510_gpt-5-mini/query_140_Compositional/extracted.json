@@ -1,0 +1,71 @@
+{
+  "clauses": [
+    {
+      "object_hint": "suppliers",
+      "subject_hint": "industries",
+      "relation_hint": "has supplier",
+      "type": "spo",
+      "connective": "AND"
+    },
+    {
+      "object_hint": "products with name containing \"Pipe\"",
+      "subject_hint": "suppliers",
+      "relation_hint": "manufactures",
+      "type": "spo",
+      "connective": "AND"
+    },
+    {
+      "object_hint": "suppliers that manufacture products with name containing \"Pipe\"",
+      "subject_hint": "industries",
+      "filter": {
+        "op": "gt",
+        "value": 100,
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "relation_hint": "has number of suppliers",
+      "type": "spo",
+      "connective": "AND"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Pipe Bending",
+      "iri": "http://asu.edu/semantics/SUDOKN/BendingCapability"
+    },
+    {
+      "label": "Tubing",
+      "iri": "http://asu.edu/semantics/SUDOKN/TubingCapability"
+    },
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    },
+    {
+      "label": "AWS Welder",
+      "iri": "http://asu.edu/semantics/SUDOKN/AWSWelder"
+    },
+    {
+      "label": "NADCAP",
+      "iri": "http://asu.edu/semantics/SUDOKN/NADCAP"
+    },
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "BABA",
+      "iri": "http://asu.edu/semantics/SUDOKN/BABA"
+    },
+    {
+      "label": "ISO 14000",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO14000"
+    }
+  ]
+}

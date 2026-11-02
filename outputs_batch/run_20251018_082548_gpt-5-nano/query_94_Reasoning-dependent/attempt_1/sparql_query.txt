@@ -1,0 +1,22 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+ PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+ SELECT DISTINCT ?manufacturer ?manuLabel
+ WHERE {
+   ?manufacturer a iof-core:Manufacturer ;
+                 rdfs:label ?manuLabel .
+   ?manufacturer sdk:hasProcessCapability ?cap .
+   VALUES ?cap {
+     <http://asu.edu/semantics/SUDOKN/HoleMakingCapability>
+     <http://asu.edu/semantics/SUDOKN/SmallHoleDrillingCapability>
+     <http://asu.edu/semantics/SUDOKN/HoleDrillingEDMCapability>
+     <http://asu.edu/semantics/SUDOKN/DeepHoleDrillingCapability>
+     <http://asu.edu/semantics/SUDOKN/MachiningCapability>
+     <http://asu.edu/semantics/SUDOKN/DrillingCapability>
+     <http://asu.edu/semantics/SUDOKN/LiveToolingCapability>
+     <http://asu.edu/semantics/SUDOKN/HorizontalBoringCapability>
+     <http://asu.edu/semantics/SUDOKN/HorizontalMillingCapability>
+     <http://asu.edu/semantics/SUDOKN/SpecializedMachiningCapability>
+   }
+ }

@@ -1,0 +1,1 @@
+List manufacturers that have capabilities in the subtree of the class labeled Hole Making.

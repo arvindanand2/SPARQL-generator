@@ -1,0 +1,86 @@
+{
+  "clauses": [
+    {
+      "subject_hint": "companies",
+      "filter": {
+        "op": "on",
+        "value": "California",
+        "unit": "state",
+        "min": null,
+        "max": null
+      },
+      "enum_values": [
+        "California"
+      ],
+      "relation_hint": "located in",
+      "type": "scope",
+      "connective": "IMPLIED"
+    },
+    {
+      "subject_hint": "companies",
+      "filter": {
+        "op": "gte",
+        "value": 20,
+        "unit": "employees",
+        "min": null,
+        "max": null
+      },
+      "relation_hint": "number of employees",
+      "type": "spo",
+      "connective": "AND"
+    },
+    {
+      "object_hint": "process name ends with \"ing\"",
+      "subject_hint": "companies",
+      "filter": {
+        "op": "on",
+        "value": "ends with ing",
+        "unit": "string",
+        "min": null,
+        "max": null
+      },
+      "relation_hint": "has process capability",
+      "type": "spo",
+      "connective": "AND"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "NADCAP",
+      "iri": "http://asu.edu/semantics/SUDOKN/NADCAP"
+    },
+    {
+      "label": "FDA 21 CFR Part 820",
+      "iri": "http://asu.edu/semantics/SUDOKN/FDA21CFRPart820"
+    },
+    {
+      "label": "HACCP",
+      "iri": "http://asu.edu/semantics/SUDOKN/HACCP"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "Occupational Health And Safety",
+      "iri": "http://asu.edu/semantics/SUDOKN/OccupationalHealthAndSafety"
+    },
+    {
+      "label": "Peen Forming",
+      "iri": "http://asu.edu/semantics/SUDOKN/FormingCapability"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    }
+  ]
+}

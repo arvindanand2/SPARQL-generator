@@ -1,0 +1,1 @@
+Given the set of states {names containing Texas, New York, Florida}, how many manufacturers are in each?

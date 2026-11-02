@@ -1,0 +1,6 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+SELECT ?text WHERE {
+  ?naics a sdk:NAICS332996.0 ;
+          sdk:hasNAICSTextValue ?text .
+}
+LIMIT 1

@@ -1,0 +1,26 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/>
+
+SELECT ?stateLabel (AVG(?empNum) AS ?averageEmployees)
+WHERE {
+  {
+    SELECT DISTINCT ?org ?stateLabel ?empNum WHERE {
+      ?org a iof-core:Manufacturer ;
+           sdk:manufactures ?prod ;
+           sdk:hasNumberOfEmployees ?empStr ;
+           sdk:organizationLocatedIn ?site .
+      ?prod rdfs:label ?prodLabel .
+      ?site sdk:locatedInCity ?city .
+      ?city sdk:locatedInState ?state .
+      ?state rdfs:label ?stateLabel .
+      FILTER(CONTAINS(LCASE(str(?prodLabel)), "pipe"))
+      BIND(REPLACE(str(?empStr), ",", "") AS ?empNoComma)
+      BIND(xsd:decimal(?empNoComma) AS ?empNum)
+    }
+  }
+}
+GROUP BY ?stateLabel
+ORDER BY ?averageEmployees

@@ -1,0 +1,25 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX bfo: <http://purl.obolibrary.org/obo/>
+
+SELECT ?state ?stateLabel ?org ?orgLabel ?employees WHERE {
+  {
+    SELECT ?state (MAX(?empVal) AS ?maxEmployees) WHERE {
+      ?orgMax sdk:hasNumberOfEmployees ?empVal ;
+              sdk:organizationLocatedIn ?siteMax .
+      ?siteMax sdk:locatedInCity ?cityMax .
+      ?cityMax sdk:locatedInState ?state .
+    } GROUP BY ?state
+  }
+  ?org sdk:hasNumberOfEmployees ?employees ;
+       sdk:organizationLocatedIn ?site .
+  ?site sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  ?org rdfs:label ?orgLabel .
+  ?state rdfs:label ?stateLabel .
+  FILTER(?employees = ?maxEmployees)
+}
+ORDER BY ?stateLabel ?orgLabel

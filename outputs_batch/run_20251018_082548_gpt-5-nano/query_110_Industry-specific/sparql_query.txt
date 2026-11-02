@@ -1,0 +1,13 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?manufacturerLabel ?industryLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+               rdfs:label ?manufacturerLabel ;
+               sdk:suppliesToIndustry ?industry .
+  ?industry rdfs:label ?industryLabel .
+  FILTER(str(?industryLabel) = "Aerospace")
+}
+ORDER BY ?manufacturerLabel

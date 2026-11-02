@@ -1,0 +1,12 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/>
+
+SELECT DISTINCT ?zipCode
+WHERE {
+  ?site a sdk:GeospatialLocation ;
+        sdk:hasPostalAddress ?addr ;
+        sdk:hasZIPcode ?zip .
+  ?addr iof-scro:hasTextValue ?addrText .
+  FILTER(CONTAINS(LCASE(STR(?addrText)), "suite"))
+  ?zip sdk:hasIntegerValue ?zipCode .
+}

@@ -1,0 +1,11 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+ PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+ SELECT ?englishName WHERE {
+   ?org a iof-core:Manufacturer ;
+        rdfs:label ?englishName ;
+        sdk:hasCertificate ?cert .
+   ?cert a sdk:ISO9001 ;
+         rdfs:label "ISO 9001" .
+ }

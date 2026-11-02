@@ -1,0 +1,18 @@
+{
+  "total": 1,
+  "successful": 1,
+  "failed": 0,
+  "total_pipeline_time_seconds": 58.1,
+  "results": [
+    {
+      "query_id": 0,
+      "query": "For each state, return the average employees of manufacturers that make any product whose name contains Pipe.",
+      "expected_label": "",
+      "success": true,
+      "result": "stateLabel\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 3\n",
+      "attempts": 1,
+      "error": null,
+      "total_time": 58.0940842628479
+    }
+  ]
+}

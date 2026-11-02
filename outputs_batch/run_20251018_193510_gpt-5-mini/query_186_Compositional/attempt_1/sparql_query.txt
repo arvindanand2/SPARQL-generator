@@ -1,0 +1,28 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/>
+
+SELECT ?cityLabel (AVG(?empVal) AS ?avgEmployees)
+WHERE {
+  {
+    SELECT ?m ?city ?cityLabel ?empVal (COUNT(DISTINCT ?cap) AS ?capCount)
+    WHERE {
+      ?m a iof-core:Manufacturer ;
+         sdk:organizationLocatedIn ?site ;
+         sdk:hasNumberOfEmployees ?empRaw .
+      ?site sdk:locatedInCity ?city .
+      OPTIONAL {
+        { ?m sdk:hasProcessCapability ?cap }
+        UNION
+        { ?m sdk:hasMaterialCapability ?cap }
+      }
+      ?city rdfs:label ?cityLabel .
+      BIND(xsd:integer(?empRaw) AS ?empVal)
+    }
+    GROUP BY ?m ?city ?cityLabel ?empVal
+    HAVING (?capCount >= 4)
+  }
+}
+GROUP BY ?cityLabel

@@ -1,0 +1,19 @@
+Query_ID,Question,Category,Model,Success,Attempts,Total_Time_Seconds,Extraction_Time,SPARQL_Gen_Time,Validation_Time,Correction_Time,SPARQL_Query,Result_Preview,Error_Message,Stage
+0,"For each state, what is the average number of employees among manufacturers located there?",,gpt-5-nano,Yes,1,43.23,28.85,14.14,0.23,0.0,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?stateLabel (AVG(?empl) AS ?avgEmployees)
+WHERE {
+  ?m a iof-core:Manufacturer .
+  ?m sdk:organizationLocatedIn ?site .
+  ?site sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  ?state rdfs:label ?stateLabel .
+  ?m sdk:hasNumberOfEmployees ?empl .
+}
+GROUP BY ?stateLabel
+ORDER BY ?stateLabel","stateLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 32
+",,complete

@@ -1,0 +1,16 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?state ?stateLabel (COUNT(DISTINCT ?procCap) AS ?totalProcessCapabilities) (COUNT(DISTINCT ?matCap) AS ?totalMaterialCapabilities)
+WHERE {
+  ?m a iof-core:Manufacturer ;
+     sdk:organizationLocatedIn ?site .
+  ?site sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  OPTIONAL { ?m sdk:hasProcessCapability ?procCap }
+  OPTIONAL { ?m sdk:hasMaterialCapability ?matCap }
+  OPTIONAL { ?state rdfs:label ?stateLabel }
+}
+GROUP BY ?state ?stateLabel
+ORDER BY ?stateLabel

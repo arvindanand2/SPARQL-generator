@@ -1,0 +1,44 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel ?latitude ?longitude
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                rdfs:label ?manufacturerLabel ;
+                sdk:organizationLocatedIn ?location ;
+                sdk:hasCertificate ?certificate .
+
+  ?location sdk:hasSpatialCoordinates ?coords .
+  ?coords sdk:hasLatitudeValue ?latitude ;
+          sdk:hasLongitudeValue ?longitude .
+
+  # Midwest location filter (assuming cities or states have rdfs:label containing 'Midwest' or cities are in midwest states)
+  ?location sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  ?state rdfs:label ?stateLabel .
+  FILTER regex(?stateLabel, "Illinois|Indiana|Iowa|Kansas|Michigan|Minnesota|Missouri|Nebraska|North Dakota|Ohio|South Dakota|Wisconsin", "i")
+
+  # Quality management certificate IRIs
+  FILTER (?certificate IN (
+     <http://asu.edu/semantics/SUDOKN/QualityCertificate>,
+     <http://asu.edu/semantics/SUDOKN/QSQuality>,
+     <http://asu.edu/semantics/SUDOKN/ISO9001>,
+     <http://asu.edu/semantics/SUDOKN/AS9100Certificate>,
+     <http://asu.edu/semantics/SUDOKN/ISOQualityCertificate>,
+     <http://asu.edu/semantics/SUDOKN/AS9120>,
+     <http://asu.edu/semantics/SUDOKN/AS9003>,
+     <http://asu.edu/semantics/SUDOKN/AerospaceQualityCertificate>,
+     <http://asu.edu/semantics/SUDOKN/AS9000>
+  ))
+
+  # ASU Tempe Campus coordinates
+  BIND("33.421204"^^xsd:float AS ?asuLat)
+  BIND("-111.933125"^^xsd:float AS ?asuLong)
+
+  # Calculate distance (approximate) for ordering
+  BIND(xsd:float(?latitude) AS ?latVal)
+  BIND(xsd:float(?longitude) AS ?longVal)
+  BIND(( (?latVal - ?asuLat)*(?latVal - ?asuLat) + (?longVal - ?asuLong)*(?longVal - ?asuLong) ) AS ?distanceSq )
+}
+ORDER BY ?distanceSq

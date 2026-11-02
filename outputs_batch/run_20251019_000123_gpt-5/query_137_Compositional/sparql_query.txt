@@ -1,0 +1,18 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:suppliesToIndustry ?industry ;
+                sdk:hasProcessCapability ?cap ;
+                sdk:hasNumberOfEmployees ?empRaw .
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel . }
+  ?industry a sdk:RenewableEnergyIndustry .
+  ?cap a ?capClass .
+  ?capClass rdfs:subClassOf* sdk:CoatingCapability .
+  BIND(xsd:integer(REPLACE(STR(?empRaw), ",", "")) AS ?emp)
+  FILTER(?emp > 200)
+}

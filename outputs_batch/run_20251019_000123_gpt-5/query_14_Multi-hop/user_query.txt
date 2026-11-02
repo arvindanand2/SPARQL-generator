@@ -1,0 +1,1 @@
+Which material capabilities are linked for the company whose name contains "Metal"?

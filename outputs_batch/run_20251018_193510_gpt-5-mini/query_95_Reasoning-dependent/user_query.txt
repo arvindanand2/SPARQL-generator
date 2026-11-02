@@ -1,0 +1,1 @@
+Find manufacturers whose capability is a subclass of the class labeled "Surface Preparation".

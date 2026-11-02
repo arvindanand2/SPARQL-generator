@@ -1,0 +1,28 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerName ?cityName ?stateName WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerName. }
+
+  OPTIONAL {
+    ?manufacturer sdk:organizationLocatedIn ?site .
+
+    OPTIONAL {
+      ?site sdk:locatedInCity ?city .
+      OPTIONAL { ?city rdfs:label ?cityName. }
+      OPTIONAL {
+        ?city sdk:locatedInState ?stateFromCity .
+        OPTIONAL { ?stateFromCity rdfs:label ?stateFromCityLabel. }
+      }
+    }
+
+    OPTIONAL {
+      ?site sdk:locatedInState ?stateDirect .
+      OPTIONAL { ?stateDirect rdfs:label ?stateDirectLabel. }
+    }
+  }
+
+  BIND(COALESCE(?stateFromCityLabel, ?stateDirectLabel) AS ?stateName)
+} ORDER BY ?manufacturerName

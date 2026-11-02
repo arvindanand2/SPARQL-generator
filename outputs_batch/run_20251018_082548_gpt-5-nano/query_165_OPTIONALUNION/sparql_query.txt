@@ -1,0 +1,22 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/>
+
+SELECT ?manufacturer ?value
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  OPTIONAL {
+    ?manufacturer sdk:organizationLocatedIn ?site .
+    ?site sdk:hasZIPcode ?zipCode .
+    ?zipCode sdk:hasIntegerValue ?zip .
+  }
+  OPTIONAL {
+    ?manufacturer sdk:organizationLocatedIn ?sitePostal .
+    ?sitePostal sdk:hasPostalAddress ?addr .
+    ?addr iof-scro:hasTextValue ?postalText .
+  }
+  OPTIONAL { ?manufacturer rdfs:label ?name . }
+  BIND ( COALESCE(?zip, ?postalText, ?name) AS ?value )
+}
+ORDER BY ?manufacturer

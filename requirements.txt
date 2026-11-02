@@ -1,0 +1,9 @@
+# Main pipeline (run_query_pipeline*.py, query_Graph.py, enhanced_csv_embedder.py, extract_chunk.py, compress_chunk.py)
+openai
+python-dotenv
+SPARQLWrapper
+numpy
+pandas
+# Optional, only for individual utility scripts:
+# rdflib, pyshacl (TTL generation), rank_bm25, spacy (BM25/hybrid prototypes), orjson, tqdm (embed_*.py),
+# scikit-learn (enhanced_csv_embedder_improved.py), sentence-transformers, requests (retrieval_demo.py), google-generativeai (embedding_benchmark.py)

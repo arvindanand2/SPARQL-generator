@@ -1,0 +1,66 @@
+{
+  "clauses": [
+    {
+      "object_hint": "state",
+      "connective": "IMPLIED",
+      "type": "scope",
+      "filter": {
+        "op": "eq",
+        "value": "Texas",
+        "unit": "state",
+        "min": null,
+        "max": null
+      },
+      "enum_values": [
+        "Texas"
+      ],
+      "subject_hint": "manufacturers",
+      "relation_hint": "located in"
+    }
+  ],
+  "mapping": [
+    "Interpreted 'name contains \"Texas\"' as equality to the state Texas due to limited filter ops."
+  ],
+  "relevant_iris": [
+    {
+      "label": "AWS Welder",
+      "iri": "http://asu.edu/semantics/SUDOKN/AWSWelder"
+    },
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    },
+    {
+      "label": "TL Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/TLQuality"
+    },
+    {
+      "label": "TL 9000",
+      "iri": "http://asu.edu/semantics/SUDOKN/TL9000"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "NIST",
+      "iri": "http://asu.edu/semantics/SUDOKN/nist"
+    },
+    {
+      "label": "QS Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QSQuality"
+    },
+    {
+      "label": "BABA",
+      "iri": "http://asu.edu/semantics/SUDOKN/BABA"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "FDA",
+      "iri": "http://asu.edu/semantics/SUDOKN/FDA"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "clauses": [
+    {
+      "filter": {
+        "op": "eq",
+        "value": "Midwest",
+        "unit": "region",
+        "min": null,
+        "max": null
+      },
+      "type": "scope",
+      "relation_hint": "located in",
+      "subject_hint": "manufacturers",
+      "connective": "IMPLIED",
+      "enum_values": [
+        "Midwest"
+      ]
+    },
+    {
+      "type": "spo",
+      "relation_hint": "supplies to industry",
+      "subject_hint": "manufacturers",
+      "connective": "AND",
+      "enum_values": [
+        "Aerospace",
+        "Agriculture"
+      ]
+    },
+    {
+      "type": "spo",
+      "relation_hint": "has certificate",
+      "subject_hint": "manufacturers",
+      "connective": "AND",
+      "enum_values": [
+        "ISO 9001"
+      ]
+    },
+    {
+      "filter": {
+        "op": "near",
+        "value": "ASU Tempe campus",
+        "unit": "poi",
+        "min": null,
+        "max": null
+      },
+      "modifier": {
+        "kind": "nearest",
+        "k": null,
+        "by": "ASU Tempe campus"
+      },
+      "type": "modifier",
+      "relation_hint": "located near",
+      "subject_hint": "companies",
+      "connective": "FOLLOWUP"
+    }
+  ],
+  "mapping": [
+    "Assumed ISO 9001 for 'quality management certified' as the formal QMS certificate; user did not specify exact standard.",
+    "Normalized 'mid west' to 'Midwest' region and treated as a single region value."
+  ],
+  "relevant_iris": [
+    {
+      "label": "Aerospace Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/AerospaceQualityCertificate"
+    },
+    {
+      "label": "AS 9100",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9100Certificate"
+    },
+    {
+      "label": "AS 9120",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9120"
+    },
+    {
+      "label": "AS 9003",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9003"
+    },
+    {
+      "label": "AS 9000",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9000"
+    },
+    {
+      "label": "AWS Welder",
+      "iri": "http://asu.edu/semantics/SUDOKN/AWSWelder"
+    },
+    {
+      "label": "QS Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QSQuality"
+    },
+    {
+      "label": "AS 9102",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9102"
+    },
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    }
+  ]
+}

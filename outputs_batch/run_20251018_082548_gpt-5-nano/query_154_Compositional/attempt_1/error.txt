@@ -1,0 +1,5 @@
+Run 1 failed. Compressed error:
+Response:
+Response:
+b'MALFORMED QUERY: Encountered " "=" "= "" at line 13, column 52.\r\nWas expecting one of:\r\n    <EOF> \r\n    "order" ...\r\n    "limit" ...\r\n    "offset" ...\r\n    "bindings" ...\r\n    "values" ...\r\n    '
+All retries failed.

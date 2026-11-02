@@ -1,0 +1,3 @@
+city	cityLabel	manufacturerCount
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 10000

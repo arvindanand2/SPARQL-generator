@@ -1,0 +1,18 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/>
+
+SELECT DISTINCT ?manufacturer ?name ?description
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  OPTIONAL { ?manufacturer rdfs:label ?name . }
+  OPTIONAL {
+    ?manufacturer iof-core:describedBy ?desc .
+    ?desc iof-scro:hasTextValue ?description .
+  }
+  FILTER(
+    (BOUND(?name) && CONTAINS(LCASE(STR(?name)), "company")) ||
+    (BOUND(?description) && CONTAINS(LCASE(STR(?description)), "company"))
+  )
+}

@@ -1,0 +1,12 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?company ?label
+WHERE {
+  ?company a iof-core:Manufacturer .
+  ?company sdk:suppliesToIndustry ?industry .
+  ?industry rdfs:label "Automotive" .
+  OPTIONAL { ?company rdfs:label ?label . }
+}
+ORDER BY ?label

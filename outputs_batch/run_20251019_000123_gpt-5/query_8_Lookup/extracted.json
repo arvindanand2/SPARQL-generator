@@ -1,0 +1,66 @@
+{
+  "clauses": [
+    {
+      "connective": "AND",
+      "type": "spo",
+      "filter": {
+        "op": "eq",
+        "value": "Springfield",
+        "unit": "city",
+        "min": null,
+        "max": null
+      },
+      "subject_hint": "sites",
+      "relation_hint": "located in"
+    },
+    {
+      "connective": "IMPLIED",
+      "type": "spo",
+      "subject_hint": "sites",
+      "relation_hint": "has latitude"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Wire Bending",
+      "iri": "http://asu.edu/semantics/SUDOKN/WireBendingCapability"
+    },
+    {
+      "label": "Stretching",
+      "iri": "http://asu.edu/semantics/SUDOKN/EtchingCapability"
+    },
+    {
+      "label": "Silver",
+      "iri": "http://asu.edu/semantics/SUDOKN/SilverProcessingCapability"
+    },
+    {
+      "label": "Low Alloy Steel Lead",
+      "iri": "http://asu.edu/semantics/SUDOKN/LowAlloySteelLeadProcessingCapability"
+    },
+    {
+      "label": "Phosphor Bronze",
+      "iri": "http://asu.edu/semantics/SUDOKN/PhosphorBronzeProcessingCapability"
+    },
+    {
+      "label": "Soldering",
+      "iri": "http://asu.edu/semantics/SUDOKN/SolderingCapability"
+    },
+    {
+      "label": "Shear Spinning",
+      "iri": "http://asu.edu/semantics/SUDOKN/SpinningCapability"
+    },
+    {
+      "label": "Silicone",
+      "iri": "http://asu.edu/semantics/SUDOKN/SiliconeProcessingCapability"
+    },
+    {
+      "label": "Graphite",
+      "iri": "http://asu.edu/semantics/SUDOKN/GraphiteProcessingCapability"
+    },
+    {
+      "label": "Blue Temp Steel",
+      "iri": "http://asu.edu/semantics/SUDOKN/BlueTempSteelProcessingCapability"
+    }
+  ]
+}

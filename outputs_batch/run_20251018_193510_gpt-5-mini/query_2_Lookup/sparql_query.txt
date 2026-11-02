@@ -1,0 +1,9 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?naicsText WHERE {
+  ?naics sdk:hasNAICSCodeValue ?code ;
+         sdk:hasNAICSTextValue ?naicsText .
+  FILTER(CONTAINS(str(?code), "332996"))
+}
+LIMIT 1

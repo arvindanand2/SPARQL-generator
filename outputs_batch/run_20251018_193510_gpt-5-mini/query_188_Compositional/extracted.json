@@ -1,0 +1,82 @@
+{
+  "clauses": [
+    {
+      "subject_hint": "manufacturers",
+      "filter": {
+        "op": "eq",
+        "value": 2,
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "relation_hint": "number of distinct products",
+      "type": "spo",
+      "connective": "OR"
+    },
+    {
+      "subject_hint": "manufacturers",
+      "filter": {
+        "op": "eq",
+        "value": 2,
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "relation_hint": "number of distinct process capabilities",
+      "type": "spo",
+      "connective": "AND"
+    },
+    {
+      "subject_hint": "manufacturers",
+      "filter": {
+        "op": "eq",
+        "value": 2,
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "relation_hint": "number of distinct material capabilities",
+      "type": "spo",
+      "connective": "AND"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "AS 9102",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9102"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "Specialized Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/SpecializedMachiningCapability"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    },
+    {
+      "label": "QS Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QSQuality"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "VDA",
+      "iri": "http://asu.edu/semantics/SUDOKN/VDA"
+    },
+    {
+      "label": "Five Axis Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/FiveAxisMachiningCapability"
+    }
+  ]
+}

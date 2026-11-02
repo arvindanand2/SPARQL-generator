@@ -1,0 +1,36 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX bfo: <http://purl.obolibrary.org/obo/>
+
+SELECT ?city ?cityLabel (AVG(?emp) AS ?avgEmployeeCount)
+WHERE {
+  {
+    SELECT DISTINCT ?city ?cityLabel ?org (xsd:integer(REPLACE(STR(?rawEmp), ",", "")) AS ?emp)
+    WHERE {
+      ?org a iof-core:Manufacturer ;
+           sdk:hasProcessCapability ?cap ;
+           sdk:organizationLocatedIn ?site ;
+           sdk:hasNumberOfEmployees ?rawEmp .
+      ?cap a ?capType .
+      VALUES ?capType {
+        sdk:HeatTreatingCapability
+        sdk:StressRelievingCapability
+        sdk:ThroughHardeningCapability
+        sdk:AustemperingCapability
+        sdk:TemperingCapability
+        sdk:FullAnnealingCapability
+        sdk:SurfaceHardeningCapability
+        sdk:AnnealingCapability
+        sdk:HardeningCapability
+        sdk:ColdTreatmentCapability
+      }
+      ?site sdk:locatedInCity ?city .
+      OPTIONAL { ?city rdfs:label ?cityLabel . }
+    }
+  }
+}
+GROUP BY ?city ?cityLabel
+ORDER BY ?cityLabel

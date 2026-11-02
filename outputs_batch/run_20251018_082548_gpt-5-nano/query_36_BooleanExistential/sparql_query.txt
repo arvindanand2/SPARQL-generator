@@ -1,0 +1,15 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT ?site ?lat ?lon
+WHERE {
+  ?org a iof-core:Manufacturer ;
+       sdk:organizationLocatedIn ?site .
+  ?site a sdk:GeospatialLocation .
+  ?site sdk:hasSpatialCoordinates ?coords .
+  ?coords a sdk:TwoDimensionalCartesianSpatialCoordinateDatum ;
+          sdk:hasLatitudeValue ?lat ;
+          sdk:hasLongitudeValue ?lon .
+}

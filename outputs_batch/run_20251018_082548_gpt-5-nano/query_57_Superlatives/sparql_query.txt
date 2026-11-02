@@ -1,0 +1,19 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?manufacturer (COUNT(DISTINCT ?cap) AS ?distinctCapabilities)
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  {
+    ?manufacturer sdk:hasProcessCapability ?cap .
+  } UNION {
+    ?manufacturer sdk:hasMaterialCapability ?cap .
+  }
+  ?manufacturer sdk:organizationLocatedIn ?site .
+  ?site sdk:locatedInCity ?city .
+  ?city a sdk:City .
+}
+GROUP BY ?manufacturer
+ORDER BY DESC(?distinctCapabilities)
+LIMIT 1

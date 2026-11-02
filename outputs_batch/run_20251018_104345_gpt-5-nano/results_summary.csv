@@ -1,0 +1,99 @@
+Query_ID,Question,Category,Model,Success,Attempts,SPARQL_Query,Result_Preview,Error_Message,Stage
+0,return the manufacturers who have stamping capability and serve the aerospace industry,SUDOKN Example Queries,gpt-5-nano,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?name WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                rdfs:label ?name ;
+                sdk:hasProcessCapability ?cap .
+  ?cap a sdk:StampingCapability .
+  ?manufacturer sdk:suppliesToIndustry ?ind .
+  ?ind rdfs:label ""Aerospace"" .
+}","manufacturer	name
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 330",,complete
+1,What are the top 3 manufacturing process capabilities available in North Carolina ?,SUDOKN Example Queries,gpt-5-nano,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?cap ?capLabel (COUNT(DISTINCT ?org) AS ?numManufacturers)
+WHERE {
+  ?org a iof-core:Manufacturer ;
+       sdk:organizationLocatedIn ?site .
+  ?site sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  ?state rdfs:label ?stateLabel .
+  FILTER(?stateLabel = ""North Carolina"")
+  ?org sdk:hasProcessCapability ?cap .
+  ?cap rdfs:label ?capLabel .
+}
+GROUP BY ?cap ?capLabel
+ORDER BY DESC(?numManufacturers)
+LIMIT 3","cap	capLabel	numManufacturers
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 3
+",,complete
+2,how many manufacturers in NC are established after 2010,SUDOKN Example Queries,gpt-5-nano,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?stateLabel (COUNT(DISTINCT ?man) AS ?count)
+WHERE {
+  ?man a iof-core:Manufacturer .
+  ?man sdk:organizationLocatedIn ?site .
+  ?site sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  ?state rdfs:label ?stateLabel .
+  FILTER (str(?stateLabel) = ""NC"") .
+}
+GROUP BY ?stateLabel
+ORDER BY DESC(?count)
+LIMIT 1","No results found.
+",,complete
+3,return the manufacturers who only provide machining services and can machine both aluminum and stainless steel,SUDOKN Example Queries,gpt-5-nano,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?label WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                rdfs:label ?label .
+
+  # Must have a Machining capability
+  ?manufacturer sdk:hasProcessCapability ?machCap .
+  ?machCap a sdk:MachiningCapability .
+
+  # Must have Aluminum and Stainless Steel material capabilities
+  ?manufacturer sdk:hasMaterialCapability ?alCap .
+  ?alCap a sdk:AluminumProcessingCapability .
+  ?manufacturer sdk:hasMaterialCapability ?stCap .
+  ?stCap a sdk:StainlessSteelProcessingCapability .
+
+  # No non-machining process capabilities
+  FILTER NOT EXISTS {
+    ?manufacturer sdk:hasProcessCapability ?otherCap .
+    ?otherCap a ?type .
+    FILTER(?type != sdk:MachiningCapability)
+  }
+}","No results found.
+",,complete
+4,"return the manufacturers that are involved in plastic and rubber product manufacturing  (secondary NAICS code = 326)and have some type of quality management certificate.if secondary NAICS code is not in the instance data, suggest a different query",SUDOKN Example Queries,gpt-5-nano,Yes,1,"PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?industryLabel ?certLabel WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  ?manufacturer sdk:suppliesToIndustry ?industry .
+  ?industry rdfs:label ?industryLabel .
+  FILTER(?industryLabel = ""Plastic and Rubber Product Manufacturing""@en
+         || CONTAINS(LCASE(?industryLabel), ""plastic"")
+         || CONTAINS(LCASE(?industryLabel), ""rubber""))
+  OPTIONAL { ?manufacturer sdk:hasSecondaryNAICSCode ?secCode . }
+  FILTER(?secCode = 326 || !BOUND(?secCode))
+  ?manufacturer sdk:hasCertificate ?cert .
+  ?cert a ?certType .
+  VALUES ?certType { sdk:ISO9001 sdk:ISO13485 sdk:ISO14001 }
+  OPTIONAL { ?cert rdfs:label ?certLabel . }
+}","manufacturer	industryLabel	certLabel
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 205",,complete

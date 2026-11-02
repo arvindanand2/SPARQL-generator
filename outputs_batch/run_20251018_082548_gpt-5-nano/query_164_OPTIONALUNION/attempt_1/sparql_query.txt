@@ -1,0 +1,18 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?name (COALESCE(?coords, "no-coords") AS ?coords)
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  OPTIONAL { ?manufacturer rdfs:label ?name . }
+  OPTIONAL {
+    ?manufacturer sdk:organizationLocatedIn ?site .
+    OPTIONAL {
+      ?site sdk:hasSpatialCoordinates ?coordsDatum .
+      ?coordsDatum sdk:hasLatitudeValue ?lat ;
+                   sdk:hasLongitudeValue ?lon .
+      BIND(CONCAT(STR(?lat), ",", STR(?lon)) AS ?coords)
+    }
+  }
+}

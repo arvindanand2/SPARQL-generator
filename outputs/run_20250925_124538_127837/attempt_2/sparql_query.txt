@@ -1,0 +1,44 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT ?m ?mLabel ?stateLabel ?lat ?lon ?dist2
+WHERE {
+  ?m a iof-core:Manufacturer ;
+     rdfs:label ?mLabel ;
+     sdk:hasCertificate ?cert ;
+     sdk:organizationLocatedIn ?site .
+
+  ?cert a ?certType .
+  VALUES ?certType {
+    sdk:ISO9001
+    sdk:AS9100Certificate
+    sdk:ISOQualityCertificate
+    sdk:AerospaceQualityCertificate
+    sdk:AS9120
+    sdk:AS9003
+    sdk:AS9000
+    sdk:QSQuality
+  }
+
+  ?site sdk:hasSpatialCoordinates ?coords ;
+        sdk:locatedInCity ?city .
+  ?coords sdk:hasLatitudeValue ?latStr ;
+          sdk:hasLongitudeValue ?lonStr .
+  BIND(xsd:double(?latStr) AS ?lat)
+  BIND(xsd:double(?lonStr) AS ?lon)
+
+  ?city sdk:locatedInState ?state .
+  ?state rdfs:label ?stateLabel .
+  VALUES ?stateLabel {
+    "Illinois" "Indiana" "Iowa" "Kansas" "Michigan" "Minnesota" "Missouri" "Nebraska" "North Dakota" "Ohio" "South Dakota" "Wisconsin"
+  }
+
+  BIND(xsd:double("33.424239") AS ?asuLat)
+  BIND(xsd:double("-111.928053") AS ?asuLon)
+  BIND((?lat - ?asuLat) AS ?dLat)
+  BIND((?lon - ?asuLon) AS ?dLon)
+  BIND((?dLat * ?dLat + ?dLon * ?dLon) AS ?dist2)
+}
+ORDER BY ASC(?dist2)

@@ -1,0 +1,3 @@
+manufacturer	label	naicsCode	naicsText
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 238

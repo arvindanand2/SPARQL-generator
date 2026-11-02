@@ -1,0 +1,20 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?employeeBucket (COUNT(DISTINCT ?org) AS ?companyCount)
+WHERE {
+  ?org a iof-core:Manufacturer ;
+       sdk:hasNumberOfEmployees ?empLit .
+  BIND(xsd:integer(REPLACE(STR(?empLit), ",", "")) AS ?emp)
+  BIND(
+    IF(?emp <= 50, "Small",
+      IF(?emp >= 51 && ?emp <= 250, "Medium",
+        IF(?emp > 250, "Large", "Other")
+      )
+    ) AS ?employeeBucket
+  )
+  FILTER(?employeeBucket IN ("Small","Medium","Large"))
+}
+GROUP BY ?employeeBucket
+ORDER BY ?employeeBucket

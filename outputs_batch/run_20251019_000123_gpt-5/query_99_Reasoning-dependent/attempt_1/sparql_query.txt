@@ -1,0 +1,14 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manufacturerLabel
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                sdk:suppliesToIndustry ?industry ;
+                sdk:hasProcessCapability ?cap .
+  ?industry a sdk:RenewableEnergyIndustry .
+  ?cap a ?capType .
+  ?capType rdfs:subClassOf* sdk:CoatingCapability .
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel . }
+}

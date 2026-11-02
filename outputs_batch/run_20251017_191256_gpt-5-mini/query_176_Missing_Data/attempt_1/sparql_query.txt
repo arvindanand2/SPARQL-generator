@@ -1,0 +1,19 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+
+SELECT DISTINCT ?manufacturer ?label ?text WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  OPTIONAL { ?manufacturer rdfs:label ?label. }
+  OPTIONAL {
+    ?manufacturer iof-core:describedBy ?desc .
+    OPTIONAL { ?desc iof-scro:hasTextValue ?text . }
+  }
+  FILTER(
+    !bound(?desc)
+    || !bound(?text)
+    || str(?text) = ""
+    || regex(str(?text), "^\\s*$")
+  )
+}

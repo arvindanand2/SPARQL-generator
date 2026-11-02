@@ -1,0 +1,61 @@
+{
+  "clauses": [
+    {
+      "object_hint": "Apparel",
+      "relation_hint": "supplies to industry",
+      "connective": "IMPLIED",
+      "filter": {
+        "op": "eq",
+        "value": "Apparel",
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "modifier": {
+        "kind": "limit",
+        "k": 10,
+        "by": null
+      },
+      "subject_hint": "manufacturers",
+      "enum_values": [
+        "Apparel"
+      ],
+      "type": "spo"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Textile Process",
+      "iri": "http://asu.edu/semantics/SUDOKN/TextileProcessCapability"
+    },
+    {
+      "label": "Man Made Fiber",
+      "iri": "http://asu.edu/semantics/SUDOKN/ManMadeFiberProcessingCapability"
+    },
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    },
+    {
+      "label": "VDA",
+      "iri": "http://asu.edu/semantics/SUDOKN/VDA"
+    },
+    {
+      "label": "QS Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QSQuality"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "clauses": [
+    {
+      "object_hint": "Coating",
+      "subject_hint": "companies",
+      "filter": {
+        "op": "eq",
+        "value": "subclass",
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "relation_hint": "has process capability that is subclass of",
+      "type": "spo",
+      "connective": "AND"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Coating",
+      "iri": "http://asu.edu/semantics/SUDOKN/CoatingCapability"
+    },
+    {
+      "label": "Surface Coating",
+      "iri": "http://asu.edu/semantics/SUDOKN/CoatingCapability"
+    },
+    {
+      "label": "Chemical Coating",
+      "iri": "http://asu.edu/semantics/SUDOKN/ChemicalCoatingCapability"
+    },
+    {
+      "label": "Metal Coating",
+      "iri": "http://asu.edu/semantics/SUDOKN/VaporizedMetalCoatingCapability"
+    },
+    {
+      "label": "Thermal Coating",
+      "iri": "http://asu.edu/semantics/SUDOKN/ThermalCoatingCapability"
+    },
+    {
+      "label": "Roll Coating",
+      "iri": "http://asu.edu/semantics/SUDOKN/CoatingCapability"
+    },
+    {
+      "label": "Mechanical Coating",
+      "iri": "http://asu.edu/semantics/SUDOKN/MechanicalCoatingCapability"
+    },
+    {
+      "label": "Chemical Conversion Coating",
+      "iri": "http://asu.edu/semantics/SUDOKN/ChemicalConversionCoatingCapability"
+    }
+  ]
+}

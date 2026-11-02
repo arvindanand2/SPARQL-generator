@@ -1,0 +1,1 @@
+For each primary NAICS code, show how many manufacturers use it, how many products those manufacturers make in total, and the average employee count.

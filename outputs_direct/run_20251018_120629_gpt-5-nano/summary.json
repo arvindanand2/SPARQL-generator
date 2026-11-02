@@ -1,0 +1,18 @@
+{
+  "total": 1,
+  "successful": 1,
+  "failed": 0,
+  "total_pipeline_time_seconds": 44.49,
+  "results": [
+    {
+      "query_id": 0,
+      "query": "For each state, what is the average number of employees among manufacturers located there?",
+      "expected_label": "",
+      "success": true,
+      "result": "stateLabel\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 32\n",
+      "attempts": 1,
+      "error": null,
+      "total_time": 44.4811065196991
+    }
+  ]
+}

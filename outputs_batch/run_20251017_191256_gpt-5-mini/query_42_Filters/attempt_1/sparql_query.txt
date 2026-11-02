@@ -1,0 +1,7 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+
+SELECT ?naics ?text
+WHERE {
+  ?naics sdk:hasNAICSTextValue ?text .
+  FILTER(regex(str(?text), "PIPE", "i"))
+}

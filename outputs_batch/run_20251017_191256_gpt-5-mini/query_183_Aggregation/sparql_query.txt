@@ -1,0 +1,32 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?naicsCode ?naicsText ?numManufacturers ?numProducts ?avgEmployees
+WHERE {
+  {
+    SELECT ?naics ?naicsCode ?naicsText (COUNT(DISTINCT ?manu) AS ?numManufacturers) (AVG(?empVal) AS ?avgEmployees)
+    WHERE {
+      ?manu a iof-core:Manufacturer ;
+            sdk:hasPrimaryNAICSClassifier ?naics .
+      ?naics sdk:hasNAICSCodeValue ?naicsCode ;
+             sdk:hasNAICSTextValue ?naicsText .
+      OPTIONAL {
+        ?manu sdk:hasNumberOfEmployees ?empStr .
+        BIND(xsd:decimal(REPLACE(STR(?empStr), ",", "")) AS ?empVal)
+      }
+    }
+    GROUP BY ?naics ?naicsCode ?naicsText
+  }
+  OPTIONAL {
+    SELECT ?naics (COUNT(DISTINCT ?product) AS ?numProducts)
+    WHERE {
+      ?manu2 a iof-core:Manufacturer ;
+             sdk:hasPrimaryNAICSClassifier ?naics ;
+             sdk:manufactures ?product .
+    }
+    GROUP BY ?naics
+  }
+}
+ORDER BY ?naicsCode

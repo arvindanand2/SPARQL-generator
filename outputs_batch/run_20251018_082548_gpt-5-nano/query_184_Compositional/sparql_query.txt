@@ -1,0 +1,20 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT ?m ?mLabel ?emp ?pcLabel ?stateLabel
+WHERE {
+  ?m a iof-core:Manufacturer ;
+     rdfs:label ?mLabel .
+  ?m sdk:organizationLocatedIn ?site .
+  ?site sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  ?state rdfs:label ?stateLabel .
+  FILTER(?stateLabel = "California")
+  ?m sdk:hasNumberOfEmployees ?emp .
+  FILTER(xsd:integer(?emp) >= 20)
+  ?m sdk:hasProcessCapability ?pc .
+  ?pc rdfs:label ?pcLabel .
+  FILTER(regex(?pcLabel, "ing$", "i"))
+}

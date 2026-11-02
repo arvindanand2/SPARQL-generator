@@ -1,0 +1,49 @@
+{
+  "clauses": [
+    {
+      "object_hint": "PIPE",
+      "subject_hint": "NAICS classifiers",
+      "filter": {
+        "op": "eq",
+        "value": "case-insensitive contains",
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "relation_hint": "has text containing",
+      "type": "scope",
+      "connective": "IMPLIED"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    },
+    {
+      "label": "Pipe Bending",
+      "iri": "http://asu.edu/semantics/SUDOKN/BendingCapability"
+    },
+    {
+      "label": "NADCAP",
+      "iri": "http://asu.edu/semantics/SUDOKN/NADCAP"
+    },
+    {
+      "label": "Tubing",
+      "iri": "http://asu.edu/semantics/SUDOKN/TubingCapability"
+    },
+    {
+      "label": "AWS Welder",
+      "iri": "http://asu.edu/semantics/SUDOKN/AWSWelder"
+    },
+    {
+      "label": "PVC",
+      "iri": "http://asu.edu/semantics/SUDOKN/PVCProcessingCapability"
+    },
+    {
+      "label": "Textile Process",
+      "iri": "http://asu.edu/semantics/SUDOKN/TextileProcessCapability"
+    }
+  ]
+}

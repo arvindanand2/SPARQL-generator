@@ -1,0 +1,1 @@
+For each manufacturer in the database, produce a ‘City, State’ field. Replace any missing city or state with ‘Unknown’.

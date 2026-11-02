@@ -1,0 +1,17 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?label
+       (COUNT(DISTINCT ?prod) AS ?prodCount)
+       (COUNT(DISTINCT ?proc) AS ?procCount)
+       (COUNT(DISTINCT ?mat) AS ?matCount)
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  OPTIONAL { ?manufacturer rdfs:label ?label . }
+  OPTIONAL { ?manufacturer sdk:manufactures ?prod . }
+  OPTIONAL { ?manufacturer sdk:hasProcessCapability ?proc . }
+  OPTIONAL { ?manufacturer sdk:hasMaterialCapability ?mat . }
+}
+GROUP BY ?manufacturer ?label
+HAVING ((COUNT(DISTINCT ?prod) = 2) || ((COUNT(DISTINCT ?proc) = 2) && (COUNT(DISTINCT ?mat) = 2)))

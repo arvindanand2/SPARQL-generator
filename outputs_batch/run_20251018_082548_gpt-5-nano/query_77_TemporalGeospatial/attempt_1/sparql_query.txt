@@ -1,0 +1,16 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?cityName ?zipCode
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+               sdk:organizationLocatedIn ?site .
+  ?site a sdk:GeospatialLocation ;
+        sdk:locatedInCity ?city ;
+        sdk:hasZIPcode ?zipCodeResource .
+  ?city rdfs:label ?cityName .
+  ?zipCodeResource a sdk:USPostalCode ;
+                   sdk:hasIntegerValue ?zipCode .
+}

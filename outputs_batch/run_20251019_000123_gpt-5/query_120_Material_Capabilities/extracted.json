@@ -1,0 +1,56 @@
+{
+  "clauses": [
+    {
+      "connective": "AND",
+      "type": "spo",
+      "enum_values": [
+        "Carbide"
+      ],
+      "subject_hint": "manufacturers",
+      "relation_hint": "has material capability"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Carbide",
+      "iri": "http://asu.edu/semantics/SUDOKN/CarbideProcessingCapability"
+    },
+    {
+      "label": "Carbide Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/CarbideMachiningCapability"
+    },
+    {
+      "label": "Diamond Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/DiamondMachiningCapability"
+    },
+    {
+      "label": "Tungsten",
+      "iri": "http://asu.edu/semantics/SUDOKN/TungstenProcessingCapability"
+    },
+    {
+      "label": "Polycrystalline Diamond Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/PolycrystallineDiamondMachiningCapability"
+    },
+    {
+      "label": "Titanium",
+      "iri": "http://asu.edu/semantics/SUDOKN/TitaniumProcessingCapability"
+    },
+    {
+      "label": "Carbon Fiber",
+      "iri": "http://asu.edu/semantics/SUDOKN/CarbonFiberProcessingCapability"
+    },
+    {
+      "label": "Carbonitriding",
+      "iri": "http://asu.edu/semantics/SUDOKN/CarbonitridingCapability"
+    },
+    {
+      "label": "Specialized Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/SpecializedMachiningCapability"
+    },
+    {
+      "label": "CNC Cylindrical Grinding",
+      "iri": "http://asu.edu/semantics/SUDOKN/CNCCylindricalGrindingCapability"
+    }
+  ]
+}

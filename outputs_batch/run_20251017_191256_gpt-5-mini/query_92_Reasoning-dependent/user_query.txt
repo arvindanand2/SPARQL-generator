@@ -1,0 +1,1 @@
+Among manufacturers in states whose names contain Arizona, how many have a capability that is a subclass of the class labeled Coating?

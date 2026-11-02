@@ -1,0 +1,1 @@
+List manufacturers in states whose names match the regex "^New ".

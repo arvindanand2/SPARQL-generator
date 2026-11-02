@@ -1,0 +1,487 @@
+{
+    "ontology_version_id": "0001iL0gfgYUQmHTgJiwE5Rs4agsr6NJ",
+    "material_caps": [
+        {
+            "name": "Carbide",
+            "altLabels": [],
+            "children": []
+        },
+        {
+            "name": "Carbon",
+            "altLabels": [],
+            "children": [
+                {
+                    "name": "Graphite",
+                    "altLabels": [],
+                    "children": []
+                }
+            ]
+        },
+        {
+            "name": "Ceramic",
+            "altLabels": [],
+            "children": [
+                {
+                    "name": "Zircon",
+                    "altLabels": [],
+                    "children": []
+                }
+            ]
+        },
+        {
+            "name": "Chemicals",
+            "altLabels": [],
+            "children": []
+        },
+        {
+            "name": "Composite",
+            "altLabels": [],
+            "children": [
+                {
+                    "name": "Carbon Fiber",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Concrete",
+                    "altLabels": [],
+                    "children": []
+                }
+            ]
+        },
+        {
+            "name": "Exotic Material",
+            "altLabels": [],
+            "children": []
+        },
+        {
+            "name": "Fiber",
+            "altLabels": [],
+            "children": [
+                {
+                    "name": "Fiber Glass",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Man Made Fiber",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Natural Fiber",
+                    "altLabels": [],
+                    "children": []
+                }
+            ]
+        },
+        {
+            "name": "Foam",
+            "altLabels": [],
+            "children": []
+        },
+        {
+            "name": "Glass",
+            "altLabels": [],
+            "children": []
+        },
+        {
+            "name": "Metal",
+            "altLabels": [],
+            "children": [
+                {
+                    "name": "Alloy",
+                    "altLabels": [],
+                    "children": [
+                        {
+                            "name": "Haynes",
+                            "altLabels": [],
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Aluminum",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Babbit",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Beryllium",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Brass",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Bronze",
+                    "altLabels": [],
+                    "children": [
+                        {
+                            "name": "Phosphor Bronze",
+                            "altLabels": [],
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Chromium",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Cobalt",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Copper",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Hastelloy",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Inconel",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Invar",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Iron",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Kovar",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Lead",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Magnesium Alloy",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Molybdenum",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Nickel",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Palladium",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Platinum",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Silver",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Steel",
+                    "altLabels": [],
+                    "children": [
+                        {
+                            "name": "Alloy Steel",
+                            "altLabels": [],
+                            "children": [
+                                {
+                                    "name": "Low Alloy Steel Lead",
+                                    "altLabels": [],
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Blue Temp Steel",
+                            "altLabels": [],
+                            "children": []
+                        },
+                        {
+                            "name": "Cast Steel",
+                            "altLabels": [],
+                            "children": []
+                        },
+                        {
+                            "name": "Cold Rolled Steel",
+                            "altLabels": [],
+                            "children": []
+                        },
+                        {
+                            "name": "Stainless Steel",
+                            "altLabels": [],
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Super Alloy",
+                    "altLabels": [],
+                    "children": [
+                        {
+                            "name": "Waspaloy",
+                            "altLabels": [],
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Tantalum",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Titanium",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Tungsten",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Zinc Alloy",
+                    "altLabels": [],
+                    "children": []
+                }
+            ]
+        },
+        {
+            "name": "Plastic",
+            "altLabels": [],
+            "children": [
+                {
+                    "name": "ABS",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Acetal",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Acetron",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Acrylic",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "CPVC",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "CTFE",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Delrin",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Ertalyte",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "HDPE",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Kapton",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Kevlar",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "LDPE",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Lexan",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Lucite",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Noryl",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Nylon",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "PBT",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "PET",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "PPS",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "PVC",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Peek",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Plexiglas",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Polycarbonate",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Polyethylene",
+                    "altLabels": [],
+                    "children": [
+                        {
+                            "name": "Polywood",
+                            "altLabels": [],
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Polysulfone",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Radel",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Ryton",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Techtron",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Torlon",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Tuffak",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "UHMW",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Vespel",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Zelux",
+                    "altLabels": [],
+                    "children": []
+                },
+                {
+                    "name": "Zytel",
+                    "altLabels": [],
+                    "children": []
+                }
+            ]
+        },
+        {
+            "name": "Rubber",
+            "altLabels": [],
+            "children": []
+        },
+        {
+            "name": "Silicone",
+            "altLabels": [],
+            "children": []
+        },
+        {
+            "name": "Teflon",
+            "altLabels": [],
+            "children": []
+        },
+        {
+            "name": "Urethane",
+            "altLabels": [],
+            "children": []
+        },
+        {
+            "name": "Wood",
+            "altLabels": [],
+            "children": []
+        }
+    ]
+}

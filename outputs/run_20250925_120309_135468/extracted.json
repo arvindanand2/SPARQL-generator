@@ -1,0 +1,85 @@
+{
+  "clauses": [
+    {
+      "subject_hint": "manufacturers",
+      "type": "scope",
+      "connective": "IMPLIED",
+      "relation_hint": "located in",
+      "filter": {
+        "op": "eq",
+        "value": "Midwest",
+        "unit": "region",
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "subject_hint": "manufacturers",
+      "type": "spo",
+      "connective": "AND",
+      "relation_hint": "has certificate",
+      "object_hint": "quality management certification"
+    },
+    {
+      "subject_hint": "manufacturers",
+      "type": "modifier",
+      "connective": "FOLLOWUP",
+      "modifier": {
+        "kind": "nearest",
+        "k": null,
+        "by": "ASU Tempe campus"
+      },
+      "relation_hint": "located near",
+      "filter": {
+        "op": "near",
+        "value": "ASU Tempe campus",
+        "unit": "poi",
+        "min": null,
+        "max": null
+      }
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "QS Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QSQuality"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "AS 9100",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9100Certificate"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    },
+    {
+      "label": "AS 9120",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9120"
+    },
+    {
+      "label": "AS 9003",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9003"
+    },
+    {
+      "label": "Aerospace Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/AerospaceQualityCertificate"
+    },
+    {
+      "label": "AWS Welder",
+      "iri": "http://asu.edu/semantics/SUDOKN/AWSWelder"
+    },
+    {
+      "label": "AS 9000",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9000"
+    }
+  ]
+}

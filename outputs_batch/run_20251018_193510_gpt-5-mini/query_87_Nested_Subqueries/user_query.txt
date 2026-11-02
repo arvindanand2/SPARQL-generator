@@ -1,0 +1,1 @@
+Return manufacturers whose number of certificates is above the overall average number of certificates per manufacturer.

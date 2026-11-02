@@ -1,0 +1,12 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+
+SELECT DISTINCT ?manufacturer
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  ?manufacturer sdk:hasCertificate ?certISO9001 .
+  ?manufacturer sdk:hasCertificate ?certISO14001 .
+  ?certISO9001 a sdk:ISO9001 .
+  ?certISO14001 a sdk:ISO14001 .
+  FILTER(?certISO9001 != ?certISO14001)
+}

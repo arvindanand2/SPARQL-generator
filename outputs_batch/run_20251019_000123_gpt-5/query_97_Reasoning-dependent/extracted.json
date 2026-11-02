@@ -1,0 +1,67 @@
+{
+  "clauses": [
+    {
+      "connective": "AND",
+      "type": "spo",
+      "subject_hint": "manufacturers",
+      "relation_hint": "has process capability"
+    },
+    {
+      "object_hint": "Single-Point Cutting",
+      "connective": "IMPLIED",
+      "type": "scope",
+      "filter": {
+        "op": "eq",
+        "value": "Single-Point Cutting",
+        "unit": "class label",
+        "min": null,
+        "max": null
+      },
+      "subject_hint": "process capabilities",
+      "relation_hint": "is descendant of class labeled"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Single-Point Cutting",
+      "iri": "http://asu.edu/semantics/SUDOKN/SinglePointCuttingCapability"
+    },
+    {
+      "label": "Multipoint Cutting",
+      "iri": "http://asu.edu/semantics/SUDOKN/MultipointCuttingCapability"
+    },
+    {
+      "label": "Standard Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/MachiningCapability"
+    },
+    {
+      "label": "Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/MachiningCapability"
+    },
+    {
+      "label": "CNC Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/CNCMachiningCapability"
+    },
+    {
+      "label": "Shaping",
+      "iri": "http://asu.edu/semantics/SUDOKN/ShapingCapability"
+    },
+    {
+      "label": "Live Tooling",
+      "iri": "http://asu.edu/semantics/SUDOKN/LiveToolingCapability"
+    },
+    {
+      "label": "Five Axis Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/FiveAxisMachiningCapability"
+    },
+    {
+      "label": "Specialized Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/SpecializedMachiningCapability"
+    },
+    {
+      "label": "Seven Axis Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/SevenAxisMachiningCapability"
+    }
+  ]
+}

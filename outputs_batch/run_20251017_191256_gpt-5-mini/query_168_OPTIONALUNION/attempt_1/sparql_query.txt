@@ -1,0 +1,15 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?manufacturerLabel (GROUP_CONCAT(DISTINCT ?capLabel; separator=", ") AS ?capabilities)
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                rdfs:label ?manufacturerLabel .
+  OPTIONAL {
+    ?manufacturer (sdk:hasProcessCapability|sdk:hasMaterialCapability) ?cap .
+    ?cap rdfs:label ?capLabel .
+  }
+}
+GROUP BY ?manufacturer ?manufacturerLabel
+ORDER BY ?manufacturerLabel

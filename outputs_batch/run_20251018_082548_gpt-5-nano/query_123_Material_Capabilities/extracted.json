@@ -1,0 +1,63 @@
+{
+  "clauses": [
+    {
+      "relation_hint": "has material capability",
+      "connective": "IMPLIED",
+      "filter": {
+        "op": "eq",
+        "value": "Aluminum",
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "subject_hint": "manufacturers",
+      "enum_values": [
+        "Aluminum"
+      ],
+      "type": "spo"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Aluminum",
+      "iri": "http://asu.edu/semantics/SUDOKN/AluminumProcessingCapability"
+    },
+    {
+      "label": "aluminum",
+      "iri": "http://asu.edu/semantics/SUDOKN/AluminumProcessingCapability"
+    },
+    {
+      "label": "Super Alloy",
+      "iri": "http://asu.edu/semantics/SUDOKN/SuperAlloyProcessingCapability"
+    },
+    {
+      "label": "Metal Additive Manufacturing",
+      "iri": "http://asu.edu/semantics/SUDOKN/AdditiveManufacturingCapability"
+    },
+    {
+      "label": "Magnesium Alloy",
+      "iri": "http://asu.edu/semantics/SUDOKN/MagnesiumAlloyProcessingCapability"
+    },
+    {
+      "label": "Alloy Steel",
+      "iri": "http://asu.edu/semantics/SUDOKN/AlloySteelProcessingCapability"
+    },
+    {
+      "label": "Alloy",
+      "iri": "http://asu.edu/semantics/SUDOKN/AlloyProcessingCapability"
+    },
+    {
+      "label": "Carbon Fiber",
+      "iri": "http://asu.edu/semantics/SUDOKN/CarbonFiberProcessingCapability"
+    },
+    {
+      "label": "AWS Welder",
+      "iri": "http://asu.edu/semantics/SUDOKN/AWSWelder"
+    },
+    {
+      "label": "Low Alloy Steel Lead",
+      "iri": "http://asu.edu/semantics/SUDOKN/LowAlloySteelLeadProcessingCapability"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+Which manufacturers have at least one certificate but no products?

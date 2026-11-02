@@ -1,0 +1,8 @@
+ASK WHERE {
+  ?man a iof-core:Manufacturer ;
+       rdfs:label ?manLabel .
+  FILTER(CONTAINS(LCASE(?manLabel), "coating"))
+  ?man iof-core:describedBy ?desc .
+  ?desc a sdk:BusinessDescription .
+  ?desc iof-scro:hasTextValue ?descText .
+}

@@ -1,0 +1,90 @@
+{
+  "clauses": [
+    {
+      "object_hint": "California",
+      "relation_hint": "located in",
+      "connective": "IMPLIED",
+      "filter": {
+        "op": "eq",
+        "value": "California",
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "subject_hint": "manufacturers",
+      "enum_values": [
+        "California"
+      ],
+      "type": "scope"
+    },
+    {
+      "relation_hint": "has number of employees",
+      "connective": "AND",
+      "filter": {
+        "op": "gte",
+        "value": 20,
+        "unit": "employees",
+        "min": null,
+        "max": null
+      },
+      "subject_hint": "manufacturers",
+      "type": "filter"
+    },
+    {
+      "relation_hint": "has process capability",
+      "connective": "AND",
+      "subject_hint": "manufacturers",
+      "enum_values": [
+        "Grinding",
+        "Milling",
+        "Turning",
+        "Drilling",
+        "Shaping",
+        "Punching",
+        "Cutting",
+        "Welding",
+        "Casting"
+      ],
+      "type": "spo"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "NADCAP",
+      "iri": "http://asu.edu/semantics/SUDOKN/NADCAP"
+    },
+    {
+      "label": "FDA 21 CFR Part 820",
+      "iri": "http://asu.edu/semantics/SUDOKN/FDA21CFRPart820"
+    },
+    {
+      "label": "HACCP",
+      "iri": "http://asu.edu/semantics/SUDOKN/HACCP"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "Occupational Health And Safety",
+      "iri": "http://asu.edu/semantics/SUDOKN/OccupationalHealthAndSafety"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    },
+    {
+      "label": "Peen Forming",
+      "iri": "http://asu.edu/semantics/SUDOKN/FormingCapability"
+    }
+  ]
+}

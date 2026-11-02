@@ -1,0 +1,18 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?industryLabel ?certLabel WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  ?manufacturer sdk:suppliesToIndustry ?industry .
+  ?industry rdfs:label ?industryLabel .
+  FILTER(?industryLabel = "Plastic and Rubber Product Manufacturing"@en
+         || CONTAINS(LCASE(?industryLabel), "plastic")
+         || CONTAINS(LCASE(?industryLabel), "rubber"))
+  OPTIONAL { ?manufacturer sdk:hasSecondaryNAICSCode ?secCode . }
+  FILTER(?secCode = 326 || !BOUND(?secCode))
+  ?manufacturer sdk:hasCertificate ?cert .
+  ?cert a ?certType .
+  VALUES ?certType { sdk:ISO9001 sdk:ISO13485 sdk:ISO14001 }
+  OPTIONAL { ?cert rdfs:label ?certLabel . }
+}

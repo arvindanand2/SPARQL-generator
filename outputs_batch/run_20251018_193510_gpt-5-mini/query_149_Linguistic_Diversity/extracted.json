@@ -1,0 +1,57 @@
+{
+  "clauses": [
+    {
+      "object_hint": "sectors",
+      "subject_hint": "companies",
+      "relation_hint": "supplies to industry",
+      "type": "spo",
+      "connective": "IMPLIED"
+    },
+    {
+      "subject_hint": "sectors",
+      "modifier": {
+        "kind": "most",
+        "k": null,
+        "by": "number of distinct supplier companies"
+      },
+      "relation_hint": "number of distinct supplier companies",
+      "type": "modifier",
+      "connective": "IMPLIED"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Aerospace Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/AerospaceQualityCertificate"
+    },
+    {
+      "label": "AS 9120",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9120"
+    },
+    {
+      "label": "NIST",
+      "iri": "http://asu.edu/semantics/SUDOKN/nist"
+    },
+    {
+      "label": "QS Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QSQuality"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "foodservice",
+      "iri": "http://asu.edu/semantics/SUDOKN/FoodIndustry"
+    },
+    {
+      "label": "TL Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/TLQuality"
+    },
+    {
+      "label": "LEED",
+      "iri": "http://asu.edu/semantics/SUDOKN/LEED"
+    }
+  ]
+}

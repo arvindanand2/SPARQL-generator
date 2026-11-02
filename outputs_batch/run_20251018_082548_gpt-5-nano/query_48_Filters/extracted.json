@@ -1,0 +1,58 @@
+{
+  "clauses": [
+    {
+      "relation_hint": "manufactures",
+      "connective": "IMPLIED",
+      "filter": {
+        "op": "near",
+        "value": "them",
+        "unit": "pronoun",
+        "min": null,
+        "max": null
+      },
+      "type": "spo",
+      "object_hint": "products",
+      "subject_hint": "manufacturers",
+      "modifier": {
+        "kind": "limit",
+        "k": 0,
+        "by": null
+      }
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    },
+    {
+      "label": "NIST",
+      "iri": "http://asu.edu/semantics/SUDOKN/nist"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    },
+    {
+      "label": "FDA PMA",
+      "iri": "http://asu.edu/semantics/SUDOKN/FDAPMA"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "ITAR",
+      "iri": "http://asu.edu/semantics/SUDOKN/ITAR"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    }
+  ]
+}

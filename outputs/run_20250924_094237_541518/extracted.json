@@ -1,0 +1,87 @@
+{
+  "clauses": [
+    {
+      "subject_hint": "manufacturers",
+      "type": "spo",
+      "object_hint": "KG",
+      "connective": "IMPLIED",
+      "relation_hint": "in KG"
+    },
+    {
+      "subject_hint": "manufacturers",
+      "type": "spo",
+      "object_hint": "Industry",
+      "connective": "AND",
+      "relation_hint": "serving"
+    },
+    {
+      "subject_hint": "manufacturers",
+      "type": "scope",
+      "connective": "IMPLIED",
+      "relation_hint": "count"
+    },
+    {
+      "subject_hint": "manufacturers",
+      "type": "modifier",
+      "object_hint": "Industry",
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "Industry"
+      },
+      "connective": "AND",
+      "relation_hint": "group by"
+    },
+    {
+      "subject_hint": "Industry",
+      "type": "scope",
+      "object_hint": "Industry name and count",
+      "connective": "FOLLOWUP",
+      "relation_hint": "display"
+    }
+  ],
+  "warnings": [
+    "Offsets computed from the provided query string.",
+    "Interpret 'serving' as supplies-to-industry relation in the ontology.",
+    "'KG' interpreted as dataset scope (knowledge graph) rather than a domain relation.",
+    "Used a scope clause to represent the count aggregator and a modifier clause to represent grouping by Industry."
+  ],
+  "relevant_iris": [
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    },
+    {
+      "label": "QS Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QSQuality"
+    },
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "VDA",
+      "iri": "http://asu.edu/semantics/SUDOKN/VDA"
+    },
+    {
+      "label": "Occupational Health And Safety",
+      "iri": "http://asu.edu/semantics/SUDOKN/OccupationalHealthAndSafety"
+    },
+    {
+      "label": "QS 9000",
+      "iri": "http://asu.edu/semantics/SUDOKN/QS9000"
+    },
+    {
+      "label": "NIST",
+      "iri": "http://asu.edu/semantics/SUDOKN/nist"
+    },
+    {
+      "label": "IATF",
+      "iri": "http://asu.edu/semantics/SUDOKN/IATF"
+    }
+  ]
+}

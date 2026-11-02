@@ -1,0 +1,14 @@
+Query_ID,Question,Category,Model,Success,Attempts,SPARQL_Query,Result_Preview,Error_Message,Stage
+0,"What is the number of employees for the company whose name contains ""Steel""?",Lookup,gpt-5-nano,Yes,1,"PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+
+SELECT ?org ?name ?numEmployees
+WHERE {
+  ?org a iof-core:Manufacturer ;
+       rdfs:label ?name ;
+       sdk:hasNumberOfEmployees ?numEmployees .
+  FILTER (CONTAINS(LCASE(?name), ""steel""))
+}","org	name	numEmployees
+[results redacted: SUDOKN instance data not redistributed]
+Total rows output: 19",,complete

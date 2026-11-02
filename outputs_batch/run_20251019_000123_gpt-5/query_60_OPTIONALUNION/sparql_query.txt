@@ -1,0 +1,12 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+
+SELECT ?manufacturer ?naicsText
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  OPTIONAL {
+    ?manufacturer sdk:hasPrimaryNAICSClassifier ?naics .
+    ?naics sdk:hasNAICSTextValue ?naicsText .
+  }
+}
+ORDER BY ?manufacturer

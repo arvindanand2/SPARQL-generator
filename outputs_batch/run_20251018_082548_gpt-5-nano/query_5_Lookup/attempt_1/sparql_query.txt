@@ -1,0 +1,20 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?cap ?label
+WHERE {
+  VALUES ?cap {
+    <http://asu.edu/semantics/SUDOKN/SteelProcessingCapability>
+    <http://asu.edu/semantics/SUDOKN/CastSteelProcessingCapability>
+    <http://asu.edu/semantics/SUDOKN/AlloySteelProcessingCapability>
+    <http://asu.edu/semantics/SUDOKN/SuperAlloyProcessingCapability>
+    <http://asu.edu/semantics/SUDOKN/BlueTempSteelProcessingCapability>
+    <http://asu.edu/semantics/SUDOKN/StainlessSteelProcessingCapability>
+    <http://asu.edu/semantics/SUDOKN/LowAlloySteelLeadProcessingCapability>
+    <http://asu.edu/semantics/SUDOKN/ExoticMaterialProcessingCapability>
+    <http://asu.edu/semantics/SUDOKN/AlloyProcessingCapability>
+    <http://asu.edu/semantics/SUDOKN/MetalProcessingCapability>
+  }
+  ?cap rdfs:label ?label .
+  FILTER(CONTAINS(lcase(?label), "steel")) .
+}

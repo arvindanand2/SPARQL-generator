@@ -1,0 +1,10 @@
+{
+  "provider": "gemini",
+  "model": "models/text-embedding-004",
+  "num_labels": 464,
+  "num_queries": 348,
+  "top1_acc": 0.954,
+  "top3_acc": 0.977,
+  "top5_acc": 0.9856,
+  "mrr": 0.9652
+}

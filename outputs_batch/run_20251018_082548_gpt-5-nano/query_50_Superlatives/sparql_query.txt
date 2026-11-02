@@ -1,0 +1,12 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?name ?employees
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+              sdk:hasNumberOfEmployees ?employees .
+  OPTIONAL { ?manufacturer rdfs:label ?name . }
+}
+ORDER BY DESC(?employees)
+LIMIT 1

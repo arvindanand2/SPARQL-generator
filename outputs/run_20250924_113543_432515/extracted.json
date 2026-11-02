@@ -1,0 +1,33 @@
+{
+  "clauses": [
+    {
+      "connective": "IMPLIED",
+      "type": "scope",
+      "filter": {
+        "op": "eq",
+        "value": "Midwest USA",
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "subject_hint": "manufacturers",
+      "object_hint": "Midwest USA",
+      "relation_hint": "located in"
+    },
+    {
+      "connective": "AND",
+      "type": "spo",
+      "filter": {
+        "op": "eq",
+        "value": "aerospace components",
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "subject_hint": "manufacturers",
+      "object_hint": "aerospace components",
+      "relation_hint": "manufactures"
+    }
+  ],
+  "mapping": []
+}

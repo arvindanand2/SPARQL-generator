@@ -1,0 +1,58 @@
+{
+  "clauses": [
+    {
+      "enum_values": [
+        "Graphite"
+      ],
+      "type": "spo",
+      "subject_hint": "manufacturers",
+      "connective": "AND",
+      "relation_hint": "has material capability"
+    },
+    {
+      "type": "spo",
+      "subject_hint": "manufacturers",
+      "connective": "AND",
+      "relation_hint": "has business description"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Graphite",
+      "iri": "http://asu.edu/semantics/SUDOKN/GraphiteProcessingCapability"
+    },
+    {
+      "label": "ITAR",
+      "iri": "http://asu.edu/semantics/SUDOKN/ITAR"
+    },
+    {
+      "label": "Carbide",
+      "iri": "http://asu.edu/semantics/SUDOKN/CarbideProcessingCapability"
+    },
+    {
+      "label": "NIST",
+      "iri": "http://asu.edu/semantics/SUDOKN/nist"
+    },
+    {
+      "label": "NADCAP",
+      "iri": "http://asu.edu/semantics/SUDOKN/NADCAP"
+    },
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    },
+    {
+      "label": "Aerospace Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/AerospaceQualityCertificate"
+    },
+    {
+      "label": "BABA",
+      "iri": "http://asu.edu/semantics/SUDOKN/BABA"
+    },
+    {
+      "label": "Carbon Fiber",
+      "iri": "http://asu.edu/semantics/SUDOKN/CarbonFiberProcessingCapability"
+    }
+  ]
+}

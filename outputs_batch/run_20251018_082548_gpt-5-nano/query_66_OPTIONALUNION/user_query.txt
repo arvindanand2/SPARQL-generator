@@ -1,0 +1,1 @@
+For each manufacturer, list either the products they make or the certificates they hold in one output.

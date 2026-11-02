@@ -1,0 +1,48 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT ?org ?orgLabel ?stateLabel ?indLabel ?distance
+WHERE {
+  ?org a iof-core:Manufacturer ;
+       rdfs:label ?orgLabel ;
+       sdk:hasCertificate ?cert ;
+       sdk:suppliesToIndustry ?industry ;
+       sdk:organizationLocatedIn ?site .
+
+  ?cert a ?certType .
+  VALUES ?certType {
+    sdk:ISO9001
+    sdk:AS9100Certificate
+    sdk:AS9120
+    sdk:AS9003
+    sdk:AS9000
+    sdk:AerospaceQualityCertificate
+    sdk:QSQuality
+    sdk:QualityCertificate
+  }
+
+  ?industry rdfs:label ?indLabel .
+  FILTER (regex(lcase(str(?indLabel)), "aerospace|agricult"))
+
+  ?site sdk:hasSpatialCoordinates ?coord ;
+        sdk:locatedInCity ?city .
+  ?coord sdk:hasLatitudeValue ?lat ;
+         sdk:hasLongitudeValue ?lon .
+  ?city sdk:locatedInState ?state .
+  ?state rdfs:label ?stateLabel .
+  VALUES ?stateLabel {
+    "Illinois" "Indiana" "Iowa" "Kansas" "Michigan" "Minnesota"
+    "Missouri" "Nebraska" "North Dakota" "Ohio" "South Dakota" "Wisconsin"
+  }
+
+  BIND(xsd:double(?lat) AS ?latD)
+  BIND(xsd:double(?lon) AS ?lonD)
+
+  BIND(xsd:double("33.424239") AS ?asuLat)
+  BIND(xsd:double("-111.928052") AS ?asuLon)
+
+  BIND(( (?latD - ?asuLat) * (?latD - ?asuLat) + (?lonD - ?asuLon) * (?lonD - ?asuLon) ) AS ?distance)
+}
+ORDER BY ASC(?distance)

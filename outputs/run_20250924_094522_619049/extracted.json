@@ -1,0 +1,80 @@
+{
+  "clauses": [
+    {
+      "type": "spo",
+      "subject_hint": "manufacturers",
+      "connective": "IMPLIED",
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "Industry"
+      },
+      "relation_hint": "serving",
+      "object_hint": "type of Industry"
+    },
+    {
+      "type": "modifier",
+      "subject_hint": "manufacturers",
+      "connective": "FOLLOWUP",
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "Industry"
+      }
+    },
+    {
+      "type": "modifier",
+      "subject_hint": "Industry",
+      "connective": "FOLLOWUP",
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "Industry"
+      },
+      "object_hint": "count"
+    }
+  ],
+  "warnings": [
+    "Offsets best estimate due to overlapping surface forms and instructions.",
+    "'serving' aligns to SUDOKN's suppliesToIndustry/hasProcessCapability pattern.",
+    "Group by Industry; count per Industry needed in SPARQL SELECT."
+  ],
+  "relevant_iris": [
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    },
+    {
+      "label": "QS Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QSQuality"
+    },
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "VDA",
+      "iri": "http://asu.edu/semantics/SUDOKN/VDA"
+    },
+    {
+      "label": "Occupational Health And Safety",
+      "iri": "http://asu.edu/semantics/SUDOKN/OccupationalHealthAndSafety"
+    },
+    {
+      "label": "QS 9000",
+      "iri": "http://asu.edu/semantics/SUDOKN/QS9000"
+    },
+    {
+      "label": "NIST",
+      "iri": "http://asu.edu/semantics/SUDOKN/nist"
+    },
+    {
+      "label": "IATF",
+      "iri": "http://asu.edu/semantics/SUDOKN/IATF"
+    }
+  ]
+}

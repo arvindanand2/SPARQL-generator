@@ -1,0 +1,35 @@
+Traceback (most recent call last):
+  File "<project>\.venv\Lib\site-packages\SPARQLWrapper\Wrapper.py", line 926, in _query
+    response = urlopener(request)
+  File "<user-home>\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 189, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "<user-home>\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 495, in open
+    response = meth(req, response)
+  File "<user-home>\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 604, in http_response
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "<user-home>\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 533, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "<user-home>\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 466, in _call_chain
+    result = func(*args)
+  File "<user-home>\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 613, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 400: 
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<project>\query_Graph.py", line 24, in <module>
+    results = sparql.query().convert()
+              ~~~~~~~~~~~~^^
+  File "<project>\.venv\Lib\site-packages\SPARQLWrapper\Wrapper.py", line 960, in query
+    return QueryResult(self._query())
+                       ~~~~~~~~~~~^^
+  File "<project>\.venv\Lib\site-packages\SPARQLWrapper\Wrapper.py", line 930, in _query
+    raise QueryBadFormed(e.read())
+SPARQLWrapper.SPARQLExceptions.QueryBadFormed: QueryBadFormed: A bad request has been sent to the endpoint: probably the SPARQL query is badly formed. 
+
+Response:
+b'MALFORMED QUERY: Lexical error at line 43, column 12.  Encountered: \'40\' (40), after prefix "SIN"'

@@ -1,0 +1,29 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?manufacturerLabel ?certCount
+WHERE {
+  {
+    SELECT ?manufacturer (COUNT(DISTINCT ?cert) AS ?certCount)
+    WHERE {
+      ?manufacturer a iof-core:Manufacturer .
+      OPTIONAL { ?manufacturer sdk:hasCertificate ?cert . }
+    }
+    GROUP BY ?manufacturer
+  }
+  {
+    SELECT (AVG(?cnt) AS ?avgCerts)
+    WHERE {
+      SELECT ?m (COUNT(DISTINCT ?c) AS ?cnt)
+      WHERE {
+        ?m a iof-core:Manufacturer .
+        OPTIONAL { ?m sdk:hasCertificate ?c . }
+      }
+      GROUP BY ?m
+    }
+  }
+  FILTER (?certCount > ?avgCerts)
+  OPTIONAL { ?manufacturer rdfs:label ?manufacturerLabel . }
+}
+ORDER BY DESC(?certCount)

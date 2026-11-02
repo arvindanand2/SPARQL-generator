@@ -1,0 +1,23 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?industry ?industryLabel ?manufacturer ?manufacturerLabel ?employees ?avgEmployees
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+              rdfs:label ?manufacturerLabel ;
+              sdk:hasNumberOfEmployees ?employees ;
+              sdk:suppliesToIndustry ?industry .
+  ?industry rdfs:label ?industryLabel .
+  {
+    SELECT ?industry (AVG(?e) AS ?avgEmployees)
+    WHERE {
+      ?m a iof-core:Manufacturer ;
+         sdk:suppliesToIndustry ?industry ;
+         sdk:hasNumberOfEmployees ?e .
+    }
+    GROUP BY ?industry
+  }
+  FILTER(?employees > ?avgEmployees)
+}
+ORDER BY ?industryLabel ?manufacturerLabel

@@ -1,0 +1,96 @@
+{
+  "clauses": [
+    {
+      "object_hint": "Small",
+      "connective": "IMPLIED",
+      "type": "spo",
+      "filter": {
+        "op": "lte",
+        "value": 50,
+        "unit": "employees",
+        "min": null,
+        "max": null
+      },
+      "subject_hint": "manufacturers",
+      "relation_hint": "has number of employees"
+    },
+    {
+      "object_hint": "Medium",
+      "connective": "OR",
+      "type": "spo",
+      "filter": {
+        "op": "between",
+        "value": null,
+        "unit": "employees",
+        "min": 51,
+        "max": 250
+      },
+      "subject_hint": "manufacturers",
+      "relation_hint": "has number of employees"
+    },
+    {
+      "object_hint": "Large",
+      "connective": "OR",
+      "type": "spo",
+      "filter": {
+        "op": "gt",
+        "value": 250,
+        "unit": "employees",
+        "min": null,
+        "max": null
+      },
+      "subject_hint": "manufacturers",
+      "relation_hint": "has number of employees"
+    },
+    {
+      "connective": "IMPLIED",
+      "type": "modifier",
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "employee bucket"
+      },
+      "subject_hint": "manufacturers",
+      "relation_hint": "count companies per bucket"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "BABA",
+      "iri": "http://asu.edu/semantics/SUDOKN/BABA"
+    },
+    {
+      "label": "Occupational Health And Safety",
+      "iri": "http://asu.edu/semantics/SUDOKN/OccupationalHealthAndSafety"
+    },
+    {
+      "label": "LEED",
+      "iri": "http://asu.edu/semantics/SUDOKN/LEED"
+    },
+    {
+      "label": "ISO 14000",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO14000"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "ISO 50001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO50001"
+    },
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    },
+    {
+      "label": "OHSAS 18001",
+      "iri": "http://asu.edu/semantics/SUDOKN/OHSAS18001"
+    },
+    {
+      "label": "AWS Welder",
+      "iri": "http://asu.edu/semantics/SUDOKN/AWSWelder"
+    }
+  ]
+}

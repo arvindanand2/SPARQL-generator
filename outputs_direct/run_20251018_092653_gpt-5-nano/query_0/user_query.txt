@@ -1,0 +1,1 @@
+For each state, return the average employees of manufacturers that make any product whose name contains Pipe.

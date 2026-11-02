@@ -1,0 +1,25 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?state ?stateLabel ?companyLabel ?employees WHERE {
+  {
+    SELECT ?state (MAX(?e) AS ?maxEmployees) WHERE {
+      ?c a iof-core:Manufacturer ;
+         sdk:organizationLocatedIn ?s ;
+         sdk:hasNumberOfEmployees ?e .
+      ?s sdk:locatedInCity ?city .
+      ?city sdk:locatedInState ?state .
+    } GROUP BY ?state
+  }
+  ?company a iof-core:Manufacturer ;
+           sdk:organizationLocatedIn ?site ;
+           sdk:hasNumberOfEmployees ?emp .
+  ?site sdk:locatedInCity ?city2 .
+  ?city2 sdk:locatedInState ?state .
+  ?state rdfs:label ?stateLabel .
+  BIND(xsd:integer(?emp) AS ?employees) .
+  FILTER(?employees = ?maxEmployees)
+  ?company rdfs:label ?companyLabel .
+}

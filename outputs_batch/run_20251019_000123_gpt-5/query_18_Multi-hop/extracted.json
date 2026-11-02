@@ -1,0 +1,60 @@
+{
+  "clauses": [
+    {
+      "object_hint": "Casting",
+      "connective": "AND",
+      "type": "spo",
+      "subject_hint": "companies",
+      "relation_hint": "company name term"
+    },
+    {
+      "connective": "IMPLIED",
+      "type": "spo",
+      "subject_hint": "companies",
+      "relation_hint": "has postal code"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Casting",
+      "iri": "http://asu.edu/semantics/SUDOKN/CastingCapability"
+    },
+    {
+      "label": "Die Casting",
+      "iri": "http://asu.edu/semantics/SUDOKN/DieCastingCapability"
+    },
+    {
+      "label": "Spin Casting",
+      "iri": "http://asu.edu/semantics/SUDOKN/CastingCapability"
+    },
+    {
+      "label": "Sand Casting",
+      "iri": "http://asu.edu/semantics/SUDOKN/SandCastingCapability"
+    },
+    {
+      "label": "Gravity Casting",
+      "iri": "http://asu.edu/semantics/SUDOKN/GravityCastingCapability"
+    },
+    {
+      "label": "Ceramic Mold Casting",
+      "iri": "http://asu.edu/semantics/SUDOKN/CeramicMoldCastingCapability"
+    },
+    {
+      "label": "Cast Steel",
+      "iri": "http://asu.edu/semantics/SUDOKN/CastSteelProcessingCapability"
+    },
+    {
+      "label": "Machining Of Casting",
+      "iri": "http://asu.edu/semantics/SUDOKN/MachiningOfCastingCapability"
+    },
+    {
+      "label": "Squeeze Casting",
+      "iri": "http://asu.edu/semantics/SUDOKN/SqueezeCastingCapability"
+    },
+    {
+      "label": "Vacuum Casting",
+      "iri": "http://asu.edu/semantics/SUDOKN/VacuumCastingCapability"
+    }
+  ]
+}

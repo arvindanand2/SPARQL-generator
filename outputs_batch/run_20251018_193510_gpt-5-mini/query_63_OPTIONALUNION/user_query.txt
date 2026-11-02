@@ -1,0 +1,1 @@
+For each manufacturer, list all capability names across process and material in one result.

@@ -1,0 +1,28 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+
+SELECT ?manufacturer ?count
+WHERE {
+  {
+    SELECT ?manufacturer (COUNT(?cert) AS ?count)
+    WHERE {
+      ?manufacturer a iof-core:Manufacturer .
+      OPTIONAL { ?manufacturer sdk:hasCertificate ?cert . }
+    }
+    GROUP BY ?manufacturer
+  }
+  {
+    SELECT (AVG(?c) AS ?avg)
+    WHERE {
+      {
+        SELECT (COUNT(?cert) AS ?c)
+        WHERE {
+          ?m a iof-core:Manufacturer .
+          OPTIONAL { ?m sdk:hasCertificate ?cert . }
+        }
+        GROUP BY ?m
+      }
+    }
+  }
+  FILTER(?count > ?avg)
+}

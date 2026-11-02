@@ -1,0 +1,1 @@
+For each manufacturer, show the ZIP if it exists; otherwise the postal address text; otherwise the company name.

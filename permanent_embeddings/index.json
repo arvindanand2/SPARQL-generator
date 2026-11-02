@@ -1,0 +1,19 @@
+{
+  "versions": [
+    {
+      "version": "20250923_232436",
+      "timestamp": "2025-09-23T23:24:36.112494",
+      "model": "text-embedding-3-large",
+      "total_embeddings": 662,
+      "total_size_mb": 15.52,
+      "sources": [
+        "industries",
+        "material_caps",
+        "certificates",
+        "process_embeddings"
+      ]
+    }
+  ],
+  "last_updated": "2025-09-23T23:24:36.433816",
+  "latest_version": "20250923_232436"
+}

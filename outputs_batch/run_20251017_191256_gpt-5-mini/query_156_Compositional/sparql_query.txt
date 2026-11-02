@@ -1,0 +1,14 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?label (COUNT(DISTINCT ?cap) AS ?capCount)
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  OPTIONAL { ?manufacturer rdfs:label ?label }
+  ?manufacturer (sdk:hasProcessCapability|sdk:hasMaterialCapability) ?cap .
+  FILTER EXISTS { ?manufacturer sdk:hasProcessCapability ?procCap. }
+  FILTER EXISTS { ?manufacturer sdk:hasMaterialCapability ?matCap. }
+}
+GROUP BY ?manufacturer ?label
+HAVING (COUNT(DISTINCT ?cap) = 4)

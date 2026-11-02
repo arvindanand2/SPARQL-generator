@@ -1,0 +1,18 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?manufacturer ?manLabel WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                rdfs:label ?manLabel .
+  {
+    ?manufacturer sdk:hasProcessCapability ?proc .
+    ?proc rdfs:label ?procLabel .
+    FILTER(regex(str(?procLabel), "ing$", "i"))
+  }
+  UNION
+  {
+    ?manufacturer sdk:hasMaterialCapability ?mat .
+  }
+}
+LIMIT 10000

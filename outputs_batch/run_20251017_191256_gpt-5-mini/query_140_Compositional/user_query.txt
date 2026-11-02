@@ -1,0 +1,1 @@
+Which industries have more than 100 suppliers that also make products containing the word Pipe?

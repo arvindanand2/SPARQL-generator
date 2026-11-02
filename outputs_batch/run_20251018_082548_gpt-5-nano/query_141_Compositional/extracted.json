@@ -1,0 +1,62 @@
+{
+  "clauses": [
+    {
+      "relation_hint": "supplies to industry",
+      "connective": "IMPLIED",
+      "subject_hint": "manufacturers",
+      "enum_values": [
+        "Automotive"
+      ],
+      "type": "scope"
+    },
+    {
+      "relation_hint": "has process capability",
+      "connective": "AND",
+      "subject_hint": "manufacturers",
+      "enum_values": [
+        "Machining",
+        "Surface Finishing"
+      ],
+      "type": "spo"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/MachiningCapability"
+    },
+    {
+      "label": "Surface Finishing",
+      "iri": "http://asu.edu/semantics/SUDOKN/SurfaceFinishingCapability"
+    },
+    {
+      "label": "Diamond Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/DiamondMachiningCapability"
+    },
+    {
+      "label": "Specialized Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/SpecializedMachiningCapability"
+    },
+    {
+      "label": "Machining Of Casting",
+      "iri": "http://asu.edu/semantics/SUDOKN/MachiningOfCastingCapability"
+    },
+    {
+      "label": "Five Axis Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/FiveAxisMachiningCapability"
+    },
+    {
+      "label": "Standard Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/MachiningCapability"
+    },
+    {
+      "label": "VDA",
+      "iri": "http://asu.edu/semantics/SUDOKN/VDA"
+    },
+    {
+      "label": "Grinding",
+      "iri": "http://asu.edu/semantics/SUDOKN/GrindingCapability"
+    }
+  ]
+}

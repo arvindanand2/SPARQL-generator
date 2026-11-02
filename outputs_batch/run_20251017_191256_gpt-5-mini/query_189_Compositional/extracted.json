@@ -1,0 +1,98 @@
+{
+  "clauses": [
+    {
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "city"
+      },
+      "type": "scope",
+      "subject_hint": "manufacturers",
+      "connective": "IMPLIED",
+      "relation_hint": "located in",
+      "object_hint": "city"
+    },
+    {
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "city"
+      },
+      "type": "modifier",
+      "subject_hint": "manufacturers",
+      "connective": "IMPLIED"
+    },
+    {
+      "modifier": {
+        "kind": "order",
+        "k": null,
+        "by": null
+      },
+      "type": "modifier",
+      "subject_hint": "manufacturers",
+      "connective": "AND",
+      "filter": {
+        "op": "gte",
+        "value": 4,
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "relation_hint": "number of capabilities"
+    },
+    {
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "city"
+      },
+      "type": "modifier",
+      "subject_hint": "manufacturers",
+      "connective": "IMPLIED",
+      "relation_hint": "average employee count"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "VDA",
+      "iri": "http://asu.edu/semantics/SUDOKN/VDA"
+    },
+    {
+      "label": "IATF",
+      "iri": "http://asu.edu/semantics/SUDOKN/IATF"
+    },
+    {
+      "label": "HACCP",
+      "iri": "http://asu.edu/semantics/SUDOKN/HACCP"
+    },
+    {
+      "label": "QS Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QSQuality"
+    },
+    {
+      "label": "ISO 14001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO14001"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    },
+    {
+      "label": "Five Axis Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/FiveAxisMachiningCapability"
+    }
+  ]
+}

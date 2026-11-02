@@ -1,0 +1,2319 @@
+Label: Abrasive Finishing
+Also called: Finishing
+Hierarchy: Abrasive Finishing
+Category: Abrasive Finishing
+
+Label: Additive Manufacturing
+Also called: 3D Printing
+Hierarchy: Additive Manufacturing
+Category: Additive Manufacturing
+
+Label: Directed Energy Deposition
+Also called: None
+Hierarchy: Additive Manufacturing > Directed Energy Deposition
+Category: Additive Manufacturing
+
+Label: Drop On Demand
+Also called: None
+Hierarchy: Additive Manufacturing > Drop On Demand
+Category: Additive Manufacturing
+
+Label: Fused Deposition Modeling
+Also called: None
+Hierarchy: Additive Manufacturing > Fused Deposition Modeling
+Category: Additive Manufacturing
+
+Label: Fused Filament Fabrication
+Also called: None
+Hierarchy: Additive Manufacturing > Fused Deposition Modeling > Fused Filament Fabrication
+Category: Additive Manufacturing
+
+Label: Laminated Object Manufacturing
+Also called: None
+Hierarchy: Additive Manufacturing > Laminated Object Manufacturing
+Category: Additive Manufacturing
+
+Label: Metal Additive Manufacturing
+Also called: None
+Hierarchy: Additive Manufacturing > Metal Additive Manufacturing
+Category: Additive Manufacturing
+
+Label: Polymer Deposition
+Also called: None
+Hierarchy: Additive Manufacturing > Polymer Deposition
+Category: Additive Manufacturing
+
+Label: Powder Deposition
+Also called: None
+Hierarchy: Additive Manufacturing > Powder Deposition
+Category: Additive Manufacturing
+
+Label: Selective Laser Melting
+Also called: None
+Hierarchy: Additive Manufacturing > Selective Laser Melting
+Category: Additive Manufacturing
+
+Label: Powder Bed Fusion
+Also called: None
+Hierarchy: Additive Manufacturing > Selective Laser Melting > Powder Bed Fusion
+Category: Additive Manufacturing
+
+Label: Selective Laser Sintering
+Also called: None
+Hierarchy: Additive Manufacturing > Selective Laser Sintering
+Category: Additive Manufacturing
+
+Label: Selective Mask Sintering
+Also called: None
+Hierarchy: Additive Manufacturing > Selective Mask Sintering
+Category: Additive Manufacturing
+
+Label: Solid Deposition
+Also called: None
+Hierarchy: Additive Manufacturing > Solid Deposition
+Category: Additive Manufacturing
+
+Label: Stereolithography
+Also called: None
+Hierarchy: Additive Manufacturing > Stereolithography
+Category: Additive Manufacturing
+
+Label: Photopolymerization
+Also called: None
+Hierarchy: Additive Manufacturing > Stereolithography > Photopolymerization
+Category: Additive Manufacturing
+
+Label: Binder Jetting
+Also called: None
+Hierarchy: Additive Manufacturing > Binder Jetting
+Category: Additive Manufacturing
+
+Label: Casting
+Also called: Metal Casting
+Hierarchy: Casting
+Category: Casting
+
+Label: Carbon Dioxide Mold Casting
+Also called: None
+Hierarchy: Casting > Carbon Dioxide Mold Casting
+Category: Casting
+
+Label: Centrifugal Casting
+Also called: None
+Hierarchy: Casting > Centrifugal Casting
+Category: Casting
+
+Label: Ceramic Mold Casting
+Also called: None
+Hierarchy: Casting > Ceramic Mold Casting
+Category: Casting
+
+Label: Continuous Casting
+Also called: None
+Hierarchy: Casting > Continuous Casting
+Category: Casting
+
+Label: Die Casting
+Also called: None
+Hierarchy: Casting > Die Casting
+Category: Casting
+
+Label: Cold Chamber Die Casting
+Also called: None
+Hierarchy: Casting > Die Casting > Cold Chamber Die Casting
+Category: Casting
+
+Label: Hot Chamber Die Casting
+Also called: None
+Hierarchy: Casting > Die Casting > Hot Chamber Die Casting
+Category: Casting
+
+Label: Gravity Casting
+Also called: None
+Hierarchy: Casting > Gravity Casting
+Category: Casting
+
+Label: Permanent Mold Casting
+Also called: None
+Hierarchy: Casting > Gravity Casting > Permanent Mold Casting
+Category: Casting
+
+Label: Investment Casting
+Also called: Lost Wax Casting
+Hierarchy: Casting > Investment Casting
+Category: Casting
+
+Label: Lost Foam Casting
+Also called: None
+Hierarchy: Casting > Lost Foam Casting
+Category: Casting
+
+Label: Plaster Mold Casting
+Also called: None
+Hierarchy: Casting > Plaster Mold Casting
+Category: Casting
+
+Label: Sand Casting
+Also called: No Bake Sand Casting, Sand Mold Casting
+Hierarchy: Casting > Sand Casting
+Category: Casting
+
+Label: Shell Molding
+Also called: Shell Mold Casting
+Hierarchy: Casting > Shell Molding
+Category: Casting
+
+Label: Spin Casting
+Also called: None
+Hierarchy: Casting > Spin Casting
+Category: Casting
+
+Label: Squeeze Casting
+Also called: None
+Hierarchy: Casting > Squeeze Casting
+Category: Casting
+
+Label: Vacuum Casting
+Also called: None
+Hierarchy: Casting > Vacuum Casting
+Category: Casting
+
+Label: Chemical Processing
+Also called: None
+Hierarchy: Chemical Processing
+Category: Chemical Processing
+
+Label: Electrochemical Processes
+Also called: None
+Hierarchy: Electrochemical Processes
+Category: Electrochemical Processes
+
+Label: Fabricating
+Also called: Metal Fabrication
+Hierarchy: Fabricating
+Category: Fabricating
+
+Label: Kitting
+Also called: None
+Hierarchy: Fabricating > Kitting
+Category: Fabricating
+
+Label: Micro Fabrication
+Also called: Microfabricationy
+Hierarchy: Fabricating > Micro Fabrication
+Category: Fabricating
+
+Label: Semiconductor Fabricating
+Also called: None
+Hierarchy: Fabricating > Semiconductor Fabricating
+Category: Fabricating
+
+Label: Wire Harness Assembly
+Also called: None
+Hierarchy: Fabricating > Wire Harness Assembly
+Category: Fabricating
+
+Label: Filament Winding
+Also called: None
+Hierarchy: Filament Winding
+Category: Filament Winding
+
+Label: Forging
+Also called: None
+Hierarchy: Forging
+Category: Forging
+
+Label: Coining
+Also called: None
+Hierarchy: Forging > Coining
+Category: Forging
+
+Label: Cold Forging
+Also called: None
+Hierarchy: Forging > Cold Forging
+Category: Forging
+
+Label: Die Forging
+Also called: None
+Hierarchy: Forging > Die Forging
+Category: Forging
+
+Label: Drop Forging
+Also called: None
+Hierarchy: Forging > Drop Forging
+Category: Forging
+
+Label: Impression Die Forging
+Also called: None
+Hierarchy: Forging > Impression Die Forging
+Category: Forging
+
+Label: Open Die Forging
+Also called: None
+Hierarchy: Forging > Open Die Forging
+Category: Forging
+
+Label: Heading
+Also called: None
+Hierarchy: Forging > Open Die Forging > Heading
+Category: Forging
+
+Label: Press Forging
+Also called: None
+Hierarchy: Forging > Press Forging
+Category: Forging
+
+Label: Roll Forging
+Also called: None
+Hierarchy: Forging > Roll Forging
+Category: Forging
+
+Label: Swedging
+Also called: None
+Hierarchy: Forging > Swedging
+Category: Forging
+
+Label: Upset Forging
+Also called: None
+Hierarchy: Forging > Upset Forging
+Category: Forging
+
+Label: Upsetting
+Also called: None
+Hierarchy: Forging > Upset Forging > Upsetting
+Category: Forging
+
+Label: Forming
+Also called: None
+Hierarchy: Forming
+Category: Forming
+
+Label: Cold Forming
+Also called: None
+Hierarchy: Forming > Cold Forming
+Category: Forming
+
+Label: Drawing
+Also called: None
+Hierarchy: Forming > Drawing
+Category: Forming
+
+Label: Bar Drawing
+Also called: None
+Hierarchy: Forming > Drawing > Bar Drawing
+Category: Forming
+
+Label: Ironing
+Also called: None
+Hierarchy: Forming > Drawing > Bar Drawing > Ironing
+Category: Forming
+
+Label: Cold Drawing
+Also called: None
+Hierarchy: Forming > Drawing > Cold Drawing
+Category: Forming
+
+Label: Deep Drawing
+Also called: None
+Hierarchy: Forming > Drawing > Deep Drawing
+Category: Forming
+
+Label: Tube Drawing
+Also called: None
+Hierarchy: Forming > Drawing > Tube Drawing
+Category: Forming
+
+Label: Wire Drawing
+Also called: None
+Hierarchy: Forming > Drawing > Wire Drawing
+Category: Forming
+
+Label: Electro Forming
+Also called: None
+Hierarchy: Forming > Electro Forming
+Category: Forming
+
+Label: Explosion Forming
+Also called: None
+Hierarchy: Forming > Explosion Forming
+Category: Forming
+
+Label: Extruding
+Also called: Extrusion
+Hierarchy: Forming > Extruding
+Category: Forming
+
+Label: Cold Extrusion
+Also called: None
+Hierarchy: Forming > Extruding > Cold Extrusion
+Category: Forming
+
+Label: Direct Extrusion
+Also called: None
+Hierarchy: Forming > Extruding > Direct Extrusion
+Category: Forming
+
+Label: Hot Extrusion
+Also called: None
+Hierarchy: Forming > Extruding > Hot Extrusion
+Category: Forming
+
+Label: Indirect Extrusion
+Also called: None
+Hierarchy: Forming > Extruding > Indirect Extrusion
+Category: Forming
+
+Label: Flow Forming
+Also called: None
+Hierarchy: Forming > Flow Forming
+Category: Forming
+
+Label: Hot Forming
+Also called: None
+Hierarchy: Forming > Hot Forming
+Category: Forming
+
+Label: Hydroforming
+Also called: None
+Hierarchy: Forming > Hydroforming
+Category: Forming
+
+Label: Knurling
+Also called: None
+Hierarchy: Forming > Knurling
+Category: Forming
+
+Label: Metal Forming
+Also called: Metalforming
+Hierarchy: Forming > Metal Forming
+Category: Forming
+
+Label: Peen Forming
+Also called: None
+Hierarchy: Forming > Peen Forming
+Category: Forming
+
+Label: Powder Metal Forming
+Also called: None
+Hierarchy: Forming > Powder Metal Forming
+Category: Forming
+
+Label: Isostatic Pressing
+Also called: None
+Hierarchy: Forming > Powder Metal Forming > Isostatic Pressing
+Category: Forming
+
+Label: Cold Isostatics Pressing
+Also called: None
+Hierarchy: Forming > Powder Metal Forming > Isostatic Pressing > Cold Isostatics Pressing
+Category: Forming
+
+Label: Powder Compacting
+Also called: None
+Hierarchy: Forming > Powder Metal Forming > Powder Compacting
+Category: Forming
+
+Label: Powder Metallurgy
+Also called: None
+Hierarchy: Forming > Powder Metal Forming > Powder Metallurgy
+Category: Forming
+
+Label: Spark Plasma Sintering
+Also called: None
+Hierarchy: Forming > Powder Metal Forming > Spark Plasma Sintering
+Category: Forming
+
+Label: Press Forming
+Also called: None
+Hierarchy: Forming > Press Forming
+Category: Forming
+
+Label: Roll Die Engraving
+Also called: None
+Hierarchy: Forming > Roll Die Engraving
+Category: Forming
+
+Label: Roll Forming
+Also called: None
+Hierarchy: Forming > Roll Forming
+Category: Forming
+
+Label: Roller Forming
+Also called: None
+Hierarchy: Forming > Roller Forming
+Category: Forming
+
+Label: Rolling
+Also called: None
+Hierarchy: Forming > Rolling
+Category: Forming
+
+Label: Cold Rolling
+Also called: None
+Hierarchy: Forming > Rolling > Cold Rolling
+Category: Forming
+
+Label: Flat Rolling
+Also called: None
+Hierarchy: Forming > Rolling > Flat Rolling
+Category: Forming
+
+Label: Hot Rolling
+Also called: None
+Hierarchy: Forming > Rolling > Hot Rolling
+Category: Forming
+
+Label: Plate Rolling
+Also called: None
+Hierarchy: Forming > Rolling > Plate Rolling
+Category: Forming
+
+Label: Ring Rolling
+Also called: None
+Hierarchy: Forming > Rolling > Ring Rolling
+Category: Forming
+
+Label: Shape Rolling
+Also called: None
+Hierarchy: Forming > Rolling > Shape Rolling
+Category: Forming
+
+Label: Sheet Rolling
+Also called: None
+Hierarchy: Forming > Rolling > Sheet Rolling
+Category: Forming
+
+Label: Sheet Metal Rolling
+Also called: None
+Hierarchy: Forming > Rolling > Sheet Rolling > Sheet Metal Rolling
+Category: Forming
+
+Label: Thread Rolling
+Also called: None
+Hierarchy: Forming > Rolling > Thread Rolling
+Category: Forming
+
+Label: Shear Forming
+Also called: None
+Hierarchy: Forming > Shear Forming
+Category: Forming
+
+Label: Sheet Forming
+Also called: None
+Hierarchy: Forming > Sheet Forming
+Category: Forming
+
+Label: Spin Forming
+Also called: None
+Hierarchy: Forming > Spin Forming
+Category: Forming
+
+Label: Superplastic Forming
+Also called: Super Plastic Forming
+Hierarchy: Forming > Superplastic Forming
+Category: Forming
+
+Label: Swagging
+Also called: None
+Hierarchy: Forming > Swagging
+Category: Forming
+
+Label: Thermoforming
+Also called: None
+Hierarchy: Forming > Thermoforming
+Category: Forming
+
+Label: Roll Bonding
+Also called: None
+Hierarchy: Forming > Thermoforming > Roll Bonding
+Category: Forming
+
+Label: Vacuum Thermoforming
+Also called: None
+Hierarchy: Forming > Thermoforming > Vacuum Thermoforming
+Category: Forming
+
+Label: Tubing
+Also called: None
+Hierarchy: Forming > Tubing
+Category: Forming
+
+Label: Custom Tubing
+Also called: None
+Hierarchy: Forming > Tubing > Custom Tubing
+Category: Forming
+
+Label: Cut to Length Tubing
+Also called: None
+Hierarchy: Forming > Tubing > Cut to Length Tubing
+Category: Forming
+
+Label: Fractional Tubing
+Also called: None
+Hierarchy: Forming > Tubing > Fractional Tubing
+Category: Forming
+
+Label: Hypodermic Tubing
+Also called: None
+Hierarchy: Forming > Tubing > Hypodermic Tubing
+Category: Forming
+
+Label: Metric Tubing
+Also called: None
+Hierarchy: Forming > Tubing > Metric Tubing
+Category: Forming
+
+Label: Square Tubing
+Also called: Rectangular Tubing
+Hierarchy: Forming > Tubing > Square Tubing
+Category: Forming
+
+Label: Vacuum Forming
+Also called: None
+Hierarchy: Forming > Vacuum Forming
+Category: Forming
+
+Label: Vacuum Pressing
+Also called: None
+Hierarchy: Forming > Vacuum Pressing
+Category: Forming
+
+Label: Cold Vacuum Pressing
+Also called: None
+Hierarchy: Forming > Vacuum Pressing > Cold Vacuum Pressing
+Category: Forming
+
+Label: Hot Vacuum Pressing
+Also called: None
+Hierarchy: Forming > Vacuum Pressing > Hot Vacuum Pressing
+Category: Forming
+
+Label: Hot Isostatic
+Also called: None
+Hierarchy: Forming > Vacuum Pressing > Hot Vacuum Pressing > Hot Isostatic
+Category: Forming
+
+Label: Wire Forming
+Also called: None
+Hierarchy: Forming > Wire Forming
+Category: Forming
+
+Label: Heat Treating
+Also called: None
+Hierarchy: Heat Treating
+Category: Heat Treating
+
+Label: Annealing
+Also called: In-Process Annealing, Intermediate Annealing, Subcritical Annealing
+Hierarchy: Heat Treating > Annealing
+Category: Heat Treating
+
+Label: Recovery Annealing
+Also called: None
+Hierarchy: Heat Treating > Annealing > Recovery Annealing
+Category: Heat Treating
+
+Label: Stress Relieving
+Also called: None
+Hierarchy: Heat Treating > Annealing > Recovery Annealing > Stress Relieving
+Category: Heat Treating
+
+Label: Tempering
+Also called: None
+Hierarchy: Heat Treating > Annealing > Recovery Annealing > Tempering
+Category: Heat Treating
+
+Label: Recrystallization
+Also called: None
+Hierarchy: Heat Treating > Annealing > Recrystallization
+Category: Heat Treating
+
+Label: Full Annealing
+Also called: None
+Hierarchy: Heat Treating > Annealing > Recrystallization > Full Annealing
+Category: Heat Treating
+
+Label: Process Annealing
+Also called: None
+Hierarchy: Heat Treating > Annealing > Recrystallization > Process Annealing
+Category: Heat Treating
+
+Label: Cold Working
+Also called: Cold Work
+Hierarchy: Heat Treating > Annealing > Recrystallization > Process Annealing > Cold Working
+Category: Heat Treating
+
+Label: Hot Working
+Also called: None
+Hierarchy: Heat Treating > Annealing > Recrystallization > Process Annealing > Hot Working
+Category: Heat Treating
+
+Label: Short Cycle Annealing
+Also called: None
+Hierarchy: Heat Treating > Annealing > Recrystallization > Short Cycle Annealing
+Category: Heat Treating
+
+Label: Cold Treatment
+Also called: None
+Hierarchy: Heat Treating > Cold Treatment
+Category: Heat Treating
+
+Label: Hardening
+Also called: None
+Hierarchy: Heat Treating > Hardening
+Category: Heat Treating
+
+Label: Quench Hardening
+Also called: None
+Hierarchy: Heat Treating > Hardening > Quench Hardening
+Category: Heat Treating
+
+Label: Quenching
+Also called: None
+Hierarchy: Heat Treating > Hardening > Quenching
+Category: Heat Treating
+
+Label: Surface Hardening
+Also called: Case Hardening, Face Hardening
+Hierarchy: Heat Treating > Hardening > Surface Hardening
+Category: Heat Treating
+
+Label: Chromizing
+Also called: None
+Hierarchy: Heat Treating > Hardening > Surface Hardening > Chromizing
+Category: Heat Treating
+
+Label: Cyaniding
+Also called: None
+Hierarchy: Heat Treating > Hardening > Surface Hardening > Cyaniding
+Category: Heat Treating
+
+Label: Diffusion Hardening
+Also called: None
+Hierarchy: Heat Treating > Hardening > Surface Hardening > Diffusion Hardening
+Category: Heat Treating
+
+Label: Carbonitriding
+Also called: None
+Hierarchy: Heat Treating > Hardening > Surface Hardening > Diffusion Hardening > Carbonitriding
+Category: Heat Treating
+
+Label: Carburizing
+Also called: Carburising
+Hierarchy: Heat Treating > Hardening > Surface Hardening > Diffusion Hardening > Carburizing
+Category: Heat Treating
+
+Label: Nitriding
+Also called: None
+Hierarchy: Heat Treating > Hardening > Surface Hardening > Diffusion Hardening > Nitriding
+Category: Heat Treating
+
+Label: Flame Hardening
+Also called: None
+Hierarchy: Heat Treating > Hardening > Surface Hardening > Flame Hardening
+Category: Heat Treating
+
+Label: Oxyacetylene Cutting
+Also called: None
+Hierarchy: Heat Treating > Hardening > Surface Hardening > Flame Hardening > Oxyacetylene Cutting
+Category: Heat Treating
+
+Label: Induction Hardening
+Also called: None
+Hierarchy: Heat Treating > Hardening > Surface Hardening > Induction Hardening
+Category: Heat Treating
+
+Label: Vacuum Hardening
+Also called: None
+Hierarchy: Heat Treating > Hardening > Surface Hardening > Vacuum Hardening
+Category: Heat Treating
+
+Label: Through Hardening
+Also called: None
+Hierarchy: Heat Treating > Hardening > Through Hardening
+Category: Heat Treating
+
+Label: Age Quench Hardening
+Also called: None
+Hierarchy: Heat Treating > Hardening > Through Hardening > Age Quench Hardening
+Category: Heat Treating
+
+Label: Air Quench Hardening
+Also called: None
+Hierarchy: Heat Treating > Hardening > Through Hardening > Air Quench Hardening
+Category: Heat Treating
+
+Label: Austempering
+Also called: None
+Hierarchy: Heat Treating > Hardening > Through Hardening > Austempering
+Category: Heat Treating
+
+Label: Martempering
+Also called: None
+Hierarchy: Heat Treating > Hardening > Through Hardening > Martempering
+Category: Heat Treating
+
+Label: Oil Quench Hardening
+Also called: None
+Hierarchy: Heat Treating > Hardening > Through Hardening > Oil Quench Hardening
+Category: Heat Treating
+
+Label: Water Quench Hardening
+Also called: None
+Hierarchy: Heat Treating > Hardening > Through Hardening > Water Quench Hardening
+Category: Heat Treating
+
+Label: Sintering
+Also called: None
+Hierarchy: Heat Treating > Sintering
+Category: Heat Treating
+
+Label: Induction Heading
+Also called: None
+Hierarchy: Induction Heading
+Category: Induction Heading
+
+Label: Joining
+Also called: Assembly
+Hierarchy: Joining
+Category: Joining
+
+Label: Adhesive Bonding
+Also called: None
+Hierarchy: Joining > Adhesive Bonding
+Category: Joining
+
+Label: Lamination
+Also called: None
+Hierarchy: Joining > Adhesive Bonding > Lamination
+Category: Joining
+
+Label: Fusion Joining
+Also called: None
+Hierarchy: Joining > Fusion Joining
+Category: Joining
+
+Label: Heat Sealing
+Also called: None
+Hierarchy: Joining > Heat Sealing
+Category: Joining
+
+Label: Mechanical Joining
+Also called: Mechanical Assembly, Mechanical Fastening
+Hierarchy: Joining > Mechanical Joining
+Category: Joining
+
+Label: Mechanical Welding
+Also called: None
+Hierarchy: Joining > Mechanical Joining > Mechanical Welding
+Category: Joining
+
+Label: Explosive Welding
+Also called: None
+Hierarchy: Joining > Mechanical Joining > Mechanical Welding > Explosive Welding
+Category: Joining
+
+Label: Friction Welding
+Also called: None
+Hierarchy: Joining > Mechanical Joining > Mechanical Welding > Friction Welding
+Category: Joining
+
+Label: Friction Stri Welding
+Also called: None
+Hierarchy: Joining > Mechanical Joining > Mechanical Welding > Friction Welding > Friction Stri Welding
+Category: Joining
+
+Label: Pressure Welding
+Also called: None
+Hierarchy: Joining > Mechanical Joining > Mechanical Welding > Pressure Welding
+Category: Joining
+
+Label: Ultrasonic Welding
+Also called: None
+Hierarchy: Joining > Mechanical Joining > Mechanical Welding > Ultrasonic Welding
+Category: Joining
+
+Label: Press Fitting
+Also called: None
+Hierarchy: Joining > Mechanical Joining > Press Fitting
+Category: Joining
+
+Label: Shrink Fitting
+Also called: None
+Hierarchy: Joining > Mechanical Joining > Press Fitting > Shrink Fitting
+Category: Joining
+
+Label: Riveting
+Also called: Rivet Joining
+Hierarchy: Joining > Mechanical Joining > Riveting
+Category: Joining
+
+Label: Metal Joining
+Also called: None
+Hierarchy: Joining > Metal Joining
+Category: Joining
+
+Label: Thermal Joining
+Also called: None
+Hierarchy: Joining > Thermal Joining
+Category: Joining
+
+Label: Brazing
+Also called: None
+Hierarchy: Joining > Thermal Joining > Brazing
+Category: Joining
+
+Label: Dip Brazing
+Also called: None
+Hierarchy: Joining > Thermal Joining > Brazing > Dip Brazing
+Category: Joining
+
+Label: Clinching
+Also called: None
+Hierarchy: Joining > Thermal Joining > Brazing > Dip Brazing > Clinching
+Category: Joining
+
+Label: Furnace Brazing
+Also called: None
+Hierarchy: Joining > Thermal Joining > Brazing > Furnace Brazing
+Category: Joining
+
+Label: Induction Brazing
+Also called: None
+Hierarchy: Joining > Thermal Joining > Brazing > Induction Brazing
+Category: Joining
+
+Label: Infrared Brazing
+Also called: None
+Hierarchy: Joining > Thermal Joining > Brazing > Infrared Brazing
+Category: Joining
+
+Label: Laser Brazing
+Also called: Brazing Laser Welding
+Hierarchy: Joining > Thermal Joining > Brazing > Laser Brazing
+Category: Joining
+
+Label: Resistance Brazing
+Also called: None
+Hierarchy: Joining > Thermal Joining > Brazing > Resistance Brazing
+Category: Joining
+
+Label: Torch Brazing
+Also called: None
+Hierarchy: Joining > Thermal Joining > Brazing > Torch Brazing
+Category: Joining
+
+Label: Vacuum Brazing
+Also called: None
+Hierarchy: Joining > Thermal Joining > Brazing > Vacuum Brazing
+Category: Joining
+
+Label: Soldering
+Also called: None
+Hierarchy: Joining > Thermal Joining > Soldering
+Category: Joining
+
+Label: Dip Soldering
+Also called: None
+Hierarchy: Joining > Thermal Joining > Soldering > Dip Soldering
+Category: Joining
+
+Label: Induction Soldering
+Also called: None
+Hierarchy: Joining > Thermal Joining > Soldering > Induction Soldering
+Category: Joining
+
+Label: Infrared Soldering
+Also called: None
+Hierarchy: Joining > Thermal Joining > Soldering > Infrared Soldering
+Category: Joining
+
+Label: Iron Soldering
+Also called: None
+Hierarchy: Joining > Thermal Joining > Soldering > Iron Soldering
+Category: Joining
+
+Label: Resistance Soldering
+Also called: None
+Hierarchy: Joining > Thermal Joining > Soldering > Resistance Soldering
+Category: Joining
+
+Label: Torch Soldering
+Also called: None
+Hierarchy: Joining > Thermal Joining > Soldering > Torch Soldering
+Category: Joining
+
+Label: Ultrasonic Soldering
+Also called: None
+Hierarchy: Joining > Thermal Joining > Soldering > Ultrasonic Soldering
+Category: Joining
+
+Label: Wave Soldering
+Also called: None
+Hierarchy: Joining > Thermal Joining > Soldering > Wave Soldering
+Category: Joining
+
+Label: Thermal Welding
+Also called: None
+Hierarchy: Joining > Thermal Joining > Thermal Welding
+Category: Joining
+
+Label: Braze Welding
+Also called: Welding Brazing
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Braze Welding
+Category: Joining
+
+Label: Carbon Arc Brazing
+Also called: None
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Braze Welding > Carbon Arc Brazing
+Category: Joining
+
+Label: Gas Brazing
+Also called: None
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Braze Welding > Gas Brazing
+Category: Joining
+
+Label: Diffusion Bonding
+Also called: None
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Diffusion Bonding
+Category: Joining
+
+Label: Electric Arc Welding
+Also called: None
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electric Arc Welding
+Category: Joining
+
+Label: Carbon Arc Welding
+Also called: None
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electric Arc Welding > Carbon Arc Welding
+Category: Joining
+
+Label: Flux-Cored Arc Welding
+Also called: FCAW Welding
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electric Arc Welding > Flux-Cored Arc Welding
+Category: Joining
+
+Label: Gas Metal Arc Welding
+Also called: GMAW
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electric Arc Welding > Gas Metal Arc Welding
+Category: Joining
+
+Label: MIG Welding
+Also called: None
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electric Arc Welding > Gas Metal Arc Welding > MIG Welding
+Category: Joining
+
+Label: Pulsed Gas Metal Arc Welding
+Also called: GMAW-P
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electric Arc Welding > Gas Metal Arc Welding > Pulsed Gas Metal Arc Welding
+Category: Joining
+
+Label: Gas Tungsten Arc Welding
+Also called: GTAW
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electric Arc Welding > Gas Tungsten Arc Welding
+Category: Joining
+
+Label: Pulsed Gas Tungsten Arc Welding
+Also called: GTAW-P
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electric Arc Welding > Gas Tungsten Arc Welding > Pulsed Gas Tungsten Arc Welding
+Category: Joining
+
+Label: TIG Welding
+Also called: TIG, TIG Weld
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electric Arc Welding > Gas Tungsten Arc Welding > TIG Welding
+Category: Joining
+
+Label: Shielded Metal Arc Welding
+Also called: Stick Welding
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electric Arc Welding > Shielded Metal Arc Welding
+Category: Joining
+
+Label: Stud Welding
+Also called: Arc Stud Welding
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electric Arc Welding > Stud Welding
+Category: Joining
+
+Label: Submerged Arc Welding
+Also called: None
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electric Arc Welding > Submerged Arc Welding
+Category: Joining
+
+Label: Electrical Resistance Welding
+Also called: None
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electrical Resistance Welding
+Category: Joining
+
+Label: Butt Welding
+Also called: None
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electrical Resistance Welding > Butt Welding
+Category: Joining
+
+Label: Electro Slag Welding
+Also called: ESW Welding
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electrical Resistance Welding > Electro Slag Welding
+Category: Joining
+
+Label: Percussion Welding
+Also called: None
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electrical Resistance Welding > Percussion Welding
+Category: Joining
+
+Label: Projection Welding
+Also called: None
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electrical Resistance Welding > Projection Welding
+Category: Joining
+
+Label: Resistance Welding
+Also called: None
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electrical Resistance Welding > Resistance Welding
+Category: Joining
+
+Label: Seam Welding
+Also called: None
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electrical Resistance Welding > Seam Welding
+Category: Joining
+
+Label: Metal Clinching
+Also called: None
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electrical Resistance Welding > Seam Welding > Metal Clinching
+Category: Joining
+
+Label: Spot Welding
+Also called: None
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electrical Resistance Welding > Spot Welding
+Category: Joining
+
+Label: Resistance Spot Welding
+Also called: None
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electrical Resistance Welding > Spot Welding > Resistance Spot Welding
+Category: Joining
+
+Label: Fusion Welding
+Also called: None
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Fusion Welding
+Category: Joining
+
+Label: Gas Welding
+Also called: None
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Gas Welding
+Category: Joining
+
+Label: Atomic Hydrogen Welding
+Also called: None
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Gas Welding > Atomic Hydrogen Welding
+Category: Joining
+
+Label: Combustible Gas Welding
+Also called: None
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Gas Welding > Combustible Gas Welding
+Category: Joining
+
+Label: High Energy Beam Welding
+Also called: None
+Hierarchy: Joining > Thermal Joining > Thermal Welding > High Energy Beam Welding
+Category: Joining
+
+Label: Electron Beam Welding
+Also called: None
+Hierarchy: Joining > Thermal Joining > Thermal Welding > High Energy Beam Welding > Electron Beam Welding
+Category: Joining
+
+Label: Laser Beam Welding
+Also called: None
+Hierarchy: Joining > Thermal Joining > Thermal Welding > High Energy Beam Welding > Laser Beam Welding
+Category: Joining
+
+Label: Plasma Arc Welding
+Also called: None
+Hierarchy: Joining > Thermal Joining > Thermal Welding > High Energy Beam Welding > Plasma Arc Welding
+Category: Joining
+
+Label: Machining
+Also called: Material Removal Process, Subtractive Process
+Hierarchy: Machining
+Category: Machining
+
+Label: Abrasive Machining
+Also called: None
+Hierarchy: Machining > Abrasive Machining
+Category: Machining
+
+Label: Buffing
+Also called: None
+Hierarchy: Machining > Abrasive Machining > Buffing
+Category: Machining
+
+Label: Grinding
+Also called: None
+Hierarchy: Machining > Abrasive Machining > Grinding
+Category: Machining
+
+Label: Centerless Grinding
+Also called: None
+Hierarchy: Machining > Abrasive Machining > Grinding > Centerless Grinding
+Category: Machining
+
+Label: Creep Feed Grinding
+Also called: None
+Hierarchy: Machining > Abrasive Machining > Grinding > Creep Feed Grinding
+Category: Machining
+
+Label: Curvic Grinding
+Also called: None
+Hierarchy: Machining > Abrasive Machining > Grinding > Curvic Grinding
+Category: Machining
+
+Label: Cylindrical Grinding
+Also called: None
+Hierarchy: Machining > Abrasive Machining > Grinding > Cylindrical Grinding
+Category: Machining
+
+Label: CNC Cylindrical Grinding
+Also called: None
+Hierarchy: Machining > Abrasive Machining > Grinding > Cylindrical Grinding > CNC Cylindrical Grinding
+Category: Machining
+
+Label: Electrochemical Grinding
+Also called: None
+Hierarchy: Machining > Abrasive Machining > Grinding > Electrochemical Grinding
+Category: Machining
+
+Label: ECG Tube Cutting
+Also called: None
+Hierarchy: Machining > Abrasive Machining > Grinding > Electrochemical Grinding > ECG Tube Cutting
+Category: Machining
+
+Label: ID-OD Grinding
+Also called: ID/OD Grinding
+Hierarchy: Machining > Abrasive Machining > Grinding > ID-OD Grinding
+Category: Machining
+
+Label: Plunge Grinding
+Also called: Infeed Grinding
+Hierarchy: Machining > Abrasive Machining > Grinding > Plunge Grinding
+Category: Machining
+
+Label: Honing
+Also called: None
+Hierarchy: Machining > Abrasive Machining > Honing
+Category: Machining
+
+Label: Lapping
+Also called: None
+Hierarchy: Machining > Abrasive Machining > Lapping
+Category: Machining
+
+Label: CNC Machining
+Also called: None
+Hierarchy: Machining > CNC Machining
+Category: Machining
+
+Label: CNC Routing
+Also called: None
+Hierarchy: Machining > CNC Machining > CNC Routing
+Category: Machining
+
+Label: Five Axis Machining
+Also called: 5 Axis Machining, 5-Axis Machining
+Hierarchy: Machining > CNC Machining > Five Axis Machining
+Category: Machining
+
+Label: Seven Axis Machining
+Also called: 7 Axis Machining, 7-Axis Machining
+Hierarchy: Machining > CNC Machining > Seven Axis Machining
+Category: Machining
+
+Label: Chemical Machining
+Also called: Chemical Milling
+Hierarchy: Machining > Chemical Machining
+Category: Machining
+
+Label: Chemical Engraving
+Also called: None
+Hierarchy: Machining > Chemical Machining > Chemical Engraving
+Category: Machining
+
+Label: Etching
+Also called: None
+Hierarchy: Machining > Chemical Machining > Etching
+Category: Machining
+
+Label: Chemical Etching
+Also called: None
+Hierarchy: Machining > Chemical Machining > Etching > Chemical Etching
+Category: Machining
+
+Label: Photo Etching
+Also called: None
+Hierarchy: Machining > Chemical Machining > Etching > Photo Etching
+Category: Machining
+
+Label: Stretching
+Also called: None
+Hierarchy: Machining > Chemical Machining > Etching > Stretching
+Category: Machining
+
+Label: Photochemical Machining
+Also called: None
+Hierarchy: Machining > Chemical Machining > Photochemical Machining
+Category: Machining
+
+Label: Deburring
+Also called: Debur
+Hierarchy: Machining > Deburring
+Category: Machining
+
+Label: Thermal Deburring
+Also called: None
+Hierarchy: Machining > Deburring > Thermal Deburring
+Category: Machining
+
+Label: Vibratory Deburring
+Also called: None
+Hierarchy: Machining > Deburring > Vibratory Deburring
+Category: Machining
+
+Label: Electro Chemical Machining
+Also called: None
+Hierarchy: Machining > Electro Chemical Machining
+Category: Machining
+
+Label: Engraving
+Also called: None
+Hierarchy: Machining > Engraving
+Category: Machining
+
+Label: Laser Engraving
+Also called: None
+Hierarchy: Machining > Engraving > Laser Engraving
+Category: Machining
+
+Label: Erosion Machining
+Also called: None
+Hierarchy: Machining > Erosion Machining
+Category: Machining
+
+Label: Waterjet Cutting
+Also called: Water Jet Cutting, Water Jet Machining
+Hierarchy: Machining > Erosion Machining > Waterjet Cutting
+Category: Machining
+
+Label: Laser Machining
+Also called: None
+Hierarchy: Machining > Laser Machining
+Category: Machining
+
+Label: Multipoint Cutting
+Also called: None
+Hierarchy: Machining > Multipoint Cutting
+Category: Machining
+
+Label: Broaching
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Broaching
+Category: Machining
+
+Label: Rotary Broaching
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Broaching > Rotary Broaching
+Category: Machining
+
+Label: Gear Cutting
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Gear Cutting
+Category: Machining
+
+Label: Gear Hobbing
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Gear Hobbing
+Category: Machining
+
+Label: Hobbing
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Hobbing
+Category: Machining
+
+Label: Hole Making
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Hole Making
+Category: Machining
+
+Label: Counter Boring
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Hole Making > Counter Boring
+Category: Machining
+
+Label: Counter Sinking
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Hole Making > Counter Sinking
+Category: Machining
+
+Label: Drilling
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Hole Making > Drilling
+Category: Machining
+
+Label: Deep Hole Drilling
+Also called: Deep Hole Machining
+Hierarchy: Machining > Multipoint Cutting > Hole Making > Drilling > Deep Hole Drilling
+Category: Machining
+
+Label: Gun Drilling
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Hole Making > Drilling > Deep Hole Drilling > Gun Drilling
+Category: Machining
+
+Label: Trepanning
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Hole Making > Drilling > Deep Hole Drilling > Trepanning
+Category: Machining
+
+Label: Friction Drilling
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Hole Making > Drilling > Friction Drilling
+Category: Machining
+
+Label: Micro Drilling
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Hole Making > Drilling > Micro Drilling
+Category: Machining
+
+Label: Small Hole Drilling
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Hole Making > Drilling > Small Hole Drilling
+Category: Machining
+
+Label: Perforating
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Hole Making > Perforating
+Category: Machining
+
+Label: Reaming
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Hole Making > Reaming
+Category: Machining
+
+Label: Tapping
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Hole Making > Tapping
+Category: Machining
+
+Label: Milling
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Milling
+Category: Machining
+
+Label: CNC Milling
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Milling > CNC Milling
+Category: Machining
+
+Label: Gear Gashing
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Milling > Gear Gashing
+Category: Machining
+
+Label: Horizontal Milling
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Milling > Horizontal Milling
+Category: Machining
+
+Label: Slab Milling
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Milling > Horizontal Milling > Slab Milling
+Category: Machining
+
+Label: Thread Milling
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Milling > Thread Milling
+Category: Machining
+
+Label: Vertical Milling
+Also called: Vertical Mill
+Hierarchy: Machining > Multipoint Cutting > Milling > Vertical Milling
+Category: Machining
+
+Label: End Milling
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Milling > Vertical Milling > End Milling
+Category: Machining
+
+Label: Face Milling
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Milling > Vertical Milling > Face Milling
+Category: Machining
+
+Label: Sawing
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Sawing
+Category: Machining
+
+Label: Bevelling
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Sawing > Bevelling
+Category: Machining
+
+Label: Nonconventional Machining
+Also called: None
+Hierarchy: Machining > Nonconventional Machining
+Category: Machining
+
+Label: Plastic Machining
+Also called: None
+Hierarchy: Machining > Plastic Machining
+Category: Machining
+
+Label: Polycrystalline Diamond Machining
+Also called: PCD Machining
+Hierarchy: Machining > Polycrystalline Diamond Machining
+Category: Machining
+
+Label: Single-Point Cutting
+Also called: None
+Hierarchy: Machining > Single-Point Cutting
+Category: Machining
+
+Label: Diamond Machining
+Also called: Polycrystaline Diamond Machining
+Hierarchy: Machining > Single-Point Cutting > Diamond Machining
+Category: Machining
+
+Label: Oil Grooving
+Also called: None
+Hierarchy: Machining > Single-Point Cutting > Oil Grooving
+Category: Machining
+
+Label: Planing
+Also called: None
+Hierarchy: Machining > Single-Point Cutting > Planing
+Category: Machining
+
+Label: Skiving
+Also called: None
+Hierarchy: Machining > Single-Point Cutting > Planing > Skiving
+Category: Machining
+
+Label: Shaping
+Also called: None
+Hierarchy: Machining > Single-Point Cutting > Shaping
+Category: Machining
+
+Label: Turning
+Also called: Lathe Work
+Hierarchy: Machining > Single-Point Cutting > Turning
+Category: Machining
+
+Label: Boring
+Also called: None
+Hierarchy: Machining > Single-Point Cutting > Turning > Boring
+Category: Machining
+
+Label: Horizontal Boring
+Also called: None
+Hierarchy: Machining > Single-Point Cutting > Turning > Boring > Horizontal Boring
+Category: Machining
+
+Label: Jig Boring
+Also called: None
+Hierarchy: Machining > Single-Point Cutting > Turning > Boring > Jig Boring
+Category: Machining
+
+Label: Vertical Boring
+Also called: None
+Hierarchy: Machining > Single-Point Cutting > Turning > Boring > Vertical Boring
+Category: Machining
+
+Label: CNC Turning
+Also called: Large CNC turning
+Hierarchy: Machining > Single-Point Cutting > Turning > CNC Turning
+Category: Machining
+
+Label: Live Tooling
+Also called: Live-Tooling
+Hierarchy: Machining > Single-Point Cutting > Turning > Live Tooling
+Category: Machining
+
+Label: Specialized Machining
+Also called: None
+Hierarchy: Machining > Specialized Machining
+Category: Machining
+
+Label: Carbide Machining
+Also called: None
+Hierarchy: Machining > Specialized Machining > Carbide Machining
+Category: Machining
+
+Label: Machining Of Casting
+Also called: None
+Hierarchy: Machining > Specialized Machining > Machining Of Casting
+Category: Machining
+
+Label: Thin Wall Machining
+Also called: None
+Hierarchy: Machining > Specialized Machining > Thin Wall Machining
+Category: Machining
+
+Label: Standard Machining
+Also called: None
+Hierarchy: Machining > Standard Machining
+Category: Machining
+
+Label: Swiss Machining
+Also called: Screw Machining, Swiss CNC Machining, Swiss Style Machining, Swiss Turning, Swiss Type Turning, Swiss-Style Machining, Swiss-Type Turning
+Hierarchy: Machining > Swiss Machining
+Category: Machining
+
+Label: Thermal Subtraction
+Also called: None
+Hierarchy: Machining > Thermal Subtraction
+Category: Machining
+
+Label: EDM
+Also called: Electric Discharge Machining
+Hierarchy: Machining > Thermal Subtraction > EDM
+Category: Machining
+
+Label: Flanging EDM
+Also called: None
+Hierarchy: Machining > Thermal Subtraction > EDM > Flanging EDM
+Category: Machining
+
+Label: Hole Drilling EDM
+Also called: None
+Hierarchy: Machining > Thermal Subtraction > EDM > Hole Drilling EDM
+Category: Machining
+
+Label: Die Sinking
+Also called: None
+Hierarchy: Machining > Thermal Subtraction > EDM > Hole Drilling EDM > Die Sinking
+Category: Machining
+
+Label: Ram EDM
+Also called: None
+Hierarchy: Machining > Thermal Subtraction > EDM > Ram EDM
+Category: Machining
+
+Label: Sinker EDM
+Also called: None
+Hierarchy: Machining > Thermal Subtraction > EDM > Sinker EDM
+Category: Machining
+
+Label: Wire EDM
+Also called: Wire EDM Cutting, Wire Electrical Discharge Machining, Wire-EDM
+Hierarchy: Machining > Thermal Subtraction > EDM > Wire EDM
+Category: Machining
+
+Label: High Energy Beam Machining
+Also called: None
+Hierarchy: Machining > Thermal Subtraction > High Energy Beam Machining
+Category: Machining
+
+Label: Electron Beam Machining
+Also called: None
+Hierarchy: Machining > Thermal Subtraction > High Energy Beam Machining > Electron Beam Machining
+Category: Machining
+
+Label: Laser Cutting
+Also called: Laser Beam Cutting
+Hierarchy: Machining > Thermal Subtraction > High Energy Beam Machining > Laser Cutting
+Category: Machining
+
+Label: CNC Laser Cutting
+Also called: None
+Hierarchy: Machining > Thermal Subtraction > High Energy Beam Machining > Laser Cutting > CNC Laser Cutting
+Category: Machining
+
+Label: Laser Etching
+Also called: None
+Hierarchy: Machining > Thermal Subtraction > High Energy Beam Machining > Laser Etching
+Category: Machining
+
+Label: Torch Cutting
+Also called: None
+Hierarchy: Machining > Thermal Subtraction > Torch Cutting
+Category: Machining
+
+Label: Oxy-Fuel Cutting
+Also called: Flame Cutting, Gas Cutting, Oxy-Acetylene Cutting, Oxyfuel Gas Cutting
+Hierarchy: Machining > Thermal Subtraction > Torch Cutting > Oxy-Fuel Cutting
+Category: Machining
+
+Label: Plasma Cutting
+Also called: Plasma Arc Cutting
+Hierarchy: Machining > Thermal Subtraction > Torch Cutting > Plasma Cutting
+Category: Machining
+
+Label: Threading
+Also called: Thread Cutting
+Hierarchy: Machining > Threading
+Category: Machining
+
+Label: Ultrasonic Machining
+Also called: None
+Hierarchy: Machining > Ultrasonic Machining
+Category: Machining
+
+Label: Unconventional Machining
+Also called: Nonconventional Machining
+Hierarchy: Machining > Unconventional Machining
+Category: Machining
+
+Label: Zero Stock Machining
+Also called: Negative Stock Machining, Net Shape Machining, ZSM
+Hierarchy: Machining > Zero Stock Machining
+Category: Machining
+
+Label: Molding
+Also called: Moulding
+Hierarchy: Molding
+Category: Molding
+
+Label: Blow Molding
+Also called: None
+Hierarchy: Molding > Blow Molding
+Category: Molding
+
+Label: Extrusion Blow Molding
+Also called: None
+Hierarchy: Molding > Blow Molding > Extrusion Blow Molding
+Category: Molding
+
+Label: Injection Blow Molding
+Also called: None
+Hierarchy: Molding > Blow Molding > Injection Blow Molding
+Category: Molding
+
+Label: Stretch Blow Molding
+Also called: None
+Hierarchy: Molding > Blow Molding > Stretch Blow Molding
+Category: Molding
+
+Label: Compression Molding
+Also called: CRTM, Compression Resin Transfer Molding
+Hierarchy: Molding > Compression Molding
+Category: Molding
+
+Label: Injection Molding
+Also called: Plastic Molding
+Hierarchy: Molding > Injection Molding
+Category: Molding
+
+Label: Metal Injection Molding
+Also called: None
+Hierarchy: Molding > Injection Molding > Metal Injection Molding
+Category: Molding
+
+Label: Reaction Injection Molding
+Also called: None
+Hierarchy: Molding > Injection Molding > Reaction Injection Molding
+Category: Molding
+
+Label: Rubber Injection Molding
+Also called: None
+Hierarchy: Molding > Injection Molding > Rubber Injection Molding
+Category: Molding
+
+Label: Rotational Molding
+Also called: None
+Hierarchy: Molding > Rotational Molding
+Category: Molding
+
+Label: Rotomolding
+Also called: None
+Hierarchy: Molding > Rotomolding
+Category: Molding
+
+Label: Transfer Molding
+Also called: None
+Hierarchy: Molding > Transfer Molding
+Category: Molding
+
+Label: Resin Transfer Molding
+Also called: None
+Hierarchy: Molding > Transfer Molding > Resin Transfer Molding
+Category: Molding
+
+Label: Pultrusion
+Also called: Pultrusion Process
+Hierarchy: Molding > Transfer Molding > Resin Transfer Molding > Pultrusion
+Category: Molding
+
+Label: Vacuum Assisted Resin Transfer Molding
+Also called: None
+Hierarchy: Molding > Transfer Molding > Vacuum Assisted Resin Transfer Molding
+Category: Molding
+
+Label: Vacuum Molding
+Also called: None
+Hierarchy: Molding > Vacuum Molding
+Category: Molding
+
+Label: Packing
+Also called: None
+Hierarchy: Packing
+Category: Packing
+
+Label: Labeling
+Also called: None
+Hierarchy: Packing > Labeling
+Category: Packing
+
+Label: Vacuum Packaging
+Also called: Vacuum Packing
+Hierarchy: Packing > Vacuum Packaging
+Category: Packing
+
+Label: Sheet Metal Processing
+Also called: Precision sheet metal fabrication, Sheet Metal, Sheet Metal Fabrication, Sheet Metal Work, Stamping
+Hierarchy: Sheet Metal Processing
+Category: Sheet Metal Processing
+
+Label: Bending
+Also called: None
+Hierarchy: Sheet Metal Processing > Bending
+Category: Sheet Metal Processing
+
+Label: Pipe Bending
+Also called: None
+Hierarchy: Sheet Metal Processing > Bending > Pipe Bending
+Category: Sheet Metal Processing
+
+Label: Sheet Bending
+Also called: None
+Hierarchy: Sheet Metal Processing > Bending > Sheet Bending
+Category: Sheet Metal Processing
+
+Label: Tube Bending
+Also called: None
+Hierarchy: Sheet Metal Processing > Bending > Tube Bending
+Category: Sheet Metal Processing
+
+Label: Wire Bending
+Also called: None
+Hierarchy: Sheet Metal Processing > Bending > Wire Bending
+Category: Sheet Metal Processing
+
+Label: Bulge Forming
+Also called: Bulging, Bulging Process
+Hierarchy: Sheet Metal Processing > Bulge Forming
+Category: Sheet Metal Processing
+
+Label: Corrugation
+Also called: Corrugating
+Hierarchy: Sheet Metal Processing > Corrugation
+Category: Sheet Metal Processing
+
+Label: Embossing
+Also called: Sheet Metal Embossing
+Hierarchy: Sheet Metal Processing > Embossing
+Category: Sheet Metal Processing
+
+Label: Hemming
+Also called: None
+Hierarchy: Sheet Metal Processing > Hemming
+Category: Sheet Metal Processing
+
+Label: Hot Stamping
+Also called: Stamping
+Hierarchy: Sheet Metal Processing > Hot Stamping
+Category: Sheet Metal Processing
+
+Label: Notching
+Also called: None
+Hierarchy: Sheet Metal Processing > Notching
+Category: Sheet Metal Processing
+
+Label: Punching
+Also called: None
+Hierarchy: Sheet Metal Processing > Punching
+Category: Sheet Metal Processing
+
+Label: Piercing
+Also called: None
+Hierarchy: Sheet Metal Processing > Punching > Piercing
+Category: Sheet Metal Processing
+
+Label: Shearing
+Also called: None
+Hierarchy: Sheet Metal Processing > Shearing
+Category: Sheet Metal Processing
+
+Label: Slitting
+Also called: None
+Hierarchy: Sheet Metal Processing > Slitting
+Category: Sheet Metal Processing
+
+Label: Spinning
+Also called: Metal Spinning
+Hierarchy: Sheet Metal Processing > Spinning
+Category: Sheet Metal Processing
+
+Label: Hot Spinning
+Also called: None
+Hierarchy: Sheet Metal Processing > Spinning > Hot Spinning
+Category: Sheet Metal Processing
+
+Label: Shear Spinning
+Also called: None
+Hierarchy: Sheet Metal Processing > Spinning > Shear Spinning
+Category: Sheet Metal Processing
+
+Label: Tufting
+Also called: None
+Hierarchy: Sheet Metal Processing > Spinning > Tufting
+Category: Sheet Metal Processing
+
+Label: Stamping
+Also called: Metal Stamping
+Hierarchy: Sheet Metal Processing > Stamping
+Category: Sheet Metal Processing
+
+Label: Blanking
+Also called: None
+Hierarchy: Sheet Metal Processing > Stamping > Blanking
+Category: Sheet Metal Processing
+
+Label: Fine Blanking
+Also called: None
+Hierarchy: Sheet Metal Processing > Stamping > Fine Blanking
+Category: Sheet Metal Processing
+
+Label: Press Work
+Also called: None
+Hierarchy: Sheet Metal Processing > Stamping > Press Work
+Category: Sheet Metal Processing
+
+Label: Stretch Forming
+Also called: None
+Hierarchy: Sheet Metal Processing > Stretch Forming
+Category: Sheet Metal Processing
+
+Label: Singeing
+Also called: None
+Hierarchy: Singeing
+Category: Singeing
+
+Label: Surface Finishing
+Also called: Finishing, Surface Treatment
+Hierarchy: Surface Finishing
+Category: Surface Finishing
+
+Label: Coating
+Also called: None
+Hierarchy: Surface Finishing > Coating
+Category: Surface Finishing
+
+Label: Babbitting
+Also called: None
+Hierarchy: Surface Finishing > Coating > Babbitting
+Category: Surface Finishing
+
+Label: Black Oxide Coating
+Also called: Black Oxide, Blackening, Blacking
+Hierarchy: Surface Finishing > Coating > Black Oxide Coating
+Category: Surface Finishing
+
+Label: Chemical Coating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Chemical Coating
+Category: Surface Finishing
+
+Label: Anodizing
+Also called: Anodization
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Anodizing
+Category: Surface Finishing
+
+Label: Decorative Anodizing
+Also called: None
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Anodizing > Decorative Anodizing
+Category: Surface Finishing
+
+Label: Iridite
+Also called: None
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Anodizing > Iridite
+Category: Surface Finishing
+
+Label: Chemical Conversion Coating
+Also called: Chem Filming, Conversion Coating
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Chemical Conversion Coating
+Category: Surface Finishing
+
+Label: Alkaline Oxide Conversion Coating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Chemical Conversion Coating > Alkaline Oxide Conversion Coating
+Category: Surface Finishing
+
+Label: Chromate Conversion Coating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Chemical Conversion Coating > Chromate Conversion Coating
+Category: Surface Finishing
+
+Label: Fused Nitrate Conversion Coating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Chemical Conversion Coating > Fused Nitrate Conversion Coating
+Category: Surface Finishing
+
+Label: Phosphate Conversion Coating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Chemical Conversion Coating > Phosphate Conversion Coating
+Category: Surface Finishing
+
+Label: Phosphating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Chemical Conversion Coating > Phosphate Conversion Coating > Phosphating
+Category: Surface Finishing
+
+Label: Plating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Plating
+Category: Surface Finishing
+
+Label: Electroplating
+Also called: Electro-Plating, Electroplating, Electropolish
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Plating > Electroplating
+Category: Surface Finishing
+
+Label: Cadmium Plating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Plating > Electroplating > Cadmium Plating
+Category: Surface Finishing
+
+Label: Chrome Plating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Plating > Electroplating > Chrome Plating
+Category: Surface Finishing
+
+Label: Copper Plating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Plating > Electroplating > Copper Plating
+Category: Surface Finishing
+
+Label: Electro Deposition
+Also called: None
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Plating > Electroplating > Copper Plating > Electro Deposition
+Category: Surface Finishing
+
+Label: Electroless Nickel Plating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Plating > Electroplating > Electroless Nickel Plating
+Category: Surface Finishing
+
+Label: Gold Plating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Plating > Electroplating > Gold Plating
+Category: Surface Finishing
+
+Label: Nickel Plating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Plating > Electroplating > Nickel Plating
+Category: Surface Finishing
+
+Label: Silver Plating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Plating > Electroplating > Silver Plating
+Category: Surface Finishing
+
+Label: Tin Plating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Plating > Electroplating > Tin Plating
+Category: Surface Finishing
+
+Label: Zinc Plating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Plating > Electroplating > Zinc Plating
+Category: Surface Finishing
+
+Label: Cladding
+Also called: None
+Hierarchy: Surface Finishing > Coating > Cladding
+Category: Surface Finishing
+
+Label: Electrocoating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Electrocoating
+Category: Surface Finishing
+
+Label: Electrodeposited Coating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Electrodeposited Coating
+Category: Surface Finishing
+
+Label: Galvanizing
+Also called: Galvanization
+Hierarchy: Surface Finishing > Coating > Galvanizing
+Category: Surface Finishing
+
+Label: Mechanical Coating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Mechanical Coating
+Category: Surface Finishing
+
+Label: Powder Coating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Mechanical Coating > Powder Coating
+Category: Surface Finishing
+
+Label: Metal Coating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Metal Coating
+Category: Surface Finishing
+
+Label: Passivation
+Also called: Passivating
+Hierarchy: Surface Finishing > Coating > Passivation
+Category: Surface Finishing
+
+Label: Phosphate Coating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Phosphate Coating
+Category: Surface Finishing
+
+Label: Press Forming
+Also called: None
+Hierarchy: Surface Finishing > Coating > Press Forming
+Category: Surface Finishing
+
+Label: Painting
+Also called: None
+Hierarchy: Surface Finishing > Coating > Painting
+Category: Surface Finishing
+
+Label: Wet Painting
+Also called: None
+Hierarchy: Surface Finishing > Coating > Painting > Wet Painting
+Category: Surface Finishing
+
+Label: Roll Coating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Roll Coating
+Category: Surface Finishing
+
+Label: Surface Coating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Surface Coating
+Category: Surface Finishing
+
+Label: Thermal Coating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Thermal Coating
+Category: Surface Finishing
+
+Label: Thermal Spray Coating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Thermal Coating > Thermal Spray Coating
+Category: Surface Finishing
+
+Label: Flame Spraying
+Also called: None
+Hierarchy: Surface Finishing > Coating > Thermal Coating > Thermal Spray Coating > Flame Spraying
+Category: Surface Finishing
+
+Label: Thermal Spraying
+Also called: None
+Hierarchy: Surface Finishing > Coating > Thermal Coating > Thermal Spray Coating > Flame Spraying > Thermal Spraying
+Category: Surface Finishing
+
+Label: Plasma Spraying
+Also called: None
+Hierarchy: Surface Finishing > Coating > Thermal Coating > Thermal Spray Coating > Plasma Spraying
+Category: Surface Finishing
+
+Label: Vaporized Metal Coating
+Also called: Physical Vapor Deposition, Vacuum Metalizing, Vapor Metalizing
+Hierarchy: Surface Finishing > Coating > Thermal Coating > Vaporized Metal Coating
+Category: Surface Finishing
+
+Label: Chemical Vapor Deposition
+Also called: None
+Hierarchy: Surface Finishing > Coating > Thermal Coating > Vaporized Metal Coating > Chemical Vapor Deposition
+Category: Surface Finishing
+
+Label: Plasma Enhanced Chemical Vapor Deposition
+Also called: None
+Hierarchy: Surface Finishing > Coating > Thermal Coating > Vaporized Metal Coating > Chemical Vapor Deposition > Plasma Enhanced Chemical Vapor Deposition
+Category: Surface Finishing
+
+Label: Physical Vapor Deposition
+Also called: None
+Hierarchy: Surface Finishing > Coating > Thermal Coating > Vaporized Metal Coating > Physical Vapor Deposition
+Category: Surface Finishing
+
+Label: Vapor Deposition
+Also called: None
+Hierarchy: Surface Finishing > Coating > Thermal Coating > Vaporized Metal Coating > Vapor Deposition
+Category: Surface Finishing
+
+Label: MicroFinishing
+Also called: Micro Finishing
+Hierarchy: Surface Finishing > MicroFinishing
+Category: Surface Finishing
+
+Label: Surface Preparation
+Also called: Surface Cleaning
+Hierarchy: Surface Finishing > Surface Preparation
+Category: Surface Finishing
+
+Label: Abrasive Cleaning
+Also called: None
+Hierarchy: Surface Finishing > Surface Preparation > Abrasive Cleaning
+Category: Surface Finishing
+
+Label: Bead Blasting
+Also called: None
+Hierarchy: Surface Finishing > Surface Preparation > Abrasive Cleaning > Bead Blasting
+Category: Surface Finishing
+
+Label: Chemical Cleaning
+Also called: None
+Hierarchy: Surface Finishing > Surface Preparation > Abrasive Cleaning > Chemical Cleaning
+Category: Surface Finishing
+
+Label: Surface Blasting
+Also called: None
+Hierarchy: Surface Finishing > Surface Preparation > Abrasive Cleaning > Surface Blasting
+Category: Surface Finishing
+
+Label: Tumbling
+Also called: None
+Hierarchy: Surface Finishing > Surface Preparation > Abrasive Cleaning > Tumbling
+Category: Surface Finishing
+
+Label: Barrel Finishing
+Also called: None
+Hierarchy: Surface Finishing > Surface Preparation > Abrasive Cleaning > Tumbling > Barrel Finishing
+Category: Surface Finishing
+
+Label: Vibratory Tumbling
+Also called: None
+Hierarchy: Surface Finishing > Surface Preparation > Abrasive Cleaning > Tumbling > Vibratory Tumbling
+Category: Surface Finishing
+
+Label: Belt Sanding
+Also called: Sanding
+Hierarchy: Surface Finishing > Surface Preparation > Belt Sanding
+Category: Surface Finishing
+
+Label: Harperizing
+Also called: None
+Hierarchy: Surface Finishing > Surface Preparation > Harperizing
+Category: Surface Finishing
+
+Label: Polishing
+Also called: None
+Hierarchy: Surface Finishing > Surface Preparation > Polishing
+Category: Surface Finishing
+
+Label: Chemical Polishing
+Also called: None
+Hierarchy: Surface Finishing > Surface Preparation > Polishing > Chemical Polishing
+Category: Surface Finishing
+
+Label: Pickling
+Also called: None
+Hierarchy: Surface Finishing > Surface Preparation > Polishing > Chemical Polishing > Pickling
+Category: Surface Finishing
+
+Label: Electropolishing
+Also called: Electrochemical Polishing, Electrolytic Polishing
+Hierarchy: Surface Finishing > Surface Preparation > Polishing > Electropolishing
+Category: Surface Finishing
+
+Label: Mechanical Polishing
+Also called: None
+Hierarchy: Surface Finishing > Surface Preparation > Polishing > Mechanical Polishing
+Category: Surface Finishing
+
+Label: Planarization
+Also called: None
+Hierarchy: Surface Finishing > Surface Preparation > Polishing > Planarization
+Category: Surface Finishing
+
+Label: Chemical Mechanical Polishing
+Also called: None
+Hierarchy: Surface Finishing > Surface Preparation > Polishing > Planarization > Chemical Mechanical Polishing
+Category: Surface Finishing
+
+Label: Sand Blasting
+Also called: Abrasive Blasting, Sandblasting
+Hierarchy: Surface Finishing > Surface Preparation > Sand Blasting
+Category: Surface Finishing
+
+Label: Grit Blasting
+Also called: None
+Hierarchy: Surface Finishing > Surface Preparation > Sand Blasting > Grit Blasting
+Category: Surface Finishing
+
+Label: Shot Peening
+Also called: None
+Hierarchy: Surface Finishing > Surface Preparation > Shot Peening
+Category: Surface Finishing
+
+Label: Peening
+Also called: None
+Hierarchy: Surface Finishing > Surface Preparation > Shot Peening > Peening
+Category: Surface Finishing
+
+Label: Ultrasonic Cleaning
+Also called: None
+Hierarchy: Surface Finishing > Surface Preparation > Ultrasonic Cleaning
+Category: Surface Finishing
+
+Label: Tumble Finishing
+Also called: Finishing
+Hierarchy: Surface Finishing > Tumble Finishing
+Category: Surface Finishing
+
+Label: Vibratory Finishing
+Also called: None
+Hierarchy: Surface Finishing > Vibratory Finishing
+Category: Surface Finishing
+
+Label: Textile Process
+Also called: None
+Hierarchy: Textile Process
+Category: Textile Process
+
+Label: Crochet
+Also called: None
+Hierarchy: Textile Process > Crochet
+Category: Textile Process
+
+Label: Dyeing
+Also called: None
+Hierarchy: Textile Process > Dyeing
+Category: Textile Process
+
+Label: Knitting
+Also called: None
+Hierarchy: Textile Process > Knitting
+Category: Textile Process
+
+Label: Weaving
+Also called: None
+Hierarchy: Textile Process > Weaving
+Category: Textile Process
+
+Label: Tool Making
+Also called: None
+Hierarchy: Tool Making
+Category: Tool Making
+
+Label: Die Making
+Also called: None
+Hierarchy: Tool Making > Die Making
+Category: Tool Making
+
+Label: Mold Making
+Also called: None
+Hierarchy: Tool Making > Mold Making
+Category: Tool Making
+
+Label: Coremaking
+Also called: None
+Hierarchy: Tool Making > Mold Making > Coremaking
+Category: Tool Making
+
+Label: Wood Working
+Also called: None
+Hierarchy: Wood Working
+Category: Wood Working

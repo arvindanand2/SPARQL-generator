@@ -1,0 +1,1 @@
+Which manufacturers have a business description longer than 20 characters?

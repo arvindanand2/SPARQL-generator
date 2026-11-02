@@ -1,0 +1,65 @@
+{
+  "clauses": [
+    {
+      "type": "spo",
+      "subject_hint": "companies",
+      "connective": "AND",
+      "filter": {
+        "op": "eq",
+        "value": "contains",
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "relation_hint": "company name term",
+      "object_hint": "Surface Finish"
+    },
+    {
+      "type": "spo",
+      "subject_hint": "sites",
+      "connective": "AND",
+      "relation_hint": "linked to company"
+    },
+    {
+      "type": "spo",
+      "subject_hint": "sites",
+      "connective": "AND",
+      "relation_hint": "has latitude",
+      "object_hint": "latitude"
+    },
+    {
+      "type": "spo",
+      "subject_hint": "sites",
+      "connective": "AND",
+      "relation_hint": "has longitude",
+      "object_hint": "longitude"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Surface Finishing",
+      "iri": "http://asu.edu/semantics/SUDOKN/SurfaceFinishingCapability"
+    },
+    {
+      "label": "Diamond Machining",
+      "iri": "http://asu.edu/semantics/SUDOKN/DiamondMachiningCapability"
+    },
+    {
+      "label": "Lapping",
+      "iri": "http://asu.edu/semantics/SUDOKN/LappingCapability"
+    },
+    {
+      "label": "Surface Preparation",
+      "iri": "http://asu.edu/semantics/SUDOKN/SurfacePreparationCapability"
+    },
+    {
+      "label": "Chemical Coating",
+      "iri": "http://asu.edu/semantics/SUDOKN/ChemicalCoatingCapability"
+    },
+    {
+      "label": "Surface Coating",
+      "iri": "http://asu.edu/semantics/SUDOKN/CoatingCapability"
+    }
+  ]
+}

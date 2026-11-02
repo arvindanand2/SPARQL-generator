@@ -1,0 +1,1 @@
+Which manufacturers located in Arizona have a ZIP code other than "85001" and a latitude greater than 33.4?

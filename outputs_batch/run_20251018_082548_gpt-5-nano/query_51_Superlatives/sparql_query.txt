@@ -1,0 +1,18 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?manuf ?manufLabel ?employees
+WHERE {
+  ?manuf a iof-core:Manufacturer ;
+         rdfs:label ?manufLabel ;
+         sdk:organizationLocatedIn ?site ;
+         sdk:hasNumberOfEmployees ?employees .
+  ?site sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  ?state rdfs:label ?stateLabel .
+  FILTER(CONTAINS(LCASE(?stateLabel), "ohio")) .
+}
+ORDER BY ASC(xsd:integer(?employees))
+LIMIT 1

@@ -1,0 +1,1 @@
+Which city is the company whose name contains "Robotics" located in (via organization ? site ? city)?

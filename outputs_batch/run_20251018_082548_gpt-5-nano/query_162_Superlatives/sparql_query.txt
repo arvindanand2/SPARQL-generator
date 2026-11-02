@@ -1,0 +1,15 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?code ?text (COUNT(DISTINCT ?org) AS ?numManufacturers)
+WHERE {
+  ?org a iof-core:Manufacturer .
+  ?org sdk:hasPrimaryNAICSClassifier ?naicsInst .
+  ?naicsInst a sdk:NAICS332996.0 .
+  ?naicsInst sdk:hasNAICSCodeValue ?code .
+  ?naicsInst sdk:hasNAICSTextValue ?text .
+}
+GROUP BY ?code ?text
+ORDER BY DESC(?numManufacturers)
+LIMIT 1

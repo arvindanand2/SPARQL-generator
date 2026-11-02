@@ -1,0 +1,16 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer ?manufacturerName ?capability ?capabilityName
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+                rdfs:label ?manufacturerName .
+  {
+    ?manufacturer sdk:hasProcessCapability ?capability .
+  } UNION {
+    ?manufacturer sdk:hasMaterialCapability ?capability .
+  }
+  ?capability rdfs:label ?capabilityName .
+}
+ORDER BY ?manufacturerName ?capabilityName

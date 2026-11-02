@@ -1,0 +1,5 @@
+Run 1 failed. Compressed error:
+Response:
+Response:
+b'MALFORMED QUERY: Encountered " "lang" "LANG "" at line 11, column 17.\r\nWas expecting one of:\r\n    <VAR1> ...\r\n    <VAR2> ...\r\n    '
+All retries failed.

@@ -1,0 +1,3 @@
+manufacturer	manufacturerLabelEncoded	cityLabelEncoded	stateLabelEncoded	distance
+[results redacted: SUDOKN instance data not redistributed]
+Rows (counted at redaction): 1411

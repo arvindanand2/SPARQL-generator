@@ -1,0 +1,9 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?cap ?name
+WHERE {
+  ?org sdk:hasProcessCapability ?cap .
+  ?cap rdfs:label ?name .
+  FILTER(CONTAINS(LCASE(STR(?name)), "machining"))
+}

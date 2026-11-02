@@ -1,0 +1,1 @@
+Which manufacturers supply to industries whose names match the regex "Energy"?

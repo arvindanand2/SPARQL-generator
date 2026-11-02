@@ -1,0 +1,10 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+
+SELECT ?manufacturer (COUNT(DISTINCT ?industry) AS ?industryCount)
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  ?manufacturer sdk:suppliesToIndustry ?industry .
+}
+GROUP BY ?manufacturer
+HAVING (COUNT(DISTINCT ?industry) = 2)

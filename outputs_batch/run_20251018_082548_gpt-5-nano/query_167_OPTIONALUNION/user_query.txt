@@ -1,0 +1,1 @@
+Show manufacturers that either have a process capability ending in "ing" or have any material capability.

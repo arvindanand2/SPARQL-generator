@@ -1,0 +1,16 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?manufacturer
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  ?manufacturer sdk:hasNumberOfEmployees ?employees .
+  FILTER ( ?employees > 50 )
+  ?manufacturer sdk:hasProcessCapability ?cap .
+  FILTER ( ?cap = <http://asu.edu/semantics/SUDOKN/AdditiveManufacturingCapability> )
+  ?manufacturer sdk:organizationLocatedIn ?site .
+  ?site sdk:locatedInCity ?city .
+  ?city rdfs:label ?cityLabel .
+  FILTER ( CONTAINS(LCASE(?cityLabel), "arizona") )
+}

@@ -1,0 +1,1 @@
+What is the latitude for the site whose city name contains "Springfield"?

@@ -1,0 +1,4160 @@
+Label: Additive Manufacturing
+Also called: 3D Printing, Rapid Prototyping
+Hierarchy: Additive Manufacturing
+Category: Additive Manufacturing
+Definition: A process that builds objects layer by layer from digital models by depositing or solidifying material, enabling complex geometries and rapid prototyping.
+
+Label: Binder Jetting
+Also called: Powder Bed and Inkjet 3D Printing
+Hierarchy: Additive Manufacturing > Binder Jetting
+Category: Additive Manufacturing
+Definition: A 3D printing process where a liquid binding agent is selectively deposited onto a powder bed to bond particles together and form solid parts.
+
+Label: Directed Energy Deposition
+Also called: DED
+Hierarchy: Additive Manufacturing > Directed Energy Deposition
+Category: Additive Manufacturing
+Definition: A process that uses focused thermal energy (laser, electron beam, or plasma arc) to melt and deposit material simultaneously for near-net-shape parts or repairs.
+
+Label: Electron Beam Additive Manufacturing
+Also called: EBAM, Electron Beam Freeform Fabrication
+Hierarchy: Additive Manufacturing > Directed Energy Deposition > Electron Beam Additive Manufacturing
+Category: Additive Manufacturing
+Definition: A DED process that uses an electron beam to melt metal wire or powder feedstock in a vacuum to build dense parts.
+
+Label: Laser Metal Deposition
+Also called: LMD
+Hierarchy: Additive Manufacturing > Directed Energy Deposition > Laser Metal Deposition
+Category: Additive Manufacturing
+Definition: A laser-based process that melts metal powder or wire as it is deposited, enabling part buildup, coating, or repair.
+
+Label: Wire Arc Additive Manufacturing
+Also called: WAAM
+Hierarchy: Additive Manufacturing > Directed Energy Deposition > Wire Arc Additive Manufacturing
+Category: Additive Manufacturing
+Definition: An additive process that uses an electric arc as the heat source to melt wire feedstock, producing large metal components cost-effectively.
+
+Label: Material Extrusion
+Also called: Fused Deposition Modeling, FDM, Fused Filament Fabrication, FFF
+Hierarchy: Additive Manufacturing > Material Extrusion
+Category: Additive Manufacturing
+Definition: A process where thermoplastic filament is heated and extruded through a nozzle, depositing layers to form parts.
+
+Label: Material Jetting
+Also called: Inkjet 3D Printing
+Hierarchy: Additive Manufacturing > Material Jetting
+Category: Additive Manufacturing
+Definition: A process that jets droplets of photopolymer or wax-like materials, curing them layer by layer with UV light to build precise parts.
+
+Label: Metal Extrusion
+Also called: None
+Hierarchy: Additive Manufacturing > Metal Extrusion
+Category: Additive Manufacturing
+Definition: An additive technique where metal paste or filament is extruded and later sintered to form dense metallic components.
+
+Label: Powder Bed Fusion
+Also called: PBF
+Hierarchy: Additive Manufacturing > Powder Bed Fusion
+Category: Additive Manufacturing
+Definition: A process where a heat source (laser or electron beam) selectively fuses regions of a powder bed layer by layer to build parts.
+
+Label: Direct Metal Laser Sintering
+Also called: DMLS
+Hierarchy: Additive Manufacturing > Powder Bed Fusion > Direct Metal Laser Sintering
+Category: Additive Manufacturing
+Definition: A laser-based PBF process that sinters fine metal powder to produce strong, complex components without molds or tooling.
+
+Label: Electron Beam Melting
+Also called: EBM
+Hierarchy: Additive Manufacturing > Powder Bed Fusion > Electron Beam Melting
+Category: Additive Manufacturing
+Definition: A PBF process using an electron beam in a vacuum to fully melt metal powder into dense, high-performance parts.
+
+Label: Selective Heat Sintering
+Also called: SHS
+Hierarchy: Additive Manufacturing > Powder Bed Fusion > Selective Heat Sintering
+Category: Additive Manufacturing
+Definition: A thermal PBF process that fuses polymer powders using a heated print head rather than a laser.
+
+Label: Selective Laser Melting
+Also called: SLM
+Hierarchy: Additive Manufacturing > Powder Bed Fusion > Selective Laser Melting
+Category: Additive Manufacturing
+Definition: A laser-based PBF process that fully melts metal powders to create near-wrought-quality dense parts.
+
+Label: Selective Laser Sintering
+Also called: SLS
+Hierarchy: Additive Manufacturing > Powder Bed Fusion > Selective Laser Sintering
+Category: Additive Manufacturing
+Definition: A PBF process that sinters polymer or composite powders using a laser, producing functional and durable parts.
+
+Label: Sheet Lamination
+Also called: Laminated Object Manufacturing, LOM
+Hierarchy: Additive Manufacturing > Sheet Lamination
+Category: Additive Manufacturing
+Definition: A process that bonds and cuts thin sheets of material layer by layer to form parts, often using paper, polymer, or metal sheets.
+
+Label: Stereolithography
+Also called: SLA
+Hierarchy: Additive Manufacturing > Stereolithography
+Category: Additive Manufacturing
+Definition: A vat photopolymerization process that uses a UV laser to cure liquid resin layer by layer into solid parts.
+
+Label: Vat Photopolymerization
+Also called: None
+Hierarchy: Additive Manufacturing > Vat Photopolymerization
+Category: Additive Manufacturing
+Definition: A family of processes where liquid photopolymer in a vat is selectively cured by light to form solid layers.
+
+Label: Casting
+Also called: Metal Casting
+Hierarchy: Casting
+Category: Casting
+Definition: A manufacturing process where liquid material (metal, plastic, or ceramic) is poured into a mold and solidified into the desired shape.
+
+Label: Centrifugal Casting
+Also called: None
+Hierarchy: Casting > Centrifugal Casting
+Category: Casting
+Definition: A casting method where molten metal is poured into a rapidly rotating mold, using centrifugal force to distribute the metal and reduce impurities.
+
+Label: Ceramic Mold Casting
+Also called: None
+Hierarchy: Casting > Ceramic Mold Casting
+Category: Casting
+Definition: A precision casting process that uses a ceramic mold made from a fired slurry, producing smooth, heat-resistant molds for complex shapes.
+
+Label: Die Casting
+Also called: None
+Hierarchy: Casting > Die Casting
+Category: Casting
+Definition: A high-pressure casting process where molten metal is forced into a hardened steel mold cavity, enabling mass production of detailed parts.
+
+Label: High Pressure Die Casting
+Also called: HPDC
+Hierarchy: Casting > Die Casting > High Pressure Die Casting
+Category: Casting
+Definition: A die casting method that injects molten metal into the mold at very high pressure, producing precise and dense parts quickly.
+
+Label: Low Pressure Die Casting
+Also called: LPDC
+Hierarchy: Casting > Die Casting > Low Pressure Die Casting
+Category: Casting
+Definition: A die casting method where molten metal is pushed into the mold cavity by low-pressure gas, improving quality and reducing porosity.
+
+Label: Permanent Mold Casting
+Also called: Gravity Die Casting
+Hierarchy: Casting > Die Casting > Permanent Mold Casting
+Category: Casting
+Definition: A process where molten metal is poured by gravity into reusable metal molds, producing consistent and durable castings.
+
+Label: Investment Casting
+Also called: Lost Wax Casting
+Hierarchy: Casting > Investment Casting
+Category: Casting
+Definition: A precision casting method where a wax pattern is coated in ceramic, then melted away to leave a mold cavity for metal pouring.
+
+Label: Lost Foam Casting
+Also called: None
+Hierarchy: Casting > Lost Foam Casting
+Category: Casting
+Definition: A casting process where a foam pattern is embedded in sand and vaporized by molten metal, leaving a cavity that forms the final part.
+
+Label: Permanent Mold
+Also called: None
+Hierarchy: Casting > Permanent Mold
+Category: Casting
+Definition: A reusable metal mold used in casting processes, designed to withstand repeated exposure to molten metal.
+
+Label: Sand Casting
+Also called: None
+Hierarchy: Casting > Sand Casting
+Category: Casting
+Definition: A versatile casting process that uses sand molds to shape molten metal, suitable for large, simple, or custom parts.
+
+Label: Shell Mold Casting
+Also called: None
+Hierarchy: Casting > Sand Casting > Shell Mold Casting
+Category: Casting
+Definition: A precision casting process where a thin, hardened shell of sand and resin forms the mold, improving surface finish and accuracy.
+
+Label: Semi-Solid Metal Casting
+Also called: None
+Hierarchy: Casting > Semi-Solid Metal Casting
+Category: Casting
+Definition: A process that uses partially solidified metal slurry to fill molds, reducing shrinkage and improving mechanical properties.
+
+Label: Squeeze Casting
+Also called: None
+Hierarchy: Casting > Squeeze Casting
+Category: Casting
+Definition: A hybrid of casting and forging where molten metal is poured into a mold and then compressed to eliminate porosity.
+
+Label: Forging
+Also called: None
+Hierarchy: Forging
+Category: Forging
+Definition: A process that shapes metal using compressive forces, typically with hammers or presses, to improve strength and grain structure.
+
+Label: Cold Forging
+Also called: Cold Forming
+Hierarchy: Forging > Cold Forging
+Category: Forging
+Definition: A forging process performed at room temperature, producing precise parts with improved strength and surface finish.
+
+Label: Impression Die Forging
+Also called: Closed Die Forging
+Hierarchy: Forging > Impression Die Forging
+Category: Forging
+Definition: A forging method where metal is pressed into a closed die cavity, taking the shape of the die for complex geometries.
+
+Label: Open Die Forging
+Also called: Smith Forging
+Hierarchy: Forging > Open Die Forging
+Category: Forging
+Definition: A forging method where metal is deformed between flat or simple dies, used for large, simple shapes.
+
+Label: Roll Forging
+Also called: None
+Hierarchy: Forging > Roll Forging
+Category: Forging
+Definition: A forging technique where metal is passed through rotating rolls with shaped grooves to reduce thickness and form profiles.
+
+Label: Rotary Forging
+Also called: Radial Forging
+Hierarchy: Forging > Rotary Forging
+Category: Forging
+Definition: A forging process where rotating dies apply pressure to deform a workpiece incrementally, producing precise shapes with less force.
+
+Label: Upset Forging
+Also called: Upsetting
+Hierarchy: Forging > Upset Forging
+Category: Forging
+Definition: A forging method that increases the cross-section of a material by compressing its length,commonly used for fasteners and bolts.
+
+Label: Closed Die Forging
+Also called: Impression Die Forging
+Hierarchy: Forging > Closed Die Forging
+Category: Forging
+Definition: A forging method where heated metal is pressed between shaped dies that enclose the material, producing accurate and complex parts.
+
+Label: Extrusion
+Also called: None
+Hierarchy: Forming > Extrusion
+Category: Forming
+Definition: A forming process where material is forced through a shaped die to create continuous profiles with uniform cross-sections.
+
+Label: Cold Extrusion
+Also called: None
+Hierarchy: Forming > Extrusion > Cold Extrusion
+Category: Forming
+Definition: An extrusion process performed at room temperature, yielding precise dimensions and improved mechanical properties.
+
+Label: Hot Extrusion
+Also called: None
+Hierarchy: Forming > Extrusion > Hot Extrusion
+Category: Forming
+Definition: An extrusion process performed at elevated temperatures to reduce material resistance and form complex cross-sections.
+
+Label: Impact Extrusion
+Also called: Backward Extrusion
+Hierarchy: Forming > Extrusion > Impact Extrusion
+Category: Forming
+Definition: A high-speed cold extrusion method where a punch forces material backward around it, often used for tubes and cans.
+
+Label: Powder Extrusion
+Also called: None
+Hierarchy: Forming > Extrusion > Powder Extrusion
+Category: Forming
+Definition: An extrusion process using powdered metals or ceramics, which are compacted and then sintered to form solid parts.
+
+Label: Forward Extrusion
+Also called: Direct Extrusion
+Hierarchy: Forming > Extrusion > Forward Extrusion
+Category: Forming
+Definition: A process where the billet and punch move in the same direction, forcing material through a die opening.
+
+Label: Indirect Extrusion
+Also called: Backward Extrusion
+Hierarchy: Forming > Extrusion > Indirect Extrusion
+Category: Forming
+Definition: An extrusion process where the die moves into the billet, causing metal to flow in the opposite direction of the ram.
+
+Label: Hydrostatic Extrusion
+Also called: None
+Hierarchy: Forming > Extrusion > Hydrostatic Extrusion
+Category: Forming
+Definition: An extrusion technique that uses fluid pressure to push material through a die, reducing friction and required force.
+
+Label: Drawing
+Also called: None
+Hierarchy: Forming > Drawing
+Category: Forming
+Definition: A forming process where metal is pulled through a die to reduce diameter or alter cross-section, often used for wires and tubes.
+
+Label: Bar Drawing
+Also called: None
+Hierarchy: Forming > Drawing > Bar Drawing
+Category: Forming
+Definition: A process of reducing the diameter of bars by pulling them through a die for size control and surface finish.
+
+Label: Rod Drawing
+Also called: None
+Hierarchy: Forming > Drawing > Rod Drawing
+Category: Forming
+Definition: A drawing process used to reduce rod diameter and improve strength and surface quality.
+
+Label: Wire Drawing
+Also called: None
+Hierarchy: Forming > Drawing > Wire Drawing
+Category: Forming
+Definition: A process where wire is drawn through a series of dies to decrease its diameter and increase tensile strength.
+
+Label: Tube Drawing
+Also called: None
+Hierarchy: Forming > Drawing > Tube Drawing
+Category: Forming
+Definition: A method of reducing the diameter and wall thickness of tubes by pulling them through a die.
+
+Label: Tube Swaging
+Also called: Rotary Swaging
+Hierarchy: Forming > Drawing > Tube Swaging
+Category: Forming
+Definition: A tube forming process that reduces diameter or forms tapers by hammering action of rotating dies.
+
+Label: Ironing
+Also called: None
+Hierarchy: Forming > Drawing > Ironing
+Category: Forming
+Definition: A sheet forming process that thins the walls of a drawn cup or can while maintaining uniform thickness.
+
+Label: Deep Drawing
+Also called: None
+Hierarchy: Forming > Drawing > Deep Drawing
+Category: Forming
+Definition: A forming process where sheet metal is stretched into a die to create deep, hollow shapes such as cups or cans.
+
+Label: Cold Drawing
+Also called: None
+Hierarchy: Forming > Drawing > Cold Drawing
+Category: Forming
+Definition: A drawing operation performed at room temperature, improving dimensional accuracy and surface finish.
+
+Label: Electromagnetic Forming
+Also called: EM Forming
+Hierarchy: Forming > Electromagnetic Forming
+Category: Forming
+Definition: A high-speed forming process using pulsed magnetic fields to shape conductive metals without direct contact.
+
+Label: Electrohydraulic Forming
+Also called: EHF
+Hierarchy: Forming > Electrohydraulic Forming
+Category: Forming
+Definition: A high-energy rate forming process where an underwater electrical discharge creates shockwaves to deform sheet metal.
+
+Label: Explosive Forming
+Also called: None
+Hierarchy: Forming > Explosive Forming
+Category: Forming
+Definition: A high-energy rate forming process where controlled explosives generate shockwaves to shape metal into a die cavity.
+
+Label: Flow Forming
+Also called: None
+Hierarchy: Forming > Flow Forming
+Category: Forming
+Definition: A cold forming process that elongates and thins a cylindrical blank over a rotating mandrel using rollers.
+
+Label: Hydroforming
+Also called: None
+Hierarchy: Forming > Hydroforming
+Category: Forming
+Definition: A process where pressurized fluid forms ductile metals into lightweight, complex shapes, often used in automotive parts.
+
+Label: Isothermal Forming
+Also called: None
+Hierarchy: Forming > Isothermal Forming
+Category: Forming
+Definition: A forming method where both workpiece and tools are maintained at the same elevated temperature to prevent thermal gradients.
+
+Label: Magnetic Pulse Forming
+Also called: MPF
+Hierarchy: Forming > Magnetic Pulse Forming
+Category: Forming
+Definition: A high-speed forming technique using electromagnetic forces to shape or join conductive materials without contact.
+
+Label: Peen Forming
+Also called: None
+Hierarchy: Forming > Peen Forming
+Category: Forming
+Definition: A process where repeated mechanical impacts stretch and bend sheet metal into complex curves, often for aerospace parts.
+
+Label: Roll Forming
+Also called: None
+Hierarchy: Forming > Roll Forming
+Category: Forming
+Definition: A continuous bending process where sheet metal passes through a series of rollers to produce long profiles.
+
+Label: Rotary Forming
+Also called: None
+Hierarchy: Forming > Rotary Forming
+Category: Forming
+Definition: A general forming process where a rotating workpiece is shaped by localized pressure, often for hollow parts.
+
+Label: Sheet Forming
+Also called: None
+Hierarchy: Forming > Sheet Forming
+Category: Forming
+Definition: A category of processes that shape sheet metal into desired geometries through bending, stretching, or drawing.
+
+Label: Spin Forming
+Also called: None
+Hierarchy: Forming > Spin Forming
+Category: Forming
+Definition: A process where a rotating metal blank is gradually deformed over a mandrel using rollers or tools.
+
+Label: Superplastic Forming
+Also called: Super Plastic Forming
+Hierarchy: Forming > Superplastic Forming
+Category: Forming
+Definition: A forming technique that uses very high ductility at elevated temperatures to produce complex sheet metal shapes.
+
+Label: Swagging
+Also called: None
+Hierarchy: Forming > Swagging
+Category: Forming
+Definition: A forging-like process where hammering or radial dies reduce diameter or taper rods, tubes, or wires.
+
+Label: Thermoforming
+Also called: None
+Hierarchy: Forming > Thermoforming
+Category: Forming
+Definition: A plastic forming process where heated sheets are stretched into molds to create thin-walled parts.
+
+Label: Roll Bonding
+Also called: None
+Hierarchy: Forming > Thermoforming > Roll Bonding
+Category: Forming
+Definition: A process where layers of metal sheets are bonded together through high-pressure rolling at elevated temperature.
+
+Label: Vacuum Thermoforming
+Also called: None
+Hierarchy: Forming > Thermoforming > Vacuum Thermoforming
+Category: Forming
+Definition: A thermoforming process where a heated plastic sheet is pulled into a mold by vacuum pressure.
+
+Label: Tubing
+Also called: None
+Hierarchy: Forming > Tubing
+Category: Forming
+Definition: A forming category covering processes that manufacture metal or plastic tubes with defined shapes and dimensions.
+
+Label: Custom Tubing
+Also called: None
+Hierarchy: Forming > Tubing > Custom Tubing
+Category: Forming
+Definition: Specialized tubing manufactured to meet unique size, shape, or material requirements for specific applications.
+
+Label: Cut to Length Tubing
+Also called: None
+Hierarchy: Forming > Tubing > Cut to Length Tubing
+Category: Forming
+Definition: Tubing that is manufactured and precisely cut into predetermined lengths for downstream assembly or processing.
+
+Label: Fractional Tubing
+Also called: None
+Hierarchy: Forming > Tubing > Fractional Tubing
+Category: Forming
+Definition: Standardized tubing sized in fractional inch dimensions, often used in laboratory and fluid systems.
+
+Label: Hypodermic Tubing
+Also called: None
+Hierarchy: Forming > Tubing > Hypodermic Tubing
+Category: Forming
+Definition: Very small-diameter tubing with tight tolerances, commonly used for medical needles and fluid delivery systems.
+
+Label: Metric Tubing
+Also called: None
+Hierarchy: Forming > Tubing > Metric Tubing
+Category: Forming
+Definition: Tubing sized according to metric dimensions, widely used in international fluid, gas, and structural systems.
+
+Label: Square Tubing
+Also called: Rectangular Tubing
+Hierarchy: Forming > Tubing > Square Tubing
+Category: Forming
+Definition: Hollow tubing with square or rectangular cross-sections, commonly used in frames, supports, and structures.
+
+Label: Vacuum Forming
+Also called: None
+Hierarchy: Forming > Vacuum Forming
+Category: Forming
+Definition: A plastic forming process where a heated sheet is drawn against a mold using vacuum pressure.
+
+Label: Vacuum Pressing
+Also called: None
+Hierarchy: Forming > Vacuum Pressing
+Category: Forming
+Definition: A forming technique where vacuum pressure compresses materials, often used for composites or powder compaction.
+
+Label: Cold Vacuum Pressing
+Also called: None
+Hierarchy: Forming > Vacuum Pressing > Cold Vacuum Pressing
+Category: Forming
+Definition: A vacuum pressing method performed at room temperature to compact powders without heating.
+
+Label: Hot Vacuum Pressing
+Also called: None
+Hierarchy: Forming > Vacuum Pressing > Hot Vacuum Pressing
+Category: Forming
+Definition: A process combining heat and vacuum pressure to densify powders or composites into solid parts.
+
+Label: Hot Isostatic
+Also called: None
+Hierarchy: Forming > Vacuum Pressing > Hot Vacuum Pressing > Hot Isostatic
+Category: Forming
+Definition: Short for Hot Isostatic Pressing (HIP), where high pressure and heat uniformly densify materials, reducing porosity.
+
+Label: Wire Forming
+Also called: None
+Hierarchy: Forming > Wire Forming
+Category: Forming
+Definition: The process of bending, coiling, or shaping wire into springs, fasteners, or custom wire products.
+
+Label: Heat Treating
+Also called: None
+Hierarchy: Heat Treating
+Category: Heat Treating
+Definition: A group of thermal processes used to alter the physical and mechanical properties of materials, typically metals.
+
+Label: Annealing
+Also called: In-Process Annealing, Intermediate Annealing, Subcritical Annealing
+Hierarchy: Heat Treating > Annealing
+Category: Heat Treating
+Definition: A heat treatment process that softens material, improves ductility, and relieves internal stresses.
+
+Label: Recovery Annealing
+Also called: None
+Hierarchy: Heat Treating > Annealing > Recovery Annealing
+Category: Heat Treating
+Definition: A low-temperature annealing treatment that reduces residual stresses without significant changes in hardness.
+
+Label: Stress Relieving
+Also called: None
+Hierarchy: Heat Treating > Annealing > Recovery Annealing > Stress Relieving
+Category: Heat Treating
+Definition: A process that reduces internal stresses in metals caused by welding, machining, or cold working.
+
+Label: Tempering
+Also called: None
+Hierarchy: Heat Treating > Annealing > Recovery Annealing > Tempering
+Category: Heat Treating
+Definition: A heat treatment applied after hardening to adjust toughness and reduce brittleness.
+
+Label: Recrystallization
+Also called: None
+Hierarchy: Heat Treating > Annealing > Recrystallization
+Category: Heat Treating
+Definition: A process where deformed grains in a cold-worked metal are replaced by new, strain-free grains.
+
+Label: Full Annealing
+Also called: None
+Hierarchy: Heat Treating > Annealing > Recrystallization > Full Annealing
+Category: Heat Treating
+Definition: A complete annealing cycle where the material is heated above the recrystallization temperature and cooled slowly for maximum softness.
+
+Label: Process Annealing
+Also called: None
+Hierarchy: Heat Treating > Annealing > Recrystallization > Process Annealing
+Category: Heat Treating
+Definition: A localized or partial annealing treatment used to restore ductility in work-hardened areas.
+
+Label: Cold Working
+Also called: Cold Work
+Hierarchy: Heat Treating > Annealing > Recrystallization > Process Annealing > Cold Working
+Category: Heat Treating
+Definition: The plastic deformation of metals below recrystallization temperature, increasing strength while reducing ductility.
+
+Label: Hot Working
+Also called: None
+Hierarchy: Heat Treating > Annealing > Recrystallization > Process Annealing > Hot Working
+Category: Heat Treating
+Definition: The shaping of metals at high temperature, above recrystallization, to improve ductility and refine grain structure.
+
+Label: Short Cycle Annealing
+Also called: None
+Hierarchy: Heat Treating > Annealing > Recrystallization > Short Cycle Annealing
+Category: Heat Treating
+Definition: A faster form of annealing using shorter heating and cooling times for improved efficiency.
+
+Label: Cold Treatment
+Also called: None
+Hierarchy: Heat Treating > Cold Treatment
+Category: Heat Treating
+Definition: A sub-zero cooling treatment that transforms retained austenite into martensite to improve hardness and stability.
+
+Label: Hardening
+Also called: None
+Hierarchy: Heat Treating > Hardening
+Category: Heat Treating
+Definition: A process that increases the hardness of a material, usually by heating and rapid cooling.
+
+Label: Quench Hardening
+Also called: None
+Hierarchy: Heat Treating > Hardening > Quench Hardening
+Category: Heat Treating
+Definition: Hardening achieved by heating a metal and then rapidly cooling it in water, oil, or air.
+
+Label: Quenching
+Also called: None
+Hierarchy: Heat Treating > Hardening > Quenching
+Category: Heat Treating
+Definition: The rapid cooling of heated metal to lock in a hardened structure.
+
+Label: Surface Hardening
+Also called: Case Hardening, Face Hardening
+Hierarchy: Heat Treating > Hardening > Surface Hardening
+Category: Heat Treating
+Definition: A heat treatment that hardens only the surface layer of a material while maintaining a tough core.
+
+Label: Chromizing
+Also called: None
+Hierarchy: Heat Treating > Hardening > Surface Hardening > Chromizing
+Category: Heat Treating
+Definition: A diffusion process where chromium is introduced into the surface of steel to improve wear and corrosion resistance.
+
+Label: Cyaniding
+Also called: None
+Hierarchy: Heat Treating > Hardening > Surface Hardening > Cyaniding
+Category: Heat Treating
+Definition: A surface hardening process that diffuses carbon and nitrogen into steel using a cyanide salt bath.
+
+Label: Diffusion Hardening
+Also called: None
+Hierarchy: Heat Treating > Hardening > Surface Hardening > Diffusion Hardening
+Category: Heat Treating
+Definition: A family of processes where alloying elements diffuse into the surface to increase hardness.
+
+Label: Carbonitriding
+Also called: None
+Hierarchy: Heat Treating > Hardening > Surface Hardening > Diffusion Hardening > Carbonitriding
+Category: Heat Treating
+Definition: A diffusion hardening method that introduces both carbon and nitrogen to the surface for improved wear resistance.
+
+Label: Carburizing
+Also called: Carburising
+Hierarchy: Heat Treating > Hardening > Surface Hardening > Diffusion Hardening > Carburizing
+Category: Heat Treating
+Definition: A surface hardening process where carbon is diffused into the surface of steel to create a hard case.
+
+Label: Nitriding
+Also called: None
+Hierarchy: Heat Treating > Hardening > Surface Hardening > Diffusion Hardening > Nitriding
+Category: Heat Treating
+Definition: A process where nitrogen is diffused into the surface of steel at elevated temperatures to increase hardness and fatigue resistance.
+
+Label: Flame Hardening
+Also called: None
+Hierarchy: Heat Treating > Hardening > Surface Hardening > Flame Hardening
+Category: Heat Treating
+Definition: A surface hardening process where an oxy-fuel flame rapidly heats the surface, followed by quenching to harden only the outer layer.
+
+Label: Oxyacetylene Cutting
+Also called: None
+Hierarchy: Heat Treating > Hardening > Surface Hardening > Flame Hardening > Oxyacetylene Cutting
+Category: Heat Treating
+Definition: A thermal cutting process using oxygen and acetylene gas to cut through metals by combustion and oxidation.
+
+Label: Induction Hardening
+Also called: None
+Hierarchy: Heat Treating > Hardening > Surface Hardening > Induction Hardening
+Category: Heat Treating
+Definition: A surface hardening method where induction heating raises the surface temperature, followed by rapid quenching.
+
+Label: Vacuum Hardening
+Also called: None
+Hierarchy: Heat Treating > Hardening > Surface Hardening > Vacuum Hardening
+Category: Heat Treating
+Definition: A hardening process performed in a vacuum furnace to avoid oxidation and achieve precise, uniform results.
+
+Label: Through Hardening
+Also called: None
+Hierarchy: Heat Treating > Hardening > Through Hardening
+Category: Heat Treating
+Definition: A heat treatment that hardens the entire cross-section of a material, not just the surface.
+
+Label: Age Quench Hardening
+Also called: None
+Hierarchy: Heat Treating > Hardening > Through Hardening > Age Quench Hardening
+Category: Heat Treating
+Definition: A hardening process that combines quenching and aging to increase strength and hardness in alloys.
+
+Label: Air Quench Hardening
+Also called: None
+Hierarchy: Heat Treating > Hardening > Through Hardening > Air Quench Hardening
+Category: Heat Treating
+Definition: A hardening method where heated metal is cooled in still or forced air to control hardness and reduce distortion.
+
+Label: Austempering
+Also called: None
+Hierarchy: Heat Treating > Hardening > Through Hardening > Austempering
+Category: Heat Treating
+Definition: An isothermal heat treatment that produces bainite, improving toughness and reducing distortion compared to quenching.
+
+Label: Martempering
+Also called: None
+Hierarchy: Heat Treating > Hardening > Through Hardening > Martempering
+Category: Heat Treating
+Definition: A heat treatment that quenches steel into a bath just above martensite start temperature, then cools slowly to minimize cracking.
+
+Label: Oil Quench Hardening
+Also called: None
+Hierarchy: Heat Treating > Hardening > Through Hardening > Oil Quench Hardening
+Category: Heat Treating
+Definition: A quenching process using oil as the cooling medium to achieve hardening with reduced risk of cracking compared to water.
+
+Label: Water Quench Hardening
+Also called: None
+Hierarchy: Heat Treating > Hardening > Through Hardening > Water Quench Hardening
+Category: Heat Treating
+Definition: A rapid hardening process where hot metal is quenched in water, giving high hardness but higher risk of distortion or cracking.
+
+Label: Sintering
+Also called: None
+Hierarchy: Sintering
+Category: Sintering
+Definition: A process where powdered material is compacted and heated below its melting point until particles bond into a solid mass.
+
+Label: Induction Heading
+Also called: None
+Hierarchy: Induction Heading
+Category: Induction Heading
+Definition: A forging-like process where induction heating softens metal rod ends, which are then shaped by mechanical force into heads or forms.
+
+Label: Joining
+Also called: None
+Hierarchy: Joining
+Category: Joining
+Definition: A broad group of processes used to connect two or more materials permanently or semi-permanently.
+
+Label: Adhesive Joining
+Also called: Bonding
+Hierarchy: Joining > Adhesive Joining
+Category: Joining
+Definition: A joining method that uses adhesives to bond surfaces together, distributing stresses over a larger area.
+
+Label: Fastening
+Also called: None
+Hierarchy: Joining > Fastening
+Category: Joining
+Definition: A mechanical joining method using fasteners such as screws, bolts, or rivets to connect materials, often allowing disassembly.
+
+Label: Mechanical Joining
+Also called: None
+Hierarchy: Joining > Mechanical Joining
+Category: Joining
+Definition: A joining process that uses mechanical deformation, interlocking, or pressure to hold materials together without welding or adhesives.
+
+Label: Seaming
+Also called: None
+Hierarchy: Joining > Mechanical Joining > Seaming
+Category: Joining
+Definition: A process that folds or crimps sheet metal edges together to form a seam for joining or sealing.
+
+Label: Folding
+Also called: None
+Hierarchy: Joining > Mechanical Joining > Seaming > Folding
+Category: Joining
+Definition: A sheet metal joining method that bends overlapping edges to lock them mechanically.
+
+Label: Crimping
+Also called: None
+Hierarchy: Joining > Mechanical Joining > Seaming > Crimping
+Category: Joining
+Definition: A process that deforms material, often wire or sheet, to tightly join components together.
+
+Label: Press Joining
+Also called: None
+Hierarchy: Joining > Mechanical Joining > Seaming > Press Joining
+Category: Joining
+Definition: A joining technique where parts are pressed together under force to create a secure mechanical connection.
+
+Label: Stapling
+Also called: None
+Hierarchy: Joining > Mechanical Joining > Seaming > Stapling
+Category: Joining
+Definition: A mechanical fastening process where staples pierce and bend to hold materials together.
+
+Label: Stitching
+Also called: None
+Hierarchy: Joining > Mechanical Joining > Seaming > Stitching
+Category: Joining
+Definition: A joining method where thread, wire, or material passes through components repeatedly to secure them.
+
+Label: Riveting
+Also called: None
+Hierarchy: Joining > Mechanical Joining > Riveting
+Category: Joining
+Definition: A permanent fastening process where a rivet is inserted through aligned holes and deformed to lock materials together.
+
+Label: Self-Piercing Riveting
+Also called: SPR
+Hierarchy: Joining > Mechanical Joining > Riveting > Self-Piercing Riveting
+Category: Joining
+Definition: A rivet joining process that drives a rivet through sheets without pre-drilling, forming a mechanical interlock.
+
+Label: Shrink Fitting
+Also called: None
+Hierarchy: Joining > Mechanical Joining > Shrink Fitting
+Category: Joining
+Definition: A method where one component is heated or cooled to change its size, then fitted into another for a tight interference fit.
+
+Label: Snap Fitting
+Also called: None
+Hierarchy: Joining > Mechanical Joining > Snap Fitting
+Category: Joining
+Definition: A fastening process where interlocking features snap together, commonly used in plastics.
+
+Label: Thermal Joining
+Also called: None
+Hierarchy: Joining > Thermal Joining
+Category: Joining
+Definition: A group of joining processes that use heat to bond or fuse materials.
+
+Label: Ultrasonic Joining
+Also called: None
+Hierarchy: Joining > Thermal Joining > Ultrasonic Joining
+Category: Joining
+Definition: A process that joins materials by applying high-frequency ultrasonic vibrations under pressure to create a solid-state bond.
+
+Label: Vibration Welding
+Also called: None
+Hierarchy: Joining > Thermal Joining > Vibration Welding
+Category: Joining
+Definition: A welding process where frictional heat from vibration softens thermoplastics, which fuse under pressure.
+
+Label: Hot Plate Welding
+Also called: None
+Hierarchy: Joining > Thermal Joining > Hot Plate Welding
+Category: Joining
+Definition: A welding method where parts are pressed against a heated plate until surfaces soften, then joined under pressure.
+
+Label: MIG Welding
+Also called: Gas Metal Arc Welding, GMAW, Metal Inert Gas Welding
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electric Arc Welding > Gas Metal Arc Welding > MIG Welding
+Category: Joining
+Definition: A welding process where a consumable wire electrode is fed through a welding gun and melted by an electric arc, shielded by inert gas.
+
+Label: Pulsed Gas Metal Arc Welding
+Also called: GMAW-P, Pulsed MIG Welding
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electric Arc Welding > Gas Metal Arc Welding > Pulsed Gas Metal Arc Welding
+Category: Joining
+Definition: A variation of GMAW that alternates current between high and low levels, improving control, reducing spatter, and allowing welding of thin materials.
+
+Label: Gas Tungsten Arc Welding
+Also called: GTAW, Tungsten Inert Gas Welding
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electric Arc Welding > Gas Tungsten Arc Welding
+Category: Joining
+Definition: A precise arc welding process where a non-consumable tungsten electrode creates the arc and shielding gas protects the weld pool.
+
+Label: Pulsed Gas Tungsten Arc Welding
+Also called: GTAW-P, Pulsed TIG Welding
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electric Arc Welding > Gas Tungsten Arc Welding > Pulsed Gas Tungsten Arc Welding
+Category: Joining
+Definition: A variant of GTAW where current pulses between high and low levels to improve heat control and weld quality.
+
+Label: TIG Welding
+Also called: TIG, TIG Weld, Gas Tungsten Arc Welding
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electric Arc Welding > Gas Tungsten Arc Welding > TIG Welding
+Category: Joining
+Definition: A common name for Gas Tungsten Arc Welding, where a tungsten electrode and inert gas are used to produce high-quality welds.
+
+Label: Shielded Metal Arc Welding
+Also called: Stick Welding, SMAW, Manual Metal Arc Welding
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electric Arc Welding > Shielded Metal Arc Welding
+Category: Joining
+Definition: A manual welding process using a flux-coated consumable electrode that melts to form the weld joint and protective slag.
+
+Label: Stud Welding
+Also called: Arc Stud Welding, Drawn Arc Stud Welding
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electric Arc Welding > Stud Welding
+Category: Joining
+Definition: A welding process where a metal fastener (stud) is joined to a base metal using an arc, commonly for construction and automotive applications.
+
+Label: Submerged Arc Welding
+Also called: SAW Welding
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electric Arc Welding > Submerged Arc Welding
+Category: Joining
+Definition: A welding process where the arc is submerged beneath a blanket of granular flux, which shields and stabilizes the weld.
+
+Label: Electrical Resistance Welding
+Also called: Resistance Welding
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electrical Resistance Welding
+Category: Joining
+Definition: A welding process where heat is generated by electrical resistance at the joint while pressure is applied to form the weld.
+
+Label: Butt Welding
+Also called: Resistance Butt Welding
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electrical Resistance Welding > Butt Welding
+Category: Joining
+Definition: A type of resistance welding where two parts are joined end-to-end by applying pressure and passing current through the contact.
+
+Label: Electro Slag Welding
+Also called: ESW Welding
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electrical Resistance Welding > Electro Slag Welding
+Category: Joining
+Definition: A high-deposition welding process where molten slag conducts electricity and generates heat to fuse thick sections vertically.
+
+Label: Percussion Welding
+Also called: None
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electrical Resistance Welding > Percussion Welding
+Category: Joining
+Definition: A resistance welding process using a sudden discharge of electrical energy and pressure to instantly join metals.
+
+Label: Projection Welding
+Also called: None
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electrical Resistance Welding > Projection Welding
+Category: Joining
+Definition: A resistance welding process where raised projections on one part localize heat and pressure, commonly for fasteners.
+
+Label: Resistance Welding
+Also called: Spot and Seam Welding Group
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electrical Resistance Welding > Resistance Welding
+Category: Joining
+Definition: A family of welding processes using heat from electrical resistance and force to form joints, including spot and seam welding.
+
+Label: Seam Welding
+Also called: Resistance Seam Welding
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electrical Resistance Welding > Seam Welding
+Category: Joining
+Definition: A resistance welding process where electrodes roll along a joint, producing a continuous or intermittent weld seam.
+
+Label: Metal Clinching
+Also called: Clinching
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electrical Resistance Welding > Seam Welding > Metal Clinching
+Category: Joining
+Definition: A mechanical joining process that locks sheet metals together by deforming them without heat, sometimes grouped under resistance joining.
+
+Label: Spot Welding
+Also called: Resistance Spot Welding
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electrical Resistance Welding > Spot Welding
+Category: Joining
+Definition: A resistance welding process where heat and pressure are applied at small contact points between sheets to create localized welds.
+
+Label: Resistance Spot Welding
+Also called: RSW
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electrical Resistance Welding > Spot Welding > Resistance Spot Welding
+Category: Joining
+Definition: A common spot welding method using copper electrodes to apply current and pressure, widely used in automotive manufacturing.
+
+Label: Fusion Welding
+Also called: None
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Fusion Welding
+Category: Joining
+Definition: A group of welding processes where heat melts base metals to form a joint, with or without filler material.
+
+Label: Gas Welding
+Also called: Oxy-Fuel Welding
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Gas Welding
+Category: Joining
+Definition: A welding process that uses a flame from burning fuel gas with oxygen to melt and join metals.
+
+Label: Atomic Hydrogen Welding
+Also called: AHW
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Gas Welding > Atomic Hydrogen Welding
+Category: Joining
+Definition: An arc welding process where hydrogen gas shields and dissociates at the arc, releasing heat to melt the metal.
+
+Label: Combustible Gas Welding
+Also called: Fuel Gas Welding
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Gas Welding > Combustible Gas Welding
+Category: Joining
+Definition: A category of gas welding processes using fuel gases (such as acetylene or propane) combined with oxygen or air to generate heat.
+
+Label: High Energy Beam Welding
+Also called: None
+Hierarchy: Joining > Thermal Joining > Thermal Welding > High Energy Beam Welding
+Category: Joining
+Definition: Welding processes that use highly concentrated energy beams, such as electron or laser beams, for deep and precise welds.
+
+Label: Electron Beam Welding
+Also called: EBW
+Hierarchy: Joining > Thermal Joining > Thermal Welding > High Energy Beam Welding > Electron Beam Welding
+Category: Joining
+Definition: A fusion welding process where a focused beam of high-velocity electrons generates heat to join metals in a vacuum.
+
+Label: Laser Beam Welding
+Also called: LBW
+Hierarchy: Joining > Thermal Joining > Thermal Welding > High Energy Beam Welding > Laser Beam Welding
+Category: Joining
+Definition: A welding process that uses a concentrated laser beam to melt and join metals with high precision and low distortion.
+
+Label: Plasma Arc Welding
+Also called: PAW
+Hierarchy: Joining > Thermal Joining > Thermal Welding > High Energy Beam Welding > Plasma Arc Welding
+Category: Joining
+Definition: An arc welding process where a constricted plasma jet produces a high-energy arc for deep and precise weld penetration.
+
+Label: Machining
+Also called: Material Removal Process, Subtractive Process
+Hierarchy: Machining
+Category: Machining
+Definition: A broad manufacturing category where material is selectively removed from a workpiece to achieve desired shape, dimensions, or surface finish.
+
+Label: Abrasive Machining
+Also called: None
+Hierarchy: Machining > Abrasive Machining
+Category: Machining
+Definition: A machining process using abrasive particles bonded to wheels, belts, or slurry to remove small amounts of material with high precision.
+
+Label: Buffing
+Also called: None
+Hierarchy: Machining > Abrasive Machining > Buffing
+Category: Machining
+Definition: A finishing process using a soft wheel and fine abrasives to polish a surface to a smooth, reflective finish.
+
+Label: Grinding
+Also called: None
+Hierarchy: Machining > Abrasive Machining > Grinding
+Category: Machining
+Definition: A machining process where a rotating abrasive wheel removes material to achieve tight tolerances and fine surface finishes.
+
+Label: Centerless Grinding
+Also called: None
+Hierarchy: Machining > Abrasive Machining > Grinding > Centerless Grinding
+Category: Machining
+Definition: A grinding process where the workpiece is supported between a regulating wheel and a grinding wheel without centers.
+
+Label: Creep Feed Grinding
+Also called: None
+Hierarchy: Machining > Abrasive Machining > Grinding > Creep Feed Grinding
+Category: Machining
+Definition: A grinding technique where the wheel engages the workpiece with a deep cut at slow feed rates for efficient stock removal.
+
+Label: Curvic Grinding
+Also called: None
+Hierarchy: Machining > Abrasive Machining > Grinding > Curvic Grinding
+Category: Machining
+Definition: A specialized grinding process used to produce precise curved gear-tooth profiles or coupling surfaces.
+
+Label: Cylindrical Grinding
+Also called: None
+Hierarchy: Machining > Abrasive Machining > Grinding > Cylindrical Grinding
+Category: Machining
+Definition: A grinding process used to finish the outside or inside diameter of cylindrical parts to high precision.
+
+Label: CNC Cylindrical Grinding
+Also called: None
+Hierarchy: Machining > Abrasive Machining > Grinding > Cylindrical Grinding > CNC Cylindrical Grinding
+Category: Machining
+Definition: A computer-controlled cylindrical grinding process for consistent precision and automated production of complex shapes.
+
+Label: Electrochemical Grinding
+Also called: None
+Hierarchy: Machining > Abrasive Machining > Grinding > Electrochemical Grinding
+Category: Machining
+Definition: A hybrid process combining electrochemical material removal with abrasive action to machine hard or delicate materials.
+
+Label: ECG Tube Cutting
+Also called: None
+Hierarchy: Machining > Abrasive Machining > Grinding > Electrochemical Grinding > ECG Tube Cutting
+Category: Machining
+Definition: A tube cutting method using electrochemical grinding to produce burr-free and precise cuts on small-diameter tubing.
+
+Label: ID-OD Grinding
+Also called: ID/OD Grinding
+Hierarchy: Machining > Abrasive Machining > Grinding > ID-OD Grinding
+Category: Machining
+Definition: A grinding method for finishing both the internal diameter (ID) and outer diameter (OD) of cylindrical components.
+
+Label: Plunge Grinding
+Also called: Infeed Grinding
+Hierarchy: Machining > Abrasive Machining > Grinding > Plunge Grinding
+Category: Machining
+Definition: A grinding process where the wheel is fed radially into the workpiece without axial movement, suited for grooves and shoulders.
+
+Label: Honing
+Also called: None
+Hierarchy: Machining > Abrasive Machining > Honing
+Category: Machining
+Definition: A finishing process using abrasive stones to improve dimensional accuracy and surface finish inside holes or cylinders.
+
+Label: Lapping
+Also called: None
+Hierarchy: Machining > Abrasive Machining > Lapping
+Category: Machining
+Definition: A precision finishing process where a workpiece is rubbed against a lap surface with abrasive slurry for extreme accuracy.
+
+Label: CNC Machining
+Also called: None
+Hierarchy: Machining > CNC Machining
+Category: Machining
+Definition: A subtractive manufacturing process controlled by computer programs, allowing automated and precise cutting of complex parts.
+
+Label: CNC Routing
+Also called: None
+Hierarchy: Machining > CNC Machining > CNC Routing
+Category: Machining
+Definition: A CNC process where a high-speed rotating cutter removes material, often used for wood, plastics, and soft metals.
+
+Label: Five Axis Machining
+Also called: 5 Axis Machining, 5-Axis Machining
+Hierarchy: Machining > CNC Machining > Five Axis Machining
+Category: Machining
+Definition: Advanced CNC machining with simultaneous movement along five axes, enabling production of complex geometries in one setup.
+
+Label: Seven Axis Machining
+Also called: 7 Axis Machining, 7-Axis Machining
+Hierarchy: Machining > CNC Machining > Seven Axis Machining
+Category: Machining
+Definition: A highly flexible CNC machining method with movement along seven axes, allowing extremely intricate and precise part production.
+
+Label: Chemical Machining
+Also called: Chemical Milling
+Hierarchy: Machining > Chemical Machining
+Category: Machining
+Definition: A subtractive process where controlled chemical etching removes material from a workpiece to create precise shapes or reduce thickness.
+
+Label: Chemical Engraving
+Also called: None
+Hierarchy: Machining > Chemical Machining > Chemical Engraving
+Category: Machining
+Definition: A decorative or functional process that uses chemicals to etch patterns, text, or designs into a material’s surface.
+
+Label: Etching
+Also called: None
+Hierarchy: Machining > Chemical Machining > Etching
+Category: Machining
+Definition: A process using acids or chemicals to remove selected areas of material, producing detailed patterns or openings.
+
+Label: Chemical Etching
+Also called: None
+Hierarchy: Machining > Chemical Machining > Etching > Chemical Etching
+Category: Machining
+Definition: A controlled etching process using chemical solutions to machine precise features into thin materials.
+
+Label: Photo Etching
+Also called: None
+Hierarchy: Machining > Chemical Machining > Etching > Photo Etching
+Category: Machining
+Definition: A chemical etching process guided by a photoresist mask to create fine and intricate designs.
+
+Label: Stretching
+Also called: None
+Hierarchy: Machining > Chemical Machining > Etching > Stretching
+Category: Machining
+Definition: A sheet metal forming process where material is pulled and thinned to achieve larger surface dimensions.
+
+Label: Photochemical Machining
+Also called: None
+Hierarchy: Machining > Chemical Machining > Photochemical Machining
+Category: Machining
+Definition: A precise chemical etching process that uses photoresist patterns to produce micro-scale parts from thin sheets.
+
+Label: Deburring
+Also called: Debur
+Hierarchy: Machining > Deburring
+Category: Machining
+Definition: A finishing process that removes sharp edges or burrs left after machining or cutting operations.
+
+Label: Thermal Deburring
+Also called: None
+Hierarchy: Machining > Deburring > Thermal Deburring
+Category: Machining
+Definition: A process that removes burrs by igniting a combustible gas mixture in a chamber to burn away excess material.
+
+Label: Vibratory Deburring
+Also called: None
+Hierarchy: Machining > Deburring > Vibratory Deburring
+Category: Machining
+Definition: A process where parts are tumbled with abrasives in a vibrating container to smooth edges and surfaces.
+
+Label: Electro Chemical Machining
+Also called: None
+Hierarchy: Machining > Electro Chemical Machining
+Category: Machining
+Definition: A machining method where electrical current and an electrolyte dissolve material without mechanical contact.
+
+Label: Engraving
+Also called: None
+Hierarchy: Machining > Engraving
+Category: Machining
+Definition: A process of cutting or carving designs, text, or patterns into a material surface using tools or machines.
+
+Label: Laser Engraving
+Also called: None
+Hierarchy: Machining > Engraving > Laser Engraving
+Category: Machining
+Definition: A non-contact engraving method where a focused laser beam vaporizes material to mark or etch designs.
+
+Label: Erosion Machining
+Also called: None
+Hierarchy: Machining > Erosion Machining
+Category: Machining
+Definition: A category of machining where material is removed by thermal or electrical energy rather than cutting tools.
+
+Label: Waterjet Cutting
+Also called: Water Jet Cutting, Water Jet Machining
+Hierarchy: Machining > Erosion Machining > Waterjet Cutting
+Category: Machining
+Definition: A cutting process using a high-pressure stream of water, sometimes mixed with abrasives, to cut materials without heat.
+
+Label: Laser Machining
+Also called: None
+Hierarchy: Machining > Laser Machining
+Category: Machining
+Definition: A subtractive process where lasers cut, drill, or shape materials with high precision and minimal tool wear.
+
+Label: Multipoint Cutting
+Also called: None
+Hierarchy: Machining > Multipoint Cutting
+Category: Machining
+Definition: A machining method using tools with multiple cutting edges, such as milling cutters or drills, for efficient material removal.
+
+Label: Broaching
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Broaching
+Category: Machining
+Definition: A machining process where a toothed tool (broach) is pushed or pulled through material to cut precise profiles.
+
+Label: Rotary Broaching
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Broaching > Rotary Broaching
+Category: Machining
+Definition: A variant of broaching where a rotating tool cuts shapes such as hexagons or squares inside holes.
+
+Label: Gear Cutting
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Gear Cutting
+Category: Machining
+Definition: A machining process for producing gear teeth using specialized tools like hobs, shapers, or milling cutters.
+
+Label: Gear Hobbing
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Gear Hobbing
+Category: Machining
+Definition: A gear manufacturing process where a rotating hob tool cuts teeth progressively into a gear blank.
+
+Label: Hobbing
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Hobbing
+Category: Machining
+Definition: A machining process similar to gear hobbing, using a hob cutter to create gears, splines, or sprockets.
+
+Label: Hole Making
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Hole Making
+Category: Machining
+Definition: A group of machining processes used to produce or refine holes in a workpiece, including drilling and reaming.
+
+Label: Counter Boring
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Hole Making > Counter Boring
+Category: Machining
+Definition: A machining process that enlarges the opening of a hole to create a flat-bottomed recess for bolt or screw heads.
+
+Label: Counter Sinking
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Hole Making > Counter Sinking
+Category: Machining
+Definition: A process that enlarges the top of a hole in a conical shape to allow screw heads to sit flush with the surface.
+
+Label: Drilling
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Hole Making > Drilling
+Category: Machining
+Definition: A machining process that uses a rotating drill bit to cut circular holes into a material.
+
+Label: Deep Hole Drilling
+Also called: Deep Hole Machining
+Hierarchy: Machining > Multipoint Cutting > Hole Making > Drilling > Deep Hole Drilling
+Category: Machining
+Definition: A specialized drilling technique used to create holes with a depth greater than ten times their diameter.
+
+Label: Gun Drilling
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Hole Making > Drilling > Deep Hole Drilling > Gun Drilling
+Category: Machining
+Definition: A deep hole drilling process that uses a long, straight drill with internal coolant channels for high accuracy.
+
+Label: Trepanning
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Hole Making > Drilling > Deep Hole Drilling > Trepanning
+Category: Machining
+Definition: A hole-making process where a circular groove is cut to remove a core of material instead of drilling out all material.
+
+Label: Friction Drilling
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Hole Making > Drilling > Friction Drilling
+Category: Machining
+Definition: A drilling process that generates heat through friction to soften material and form a hole without producing chips.
+
+Label: Micro Drilling
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Hole Making > Drilling > Micro Drilling
+Category: Machining
+Definition: A precision drilling method used to create extremely small diameter holes, often in electronics or medical devices.
+
+Label: Small Hole Drilling
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Hole Making > Drilling > Small Hole Drilling
+Category: Machining
+Definition: A process focused on producing holes of very small diameters using specialized drills and high accuracy.
+
+Label: Perforating
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Hole Making > Perforating
+Category: Machining
+Definition: A process that creates a series of small holes or slits in a material, commonly used in filters, packaging, or sheets.
+
+Label: Reaming
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Hole Making > Reaming
+Category: Machining
+Definition: A finishing process that enlarges and smooths an existing drilled hole to precise size and tolerance.
+
+Label: Tapping
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Hole Making > Tapping
+Category: Machining
+Definition: A machining process where a tool (tap) cuts internal threads inside a hole for screws or bolts.
+
+Label: Milling
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Milling
+Category: Machining
+Definition: A versatile machining process where a rotating cutting tool removes material from a workpiece to create shapes and surfaces.
+
+Label: CNC Milling
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Milling > CNC Milling
+Category: Machining
+Definition: Milling performed using computer numerical control, enabling high-precision, automated shaping of complex parts.
+
+Label: Gear Gashing
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Milling > Gear Gashing
+Category: Machining
+Definition: A machining operation where material is removed to rough-cut gear teeth before finishing processes.
+
+Label: Horizontal Milling
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Milling > Horizontal Milling
+Category: Machining
+Definition: A milling process using a horizontally oriented cutting tool, well-suited for heavy material removal and grooves.
+
+Label: Slab Milling
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Milling > Horizontal Milling > Slab Milling
+Category: Machining
+Definition: A horizontal milling operation where a wide cutter removes large amounts of material in one pass.
+
+Label: Thread Milling
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Milling > Thread Milling
+Category: Machining
+Definition: A milling process where a rotating cutter produces internal or external threads by moving along a helical path.
+
+Label: Vertical Milling
+Also called: Vertical Mill
+Hierarchy: Machining > Multipoint Cutting > Milling > Vertical Milling
+Category: Machining
+Definition: A milling process where the cutting tool is mounted vertically, ideal for precision work and surface finishing.
+
+Label: End Milling
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Milling > Vertical Milling > End Milling
+Category: Machining
+Definition: A milling operation using an end mill cutter to create slots, pockets, and contours with high precision.
+
+Label: Face Milling
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Milling > Vertical Milling > Face Milling
+Category: Machining
+Definition: A milling process where the cutter’s flat face removes material to create smooth, flat surfaces.
+
+Label: Sawing
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Sawing
+Category: Machining
+Definition: A cutting process using a toothed blade to remove material and separate workpieces.
+
+Label: Bevelling
+Also called: None
+Hierarchy: Machining > Multipoint Cutting > Sawing > Bevelling
+Category: Machining
+Definition: A machining operation that cuts an angled edge (bevel) on a workpiece for fit, safety, or aesthetics.
+
+Label: Nonconventional Machining
+Also called: None
+Hierarchy: Machining > Nonconventional Machining
+Category: Machining
+Definition: A group of machining processes using non-traditional methods like lasers, chemicals, or electrical energy to remove material.
+
+Label: Plastic Machining
+Also called: None
+Hierarchy: Machining > Plastic Machining
+Category: Machining
+Definition: Machining processes adapted specifically for plastic materials, ensuring precision without melting or cracking.
+
+Label: Polycrystalline Diamond Machining
+Also called: PCD Machining
+Hierarchy: Machining > Polycrystalline Diamond Machining
+Category: Machining
+Definition: A high-precision machining process using polycrystalline diamond tools to cut hard or abrasive materials.
+
+Label: Single-Point Cutting
+Also called: None
+Hierarchy: Machining > Single-Point Cutting
+Category: Machining
+Definition: A machining method where a single cutting edge removes material, typical in turning, shaping, or planing.
+
+Label: Diamond Machining
+Also called: Polycrystaline Diamond Machining
+Hierarchy: Machining > Single-Point Cutting > Diamond Machining
+Category: Machining
+Definition: Ultra-precision machining using diamond-tipped tools for extremely fine surface finishes and tight tolerances.
+
+Label: Oil Grooving
+Also called: None
+Hierarchy: Machining > Single-Point Cutting > Oil Grooving
+Category: Machining
+Definition: A turning or cutting process that forms oil grooves inside components for lubrication retention.
+
+Label: Planing
+Also called: None
+Hierarchy: Machining > Single-Point Cutting > Planing
+Category: Machining
+Definition: A machining process where a single-point tool removes material in linear passes to create flat surfaces.
+
+Label: Skiving
+Also called: None
+Hierarchy: Machining > Single-Point Cutting > Planing > Skiving
+Category: Machining
+Definition: A precision cutting process that slices thin layers from a surface, often used in gear finishing or hydraulics.
+
+Label: Shaping
+Also called: None
+Hierarchy: Machining > Single-Point Cutting > Shaping
+Category: Machining
+Definition: A process where a single-point tool moves linearly across a workpiece to cut flat or contoured surfaces.
+
+Label: Turning
+Also called: Lathe Work
+Hierarchy: Machining > Single-Point Cutting > Turning
+Category: Machining
+Definition: A machining process performed on a lathe, where a cutting tool removes material from a rotating workpiece.
+
+Label: Boring
+Also called: None
+Hierarchy: Machining > Single-Point Cutting > Turning > Boring
+Category: Machining
+Definition: An internal machining process that enlarges or finishes pre-drilled holes with high precision.
+
+Label: Horizontal Boring
+Also called: None
+Hierarchy: Machining > Single-Point Cutting > Turning > Boring > Horizontal Boring
+Category: Machining
+Definition: A boring method where the spindle is horizontal, suitable for large, heavy workpieces.
+
+Label: Jig Boring
+Also called: None
+Hierarchy: Machining > Single-Point Cutting > Turning > Boring > Jig Boring
+Category: Machining
+Definition: A high-precision boring process used to achieve extremely accurate hole size and position tolerances.
+
+Label: Vertical Boring
+Also called: None
+Hierarchy: Machining > Single-Point Cutting > Turning > Boring > Vertical Boring
+Category: Machining
+Definition: A boring process performed with a vertical spindle, often used for large cylindrical parts.
+
+Label: CNC Turning
+Also called: None
+Hierarchy: Machining > Single-Point Cutting > Turning > CNC Turning
+Category: Machining
+Definition: A computer-controlled turning process where a lathe automatically cuts, shapes, and finishes rotating parts with high precision.
+
+Label: Internal Turning
+Also called: None
+Hierarchy: Machining > Single-Point Cutting > Turning > Internal Turning
+Category: Machining
+Definition: A turning process where material is removed from the inner surface of a hollow workpiece to achieve the desired diameter.
+
+Label: Taper Turning
+Also called: None
+Hierarchy: Machining > Single-Point Cutting > Turning > Taper Turning
+Category: Machining
+Definition: A turning operation that produces a conical shape by gradually varying the diameter along the workpiece’s length.
+
+Label: External Turning
+Also called: None
+Hierarchy: Machining > Single-Point Cutting > Turning > External Turning
+Category: Machining
+Definition: A turning process that removes material from the outside diameter of a rotating workpiece.
+
+Label: Hard Turning
+Also called: None
+Hierarchy: Machining > Single-Point Cutting > Turning > Hard Turning
+Category: Machining
+Definition: A precision turning process performed on hardened materials, often as an alternative to grinding.
+
+Label: High Speed Turning
+Also called: None
+Hierarchy: Machining > Single-Point Cutting > Turning > High Speed Turning
+Category: Machining
+Definition: A turning process carried out at very high cutting speeds to increase productivity and surface finish quality.
+
+Label: Precision Turning
+Also called: None
+Hierarchy: Machining > Single-Point Cutting > Turning > Precision Turning
+Category: Machining
+Definition: A fine-turning process that achieves tight tolerances and smooth finishes on rotating parts.
+
+Label: Contour Turning
+Also called: None
+Hierarchy: Machining > Single-Point Cutting > Turning > Precision Turning > Contour Turning
+Category: Machining
+Definition: A turning operation that produces curved or irregular profiles on the surface of a workpiece.
+
+Label: Finish Turning
+Also called: None
+Hierarchy: Machining > Single-Point Cutting > Turning > Precision Turning > Finish Turning
+Category: Machining
+Definition: A final turning operation performed with light cuts to achieve the required accuracy and surface quality.
+
+Label: Tapered Turning
+Also called: None
+Hierarchy: Machining > Single-Point Cutting > Turning > Precision Turning > Tapered Turning
+Category: Machining
+Definition: A variation of turning where the tool gradually reduces or increases the workpiece diameter to form a taper.
+
+Label: Spherical Turning
+Also called: None
+Hierarchy: Machining > Single-Point Cutting > Turning > Spherical Turning
+Category: Machining
+Definition: A turning operation that produces spherical surfaces on a rotating workpiece.
+
+Label: Straight Turning
+Also called: None
+Hierarchy: Machining > Single-Point Cutting > Turning > Straight Turning
+Category: Machining
+Definition: A turning process that removes material along the full length of the workpiece to reduce its diameter uniformly.
+
+Label: Taper Turning
+Also called: None
+Hierarchy: Machining > Single-Point Cutting > Turning > Taper Turning
+Category: Machining
+Definition: A process where the diameter of the workpiece changes gradually, forming a conical surface. (Duplicate of earlier Taper Turning — included here per source order).
+
+Label: Thread Cutting
+Also called: None
+Hierarchy: Machining > Single-Point Cutting > Turning > Thread Cutting
+Category: Machining
+Definition: A lathe operation that produces external or internal screw threads by moving the cutting tool in a helical path.
+
+Label: Tuning
+Also called: None
+Hierarchy: Machining > Single-Point Cutting > Turning > Tuning
+Category: Machining
+Definition: A machining step that adjusts dimensions or surface finish for improved accuracy and performance.
+
+Label: Thermal Subtraction
+Also called: None
+Hierarchy: Machining > Thermal Subtraction
+Category: Machining
+Definition: A material removal process that uses heat energy to melt, vaporize, or erode material instead of mechanical cutting.
+
+Label: Abrasive Jet Machining
+Also called: None
+Hierarchy: Machining > Thermal Subtraction > Abrasive Jet Machining
+Category: Machining
+Definition: A process where a high-velocity stream of abrasive particles carried by gas erodes material from a surface.
+
+Label: Electric Discharge Machining (EDM)
+Also called: EDM, Spark Machining
+Hierarchy: Machining > Thermal Subtraction > EDM
+Category: Machining
+Definition: A non-traditional machining process that removes material using electrical sparks between an electrode and workpiece.
+
+Label: Hole Drilling EDM
+Also called: None
+Hierarchy: Machining > Thermal Subtraction > EDM > Hole Drilling EDM
+Category: Machining
+Definition: An EDM process used for producing very small, deep, and precise holes in conductive materials.
+
+Label: Die Sinking
+Also called: None
+Hierarchy: Machining > Thermal Subtraction > EDM > Hole Drilling EDM > Die Sinking
+Category: Machining
+Definition: A spark erosion process in which a shaped electrode sinks into the workpiece to create cavities or dies.
+
+Label: Ram EDM
+Also called: None
+Hierarchy: Machining > Thermal Subtraction > EDM > Ram EDM
+Category: Machining
+Definition: An EDM process where a shaped electrode repeatedly discharges sparks to machine complex cavities.
+
+Label: Sinker EDM
+Also called: None
+Hierarchy: Machining > Thermal Subtraction > EDM > Sinker EDM
+Category: Machining
+Definition: A type of EDM that uses a custom-shaped electrode to erode material and form detailed cavities in hard metals.
+
+Label: Wire EDM
+Also called: Wire EDM Cutting, Wire Electrical Discharge Machining, Wire-EDM
+Hierarchy: Machining > Thermal Subtraction > EDM > Wire EDM
+Category: Machining
+Definition: A precision EDM process that cuts conductive materials using a continuously fed thin wire electrode.
+
+Label: High Energy Beam Machining
+Also called: None
+Hierarchy: Machining > Thermal Subtraction > High Energy Beam Machining
+Category: Machining
+Definition: A non-traditional machining method that removes material using concentrated energy beams such as lasers or electrons.
+
+Label: Electron Beam Machining
+Also called: None
+Hierarchy: Machining > Thermal Subtraction > High Energy Beam Machining > Electron Beam Machining
+Category: Machining
+Definition: A process that uses a focused beam of high-velocity electrons to melt and vaporize material with extreme precision.
+
+Label: Laser Cutting
+Also called: Laser Beam Cutting
+Hierarchy: Machining > Thermal Subtraction > High Energy Beam Machining > Laser Cutting
+Category: Machining
+Definition: A thermal cutting process that uses a focused laser beam to cut, engrave, or shape materials.
+
+Label: CNC Laser Cutting
+Also called: None
+Hierarchy: Machining > Thermal Subtraction > High Energy Beam Machining > Laser Cutting > CNC Laser Cutting
+Category: Machining
+Definition: Laser cutting controlled by CNC systems to achieve precise, automated cutting of complex geometries.
+
+Label: Laser Etching
+Also called: None
+Hierarchy: Machining > Thermal Subtraction > High Energy Beam Machining > Laser Etching
+Category: Machining
+Definition: A process where a laser beam alters the surface of a material to create marks, patterns, or shallow grooves.
+
+Label: Torch Cutting
+Also called: None
+Hierarchy: Machining > Thermal Subtraction > Torch Cutting
+Category: Machining
+Definition: A process that uses an oxy-fuel or plasma torch to cut metals by melting and blowing away material.
+
+Label: Oxy-Fuel Cutting
+Also called: Flame Cutting, Gas Cutting, Oxy-Acetylene Cutting, Oxyfuel Gas Cutting
+Hierarchy: Machining > Thermal Subtraction > Torch Cutting > Oxy-Fuel Cutting
+Category: Machining
+Definition: A thermal cutting method where oxygen reacts with preheated metal to oxidize and cut through it.
+
+Label: Plasma Cutting
+Also called: Plasma Arc Cutting
+Hierarchy: Machining > Thermal Subtraction > Torch Cutting > Plasma Cutting
+Category: Machining
+Definition: A process that cuts conductive materials using a high-velocity jet of ionized plasma.
+
+Label: Threading
+Also called: Thread Cutting
+Hierarchy: Machining > Threading
+Category: Machining
+Definition: A machining operation that produces helical grooves (threads) on the internal or external surface of a workpiece.
+
+Label: Ultrasonic Machining
+Also called: None
+Hierarchy: Machining > Ultrasonic Machining
+Category: Machining
+Definition: A non-traditional machining method that uses high-frequency vibrations and abrasive slurry to erode material.
+
+Label: Unconventional Machining
+Also called: Nonconventional Machining
+Hierarchy: Machining > Unconventional Machining
+Category: Machining
+Definition: A group of processes that remove material without traditional cutting tools, often using energy or chemicals.
+
+Label: Zero Stock Machining
+Also called: Negative Stock Machining, Net Shape Machining, ZSM
+Hierarchy: Machining > Zero Stock Machining
+Category: Machining
+Definition: A near-net-shape machining approach designed to produce final dimensions with minimal or no additional material removal.
+
+Label: Molding
+Also called: Moulding
+Hierarchy: Molding
+Category: Molding
+Definition: A manufacturing process in which raw material is shaped inside a mold cavity to form a solid part.
+
+Label: Blow Molding
+Also called: None
+Hierarchy: Molding > Blow Molding
+Category: Molding
+Definition: A process that forms hollow plastic parts by inflating heated plastic into a mold cavity.
+
+Label: Extrusion Blow Molding
+Also called: None
+Hierarchy: Molding > Blow Molding > Extrusion Blow Molding
+Category: Molding
+Definition: A blow molding method where molten plastic is extruded into a tube (parison) and then inflated inside a mold to form hollow parts.
+
+Label: Injection Blow Molding
+Also called: None
+Hierarchy: Molding > Blow Molding > Injection Blow Molding
+Category: Molding
+Definition: A process that combines injection molding and blow molding, where a preform is injection molded and then blown into a final hollow shape.
+
+Label: Stretch Blow Molding
+Also called: None
+Hierarchy: Molding > Blow Molding > Stretch Blow Molding
+Category: Molding
+Definition: A process in which a plastic preform is both stretched and blown into a mold to improve strength and clarity of bottles.
+
+Label: Compression Molding
+Also called: CRTM, Compression Resin Transfer Molding
+Hierarchy: Molding > Compression Molding
+Category: Molding
+Definition: A molding process where material is placed into a heated mold and compressed under pressure to form a part.
+
+Label: Injection Molding
+Also called: Plastic Molding
+Hierarchy: Molding > Injection Molding
+Category: Molding
+Definition: A high-volume process that injects molten material into a mold cavity, producing complex and precise parts.
+
+Label: Metal Injection Molding
+Also called: None
+Hierarchy: Molding > Injection Molding > Metal Injection Molding
+Category: Molding
+Definition: A molding process that combines fine metal powders with a binder, injected into molds and then sintered to form solid metal parts.
+
+Label: Reaction Injection Molding
+Also called: None
+Hierarchy: Molding > Injection Molding > Reaction Injection Molding
+Category: Molding
+Definition: A process where liquid reactants are mixed and injected into a mold, where they chemically react and cure into solid plastic parts.
+
+Label: Rubber Injection Molding
+Also called: None
+Hierarchy: Molding > Injection Molding > Rubber Injection Molding
+Category: Molding
+Definition: A process that injects heated rubber compounds into a mold to produce durable, elastic components.
+
+Label: Rotational Molding
+Also called: None
+Hierarchy: Molding > Rotational Molding
+Category: Molding
+Definition: A molding process where powdered material is placed in a mold that rotates biaxially while heated, forming hollow parts.
+
+Label: Rotomolding
+Also called: None
+Hierarchy: Molding > Rotomolding
+Category: Molding
+Definition: Another term for rotational molding, commonly used to produce large hollow plastic parts.
+
+Label: Transfer Molding
+Also called: None
+Hierarchy: Molding > Transfer Molding
+Category: Molding
+Definition: A process in which preheated material is forced into a closed mold cavity by a plunger to form detailed parts.
+
+Label: Resin Transfer Molding
+Also called: None
+Hierarchy: Molding > Transfer Molding > Resin Transfer Molding
+Category: Molding
+Definition: A molding method where resin is injected into a mold containing dry fibers, impregnating them to create strong composite parts.
+
+Label: Pultrusion
+Also called: Pultrusion Process
+Hierarchy: Molding > Transfer Molding > Resin Transfer Molding > Pultrusion
+Category: Molding
+Definition: A continuous molding process that pulls fibers through a resin bath and heated die to produce constant cross-section profiles.
+
+Label: Vacuum Assisted Resin Transfer Molding
+Also called: None
+Hierarchy: Molding > Transfer Molding > Vacuum Assisted Resin Transfer Molding
+Category: Molding
+Definition: A variation of resin transfer molding that uses vacuum pressure to draw resin into fiber reinforcements inside a mold.
+
+Label: Vacuum Molding
+Also called: None
+Hierarchy: Molding > Vacuum Molding
+Category: Molding
+Definition: A process where a heated sheet of plastic is drawn into a mold by vacuum to form thin-walled parts.
+
+Label: Packing
+Also called: None
+Hierarchy: Packing
+Category: Packing
+Definition: A manufacturing step involving enclosing or securing products in materials for protection, storage, and distribution.
+
+Label: Labeling
+Also called: None
+Hierarchy: Packing > Labeling
+Category: Packing
+Definition: The process of applying identification or branding labels onto manufactured products or packaging.
+
+Label: Vacuum Packaging
+Also called: Vacuum Packing
+Hierarchy: Packing > Vacuum Packaging
+Category: Packing
+Definition: A method of packaging where air is removed from the package before sealing to extend product shelf life.
+
+Label: Sheet Metal Processing
+Also called: Precision sheet metal fabrication, Sheet Metal, Sheet Metal Fabrication, Sheet Metal Work, Stamping
+Hierarchy: Sheet Metal Processing
+Category: Sheet Metal Processing
+Definition: A group of processes for cutting, shaping, and assembling thin metal sheets into parts or structures.
+
+Label: Bending
+Also called: None
+Hierarchy: Sheet Metal Processing > Bending
+Category: Sheet Metal Processing
+Definition: A sheet metal process that plastically deforms material along a straight axis to create angles or curves.
+
+Label: Pipe Bending
+Also called: None
+Hierarchy: Sheet Metal Processing > Bending > Pipe Bending
+Category: Sheet Metal Processing
+Definition: A forming process that bends metal pipes into specific angles or curves without collapsing the cross-section.
+
+Label: Sheet Bending
+Also called: None
+Hierarchy: Sheet Metal Processing > Bending > Sheet Bending
+Category: Sheet Metal Processing
+Definition: A process that bends flat sheet metal into desired angles or profiles using press brakes or rollers.
+
+Label: Tube Bending
+Also called: None
+Hierarchy: Sheet Metal Processing > Bending > Tube Bending
+Category: Sheet Metal Processing
+Definition: A forming process used to bend hollow tubes into required shapes while maintaining structural integrity.
+
+Label: Wire Bending
+Also called: None
+Hierarchy: Sheet Metal Processing > Bending > Wire Bending
+Category: Sheet Metal Processing
+Definition: A process that bends wire into different configurations for springs, clips, or custom wire forms.
+
+Label: Bulge Forming
+Also called: Bulging, Bulging Process
+Hierarchy: Sheet Metal Processing > Bulge Forming
+Category: Sheet Metal Processing
+Definition: A forming process where internal pressure expands a tube or sheet section outward into a die cavity.
+
+Label: Corrugation
+Also called: Corrugating
+Hierarchy: Sheet Metal Processing > Corrugation
+Category: Sheet Metal Processing
+Definition: A process of shaping sheet metal into parallel ridges and grooves to improve stiffness and strength.
+
+Label: Embossing
+Also called: Sheet Metal Embossing
+Hierarchy: Sheet Metal Processing > Embossing
+Category: Sheet Metal Processing
+Definition: A sheet forming process that creates raised or recessed patterns on metal sheets using dies.
+
+Label: Hemming
+Also called: None
+Hierarchy: Sheet Metal Processing > Hemming
+Category: Sheet Metal Processing
+Definition: A process of folding sheet metal edges over onto themselves for reinforcement or improved appearance.
+
+Label: Hot Stamping
+Also called: Stamping
+Hierarchy: Sheet Metal Processing > Hot Stamping
+Category: Sheet Metal Processing
+Definition: A process where heated sheet metal is formed and simultaneously quenched to create strong, lightweight parts.
+
+Label: Notching
+Also called: None
+Hierarchy: Sheet Metal Processing > Notching
+Category: Sheet Metal Processing
+Definition: A cutting process that removes material from the edge or corner of sheet metal to prepare for bending or joining.
+
+Label: Punching
+Also called: None
+Hierarchy: Sheet Metal Processing > Punching
+Category: Sheet Metal Processing
+Definition: A process that removes material from sheet metal by forcing a punch through it into a die.
+
+Label: Piercing
+Also called: None
+Hierarchy: Sheet Metal Processing > Punching > Piercing
+Category: Sheet Metal Processing
+Definition: A punching operation that creates holes or openings in sheet metal without removing material completely.
+
+Label: Shearing
+Also called: None
+Hierarchy: Sheet Metal Processing > Shearing
+Category: Sheet Metal Processing
+Definition: A cutting process that slices sheet metal along straight lines using shearing blades.
+
+Label: Slitting
+Also called: None
+Hierarchy: Sheet Metal Processing > Slitting
+Category: Sheet Metal Processing
+Definition: A process that cuts wide coils or sheets of metal into narrower strips using rotary knives.
+
+Label: Spinning
+Also called: Metal Spinning
+Hierarchy: Sheet Metal Processing > Spinning
+Category: Sheet Metal Processing
+Definition: A forming process where a rotating metal blank is pressed over a mandrel to create symmetrical hollow parts.
+
+Label: Hot Spinning
+Also called: None
+Hierarchy: Sheet Metal Processing > Spinning > Hot Spinning
+Category: Sheet Metal Processing
+Definition: A variation of spinning performed on heated metal to allow forming of thicker or harder materials.
+
+Label: Shear Spinning
+Also called: None
+Hierarchy: Sheet Metal Processing > Spinning > Shear Spinning
+Category: Sheet Metal Processing
+Definition: A spinning process that thins a rotating metal blank while maintaining its diameter, forming conical or cylindrical shapes.
+
+Label: Tufting
+Also called: None
+Hierarchy: Sheet Metal Processing > Spinning > Tufting
+Category: Sheet Metal Processing
+Definition: A specialized process where small projections or fibers are inserted into a base material, sometimes applied in sheet processing.
+
+Label: Stamping
+Also called: Metal Stamping
+Hierarchy: Sheet Metal Processing > Stamping
+Category: Sheet Metal Processing
+Definition: A high-speed forming process that uses dies and presses to cut or shape sheet metal into components.
+
+Label: Blanking
+Also called: None
+Hierarchy: Sheet Metal Processing > Stamping > Blanking
+Category: Sheet Metal Processing
+Definition: A precision stamping process that produces smooth, straight edges with minimal deformation, often used for gears and complex parts.
+
+Label: Press Work
+Also called: None
+Hierarchy: Sheet Metal Processing > Stamping > Press Work
+Category: Sheet Metal Processing
+Definition: A general term for manufacturing operations performed on a press, including punching, forming, and bending sheet metal.
+
+Label: Stretch Forming
+Also called: None
+Hierarchy: Sheet Metal Processing > Stretch Forming
+Category: Sheet Metal Processing
+Definition: A forming process where sheet metal is stretched and simultaneously bent over a form block or die to create large contoured parts.
+
+Label: Singeing
+Also called: None
+Hierarchy: Singeing
+Category: Singeing
+Definition: A surface finishing process where fabric or material is exposed to a flame or heat to remove protruding fibers.
+
+Label: Surface Finishing
+Also called: Finishing, Surface Treatment
+Hierarchy: Surface Finishing
+Category: Surface Finishing
+Definition: A group of processes applied to modify the surface of a material to improve appearance, corrosion resistance, or wear resistance.
+
+Label: Coating
+Also called: None
+Hierarchy: Surface Finishing > Coating
+Category: Surface Finishing
+Definition: A process of applying a protective or decorative layer onto a material’s surface.
+
+Label: Babbitting
+Also called: None
+Hierarchy: Surface Finishing > Coating > Babbitting
+Category: Surface Finishing
+Definition: A process of lining bearings with a soft Babbitt alloy to reduce friction and wear.
+
+Label: Black Oxide Coating
+Also called: Black Oxide, Blackening, Blacking
+Hierarchy: Surface Finishing > Coating > Black Oxide Coating
+Category: Surface Finishing
+Definition: A chemical conversion coating that produces a black finish on steel for mild corrosion resistance and aesthetics.
+
+Label: Chemical Coating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Chemical Coating
+Category: Surface Finishing
+Definition: A surface treatment where chemicals are used to alter or deposit a protective layer on metal surfaces.
+
+Label: Anodizing
+Also called: Anodization
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Anodizing
+Category: Surface Finishing
+Definition: An electrochemical process that thickens the natural oxide layer on aluminum or other metals for durability and colorability.
+
+Label: Decorative Anodizing
+Also called: None
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Anodizing > Decorative Anodizing
+Category: Surface Finishing
+Definition: A form of anodizing focused on enhancing visual appearance with coloring or finishing effects while providing corrosion resistance.
+
+Label: Iridite
+Also called: None
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Anodizing > Iridite
+Category: Surface Finishing
+Definition: A chromate conversion coating applied to aluminum for corrosion resistance and improved paint adhesion.
+
+Label: Chemical Conversion Coating
+Also called: Chem Filming, Conversion Coating
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Chemical Conversion Coating
+Category: Surface Finishing
+Definition: A coating formed by a chemical reaction with the metal surface, creating a corrosion-resistant protective film.
+
+Label: Alkaline Oxide Conversion Coating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Chemical Conversion Coating > Alkaline Oxide Conversion Coating
+Category: Surface Finishing
+Definition: A conversion coating formed using alkaline solutions to improve corrosion resistance and paint adhesion.
+
+Label: Chromate Conversion Coating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Chemical Conversion Coating > Chromate Conversion Coating
+Category: Surface Finishing
+Definition: A chemical process that deposits a thin protective chromate layer on aluminum, zinc, or magnesium alloys.
+
+Label: Fused Nitrate Conversion Coating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Chemical Conversion Coating > Fused Nitrate Conversion Coating
+Category: Surface Finishing
+Definition: A surface treatment using molten nitrates to form protective oxide coatings on metals.
+
+Label: Phosphate Conversion Coating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Chemical Conversion Coating > Phosphate Conversion Coating
+Category: Surface Finishing
+Definition: A chemical treatment that applies a phosphate layer on steel surfaces to improve corrosion resistance and paint bonding.
+
+Label: Phosphating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Chemical Conversion Coating > Phosphate Conversion Coating > Phosphating
+Category: Surface Finishing
+Definition: The process of depositing a phosphate coating on steel or iron surfaces to prevent rust and serve as a paint base.
+
+Label: Plating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Plating
+Category: Surface Finishing
+Definition: A process of depositing a thin metallic layer onto a surface for protection, conductivity, or decoration.
+
+Label: Electroplating
+Also called: Electro-Plating, Electropolish
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Plating > Electroplating
+Category: Surface Finishing
+Definition: A process that uses electric current to deposit a thin metallic coating onto a workpiece for corrosion resistance, wear protection, or aesthetics.
+
+Label: Cadmium Plating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Plating > Electroplating > Cadmium Plating
+Category: Surface Finishing
+Definition: Electroplating with cadmium to provide corrosion resistance and lubricity, often used in aerospace and military applications.
+
+Label: Chrome Plating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Plating > Electroplating > Chrome Plating
+Category: Surface Finishing
+Definition: Electroplating with chromium to enhance hardness, wear resistance, and a bright decorative finish.
+
+Label: Copper Plating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Plating > Electroplating > Copper Plating
+Category: Surface Finishing
+Definition: The electro-deposition of copper onto a substrate, commonly used as an undercoat for improved adhesion and conductivity.
+
+Label: Electro Deposition
+Also called: None
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Plating > Electroplating > Copper Plating > Electro Deposition
+Category: Surface Finishing
+Definition: A general term for depositing material onto a surface using an electric current, forming a uniform coating.
+
+Label: Electroless Nickel Plating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Plating > Electroplating > Electroless Nickel Plating
+Category: Surface Finishing
+Definition: A chemical (non-electric) plating process that deposits nickel evenly on complex surfaces, providing corrosion and wear resistance.
+
+Label: Gold Plating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Plating > Electroplating > Gold Plating
+Category: Surface Finishing
+Definition: Electroplating with gold to provide high conductivity, corrosion resistance, and decorative appearance.
+
+Label: Nickel Plating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Plating > Electroplating > Nickel Plating
+Category: Surface Finishing
+Definition: Applying a nickel coating by electroplating to improve hardness, corrosion resistance, and wear properties.
+
+Label: Silver Plating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Plating > Electroplating > Silver Plating
+Category: Surface Finishing
+Definition: Electroplating with silver to enhance conductivity, solderability, and decorative qualities.
+
+Label: Tin Plating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Plating > Electroplating > Tin Plating
+Category: Surface Finishing
+Definition: Applying a thin layer of tin to a surface to improve solderability, corrosion resistance, and electrical properties.
+
+Label: Zinc Plating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Plating > Electroplating > Zinc Plating
+Category: Surface Finishing
+Definition: Electroplating steel or iron with zinc to provide sacrificial corrosion protection.
+
+Label: Cladding
+Also called: None
+Hierarchy: Surface Finishing > Coating > Cladding
+Category: Surface Finishing
+Definition: Bonding a layer of one material to the surface of another for improved corrosion resistance or wear properties.
+
+Label: Electrocoating
+Also called: E-coating
+Hierarchy: Surface Finishing > Coating > Electrocoating
+Category: Surface Finishing
+Definition: A process where electrically charged paint particles are deposited onto a surface for uniform coating and corrosion protection.
+
+Label: Electrodeposited Coating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Electrodeposited Coating
+Category: Surface Finishing
+Definition: A coating formed by electrodeposition, often used for metallic or paint films requiring uniform coverage.
+
+Label: Galvanizing
+Also called: Galvanization
+Hierarchy: Surface Finishing > Coating > Galvanizing
+Category: Surface Finishing
+Definition: The process of applying a protective zinc coating to steel or iron, usually by hot-dip or electroplating, to prevent rust.
+
+Label: Mechanical Coating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Mechanical Coating
+Category: Surface Finishing
+Definition: A coating applied mechanically, such as by peening or tumbling, to adhere protective particles onto a metal surface.
+
+Label: Powder Coating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Mechanical Coating > Powder Coating
+Category: Surface Finishing
+Definition: A dry finishing process where powdered paint is electrostatically applied and cured under heat to form a protective layer.
+
+Label: Metal Coating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Metal Coating
+Category: Surface Finishing
+Definition: A general term for applying a metallic layer to improve protection, conductivity, or decorative qualities.
+
+Label: Passivation
+Also called: Passivating
+Hierarchy: Surface Finishing > Coating > Passivation
+Category: Surface Finishing
+Definition: A chemical treatment, usually for stainless steel, that removes free iron and enhances the formation of a protective oxide layer.
+
+Label: Phosphate Coating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Phosphate Coating
+Category: Surface Finishing
+Definition: A conversion coating that applies a crystalline phosphate layer to steel for corrosion protection and paint adhesion.
+
+Label: Press Forming
+Also called: None
+Hierarchy: Surface Finishing > Coating > Press Forming
+Category: Surface Finishing
+Definition: A forming process where a workpiece is shaped by applying pressure with a press and die set.
+
+Label: Painting
+Also called: None
+Hierarchy: Surface Finishing > Coating > Painting
+Category: Surface Finishing
+Definition: The application of liquid or powder paint to a surface to provide protection and decorative finish.
+
+Label: Wet Painting
+Also called: None
+Hierarchy: Surface Finishing > Coating > Painting > Wet Painting
+Category: Surface Finishing
+Definition: A conventional painting process where liquid paint is sprayed, brushed, or dipped onto a surface.
+
+Label: Roll Coating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Roll Coating
+Category: Surface Finishing
+Definition: A coating process where liquid material is applied to a flat substrate using rotating rollers.
+
+Label: Surface Coating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Surface Coating
+Category: Surface Finishing
+Definition: A general term for applying protective or decorative layers on a material surface, such as paint, plating, or films.
+
+Label: Thermal Coating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Thermal Coating
+Category: Surface Finishing
+Definition: A group of coating processes where materials are deposited on a surface using high-temperature energy sources.
+
+Label: Thermal Spray Coating
+Also called: None
+Hierarchy: Surface Finishing > Coating > Thermal Coating > Thermal Spray Coating
+Category: Surface Finishing
+Definition: A process where molten or semi-molten material is sprayed onto a surface to form a protective or functional coating.
+
+Label: Flame Spraying
+Also called: None
+Hierarchy: Surface Finishing > Coating > Thermal Coating > Thermal Spray Coating > Flame Spraying
+Category: Surface Finishing
+Definition: A thermal spray method where coating material is melted by a flame and propelled onto a substrate.
+
+Label: Thermal Spraying
+Also called: None
+Hierarchy: Surface Finishing > Coating > Thermal Coating > Thermal Spray Coating > Flame Spraying > Thermal Spraying
+Category: Surface Finishing
+Definition: A family of coating processes in which materials are heated and sprayed at high velocity to build surface layers.
+
+Label: Plasma Spraying
+Also called: None
+Hierarchy: Surface Finishing > Coating > Thermal Coating > Thermal Spray Coating > Plasma Spraying
+Category: Surface Finishing
+Definition: A thermal spray process using a plasma jet to melt and accelerate coating particles onto a surface.
+
+Label: Vaporized Metal Coating
+Also called: Physical Vapor Deposition, Vacuum Metalizing, Vapor Metalizing
+Hierarchy: Surface Finishing > Coating > Thermal Coating > Vaporized Metal Coating
+Category: Surface Finishing
+Definition: A process where metals are vaporized in a vacuum and deposited onto a substrate for decorative or functional films.
+
+Label: Chemical Vapor Deposition
+Also called: None
+Hierarchy: Surface Finishing > Coating > Thermal Coating > Vaporized Metal Coating > Chemical Vapor Deposition
+Category: Surface Finishing
+Definition: A process where volatile chemical precursors react or decompose on a substrate to form a solid thin film.
+
+Label: Plasma Enhanced Chemical Vapor Deposition
+Also called: None
+Hierarchy: Surface Finishing > Coating > Thermal Coating > Vaporized Metal Coating > Chemical Vapor Deposition > Plasma Enhanced Chemical Vapor Deposition
+Category: Surface Finishing
+Definition: A CVD variation that uses plasma to enhance chemical reactions, enabling lower temperature thin-film deposition.
+
+Label: Physical Vapor Deposition
+Also called: None
+Hierarchy: Surface Finishing > Coating > Thermal Coating > Vaporized Metal Coating > Physical Vapor Deposition
+Category: Surface Finishing
+Definition: A process where materials are physically vaporized in a vacuum and condensed on a substrate as a thin film.
+
+Label: Vapor Deposition
+Also called: None
+Hierarchy: Surface Finishing > Coating > Thermal Coating > Vaporized Metal Coating > Vapor Deposition
+Category: Surface Finishing
+Definition: A general term for processes that deposit thin solid films from vapor-phase precursors.
+
+Label: MicroFinishing
+Also called: Micro Finishing
+Hierarchy: Surface Finishing > MicroFinishing
+Category: Surface Finishing
+Definition: A precision finishing process that removes very small amounts of material to achieve high surface quality and accuracy.
+
+Label: Surface Preparation
+Also called: Surface Cleaning
+Hierarchy: Surface Finishing > Surface Preparation
+Category: Surface Finishing
+Definition: Processes used to clean and condition a surface before finishing, coating, or bonding.
+
+Label: Abrasive Cleaning
+Also called: None
+Hierarchy: Surface Finishing > Surface Preparation > Abrasive Cleaning
+Category: Surface Finishing
+Definition: Surface cleaning using abrasive particles to remove contaminants, rust, or coatings.
+
+Label: Bead Blasting
+Also called: None
+Hierarchy: Surface Finishing > Surface Preparation > Abrasive Cleaning > Bead Blasting
+Category: Surface Finishing
+Definition: A blasting process that uses glass or ceramic beads to clean or finish surfaces without significant material removal.
+
+Label: Chemical Cleaning
+Also called: None
+Hierarchy: Surface Finishing > Surface Preparation > Abrasive Cleaning > Chemical Cleaning
+Category: Surface Finishing
+Definition: Cleaning a surface with chemical solutions to remove oxides, oils, or contaminants.
+
+Label: Surface Blasting
+Also called: None
+Hierarchy: Surface Finishing > Surface Preparation > Abrasive Cleaning > Surface Blasting
+Category: Surface Finishing
+Definition: A cleaning or finishing process that uses high-speed abrasive particles to remove material or contaminants from surfaces.
+
+Label: Tumbling
+Also called: None
+Hierarchy: Surface Finishing > Surface Preparation > Abrasive Cleaning > Tumbling
+Category: Surface Finishing
+Definition: A finishing process where parts are placed in a rotating drum with abrasives to deburr, clean, or polish.
+
+Label: Barrel Finishing
+Also called: None
+Hierarchy: Surface Finishing > Surface Preparation > Abrasive Cleaning > Tumbling > Barrel Finishing
+Category: Surface Finishing
+Definition: A type of tumbling where parts are processed in a rotating barrel with media for surface improvement.
+
+Label: Vibratory Tumbling
+Also called: None
+Hierarchy: Surface Finishing > Surface Preparation > Abrasive Cleaning > Tumbling > Vibratory Tumbling
+Category: Surface Finishing
+Definition: A tumbling method where parts are placed in a vibrating container with abrasive media for deburring and polishing.
+
+Label: Belt Sanding
+Also called: Sanding
+Hierarchy: Surface Finishing > Surface Preparation > Belt Sanding
+Category: Surface Finishing
+Definition: A process that uses a continuous abrasive belt to smooth or remove material from surfaces.
+
+Label: Harperizing
+Also called: None
+Hierarchy: Surface Finishing > Surface Preparation > Harperizing
+Category: Surface Finishing
+Definition: A mass finishing process using rotating tubs or vibratory machines with abrasive media to deburr or polish parts.
+
+Label: Polishing
+Also called: None
+Hierarchy: Surface Finishing > Surface Preparation > Polishing
+Category: Surface Finishing
+Definition: A finishing process that smooths a surface using abrasives to achieve a reflective or glossy appearance.
+
+Label: Chemical Polishing
+Also called: None
+Hierarchy: Surface Finishing > Surface Preparation > Polishing > Chemical Polishing
+Category: Surface Finishing
+Definition: A polishing method that uses controlled chemical reactions to smooth and brighten a material surface.
+
+Label: Pickling
+Also called: None
+Hierarchy: Surface Finishing > Surface Preparation > Polishing > Chemical Polishing > Pickling
+Category: Surface Finishing
+Definition: A chemical treatment using acids to remove oxides, scale, or impurities from metal surfaces.
+
+Label: Electropolishing
+Also called: Electrochemical Polishing, Electrolytic Polishing
+Hierarchy: Surface Finishing > Surface Preparation > Polishing > Electropolishing
+Category: Surface Finishing
+Definition: An electrochemical process that removes surface material to improve smoothness, brightness, and corrosion resistance.
+
+Label: Mechanical Polishing
+Also called: None
+Hierarchy: Surface Finishing > Surface Preparation > Polishing > Mechanical Polishing
+Category: Surface Finishing
+Definition: A polishing process using physical abrasives or tools to refine a material’s surface finish.
+
+Label: Planarization
+Also called: None
+Hierarchy: Surface Finishing > Surface Preparation > Polishing > Planarization
+Category: Surface Finishing
+Definition: A precision process that levels and smooths surfaces to achieve uniform flatness, often in semiconductor manufacturing.
+
+Label: Chemical Mechanical Polishing
+Also called: None
+Hierarchy: Surface Finishing > Surface Preparation > Polishing > Planarization > Chemical Mechanical Polishing
+Category: Surface Finishing
+Definition: A hybrid process combining chemical etching and mechanical abrasion to achieve ultra-flat, defect-free surfaces.
+
+Label: Sand Blasting
+Also called: Abrasive Blasting, Sandblasting
+Hierarchy: Surface Finishing > Surface Preparation > Sand Blasting
+Category: Surface Finishing
+Definition: A process that propels sand or abrasive particles at high velocity to clean or texture surfaces.
+
+Label: Grit Blasting
+Also called: None
+Hierarchy: Surface Finishing > Surface Preparation > Sand Blasting > Grit Blasting
+Category: Surface Finishing
+Definition: A blasting method using angular abrasive particles (grit) to roughen or clean surfaces.
+
+Label: Shot Peening
+Also called: None
+Hierarchy: Surface Finishing > Surface Preparation > Shot Peening
+Category: Surface Finishing
+Definition: A surface treatment where small spherical media are blasted at metal parts to improve fatigue resistance by inducing compressive stresses.
+
+Label: Peening
+Also called: None
+Hierarchy: Surface Finishing > Surface Preparation > Shot Peening > Peening
+Category: Surface Finishing
+Definition: A cold working process where a surface is mechanically hammered or blasted to improve strength and surface properties.
+
+Label: Ultrasonic Cleaning
+Also called: None
+Hierarchy: Surface Finishing > Surface Preparation > Ultrasonic Cleaning
+Category: Surface Finishing
+Definition: A cleaning process that uses high-frequency ultrasonic waves in a liquid bath to remove contaminants from parts.
+
+Label: Tumble Finishing
+Also called: Finishing
+Hierarchy: Surface Finishing > Tumble Finishing
+Category: Surface Finishing
+Definition: A finishing process where parts are rotated in a barrel or vibratory machine with abrasives for deburring or polishing.
+
+Label: Vibratory Finishing
+Also called: None
+Hierarchy: Surface Finishing > Vibratory Finishing
+Category: Surface Finishing
+Definition: A mass finishing process where parts and abrasive media are vibrated together to smooth surfaces or remove burrs.
+
+Label: Textile Process
+Also called: None
+Hierarchy: Textile Process
+Category: Textile Process
+Definition: A broad group of manufacturing methods used to convert fibers, yarns, or fabrics into finished textiles or products.
+
+Label: Crochet
+Also called: None
+Hierarchy: Textile Process > Crochet
+Category: Textile Process
+Definition: A textile technique where yarn is interlaced into loops using a hook to create fabric or decorative items.
+
+Label: Dyeing
+Also called: None
+Hierarchy: Textile Process > Dyeing
+Category: Textile Process
+Definition: A process of applying color to textile fibers, yarns, or fabrics using dyes to achieve uniform or patterned coloration.
+
+Label: Knitting
+Also called: None
+Hierarchy: Textile Process > Knitting
+Category: Textile Process
+Definition: A method of creating fabric by interlocking loops of yarn with needles in either weft or warp structures.
+
+Label: Weaving
+Also called: None
+Hierarchy: Textile Process > Weaving
+Category: Textile Process
+Definition: A process of interlacing warp and weft yarns at right angles on a loom to form fabric.
+
+Label: Tool Making
+Also called: None
+Hierarchy: Tool Making
+Category: Tool Making
+Definition: The process of designing and manufacturing tools, molds, dies, and fixtures used in manufacturing operations.
+
+Label: Die Making
+Also called: None
+Hierarchy: Tool Making > Die Making
+Category: Tool Making
+Definition: The specialized craft of creating dies, which are tools used to cut, shape, or form material in stamping and forming operations.
+
+Label: Mold Making
+Also called: None
+Hierarchy: Tool Making > Mold Making
+Category: Tool Making
+Definition: The process of designing and fabricating molds used in casting, injection molding, or forming processes.
+
+Label: Coremaking
+Also called: None
+Hierarchy: Tool Making > Mold Making > Coremaking
+Category: Tool Making
+Definition: A process of producing sand or ceramic cores used inside molds to shape internal cavities in castings.
+
+Label: Wood Working
+Also called: None
+Hierarchy: Wood Working
+Category: Wood Working
+Definition: The craft or manufacturing process of cutting, shaping, and assembling wood into products or structures.
+
+Label: Abrasive Finishing
+Also called: None
+Hierarchy: Abrasive Finishing
+Category: Abrasive Finishing
+Definition: A finishing process that uses abrasive particles or tools to remove small amounts of material and improve surface texture or appearance.
+
+Label: Carbon Dioxide Mold Casting
+Also called: None
+Hierarchy: Casting > Carbon Dioxide Mold Casting
+Category: Casting
+Definition: A sand casting process where sodium silicate sand molds are hardened by passing carbon dioxide gas through the mold.
+
+Label: Continuous Casting
+Also called: None
+Hierarchy: Casting > Continuous Casting
+Category: Casting
+Definition: A process where molten metal is solidified into a continuous billet, slab, or bloom for further rolling or forming.
+
+Label: Cold Chamber Die Casting
+Also called: None
+Hierarchy: Casting > Die Casting > Cold Chamber Die Casting
+Category: Casting
+Definition: A die casting process where molten metal is ladled into a cold chamber before being forced into the die under high pressure.
+
+Label: Hot Chamber Die Casting
+Also called: None
+Hierarchy: Casting > Die Casting > Hot Chamber Die Casting
+Category: Casting
+Definition: A die casting process where the injection system is immersed in molten metal, allowing faster cycle times for low-melting alloys.
+
+Label: Gravity Casting
+Also called: None
+Hierarchy: Casting > Gravity Casting
+Category: Casting
+Definition: A casting process where molten metal is poured into a mold under the force of gravity, without additional pressure.
+
+Label: Plaster Mold Casting
+Also called: None
+Hierarchy: Casting > Plaster Mold Casting
+Category: Casting
+Definition: A casting process using gypsum-based plaster molds to achieve fine detail and smooth surface finishes.
+
+Label: Shell Molding
+Also called: None
+Hierarchy: Casting > Shell Molding
+Category: Casting
+Definition: A casting method where a thin shell of sand and resin is hardened around a pattern to form the mold.
+
+Label: Spin Casting
+Also called: None
+Hierarchy: Casting > Spin Casting
+Category: Casting
+Definition: A centrifugal casting method where molds are spun to distribute molten material evenly, often used for small or jewelry parts.
+
+Label: Vacuum Casting
+Also called: None
+Hierarchy: Casting > Vacuum Casting
+Category: Casting
+Definition: A casting process where molten metal or resin is drawn into the mold cavity by vacuum pressure, improving detail and reducing porosity.
+
+Label: Chemical Processing
+Also called: None
+Hierarchy: Chemical Processing
+Category: Chemical Processing
+Definition: A manufacturing category involving the use of chemical reactions or treatments to modify or produce materials.
+
+Label: Electrochemical Processes
+Also called: None
+Hierarchy: Chemical Processing > Electrochemical Processes
+Category: Chemical Processing
+Definition: Processes that use controlled electric current in an electrolyte to remove, deposit, or modify material surfaces.
+
+Label: Fabricating
+Also called: None
+Hierarchy: Fabricating
+Category: Fabricating
+Definition: The process of constructing products by cutting, shaping, and assembling raw materials, usually metal or plastic.
+
+Label: Kitting
+Also called: None
+Hierarchy: Fabricating > Kitting
+Category: Fabricating
+Definition: An assembly preparation process where individual parts are grouped together into kits for efficient manufacturing or packaging.
+
+Label: Micro Fabrication
+Also called: None
+Hierarchy: Micro Fabrication
+Category: Micro Fabrication
+Definition: Manufacturing processes used to create extremely small structures, typically on the micrometer or nanometer scale.
+
+Label: Semiconductor Fabricating
+Also called: None
+Hierarchy: Micro Fabrication > Semiconductor Fabricating
+Category: Micro Fabrication
+Definition: The process of manufacturing semiconductor devices using photolithography, deposition, etching, and doping techniques.
+
+Label: Wire Harness Assembly
+Also called: None
+Hierarchy: Fabricating > Wire Harness Assembly
+Category: Fabricating
+Definition: The process of assembling cables and connectors into organized harnesses for electrical systems.
+
+Label: Filament Winding
+Also called: None
+Hierarchy: Fabricating > Filament Winding
+Category: Fabricating
+Definition: A composite manufacturing process where continuous fibers are wound over a rotating mandrel and impregnated with resin.
+
+Label: Coining
+Also called: None
+Hierarchy: Forging > Coining
+Category: Forging
+Definition: A precision forging process where material is compressed in closed dies to form fine details and surface features.
+
+You said:
+yes
+ChatGPT said:
+
+Perfect ✅ Let’s continue.
+Here’s Batch 2 of missing ones in the same format:
+
+Label: Die Forging
+Also called: None
+Hierarchy: Forging > Die Forging
+Category: Forging
+Definition: A forging process where heated metal is shaped between two dies that contain a shaped cavity.
+
+Label: Drop Forging
+Also called: None
+Hierarchy: Forging > Drop Forging
+Category: Forging
+Definition: A forging method where a hammer or press drops onto heated metal to shape it inside a die cavity.
+
+Label: Heading
+Also called: None
+Hierarchy: Forging > Heading
+Category: Forging
+Definition: A forging process that forms heads on fasteners such as bolts, screws, and rivets by upsetting the metal.
+
+Label: Press Forging
+Also called: None
+Hierarchy: Forging > Press Forging
+Category: Forging
+Definition: A forging process using a mechanical or hydraulic press to gradually apply pressure and shape the metal.
+
+Label: Swedging
+Also called: None
+Hierarchy: Forging > Swedging
+Category: Forging
+Definition: A forging process that reduces the diameter or changes the shape of a workpiece by repeated hammering or pressing.
+
+Label: Upsetting
+Also called: None
+Hierarchy: Forging > Upsetting
+Category: Forging
+Definition: A forging technique where the length of a metal piece is reduced while its cross-sectional area increases, often for fasteners.
+
+Label: Forming
+Also called: None
+Hierarchy: Forming
+Category: Forming
+Definition: A category of manufacturing processes that shape materials into desired forms without adding or removing material.
+
+Label: Cold Forming
+Also called: None
+Hierarchy: Forming > Cold Forming
+Category: Forming
+Definition: A forming process performed at or near room temperature to plastically deform material into shape.
+
+Label: Sheet Forming
+Also called: None
+Hierarchy: Forming > Sheet Forming
+Category: Forming
+Definition: A set of processes used to shape sheet metal into parts through bending, stretching, or stamping.
+
+Label: Ironing
+Also called: None
+Hierarchy: Forming > Drawing > Ironing
+Category: Forming
+Definition: A sheet metal forming process that reduces wall thickness while maintaining or increasing height, commonly used in cans.
+
+Label: Electro Forming
+Also called: None
+Hierarchy: Forming > Electro Forming
+Category: Forming
+Definition: A process where metal is deposited onto a mold or mandrel using electroplating to build up precise parts.
+
+Label: Explosion Forming
+Also called: None
+Hierarchy: Forming > Explosion Forming
+Category: Forming
+Definition: A high-energy forming process where an explosive charge creates pressure waves to shape metal against a die.
+
+Label: Hot Forming
+Also called: None
+Hierarchy: Forming > Hot Forming
+Category: Forming
+Definition: A forming process performed at elevated temperatures to improve ductility and reduce forming forces.
+
+Label: Knurling
+Also called: None
+Hierarchy: Forming > Knurling
+Category: Forming
+Definition: A machining and forming process that creates patterned ridges on a workpiece surface for grip or decoration.
+
+Label: Metal Forming
+Also called: None
+Hierarchy: Forming > Metal Forming
+Category: Forming
+Definition: A broad category of processes that plastically deform metal into desired shapes without removing material.
+
+Label: Powder Metal Forming
+Also called: None
+Hierarchy: Forming > Powder Metal Forming
+Category: Forming
+Definition: A forming process that compacts and shapes powdered metals before sintering into solid parts.
+
+Label: Isostatic Pressing
+Also called: None
+Hierarchy: Forming > Powder Metal Forming > Isostatic Pressing
+Category: Forming
+Definition: A compaction process that applies equal pressure from all directions to consolidate powders into a dense shape.
+
+Label: Cold Isostatics Pressing
+Also called: None
+Hierarchy: Forming > Powder Metal Forming > Cold Isostatics Pressing
+Category: Forming
+Definition: A variant of isostatic pressing performed at room temperature, using fluid pressure to compact powders.
+
+Label: Powder Compacting
+Also called: None
+Hierarchy: Forming > Powder Metal Forming > Powder Compacting
+Category: Forming
+Definition: The process of pressing metal or ceramic powders in a die to form a solid green compact.
+
+ChatGPT said:
+
+Great 🚀 Continuing with Batch 3 (starting from Powder Metallurgy):
+
+Label: Powder Metallurgy
+Also called: None
+Hierarchy: Forming > Powder Metallurgy
+Category: Forming
+Definition: A process of manufacturing components from powdered metals through compaction and sintering.
+
+Label: Spark Plasma Sintering
+Also called: None
+Hierarchy: Forming > Powder Metallurgy > Spark Plasma Sintering
+Category: Forming
+Definition: A sintering technique that uses pulsed electric current and pressure to rapidly densify powdered materials.
+
+Label: Press Forming
+Also called: None
+Hierarchy: Forming > Press Forming
+Category: Forming
+Definition: A forming process where a press applies force to shape materials, commonly sheet metals, into desired forms.
+
+Label: Roll Die Engraving
+Also called: None
+Hierarchy: Forming > Roll Die Engraving
+Category: Forming
+Definition: A process where patterns or designs are engraved onto a workpiece surface using engraved rolling dies.
+
+Label: Roller Forming
+Also called: None
+Hierarchy: Forming > Roller Forming
+Category: Forming
+Definition: A forming process where rollers progressively shape sheet or strip material into a desired cross-section.
+
+Label: Rolling
+Also called: None
+Hierarchy: Forming > Rolling
+Category: Forming
+Definition: A metal forming process that reduces thickness or changes cross-section by compressing material between rotating rolls.
+
+Label: Flat Rolling
+Also called: None
+Hierarchy: Forming > Rolling > Flat Rolling
+Category: Forming
+Definition: A rolling process that reduces the thickness of flat sheet or strip material between parallel rolls.
+
+Label: Plate Rolling
+Also called: None
+Hierarchy: Forming > Rolling > Plate Rolling
+Category: Forming
+Definition: A rolling process where metal plates are passed through rolls to reduce thickness or form curves.
+
+Label: Ring Rolling
+Also called: None
+Hierarchy: Forming > Rolling > Ring Rolling
+Category: Forming
+Definition: A hot forming process where a thick-walled ring is rolled to a larger diameter with reduced thickness.
+
+Label: Shape Rolling
+Also called: None
+Hierarchy: Forming > Rolling > Shape Rolling
+Category: Forming
+Definition: A rolling process where rolls with profiled grooves form metal into specific cross-sectional shapes.
+
+Label: Sheet Rolling
+Also called: None
+Hierarchy: Forming > Rolling > Sheet Rolling
+Category: Forming
+Definition: A rolling method to produce thin sheets of uniform thickness from metal slabs.
+
+Label: Sheet Metal Rolling
+Also called: None
+Hierarchy: Forming > Rolling > Sheet Metal Rolling
+Category: Forming
+Definition: A process of passing sheet metal through rolls to reduce thickness or impart curvature.
+
+Label: Thread Rolling
+Also called: None
+Hierarchy: Forming > Rolling > Thread Rolling
+Category: Forming
+Definition: A cold forming process that produces threads on fasteners by pressing dies into the workpiece surface.
+
+Label: Shear Forming
+Also called: None
+Hierarchy: Forming > Shear Forming
+Category: Forming
+Definition: A spinning process where localized pressure thins sheet metal while maintaining diameter.
+
+Label: Superplastic Forming
+Also called: None
+Hierarchy: Forming > Superplastic Forming
+Category: Forming
+Definition: A forming process that exploits the superplasticity of certain alloys at high temperature to form complex shapes.
+
+Label: Swagging
+Also called: None
+Hierarchy: Forming > Swagging
+Category: Forming
+Definition: A forging process where a workpiece is reduced in diameter by hammering or rotary dies.
+
+Label: Thermoforming
+Also called: None
+Hierarchy: Forming > Thermoforming
+Category: Forming
+Definition: A plastic forming process where heated sheets are shaped over molds by vacuum, pressure, or mechanical force.
+
+Label: Roll Bonding
+Also called: None
+Hierarchy: Forming > Roll Bonding
+Category: Forming
+Definition: A solid-state joining process where two or more layers of material are bonded together by rolling pressure.
+
+Label: Hot Isostatic
+Also called: None
+Hierarchy: Forming > Hot Isostatic
+Category: Forming
+Definition: A process that applies high temperature and isostatic gas pressure to densify metals, ceramics, or composites.
+
+Label: Wire Forming
+Also called: None
+Hierarchy: Forming > Wire Forming
+Category: Forming
+Definition: A process of shaping wire into specific forms or components using bending, coiling, or stamping tools.
+
+Label: Heat Treating
+Also called: None
+Hierarchy: Heat Treating
+Category: Heat Treating
+Definition: A group of processes that heat and cool metals under controlled conditions to alter mechanical or physical properties.
+
+Label: Annealing
+Also called: None
+Hierarchy: Heat Treating > Annealing
+Category: Heat Treating
+Definition: A heat treatment that softens material, improves ductility, and relieves internal stresses through controlled heating and cooling.
+
+Label: Recovery Annealing
+Also called: None
+Hierarchy: Heat Treating > Annealing > Recovery Annealing
+Category: Heat Treating
+Definition: A process that reduces internal stresses and restores some ductility without significant changes to grain structure.
+
+Label: Stress Relieving
+Also called: None
+Hierarchy: Heat Treating > Stress Relieving
+Category: Heat Treating
+Definition: A heat treatment applied to reduce residual stresses from machining, welding, or forming without altering hardness.
+
+Label: Tempering
+Also called: None
+Hierarchy: Heat Treating > Tempering
+Category: Heat Treating
+Definition: A heat treatment applied after hardening to reduce brittleness and increase toughness of metals.
+
+Label: Recrystallization
+Also called: None
+Hierarchy: Heat Treating > Recrystallization
+Category: Heat Treating
+Definition: A process where deformed grains in cold-worked metals are replaced by new, strain-free grains upon heating.
+
+Label: Full Annealing
+Also called: None
+Hierarchy: Heat Treating > Full Annealing
+Category: Heat Treating
+Definition: A heat treatment involving heating above critical temperature and slow cooling to produce soft, ductile material.
+
+Label: Process Annealing
+Also called: None
+Hierarchy: Heat Treating > Process Annealing
+Category: Heat Treating
+Definition: A subcritical annealing process used to soften cold-worked metals and restore ductility for further forming.
+
+Label: Cold Working
+Also called: None
+Hierarchy: Heat Treating > Cold Working
+Category: Heat Treating
+Definition: The process of deforming metal below its recrystallization temperature to increase strength through strain hardening.
+
+Label: Hot Working
+Also called: None
+Hierarchy: Heat Treating > Hot Working
+Category: Heat Treating
+Definition: The process of shaping metals at temperatures above recrystallization, improving ductility and reducing strength.
+
+Label: Short Cycle Annealing
+Also called: None
+Hierarchy: Heat Treating > Short Cycle Annealing
+Category: Heat Treating
+Definition: A faster annealing method with reduced heating and cooling times, applied for stress relief and ductility restoration.
+
+Label: Cold Treatment
+Also called: None
+Hierarchy: Heat Treating > Cold Treatment
+Category: Heat Treating
+Definition: A process that exposes metals to sub-zero temperatures to transform retained austenite and improve hardness.
+
+ChatGPT said:
+
+Great 👍 Here’s Batch 5 (Hardening → Sintering section):
+
+Label: Hardening
+Also called: None
+Hierarchy: Heat Treating > Hardening
+Category: Heat Treating
+Definition: A heat treatment that increases hardness and strength of metals by heating and then rapid cooling (quenching).
+
+Label: Quench Hardening
+Also called: None
+Hierarchy: Heat Treating > Hardening > Quench Hardening
+Category: Heat Treating
+Definition: A process where steel is heated to austenitizing temperature and rapidly cooled to form martensite, increasing hardness.
+
+Label: Quenching
+Also called: None
+Hierarchy: Heat Treating > Hardening > Quenching
+Category: Heat Treating
+Definition: Rapid cooling of heated metals in water, oil, or gas to alter structure and improve hardness or strength.
+
+Label: Surface Hardening
+Also called: None
+Hierarchy: Heat Treating > Hardening > Surface Hardening
+Category: Heat Treating
+Definition: A heat treatment that hardens only the surface of a component while retaining a tough, ductile core.
+
+Label: Chromizing
+Also called: None
+Hierarchy: Heat Treating > Hardening > Surface Hardening > Chromizing
+Category: Heat Treating
+Definition: A diffusion process where chromium is introduced into the surface of steel to improve hardness and corrosion resistance.
+
+Label: Cyaniding
+Also called: None
+Hierarchy: Heat Treating > Hardening > Surface Hardening > Cyaniding
+Category: Heat Treating
+Definition: A case hardening process where steel is heated in a cyanide bath to add carbon and nitrogen for surface hardening.
+
+Label: Diffusion Hardening
+Also called: None
+Hierarchy: Heat Treating > Hardening > Surface Hardening > Diffusion Hardening
+Category: Heat Treating
+Definition: A group of processes where alloying elements diffuse into the surface of metals to increase hardness and wear resistance.
+
+Label: Carbonitriding
+Also called: None
+Hierarchy: Heat Treating > Hardening > Surface Hardening > Carbonitriding
+Category: Heat Treating
+Definition: A thermochemical process where carbon and nitrogen diffuse into steel surface, improving hardness and fatigue resistance.
+
+Label: Carburizing
+Also called: None
+Hierarchy: Heat Treating > Hardening > Surface Hardening > Carburizing
+Category: Heat Treating
+Definition: A case hardening method where steel is exposed to a carbon-rich atmosphere at high temperature to harden the surface.
+
+Label: Nitriding
+Also called: None
+Hierarchy: Heat Treating > Hardening > Surface Hardening > Nitriding
+Category: Heat Treating
+Definition: A process that diffuses nitrogen into steel surface at sub-critical temperatures, forming hard nitrides for wear resistance.
+
+Label: Flame Hardening
+Also called: None
+Hierarchy: Heat Treating > Hardening > Surface Hardening > Flame Hardening
+Category: Heat Treating
+Definition: A method of heating the surface of steel with a high-temperature flame followed by rapid quenching for surface hardening.
+
+Label: Oxyacetylene Cutting
+Also called: Gas Cutting
+Hierarchy: Heat Treating > Oxyacetylene Cutting
+Category: Heat Treating
+Definition: A thermal cutting process using oxygen and acetylene flame to cut through metals by oxidizing and melting.
+
+Label: Induction Hardening
+Also called: None
+Hierarchy: Heat Treating > Hardening > Surface Hardening > Induction Hardening
+Category: Heat Treating
+Definition: A surface hardening method where induction heating raises temperature rapidly, followed by quenching.
+
+Label: Vacuum Hardening
+Also called: None
+Hierarchy: Heat Treating > Hardening > Surface Hardening > Vacuum Hardening
+Category: Heat Treating
+Definition: A hardening process performed in vacuum furnaces to minimize oxidation and decarburization during heat treatment.
+
+Label: Through Hardening
+Also called: None
+Hierarchy: Heat Treating > Hardening > Through Hardening
+Category: Heat Treating
+Definition: A heat treatment where the entire cross-section of a component is hardened, not just the surface.
+
+Label: Age Quench Hardening
+Also called: None
+Hierarchy: Heat Treating > Hardening > Age Quench Hardening
+Category: Heat Treating
+Definition: A process combining solution heat treatment, quenching, and aging to improve strength and hardness in alloys.
+
+Label: Air Quench Hardening
+Also called: None
+Hierarchy: Heat Treating > Hardening > Air Quench Hardening
+Category: Heat Treating
+Definition: A quenching method where air is used as the cooling medium for moderate hardening.
+
+Label: Austempering
+Also called: None
+Hierarchy: Heat Treating > Hardening > Austempering
+Category: Heat Treating
+Definition: A heat treatment where steel is quenched and held in a bainitic temperature range, improving toughness and ductility.
+
+Label: Martempering
+Also called: None
+Hierarchy: Heat Treating > Hardening > Martempering
+Category: Heat Treating
+Definition: A process where steel is quenched into a bath just above martensite start temperature, equalized, then cooled to reduce stresses.
+
+Label: Oil Quench Hardening
+Also called: None
+Hierarchy: Heat Treating > Hardening > Oil Quench Hardening
+Category: Heat Treating
+Definition: A hardening method where oil is used as the quenching medium to balance hardness and minimize distortion.
+
+Label: Water Quench Hardening
+Also called: None
+Hierarchy: Heat Treating > Hardening > Water Quench Hardening
+Category: Heat Treating
+Definition: A hardening method where water is used as the quenching medium for rapid cooling and maximum hardness.
+
+Label: Sintering
+Also called: None
+Hierarchy: Heat Treating > Sintering
+Category: Heat Treating
+Definition: A process of compacting and forming solid materials by applying heat below melting point to bond particles.
+
+Label: Induction Heading
+Also called: None
+Hierarchy: Heat Treating > Induction Heading
+Category: Heat Treating
+Definition: A forming process where induction heating softens the end of a metal bar or wire, enabling it to be upset or headed into shape.
+
+Label: Joining
+Also called: None
+Hierarchy: Joining
+Category: Joining
+Definition: A group of processes that permanently or temporarily connect two or more materials or components.
+
+Label: Adhesive Bonding
+Also called: Adhesive Joining
+Hierarchy: Joining > Adhesive Bonding
+Category: Joining
+Definition: A joining method using adhesives to bond materials at their surfaces without melting or deforming them.
+
+Label: Lamination
+Also called: None
+Hierarchy: Joining > Lamination
+Category: Joining
+Definition: A process of joining layers of material together, usually with adhesives, heat, or pressure, to form a composite.
+
+Label: Fusion Joining
+Also called: None
+Hierarchy: Joining > Fusion Joining
+Category: Joining
+Definition: A process where materials are joined by melting their faying surfaces, often with filler, to form a solid joint.
+
+Label: Heat Sealing
+Also called: None
+Hierarchy: Joining > Heat Sealing
+Category: Joining
+Definition: A process that uses heat and pressure to bond thermoplastic materials together at their interface.
+
+Label: Mechanical Joining
+Also called: None
+Hierarchy: Joining > Mechanical Joining
+Category: Joining
+Definition: A joining method using physical fasteners or deformation techniques such as screws, rivets, or bolts.
+
+Label: Mechanical Welding
+Also called: None
+Hierarchy: Joining > Mechanical Welding
+Category: Joining
+Definition: A solid-state joining process that uses mechanical energy, such as pressure and friction, rather than melting.
+
+Label: Explosive Welding
+Also called: None
+Hierarchy: Joining > Mechanical Welding > Explosive Welding
+Category: Joining
+Definition: A solid-state welding process where controlled explosive energy drives metals together at high velocity to bond.
+
+Label: Friction Welding
+Also called: None
+Hierarchy: Joining > Mechanical Welding > Friction Welding
+Category: Joining
+Definition: A welding process where heat generated from friction between surfaces, combined with pressure, creates a solid-state bond.
+
+Label: Friction Stir Welding
+Also called: FSW
+Hierarchy: Joining > Mechanical Welding > Friction Stir Welding
+Category: Joining
+Definition: A solid-state process where a rotating tool stirs material along the joint line, creating a weld without melting.
+
+Label: Pressure Welding
+Also called: None
+Hierarchy: Joining > Mechanical Welding > Pressure Welding
+Category: Joining
+Definition: A solid-state joining process where external pressure alone bonds materials without significant heat input.
+
+Label: Ultrasonic Welding
+Also called: None
+Hierarchy: Joining > Mechanical Welding > Ultrasonic Welding
+Category: Joining
+Definition: A process where high-frequency vibrations under pressure cause solid-state bonding of materials, especially plastics and thin metals.
+
+Label: Press Fitting
+Also called: None
+Hierarchy: Joining > Mechanical Joining > Press Fitting
+Category: Joining
+Definition: A joining technique where a slightly oversized part is forced into another, creating an interference fit.
+
+Label: Shrink Fitting
+Also called: None
+Hierarchy: Joining > Mechanical Joining > Shrink Fitting
+Category: Joining
+Definition: A method where one component is heated or cooled to allow insertion into another, forming a tight fit upon temperature equalization.
+
+Label: Riveting
+Also called: None
+Hierarchy: Joining > Mechanical Joining > Riveting
+Category: Joining
+Definition: A permanent joining method where a rivet is deformed to clamp materials together.
+
+Label: Metal Joining
+Also called: None
+Hierarchy: Joining > Metal Joining
+Category: Joining
+Definition: A broad category of processes specifically for bonding metal parts by welding, brazing, soldering, or fastening.
+
+Label: Thermal Joining
+Also called: None
+Hierarchy: Joining > Thermal Joining
+Category: Joining
+Definition: A group of processes that use heat energy (e.g., welding, brazing, soldering) to bond materials.
+
+Label: Brazing
+Also called: None
+Hierarchy: Joining > Thermal Joining > Brazing
+Category: Joining
+Definition: A process where a filler metal with a lower melting point flows into the joint between base metals without melting them.
+
+Label: Dip Brazing
+Also called: None
+Hierarchy: Joining > Thermal Joining > Brazing > Dip Brazing
+Category: Joining
+Definition: A brazing method where assemblies are immersed in a molten salt or metal bath to heat and join components.
+
+Label: Clinching
+Also called: None
+Hierarchy: Joining > Thermal Joining > Brazing > Clinching
+Category: Joining
+Definition: A mechanical joining process where sheets are deformed locally to interlock without additional fasteners or heat.
+
+Label: Furnace Brazing
+Also called: None
+Hierarchy: Joining > Thermal Joining > Brazing > Furnace Brazing
+Category: Joining
+Definition: A brazing process carried out in a controlled-atmosphere furnace for precise heating and uniform joints.
+
+Label: Induction Brazing
+Also called: None
+Hierarchy: Joining > Thermal Joining > Brazing > Induction Brazing
+Category: Joining
+Definition: A brazing process that uses induction heating to rapidly heat the joint area and melt filler metal.
+
+Label: Infrared Brazing
+Also called: None
+Hierarchy: Joining > Thermal Joining > Brazing > Infrared Brazing
+Category: Joining
+Definition: A brazing method using infrared radiation as the heat source to melt filler material and form joints.
+
+Label: Laser Brazing
+Also called: None
+Hierarchy: Joining > Thermal Joining > Brazing > Laser Brazing
+Category: Joining
+Definition: A precise brazing process using a focused laser beam as the heat source for localized bonding.
+
+Label: Resistance Brazing
+Also called: None
+Hierarchy: Joining > Thermal Joining > Brazing > Resistance Brazing
+Category: Joining
+Definition: A brazing process where electrical resistance heating is used to melt filler metal at the joint.
+
+Label: Torch Brazing
+Also called: None
+Hierarchy: Joining > Thermal Joining > Brazing > Torch Brazing
+Category: Joining
+Definition: A manual brazing process where a gas-fueled torch heats the joint and melts filler metal.
+
+Label: Vacuum Brazing
+Also called: None
+Hierarchy: Joining > Thermal Joining > Brazing > Vacuum Brazing
+Category: Joining
+Definition: A brazing process performed in a vacuum furnace, providing clean joints free of oxidation and flux.
+
+ChatGPT said:
+
+Perfect 👍 Here’s Batch 8 (Soldering → Wave Soldering section):
+
+Label: Soldering
+Also called: None
+Hierarchy: Joining > Thermal Joining > Soldering
+Category: Joining
+Definition: A low-temperature joining process where a filler metal (solder) melts below 450 °C to bond components without melting the base metals.
+
+Label: Dip Soldering
+Also called: None
+Hierarchy: Joining > Thermal Joining > Soldering > Dip Soldering
+Category: Joining
+Definition: A soldering method where components are dipped into a molten solder bath to create joints.
+
+Label: Induction Soldering
+Also called: None
+Hierarchy: Joining > Thermal Joining > Soldering > Induction Soldering
+Category: Joining
+Definition: A soldering process using induction heating to melt solder at the joint area quickly and precisely.
+
+Label: Infrared Soldering
+Also called: None
+Hierarchy: Joining > Thermal Joining > Soldering > Infrared Soldering
+Category: Joining
+Definition: A soldering method that employs infrared radiation to heat and melt solder, often used in electronics assembly.
+
+Label: Iron Soldering
+Also called: Soldering Iron Joining
+Hierarchy: Joining > Thermal Joining > Soldering > Iron Soldering
+Category: Joining
+Definition: A manual soldering process using a heated soldering iron tip to melt and apply solder to joints.
+
+Label: Resistance Soldering
+Also called: None
+Hierarchy: Joining > Thermal Joining > Soldering > Resistance Soldering
+Category: Joining
+Definition: A soldering process where electrical resistance generates localized heat to melt solder at the joint.
+
+Label: Torch Soldering
+Also called: None
+Hierarchy: Joining > Thermal Joining > Soldering > Torch Soldering
+Category: Joining
+Definition: A soldering method that uses a flame torch to heat the workpiece and melt solder.
+
+Label: Ultrasonic Soldering
+Also called: None
+Hierarchy: Joining > Thermal Joining > Soldering > Ultrasonic Soldering
+Category: Joining
+Definition: A fluxless soldering process that uses ultrasonic vibrations to disrupt oxides and allow wetting of the solder.
+
+Label: Wave Soldering
+Also called: None
+Hierarchy: Joining > Thermal Joining > Soldering > Wave Soldering
+Category: Joining
+Definition: An automated soldering process where assembled circuit boards pass over a wave of molten solder for mass joining.
+
+Label: Drop On Demand
+Also called: DoD Printing, Inkjet 3D Printing, Drop-Based 3D Printing, Binder Droplet Printing
+Hierarchy: Additive Manufacturing > Drop On Demand
+Category: Additive Manufacturing
+Definition: A 3D printing process where material is deposited in discrete droplets from a nozzle to build parts layer by layer.
+
+Label: Fused Deposition Modeling
+Also called: FDM, Fused Filament Fabrication, FFF, Filament 3D Printing, Plastic 3D Printing, Melted Filament Printing, Extrusion 3D Printing
+Hierarchy: Additive Manufacturing > Fused Deposition Modeling
+Category: Additive Manufacturing
+Definition: A 3D printing method that extrudes thermoplastic filament through a heated nozzle to build objects layer by layer.
+
+Label: Fused Filament Fabrication
+Also called: FFF, Filament 3D Printing, Plastic 3D Printing, FDM, Extrusion Printing
+Hierarchy: Additive Manufacturing > Fused Deposition Modeling > Fused Filament Fabrication
+Category: Additive Manufacturing
+Definition: A material extrusion process where melted thermoplastic filament is deposited layer by layer to form a part.
+
+Label: Laminated Object Manufacturing
+Also called: LOM, Sheet Lamination, Layered Sheet Printing, Paper 3D Printing
+Hierarchy: Additive Manufacturing > Laminated Object Manufacturing
+Category: Additive Manufacturing
+Definition: An additive process that bonds and cuts layers of sheet material, typically paper or polymer, to create 3D parts.
+
+Label: Metal Additive Manufacturing
+Also called: Metal 3D Printing, Metal AM, Metal-Based Additive Manufacturing, Direct Metal Printing
+Hierarchy: Additive Manufacturing > Metal Additive Manufacturing
+Category: Additive Manufacturing
+Definition: The production of metal components by selectively melting or sintering metal powder or wire in successive layers.
+
+Label: Polymer Deposition
+Also called: Polymer Extrusion, Polymer 3D Printing, Plastic Deposition Printing, Thermoplastic Printing
+Hierarchy: Additive Manufacturing > Polymer Deposition
+Category: Additive Manufacturing
+Definition: A process where molten polymer is extruded and deposited layer by layer to build 3D structures.
+
+Label: Powder Deposition
+Also called: Powder-Based Additive Manufacturing, Powder Deposition Printing, Blown Powder 3D Printing
+Hierarchy: Additive Manufacturing > Powder Deposition
+Category: Additive Manufacturing
+Definition: An additive process that delivers powder through a nozzle and fuses it with a focused energy source to form parts.
+
+Label: Selective Mask Sintering
+Also called: SMS, Mask-Based Sintering, Mask Sintering 3D Printing
+Hierarchy: Additive Manufacturing > Selective Mask Sintering
+Category: Additive Manufacturing
+Definition: A powder bed process where a mask defines heated regions, selectively sintering powder to build the part.
+
+Label: Solid Deposition
+Also called: Solid Freeform Fabrication, SFF, Solid Deposition Modeling, SDM
+Hierarchy: Additive Manufacturing > Solid Deposition
+Category: Additive Manufacturing
+Definition: A layered manufacturing method where solid material is deposited and bonded to form a 3D part.
+
+Label: Photopolymerization
+Also called: Vat Photopolymerization, Resin Curing, UV Resin Printing, Digital Light Processing, DLP
+Hierarchy: Additive Manufacturing > Stereolithography > Photopolymerization
+Category: Additive Manufacturing
+Definition: A process that uses light to selectively cure liquid photopolymer resin layer by layer into solid parts.
+
+Label: Extruding
+Also called: Extrusion, Metal Extrusion, Plastic Extrusion, Profile Extrusion
+Hierarchy: Forming > Extruding
+Category: Forming
+Definition: A forming process where material is forced through a die to create continuous profiles of fixed cross-section.
+
+Label: Direct Extrusion
+Also called: Forward Extrusion, Direct Metal Extrusion
+Hierarchy: Forming > Extruding > Direct Extrusion
+Category: Forming
+Definition: An extrusion process where the billet and ram move in the same direction through the die.
+
+Label: Cold Rolling
+Also called: Cold Rolled Metal, Cold Reduction Rolling
+Hierarchy: Forming > Rolling > Cold Rolling
+Category: Forming
+Definition: A rolling process performed below recrystallization temperature to reduce thickness and improve surface finish.
+
+Label: Hot Rolling
+Also called: Hot Rolled Metal, Thermal Rolling
+Hierarchy: Forming > Rolling > Hot Rolling
+Category: Forming
+Definition: A rolling process conducted above recrystallization temperature to shape and refine large metal sections.
+
+Label: Friction Stri Welding
+Also called: Friction Stir Welding, FSW
+Hierarchy: Joining > Mechanical Joining > Mechanical Welding > Friction Welding > Friction Stri Welding
+Category: Joining
+Definition: A solid-state welding process where a rotating tool generates frictional heat to join materials without melting.
+
+Label: Thermal Welding
+Also called: Heat Welding, Thermal Fusion
+Hierarchy: Joining > Thermal Joining > Thermal Welding
+Category: Joining
+Definition: A joining method that uses heat to melt and fuse materials together.
+
+Label: Braze Welding
+Also called: Welding Brazing, Bronze Welding
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Braze Welding
+Category: Joining
+Definition: A welding technique where a filler metal is melted and distributed by capillary action to bond parts without melting the base metal.
+
+Label: Carbon Arc Brazing
+Also called: Carbon Electrode Brazing
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Braze Welding > Carbon Arc Brazing
+Category: Joining
+Definition: A brazing process that uses a carbon arc as the heat source to melt filler metal.
+
+Label: Gas Brazing
+Also called: Flame Brazing, Torch Gas Brazing
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Braze Welding > Gas Brazing
+Category: Joining
+Definition: A brazing method that uses a flame torch to heat and melt filler metal for joining components.
+
+Label: Diffusion Bonding
+Also called: Diffusion Welding, Solid-State Diffusion Joining
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Diffusion Bonding
+Category: Joining
+Definition: A solid-state joining method where materials are bonded under high temperature and pressure through atomic diffusion.
+
+Label: Electric Arc Welding
+Also called: Arc Welding, Manual Metal Arc Welding, MMAW
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electric Arc Welding
+Category: Joining
+Definition: A welding process that uses an electric arc between an electrode and workpiece to melt and join metals.
+
+Label: Carbon Arc Welding
+Also called: CAW, Carbon Electrode Arc Welding
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electric Arc Welding > Carbon Arc Welding
+Category: Joining
+Definition: An arc welding process using a carbon electrode to create an arc that melts and fuses the workpiece.
+
+Label: Flux-Cored Arc Welding
+Also called: FCAW, Flux Core Welding, Self-Shielded Welding
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electric Arc Welding > Flux-Cored Arc Welding
+Category: Joining
+Definition: An arc welding method that uses a tubular electrode filled with flux to shield and join metals.
+
+Label: Gas Metal Arc Welding
+Also called: GMAW, MIG Welding, Metal Inert Gas Welding
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electric Arc Welding > Gas Metal Arc Welding
+Category: Joining
+Definition: An arc welding process where a consumable wire electrode is fed continuously and shielded by inert gas.
+
+Label: Live Tooling
+Also called: Live-Tooling, Driven Tooling
+Hierarchy: Machining > Single-Point Cutting > Turning > Live Tooling
+Category: Machining
+Definition: A machining feature on CNC lathes that allows powered tools to perform milling or drilling operations.
+
+Label: Specialized Machining
+Also called: Special Process Machining, Niche Machining
+Hierarchy: Machining > Specialized Machining
+Category: Machining
+Definition: Machining processes tailored for unique requirements, materials, or geometries not suited to standard methods.
+
+Label: Carbide Machining
+Also called: Tungsten Carbide Machining, Carbide Cutting
+Hierarchy: Machining > Specialized Machining > Carbide Machining
+Category: Machining
+Definition: The use of carbide cutting tools to machine hard materials with high wear resistance.
+
+Label: Machining Of Casting
+Also called: Casting Machining, Post-Cast Machining
+Hierarchy: Machining > Specialized Machining > Machining Of Casting
+Category: Machining
+Definition: The process of machining cast parts to achieve final dimensions, tolerances, and surface finish.
+
+Label: Thin Wall Machining
+Also called: Thin-Walled Machining, Lightweight Wall Machining
+Hierarchy: Machining > Specialized Machining > Thin Wall Machining
+Category: Machining
+Definition: Machining operations focused on precision cutting of components with very thin structural walls.
+
+Label: Standard Machining
+Also called: Conventional Machining, General Machining
+Hierarchy: Machining > Standard Machining
+Category: Machining
+Definition: Traditional machining processes such as turning, milling, and drilling performed with standard equipment.
+
+Label: Swiss Machining
+Also called: Screw Machining, Swiss CNC Machining, Swiss Style Machining, Swiss Turning, Swiss Type Turning, Swiss-Style Machining, Swiss-Type Turning
+Hierarchy: Machining > Swiss Machining
+Category: Machining
+Definition: A precision machining process using sliding-headstock lathes for small, complex, and high-accuracy parts.
+
+Label: EDM
+Also called: Electric Discharge Machining, Spark Erosion
+Hierarchy: Machining > Thermal Subtraction > EDM
+Category: Machining
+Definition: A process that removes material using controlled electrical discharges between an electrode and the workpiece.
+
+Label: Flanging EDM
+Also called: Flange EDM Cutting, EDM Flanging
+Hierarchy: Machining > Thermal Subtraction > EDM > Flanging EDM
+Category: Machining
+Definition: An EDM technique used to cut or shape flange features by spark erosion.
+
+Label: Fine Blanking
+Also called: Fineblanking, Precision Blanking
+Hierarchy: Sheet Metal Processing > Stamping > Fine Blanking
+Category: Sheet Metal Processing
+Definition: A precision stamping process that produces parts with smooth edges and tight tolerances in a single press stroke.
+
+You said:
+which ever gives better accuracy
+ChatGPT said:
+
+Then the best option is smaller batches (5–10 labels each) ✅
+
+This way:
+
+Each definition is precise, with less risk of drift.
+
+You can review quickly and correct me if needed before I continue.
+
+By the end, we’ll still cover the full list you gave.
+
+👉 I’ll start with the first 5 labels:
+
+Drop On Demand
+
+Fused Deposition Modeling
+
+Fused Filament Fabrication
+
+Laminated Object Manufacturing
+
+Metal Additive Manufacturing
+
+Shall I generate definitions for these first 5 now?
+
+You said:
+ok
+ChatGPT said:
+
+Here’s the first batch in your required format ✅
+
+Label: Drop On Demand
+Also called: DoD Printing, Inkjet 3D Printing, Drop-Based 3D Printing, Binder Droplet Printing
+Hierarchy: Additive Manufacturing > Drop On Demand
+Category: Additive Manufacturing
+Definition: A 3D printing process that deposits precise liquid droplets of binder or material onto a powder bed or substrate to build parts layer by layer.
+
+Label: Fused Deposition Modeling
+Also called: FDM, Fused Filament Fabrication, FFF, Filament 3D Printing, Plastic 3D Printing, Melted Filament Printing, Extrusion 3D Printing
+Hierarchy: Additive Manufacturing > Fused Deposition Modeling
+Category: Additive Manufacturing
+Definition: A 3D printing method where a thermoplastic filament is heated, extruded through a nozzle, and deposited layer by layer to form a solid object.
+
+Label: Fused Filament Fabrication
+Also called: FFF, Filament 3D Printing, Plastic 3D Printing, FDM, Extrusion Printing
+Hierarchy: Additive Manufacturing > Fused Deposition Modeling > Fused Filament Fabrication
+Category: Additive Manufacturing
+Definition: An extrusion-based additive manufacturing process that melts and deposits thermoplastic filament in successive layers to build parts.
+
+Label: Laminated Object Manufacturing
+Also called: LOM, Sheet Lamination, Layered Sheet Printing, Paper 3D Printing
+Hierarchy: Additive Manufacturing > Laminated Object Manufacturing
+Category: Additive Manufacturing
+Definition: A rapid prototyping process that bonds and layers sheets of material, typically paper, plastic, or metal, which are cut to shape to form 3D parts.
+
+Label: Metal Additive Manufacturing
+Also called: Metal 3D Printing, Metal AM, Metal-Based Additive Manufacturing, Direct Metal Printing
+Hierarchy: Additive Manufacturing > Metal Additive Manufacturing
+Category: Additive Manufacturing
+Definition: Additive manufacturing processes that use metal powders or wires to build fully dense metal parts layer by layer.
+
+Label: Drop On Demand
+Also called: DoD Printing, Inkjet 3D Printing, Drop-Based 3D Printing, Binder Droplet Printing
+Hierarchy: Additive Manufacturing > Drop On Demand
+Category: Additive Manufacturing
+Definition: A 3D printing process that deposits precise liquid droplets of binder or material onto a powder bed or substrate to build parts layer by layer.
+
+Label: Fused Deposition Modeling
+Also called: FDM, Fused Filament Fabrication, FFF, Filament 3D Printing, Plastic 3D Printing, Melted Filament Printing, Extrusion 3D Printing
+Hierarchy: Additive Manufacturing > Fused Deposition Modeling
+Category: Additive Manufacturing
+Definition: A 3D printing method where a thermoplastic filament is heated, extruded through a nozzle, and deposited layer by layer to form a solid object.
+
+Label: Fused Filament Fabrication
+Also called: FFF, Filament 3D Printing, Plastic 3D Printing, FDM, Extrusion Printing
+Hierarchy: Additive Manufacturing > Fused Deposition Modeling > Fused Filament Fabrication
+Category: Additive Manufacturing
+Definition: An extrusion-based additive manufacturing process that melts and deposits thermoplastic filament in successive layers to build parts.
+
+Label: Laminated Object Manufacturing
+Also called: LOM, Sheet Lamination, Layered Sheet Printing, Paper 3D Printing
+Hierarchy: Additive Manufacturing > Laminated Object Manufacturing
+Category: Additive Manufacturing
+Definition: A rapid prototyping process that bonds and layers sheets of material, typically paper, plastic, or metal, which are cut to shape to form 3D parts.
+
+Label: Metal Additive Manufacturing
+Also called: Metal 3D Printing, Metal AM, Metal-Based Additive Manufacturing, Direct Metal Printing
+Hierarchy: Additive Manufacturing > Metal Additive Manufacturing
+Category: Additive Manufacturing
+Definition: Additive manufacturing processes that use metal powders or wires to build fully dense metal parts layer by layer.
+
+Label: Polymer Deposition
+Also called: Polymer Extrusion, Polymer 3D Printing, Plastic Deposition Printing, Thermoplastic Printing
+Hierarchy: Additive Manufacturing > Polymer Deposition
+Category: Additive Manufacturing
+Definition: A 3D printing method where thermoplastic polymers are extruded and deposited layer by layer to form solid objects.
+
+Label: Powder Deposition
+Also called: Powder-Based Additive Manufacturing, Powder Deposition Printing, Blown Powder 3D Printing
+Hierarchy: Additive Manufacturing > Powder Deposition
+Category: Additive Manufacturing
+Definition: An additive manufacturing process where powdered material is blown or spread and fused layer by layer to form a part.
+
+Label: Selective Mask Sintering
+Also called: SMS, Mask-Based Sintering, Mask Sintering 3D Printing
+Hierarchy: Additive Manufacturing > Selective Mask Sintering
+Category: Additive Manufacturing
+Definition: A 3D printing process that selectively sinters powder layers using a thermal mask instead of a scanning laser or beam.
+
+Label: Solid Deposition
+Also called: Solid Freeform Fabrication, SFF, Solid Deposition Modeling, SDM
+Hierarchy: Additive Manufacturing > Solid Deposition
+Category: Additive Manufacturing
+Definition: An additive process that deposits solid materials in a controlled manner to form complex 3D shapes layer by layer.
+
+Label: Photopolymerization
+Also called: Vat Photopolymerization, Resin Curing, UV Resin Printing, Digital Light Processing, DLP
+Hierarchy: Additive Manufacturing > Stereolithography > Photopolymerization
+Category: Additive Manufacturing
+Definition: A process where liquid photopolymer resins are cured layer by layer using ultraviolet light to build 3D parts.
+
+Label: Extruding
+Also called: Extrusion, Metal Extrusion, Plastic Extrusion, Profile Extrusion
+Hierarchy: Forming > Extruding
+Category: Forming
+Definition: A forming process where material is forced through a shaped die to produce continuous lengths of uniform cross-section.
+
+Label: Direct Extrusion
+Also called: Forward Extrusion, Direct Metal Extrusion
+Hierarchy: Forming > Extruding > Direct Extrusion
+Category: Forming
+Definition: An extrusion method where material is pushed directly through a die by a ram moving in the same direction as the flow.
+
+Label: Cold Rolling
+Also called: Cold Rolled Metal, Cold Reduction Rolling
+Hierarchy: Forming > Rolling > Cold Rolling
+Category: Forming
+Definition: A metalworking process where metal is passed through rollers at room temperature to improve strength and surface finish.
+
+Label: Hot Rolling
+Also called: Hot Rolled Metal, Thermal Rolling
+Hierarchy: Forming > Rolling > Hot Rolling
+Category: Forming
+Definition: A rolling process where metal is heated above recrystallization temperature and passed through rollers to reduce thickness and shape.
+
+Label: Friction Stri Welding
+Also called: Friction Stir Welding, FSW
+Hierarchy: Joining > Mechanical Joining > Mechanical Welding > Friction Welding > Friction Stri Welding
+Category: Joining
+Definition: A solid-state joining process where a rotating tool generates frictional heat to soften and forge materials together without melting.
+
+Label: Thermal Welding
+Also called: Heat Welding, Thermal Fusion
+Hierarchy: Joining > Thermal Joining > Thermal Welding
+Category: Joining
+Definition: A process that uses heat to fuse materials, typically plastics or metals, into a single joint.
+
+Label: Braze Welding
+Also called: Welding Brazing, Bronze Welding
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Braze Welding
+Category: Joining
+Definition: A welding process where filler metal is melted and deposited along a joint without melting the base materials.
+
+Label: Carbon Arc Brazing
+Also called: Carbon Electrode Brazing
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Braze Welding > Carbon Arc Brazing
+Category: Joining
+Definition: A brazing method that uses a carbon electrode arc to supply the heat needed to melt filler material.
+
+Label: Gas Brazing
+Also called: Flame Brazing, Torch Gas Brazing
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Braze Welding > Gas Brazing
+Category: Joining
+Definition: A brazing technique where a flame from a gas torch heats the joint area to melt and flow filler metal.
+
+Label: Diffusion Bonding
+Also called: Diffusion Welding, Solid-State Diffusion Joining
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Diffusion Bonding
+Category: Joining
+Definition: A solid-state welding process where atoms diffuse across contacting surfaces under heat and pressure to form a joint.
+
+Label: Electric Arc Welding
+Also called: Arc Welding, Manual Metal Arc Welding, MMAW
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electric Arc Welding
+Category: Joining
+Definition: A welding process that uses an electric arc between an electrode and base material to melt and join metals.
+
+Label: Carbon Arc Welding
+Also called: CAW, Carbon Electrode Arc Welding
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electric Arc Welding > Carbon Arc Welding
+Category: Joining
+Definition: An arc welding process where a carbon electrode produces an arc to heat and fuse base materials.
+
+Label: Flux-Cored Arc Welding
+Also called: FCAW, Flux Core Welding, Self-Shielded Welding
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electric Arc Welding > Flux-Cored Arc Welding
+Category: Joining
+Definition: An arc welding process that uses a tubular wire electrode filled with flux to shield the weld.
+
+Label: Gas Metal Arc Welding
+Also called: GMAW, MIG Welding, Metal Inert Gas Welding
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electric Arc Welding > Gas Metal Arc Welding
+Category: Joining
+Definition: An arc welding process that uses a continuous wire electrode and shielding gas to join metals.
+
+Label: Live Tooling
+Also called: Live-Tooling, Driven Tooling
+Hierarchy: Machining > Single-Point Cutting > Turning > Live Tooling
+Category: Machining
+Definition: A CNC turning capability where rotating cutting tools are driven to perform milling or drilling on a lathe.
+
+Label: Specialized Machining
+Also called: Special Process Machining, Niche Machining
+Hierarchy: Machining > Specialized Machining
+Category: Machining
+Definition: Non-standard machining processes tailored for unique materials, geometries, or precision requirements.
+
+Label: Carbide Machining
+Also called: Tungsten Carbide Machining, Carbide Cutting
+Hierarchy: Machining > Specialized Machining > Carbide Machining
+Category: Machining
+Definition: Machining operations that use tungsten carbide tools for cutting hard or abrasive materials.
+
+Label: Machining Of Casting
+Also called: Casting Machining, Post-Cast Machining
+Hierarchy: Machining > Specialized Machining > Machining Of Casting
+Category: Machining
+Definition: Secondary machining operations performed on cast parts to achieve final dimensions and surface quality.
+
+Label: Thin Wall Machining
+Also called: Thin-Walled Machining, Lightweight Wall Machining
+Hierarchy: Machining > Specialized Machining > Thin Wall Machining
+Category: Machining
+Definition: Precision machining of parts with thin walls to maintain accuracy without deformation.
+
+Label: Standard Machining
+Also called: Conventional Machining, General Machining
+Hierarchy: Machining > Standard Machining
+Category: Machining
+Definition: Traditional cutting processes such as milling, turning, drilling, and shaping used in general manufacturing.
+
+Label: Swiss Machining
+Also called: Screw Machining, Swiss CNC Machining, Swiss Style Machining, Swiss Turning, Swiss Type Turning, Swiss-Style Machining, Swiss-Type Turning
+Hierarchy: Machining > Swiss Machining
+Category: Machining
+Definition: A precision machining method where bar stock is fed through a guide bushing, allowing high-accuracy turning of small parts.
+
+Label: EDM
+Also called: Electric Discharge Machining, Spark Erosion
+Hierarchy: Machining > Thermal Subtraction > EDM
+Category: Machining
+Definition: A machining process that removes material using controlled electrical discharges between an electrode and the workpiece.
+
+Label: Flanging EDM
+Also called: Flange EDM Cutting, EDM Flanging
+Hierarchy: Machining > Thermal Subtraction > EDM > Flanging EDM
+Category: Machining
+Definition: An EDM variation that shapes or cuts flanges into workpieces using spark erosion.
+
+Label: Fine Blanking
+Also called: Fineblanking, Precision Blanking
+Hierarchy: Sheet Metal Processing > Stamping > Fine Blanking
+Category: Sheet Metal Processing
+Definition: A precision stamping process that produces smooth, accurate edges and complex part geometries in sheet metal.
+
+ChatGPT said:
+
+Perfect — here’s the next 20 labels (after Fine Blanking → onward) in the same format:
+
+Label: Press Work
+Also called: Press Forming, Press Operations
+Hierarchy: Sheet Metal Processing > Stamping > Press Work
+Category: Sheet Metal Processing
+Definition: Sheet metal forming operations performed using mechanical or hydraulic presses to shape or cut parts.
+
+Label: Stretch Forming
+Also called: Stretch-Forming, Stretch Wrapping
+Hierarchy: Sheet Metal Processing > Stretch Forming
+Category: Sheet Metal Processing
+Definition: A metal forming process where sheet or extrusion is stretched and bent over a die to achieve complex curves.
+
+Label: Singeing
+Also called: Fabric Singeing, Surface Singeing
+Hierarchy: Textile Process > Singeing
+Category: Textile Process
+Definition: A textile finishing process where surface fibers are burned off to produce a smooth fabric surface.
+
+Label: Surface Finishing
+Also called: Surface Treatment, Surface Engineering
+Hierarchy: Surface Finishing
+Category: Surface Finishing
+Definition: Processes applied to improve surface properties such as appearance, texture, corrosion resistance, or wear resistance.
+
+Label: Coating
+Also called: Surface Coating, Protective Coating
+Hierarchy: Surface Finishing > Coating
+Category: Surface Finishing
+Definition: The application of a material layer on a surface to enhance durability, appearance, or functional properties.
+
+Label: Babbitting
+Also called: Bearing Lining, White Metal Lining
+Hierarchy: Surface Finishing > Coating > Babbitting
+Category: Surface Finishing
+Definition: A process of applying a soft metal alloy lining to bearings for reduced friction and wear.
+
+Label: Black Oxide Coating
+Also called: Blackening, Bluing
+Hierarchy: Surface Finishing > Coating > Black Oxide Coating
+Category: Surface Finishing
+Definition: A chemical conversion coating that forms a black oxide layer on metals to improve appearance and corrosion resistance.
+
+Label: Chemical Coating
+Also called: Chemical Surface Coating, Conversion Coating
+Hierarchy: Surface Finishing > Coating > Chemical Coating
+Category: Surface Finishing
+Definition: Surface treatment using chemical reactions to form protective or decorative layers on a substrate.
+
+Label: Anodizing
+Also called: Anodic Oxidation, Anodic Coating
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Anodizing
+Category: Surface Finishing
+Definition: An electrolytic oxidation process that thickens the natural oxide layer on metals, typically aluminum, for corrosion resistance.
+
+Label: Decorative Anodizing
+Also called: Colored Anodizing
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Anodizing > Decorative Anodizing
+Category: Surface Finishing
+Definition: An anodizing process that enhances appearance by adding color while retaining corrosion protection.
+
+Label: Iridite
+Also called: Chromate Iridite, Iridite Coating
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Iridite
+Category: Surface Finishing
+Definition: A chromate conversion coating applied to aluminum for corrosion resistance and paint adhesion.
+
+Label: Chemical Conversion Coating
+Also called: Conversion Coating, Chemical Film Coating
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Chemical Conversion Coating
+Category: Surface Finishing
+Definition: A chemical treatment that converts the metal surface into a protective and corrosion-resistant layer.
+
+Label: Alkaline Oxide Conversion Coating
+Also called: Alkaline Black Oxide
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Chemical Conversion Coating > Alkaline Oxide Conversion Coating
+Category: Surface Finishing
+Definition: A conversion coating formed in an alkaline solution to produce a protective black oxide layer.
+
+Label: Chromate Conversion Coating
+Also called: Chromate Coating, Alodine
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Chemical Conversion Coating > Chromate Conversion Coating
+Category: Surface Finishing
+Definition: A chemical coating process using chromates to enhance corrosion resistance and paint adhesion on metals.
+
+Label: Fused Nitrate Conversion Coating
+Also called: Nitrate Salt Coating
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Chemical Conversion Coating > Fused Nitrate Conversion Coating
+Category: Surface Finishing
+Definition: A protective coating formed by immersing metals in molten nitrate salts for corrosion and wear resistance.
+
+Label: Phosphate Conversion Coating
+Also called: Phosphating
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Chemical Conversion Coating > Phosphate Conversion Coating
+Category: Surface Finishing
+Definition: A conversion coating that deposits phosphate crystals on a metal surface to improve corrosion resistance and paint adhesion.
+
+Label: Phosphating
+Also called: Zinc Phosphating, Manganese Phosphating
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Chemical Conversion Coating > Phosphate Conversion Coating > Phosphating
+Category: Surface Finishing
+Definition: A process of applying a phosphate layer to steel or iron for lubrication, wear, or corrosion protection.
+
+Label: Plating
+Also called: Electroplating, Metal Plating
+Hierarchy: Surface Finishing > Coating > Plating
+Category: Surface Finishing
+Definition: The process of depositing a metal layer onto a substrate surface using electrochemical or chemical methods.
+
+Label: Electroplating
+Also called: Galvanic Plating, Electrochemical Plating
+Hierarchy: Surface Finishing > Coating > Plating > Electroplating
+Category: Surface Finishing
+Definition: A plating process where an electric current deposits a metal coating onto a conductive surface.
+
+Label: Press Work
+Also called: Press Forming, Mechanical Pressing
+Hierarchy: Sheet Metal Processing > Stamping > Press Work
+Category: Sheet Metal Processing
+Definition: Sheet metal forming operations performed using a mechanical or hydraulic press.
+
+Label: Stretch Forming
+Also called: Stretch Press Forming
+Hierarchy: Sheet Metal Processing > Stretch Forming
+Category: Sheet Metal Processing
+Definition: A forming process where sheet metal is stretched over a die to achieve complex curved shapes.
+
+Label: Singeing
+Also called: Surface Singeing, Fabric Singeing
+Hierarchy: Textile Process > Singeing
+Category: Textile Process
+Definition: A textile finishing process that burns off protruding fibers from fabric surfaces to create a smooth finish.
+
+Label: Surface Finishing
+Also called: Surface Treatment, Finishing
+Hierarchy: Surface Finishing
+Category: Surface Finishing
+Definition: Processes applied to improve surface quality, appearance, or functionality of a material.
+
+Label: Coating
+Also called: Surface Coating, Protective Coating
+Hierarchy: Surface Finishing > Coating
+Category: Surface Finishing
+Definition: Applying a layer of material onto a surface to provide protection, decoration, or functional properties.
+
+Label: Babbitting
+Also called: Bearing Metal Coating, Babbitt Lining
+Hierarchy: Surface Finishing > Coating > Babbitting
+Category: Surface Finishing
+Definition: A process of applying a soft metal alloy (babbitt) to bearings for wear resistance and conformability.
+
+Label: Black Oxide Coating
+Also called: Blackening, Oxidation Coating
+Hierarchy: Surface Finishing > Coating > Black Oxide Coating
+Category: Surface Finishing
+Definition: A chemical conversion process that produces a black oxide layer on metal surfaces for corrosion resistance and appearance.
+
+Label: Chemical Coating
+Also called: Chemical Surface Treatment
+Hierarchy: Surface Finishing > Coating > Chemical Coating
+Category: Surface Finishing
+Definition: Surface finishing methods that use chemical reactions to form protective or functional coatings.
+
+Label: Anodizing
+Also called: Electrolytic Oxidation, Anodic Oxidation
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Anodizing
+Category: Surface Finishing
+Definition: An electrolytic process that forms a durable oxide layer on aluminum and other metals for corrosion resistance and coloring.
+
+Label: Decorative Anodizing
+Also called: Color Anodizing
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Anodizing > Decorative Anodizing
+Category: Surface Finishing
+Definition: Anodizing process used to add decorative colors and finishes to metals, especially aluminum.
+
+Label: Iridite
+Also called: Chromate Conversion Coating (Iridite)
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Iridite
+Category: Surface Finishing
+Definition: A chromate-based chemical conversion coating applied to aluminum for corrosion resistance and paint adhesion.
+
+Label: Chemical Conversion Coating
+Also called: Conversion Coating
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Chemical Conversion Coating
+Category: Surface Finishing
+Definition: A chemical treatment that forms a protective oxide or phosphate layer on metal surfaces.
+
+Label: Alkaline Oxide Conversion Coating
+Also called: Alkaline Oxidation Coating
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Chemical Conversion Coating > Alkaline Oxide Conversion Coating
+Category: Surface Finishing
+Definition: A conversion coating formed in an alkaline solution to enhance corrosion resistance.
+
+Label: Chromate Conversion Coating
+Also called: Chromating
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Chemical Conversion Coating > Chromate Conversion Coating
+Category: Surface Finishing
+Definition: A chemical treatment that deposits a protective chromate layer on metals like aluminum and zinc for corrosion protection.
+
+Label: Fused Nitrate Conversion Coating
+Also called: Nitrate Oxide Coating
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Chemical Conversion Coating > Fused Nitrate Conversion Coating
+Category: Surface Finishing
+Definition: A conversion coating process using fused nitrates to enhance wear and corrosion resistance.
+
+Label: Phosphate Conversion Coating
+Also called: Phosphating
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Chemical Conversion Coating > Phosphate Conversion Coating
+Category: Surface Finishing
+Definition: A chemical process that creates a phosphate layer on metals for corrosion resistance and paint adhesion.
+
+Label: Phosphating
+Also called: Phosphate Treatment
+Hierarchy: Surface Finishing > Coating > Chemical Coating > Chemical Conversion Coating > Phosphate Conversion Coating > Phosphating
+Category: Surface Finishing
+Definition: A surface treatment forming a crystalline phosphate coating to improve corrosion protection and wear resistance.
+
+Label: Plating
+Also called: Electroplating, Metal Plating
+Hierarchy: Surface Finishing > Coating > Plating
+Category: Surface Finishing
+Definition: Depositing a metal layer onto a substrate to improve durability, conductivity, or appearance.
+
+Label: Electroplating
+Also called: Electrolytic Plating
+Hierarchy: Surface Finishing > Coating > Plating > Electroplating
+Category: Surface Finishing
+Definition: A plating process that uses electric current to deposit a thin metal layer on a conductive surface.
+
+Label: Drop On Demand
+Also called: DoD Printing, Inkjet 3D Printing, Drop-Based 3D Printing, Binder Droplet Printing
+Hierarchy: Additive Manufacturing > Drop On Demand
+Category: Additive Manufacturing
+Definition: An additive manufacturing process that deposits liquid material in controlled droplets to build parts layer by layer.
+
+Label: Fused Deposition Modeling
+Also called: FDM, Fused Filament Fabrication, FFF, Filament 3D Printing, Plastic 3D Printing, Melted Filament Printing, Extrusion 3D Printing
+Hierarchy: Additive Manufacturing > Fused Deposition Modeling
+Category: Additive Manufacturing
+Definition: An additive manufacturing process where a thermoplastic filament is melted and extruded through a nozzle to form layers of a part.
+
+Label: Fused Filament Fabrication
+Also called: FFF, Filament 3D Printing, Plastic 3D Printing, FDM, Extrusion Printing
+Hierarchy: Additive Manufacturing > Fused Deposition Modeling > Fused Filament Fabrication
+Category: Additive Manufacturing
+Definition: A material extrusion process that builds parts by depositing molten thermoplastic filament in successive layers.
+
+Label: Laminated Object Manufacturing
+Also called: LOM, Sheet Lamination, Layered Sheet Printing, Paper 3D Printing
+Hierarchy: Additive Manufacturing > Laminated Object Manufacturing
+Category: Additive Manufacturing
+Definition: An additive process where thin sheets of material are bonded and cut layer by layer to form a 3D object.
+
+Label: Metal Additive Manufacturing
+Also called: Metal 3D Printing, Metal AM, Metal-Based Additive Manufacturing, Direct Metal Printing
+Hierarchy: Additive Manufacturing > Metal Additive Manufacturing
+Category: Additive Manufacturing
+Definition: Additive manufacturing techniques that create metal parts by selectively melting, fusing, or depositing metal material.
+
+Label: Polymer Deposition
+Also called: Polymer Extrusion, Polymer 3D Printing, Plastic Deposition Printing, Thermoplastic Printing
+Hierarchy: Additive Manufacturing > Polymer Deposition
+Category: Additive Manufacturing
+Definition: An additive process that extrudes or deposits thermoplastic materials layer by layer to form components.
+
+Label: Powder Deposition
+Also called: Powder-Based Additive Manufacturing, Powder Deposition Printing, Blown Powder 3D Printing
+Hierarchy: Additive Manufacturing > Powder Deposition
+Category: Additive Manufacturing
+Definition: An additive process where powdered material is delivered to a heat source and fused to build 3D parts.
+
+Label: Selective Mask Sintering
+Also called: SMS, Mask-Based Sintering, Mask Sintering 3D Printing
+Hierarchy: Additive Manufacturing > Selective Mask Sintering
+Category: Additive Manufacturing
+Definition: A powder-bed process where a mask defines areas of heating to selectively sinter powdered material into solid layers.
+
+Label: Solid Deposition
+Also called: Solid Freeform Fabrication, SFF, Solid Deposition Modeling, SDM
+Hierarchy: Additive Manufacturing > Solid Deposition
+Category: Additive Manufacturing
+Definition: An additive manufacturing method that deposits solid material in precise patterns to build 3D structures.
+
+Label: Photopolymerization
+Also called: Vat Photopolymerization, Resin Curing, UV Resin Printing, Digital Light Processing, DLP
+Hierarchy: Additive Manufacturing > Stereolithography > Photopolymerization
+Category: Additive Manufacturing
+Definition: A process that cures liquid photopolymer resin into solid layers using a light source such as UV or lasers.
+
+Label: Extruding
+Also called: Extrusion, Metal Extrusion, Plastic Extrusion, Profile Extrusion
+Hierarchy: Forming > Extruding
+Category: Forming
+Definition: A forming process where material is forced through a die to create continuous objects with a fixed cross-section.
+
+Label: Direct Extrusion
+Also called: Forward Extrusion, Direct Metal Extrusion
+Hierarchy: Forming > Extruding > Direct Extrusion
+Category: Forming
+Definition: An extrusion method where the billet and ram move in the same direction to push material through a die.
+
+Label: Cold Rolling
+Also called: Cold Rolled Metal, Cold Reduction Rolling
+Hierarchy: Forming > Rolling > Cold Rolling
+Category: Forming
+Definition: A metal forming process where metal is compressed between rollers at room temperature to improve strength and finish.
+
+Label: Hot Rolling
+Also called: Hot Rolled Metal, Thermal Rolling
+Hierarchy: Forming > Rolling > Hot Rolling
+Category: Forming
+Definition: A process where heated metal is passed through rollers to reduce thickness and refine grain structure.
+
+Label: Friction Stri Welding
+Also called: Friction Stir Welding, FSW
+Hierarchy: Joining > Mechanical Joining > Mechanical Welding > Friction Welding > Friction Stri Welding
+Category: Joining
+Definition: A solid-state welding technique where a rotating tool stirs and fuses material along the joint line without melting.
+
+Label: Thermal Welding
+Also called: Heat Welding, Thermal Fusion
+Hierarchy: Joining > Thermal Joining > Thermal Welding
+Category: Joining
+Definition: A joining process that uses heat to melt and fuse materials together into a solid bond.
+
+Label: Braze Welding
+Also called: Welding Brazing, Bronze Welding
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Braze Welding
+Category: Joining
+Definition: A process where filler metal is deposited with a welding torch to join parts without fully melting the base metal.
+
+Label: Carbon Arc Brazing
+Also called: Carbon Electrode Brazing
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Braze Welding > Carbon Arc Brazing
+Category: Joining
+Definition: A brazing process that uses a carbon electrode arc to heat filler metal for joining parts.
+
+Label: Gas Brazing
+Also called: Flame Brazing, Torch Gas Brazing
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Braze Welding > Gas Brazing
+Category: Joining
+Definition: A brazing method that uses a gas flame torch to heat filler metal and join components.
+
+Label: Diffusion Bonding
+Also called: Diffusion Welding, Solid-State Diffusion Joining
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Diffusion Bonding
+Category: Joining
+Definition: A solid-state joining process where materials bond through atomic diffusion under heat and pressure without melting.
+
+Label: Electric Arc Welding
+Also called: Arc Welding, Manual Metal Arc Welding, MMAW
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electric Arc Welding
+Category: Joining
+Definition: A welding process that uses an electric arc between an electrode and the workpiece to melt and join metals.
+
+Label: Carbon Arc Welding
+Also called: CAW, Carbon Electrode Arc Welding
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electric Arc Welding > Carbon Arc Welding
+Category: Joining
+Definition: An arc welding method that employs a carbon electrode to create heat for fusing base materials.
+
+Label: Flux-Cored Arc Welding
+Also called: FCAW, Flux Core Welding, Self-Shielded Welding
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electric Arc Welding > Flux-Cored Arc Welding
+Category: Joining
+Definition: A welding process that uses a continuously fed tubular wire filled with flux, providing shielding and filler material.
+
+Label: Gas Metal Arc Welding
+Also called: GMAW, MIG Welding, Metal Inert Gas Welding
+Hierarchy: Joining > Thermal Joining > Thermal Welding > Electric Arc Welding > Gas Metal Arc Welding
+Category: Joining
+Definition: An arc welding process that melts and joins metals using a consumable wire electrode and an external shielding gas.
+
+Label: Live Tooling
+Also called: Live-Tooling, Driven Tooling
+Hierarchy: Machining > Single-Point Cutting > Turning > Live Tooling
+Category: Machining
+Definition: A CNC lathe capability that allows powered tools to perform milling, drilling, or tapping during turning operations.
+
+Label: Specialized Machining
+Also called: Special Process Machining, Niche Machining
+Hierarchy: Machining > Specialized Machining
+Category: Machining
+Definition: Machining processes designed for unique materials, part geometries, or specialized precision requirements.
+
+Label: Carbide Machining
+Also called: Tungsten Carbide Machining, Carbide Cutting
+Hierarchy: Machining > Specialized Machining > Carbide Machining
+Category: Machining
+Definition: The use of tungsten carbide cutting tools to machine hard or abrasive materials with high durability.
+
+Label: Machining Of Casting
+Also called: Casting Machining, Post-Cast Machining
+Hierarchy: Machining > Specialized Machining > Machining Of Casting
+Category: Machining
+Definition: Secondary machining applied to cast components to refine dimensions, tolerances, and surface finish.
+
+Label: Thin Wall Machining
+Also called: Thin-Walled Machining, Lightweight Wall Machining
+Hierarchy: Machining > Specialized Machining > Thin Wall Machining
+Category: Machining
+Definition: Precision machining of parts with thin sections while preventing distortion or vibration.
+
+Label: Standard Machining
+Also called: Conventional Machining, General Machining
+Hierarchy: Machining > Standard Machining
+Category: Machining
+Definition: Common cutting operations such as turning, milling, drilling, and shaping used in general manufacturing.
+
+Label: Swiss Machining
+Also called: Screw Machining, Swiss CNC Machining, Swiss Style Machining, Swiss Turning, Swiss Type Turning, Swiss-Style Machining, Swiss-Type Turning
+Hierarchy: Machining > Swiss Machining
+Category: Machining
+Definition: A precision machining process where bar stock is supported by a guide bushing, enabling high-accuracy production of small, complex parts.
+
+Label: EDM
+Also called: Electric Discharge Machining, Spark Erosion
+Hierarchy: Machining > Thermal Subtraction > EDM
+Category: Machining
+Definition: A non-traditional machining process that removes material using controlled electrical discharges between an electrode and workpiece.
+
+Label: Flanging EDM
+Also called: Flange EDM Cutting, EDM Flanging
+Hierarchy: Machining > Thermal Subtraction > EDM > Flanging EDM
+Category: Machining
+Definition: A variant of EDM used to cut or form flange shapes in metal parts through spark erosion.
+
+Label: Press Forming
+Also called: Pressing (coating prep), Press Form Prep
+Hierarchy: Surface Finishing > Coating > Press Forming
+Category: Surface Finishing
+Definition: A surface finishing method where materials or coatings are shaped or bonded to a substrate using mechanical pressing.

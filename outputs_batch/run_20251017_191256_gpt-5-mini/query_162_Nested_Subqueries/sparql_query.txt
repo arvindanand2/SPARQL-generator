@@ -1,0 +1,27 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?state ?stateLabel ?org ?orgLabel ?headcountNum WHERE {
+  {
+    SELECT ?state (MAX(?hcNum) AS ?maxHeadcount) WHERE {
+      ?org a iof-core:Manufacturer ;
+           sdk:hasNumberOfEmployees ?hcStr ;
+           sdk:organizationLocatedIn ?site .
+      ?site sdk:locatedInCity ?city .
+      ?city sdk:locatedInState ?state .
+      BIND(xsd:integer(REPLACE(STR(?hcStr), "[^0-9]", "")) AS ?hcNum)
+    } GROUP BY ?state
+  }
+  ?org a iof-core:Manufacturer ;
+       sdk:hasNumberOfEmployees ?hcStr ;
+       sdk:organizationLocatedIn ?site ;
+       rdfs:label ?orgLabel .
+  ?site sdk:locatedInCity ?city .
+  ?city sdk:locatedInState ?state .
+  ?state rdfs:label ?stateLabel .
+  BIND(xsd:integer(REPLACE(STR(?hcStr), "[^0-9]", "")) AS ?headcountNum)
+  FILTER(?headcountNum = ?maxHeadcount)
+}
+ORDER BY ?stateLabel ?orgLabel

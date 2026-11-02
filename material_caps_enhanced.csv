@@ -1,0 +1,95 @@
+Label,Also Called,Hierarchy,Category
+Carbide,,Carbide,Carbide
+Carbon,,Carbon,Carbon
+Graphite,,Carbon > Graphite,Carbon
+Ceramic,,Ceramic,Ceramic
+Zircon,,Ceramic > Zircon,Ceramic
+Chemicals,,Chemicals,Chemicals
+Composite,,Composite,Composite
+Carbon Fiber,,Composite > Carbon Fiber,Composite
+Concrete,,Composite > Concrete,Composite
+Exotic Material,,Exotic Material,Exotic Material
+Fiber,,Fiber,Fiber
+Fiber Glass,,Fiber > Fiber Glass,Fiber
+Man Made Fiber,,Fiber > Man Made Fiber,Fiber
+Natural Fiber,,Fiber > Natural Fiber,Fiber
+Foam,,Foam,Foam
+Glass,,Glass,Glass
+Metal,,Metal,Metal
+Alloy,,Metal > Alloy,Metal
+Haynes,,Metal > Alloy > Haynes,Metal
+Aluminum,,Metal > Aluminum,Metal
+Babbit,,Metal > Babbit,Metal
+Beryllium,,Metal > Beryllium,Metal
+Brass,,Metal > Brass,Metal
+Bronze,,Metal > Bronze,Metal
+Phosphor Bronze,,Metal > Bronze > Phosphor Bronze,Metal
+Chromium,,Metal > Chromium,Metal
+Cobalt,,Metal > Cobalt,Metal
+Copper,,Metal > Copper,Metal
+Hastelloy,,Metal > Hastelloy,Metal
+Inconel,,Metal > Inconel,Metal
+Invar,,Metal > Invar,Metal
+Iron,,Metal > Iron,Metal
+Kovar,,Metal > Kovar,Metal
+Lead,,Metal > Lead,Metal
+Magnesium Alloy,,Metal > Magnesium Alloy,Metal
+Molybdenum,,Metal > Molybdenum,Metal
+Nickel,,Metal > Nickel,Metal
+Palladium,,Metal > Palladium,Metal
+Platinum,,Metal > Platinum,Metal
+Silver,,Metal > Silver,Metal
+Steel,,Metal > Steel,Metal
+Alloy Steel,,Metal > Steel > Alloy Steel,Metal
+Low Alloy Steel Lead,,Metal > Steel > Alloy Steel > Low Alloy Steel Lead,Metal
+Blue Temp Steel,,Metal > Steel > Blue Temp Steel,Metal
+Cast Steel,,Metal > Steel > Cast Steel,Metal
+Cold Rolled Steel,,Metal > Steel > Cold Rolled Steel,Metal
+Stainless Steel,,Metal > Steel > Stainless Steel,Metal
+Super Alloy,,Metal > Super Alloy,Metal
+Waspaloy,,Metal > Super Alloy > Waspaloy,Metal
+Tantalum,,Metal > Tantalum,Metal
+Titanium,,Metal > Titanium,Metal
+Tungsten,,Metal > Tungsten,Metal
+Zinc Alloy,,Metal > Zinc Alloy,Metal
+Plastic,,Plastic,Plastic
+ABS,,Plastic > ABS,Plastic
+Acetal,,Plastic > Acetal,Plastic
+Acetron,,Plastic > Acetron,Plastic
+Acrylic,,Plastic > Acrylic,Plastic
+CPVC,,Plastic > CPVC,Plastic
+CTFE,,Plastic > CTFE,Plastic
+Delrin,,Plastic > Delrin,Plastic
+Ertalyte,,Plastic > Ertalyte,Plastic
+HDPE,,Plastic > HDPE,Plastic
+Kapton,,Plastic > Kapton,Plastic
+Kevlar,,Plastic > Kevlar,Plastic
+LDPE,,Plastic > LDPE,Plastic
+Lexan,,Plastic > Lexan,Plastic
+Lucite,,Plastic > Lucite,Plastic
+Noryl,,Plastic > Noryl,Plastic
+Nylon,,Plastic > Nylon,Plastic
+PBT,,Plastic > PBT,Plastic
+PET,,Plastic > PET,Plastic
+PPS,,Plastic > PPS,Plastic
+PVC,,Plastic > PVC,Plastic
+Peek,,Plastic > Peek,Plastic
+Plexiglas,,Plastic > Plexiglas,Plastic
+Polycarbonate,,Plastic > Polycarbonate,Plastic
+Polyethylene,,Plastic > Polyethylene,Plastic
+Polywood,,Plastic > Polyethylene > Polywood,Plastic
+Polysulfone,,Plastic > Polysulfone,Plastic
+Radel,,Plastic > Radel,Plastic
+Ryton,,Plastic > Ryton,Plastic
+Techtron,,Plastic > Techtron,Plastic
+Torlon,,Plastic > Torlon,Plastic
+Tuffak,,Plastic > Tuffak,Plastic
+UHMW,,Plastic > UHMW,Plastic
+Vespel,,Plastic > Vespel,Plastic
+Zelux,,Plastic > Zelux,Plastic
+Zytel,,Plastic > Zytel,Plastic
+Rubber,,Rubber,Rubber
+Silicone,,Silicone,Silicone
+Teflon,,Teflon,Teflon
+Urethane,,Urethane,Urethane
+Wood,,Wood,Wood

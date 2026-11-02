@@ -1,0 +1,41 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/>
+
+SELECT DISTINCT ?manufacturer ?name ?cityLabel ?stateLabel ?lat ?long
+WHERE {
+  ?manufacturer a iof-core:Manufacturer ;
+    rdfs:label ?name ;
+    sdk:organizationLocatedIn ?site ;
+    sdk:hasCertificate ?cert ;
+    sdk:suppliesToIndustry ?industry .
+  ?site sdk:hasSpatialCoordinates ?coords .
+  ?coords sdk:hasLatitudeValue ?lat ;
+         sdk:hasLongitudeValue ?long .
+  ?site sdk:locatedInCity ?city .
+  ?city rdfs:label ?cityLabel ;
+        sdk:locatedInState ?state .
+  ?state rdfs:label ?stateLabel .
+
+  # Midwest filter
+  FILTER (lcase(str(?stateLabel)) IN ("illinois", "indiana", "iowa", "kansas", "michigan", "minnesota", "missouri", "nebraska", "north dakota", "ohio", "south dakota", "wisconsin"))
+
+  # Aerospace filter
+  ?industry a sdk:AerospaceIndustry .
+
+  # Certificates: ISO 9001 or AS9100
+  FILTER (
+    ?cert = <http://asu.edu/semantics/SUDOKN/ISO9001> ||
+    ?cert = <http://asu.edu/semantics/SUDOKN/AS9100Certificate>
+  )
+  
+  # Optional geo distance calculation to ASU Tempe campus (lat/long approximation: 33.4212, -111.9336).
+  BIND(33.4212 AS ?asuLat)
+  BIND(-111.9336 AS ?asuLong)
+  BIND(
+    ( ( (?lat - ?asuLat) * (?lat - ?asuLat) ) + ( (?long - ?asuLong) * (?long - ?asuLong) ) )
+    AS ?distToASU
+  )
+}
+ORDER BY ASC(?distToASU)

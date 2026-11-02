@@ -1,0 +1,14 @@
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?naicsClassifier ?naicsText (COUNT(DISTINCT ?man) AS ?numManufacturers)
+WHERE {
+  ?man a iof-core:Manufacturer ;
+       sdk:hasPrimaryNAICSClassifier ?naicsClassifier .
+  OPTIONAL { ?naicsClassifier sdk:hasNAICSTextValue ?naicsText . }
+}
+GROUP BY ?naicsClassifier ?naicsText
+ORDER BY DESC(?numManufacturers)
+LIMIT 1

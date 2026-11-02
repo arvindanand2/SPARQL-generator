@@ -1,0 +1,49 @@
+{
+  "clauses": [
+    {
+      "object_hint": "site coordinates",
+      "subject_hint": "manufacturers",
+      "modifier": {
+        "kind": "order",
+        "k": null,
+        "by": "presence of site coordinates"
+      },
+      "relation_hint": "has site coordinates",
+      "type": "spo",
+      "connective": "AND"
+    }
+  ],
+  "mapping": [
+    "Optional fallback to literal 'no-coords' expressed via ordering/presence; explicit literal fallback rendering is a presentation-level behavior."
+  ],
+  "relevant_iris": [
+    {
+      "label": "NIST",
+      "iri": "http://asu.edu/semantics/SUDOKN/nist"
+    },
+    {
+      "label": "LEED",
+      "iri": "http://asu.edu/semantics/SUDOKN/LEED"
+    },
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "QS Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QSQuality"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+PREFIX iof-core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX iof-scro: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sdk: <http://asu.edu/semantics/SUDOKN/>
+
+SELECT ?manufacturer (COALESCE(?descText, ?name) AS ?displayName)
+WHERE {
+  ?manufacturer a iof-core:Manufacturer .
+  ?manufacturer rdfs:label ?name .
+  OPTIONAL {
+    ?manufacturer iof-core:describedBy ?descNode .
+    ?descNode iof-scro:hasTextValue ?descText .
+  }
+}
+ORDER BY (COALESCE(?descText, ?name))

@@ -1,0 +1,81 @@
+{
+  "clauses": [
+    {
+      "enum_values": [
+        "State A"
+      ],
+      "type": "scope",
+      "subject_hint": "companies",
+      "connective": "IMPLIED",
+      "relation_hint": "located in"
+    },
+    {
+      "type": "spo",
+      "subject_hint": "companies",
+      "connective": "AND",
+      "filter": {
+        "op": "gte",
+        "value": 50,
+        "unit": "",
+        "min": null,
+        "max": null
+      },
+      "relation_hint": "has number of employees"
+    },
+    {
+      "modifier": {
+        "kind": "limit",
+        "k": 1,
+        "by": "existence"
+      },
+      "type": "spo",
+      "subject_hint": "companies",
+      "connective": "AND",
+      "relation_hint": "has process capability",
+      "object_hint": "process name ends with \"ing\""
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QualityCertificate"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "ISO 9001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO9001"
+    },
+    {
+      "label": "HACCP",
+      "iri": "http://asu.edu/semantics/SUDOKN/HACCP"
+    },
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    },
+    {
+      "label": "AS 9102",
+      "iri": "http://asu.edu/semantics/SUDOKN/AS9102"
+    },
+    {
+      "label": "BABA",
+      "iri": "http://asu.edu/semantics/SUDOKN/BABA"
+    },
+    {
+      "label": "Occupational Health And Safety",
+      "iri": "http://asu.edu/semantics/SUDOKN/OccupationalHealthAndSafety"
+    },
+    {
+      "label": "QS Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/QSQuality"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    }
+  ]
+}

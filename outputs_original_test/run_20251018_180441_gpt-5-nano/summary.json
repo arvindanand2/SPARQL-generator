@@ -1,0 +1,38 @@
+{
+  "total": 3,
+  "successful": 3,
+  "failed": 0,
+  "total_pipeline_time_seconds": 101.47,
+  "results": [
+    {
+      "query_id": 0,
+      "query": "What is the number of employees for the company whose name contains \"Steel\"?",
+      "expected_label": "Lookup",
+      "success": true,
+      "result": "empCount\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 1\n",
+      "attempts": 1,
+      "error": null,
+      "total_time": 43.520020723342896
+    },
+    {
+      "query_id": 1,
+      "query": "What is the English name of the manufacturer that holds the certificate labeled \"ISO 9001\"?",
+      "expected_label": "Lookup",
+      "success": true,
+      "result": "englishName\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 4032\n",
+      "attempts": 1,
+      "error": null,
+      "total_time": 37.437087535858154
+    },
+    {
+      "query_id": 2,
+      "query": "What is the NAICS text for the classifier with code 332996?",
+      "expected_label": "Lookup",
+      "success": true,
+      "result": "text\n[results redacted: SUDOKN instance data not redistributed]\nTotal rows output: 1\n",
+      "attempts": 1,
+      "error": null,
+      "total_time": 20.49764657020569
+    }
+  ]
+}

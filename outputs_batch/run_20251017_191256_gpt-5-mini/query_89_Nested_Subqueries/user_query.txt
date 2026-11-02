@@ -1,0 +1,1 @@
+For each manufacturer, compute a City, State string; if city or state is missing, fill with Unknown.

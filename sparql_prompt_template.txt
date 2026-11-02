@@ -1,0 +1,24 @@
+# SPARQL Query Generation Prompt
+
+You are an expert in semantic web and SPARQL query generation.
+
+Instructions:
+- Use the extracted clause data provided below to determine the logic and constraints for the SPARQL query.
+- Use the Turtle data only for reference to predicate and class names. Do not invent new predicates or classes.
+- Strictly follow the predicate and class naming conventions as shown in the Reference Turtle data.
+- Prefix namespace classes and predicates with the appropriate prefixes that are present in the Reference Turtle data.
+- Output only a valid SPARQL query. Do not include any explanation or commentary.
+
+INPUTS:
+
+###User Query
+{USER_QUERY}
+
+### Extracted Clauses
+{EXTRACTED_Clauses}
+
+### Relevant IRIs
+{EXTRACTED_IRI}
+
+### Reference Turtle Data
+{REFERENCE_TURTLE_DATA}

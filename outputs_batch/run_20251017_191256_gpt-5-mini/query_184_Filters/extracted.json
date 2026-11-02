@@ -1,0 +1,59 @@
+{
+  "clauses": [
+    {
+      "type": "spo",
+      "subject_hint": "companies",
+      "connective": "OR",
+      "filter": {
+        "op": "eq",
+        "value": "en",
+        "unit": "lang",
+        "min": null,
+        "max": null
+      },
+      "relation_hint": "company name term",
+      "object_hint": "English"
+    },
+    {
+      "type": "spo",
+      "subject_hint": "companies",
+      "connective": "OR",
+      "filter": {
+        "op": "eq",
+        "value": null,
+        "unit": "lang",
+        "min": null,
+        "max": null
+      },
+      "relation_hint": "company name term",
+      "object_hint": "no language tag"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "ISO 14000",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO14000"
+    },
+    {
+      "label": "TL Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/TLQuality"
+    },
+    {
+      "label": "British Retail Consortium",
+      "iri": "http://asu.edu/semantics/SUDOKN/BritishRetailConsortium"
+    },
+    {
+      "label": "BABA",
+      "iri": "http://asu.edu/semantics/SUDOKN/BABA"
+    },
+    {
+      "label": "ISO 14001",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISO14001"
+    },
+    {
+      "label": "ISO Quality",
+      "iri": "http://asu.edu/semantics/SUDOKN/ISOQualityCertificate"
+    }
+  ]
+}

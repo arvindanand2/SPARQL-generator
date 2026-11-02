@@ -1,0 +1,69 @@
+{
+  "clauses": [
+    {
+      "connective": "AND",
+      "object_hint": "product with name containing Pipe",
+      "relation_hint": "manufactures",
+      "type": "spo",
+      "subject_hint": "manufacturers"
+    },
+    {
+      "connective": "IMPLIED",
+      "modifier": {
+        "kind": "group",
+        "k": null,
+        "by": "state"
+      },
+      "filter": {
+        "op": "near",
+        "value": "<state>",
+        "unit": "city",
+        "min": null,
+        "max": null
+      },
+      "type": "modifier",
+      "subject_hint": "manufacturers"
+    },
+    {
+      "connective": "IMPLIED",
+      "relation_hint": "has average employee count",
+      "type": "spo",
+      "subject_hint": "manufacturers"
+    }
+  ],
+  "mapping": [],
+  "relevant_iris": [
+    {
+      "label": "Pipe Bending",
+      "iri": "http://asu.edu/semantics/SUDOKN/BendingCapability"
+    },
+    {
+      "label": "ASME",
+      "iri": "http://asu.edu/semantics/SUDOKN/ASME"
+    },
+    {
+      "label": "Professional",
+      "iri": "http://asu.edu/semantics/SUDOKN/Professional"
+    },
+    {
+      "label": "AWS Welder",
+      "iri": "http://asu.edu/semantics/SUDOKN/AWSWelder"
+    },
+    {
+      "label": "Tubing",
+      "iri": "http://asu.edu/semantics/SUDOKN/TubingCapability"
+    },
+    {
+      "label": "HDPE",
+      "iri": "http://asu.edu/semantics/SUDOKN/HDPEProcessingCapability"
+    },
+    {
+      "label": "BABA",
+      "iri": "http://asu.edu/semantics/SUDOKN/BABA"
+    },
+    {
+      "label": "PVC",
+      "iri": "http://asu.edu/semantics/SUDOKN/PVCProcessingCapability"
+    }
+  ]
+}
